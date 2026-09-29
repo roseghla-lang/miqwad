@@ -1,0 +1,57 @@
+{
+ "auditor": "lead",
+ "findings": [
+  {
+   "file": "content/q_law.json",
+   "id": "law-card-030",
+   "severity": "minor",
+   "problem": "cite the RTA booklet for the 50 m figure",
+   "patch": {
+    "src": [
+     "S5",
+     "S45",
+     "S47"
+    ]
+   }
+  },
+  {
+   "file": "content/signs.json",
+   "id": "w-tunnel",
+   "severity": "unclear",
+   "problem": "i-tunnel name fits this picture too",
+   "patch": {
+    "confuse": [
+     "m-headlights-on",
+     "w-opening-bridge",
+     "w-overhead-cable"
+    ]
+   }
+  },
+  {
+   "file": "content/signs.json",
+   "id": "i-tunnel",
+   "severity": "unclear",
+   "problem": "w-tunnel name fits this picture too",
+   "patch": {
+    "confuse": [
+     "m-headlights-on",
+     "i-freeway-start",
+     "i-salik"
+    ]
+   }
+  },
+  {
+   "file": "content/signs.json",
+   "id": "m-go-this-way",
+   "severity": "unclear",
+   "problem": "m-turn-right and m-keep-right names also describe a compulsory direction",
+   "patch": {
+    "confuse": [
+     "w-chevron-right",
+     "i-one-way",
+     "i-lane-directions"
+    ]
+   }
+  }
+ ]
+}

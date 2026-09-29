@@ -209,7 +209,7 @@
       G('car-rear', { x: 18.5, y: 36, w: 30.5, h: 28, fill: C.red }) +
       G('car-rear', { x: 51, y: 36, w: 30.5, h: 28 }), { label: label });
   });
-  reg('r-no-overtaking-trucks', 'ممنوع تجاوز الشاحنات', function (o, label) {
+  reg('r-no-overtaking-trucks', 'ممنوع على الشاحنات التجاوز', function (o, label) {
     var lw = 30, lh = lw * TRUCK_REAR[1] / TRUCK_REAR[0], cw = 27, ch = cw * 68.4 / 92;
     var bottom = 50 + lh / 2;
     return K.prohib(
@@ -284,7 +284,7 @@
   reg('r-no-stopping', 'ممنوع الوقوف والتوقف', function (o, label) { return K.noParking({ x: true, label: label }); });
 
   // ---------------------------------------------------------------- size and weight limits
-  reg('r-max-height', 'حد الارتفاع المسموح به', function (o, label) {
+  reg('r-max-height', 'ممنوع مرور المركبات الأعلى من الرقم', function (o, label) {
     return K.prohib(
       tip(50, 36, 'down', 16, 8.5, C.black) + numMeem('4.5', 50, 50, 26, 24, 5) + tip(50, 64, 'up', 16, 8.5, C.black),
       { label: label });

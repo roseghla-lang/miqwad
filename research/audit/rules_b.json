@@ -1,0 +1,82 @@
+{
+  "auditor": "rules_b (turning, highway, pedestrians, school-bus, vulnerable, parking, lights-horn)",
+  "checked": {"questions": 99, "cards": 38, "other": 40},
+  "findings": [
+    {
+      "file": "content/q_rules.json",
+      "id": "rules-card-067",
+      "severity": "misleading",
+      "problem": "Teaches 'at least 1 m' when overtaking a cyclist as the single RTA figure, but content/signs.json (uae_note and action of the cyclist signs) says RTA requires at least 1.5 m, citing RTA 'Driving Safely in Dubai'. The learner gets two different official-sounding numbers. rules cites the RTA LMV handbook 7th ed 2016 (EN) and 3rd ed 2012 (AR) for 1 m; signs cites a later RTA licensing booklet for 1.5 m. No federal law or Dubai decree text found that fixes either number; Gulf News quotes safe-cycling advocates for 1.5 m. Leaving 1.5 m satisfies both, so teach 1.5 m as the safe target and keep 1 m only as the older handbook minimum.",
+      "evidence": "research/rules.md F39/F81 (S5, S6 p.82: 1 m); research/signs.md item 11 (S2 Driving Safely in Dubai, https://licensing.rta.ae/handbook/DrivingSafelyInDubaiEN.pdf: 1.5 m); content/signs.json cyclist entries; Gulf News 'Live and let live is message of safe-cycling advocates in UAE' (1.5 m). WebFetch to rta/edi/legislation hosts is blocked from this sandbox, so neither booklet could be re-read.",
+      "patch": {
+        "title": "مسافة كافية عند تجاوز الدراجة",
+        "body": "عند تجاوز دراجة هوائية أو نارية اترك مسافة جانبية واسعة: دليل هيئة الطرق القديم يذكر مترا واحدا على الأقل، ومنشورات أحدث للهيئة تذكر 1.5 متر، فاترك 1.5 متر، وإذا لم تكن المساحة كافية فانتظر خلفها",
+        "key": "1.5 متر إن أمكن، ولا أقل من متر",
+        "confidence": "medium"
+      },
+      "confidence": "medium"
+    },
+    {
+      "file": "content/q_rules.json",
+      "id": "rules-vulnerable-007",
+      "severity": "minor",
+      "problem": "Stem and explain hard-code 'one metre' as the overtaking gap; same conflict as rules-card-067 with signs.json (1.5 m). The key itself (wait behind) stays right either way, so only the wording and a note need aligning.",
+      "evidence": "Same as rules-card-067",
+      "patch": {
+        "q": "دراجة هوائية أمامك في طريق ضيق، ولا توجد مساحة جانبية كافية لتتجاوزها بأمان، ماذا تفعل؟",
+        "explain": "التجاوز مسموح فقط إذا استطعت ترك مسافة جانبية كافية (1.5 متر إن أمكن)، وإلا فانتظر خلفها بمسافة آمنة",
+        "notes": "دليل هيئة الطرق 2016 يذكر مترا على الأقل، ومنشور أحدث للهيئة يذكر 1.5 متر"
+      },
+      "confidence": "medium"
+    },
+    {
+      "file": "content/q_rules.json",
+      "id": "rules-vulnerable-014",
+      "severity": "minor",
+      "problem": "Explain repeats 'at least one metre'; align with the 1.5 m wording used in signs.json.",
+      "evidence": "Same as rules-card-067",
+      "patch": {
+        "explain": "التجاوز ممنوع في المنعطفات، وبعد المنعطف تتجاوزها عندما تكون الرؤية واضحة وتترك مسافة جانبية واسعة (1.5 متر إن أمكن)"
+      },
+      "confidence": "medium"
+    },
+    {
+      "file": "content/q_rules.json",
+      "id": "rules-school-bus-001",
+      "severity": "minor",
+      "problem": "Tip has a number-agreement error and spells the number in words: 'خمس أمتار' (أمتار is masculine, so it should be خمسة), and BRIEF wants Western digits with units.",
+      "evidence": "BRIEF section 4 (Western digits with Arabic units); Arabic number agreement for 3 to 10",
+      "patch": {"tip": "5 أمتار ما بتضر حدا، والولد أغلى من الوقت"},
+      "confidence": "high"
+    },
+    {
+      "file": "content/q_rules.json",
+      "id": "rules-school-bus-006",
+      "severity": "minor",
+      "problem": "Explain starts with 'قد ببطء' (imperative of قاد). Without vowel marks, which the lint forbids, a beginner reads it as the particle قد ('may'), so the sentence reads wrongly.",
+      "evidence": "BRIEF section 4 (clear simple Arabic)",
+      "patch": {"explain": "دليل هيئة الطرق: خفف سرعتك قرب الحافلات المدرسية وكن مستعدا للتوقف، فقد يعبر الطلاب فجأة"},
+      "confidence": "high"
+    },
+    {
+      "file": "content/q_rules.json",
+      "id": "rules-card-071",
+      "severity": "minor",
+      "problem": "'حيث تحجب الإشارات أو اللوحات' has no subject (the list gives no hint that the vehicle is what hides the signs), so it reads as if the signs do the hiding.",
+      "evidence": "MR 130/1997 Art 49 (places where the vehicle hides lights or signs)",
+      "patch": {"body": "على ممرات المشاة والأرصفة، على الجسور وفي الأنفاق، في مكان تحجب فيه مركبتك الإشارات أو اللوحات، أمام مداخل البيوت والمواقف ومحطات الوقود والمستشفيات ومراكز الإسعاف والإطفاء والشرطة"},
+      "confidence": "high"
+    }
+  ],
+  "cross_file": [
+    "Cyclist overtaking gap: content/q_rules.json (rules-card-067 key 'متر واحد', rules-vulnerable-007, rules-vulnerable-014, fig-bike-gap label '1 م') vs content/signs.json cyclist sign entries (action and uae_note: 'هيئة الطرق تطلب ترك مسافة 1.5 متر على الأقل') and q_safety.json line ~2467 (another 'متر على الأقل' for a bicycle). One number must be chosen app-wide; if 1.5 m wins, fig-bike-gap (content/figs.json) must be relabelled '1.5 م'.",
+    "Truck passing gap 1.5 m (q_safety safety-card-027, safety-hazard-032) is taught next to a 1 m cyclist gap in q_rules, so a learner may think trucks need more room than cyclists; harmonising the cyclist figure at 1.5 m removes that oddity.",
+    "School bus fine (1000 درهم و10 نقاط) and pedestrian priority (500 درهم و6 نقاط) in penalties content agree with Khaleej Times / Gulf News 2025 to 2026 reports; no conflict with my slice, which states no fines."
+  ],
+  "unresolved": [
+    "Official RTA wording on the cyclist gap: could not open the RTA LMV handbook 8th ed, 'Driving Safely in Dubai', or Dubai Executive Council Resolution 13/2022 (egress proxy blocks rta.ae, licensing.rta.ae, edi-uae.com, dlp.dubai.gov.ae, uaelegislation.gov.ae, gulfnews.com). Searches found no UAE law text setting 1 m or 1.5 m; 1.5 m appears in RTA-attributed signs research and in advocacy quotes; 1 m in the older RTA handbooks per research/rules.md.",
+    "rules-school-bus-007: assumes UAE school buses flash warning lights before the STOP arm opens (US-style amber pre-warning). No UAE source seen confirming a separate pre-warning phase; the answer (slow down, be ready to stop, do not overtake) is safe either way, and confidence is already medium.",
+    "fig-fog-lights (explain_fig of rules-lights-horn-005/006, fig of card-078/079) is captioned 'المنخفضة وأضواء الضباب' and shows front fog lamps on, but research/rules.md lists fog-lamp rules as unverified. Not wrong in practice, but the picture teaches something the text does not source.",
+    "Verified with search results this session (no change needed): school bus 5 m, both directions stop on undivided roads and only traffic behind stops on divided roads, 1000 درهم and 10 black points (Khaleej Times, Gulf News, Emirates 24/7 2025 to 2026); horn banned near hospitals, schools and places of worship, in residential areas from midnight to 6 am and while parked (MR 130/1997); no parking within 15 m of crossroads, squares, roundabouts or in front of public transport stops (MR 130/1997 Art 49); pedestrians barred from crossing roads with a set speed of more than 80 km/h (Decree-Law 14/2024 Art 7)."
+  ]
+}

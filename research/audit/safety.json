@@ -1,0 +1,109 @@
+{
+  "auditor": "safety",
+  "checked": {"questions": 171, "cards": 66, "other": 24},
+  "findings": [
+    {
+      "file": "content/q_safety.json",
+      "id": "safety-weather-032",
+      "severity": "misleading",
+      "problem": "Says the minimum gap in poor visibility from fog OR rain is 5 s, attributed to Dubai Police. This contradicts the same file (safety-weather-031 explain and safety-card-008: at least 4 s in rain per the RTA handbook), the rules bank (rules: 2 s, rain 4 s, fog double) and fig-gap-weather. The press reports it rests on actually say Dubai Police advised 3 s normally and '4 to 5 seconds' in fog, so 5 s is neither official nor exact. A learner who memorises 5 s for rain will contradict the RTA figure.",
+      "evidence": "Gulf News 'UAE fog alert: 5 weather-related traffic fines' (2026) and Emirates 24|7 tailgating guide: Dubai Police 'three-second rule ... extended to four to five seconds during fog'; RTA LMV handbook (S1) as used by q_rules.json: 2 s minimum, 4 s in rain. https://gulfnews.com/living-in-uae/transport/uae-fog-alert-5-weather-related-traffic-fines-every-motorist-must-know-1.500305005",
+      "patch": {
+        "q": "حسب دليل هيئة الطرق، كم ثانية على الأقل تترك بينك وبين السيارة الأمامية في المطر؟",
+        "options": ["ثانية واحدة", "ثانيتين", "3 ثوان", "4 ثوان"],
+        "answer": 3,
+        "explain": "في الجو الجيد ثانيتان على الأقل، وفي المطر 4 ثوان على الأقل، وفي الضباب ضاعف المسافة أو أكثر",
+        "src": ["S1"],
+        "confidence": "high",
+        "notes": "شرطة دبي نصحت في الصحف بثلاث ثوان في الجو العادي و4 إلى 5 ثوان في الضباب، واعتمدنا دليل هيئة الطرق الرسمي حتى تتفق الأرقام مع باقي الدروس"
+      },
+      "confidence": "high"
+    },
+    {
+      "file": "content/q_safety.json",
+      "id": "safety-card-003",
+      "severity": "misleading",
+      "problem": "Teaches 'from 3 s to at least 5 s' as the fog gap and puts '5 ثوان على الأقل' in the highlighted key. The base (3 s) contradicts the 2 s rule taught in q_rules.json and fig-gap-weather (2 s, rain 4 s, fog double or more); the 5 s figure comes from press quotes (Dubai Police said 4 to 5 s), not an official handbook. The learner meets two different base numbers in two lessons.",
+      "evidence": "RTA LMV handbook 2 s rule (S1, q_rules.json rules-card on 2 s / rain 4 s / fog double); Gulf News 2026 quoting Dubai Police 3 s and 4 to 5 s in fog",
+      "patch": {
+        "body": "خفف تدريجيا حتى تستطيع التوقف ضمن المسافة التي تراها\nزد مسافة الأمان كثيرا: الثانيتان لا تكفيان، فضاعفها أو أكثر في الضباب\nلا تفرمل فجأة ولا تتوقف في وسط الطريق",
+        "key": "ضاعف المسافة أو أكثر",
+        "src": ["S1", "S6", "S56"]
+      },
+      "confidence": "high"
+    },
+    {
+      "file": "content/q_safety.json",
+      "id": "safety-weather-008",
+      "severity": "misleading",
+      "problem": "The question and key are right, but the explanation gives 'from 3 s to at least 5 s', which conflicts with the 2 s / rain 4 s / fog double rule in q_rules.json and in fig-gap-weather.",
+      "evidence": "Same as safety-card-003",
+      "patch": {
+        "explain": "في الضباب ترى الخطر متأخرا فتتأخر فرملتك، لذلك زد المسافة كثيرا: ضاعف الثانيتين أو أكثر",
+        "src": ["S1", "S56"]
+      },
+      "confidence": "high"
+    },
+    {
+      "file": "content/q_safety.json",
+      "id": "safety-card-063",
+      "severity": "minor",
+      "problem": "Says only 'ممنوع أن تقود تحت تأثير الكحول', which a beginner may read as 'drunk is banned, one drink is fine'. UAE law is zero tolerance: no permitted blood alcohol level (law-card-007 in q_law.json says the same).",
+      "evidence": "Federal Decree-Law 14/2024 (DUI: prison and/or AED 20,000 to 100,000); Gulf News 'UAE's Traffic Law: Severe penalties for drunk driving' https://gulfnews.com/living-in-uae/transport/uaes-new-traffic-law-severe-penalties-for-drunk-driving-and-narcotic-substance-use-1.1730801519076 ; q_law.json law-card-007",
+      "patch": {
+        "body": "بعض الأدوية تسبب النعاس، فاسأل الطبيب أو الصيدلي قبل القيادة\nالقانون لا يسمح بأي نسبة كحول للسائق، ولو كأسا واحدة، والمخدرات ممنوعة تماما"
+      },
+      "confidence": "high"
+    },
+    {
+      "file": "content/q_safety.json",
+      "id": "safety-night-017",
+      "severity": "minor",
+      "problem": "The explanation never states the 200 m figure that is the answer; it cites the RTA 'dip as soon as a car appears' instead, so it does not explain the key.",
+      "evidence": "SDI handbook (S56): dip within 200 m of an approaching vehicle",
+      "patch": {
+        "explain": "دليل معهد الشارقة: حول إلى المنخفضة عندما تصبح السيارة القادمة على بعد 200 متر أو أقل، ودليل هيئة الطرق يطلب التحويل بمجرد ظهورها"
+      },
+      "confidence": "high"
+    },
+    {
+      "file": "content/q_safety.json",
+      "id": "safety-emergency-011",
+      "severity": "minor",
+      "problem": "Arabic agreement: 'أي مجموعة من هذه الأغراض مفيد أن تبقى' (masculine 'مفيد' with no clear subject). Natural form is 'من المفيد أن تبقى'.",
+      "evidence": "Arabic grammar",
+      "patch": {"q": "أي مجموعة من هذه الأغراض من المفيد أن تبقى في سيارتك دائما؟"},
+      "confidence": "high"
+    },
+    {
+      "file": "content/q_safety.json",
+      "id": "safety-night-006",
+      "severity": "minor",
+      "problem": "Explanation wording 'عند الاقتراب من سيارة من الخلف' is ambiguous: it can read as a car approaching you from behind. It means you are following a car.",
+      "evidence": "Arabic clarity",
+      "patch": {"explain": "عندما تسير خلف سيارة أخرى لازم تحول للأضواء المنخفضة، لأن العالية تبهر سائقها في مراياه"},
+      "confidence": "high"
+    },
+    {
+      "file": "content/q_safety.json",
+      "id": "safety-card-010",
+      "severity": "minor",
+      "problem": "Confidence is 'medium', but the valley fines (AED 2,000 + 23 points + 60-day impound; gathering near valleys AED 1,000 + 6 points) are confirmed by the Dubai Media Office (official) in 2026 and by several newspapers.",
+      "evidence": "Dubai Media Office on X (2026) listing rain-related violations; Gulf News 'UAE drivers warned: Up to Dh2,000 fine and 23 black points for entering flood valleys' https://gulfnews.com/uae/uae-drivers-warned-up-to-dh2000-fine-and-23-black-points-for-entering-flood-valleys-1.500482059",
+      "patch": {"confidence": "high"},
+      "confidence": "medium"
+    }
+  ],
+  "cross_file": [
+    "Following distance: q_rules.json (rules-card on the 2 s rule, the rain 4 s and fog 'double' items) and figs.json fig-gap-weather teach 2 s / rain 4 s / fog double. q_safety.json safety-card-003, safety-weather-008 and safety-weather-032 teach 3 s to 5 s. Official finding: the RTA LMV handbook gives 2 s (4 s in rain for aquaplaning), RTA 'Driving Safely' gives 3 s, SDI says two seconds and double in wet or poor visibility. The 3 s and 4 to 5 s figures come only from newspapers quoting Dubai Police. Patches above align safety with the RTA figures used in q_rules.json.",
+    "The patched safety-weather-032 (rain 4 s per RTA) would overlap the q_rules.json rain 4 s items. If the lead wants no duplicates, drop safety-weather-032 instead.",
+    "Warning triangle: safety-emergency-022 (dubai only, 50 m per RTA Driving Safely) vs q_law.json SDI item (about 100 m). No official federal distance was found; web sources give 45 m, 50 m, 100 m. The current split by exam tag plus notes is acceptable. All items correctly put it BEHIND the car toward oncoming traffic.",
+    "figs.json fig-breakdown draws the two people beyond the barrier 'ahead of the car'. Safer practice (and the usual advice) is to stand behind the barrier upstream of (behind) the car, so a car hitting it does not push it toward you. Suggest redrawing them behind the barrier level with or behind the car.",
+    "Alcohol zero tolerance is taught in q_law.json (law-law-012, law-card-007). safety-card-063 is vaguer; patched above to match."
+  ],
+  "unresolved": [
+    "Could not read the RTA handbooks directly (drivedubai.ae, edi-uae.com and licensing.rta.ae are blocked by the egress proxy), so the exact RTA wording of '4 s in rain' was taken from the research note and q_rules.json, not re-read.",
+    "safety-emergency-023 (broken down in the LEFT lane, 'get out behind the barrier'): the answer is the best option, but some authorities advise staying buckled in the car when leaving it is unsafe. Abu Dhabi Police say not to stay in the car. Left as is.",
+    "safety-vehicle-023 says the middle of the head restraint should be at eye and ear level, while fig-seat-belt draws its top level with the top of the head. IIHS guidance sits between these. Both are acceptable for a beginner, so not reported as a finding."
+  ]
+}

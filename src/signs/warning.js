@@ -96,7 +96,7 @@
   function merge(kind, x) {
     return K.arrow(kind, { x: x, y: 44, w: 18.6, h: 30, ay: 1, p: { len: 68, hw: 12.5, hl: 0.01 } });
   }
-  reg('w-merge-right', 'طريقك يندمج مع حركة المرور', function (o, label) {
+  reg('w-merge-right', 'مركبات تندمج من اليمين', function (o, label) {
     return tri(merge('merge-right', 41), label);
   });
   reg('w-merge-left', 'مركبات تندمج من اليسار', function (o, label) {
@@ -163,7 +163,7 @@
     var r = 7.68, cy = 51 + r;
     return tri(K.rpoly(K.tri(50, cy, r - 0.8, true), C.red, 1.6) + K.rpoly(K.tri(50, cy, r - 3, true), C.white, 1), label);
   });
-  reg('w-dead-end-ahead', 'طريق مسدود أمامك', function (o, label) {
+  reg('w-dead-end-ahead', 'تحذير: طريق مسدود أمامك', function (o, label) {
     return tri(box(46.9, 52.5, 6.2, 21.5, 0) + box(40, 47, 20, 6, 0.6, C.red), label);
   });
   reg('w-gate-ahead', 'بوابة قد تغلق الطريق أمامك', function (o, label) {
@@ -243,7 +243,7 @@
     return tri(box(38.6, 47.5, 3, 10, 0.8) + box(58.4, 47.5, 3, 10, 0.8) + line('M40.1,48.8Q50,55 59.9,48.8', 2.2) +
       K.glyph('lightning', { x: 44.5, y: 54, w: 11, h: 20, ay: 1 }), label);
   });
-  reg('w-max-height-ahead', 'حد الارتفاع أمامك', function (o, label) {
+  reg('w-max-height-ahead', 'تحذير: ارتفاع محدود أمامك', function (o, label) {
     return tri(poly([[43.5, 45], [56.5, 45], [50, 51.5]]) + poly([[42, 74], [58, 74], [50, 67]]) +
       K.text('4.5', 54.2, 60, 11, { family: 'latin' }) + K.text('م', 39.6, 59.6, 10), label);
   });

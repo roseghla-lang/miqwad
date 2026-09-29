@@ -1,0 +1,265 @@
+{
+ "auditor": "cross-file consistency",
+ "checked": {
+  "questions": 798,
+  "cards": 257,
+  "other": 298
+ },
+ "findings": [
+  {
+   "file": "content/q_safety.json",
+   "id": "safety-card-003",
+   "severity": "misleading",
+   "problem": "Teaches 3 s as the normal gap and 5 s in fog, while the rules bank (rules-card-038/040), roadtest-roadtest-031, exams.json speed tip, scenarios rd-013..017, wx-004 and fig-gap-weather all teach 2 s normal, 4 s rain, at least double in fog. A learner meets two different numbers for the same rule",
+   "evidence": "RTA Light Motor Vehicle Handbook 8th ed. 2024 (the knowledge-test handbook): two-second rule in good conditions, more when wet or visibility is poor; RTA Arabic handbook: 4 s in rain; Abu Dhabi Police and SDI handbook: at least double in fog. Search confirmation: https://gulfnews.com/living-in-uae/transport/dubai-tailgating-fine-rules-1.500083210 (cites the RTA handbook two-second rule), https://gulfnews.com/uae/dont-use-hazard-lights-and-double-safety-distance-during-fog-abu-dhabi-police-advises-1.82879145 , https://gulfnews.com/uae/police-in-abu-dhabi-make-two-seconds-the-tailgating-safe-distance-1.68860838 . The 3 s / 5 s figures come from RoadSafetyUAE (NGO, https://www.roadsafetyuae.com/tailgating/), the undated Driving Safely in Dubai booklet and press tips, not from the exam handbook",
+   "patch": {
+    "body": "خفف تدريجيا حتى تستطيع التوقف ضمن المسافة التي تراها\nضاعف مسافة الأمان على الأقل: من ثانيتين في الجو الصافي إلى 4 ثوان أو أكثر\nلا تفرمل فجأة ولا تتوقف في وسط الطريق",
+    "key": "ضاعف المسافة أو أكثر",
+    "src": [
+     "S1",
+     "S56"
+    ],
+    "fig": [
+     "fig-gap-weather"
+    ]
+   },
+   "confidence": "high"
+  },
+  {
+   "file": "content/q_safety.json",
+   "id": "safety-weather-008",
+   "severity": "misleading",
+   "problem": "Explain repeats the 3 s to 5 s example that contradicts the rules bank and fig-gap-weather (2 s, 4 s rain, double in fog). Key is fine",
+   "evidence": "RTA Light Motor Vehicle Handbook 8th ed. 2024 (the knowledge-test handbook): two-second rule in good conditions, more when wet or visibility is poor; RTA Arabic handbook: 4 s in rain; Abu Dhabi Police and SDI handbook: at least double in fog. Search confirmation: https://gulfnews.com/living-in-uae/transport/dubai-tailgating-fine-rules-1.500083210 (cites the RTA handbook two-second rule), https://gulfnews.com/uae/dont-use-hazard-lights-and-double-safety-distance-during-fog-abu-dhabi-police-advises-1.82879145 , https://gulfnews.com/uae/police-in-abu-dhabi-make-two-seconds-the-tailgating-safe-distance-1.68860838 . The 3 s / 5 s figures come from RoadSafetyUAE (NGO, https://www.roadsafetyuae.com/tailgating/), the undated Driving Safely in Dubai booklet and press tips, not from the exam handbook",
+   "patch": {
+    "explain": "في الضباب ترى الخطر متأخرا فتتأخر فرملتك، لذلك ضاعف مسافة الأمان على الأقل، من ثانيتين إلى 4 ثوان أو أكثر",
+    "src": [
+     "S1",
+     "S56"
+    ],
+    "explain_fig": [
+     "fig-gap-weather"
+    ]
+   },
+   "confidence": "high"
+  },
+  {
+   "file": "content/q_safety.json",
+   "id": "safety-weather-032",
+   "severity": "misleading",
+   "problem": "Level 5 question keys 5 s (press quotes) and its explain says the safe-driving guide recommends 3 s normally; this contradicts the 2 s / 4 s / double rule taught in q_rules, scenarios and fig-gap-weather, and a learner could carry 5 s or 3 s into an RTA exam built on the LMV handbook. Rewrite on the agreed rule, keeping the key at index 3",
+   "evidence": "RTA Light Motor Vehicle Handbook 8th ed. 2024 (the knowledge-test handbook): two-second rule in good conditions, more when wet or visibility is poor; RTA Arabic handbook: 4 s in rain; Abu Dhabi Police and SDI handbook: at least double in fog. Search confirmation: https://gulfnews.com/living-in-uae/transport/dubai-tailgating-fine-rules-1.500083210 (cites the RTA handbook two-second rule), https://gulfnews.com/uae/dont-use-hazard-lights-and-double-safety-distance-during-fog-abu-dhabi-police-advises-1.82879145 , https://gulfnews.com/uae/police-in-abu-dhabi-make-two-seconds-the-tailgating-safe-distance-1.68860838 . The 3 s / 5 s figures come from RoadSafetyUAE (NGO, https://www.roadsafetyuae.com/tailgating/), the undated Driving Safely in Dubai booklet and press tips, not from the exam handbook",
+   "patch": {
+    "q": "إذا كانت مسافة الأمان في الجو الصافي ثانيتين، كم تصبح على الأقل في الضباب الكثيف؟",
+    "options": [
+     "ثانية واحدة",
+     "ثانيتين",
+     "3 ثوان",
+     "4 ثوان"
+    ],
+    "answer": 3,
+    "explain": "الضباب يؤخر رؤيتك للخطر، لذلك ضاعف مسافة الأمان على الأقل: من ثانيتين إلى 4 ثوان، وزدها أكثر كلما ضعفت الرؤية",
+    "src": [
+     "S1",
+     "S56"
+    ],
+    "confidence": "medium",
+    "level": 4,
+    "explain_fig": [
+     "fig-gap-weather"
+    ],
+    "notes": "هيئة الطرق: ثانيتان على الأقل في الظروف الجيدة و4 ثوان في المطر، ومعهد الشارقة وشرطة أبوظبي: ضاعفها على الأقل في الضباب، أما 3 ثوان و5 ثوان فمن جمعية أهلية وتصريحات صحفية ولم نعتمدها"
+   },
+   "confidence": "medium"
+  },
+  {
+   "file": "content/scenarios_hazard.json",
+   "id": "wx-004",
+   "severity": "minor",
+   "problem": "Notes still describe an open conflict with 5 s (C1); after the safety-bank patches every file uses 4 s in rain, so the note should state the settled rule",
+   "evidence": "RTA Light Motor Vehicle Handbook 8th ed. 2024 (the knowledge-test handbook): two-second rule in good conditions, more when wet or visibility is poor; RTA Arabic handbook: 4 s in rain; Abu Dhabi Police and SDI handbook: at least double in fog. Search confirmation: https://gulfnews.com/living-in-uae/transport/dubai-tailgating-fine-rules-1.500083210 (cites the RTA handbook two-second rule), https://gulfnews.com/uae/dont-use-hazard-lights-and-double-safety-distance-during-fog-abu-dhabi-police-advises-1.82879145 , https://gulfnews.com/uae/police-in-abu-dhabi-make-two-seconds-the-tailgating-safe-distance-1.68860838 . The 3 s / 5 s figures come from RoadSafetyUAE (NGO, https://www.roadsafetyuae.com/tailgating/), the undated Driving Safely in Dubai booklet and press tips, not from the exam handbook",
+   "patch": {
+    "notes": "H15, H18. مسافة الأمان حسب هيئة الطرق: ثانيتان على الأقل، و4 ثوان في المطر، وضعفها على الأقل في الضباب، وهي نفس الأرقام في كل البنوك"
+   },
+   "confidence": "high"
+  },
+  {
+   "file": "content/scenarios_roads.json",
+   "id": "rd-013",
+   "severity": "minor",
+   "problem": "Notes say the safety bank uses 3 s; after the safety-bank patches this is stale, so the note should just state the shared rule",
+   "evidence": "RTA Light Motor Vehicle Handbook 8th ed. 2024 (the knowledge-test handbook): two-second rule in good conditions, more when wet or visibility is poor; RTA Arabic handbook: 4 s in rain; Abu Dhabi Police and SDI handbook: at least double in fog. Search confirmation: https://gulfnews.com/living-in-uae/transport/dubai-tailgating-fine-rules-1.500083210 (cites the RTA handbook two-second rule), https://gulfnews.com/uae/dont-use-hazard-lights-and-double-safety-distance-during-fog-abu-dhabi-police-advises-1.82879145 , https://gulfnews.com/uae/police-in-abu-dhabi-make-two-seconds-the-tailgating-safe-distance-1.68860838 . The 3 s / 5 s figures come from RoadSafetyUAE (NGO, https://www.roadsafetyuae.com/tailgating/), the undated Driving Safely in Dubai booklet and press tips, not from the exam handbook",
+   "patch": {
+    "notes": "مسافة الأمان حسب هيئة الطرق: ثانيتان على الأقل، و4 ثوان في المطر، وضعفها على الأقل في الضباب، وهي نفس الأرقام في كل البنوك"
+   },
+   "confidence": "high"
+  },
+  {
+   "file": "content/scenarios_roads.json",
+   "id": "rd-015",
+   "severity": "minor",
+   "problem": "Notes say the safety bank uses 3 s; after the safety-bank patches this is stale, so the note should just state the shared rule",
+   "evidence": "RTA Light Motor Vehicle Handbook 8th ed. 2024 (the knowledge-test handbook): two-second rule in good conditions, more when wet or visibility is poor; RTA Arabic handbook: 4 s in rain; Abu Dhabi Police and SDI handbook: at least double in fog. Search confirmation: https://gulfnews.com/living-in-uae/transport/dubai-tailgating-fine-rules-1.500083210 (cites the RTA handbook two-second rule), https://gulfnews.com/uae/dont-use-hazard-lights-and-double-safety-distance-during-fog-abu-dhabi-police-advises-1.82879145 , https://gulfnews.com/uae/police-in-abu-dhabi-make-two-seconds-the-tailgating-safe-distance-1.68860838 . The 3 s / 5 s figures come from RoadSafetyUAE (NGO, https://www.roadsafetyuae.com/tailgating/), the undated Driving Safely in Dubai booklet and press tips, not from the exam handbook",
+   "patch": {
+    "notes": "مسافة الأمان حسب هيئة الطرق: ثانيتان على الأقل، و4 ثوان في المطر، وضعفها على الأقل في الضباب، وهي نفس الأرقام في كل البنوك"
+   },
+   "confidence": "high"
+  },
+  {
+   "file": "content/scenarios_roads.json",
+   "id": "rd-016",
+   "severity": "minor",
+   "problem": "Notes say the safety bank uses 3 s; after the safety-bank patches this is stale, so the note should just state the shared rule",
+   "evidence": "RTA Light Motor Vehicle Handbook 8th ed. 2024 (the knowledge-test handbook): two-second rule in good conditions, more when wet or visibility is poor; RTA Arabic handbook: 4 s in rain; Abu Dhabi Police and SDI handbook: at least double in fog. Search confirmation: https://gulfnews.com/living-in-uae/transport/dubai-tailgating-fine-rules-1.500083210 (cites the RTA handbook two-second rule), https://gulfnews.com/uae/dont-use-hazard-lights-and-double-safety-distance-during-fog-abu-dhabi-police-advises-1.82879145 , https://gulfnews.com/uae/police-in-abu-dhabi-make-two-seconds-the-tailgating-safe-distance-1.68860838 . The 3 s / 5 s figures come from RoadSafetyUAE (NGO, https://www.roadsafetyuae.com/tailgating/), the undated Driving Safely in Dubai booklet and press tips, not from the exam handbook",
+   "patch": {
+    "notes": "مسافة الأمان حسب هيئة الطرق: ثانيتان على الأقل، و4 ثوان في المطر، وضعفها على الأقل في الضباب، وهي نفس الأرقام في كل البنوك"
+   },
+   "confidence": "high"
+  },
+  {
+   "file": "content/scenarios_roads.json",
+   "id": "rd-017",
+   "severity": "minor",
+   "problem": "Notes say the safety bank uses 3 s; after the safety-bank patches this is stale, so the note should just state the shared rule",
+   "evidence": "RTA Light Motor Vehicle Handbook 8th ed. 2024 (the knowledge-test handbook): two-second rule in good conditions, more when wet or visibility is poor; RTA Arabic handbook: 4 s in rain; Abu Dhabi Police and SDI handbook: at least double in fog. Search confirmation: https://gulfnews.com/living-in-uae/transport/dubai-tailgating-fine-rules-1.500083210 (cites the RTA handbook two-second rule), https://gulfnews.com/uae/dont-use-hazard-lights-and-double-safety-distance-during-fog-abu-dhabi-police-advises-1.82879145 , https://gulfnews.com/uae/police-in-abu-dhabi-make-two-seconds-the-tailgating-safe-distance-1.68860838 . The 3 s / 5 s figures come from RoadSafetyUAE (NGO, https://www.roadsafetyuae.com/tailgating/), the undated Driving Safely in Dubai booklet and press tips, not from the exam handbook",
+   "patch": {
+    "notes": "مسافة الأمان حسب هيئة الطرق: ثانيتان على الأقل، و4 ثوان في المطر، وضعفها على الأقل في الضباب، وهي نفس الأرقام في كل البنوك"
+   },
+   "confidence": "high"
+  },
+  {
+   "file": "content/signs.json",
+   "id": "p-give-way-cyclists",
+   "severity": "misleading",
+   "problem": "Action and uae_note say at least 1.5 m when passing a cyclist, attributed to RTA, while q_rules (rules-card-031, rules-card-067, rules-overtaking-007 whose key is 1 m, rules-vulnerable-007/014), q_safety (safety-card-026, safety-night-014, safety-hazard-021), scenarios (hz-007, nt-001, pd-006) and fig-bike-gap all say at least 1 m from the RTA LMV handbook",
+   "evidence": "RTA Light Motor Vehicle Handbook (8th ed. 2024, https://www.drivedubai.ae/public/uploads/downloads/20240612110831RTA-Handbook-Light-Motor-Vechicle-English.pdf, and 2021 ed. https://www.drivedubai.ae/public/uploads/downloads/20210128140116RTA-Handbook-Light-Motor-Vechicle-English.pdf): overtake bike and motorcycle riders only if you can move left safely leaving at least one metre (confirmed via search snippet of the handbook). The 1.5 m figure is only in the undated Driving Safely in Dubai booklet (https://licensing.rta.ae/handbook/DrivingSafelyInDubaiEN.pdf) and matches the UK Highway Code 1.5 m rule; no Dubai legislation found that sets a passing distance",
+   "patch": {
+    "action": "خفف السرعة واترك الدراجات تعبر أولا، وعند تجاوز راكب دراجة اترك مسافة جانبية لا تقل عن متر واحد، وأكثر كلما زادت سرعتك",
+    "uae_note": "كتيب هيئة الطرق للمركبات الخفيفة يطلب ترك متر واحد على الأقل عند تجاوز راكب الدراجة، ودليل القيادة الآمنة بدبي ينصح بمتر ونصف، فكلما كانت المسافة أكبر كان أأمن",
+    "src": [
+     "S4",
+     "S1",
+     "S2",
+     "S12"
+    ]
+   },
+   "confidence": "high"
+  },
+  {
+   "file": "content/signs.json",
+   "id": "w-cyclists",
+   "severity": "misleading",
+   "problem": "Action says at least 1.5 m, contradicting the 1 m taught in q_rules, q_safety, scenarios and fig-bike-gap",
+   "evidence": "RTA Light Motor Vehicle Handbook (8th ed. 2024, https://www.drivedubai.ae/public/uploads/downloads/20240612110831RTA-Handbook-Light-Motor-Vechicle-English.pdf, and 2021 ed. https://www.drivedubai.ae/public/uploads/downloads/20210128140116RTA-Handbook-Light-Motor-Vechicle-English.pdf): overtake bike and motorcycle riders only if you can move left safely leaving at least one metre (confirmed via search snippet of the handbook). The 1.5 m figure is only in the undated Driving Safely in Dubai booklet (https://licensing.rta.ae/handbook/DrivingSafelyInDubaiEN.pdf) and matches the UK Highway Code 1.5 m rule; no Dubai legislation found that sets a passing distance",
+   "patch": {
+    "action": "خفف السرعة وانتبه للدراجات، وعند تجاوز دراجة اترك مسافة جانبية لا تقل عن متر واحد، وأكثر كلما زادت سرعتك"
+   },
+   "confidence": "high"
+  },
+  {
+   "file": "content/scenarios_hazard.json",
+   "id": "hz-007",
+   "severity": "minor",
+   "problem": "Notes describe the 1 m vs 1.5 m gap as an open conflict; it is now settled on 1 m",
+   "evidence": "RTA Light Motor Vehicle Handbook (8th ed. 2024, https://www.drivedubai.ae/public/uploads/downloads/20240612110831RTA-Handbook-Light-Motor-Vechicle-English.pdf, and 2021 ed. https://www.drivedubai.ae/public/uploads/downloads/20210128140116RTA-Handbook-Light-Motor-Vechicle-English.pdf): overtake bike and motorcycle riders only if you can move left safely leaving at least one metre (confirmed via search snippet of the handbook). The 1.5 m figure is only in the undated Driving Safely in Dubai booklet (https://licensing.rta.ae/handbook/DrivingSafelyInDubaiEN.pdf) and matches the UK Highway Code 1.5 m rule; no Dubai legislation found that sets a passing distance",
+   "patch": {
+    "notes": "seed 18, H49. كتيب هيئة الطرق للمركبات الخفيفة: متر واحد على الأقل، وهو الرقم المعتمد في كل الملفات، ودليل القيادة الآمنة بدبي ينصح بمتر ونصف، ومن يترك مسافة أكبر يلتزم بالاثنين"
+   },
+   "confidence": "high"
+  },
+  {
+   "file": "content/scenarios_hazard.json",
+   "id": "nt-001",
+   "severity": "minor",
+   "problem": "Notes point to an open conflict (HANDOFF stage 5); it is now settled on 1 m",
+   "evidence": "RTA Light Motor Vehicle Handbook (8th ed. 2024, https://www.drivedubai.ae/public/uploads/downloads/20240612110831RTA-Handbook-Light-Motor-Vechicle-English.pdf, and 2021 ed. https://www.drivedubai.ae/public/uploads/downloads/20210128140116RTA-Handbook-Light-Motor-Vechicle-English.pdf): overtake bike and motorcycle riders only if you can move left safely leaving at least one metre (confirmed via search snippet of the handbook). The 1.5 m figure is only in the undated Driving Safely in Dubai booklet (https://licensing.rta.ae/handbook/DrivingSafelyInDubaiEN.pdf) and matches the UK Highway Code 1.5 m rule; no Dubai legislation found that sets a passing distance",
+   "patch": {
+    "notes": "seed 32, H36, H37, H49. كتيب هيئة الطرق للمركبات الخفيفة: متر واحد على الأقل، وهو الرقم المعتمد في كل الملفات، ودليل القيادة الآمنة بدبي ينصح بمتر ونصف، ومن يترك مسافة أكبر يلتزم بالاثنين"
+   },
+   "confidence": "high"
+  },
+  {
+   "file": "content/scenarios_people.json",
+   "id": "pd-006",
+   "severity": "minor",
+   "problem": "Notes say stage 5 will check the 1 m vs 1.5 m conflict (now settled on 1 m). Also the explain has a grammar error: \"لم تكفي\" must be jussive \"لم تكف\"",
+   "evidence": "RTA Light Motor Vehicle Handbook (8th ed. 2024, https://www.drivedubai.ae/public/uploads/downloads/20240612110831RTA-Handbook-Light-Motor-Vechicle-English.pdf, and 2021 ed. https://www.drivedubai.ae/public/uploads/downloads/20210128140116RTA-Handbook-Light-Motor-Vechicle-English.pdf): overtake bike and motorcycle riders only if you can move left safely leaving at least one metre (confirmed via search snippet of the handbook). The 1.5 m figure is only in the undated Driving Safely in Dubai booklet (https://licensing.rta.ae/handbook/DrivingSafelyInDubaiEN.pdf) and matches the UK Highway Code 1.5 m rule; no Dubai legislation found that sets a passing distance; Arabic grammar: لم + المضارع المعتل الآخر يحذف حرف العلة",
+   "patch": {
+    "notes": "كتيب هيئة الطرق للمركبات الخفيفة: متر واحد على الأقل، وهو الرقم المعتمد في كل الملفات، ودليل القيادة الآمنة بدبي ينصح بمتر ونصف، ومن يترك مسافة أكبر يلتزم بالاثنين",
+    "explain": "لا تتجاوز الدراجة إلا إذا استطعت الابتعاد عنها يسارا بأمان تاركا مترا واحدا على الأقل\nإذا كانت هناك سيارة مقابلة أو لم تكف المساحة فابق خلفها حتى يصبح التجاوز آمنا"
+   },
+   "confidence": "high"
+  },
+  {
+   "file": "content/q_law.json",
+   "id": "law-card-030",
+   "severity": "misleading",
+   "problem": "The law card gives only the SDI figure (about 100 m) with key \"100 متر\", while q_safety (safety-card-035, safety-emergency-022, safety-emergency-025) teaches 50 m from the RTA Driving Safely booklet for Dubai. A Dubai learner sees two different single numbers. The card should name both, like safety-card-035. (q_law has no source for the RTA booklet: add it to q_law sources, e.g. as S46 \"Driving Safely in Dubai, 1st ed., RTA Licensing Agency\" https://licensing.rta.ae/handbook/DrivingSafelyInDubaiEN.pdf, and cite it in src)",
+   "evidence": "Research note research/safety.md C2: RTA Driving Safely (S2) 50 m, SDI handbook (S56) about 100 m, RoadSafetyUAE at least 100 m on highways; no metre figure in Federal Decree-Law 14/2024",
+   "patch": {
+    "body": "على الطريق السريع ادخل إلى كتف الطريق، شغل إشارات التحذير، وابتعد مع الركاب عن حركة السير\nليلا على طريق غير منار أو في رؤية ضعيفة نبه غيرك بأنوار الموضع أو المثلث العاكس\nمسافة المثلث: دليل القيادة الآمنة من هيئة الطرق في دبي يذكر 50 مترا، ودليل معهد الشارقة للسياقة يذكر حوالي 100 متر، وعلى الطرق السريعة المسافة الأبعد أأمن",
+    "key": "50 م (دبي) و100 م (الشارقة)"
+   },
+   "confidence": "high"
+  },
+  {
+   "file": "content/q_law.json",
+   "id": "law-accidents-015",
+   "severity": "misleading",
+   "problem": "Keyed 100 m (SDI handbook) but tagged for both exams, while safety-emergency-022 keys 50 m (RTA) tagged dubai only. A Dubai candidate practising both would learn two answers to the same question. Tag this one sharjah only, mirroring safety-emergency-022",
+   "evidence": "research/safety.md C2 (RTA 50 m vs SDI about 100 m); safety-emergency-022 exam [\"dubai\"]",
+   "patch": {
+    "exam": [
+     "sharjah"
+    ]
+   },
+   "confidence": "high"
+  },
+  {
+   "file": "content/q_rules.json",
+   "id": "rules-card-078",
+   "severity": "misleading",
+   "problem": "Says hazard lights are for emergencies only \"such as breakdown or emergency stop\" (key \"للطوارئ فقط\"), implying never while moving. q_safety (safety-card-002 body, safety-emergency-002, safety-hazard-036, safety-card-037 brake failure, safety-emergency-015 stuck throttle), scenarios hz-011 and em-001, and markings ev-hazard-lights all teach that they also warn others of a sudden danger ahead or an emergency while still moving. Align the wording so the learner is not surprised by hz-011 or safety-hazard-036",
+   "evidence": "research/safety.md H4 and C5 (Abu Dhabi Police allow hazard lights to warn of a real danger; RTA LMV lists them in aquaplaning/emergency steps); Khaleej Times 2025 https://www.khaleejtimes.com/uae/weather/driving-fog-hazard-lights-tips",
+   "patch": {
+    "body": "أضواء التحذير للتوقف الاضطراري والتعطل والحوادث، أو لتنبيه من خلفك إلى خطر مفاجئ أمامك\nليست للقيادة في المطر أو الضباب، وتشغيلها أثناء السير في الضباب مخالفة",
+    "key": "للطوارئ فقط، لا للضباب"
+   },
+   "confidence": "medium"
+  },
+  {
+   "file": "content/q_safety.json",
+   "id": "safety-card-002",
+   "severity": "minor",
+   "problem": "Title \"الفلاشر للوقوف فقط\" contradicts its own body (also for emergencies and sudden danger) and safety-card-037, safety-emergency-015, safety-hazard-036 and hz-011, which use hazard lights while still moving",
+   "evidence": "Same as rules-card-078",
+   "patch": {
+    "title": "الفلاشر ليست للسير في الضباب"
+   },
+   "confidence": "high"
+  },
+  {
+   "file": "content/q_rules.json",
+   "id": "rules-lights-horn-005",
+   "severity": "minor",
+   "problem": "Notes hedge (\"بعض المصادر تعتبره مخالفة\") while q_safety (safety-card-002, safety-weather-002) and wx-002 state the Abu Dhabi Police fine as fact (500 AED and 4 black points). Make the note agree",
+   "evidence": "Gulf News 2018 (q_safety S52) https://gulfnews.com/uae/transport/dh500-fine-and-black-points-for-driving-with-hazard-lights-on-during-fog-in-uae ; Khaleej Times 2025 (q_rules S23)",
+   "patch": {
+    "notes": "شرطة أبوظبي تخالف على تشغيلها أثناء السير في الضباب: 500 درهم و4 نقاط سوداء"
+   },
+   "confidence": "medium"
+  }
+ ],
+ "cross_file": [
+  "DECISION following distance (conflict 1): use the RTA Light Motor Vehicle Handbook everywhere: at least 2 s in good conditions, 4 s in rain (RTA Arabic handbook), at least double (4 s or more) in fog and poor visibility (Abu Dhabi Police, SDI). Reason: the Dubai knowledge test is built on the LMV handbook; 3 s / 5 s come from RoadSafetyUAE (NGO, copied from US DMV), the undated Driving Safely booklet and press tips. Already correct: q_rules rules-card-038/039/040, rules-distance-002/003/004/012/013, roadtest-roadtest-031, exams.json speed tip, scenarios rd-013..017, wx-004, safety-card-008, safety-weather-031, fig-gap-weather, fig-two-second. Patch: safety-card-003, safety-weather-008, safety-weather-032 (rewritten), plus stale notes in wx-004, rd-013, rd-015, rd-016, rd-017. URLs: https://gulfnews.com/living-in-uae/transport/dubai-tailgating-fine-rules-1.500083210 , https://gulfnews.com/uae/dont-use-hazard-lights-and-double-safety-distance-during-fog-abu-dhabi-police-advises-1.82879145 , https://www.drivedubai.ae/public/uploads/downloads/20240612110831RTA-Handbook-Light-Motor-Vechicle-English.pdf , https://www.roadsafetyuae.com/tailgating/ (the NGO 3 s source that is not used)",
+  "DECISION cyclist overtaking gap (conflict 2): at least 1 m, from the RTA Light Motor Vehicle Handbook (8th ed. 2024; search snippet confirms \"only overtake bike riders and motorcycle riders if you can safely move to the left, leaving at least one metre clearance\"). The 1.5 m in the undated Driving Safely in Dubai booklet is kept only as advice in the p-give-way-cyclists uae_note (\"more space is safer\"), so no file states 1.5 m as the minimum. Already correct: rules-card-031, rules-card-067, rules-overtaking-007, rules-vulnerable-007, rules-vulnerable-014, safety-card-026, safety-night-014, safety-hazard-021, hz-007, nt-001, pd-006, fig-bike-gap. Patch: signs.json p-give-way-cyclists (action, uae_note, src add S1), w-cyclists (action), plus notes in hz-007, nt-001, pd-006. Not a conflict: safety-card-027 and safety-hazard-032 use 1.5 m for passing a truck, a different rule. URLs: https://www.drivedubai.ae/public/uploads/downloads/20240612110831RTA-Handbook-Light-Motor-Vechicle-English.pdf , https://www.drivedubai.ae/public/uploads/downloads/20210128140116RTA-Handbook-Light-Motor-Vechicle-English.pdf , https://licensing.rta.ae/handbook/DrivingSafelyInDubaiEN.pdf",
+  "DECISION warning triangle: keep both figures, tied to their exam: 50 m (RTA Driving Safely, Dubai) and about 100 m (SDI handbook, Sharjah). safety-card-035 already shows both and safety-emergency-022 is dubai only; patch law-card-030 to show both and tag law-accidents-015 sharjah only",
+  "DECISION hazard lights: one wording everywhere: for emergency stops, breakdowns, crashes, or to warn of a sudden danger ahead; never as a driving light in rain, fog or dust (fine 500 AED and 4 points in Abu Dhabi). Patch rules-card-078, safety-card-002 title, rules-lights-horn-005 notes",
+  "Checked and consistent across files: speed limits (40/60/80 city, 100/120 highway, min 60), stopping distances (33 m at 60, 87 m at 100, 130 m at 120), yard emergency stop (3/6/11 m at 20/30/40), yard times (5/3/2 min), hill start (30 cm, 60 s), 4 yard penalty points, 24 black points in 12 months (3/6/12 months), 8-point course, red light (1000 AED, 12 points, 30 days, Dubai release 50,000), emergency vehicles (3000, 6, 30 days), school bus (5 m, 1000 AED, 10 points, both directions on undivided roads, same direction only on divided roads), parking 15 m from junctions, accident report within 3 hours, licence age 17, exam 40/30 Dubai and 25/18/20 min Sharjah, tyre tread 1.5 mm and 5-year tyre age, phone 800 AED 4 points, flashing amber meaning, give-way to the left at unmarked equal junctions, overtaking on the left only, dipped lights in fog",
+  "Kept as intentional: bus-lane fine 600 AED (RTA Dubai) vs 400 AED (federal list) is explained in both markings.json mk-bus-lane and markings-markings-027 notes; phone risk x4 (RTA) vs x9 fatal (SDI) are different measures with emirate tags"
+ ],
+ "unresolved": [
+  "Could not open the RTA handbooks or Driving Safely booklet directly (drivedubai.ae, edi-uae.com, licensing.rta.ae, gulfnews.com and dlp.dubai.gov.ae are blocked by the egress proxy). The 1 m figure is confirmed by a search snippet of the LMV handbook; the 1.5 m and 3 s figures in Driving Safely rest on the research notes and a search summary",
+  "Tailgating penalty: search results (What's On 2025-08 https://whatson.ae/2025/08/stay-safe-avoid-fines-dubai-police-crack-down-on-tailgating/ and Gulf News 2026) report Dubai Police applying 400 AED, 4 black points AND 30-day impoundment; law-card-019 lists only 400 AED and 4 points. Law auditor should check whether impoundment now applies (possibly Dubai-specific)"
+ ]
+}

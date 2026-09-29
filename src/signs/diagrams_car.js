@@ -450,9 +450,9 @@
     s += line(cx, cy + 2.3 * sc + 6, cx, 97, C.gold, 1.5, { 'stroke-dasharray': '3.5 3' });
     s += carTop(cx, cy, sc, { me: true, hazard: true });
     s += path('M108.2,98.6L114.2,109L102.2,109Z', '#FFFFFF', { stroke: C.red, 'stroke-width': 2.4, 'stroke-linejoin': 'round' });
-    // everyone out, waiting beyond the barrier, ahead of the car
-    s += personTop(137, 12, 2.6, '#2E5A9A') + personTop(149, 17, 2.6, '#8A3A34');
-    s += badge(true, 143, 34, 6);
+    // everyone out, waiting beyond the barrier and BEHIND the car (upstream), so a car hitting it cannot push it into them
+    s += personTop(137, 64, 2.6, '#2E5A9A') + personTop(149, 70, 2.6, '#8A3A34');
+    s += badge(true, 143, 88, 6);
     return K.svg(s, VB, lab);
   });
 

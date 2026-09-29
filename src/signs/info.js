@@ -445,7 +445,7 @@
     return K.svg(s, '0 0 122 100', label);
   });
 
-  reg('g-distance', 'لوحة المسافات', function (o, label) {
+  reg('g-distance', 'لوحة المسافات إلى المدن', function (o, label) {
     var s = AR('جبل علي', 46, 17.8, 16) + LA('Jebel Ali', 46, 40.5, 13.5) + AR('أبوظبي', 46, 63.9, 16) + LA('Abu Dhabi', 46, 86.6, 13.5);
     [['25', 28.3], ['120', 72.9]].forEach(function (r) {
       s += LA(r[0], 125, r[1], 24, WH, 700, 'end') + AR('كم', 136.5, r[1] - 7.3, 9) + LA('km', 136.5, r[1] + 5, 8.5);

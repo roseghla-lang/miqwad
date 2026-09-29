@@ -1,0 +1,1 @@
+{"findings": [{"file": "content/q_rules.json", "id": "rules-distance-005", "severity": "minor", "patch": {"explain_fig": ["fig-gap-weather"]}}, {"file": "content/q_rules.json", "id": "rules-card-021", "severity": "minor", "patch": {"title": "أفسح الطريق فورا"}}]}

@@ -1,0 +1,85 @@
+{
+  "auditor": "roadtest (q_roadtest.json, exams.json, yard.js step texts)",
+  "checked": {"questions": 72, "cards": 28, "other": 150},
+  "findings": [
+    {
+      "file": "content/exams.json",
+      "id": "emirates.sharjah.yard.notes",
+      "severity": "misleading",
+      "problem": "The app says the Sharjah yard (parking) test has the same 5 check items as Dubai. SDI's own car-driving page (S25) says the internal-yard parking test covers vehicle use, right and left turns, U-turn, lane change, three-point turn, long reverse (S), hill, 60 degree and 90 degree parking. The 5-item list comes only from the SDI check-items page (S26). A Sharjah learner may be asked for a three-point turn or a long reverse and not expect it.",
+      "evidence": "SDI Car Driving Courses https://www.sdi.ae/en/car-driving/ (parking test description, seen in a 2026-09 search result); SDI Parking Test check items https://www.sdi.ae/en/parking-test-check-items",
+      "patch": {"value": "الاختبار في الساحة الداخلية للمعهد ومدته حوالي 20 دقيقة\nمعهد الشارقة نشر 7 أخطاء ترسبك فورا، وهي نفس قائمة معهد الإمارات في دبي\nصفحة المعهد عن دورات السيارة تذكر في اختبار المواقف أيضا الانعطاف يمينا ويسارا والدوران للخلف وتغيير المسار والدوران بثلاث حركات والرجوع لمسافة طويلة، فاسأل مدربك عن قائمة التمارين في يوم اختبارك\nفي الفرملة المفاجئة النظر في المرآة قبل الفرملة غير مطلوب"},
+      "confidence": "medium"
+    },
+    {
+      "file": "content/exams.json",
+      "id": "emirates.sharjah.process[5].desc",
+      "severity": "misleading",
+      "problem": "Lists only the Dubai-style five items for the Sharjah parking test; SDI's car-driving page also lists turns, U-turn, lane change, three-point turn and long reverse.",
+      "evidence": "SDI Car Driving Courses https://www.sdi.ae/en/car-driving/",
+      "patch": {"value": "في الساحة الداخلية للمعهد، حوالي 20 دقيقة، ويشمل الموقف الموازي والعمودي والمائل 60 درجة والمنحدر والفرملة المفاجئة، وصفحة المعهد تذكر أيضا الانعطاف والدوران للخلف والدوران بثلاث حركات والرجوع لمسافة طويلة، وهناك 7 أخطاء ترسبك فورا"},
+      "confidence": "medium"
+    },
+    {
+      "file": "content/q_roadtest.json",
+      "id": "roadtest-card-001",
+      "severity": "misleading",
+      "problem": "States as high-confidence fact that the yard test in both Dubai and Sharjah is exactly 5 exercises. That is firm for the Dubai smart yard (RTA 2019, Excellence 2025), but SDI's own course page describes a wider Sharjah parking test (three-point turn, long reverse, turns, U-turn).",
+      "evidence": "RTA smart yard news (S4); Excellence Smart Yard 2025 (S15); SDI car-driving page (S25)",
+      "patch": {"body": "في الساحة الذكية في دبي 5 تمارين: الموقف الموازي، وموقف الكراج بالرجوع، والموقف المائل 60 درجة، والانطلاق على المنحدر، والفرملة المفاجئة، وفي الشارقة تشمل قائمة المعهد هذه التمارين، وقد يطلب الفاحص أيضا الدوران بثلاث حركات أو الرجوع لمسافة طويلة"},
+      "confidence": "medium"
+    },
+    {
+      "file": "content/q_roadtest.json",
+      "id": "roadtest-yard-001",
+      "severity": "unclear",
+      "problem": "Asks for the number of yard exercises 'in Dubai and Sharjah' with key 5. For Sharjah, SDI's car-driving page lists more manoeuvres, so the number is not settled there. Limit the question to the Dubai smart yard.",
+      "evidence": "SDI Car Driving Courses https://www.sdi.ae/en/car-driving/; RTA smart yard (S4)",
+      "patch": {"q": "كم تمرينا في اختبار الساحة الذكية (الباركنج) لرخصة السيارة في دبي؟", "exam": ["dubai"], "src": ["S4", "S15"]},
+      "confidence": "medium"
+    },
+    {
+      "file": "content/exams.json",
+      "id": "emirates.dubai.process[5].desc",
+      "severity": "minor",
+      "problem": "Says the institute runs both a yard assessment and a road assessment before 'the RTA tests', which suggests that the road assessment comes before the RTA yard test. The RTA handbook stages (and process[7] in this same file) put the road assessment after the yard test and before freeway training and the road test.",
+      "evidence": "RTA Light Motor Vehicle Handbook stage 5: yard test, road assessment, freeway (S3); EDI step-by-step PDF (S14)",
+      "patch": {"value": "قبل كل اختبار من اختبارات الهيئة يجري المعهد تقييما داخليا: تقييم الساحة قبل اختبار الساحة، وتقييم الطريق بعد اختبار الساحة وقبل اختبار الطريق، ولا يحجز لك المعهد موعد الهيئة قبل أن تنجح في التقييم"},
+      "confidence": "medium"
+    },
+    {
+      "file": "src/yard.js",
+      "id": "pre-drive-check:ind",
+      "severity": "minor",
+      "problem": "The pre-drive exercise asks the learner to switch on the left indicator (step 'ind') before the mirror check (step 'obs'). Everywhere else (exams.json road_guide[1], roadtest-roadtest-003, card-022) the routine is mirror, then signal, then blind-spot look. The simulator teaches a different order from the one the lessons teach and the examiner expects.",
+      "evidence": "RTA handbook observation routine (S3); SDI handbook lane change = mirrors, signal, blind spot (S29)",
+      "patch": {},
+      "confidence": "medium"
+    },
+    {
+      "file": "src/yard.js",
+      "id": "reverse-bay:drive",
+      "severity": "minor",
+      "problem": "Tells the learner to pass the bays about 2 m away, but exams.json yard_guides[2].steps[0].ref and roadtest-card-015 say about 1 m (Bin Yaber, S36). One of them should change so the learner gets one reference.",
+      "evidence": "Bin Yaber garage parking guide (S36): about 1 m; H13 says 1.5 m",
+      "patch": {},
+      "confidence": "medium"
+    }
+  ],
+  "cross_file": [
+    "Hill start technique: src/yard.js hill-start step 'go' says move from brake to accelerator and release the handbrake while already pressing the accelerator. exams.json yard_guides[4].steps[2] and [3] and roadtest-yard-021 say release the handbrake with the foot still on the brake, then move to the accelerator. Both methods are used by instructors, but the app teaches two different sequences. Pick one (the yard.js method holds the car better on a slope) or present the other as a variation.",
+    "src/yard.js RULES: 'wheels_out' is 2 demerit points and 'touch_line' is 1 point, not fatal. But exams.json (all yard components fail[0]), roadtest-card-004 and roadtest-yard-004 teach that any part of the car outside the bay lines, even the mirror, is an immediate fail (EDI and SDI lists). In test mode the simulator can pass a learner who would fail the real test.",
+    "src/yard.js pre-drive-check: the step order teaches signal before mirrors (see finding). road_guide[1] in exams.json teaches mirror, then signal, then look.",
+    "Garage approach distance: yard.js reverse-bay 'drive' says about 2 m; exams.json yard_guides[2] and roadtest-card-015 say about 1 m.",
+    "Sharjah yard content: exams.json emirates.sharjah.yard.components and roadtest-card-001 and roadtest-yard-001 treat Sharjah as the same 5 items as Dubai, but yard.js already offers three-point-turn as a practice exercise. If SDI's wider list is confirmed, three-point-turn should not be labelled practice-only for Sharjah."
+  ],
+  "unresolved": [
+    "Dubai theory time limit (30 minutes): no official source. Only practice sites (YallaPass, Wathim) give 30 minutes for the 40-question version. The file already hedges this in notes, and that is correct.",
+    "Dubai 40 questions and 30 to pass: a web search in 2026-09 agrees (RTA service page 510 quoted by several sites). rta.ae itself was blocked by the egress proxy, so I could not read it first-hand.",
+    "Sharjah theory lectures: exams.json says 5 lectures in one day (SDI page). A 2026 search summary of SDI-related pages mentions '8 mandatory theory lectures'. I could not open sdi.ae (egress blocked), so I could not settle this.",
+    "Dubai practical training limit 'max 4 hours a day and 8 hours a week' (exams.json emirates.dubai.process[4]) is sourced to the EDI Youth Driving Course page (S43) and may apply only to that course. Other search results mention 1 to 2 hours a day. I could not verify it (edi-uae.com blocked).",
+    "Dubai minimum age: the RTA service page 617 (search snippet, 2026) still says traffic file at 17.5 and licence issued at 18, even though Decree-Law 14/2024 sets 17. The app hedges this correctly with medium confidence.",
+    "Emergency brake distances 3/6/11 m 'from the moment you press the brake': the EDI/SDI list gives the distances but I could not confirm the reference point (brake press or signal). The brake-press reading is the only physically possible one at 20 km/h, so I left it.",
+    "Sharjah practical classes: 50 classes of 40 minutes was confirmed by a 2026 search of sdi.ae."
+  ]
+}

@@ -1,0 +1,259 @@
+{
+ "auditor": "signs-markings-figs",
+ "checked": {
+  "questions": 0,
+  "cards": 0,
+  "other": 319
+ },
+ "findings": [
+  {
+   "file": "content/signs.json",
+   "id": "w-merge-right",
+   "severity": "wrong",
+   "problem": "The pictogram (main road with a branch joining from the lower right) is the Vienna/RTA 'traffic merges from the right ahead' sign: you are on the main road and OTHER vehicles join it. Name and meaning say the opposite (your road merges and you must merge), and it breaks symmetry with w-merge-left, which is correctly 'vehicles merge from the left'. Note: with the fixed meaning it overlaps i-lane-joining; the two list each other in `confuse`, so an auto question can show two correct names. Drop them from each other's confuse lists.",
+   "evidence": "EDI guidance chart (RTA-licensed) lists this group as 'Traffic merges from the left ahead' (web search snippet of edi-uae.com 20191126 chart); Vienna Convention merging-traffic warning sign; the file's own draw text",
+   "patch": {
+    "name": "مركبات تندمج من اليمين",
+    "meaning": "أمامك مكان تدخل فيه مركبات من طريق آخر إلى طريقك من جهة اليمين",
+    "action": "انتبه للمركبات الداخلة من اليمين، ولا تسرع لتسبقها، واترك لها مجالا إذا أمكن"
+   },
+   "confidence": "high"
+  },
+  {
+   "file": "content/signs.json",
+   "id": "m-headlights-on",
+   "severity": "misleading",
+   "problem": "The draw text (and the drawn symbol) shows horizontal beam lines, which is the ISO main-beam (high beam) symbol. Tunnels and low-visibility sections need DIPPED headlights; high beam in a tunnel dazzles others. The action does not say which lights, so the picture teaches high beam. Redraw with beam lines slanting DOWN (ISO 7000-0083 dipped beam) and say dipped beam in the action. The project's own fig-beam-low/fig-beam-high use the same low/high distinction.",
+   "evidence": "ISO 7000-0082 (main beam, horizontal lines) vs 0083 (dipped beam, lines slanting down); dipped headlights are the rule in tunnels (general driving guidance, e.g. UK/EU tunnel rules; no UAE text says high beam). Draw field cannot be patched here: drawing agent must change src/signs/mandatory.js m-headlights-on",
+   "patch": {
+    "action": "شغل الأضواء الأمامية المنخفضة فورا، ولا تطفئها حتى تخرج من المنطقة مثل النفق",
+    "meaning": "عليك تشغيل الأضواء الأمامية المنخفضة للمركبة من هذه النقطة"
+   },
+   "confidence": "medium"
+  },
+  {
+   "file": "content/signs.json",
+   "id": "m-go-this-way",
+   "severity": "unclear",
+   "problem": "The name 'يجب أن تسير بهذا الاتجاه' is true of every blue mandatory direction sign. The auto question generator fills distractors from the same category (mandatory) and from confuse (m-turn-right, m-keep-right), so for m-turn-right / m-ahead-only / m-turn-left pictures this option can appear and is also correct; and for this sign's picture (blue rectangle, arrow right) the option 'السير باتجاه اليمين فقط' is also correct. On the shape question: keep the rectangle. The RTA/institute charts put 'You must go this way' in the CONTROL signs group together with Stop, Give Way, Give way to pedestrians and No Entry, separate from the blue-circle mandatory group, which fits a blue rectangular arrow board rather than a blue disc (a disc with a right arrow is already m-turn-right). Consider cat 'priority'/control and a name that includes the board shape.",
+   "evidence": "GMDC Guidance Chart (gmdc.ae, search snippet): 'CONTROL SIGNS Stop, You must give way to pedestrians, Give Way, No Entry, You must go this way'; RTA Arabic 2012 captions list يجب أن تسير بهذا الاتجاه separately from يجب أن تسير باتجاه اليمين فقط (research/signs.md finding 2)",
+   "patch": {
+    "name": "لوحة الاتجاه الإجباري المستطيلة"
+   },
+   "confidence": "medium"
+  },
+  {
+   "file": "content/signs.json",
+   "id": "g-distance",
+   "severity": "unclear",
+   "problem": "Name 'لوحة المسافات' is almost identical to x-distance 'لوحة المسافة', and each lists the other in `confuse`. In 'ماذا تعني هذه الإشارة؟' the learner sees two options that differ only by singular/plural, so both look right.",
+   "evidence": "src/app.js distract(): confuse ids are used first as named options",
+   "patch": {
+    "name": "لوحة المسافات إلى المدن"
+   },
+   "confidence": "high"
+  },
+  {
+   "file": "content/signs.json",
+   "id": "x-distance",
+   "severity": "unclear",
+   "problem": "Pair of g-distance (see that finding): rename so the two options are distinguishable.",
+   "evidence": "src/app.js distract()",
+   "patch": {
+    "name": "لوحة المسافة إلى الخطر"
+   },
+   "confidence": "high"
+  },
+  {
+   "file": "content/signs.json",
+   "id": "w-dead-end-ahead",
+   "severity": "unclear",
+   "problem": "Names 'طريق مسدود أمامك' and i-dead-end 'طريق غير نافذ' say the same thing, and each is in the other's `confuse`, so an auto sign-to-meaning question has two correct options. Either remove them from each other's confuse lists or make the warning version's name say it is a warning.",
+   "evidence": "src/app.js distract(); meanings of both items are the same",
+   "patch": {
+    "name": "تحذير: طريق مسدود أمامك"
+   },
+   "confidence": "medium"
+  },
+  {
+   "file": "content/signs.json",
+   "id": "w-tunnel",
+   "severity": "unclear",
+   "problem": "'نفق أمامك' (warning triangle) and i-tunnel 'بداية النفق' (blue board) list each other in confuse; for either picture both names are defensible. Remove them from each other's confuse, or accept only as m2sign distractors.",
+   "evidence": "src/app.js distract()",
+   "patch": {},
+   "confidence": "medium"
+  },
+  {
+   "file": "content/signs.json",
+   "id": "w-max-height-ahead",
+   "severity": "unclear",
+   "problem": "'حد الارتفاع أمامك' (triangle) vs r-max-height 'حد الارتفاع المسموح به' (red ring) are in each other's confuse and both names fit both pictures. Make the prohibitory name say it is a ban.",
+   "evidence": "src/app.js distract()",
+   "patch": {
+    "name": "تحذير: ارتفاع محدود أمامك"
+   },
+   "confidence": "medium"
+  },
+  {
+   "file": "content/signs.json",
+   "id": "r-max-height",
+   "severity": "unclear",
+   "problem": "Pair of w-max-height-ahead: the name should read as a prohibition so it cannot also describe the warning triangle.",
+   "evidence": "src/app.js distract()",
+   "patch": {
+    "name": "ممنوع مرور المركبات الأعلى من الرقم"
+   },
+   "confidence": "medium"
+  },
+  {
+   "file": "content/signs.json",
+   "id": "r-no-overtaking-trucks",
+   "severity": "unclear",
+   "problem": "The name 'ممنوع تجاوز الشاحنات' reads naturally as 'you may not overtake trucks' (trucks as object). The sign (red lorry on the left) means trucks are not allowed to overtake, which is what `meaning` says. A beginner will pick the wrong reading.",
+   "evidence": "Vienna Convention C,13ba (no overtaking by goods vehicles); the item's own meaning",
+   "patch": {
+    "name": "ممنوع على الشاحنات التجاوز"
+   },
+   "confidence": "high"
+  },
+  {
+   "file": "content/signs.json",
+   "id": "p-give-way-cyclists",
+   "severity": "misleading",
+   "problem": "The action and uae_note teach 1.5 m as an RTA requirement, but the app's own lesson cards (q_rules rules-card-031 and rules-card-067, fig-bike-gap) teach 'at least 1 m' citing the RTA LMV handbooks. A learner gets two different numbers. I could not open the RTA 'Driving Safely in Dubai' booklet (S2) to confirm the 1.5 m; the 1.5 m figure found online is a safe-cycling campaign (Cycle Safe Dubai), not a rule with a fine. Align both files on one sourced figure; until then, state the handbook minimum and treat 1.5 m as advice.",
+   "evidence": "Gulf News 'Live and let live is message of safe-cycling advocates in UAE' (1.5 m is an advocacy call); q_rules.json rules-card-031/067 (1 m, src RTA LMV handbook 7th ed and 3rd ed Arabic)",
+   "patch": {
+    "action": "خفف السرعة واترك الدراجات تعبر أولا، وعند تجاوز راكب دراجة اترك مسافة جانبية واسعة لا تقل عن متر واحد",
+    "uae_note": "كتيب هيئة الطرق للمركبات الخفيفة يطلب ترك متر واحد على الأقل عند تجاوز راكب الدراجة، وحملات السلامة في دبي تنصح بـ 1.5 متر"
+   },
+   "confidence": "medium"
+  },
+  {
+   "file": "content/signs.json",
+   "id": "w-cyclists",
+   "severity": "misleading",
+   "problem": "Same 1.5 m vs 1 m contradiction as p-give-way-cyclists (q_rules cards teach 1 m).",
+   "evidence": "see p-give-way-cyclists",
+   "patch": {
+    "action": "خفف السرعة وانتبه للدراجات، وعند تجاوز دراجة اترك مسافة جانبية واسعة لا تقل عن متر واحد"
+   },
+   "confidence": "medium"
+  },
+  {
+   "file": "content/signs.json",
+   "id": "x-time",
+   "severity": "minor",
+   "problem": "The draw puts the days 'السبت - الخميس' on the plate, the pre-2022 pattern with Friday free. Since the 2022 weekend change, Dubai paid parking is charged Monday to Saturday and is free on Sunday, so the picture shows an outdated example. Change the second line of the drawing to الاثنين - السبت, or drop the days line.",
+   "evidence": "RTA announcement Dec 2021/Jan 2022: paid parking free on Sundays, charged Monday to Saturday (widely reported, e.g. Khaleej Times, Gulf News 2022)",
+   "patch": {},
+   "confidence": "medium"
+  },
+  {
+   "file": "content/signs.json",
+   "id": "g-e-route",
+   "severity": "minor",
+   "problem": "Not settled from a Dubai source: all sources agree on a falcon emblem on blue signs, but the colours (blue fill, gold numerals) come only from the Abu Dhabi TR-538 standard. The uae_note is fine. Keep confidence at medium, or keep high only for the fact that E routes use a falcon emblem, not for the colours.",
+   "evidence": "Gulf News 2006 and AARoads/Wikipedia snippets: 'number within a falcon emblem'; no Dubai colour spec reachable",
+   "patch": {
+    "confidence": "medium"
+   },
+   "confidence": "medium"
+  },
+  {
+   "file": "content/signs.json",
+   "id": "g-d-route",
+   "severity": "minor",
+   "problem": "The D-route shield design is only partly confirmed: sources agree on a fort emblem with D and 2 or 3 digits on green Dubai signs; the colours in the draw (green fill, white numerals) were not confirmed by any source. The example is correct: D 94 is Jumeirah Beach Road (renamed King Salman bin Abdulaziz Al Saud Street).",
+   "evidence": "Wikipedia D 94 road / Dubai route numbering system (search snippets): 'emblem of a fort, the letter D and a two or three digit number'",
+   "patch": {
+    "confidence": "medium"
+   },
+   "confidence": "medium"
+  },
+  {
+   "file": "content/signs.json",
+   "id": "m-pedestrians-only",
+   "severity": "minor",
+   "problem": "The draw uses an adult holding a child's hand, which is the UK 'pedestrian zone' pictogram. The Vienna and RTA mandatory 'pedestrians only' disc shows a single walking pedestrian. This is a drawing detail only.",
+   "evidence": "Vienna Convention mandatory 'compulsory footpath' sign (single pedestrian); RTA charts follow the Vienna form",
+   "patch": {},
+   "confidence": "medium"
+  },
+  {
+   "file": "content/markings.json",
+   "id": "mk-chevron",
+   "severity": "minor",
+   "problem": "Open question on direction. The drawing (src/signs/markings.js, comment 'chevrons pointing in the direction of travel') puts the V apex DOWNSTREAM, away from approaching drivers. The US MUTCD, on which the cited Abu Dhabi TR-511 is based, requires the point of each gore chevron to face TOWARD approaching traffic. I could not read TR-511 section 657 itself or a Dubai source, so this is not proven for the UAE. The meaning and action text are fine.",
+   "evidence": "MUTCD 3B.24: 'Chevron markings shall be white, with the point of each chevron facing toward approaching traffic' (gore areas); research/markings.md S23 names 'chevron marking 657'",
+   "patch": {},
+   "confidence": "medium"
+  },
+  {
+   "file": "content/markings.json",
+   "id": "mk-broken-center",
+   "severity": "misleading",
+   "problem": "Meaning says the broken centre line may be crossed 'for overtaking only'. A broken centre line may also be crossed to turn left into a side road or entrance when safe. With 'فقط' the learner will reject a correct exam option about turning across it.",
+   "evidence": "RTA LMV handbook (S1) line rules: broken lines may be crossed when safe; Executive Regulations Art. 58 (S2) restricts only continuous lines",
+   "patch": {
+    "meaning": "يفصل بين اتجاهين متعاكسين في طريق غير مقسوم، ومسموح عبوره للتجاوز أو للانعطاف إذا كان الطريق أمامك خاليا وآمنا"
+   },
+   "confidence": "medium"
+  },
+  {
+   "file": "content/markings.json",
+   "id": "ev-emergency-lights",
+   "severity": "minor",
+   "problem": "Spelling: the imperative of أفسح needs the hamza (وأفسح), not وافسح.",
+   "evidence": "Arabic grammar (فعل رباعي أفسح)",
+   "patch": {
+    "action": "خفف السرعة وأفسح لها الطريق بالتزام الجانب الأيمن، وتوقف إذا لزم الأمر"
+   },
+   "confidence": "high"
+  },
+  {
+   "file": "content/markings.json",
+   "id": "mk-bus-lane",
+   "severity": "minor",
+   "problem": "Red bus lane colour confirmed for Dubai (RTA dedicated bus and taxi lanes are marked red, AED 600). The name 'مسار الحافلات الأحمر' makes the colour sound universal, but older and other-emirate bus lanes are bounded by solid yellow lines (RTA 2012, cited in signs i-bus-lane-start). The uae_note says Dubai; no text change is required. If a question asks 'what colour is a bus lane', scope it to Dubai.",
+   "evidence": "RTA 'Bus Lane' page; Gulf News 2021 Khalid bin Al Waleed St; Platinumlist/RTA 2025 six new lanes 'marked with a distinctive red colour'",
+   "patch": {},
+   "confidence": "high"
+  },
+  {
+   "file": "content/figs.json",
+   "id": "fig-bike-gap",
+   "severity": "misleading",
+   "problem": "The caption teaches 1 m while the sign catalogue (p-give-way-cyclists, w-cyclists) teaches 1.5 m. One of them must change. See p-give-way-cyclists.",
+   "evidence": "cross-file contradiction",
+   "patch": {},
+   "confidence": "high"
+  },
+  {
+   "file": "content/figs.json",
+   "id": "fig-tyre-tread",
+   "severity": "misleading",
+   "problem": "The caption says the minimum tread depth is 1.5 mm. The UAE inspection minimum reported for RTA testing is 1.6 mm (GSO standard). The same 1.5 mm is in q_rules.json line 808.",
+   "evidence": "Several UAE tyre and inspection guides citing RTA (mathyotyres.com, gcco.ae 2025/2026) say 1.6 mm. These are secondary, so confirm against an RTA/Tasjeel source before changing the question bank",
+   "patch": {
+    "name": "عمق نقشة الإطار 1.6 ملم على الأقل"
+   },
+   "confidence": "medium"
+  }
+ ],
+ "cross_file": [
+  "Cyclist passing gap: signs.json p-give-way-cyclists and w-cyclists say 1.5 m; q_rules.json rules-card-031 and rules-card-067 and figs.json fig-bike-gap say 1 m",
+  "Tyre tread minimum: figs.json fig-tyre-tread and q_rules.json (line ~808) say 1.5 mm; UAE inspection sources say 1.6 mm",
+  "m-headlights-on picture (high-beam symbol) conflicts with the dipped-beam rule taught with figs fig-beam-low and fig-fog-lights",
+  "Synonym pairs in confuse lists (x-distance/g-distance, w-dead-end-ahead/i-dead-end, w-tunnel/i-tunnel, w-max-height-ahead/r-max-height, w-merge-right/i-lane-joining once fixed) produce auto questions with two correct names; confuse is not a patchable field, so the lead must edit these lists",
+  "Drawing labels in src/signs/*.js reg() repeat the Arabic names; renamed items (w-merge-right, r-no-overtaking-trucks, g-distance, x-distance, m-go-this-way, max-height pair) need the label updated too"
+ ],
+ "unresolved": [
+  "E and D route shields: sources confirm a falcon emblem (E, blue signs) and a fort emblem (D, green signs), but no reachable Dubai source gives the shield colours; blue fill with gold numerals comes only from Abu Dhabi TR-538",
+  "m-go-this-way shape: charts place 'You must go this way' among CONTROL signs (with Stop, Give Way, No Entry), which supports the rectangle over a blue circle, but no image was viewable",
+  "mk-chevron direction: MUTCD (basis of Abu Dhabi TR-511) says the point faces approaching traffic; the current drawing points downstream; the UK TSM wording could not be read to decide Dubai practice",
+  "1.5 m cyclist gap: licensing.rta.ae (S2) blocked; online 1.5 m references are campaign advice (Cycle Safe Dubai), not a rule with a fine",
+  "p-give-way-oncoming / p-priority-over-oncoming arrow sides follow right-hand-traffic logic and match my memory of German Z208/Z308, not verified on a UAE image",
+  "Most official and institute PDFs (rta.ae, edi-uae.com, gmdc.ae, gulfnews.com, wikipedia) were blocked by the egress proxy in this session; only search snippets were available"
+ ]
+}

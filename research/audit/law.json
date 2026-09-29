@@ -1,0 +1,117 @@
+{
+ "auditor": "law (content/q_law.json: law, penalties, accidents, dubai-specific, sharjah-specific)",
+ "checked": {
+  "questions": 124,
+  "cards": 41,
+  "other": 0
+ },
+ "findings": [
+  {
+   "file": "content/q_law.json",
+   "id": "law-card-023",
+   "severity": "misleading",
+   "problem": "Says a child may sit in front if over 10 OR at least 145 cm. The rule (old executive regulation, fine row in the MR 178/2017 table) bans the front seat for a child aged 10 or under OR shorter than 145 cm, so both conditions must be met (older than 10 AND at least 145 cm). As written, a tall 8-year-old would seem allowed.",
+   "evidence": "Search summaries of the rule text: 'عدم السماح للطفل من سن العاشرة فما دون، أو من يقل طوله عن 145 سم، بالجلوس في المقعد الأمامي' (Al Khaleej 2022-04-21 https://www.alkhaleej.ae/2022-04-21/ ; Emarat Al Youm 2020-08-05 https://www.emaratalyoum.com/local-section/accidents/2020-08-05-1.1382928); Excellence Driving car-seat law page says both benchmarks must be met",
+   "patch": {
+    "body": "كل من في السيارة يربط الحزام، والمخالفة 400 درهم و4 نقاط\nالطفل لا يجلس في المقعد الأمامي إلا إذا تجاوز 10 سنوات وبلغ طوله 145 سم معا\nالطفل الذي عمره 4 سنوات فما دون يحتاج مقعد حماية مخصصا"
+   },
+   "confidence": "medium"
+  },
+  {
+   "file": "content/q_law.json",
+   "id": "law-penalties-023",
+   "severity": "misleading",
+   "problem": "Key is right (back seat) but the explanation repeats the OR condition (over 10 or 145 cm). The ban applies if the child is 10 or under OR shorter than 145 cm, so both are needed to sit in front.",
+   "evidence": "Same as law-card-023",
+   "patch": {
+    "explain": "الطفل لا يجلس في المقعد الأمامي إلا إذا تجاوز 10 سنوات وبلغ طوله 145 سم معا، ومخالفة ذلك غرامتها 400 درهم"
+   },
+   "confidence": "medium"
+  },
+  {
+   "file": "content/q_law.json",
+   "id": "law-accidents-015",
+   "severity": "misleading",
+   "problem": "Tagged for both exams but teaches the SDI figure (about 100 m) only. The Dubai RTA handbook says 50 m, and q_safety already splits this (safety-emergency-022 is Dubai only with 50 m). A Dubai learner who remembers 100 m from this item could miss the RTA question.",
+   "evidence": "q_safety.json safety-emergency-022 and safety-card-035 (RTA safe driving guide: 50 m); research/law.md S45 (SDI handbook p. 111: about 100 m)",
+   "patch": {
+    "exam": [
+     "sharjah"
+    ],
+    "notes": "الرقم من دليل معهد الشارقة للسياقة (2021)، أما دليل هيئة الطرق في دبي فيذكر 50 مترا، ولم نجد مسافة بالأمتار في النص القانوني الاتحادي"
+   },
+   "confidence": "high"
+  },
+  {
+   "file": "content/q_law.json",
+   "id": "law-card-030",
+   "severity": "minor",
+   "problem": "Gives only the SDI distance (about 100 m) although the card is shown to Dubai learners too. It should also give the RTA figure (50 m) so it matches q_safety safety-card-035.",
+   "evidence": "q_safety.json safety-card-035, safety-emergency-022",
+   "patch": {
+    "body": "على الطريق السريع ادخل إلى كتف الطريق، شغل إشارات التحذير، وابتعد مع الركاب عن حركة السير\nليلا على طريق غير منار أو في رؤية ضعيفة نبه غيرك بأنوار الموضع أو المثلث العاكس\nمسافة المثلث خلف السيارة: دليل هيئة الطرق في دبي 50 مترا، ودليل معهد الشارقة للسياقة حوالي 100 متر",
+    "key": "50 أو 100 متر"
+   },
+   "confidence": "high"
+  },
+  {
+   "file": "content/q_law.json",
+   "id": "law-accidents-012",
+   "severity": "minor",
+   "problem": "The right option says 'الحبس والغرامة' but art. 38 allows jail and/or a fine (أو بإحدى هاتين العقوبتين). The explanation already says so, so the option should match it. The Arabic text's 1 year maximum was confirmed (English translation says 2 years), and the note is correct.",
+   "evidence": "Art. 38 Arabic text as quoted in search results for Emarat Al Youm 2024-10-28 (https://www.emaratalyoum.com/local-section/other/2024-10-28-1.1892803): 'بالحبس مدة لا تزيد على سنة والغرامة التي لا تقل عن 50,000 درهم ولا تزيد على 100,000 درهم أو بإحدى هاتين العقوبتين'",
+   "patch": {
+    "options": [
+     "مسموح إذا كان مستعجلا لموعد مهم أو عمل",
+     "جريمة عقوبتها الحبس أو غرامة كبيرة أو الاثنين",
+     "مخالفة بسيطة بغرامة صغيرة ونقاط قليلة",
+     "لا عقوبة إذا أبلغ الشرطة بعد أسبوع"
+    ]
+   },
+   "confidence": "high"
+  },
+  {
+   "file": "content/q_law.json",
+   "id": "law-law-029",
+   "severity": "minor",
+   "problem": "Grammar: indefinite منقوص noun written 'في وادي'. Without tanwin it should be 'في واد'.",
+   "evidence": "MSA grammar (اسم منقوص نكرة في حالة الجر)",
+   "patch": {
+    "explain": "المادة 40 تشدد العقوبة إذا كان الحادث بسبب قطع الإشارة الحمراء، أو القيادة تحت التأثير، أو برخصة موقوفة أو ملغاة، أو القيادة في واد أثناء السيول"
+   },
+   "confidence": "high"
+  },
+  {
+   "file": "content/q_law.json",
+   "id": "law-card-032",
+   "severity": "minor",
+   "problem": "Says the fee is deducted from the 'balance of the Salik tag'. The balance belongs to the Salik account linked to the tag; the tag only identifies the car. Hours and prices in the card and in law-dubai-specific-004 were confirmed: free 1 to 6 am, AED 6 at peak, AED 4 off-peak, from 31 Jan 2025.",
+   "evidence": "Emarat Al Youm 2026-03-19 (https://www.emaratalyoum.com/local-section/other/2026-03-19-1.2026829); salik.ae variable toll rates page (search result)",
+   "patch": {
+    "body": "سالك بوابات تعرفة إلكترونية على طرق دبي بدون حواجز\nتمر من تحتها بسرعة الطريق العادية بدون توقف، والبوابة تقرأ ملصق سالك على الزجاج الأمامي وتخصم الرسوم من رصيد حسابك في سالك، وكاميرات البوابة تقرأ اللوحة احتياطا\nمنذ 31 يناير 2025 صارت الرسوم متغيرة: أعلى في وقت الذروة ومجانية في ساعات متأخرة من الليل"
+   },
+   "confidence": "high"
+  },
+  {
+   "file": "content/q_law.json",
+   "id": "law-penalties-022",
+   "severity": "minor",
+   "problem": "The question asks 'who is responsible', but options 0 and 2 are statements about where or when belts are needed, not about who. The key is still clear, so reword the question to fit the options.",
+   "evidence": "Item wording",
+   "patch": {
+    "q": "ما الصحيح بخصوص ربط حزام الأمان لكل من في السيارة، في الأمام والخلف؟"
+   },
+   "confidence": "high"
+  }
+ ],
+ "cross_file": [
+  "Warning triangle distance: q_law law-accidents-015 and law-card-030 (SDI about 100 m, both exams) vs q_safety safety-emergency-022 and safety-emergency-025 (RTA 50 m, Dubai). safety-card-035 already reconciles the two; the q_law patches above align them.",
+  "Phone 800 + 4, emergency vehicle 3000/6/30 and 3-hour accident reporting are consistent across q_law, q_safety and q_rules (no contradictions found)."
+ ],
+ "unresolved": [
+  "Minimum age in practice (law-law-003, law-card-002): the law says 17 and the note says institutes still apply 17.5 and 18 (KT June 2025). A later Khaleej Times piece, 'UAE minimum driving licence age lowered: 17-year-olds line up to get permits', suggests permits for 17-year-olds may now be issued (plan: learner permits from late 2025, licences from early 2026), but it was undated and could not be fetched (egress blocked). The lead should re-check whether RTA and SDI now issue licences at 17, and update the note.",
+  "Hit-and-run with injuries (art. 38): the Arabic text says 1 year maximum and the English translation says 2 years. Confirmed the Arabic wording from a search snippet and kept the item's note as is.",
+  "Sharjah discount exclusions (law-card-039, law-sharjah-specific-006, both medium): search summaries of Gulf News July 2025 confirm red light, phone, excessive speeding, sudden stopping, truck and pedestrian offences are among 40 excluded violations, and that 35% covers the fine, impound period, storage and late fees. Confidence could be raised to high; the article itself was not fetchable.",
+  "Not verified (egress blocked for gulfnews, khaleejtimes, uaelegislation, alliedlegals): fine for not moving cars after a minor accident in Dubai itself; MR 178 storage fee cap (50 per day, max 3000). Checked the rest of the numbers against search snippets and 2026 aggregator lists (speed bands, red light 1000/12/30, phone 800/4, seatbelt 400/4, 24 points and 3/6/12 months, probationary 6 months then cancellation plus 1 year, 8-point course once a year under 24, Dubai release fees 100k/50k/10k, 6000 unpaid fines, 3-hour reporting) and found no conflicts."
+ ]
+}

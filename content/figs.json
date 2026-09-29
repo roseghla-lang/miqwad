@@ -240,7 +240,7 @@
    "id": "fig-breakdown",
    "group": "car",
    "name": "تعطلت؟ الفلاشر والمثلث وانتظر خلف الحاجز",
-   "draw": "Top-down: the right edge of a highway moving up, with a hard shoulder and a crash barrier at the far right. A car stopped on the hard shoulder with both amber hazard lights lit (small flash marks). A red warning triangle standing on the shoulder well BEHIND the car (further down the picture), with a dashed gold line between them (no number). Two people standing beyond the barrier, on the right, ahead of the car"
+   "draw": "Top-down: the right edge of a highway moving up, with a hard shoulder and a crash barrier at the far right. A car stopped on the hard shoulder with both amber hazard lights lit (small flash marks). A red warning triangle standing on the shoulder well BEHIND the car (further down the picture), with a dashed gold line between them (no number). Two people standing beyond the barrier, on the right, BEHIND the car (upstream, between the car and the triangle)"
   },
   {
    "id": "fig-tyre-tread",

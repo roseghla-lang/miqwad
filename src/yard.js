@@ -868,12 +868,12 @@
       { id: 'engine', text: 'شغل المحرك ورجلك عالفرامل والغيار على P', keys: ['5'], touch: 'زر المحرك', done: function (s) { return s.st.engine; } },
       { id: 'gearD', text: 'ورجلك عالفرامل، حط الغيار على D', keys: ['D'], touch: 'زر D', done: function (s) { return s.st.gear === 'D'; } },
       { id: 'hb', text: 'نزل الهاندبريك', keys: ['H'], touch: 'زر الهاندبريك', done: function (s) { return !s.st.hb; } },
-      { id: 'ind', text: 'شغل الغماز الشمال، لأنك طالع من جنب الرصيف لليسار', keys: ['Q'], touch: 'غماز شمال', done: function (s) { return s.st.ind === 'L' || s.st.moves > 0; } },
-      { id: 'obs', text: 'اعمل نظرة: المراية الداخلية، والمراية الشمال، والتفت عالنقطة العمياء', keys: ['M'], touch: 'زر النظرة', done: function (s) { return s.obsOK() || s.st.moves > 0; } },
+      { id: 'obs', text: 'اعمل نظرة: المراية الداخلية والمراية الشمال، والتفت عالنقطة العمياء', keys: ['M'], touch: 'زر النظرة', done: function (s) { return s.obsOK() || s.st.moves > 0; } },
+      { id: 'ind', text: 'بعد النظرة شغل الغماز الشمال، لأنك طالع من جنب الرصيف لليسار، وقبل ما تمشي التفت مرة تانية', keys: ['Q'], touch: 'غماز شمال', done: function (s) { return s.st.ind === 'L' || s.st.moves > 0; } },
       { id: 'go', text: 'شيل رجلك عن الفرامل بشويش، امشي دغري، ووقف جوا المربع', done: function () { return false; } }
     ],
     demo: [{ do: { check: 'doors' } }, { do: { check: 'seat' } }, { do: { check: 'mirrors' } }, { do: { check: 'belt' } }, { brake: 1, wait: 0.4 }, { do: { check: 'engine' } },
-      { do: { gear: 'D' } }, { do: { hb: false } }, { do: { ind: 'L' } }, { do: { obs: true } },
+      { do: { gear: 'D' } }, { do: { hb: false } }, { do: { obs: true } }, { do: { ind: 'L' } },
       { speed: 1.6, steer: 0.18, until: function (s) { return X_(s, 'centre') < -1.55; }, timeout: 20 },
       { speed: 2.2, steer: -0.12, until: function (s) { return relDeg(s, HP) < 1.5 || Y_(s, 'rearAxle') > 12; }, timeout: 20 },
       { speed: 2.2, steer: 0, until: function (s) { return Y_(s, 'frontBumper') > s.inst.P.finishY + s.inst.P.finishLen - 1.6; }, timeout: 30 },
@@ -984,7 +984,7 @@
     exam: 'ادخل لورا عالكراج اللي على يمينك، ولما تخلص حط الغيار على P',
     steps: [
       { id: 'ready', text: 'رجلك عالفرامل، حط D، واعمل نظرة قبل ما تمشي', keys: ['↓', 'D', 'M'], done: function (s) { return s.st.gear === 'D' && (s.obsOK() || s.st.moves > 0); } },
-      { id: 'drive', text: 'امشي لقدام وخلي بينك وبين الأماكن حوالي مترين', done: function (s) { return Y_(s, 'rearBumper') > s.inst.P.bayW - 1; } },
+      { id: 'drive', text: 'امشي لقدام وخلي بينك وبين الأماكن حوالي مترين (هيك مضبوطة بالمحاكي، وبالمعهد غالبا بيعلموك حوالي متر حسب السيارة)', done: function (s) { return Y_(s, 'rearBumper') > s.inst.P.bayW - 1; } },
       { id: 'stopRef', text: 'كمل لقدام ووقف لما يعدي الصدام الخلفي آخر خط للكراج بحوالي متر ونص (الخط الذهبي، وبالسيارة الحقيقية اسأل مدربك عن النقطة)', keys: ['↓'], ref: 'rearBumper', line: function (s) { var P = s.inst.P; return [P.bayW + P.refStop, -P.aisleW, 0]; },
         done: function (s) { return stoppedIn(s) && Y_(s, 'rearBumper') > s.inst.P.bayW + 0.6; } },
       { id: 'prepR', text: 'غماز يمين، ورجلك عالفرامل حط R', keys: ['E', 'R'], done: function (s) { return s.st.gear === 'R'; } },
@@ -1149,7 +1149,7 @@
         line: function (s) { var w = s.inst.P.laneW / 2; return [s.inst.P.lineAt, -w, w]; }, done: function (s) { return s.st.flags.hill.phase !== 'approach'; } },
       { id: 'hold', text: 'خليك دايس فرامل واستنى (فيك كمان ترفع الهاندبريك)', keys: ['↓', 'H'], done: function (s) { return s.st.flags.hill.phase === 'go'; } },
       { id: 'look', text: 'قبل ما تنطلق اعمل نظرة للمرايا', keys: ['M'], done: function (s) { return s.obsOK() || s.st.v > 0.2; } },
-      { id: 'go', text: 'نقل رجلك بسرعة من الفرامل للبنزين ودوس بنزين شوي، وإذا الهاندبريك مرفوع نزله وانت دايس بنزين', keys: ['↑', 'H'], done: function (s) { return Y_(s, 'rearAxle') > s.inst.extra.y1; } },
+      { id: 'go', text: 'إذا الهاندبريك مرفوع نزله ورجلك لسا عالفرامل، بعدين نقل رجلك بسرعة من الفرامل للبنزين ودوس بنزين شوي', keys: ['H', '↑'], done: function (s) { return Y_(s, 'rearAxle') > s.inst.extra.y1; } },
       { id: 'down', text: 'عالنزلة خفف بالفرامل وخلي السرعة بطيئة', keys: ['↓'], done: function (s) { return Y_(s, 'rearAxle') > s.inst.extra.y3; } },
       { id: 'finish', text: 'وقف جوا مربع النهاية', done: function () { return false; } }
     ],

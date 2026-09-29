@@ -218,11 +218,12 @@
 
   reg('m-headlights-on', 'أشعل المصابيح الأمامية', function (o, label) {
     var lamp = fillP('M50,33L50,67C37,67 26,61 26,50C26,39 37,33 50,33Z', WH), beams = '';
-    for (var i = 0; i < 5; i++) beams += limb([[57, 35 + i * 7.5], [75, 35 + i * 7.5]], 4.2, WH);
+    // dipped beam: the ISO low-beam symbol slants the rays down (horizontal rays would be main beam)
+    for (var i = 0; i < 5; i++) beams += limb([[57, 33 + i * 7.5], [75, 39 + i * 7.5]], 4.2, WH);
     return K.mand('<g transform="translate(-1 0)">' + lamp + beams + '</g>', { label: label });
   });
 
-  reg('m-go-this-way', 'يجب أن تسير بهذا الاتجاه', function (o, label) {
+  reg('m-go-this-way', 'لوحة الاتجاه الإجباري المستطيلة', function (o, label) {
     var w = 100, h = 56, left = !!(o.left || o.flip || o.dir === 'left');
     return K.rect(K.arrow('one-way', { x: 12, y: 10, w: 76, h: 36, fill: WH, flip: left, p: { sw: 18, hw: 44, hl: 30 } }),
       { w: w, h: h, label: label });
@@ -238,7 +239,7 @@
   });
 
   // ================================================================== SUPPLEMENTARY PLATES (white, black border, black text)
-  reg('x-distance', 'لوحة المسافة', function (o, label) {
+  reg('x-distance', 'لوحة المسافة إلى الخطر', function (o, label) {
     return plateSvg(mixText([['200', 'latin'], [' م', 'head']], 50, 25, 24), 100, 48, label);
   });
   reg('x-length', 'لوحة طول المنطقة', function (o, label) {
@@ -247,7 +248,7 @@
   reg('x-time', 'لوحة الأوقات', function (o, label) {
     var w = 110, h = 62;
     return plateSvg(pinW(K.text('8:00 - 21:00', w / 2, 22, 16, { fill: BK, family: 'latin' }), 5.71 * 16) +
-      rtl(K.text('السبت - الخميس', w / 2, 43, 11, { fill: BK })), w, h, label);
+      rtl(K.text('الاثنين - السبت', w / 2, 43, 11, { fill: BK })), w, h, label);
   });
   reg('x-arrow-extent', 'لوحة سهم امتداد المنع', function (o, label) {
     var d = o.dir, heads = { left: d !== 'right', right: d !== 'left' };

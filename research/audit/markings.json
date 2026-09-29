@@ -1,0 +1,70 @@
+{
+  "auditor": "markings (q_markings: markings, lights, police; q_signbasics: signs-basics)",
+  "checked": {"questions": 112, "cards": 41, "other": 0},
+  "findings": [
+    {
+      "file": "content/q_markings.json",
+      "id": "markings-police-011",
+      "severity": "unclear",
+      "problem": "The key option says 'حتى يعطيك إشارة المرور'. In everyday Arabic 'إشارة المرور' means the traffic light, so the right answer can be read as 'wait until the light lets you go', which the question is trying to rule out (option 2 is about the green light).",
+      "evidence": "Wording issue. Same bank uses 'الإشارة الضوئية' for the light and 'إشارة رجل المرور' for the officer's signal",
+      "patch": {"options": ["تبقى واقفا حتى يشير لك رجل المرور بالتقدم", "تنطلق فورا لأنه أنزل ذراعه", "تنطلق إذا كانت الإشارة الضوئية خضراء", "تطلق البوق لتسأله"]},
+      "confidence": "high"
+    },
+    {
+      "file": "content/q_signbasics.json",
+      "id": "signbasics-card-007",
+      "severity": "minor",
+      "problem": "The key says 'X = لا تقف أبدا'. Throughout the app الوقوف means parking and التوقف means stopping (r-no-parking = ممنوع الوقوف, r-no-stopping = ممنوع الوقوف والتوقف), so 'لا تقف' for the X sign mixes the two terms the card is trying to separate.",
+      "evidence": "Card body and signbasics-signs-basics-024 use وقوف = parking and توقف = stopping",
+      "patch": {"key": "خط = لا تركن، X = لا تتوقف أبدا"},
+      "confidence": "high"
+    },
+    {
+      "file": "content/q_markings.json",
+      "id": "markings-markings-025",
+      "severity": "minor",
+      "problem": "Its only source is one newspaper (S19, Gulf News), but it is marked confidence high. The matching card markings-card-009 is marked medium. BRIEF 3 needs an official source or two solid sources for high.",
+      "evidence": "BRIEF section 3 confidence rule. markings-card-009 cites S18 and S19 and is marked medium",
+      "patch": {"confidence": "medium"},
+      "confidence": "high"
+    },
+    {
+      "file": "content/q_markings.json",
+      "id": "markings-markings-029",
+      "severity": "minor",
+      "problem": "The answer depends on the colour of the line (yellow broken transverse lines = speed hump), and the only source is the 2012 Dubai RTA handbook. The research notes (decision 1) say every colour-dependent question is scoped to Dubai, but this one is tagged for both Dubai and Sharjah.",
+      "evidence": "research/markings.md Decisions 1; src S1 is the RTA Dubai handbook only",
+      "patch": {"exam": ["dubai"]},
+      "confidence": "medium"
+    },
+    {
+      "file": "content/q_signbasics.json",
+      "id": "signbasics-signs-basics-015",
+      "severity": "minor",
+      "problem": "The question starts with 'في دبي' and its sources are about Dubai's colour coding only, but exam lists both dubai and sharjah. Its twin questions 016 and 018 are Dubai-only.",
+      "evidence": "S13/S14 describe Dubai RTA guide sign colours only",
+      "patch": {"exam": ["dubai"]},
+      "confidence": "medium"
+    },
+    {
+      "file": "content/q_signbasics.json",
+      "id": "signbasics-signs-basics-017",
+      "severity": "minor",
+      "problem": "The question asks about 'لوحات الطرق في دبي' and relies on Dubai-only sources, but exam lists both dubai and sharjah.",
+      "evidence": "S13/S14/S17 describe Dubai signage",
+      "patch": {"exam": ["dubai"]},
+      "confidence": "medium"
+    }
+  ],
+  "cross_file": [
+    "Flashing amber on a fixed post = give way to traffic from the LEFT: q_markings markings-lights-009 and markings-card-017 agree with scenarios_roundabouts.json and scenarios_junctions.json (same Art. 25 wording). No contradiction found.",
+    "Edge line colours: markings.json mk-edge-line draws yellow on the left (median) edge and white on the right edge, and mk-hard-shoulder puts the shoulder on the right. No question in this slice asks about edge-line colour, so there is nothing to fix. If another bank states 'the hard shoulder is marked by a yellow line' without saying which side, it only fits the left shoulder in this drawing."
+  ],
+  "unresolved": [
+    "markings-lights-009 (level 5): the key rests entirely on Art. 25 of Ministerial Resolution 130/1997 (flashing amber on fixed posts at junctions and roundabouts = give way to traffic from the LEFT). I could not re-read the text: uaelegislation.gov.ae, adpolice.gov.ae, emaratalyoum.com and alkhaleej.ae are all blocked by the egress proxy, and Arabic searches only returned Saudi/Jordanian pages. The answer is consistent with roundabout priority, and the research notes say it was checked twice. At a plain crossroads, 'from the left' is less intuitive, so the lead may want to confirm this before the new executive regulations replace the 1997 ones. The press reported they were due within 6 months of 29 March 2025.",
+    "Police hand signals (markings-police-005/006/007, markings-card-024): a search snippet of the Al Khaleej 2009 copy of the Abu Dhabi Police article confirms 'arm raised = stop traffic from the front' and 'arm(s) horizontal at shoulder level = stop traffic from any direction crossing the arm line'. I could not read the exact wording of the 'right arm horizontal, palm forward = stop traffic from behind' signal because the pages are blocked. The content matches the research notes and the Vienna logic.",
+    "Bus lane fine AED 600 (markings-markings-027) vs federal AED 400: not re-checked against the 2025 executive regulations. The item is already medium and has a note.",
+    "Red light AED 1,000 + 12 points + 30 days and yellow box AED 500 were re-confirmed by 2025 secondary sources (YallaMotor 2025, ArabWheels, Gulf News 2022). No change needed."
+  ]
+}

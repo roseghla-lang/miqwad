@@ -251,7 +251,7 @@
    "cat": "priority",
    "name": "أفسح الطريق للدراجات الهوائية",
    "meaning": "عليك منح الأولوية لراكبي الدراجات الهوائية الذين يعبرون أو يسيرون في مسارهم",
-   "action": "خفف السرعة واترك الدراجات تعبر أولا، وعند تجاوز راكب دراجة اترك مسافة جانبية لا تقل عن 1.5 متر",
+   "action": "خفف السرعة واترك الدراجات تعبر أولا، وعند تجاوز راكب دراجة اترك مسافة جانبية لا تقل عن متر واحد، وأكثر كلما زادت سرعتك",
    "level": 3,
    "confuse": [
     "p-give-way",
@@ -263,9 +263,10 @@
    "colors": "white background, red border, black symbol",
    "text": "",
    "draw": "Downward-pointing triangle with thick red border and white interior; a black bicycle pictogram in side view centred in the wide upper part",
-   "uae_note": "هيئة الطرق تطلب ترك مسافة 1.5 متر على الأقل عند تجاوز راكب الدراجة",
+   "uae_note": "كتيب هيئة الطرق للمركبات الخفيفة يطلب ترك متر واحد على الأقل عند تجاوز راكب الدراجة، ودليل القيادة الآمنة بدبي ينصح بمتر ونصف، فكلما كانت المسافة أكبر كان أأمن",
    "src": [
     "S4",
+    "S1",
     "S2",
     "S12"
    ],
@@ -540,9 +541,9 @@
   {
    "id": "w-merge-right",
    "cat": "warning",
-   "name": "طريقك يندمج مع حركة المرور",
-   "meaning": "أمامك نقطة يلتقي فيها طريقك مع طريق آخر بزاوية حادة، وعليك الاندماج مع حركة المرور فيه",
-   "action": "خفف السرعة، راقب المرايا والنقطة العمياء، واندمج فقط عندما تجد فجوة آمنة",
+   "name": "مركبات تندمج من اليمين",
+   "meaning": "أمامك مكان تدخل فيه مركبات من طريق آخر إلى طريقك من جهة اليمين",
+   "action": "انتبه للمركبات الداخلة من اليمين، ولا تسرع لتسبقها، واترك لها مجالا إذا أمكن",
    "level": 3,
    "confuse": [
     "w-merge-left",
@@ -732,7 +733,7 @@
    "cat": "warning",
    "name": "عبور دراجات هوائية",
    "meaning": "أمامك مكان يعبر فيه راكبو الدراجات الهوائية أو يستخدمون الطريق",
-   "action": "خفف السرعة وانتبه للدراجات، وعند تجاوز دراجة اترك مسافة جانبية لا تقل عن 1.5 متر",
+   "action": "خفف السرعة وانتبه للدراجات، وعند تجاوز دراجة اترك مسافة جانبية لا تقل عن متر واحد، وأكثر كلما زادت سرعتك",
    "level": 2,
    "confuse": [
     "m-cyclists-only",
@@ -1238,9 +1239,9 @@
    "action": "أشعل المصابيح الأمامية، واخلع النظارة الشمسية إن كنت تلبسها، والتزم بمسارك ولا تتوقف داخل النفق إلا في الطوارئ",
    "level": 3,
    "confuse": [
-    "i-tunnel",
     "m-headlights-on",
-    "w-opening-bridge"
+    "w-opening-bridge",
+    "w-overhead-cable"
    ],
    "shape": "triangle",
    "colors": "white background, red border, black symbol",
@@ -1305,7 +1306,7 @@
   {
    "id": "w-max-height-ahead",
    "cat": "warning",
-   "name": "حد الارتفاع أمامك",
+   "name": "تحذير: ارتفاع محدود أمامك",
    "meaning": "أمامك جسر أو عائق علوي، والرقم هو أقصى ارتفاع مسموح للمركبة مع حمولتها",
    "action": "إذا كانت مركبتك أعلى من الرقم فلا تتابع، واسلك طريقا آخر",
    "level": 3,
@@ -1446,7 +1447,7 @@
   {
    "id": "w-dead-end-ahead",
    "cat": "warning",
-   "name": "طريق مسدود أمامك",
+   "name": "تحذير: طريق مسدود أمامك",
    "meaning": "الطريق أمامك مغلق من نهايته ولا يوصلك إلى طريق آخر",
    "action": "لا تدخله إلا إذا كانت وجهتك فيه، واستعد للرجوع بأمان",
    "level": 3,
@@ -1740,7 +1741,7 @@
   {
    "id": "r-no-overtaking-trucks",
    "cat": "prohibitory",
-   "name": "ممنوع تجاوز الشاحنات",
+   "name": "ممنوع على الشاحنات التجاوز",
    "meaning": "ممنوع على الشاحنات تجاوز المركبات الأخرى في هذا المقطع",
    "action": "إذا كنت تقود شاحنة فلا تتجاوز، وإذا كنت في سيارة فتوقع أن تبقى الشاحنات في مسارها",
    "level": 4,
@@ -2231,7 +2232,7 @@
   {
    "id": "r-max-height",
    "cat": "prohibitory",
-   "name": "حد الارتفاع المسموح به",
+   "name": "ممنوع مرور المركبات الأعلى من الرقم",
    "meaning": "ممنوع مرور أي مركبة يزيد ارتفاعها مع حمولتها على الرقم المكتوب",
    "action": "إذا كانت مركبتك أعلى من الرقم فلا تدخل، واسلك طريقا بديلا",
    "level": 3,
@@ -2779,8 +2780,8 @@
    "id": "m-headlights-on",
    "cat": "mandatory",
    "name": "أشعل المصابيح الأمامية",
-   "meaning": "عليك تشغيل المصابيح الأمامية للمركبة من هذه النقطة",
-   "action": "شغل المصابيح الأمامية فورا، ولا تطفئها حتى تخرج من المنطقة مثل النفق",
+   "meaning": "عليك تشغيل الأضواء الأمامية المنخفضة للمركبة من هذه النقطة",
+   "action": "شغل الأضواء الأمامية المنخفضة فورا، ولا تطفئها حتى تخرج من المنطقة مثل النفق",
    "level": 3,
    "confuse": [
     "w-tunnel",
@@ -2790,7 +2791,7 @@
    "shape": "circle",
    "colors": "blue background, white rim, white symbol",
    "text": "",
-   "draw": "Blue disc with white rim; a white headlamp symbol: a rounded lamp shape on the left with 4 or 5 short horizontal white beam lines to its right",
+   "draw": "Blue disc with white rim; a white headlamp symbol: a rounded lamp shape on the left with 4 or 5 short white beam lines to its right, slanting down (dipped beam symbol, not horizontal main beam)",
    "uae_note": "",
    "src": [
     "S2"
@@ -2800,14 +2801,14 @@
   {
    "id": "m-go-this-way",
    "cat": "mandatory",
-   "name": "يجب أن تسير بهذا الاتجاه",
+   "name": "لوحة الاتجاه الإجباري المستطيلة",
    "meaning": "عليك السير في الاتجاه الذي يشير إليه السهم",
    "action": "انعطف أو تابع باتجاه السهم فقط",
    "level": 3,
    "confuse": [
     "w-chevron-right",
-    "m-turn-right",
-    "m-keep-right"
+    "i-one-way",
+    "i-lane-directions"
    ],
    "shape": "rect",
    "colors": "blue background, white rim, white arrow",
@@ -3137,9 +3138,9 @@
    "action": "أشعل المصابيح الأمامية، والتزم بمسارك وسرعتك، ولا تتوقف داخل النفق إلا في الطوارئ",
    "level": 4,
    "confuse": [
-    "w-tunnel",
     "m-headlights-on",
-    "i-freeway-start"
+    "i-freeway-start",
+    "i-salik"
    ],
    "shape": "rect",
    "colors": "blue background, white rim, white symbol",
@@ -3459,7 +3460,7 @@
     "S15",
     "S3"
    ],
-   "confidence": "high"
+   "confidence": "medium"
   },
   {
    "id": "g-d-route",
@@ -3484,7 +3485,7 @@
     "S3",
     "S4"
    ],
-   "confidence": "high"
+   "confidence": "medium"
   },
   {
    "id": "g-blue-direction",
@@ -3629,7 +3630,7 @@
   {
    "id": "g-distance",
    "cat": "guide",
-   "name": "لوحة المسافات",
+   "name": "لوحة المسافات إلى المدن",
    "meaning": "تبين المسافة بالكيلومتر إلى المدن أو المناطق القادمة على هذا الطريق",
    "action": "استخدمها لتقدير المسافة والوقت المتبقي إلى وجهتك",
    "level": 2,
@@ -3919,7 +3920,7 @@
   {
    "id": "x-distance",
    "cat": "supplementary",
-   "name": "لوحة المسافة",
+   "name": "لوحة المسافة إلى الخطر",
    "meaning": "تبين المسافة بين الإشارة التي فوقها وبداية الخطر أو المكان المقصود",
    "action": "استعد للموقف قبل الوصول إلى المسافة المكتوبة",
    "level": 3,
@@ -3977,7 +3978,7 @@
    "shape": "plate",
    "colors": "white background, black border, black text or symbol",
    "text": "8:00 - 21:00",
-   "draw": "Small white plate with a black border; the black text 8:00 - 21:00 on the first line and the days السبت - الخميس on a second line",
+   "draw": "Small white plate with a black border; the black text 8:00 - 21:00 on the first line and the days الاثنين - السبت on a second line (the current Dubai paid parking week, Sunday free)",
    "uae_note": "",
    "src": [
     "S1",

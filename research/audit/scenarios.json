@@ -1,0 +1,54 @@
+{
+  "auditor": "scenarios (roundabouts, junctions, people, roads, hazard)",
+  "checked": {"questions": 0, "cards": 0, "other": 102},
+  "findings": [
+    {
+      "file": "content/scenarios_people.json",
+      "id": "pd-006",
+      "severity": "minor",
+      "problem": "Grammar error in explain: after لم the verb must be jussive, so 'لم تكفي' should be 'لم تكف'.",
+      "evidence": "Arabic grammar (jussive after لم drops the final ya of a defective verb)",
+      "patch": {"explain": "لا تتجاوز الدراجة إلا إذا استطعت الابتعاد عنها يسارا بأمان تاركا مترا واحدا على الأقل\nإذا كانت هناك سيارة مقابلة أو لم تكف المساحة فابق خلفها حتى يصبح التجاوز آمنا"},
+      "confidence": "high"
+    },
+    {
+      "file": "content/scenarios_roundabouts.json",
+      "id": "rb-013",
+      "severity": "unclear",
+      "problem": "The question says the truck wants to take 'المخرج الأول نفسه' (the same first exit) but never says which exit you want. Only your right indicator in the scene hints at it, so 'the same exit' has nothing to refer to in the text.",
+      "evidence": "Scene: me at S stopline with signal right; truck route ring->E. The text alone does not say you are taking the first exit",
+      "patch": {"q": "تريد الخروج من المخرج الأول، وشاحنة طويلة تدور في المسار الداخلي قادمة من يسارك وتريد الخروج من المخرج نفسه، والمسار الخارجي أمامك يبدو فارغا، ماذا تفعل؟"},
+      "confidence": "high"
+    },
+    {
+      "file": "content/scenarios_hazard.json",
+      "id": "hz-010",
+      "severity": "minor",
+      "problem": "Text and scene disagree. The explanation says the driver of the broken-down car is approaching your lane and may enter the road suddenly. In the intro he walks to {dir:up, lane:1, shift:0.4}, so in the frozen question frame he is already standing inside lane 1 (your lane), not about to enter it.",
+      "evidence": "Scene intro: person 'to' {dir:'up', lane:1, y:49.6, shift:0.4}; me is in lane 1. Alternative fix (scene): walk him only to the lane edge (lane 'shoulder' with a negative shift, or lane 1 with shift of about 1.5) so the text stays as is",
+      "patch": {"explain": "سائق السيارة المعطلة خرج من الكتف ودخل طرف مسارك، وقد يتحرك فجأة أمامك\nخفف السرعة، وانتقل إلى المسار الذي على يسارك إذا كان خاليا، ولا تنشغل بالنظر إلى السيارة المعطلة"},
+      "confidence": "medium"
+    },
+    {
+      "file": "content/scenarios_hazard.json",
+      "id": "nt-004",
+      "severity": "minor",
+      "problem": "'وغط الفرامل' is a literal copy of the English 'cover the brake' and does not read as natural Arabic. A beginner may not understand it.",
+      "evidence": "BRIEF section 4 (clear simple Arabic)",
+      "patch": {"explain": "شخص بملابس داكنة يقف على الحاجز الأوسط وينظر إلى مسارك، وقد يعبر فجأة\nارفع قدمك عن البنزين وضعها فوق دواسة الفرامل، واستعد للتوقف"},
+      "confidence": "high"
+    }
+  ],
+  "cross_file": [
+    "Near-duplicate scenarios: rb-015 (scenarios_roundabouts) and ev-007 (scenarios_people) are the same situation with the same answer (inside the roundabout heading for the 3rd exit, ambulance behind, leave by the nearest exit). Consider changing one of them, for example ev-007 as the 'before the roundabout' case, which rb-014 already covers, or dropping one.",
+    "Near-duplicates, same concept 3 times: rd-010 (L5), pd-002 (L4) and hz-008 (L5) all show a vehicle stopped in the right lane before a zebra hiding a pedestrian. Their levels differ for the same idea.",
+    "Near-duplicates: jn-017 (L3) and hz-005 (L4) both show a long truck with its right indicator on, swinging left before turning right, with answer 'stay behind'.",
+    "Rain following gap: rd-017 and wx-004 both use 4 s (RTA), and wx-004 notes that Dubai Police press uses 5 s. These are consistent with each other, but check the q_ banks use the same figure.",
+    "Cyclist passing gap: pd-006, hz-007 and nt-001 teach 'at least 1 m', and the notes say S2 (Driving Safely in Dubai) gives 1.5 m. This must be settled the same way as the rules bank (HANDOFF stage 5)."
+  ],
+  "unresolved": [
+    "sb-002 (open question, verdict: the scenario is CORRECT). Executive Regulation (MR 130/1997) Art. 71 separates a 'single' road (both directions stop at least 5 m from the bus) from a 'dual' road (only traffic behind the bus stops). The RTA said, as reported in Gulf News on 2026-04-21 (S18 in the file), that divided roads are those separated by a median or a physical barrier, and undivided roads have no separation. Abu Dhabi Police and Emirates 24/7 (2026-08) describe the same thing: both directions stop on a two-way road without a physical barrier. A painted double solid line is not a median or a barrier, so under that definition drivers in both directions must stop. That is what sb-002 teaches. No source addresses a painted line on a 2+2 road explicitly, so this is an inference from the RTA definition, but a strong one. I could not open the regulation text (uaelegislation.gov.ae is blocked here), so the exact Arabic wording of Art. 71 (مفرد/مزدوج) was not checked. Sources: https://gulfnews.com/uae/transport/school-bus-stop-arm-rules-in-dubai-what-drivers-must-know-1.500514122 ; https://www.emirates247.com/uae-guide/uae-school-bus-stop-sign-rules-when-motorists-must-stop-and-the-fines-for-violations/4898 ; https://www.thenationalnews.com/news/uae/2026/08/31/uae-school-bus-rules-drivers-parents-students-staff/",
+    "pd-006 / hz-007 / nt-001: the minimum lateral gap when passing a cyclist (1 m vs 1.5 m). A web search found no UAE federal or RTA text that sets a number. The Dubai cycling resolutions (Exec Council 10/2015, 13/2022) cover riders, not passing distance. I left the items as they are.",
+    "jn-016 (opposing left turners pass in front of each other, 'to the left of the centre'): the geometry and answer agree with Art. 59 as summarised in research/rules.md F21 (turn just left of the centre). I could not reach the RTA handbook to confirm the exact wording. The item is already medium confidence and has a note."
+  ]
+}

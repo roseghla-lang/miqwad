@@ -1,0 +1,60 @@
+{
+  "auditor": "rules_a (q_rules: roundabouts, priority, lanes, emergency-vehicles, overtaking, speed, distance)",
+  "checked": {"questions": 118, "cards": 43, "other": 0},
+  "findings": [
+    {
+      "file": "content/q_rules.json",
+      "id": "rules-card-009",
+      "severity": "unclear",
+      "problem": "The core teaching card for the equal-roads rule opens with 'تنتظر المركبة التي تأتي من يسارك'. Without diacritics this reads just as naturally as 'the vehicle from your left waits', which is the opposite of the rule, and a beginner can take that meaning away before he reaches the second clause.",
+      "evidence": "Decree-Law 14/2024 Art 6: priority to the one coming from the left (research F15, C6). The ambiguity is in the Arabic grammar: the verb can take either noun as its subject.",
+      "patch": {"body": "إذا تساوت الطرق في المرتبة ولا توجد لوحات ولا إشارات، فالأولوية للقادم من الجهة اليسرى: أنت تنتظر المركبة القادمة من يسارك، والمركبة القادمة من يمينك تنتظرك"},
+      "confidence": "high"
+    },
+    {
+      "file": "content/q_rules.json",
+      "id": "rules-card-034",
+      "severity": "minor",
+      "problem": "The key 'السريعة 100 إلى 120' presents 120 as the top of the UAE highway range. Current posted limits include 110 (several Dubai highways) and 140 (Abu Dhabi, for example Sheikh Khalifa Highway), so a learner may treat 120 as a national ceiling. The body already says the sign rules, but the highlighted key goes beyond that.",
+      "evidence": "Research note conflict 6 (Abu Dhabi has 140 km/h roads; the RTA 2016 figures are typical values only)",
+      "patch": {"body": "حسب دليل هيئة الطرق: 40 أو 60 أو 80 كم/ساعة داخل المدن، و100 أو 120 كم/ساعة على الطرق السريعة، وبعض الطرق حدها 110 أو 140، والمرجع دائما اللوحة المنصوبة", "key": "اللوحة المنصوبة هي الحد"},
+      "confidence": "medium"
+    },
+    {
+      "file": "content/q_rules.json",
+      "id": "rules-card-004",
+      "severity": "minor",
+      "problem": "Arabic: 'في الدوار ذي الثلاثة مسارات' is colloquial. The MSA form puts the article on the counted noun: 'ذي المسارات الثلاثة'.",
+      "evidence": "Standard MSA number agreement (العدد المعرف)",
+      "patch": {"body": "اختر قبل الدخول المسار الذي يوصلك إلى مخرجك حسب الأسهم (في الدوار ذي المسارات الثلاثة غالبا الأوسط)، ولا تعط إشارة عند الدخول، ثم أعط إشارة اليمين بعد أن تتجاوز المخرج الذي يسبق مخرجك"},
+      "confidence": "high"
+    },
+    {
+      "file": "content/q_rules.json",
+      "id": "rules-roundabouts-008",
+      "severity": "minor",
+      "problem": "Arabic: the explanation uses the same colloquial 'في الدوار ذي الثلاثة مسارات'.",
+      "evidence": "Standard MSA number agreement",
+      "patch": {"explain": "في الدوار ذي المسارات الثلاثة يكون الأوسط عادة للاستمرار، والأيسر للانعطاف يسارا والالتفاف، واتبع دائما الأسهم المرسومة"},
+      "confidence": "high"
+    },
+    {
+      "file": "content/q_rules.json",
+      "id": "rules-distance-003",
+      "severity": "minor",
+      "problem": "Arabic/meaning: 'كيف تقيس قاعدة الثانيتين؟' says you measure the rule itself. What you measure is your following distance, and the rule is the method you use to measure it.",
+      "evidence": "Wording issue",
+      "patch": {"q": "كيف تطبق قاعدة الثانيتين لتقيس مسافة الأمان؟"},
+      "confidence": "medium"
+    }
+  ],
+  "cross_file": [
+    "Following distance: the 2-second rule (rules-card-038, rules-distance-002) has more official support than the research note cites. Gulf News reports that Abu Dhabi Police made two seconds the enforced tailgating safe distance ('Police in Abu Dhabi make two seconds the tailgating safe distance', https://gulfnews.com/uae/police-in-abu-dhabi-make-two-seconds-the-tailgating-safe-distance-1.68860838). The 3-second figure comes only from the NGO RoadSafetyUAE. Recent Gulf News and Emirates 24/7 pieces citing the RTA handbook also give 2 s, and 3 to 4 s in rain, fog or at high speed. Any other file that teaches 3 s as the UAE rule contradicts rules_a, so check q_* for '3 ثوان'.",
+    "Speed buffer: no item in this slice mentions a +20 km/h radar buffer, which is correct because it is not an official right. Other files (penalties, dubai-specific) should also avoid it."
+  ],
+  "unresolved": [
+    "rules-priority-012 and rules-emergency-vehicles-015 (L5) treat the Article 6 list of priority vehicles as a ranked order (official processions > civil defence > ambulance > military convoys > police > essential services). A search snippet of the English law text reads 'traffic priorities shall be as follows: 1. ... 6.', a numbered list. I could not fetch the Arabic text, because uaelegislation.gov.ae and gulfnews.com were blocked by the egress proxy, so I could not confirm whether it says 'حسب الترتيب الآتي'. If it is only a list, both questions test an order the law does not state. Suggestion: someone with access should check the Arabic Article 6 opening words.",
+    "Picture checks: I tried to read the name/draw of every explain_fig id in this slice, but that lookup was denied by the session's permission classifier, so pictures were not audited in this slice. Priority ids to check: fig-ev-two-way, used for both an ambulance behind (ev-001) and an ambulance oncoming (ev-014); fig-fog-lights, used for a following-distance explanation (distance-005); fig-roundabout-lanes3 and fig-roundabout-left for the U-turn item (roundabouts-007).",
+    "rules-emergency-vehicles-005: the key 'make space without crossing the red light' follows Dubai Police (2019) and Sharjah Police (2025). Dubai Police also said in 2019 that drivers forced across red while giving way are exempted after review. The key is still the safe exam answer, and the existing note covers the conflict. I found no newer official statement."
+  ]
+}

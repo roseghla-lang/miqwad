@@ -62,7 +62,7 @@
    "notes": "دليل هيئة الطرق يضع هذه الخطوط حيث تغيير المسار ممنوع، مثل الاقتراب من تقاطع أو ممر مشاة"},
 
   {"id": "mk-broken-center", "cat": "line", "name": "خط أصفر متقطع في منتصف الطريق",
-   "meaning": "يفصل بين اتجاهين متعاكسين في طريق غير مقسوم، ومسموح عبوره للتجاوز فقط إذا كان الطريق أمامك خاليا وآمنا",
+   "meaning": "يفصل بين اتجاهين متعاكسين في طريق غير مقسوم، ومسموح عبوره للتجاوز أو للانعطاف إذا كان الطريق أمامك خاليا وآمنا",
    "action": "الزم يمين الخط، ولا تعبره إلا بعد أن ترى الاتجاه المقابل خاليا لمسافة كافية",
    "level": 2, "confuse": ["mk-broken-lane", "mk-solid-center", "mk-solid-broken"],
    "draw": "Top-down: undivided two-way road, one lane each direction, no median. A yellow broken line along the centre. Our car in the right lane moving up; an oncoming car far away in the left lane moving down",
@@ -540,7 +540,7 @@
 
   {"id": "ev-emergency-lights", "cat": "emergency", "name": "مركبة طوارئ بأضواء وامضة وصفارة",
    "meaning": "الإسعاف والشرطة والدفاع المدني عندما تشغل الأضواء الحمراء والزرقاء أو الصفارة لها الأولوية، حتى لو كانت إشارتك خضراء",
-   "action": "خفف السرعة وافسح لها الطريق بالتزام الجانب الأيمن، وتوقف إذا لزم الأمر",
+   "action": "خفف السرعة وأفسح لها الطريق بالتزام الجانب الأيمن، وتوقف إذا لزم الأمر",
    "level": 1, "confuse": ["ev-service-amber", "ev-hazard-lights"],
    "draw": "Front view: an ambulance approaching with a roof light bar flashing red and blue, and sound-wave marks for the siren",
    "colors": "body #F2F2EE, red #C8202A, blue #1F5AA6",
