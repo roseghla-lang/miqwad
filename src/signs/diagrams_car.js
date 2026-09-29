@@ -731,7 +731,7 @@
   }
   // amber indicator arrow blinking (to the left)
   function signalIcon(cx, cy, k) {
-    var s = circ(-1, 0, 12, C.amber, { opacity: 0.2 }) + path('M-10,0L-1,-8.5L-1,-3.8L9,-3.8L9,3.8L-1,3.8L-1,8.5Z', C.amber);
+    var s = path('M-10,0L-1,-8.5L-1,-3.8L9,-3.8L9,3.8L-1,3.8L-1,8.5Z', C.amber);
     s += flash(-1, 0, 13, 16.5, [55, 90, 125, 235, 270, 305], C.amber, 1.2);
     return g(s, tr(cx, cy, k));
   }

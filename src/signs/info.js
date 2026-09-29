@@ -491,8 +491,8 @@
   });
 
   reg('t-diversion', 'تحويلة', function (o, label) {
-    return ybd(AR('تحويلة', 65, 27, 30, BK, 800) + LA('DIVERSION', 65, 55, 18, BK, 700) +
-      sArrow(26, 79, 106, 79, 9, 24, 19, BK), 130, 100, label);
+    return ybd(AR('تحويلة', 65, 28.5, 29, BK, 800) + LA('DIVERSION', 65, 57.5, 19.5, BK, 700) +
+      sArrow(25, 79.5, 106, 79.5, 9, 22, 18, BK), 130, 100, label);
   });
 
   reg('t-flagman', 'عامل بعلم أمامك', function (o, label) {
