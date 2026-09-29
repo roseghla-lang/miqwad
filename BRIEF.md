@@ -112,6 +112,9 @@ Only write inside the files/folders your task owns. Never delete other agents' f
 - `cards` are the teaching notes shown in lessons before practice (5 to 15 per topic, each one idea;
   `key` is an optional short highlighted fact such as a number).
 - `tip` and `notes` are optional. `exam` lists where the item matters (usually both).
+- Pictures (optional, ids of signs, markings or `fig-` concept figures): `fig` (1 to 3, shown under the
+  question), `opt_figs` (one id or null per option), `explain_fig` (1 to 3, shown after answering); cards
+  take `fig` (1 to 4). A `fig` never gives the answer away. Details in docs/app.md section 4.
 - Topic keys: `signs-basics, lights, markings, police, speed, distance, lanes, overtaking, priority,
   roundabouts, turning, highway, pedestrians, school-bus, emergency-vehicles, vulnerable, parking,
   lights-horn, weather, night, hazard, emergency, accidents, vehicle, law, penalties, driver,
@@ -146,6 +149,10 @@ lights, `po-` police hand signals, `ev-` emergency vehicles and school bus signa
 ### 5.4 Exams and practical guides: `content/exams.json` (see the exams agent prompt)
 ### 5.5 Scenarios: `content/scenarios_<name>.json` (see docs/scenes.md once it exists)
 ### 5.6 Curriculum: `content/curriculum.json` (units and lessons; the lead integrates it)
+### 5.7 Concept figures: `content/figs.json`
+`{"figs": [{"id": "fig-...", "group": "shape|meaning|road|car", "name": "Arabic caption", "draw": "brief"}]}`:
+pictures that are not official signs (sign shapes, meaning badges, rule diagrams, car and safety pictures),
+drawn in `src/signs/figs.js`, `diagrams_road.js` and `diagrams_car.js` (see docs/drawing.md).
 
 ## 6. Module interfaces (plain browser JS, classic scripts, no modules, no frameworks, no network)
 

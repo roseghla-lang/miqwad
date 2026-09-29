@@ -10,7 +10,7 @@
 
 Content mapping:
   signs.json -> DATA.signs, markings.json -> DATA.markings, exams.json -> DATA.exams,
-  curriculum.json -> DATA.curriculum, q_<name>.json -> DATA.banks[<name>],
+  curriculum.json -> DATA.curriculum, figs.json -> DATA.figs (concept figures), q_<name>.json -> DATA.banks[<name>],
   scenarios_<name>.json -> DATA.scenarios (arrays concatenated; each item gets "_file": <name>)
 Files starting with "_" are ignored. sample_<x>.json files are used only with --samples and only
 when the real <x>.json does not exist.
@@ -42,13 +42,13 @@ def collect(samples):
         for p in sorted(CONTENT.glob('sample_*.json')):
             key = p.stem[len('sample_'):]
             files.setdefault(key, p)
-    data = {'signs': None, 'markings': None, 'exams': None, 'curriculum': None, 'banks': {}, 'scenarios': [],
+    data = {'signs': None, 'markings': None, 'exams': None, 'curriculum': None, 'figs': None, 'banks': {}, 'scenarios': [],
             'scenarioSources': {}}
     for key, p in files.items():
         obj = load(p)
         if obj is None:
             continue
-        if key in ('signs', 'markings', 'exams', 'curriculum'):
+        if key in ('signs', 'markings', 'exams', 'curriculum', 'figs'):
             data[key] = obj
         elif key.startswith('q_'):
             data['banks'][key[2:]] = obj

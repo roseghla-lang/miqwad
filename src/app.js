@@ -156,7 +156,7 @@
   function topicName(t) { return TOPICS[t] || t || 'عام'; }
 
   var IX = {
-    q: {}, cards: {}, signs: {}, marks: {}, sc: {},
+    q: {}, cards: {}, signs: {}, marks: {}, sc: {}, figs: {},
     qList: [], cardList: [], signList: [], markList: [], scList: [],
     signCats: [], markCats: [], catName: {}, mkCatName: {}
   };
@@ -198,6 +198,9 @@
     });
     IX.markCats = catsFrom(mk.categories, IX.markList);
     IX.markCats.forEach(function (c) { IX.mkCatName[c.key] = c.name; });
+    // concept figures (content/figs.json): pictures for questions and cards that are not catalogue signs
+    var fg = isObj(DATA.figs) ? DATA.figs : {};
+    arr(fg.figs).forEach(function (f) { if (f && f.id && !IX.figs[f.id]) IX.figs[f.id] = f; });
     arr(DATA.scenarios).forEach(function (s) {
       if (!s || !s.id || IX.sc[s.id]) return;
       var type = s.type === 'tap' ? 'tap' : 'choice';
@@ -238,6 +241,32 @@
     if (typeof s !== 'string' || s.indexOf('<svg') < 0) s = fallbackSign();
     svgCache[id] = s;
     return s;
+  }
+  // ------------------------------------------------------------------ pictures on questions and cards
+  // fig (under the question), opt_figs (inside the options), explain_fig (with the explanation), card fig.
+  // Ids are signs, markings or concept figures; only drawn pictures show (never a placeholder in a question).
+  function figName(id) { var o = IX.signs[id] || IX.marks[id] || IX.figs[id]; return o ? String(o.name || '') : ''; }
+  function figOK(id) { return typeof id === 'string' && !!(IX.signs[id] || IX.marks[id] || IX.figs[id]) && drawn(id); }
+  function figList(v, max) {
+    var out = [];
+    arr(v).forEach(function (id) { if (figOK(id) && out.indexOf(id) < 0) out.push(id); });
+    return out.slice(0, max || 3);
+  }
+  function figWide(id) {
+    var m = /viewBox="([^"]+)"/.exec(signSVG(id)), vb = m ? m[1].split(/[\s,]+/).map(Number) : null;
+    return !!(vb && vb[2] > 0 && vb[3] > 0 && vb[2] / vb[3] > 1.2);
+  }
+  // one big picture (square frame for signs, 4:3 frame for diagrams), optional caption
+  function figHero(id, cls, caption) {
+    var box = '<div class="' + cls + (figWide(id) ? ' is-wide' : '') + '">' + signSVG(id) + '</div>';
+    return caption ? '<figure class="fig-hero">' + box + '<figcaption>' + esc(figName(id)) + '</figcaption></figure>' : box;
+  }
+  // a row of 2 to 4 pictures, captions under each when asked
+  function figRow(ids, cls, captions) {
+    return '<div class="' + cls + ' n' + ids.length + '">' + ids.map(function (id) {
+      return '<figure class="figc' + (figWide(id) ? ' is-wide' : '') + '"><span class="figc-img">' + signSVG(id) + '</span>' +
+        (captions ? '<figcaption>' + esc(figName(id)) + '</figcaption>' : '') + '</figure>';
+    }).join('') + '</div>';
   }
   function scenesOK() { try { return !!(W.Scenes && typeof W.Scenes.mount === 'function'); } catch (e) { return false; } }
   function yardOK() { try { return !!(W.Yard && typeof W.Yard.mount === 'function'); } catch (e) { return false; } }
@@ -1327,8 +1356,15 @@
     return { key: key, type: 'mcq', id: q.id, q: q.q, tag: topicName(q.topic), level: q.level, topic: q.topic,
       opts: perm.map(function (i) { return { t: q.options[i] }; }), correct: perm.indexOf(q.answer),
       explain: q.explain || '', tip: q.tip || '', note: '', conf: q.confidence,
-      qsigns: arr(q.signs || q.sign).filter(function (id) { return typeof id === 'string' && IX.signs[id]; }).slice(0, 3),
+      figs: figList(arr(q.fig).concat(arr(q.signs), arr(q.sign)), 3), ofigs: optFigs(q, perm), xfigs: figList(q.explain_fig, 3),
       scene: q.scene || null, sev: sevOf(q), spec: { k: key, t: 'mcq', o: perm } };
+  }
+  // opt_figs follow the shuffled option order; dropped when fewer than 2 of them are drawn
+  function optFigs(q, perm) {
+    var of = q.opt_figs;
+    if (!Array.isArray(of) || of.length !== q.options.length) return null;
+    var out = perm.map(function (i) { return figOK(of[i]) ? of[i] : null; });
+    return out.filter(Boolean).length >= 2 ? out : null;
   }
   function distract(target, list, map, n, needDrawn) {
     var picks = [], names = Object.create(null);
@@ -1384,14 +1420,16 @@
       if (!scenesOK()) return null;
       return { key: key, type: 'sctap', id: s.id, q: s.q || 'وين الخطر؟', tag: topicName(s.topic), level: s.level, topic: s.topic,
         opts: [], correct: -1, answer: arr(s.answer).map(String), hotspots: s.hotspots || [], scene: s.scene || {},
-        explain: s.explain || '', tip: s.tip || '', note: '', conf: s.confidence, sev: sevOf(s), raw: s, spec: { k: key, t: 'sctap' } };
+        explain: s.explain || '', tip: s.tip || '', note: '', conf: s.confidence, sev: sevOf(s), raw: s, xfigs: figList(s.explain_fig, 3),
+        spec: { k: key, t: 'sctap' } };
     }
     var n = s.options.length, a = Math.floor(+s.answer);
     if (!(a >= 0 && a < n)) return null;
     var perm = spec && validPerm(spec.o, n) ? spec.o : shuffle(range(n));
     return { key: key, type: 'scq', id: s.id, q: s.q || 'شو لازم تعمل؟', tag: topicName(s.topic), level: s.level, topic: s.topic,
       opts: perm.map(function (i) { return { t: s.options[i] }; }), correct: perm.indexOf(a), scene: s.scene || null, hotspots: s.hotspots || [],
-      explain: s.explain || '', tip: s.tip || '', note: '', conf: s.confidence, sev: sevOf(s), raw: s, spec: { k: key, t: 'scq', o: perm } };
+      explain: s.explain || '', tip: s.tip || '', note: '', conf: s.confidence, sev: sevOf(s), raw: s, xfigs: figList(s.explain_fig, 3),
+      spec: { k: key, t: 'scq', o: perm } };
   }
   function buildItem(key, pref) {
     var p = parseKey(key), o = objOf(key);
@@ -1465,12 +1503,14 @@
   // ------------------------------------------------------------------ item rendering
   function lvlChip(L) { L = clamp(Math.round(num(L, 1)), 1, 5); return '<span class="chip chip-lv lv' + L + '">' + LEVEL_NAMES[L] + '</span>'; }
   function optionsHTML(it, o) {
-    var img = it.type === 'm2sign';
-    return '<div class="opts' + (img ? ' opts-img' : '') + '" role="group" aria-label="الخيارات">' + it.opts.map(function (op, i) {
+    var img = it.type === 'm2sign', of = !img && it.ofigs;
+    return '<div class="opts' + (img ? ' opts-img' : of ? ' opts-fig' : '') + '" role="group" aria-label="الخيارات">' + it.opts.map(function (op, i) {
       var sel = o.sel === i;
       return '<button class="opt' + (sel ? ' is-sel' : '') + '" data-act="' + (o.exam ? 'xa' : 'qa') + '" data-arg="' + i + '"' +
         (o.exam ? ' aria-pressed="' + sel + '"' : '') + '><span class="opt-k num" aria-hidden="true">' + (i + 1) + '</span>' +
-        (img ? '<span class="opt-img">' + signSVG(op.id) + '</span><span class="sr">' + esc(op.t) + '</span>' : '<span class="opt-t">' + esc(op.t) + '</span>') +
+        (img ? '<span class="opt-img">' + signSVG(op.id) + '</span><span class="sr">' + esc(op.t) + '</span>'
+          : of ? '<span class="opt-img' + (of[i] ? '' : ' is-empty') + '">' + (of[i] ? signSVG(of[i]) : '') + '</span><span class="opt-t">' + esc(op.t) + '</span>'
+          : '<span class="opt-t">' + esc(op.t) + '</span>') +
         '<span class="opt-mark" aria-hidden="true"></span></button>';
     }).join('') + '</div>';
   }
@@ -1482,7 +1522,7 @@
     h += '<h2 class="qi-q">' + esc(it.q) + '</h2>';
     if (it.type === 'sctap') h += '<p class="qi-hint">' + ic('eye') + '<span>دق على المكان الصح بالمشهد</span></p>';
     if (it.type === 'sign2m' || it.type === 'mk2m') h += '<div class="qi-fig">' + signSVG(it.id) + '</div>';
-    if (it.qsigns && it.qsigns.length) h += '<div class="qi-figs">' + it.qsigns.map(function (id) { return '<span class="qi-fig-s">' + signSVG(id) + '</span>'; }).join('') + '</div>';
+    if (it.figs && it.figs.length) h += it.figs.length === 1 ? figHero(it.figs[0], 'qi-fig', false) : figRow(it.figs, 'qi-figs', false);
     if (it.scene) h += '<div class="qi-scene" data-scene="1"></div>';
     if (it.type !== 'sctap') h += optionsHTML(it, o);
     return h + '</div>';
@@ -1591,7 +1631,12 @@
     if (e.t === 'card') {
       var c = IX.cards[e.id];
       if (!c) return '';
-      return '<article class="lc lc-note">' + chip(esc(topicName(c.topic))) + '<h2 class="lc-title">' + esc(c.title || '') + '</h2>' +
+      // a concept figure leads big with the examples in a row under it; plain signs share one row
+      var cf = figList(c.fig, 4), lead = cf.length > 1 && !!IX.figs[cf[0]];
+      return '<article class="lc lc-note' + (cf.length ? ' has-fig' : '') + (lead ? ' has-lead' : '') + '">' +
+        (cf.length === 1 || lead ? figHero(cf[0], 'lc-fig', true) + (lead ? figRow(cf.slice(1), 'lc-figs', true) : '')
+          : cf.length ? figRow(cf, 'lc-figs', true) : '') +
+        chip(esc(topicName(c.topic))) + '<h2 class="lc-title">' + esc(c.title || '') + '</h2>' +
         '<p class="lc-body">' + nl2br(esc(c.body || '')) + '</p>' +
         (c.key ? '<div class="lc-key"><span>احفظها</span><b>' + esc(c.key) + '</b></div>' : '') +
         '<div class="lc-meta">' + confBadge(c.confidence, 'card:' + c.id) + '</div></article>';
@@ -1681,6 +1726,7 @@
       ? '<p class="fb-right"><span>الجواب الصح</span><b>' + esc(it.opts[it.correct].t) + '</b></p>' : '';
     return '<div class="fb ' + (ok ? 'fb-ok' : 'fb-bad') + '" role="status"><div class="fb-h">' + ic(ok ? 'check' : 'close') + head + '</div>' + exr + right +
       (it.explain ? '<p class="fb-x">' + nl2br(esc(it.explain)) + '</p>' : '') +
+      (it.xfigs && it.xfigs.length ? figRow(it.xfigs, 'fb-figs', true) : '') +
       (it.note ? '<p class="fb-note">' + ic('info') + '<span><b>بالإمارات:</b> ' + esc(it.note) + '</span></p>' : '') +
       (it.tip ? '<p class="fb-tip">' + ic('bolt') + '<span>' + esc(it.tip) + '</span></p>' : '') +
       (it._ctl ? '<button class="btn btn-sm fb-replay" data-act="replay">' + ic('play') + 'شوف الحل بالمشهد</button>' : '') +
@@ -1808,7 +1854,9 @@
   function statHTML(v, l) { return '<div class="rs"><b class="num">' + v + '</b><span>' + l + '</span></div>'; }
   function missRow(it) {
     var isSign = it.type === 'sign2m' || it.type === 'm2sign' || it.type === 'mk2m';
+    var f0 = (it.figs && it.figs[0]) || (it.xfigs && it.xfigs[0]) || '';
     var fig = isSign ? '<span class="miss-fig">' + signSVG(it.id) + '</span>'
+      : f0 ? '<span class="miss-fig">' + signSVG(f0) + '</span>'
       : '<span class="miss-fig miss-ic">' + ic(it.type === 'scq' || it.type === 'sctap' ? 'junction' : 'info') + '</span>';
     var right = it.type === 'sctap' ? '<span class="miss-a">' + esc(it.explain || '') + '</span>'
       : it.opts[it.correct] ? '<span class="miss-a">' + ic('check') + '<span>' + esc(it.opts[it.correct].t) + '</span></span>' : '';
@@ -2747,15 +2795,18 @@
   var XR = { only: false };
   function xrevItem(it, a, i) {
     var ok = a === it.correct;
-    var fig = it.type === 'sign2m' || it.type === 'mk2m' ? '<span class="xrev-fig">' + signSVG(it.id) + '</span>' : '';
+    var fig = it.type === 'sign2m' || it.type === 'mk2m' ? '<span class="xrev-fig">' + signSVG(it.id) + '</span>'
+      : it.figs && it.figs.length ? figRow(it.figs, 'xrev-figs', false) : '';
     var opts = it.opts.map(function (op, j) {
       var c = j === it.correct ? ' ok' : j === a ? ' bad' : '';
-      return '<li class="xo' + c + '">' + (it.type === 'm2sign' ? '<span class="xo-img">' + signSVG(op.id) + '</span>' : '') +
+      return '<li class="xo' + c + '">' + (it.type === 'm2sign' ? '<span class="xo-img">' + signSVG(op.id) + '</span>'
+        : it.ofigs && it.ofigs[j] ? '<span class="xo-img">' + signSVG(it.ofigs[j]) + '</span>' : '') +
         '<span class="xo-t">' + esc(op.t) + '</span>' + (j === it.correct ? ic('check') : j === a ? ic('close') : '') + '</li>';
     }).join('');
     return '<li class="xrev-i ' + (ok ? 'ok' : 'bad') + '"><div class="xrev-h"><span class="num xrev-n">' + (i + 1) + '</span>' + chip(esc(it.tag)) +
       (a < 0 ? chip('بدون جواب', 'chip-bad') : '') + '</div>' + fig + '<p class="xrev-q">' + esc(it.q) + '</p><ul class="xos">' + opts + '</ul>' +
-      (it.explain ? '<p class="fb-x">' + nl2br(esc(it.explain)) + '</p>' : '') + '</li>';
+      (it.explain ? '<p class="fb-x">' + nl2br(esc(it.explain)) + '</p>' : '') +
+      (it.xfigs && it.xfigs.length ? figRow(it.xfigs, 'fb-figs', true) : '') + '</li>';
   }
   SCREENS.examResult = {
     tab: 'exam',
@@ -2837,10 +2888,14 @@
     var it = p.kind === 'sc' ? scItem(o) : mcqItem(o);
     if (!it) return;
     var opts = it.type === 'sctap' ? '' : '<ul class="xos">' + it.opts.map(function (op, j) {
-      return '<li class="xo' + (j === it.correct ? ' ok' : '') + '"><span class="xo-t">' + esc(op.t) + '</span>' + (j === it.correct ? ic('check') : '') + '</li>';
+      return '<li class="xo' + (j === it.correct ? ' ok' : '') + '">' + (it.ofigs && it.ofigs[j] ? '<span class="xo-img">' + signSVG(it.ofigs[j]) + '</span>' : '') +
+        '<span class="xo-t">' + esc(op.t) + '</span>' + (j === it.correct ? ic('check') : '') + '</li>';
     }).join('') + '</ul>';
-    openSheet('<div class="sh-pad"><div class="info-chips">' + chip(esc(it.tag)) + lvlChip(it.level) + '</div><h2 class="info-t">' + esc(it.q) + '</h2>' + opts +
-      (it.explain ? '<p class="fb-x">' + nl2br(esc(it.explain)) + '</p>' : '') + (it.tip ? '<p class="fb-tip">' + ic('bolt') + '<span>' + esc(it.tip) + '</span></p>' : '') +
+    openSheet('<div class="sh-pad"><div class="info-chips">' + chip(esc(it.tag)) + lvlChip(it.level) + '</div><h2 class="info-t">' + esc(it.q) + '</h2>' +
+      (it.figs && it.figs.length ? figRow(it.figs, 'xrev-figs', false) : '') + opts +
+      (it.explain ? '<p class="fb-x">' + nl2br(esc(it.explain)) + '</p>' : '') +
+      (it.xfigs && it.xfigs.length ? figRow(it.xfigs, 'fb-figs', true) : '') +
+      (it.tip ? '<p class="fb-tip">' + ic('bolt') + '<span>' + esc(it.tip) + '</span></p>' : '') +
       '<p class="info-st">' + ic('review') + '<span>' + statusText(k) + '</span></p><div class="info-meta">' + confBadge(it.conf, k) + '</div>' +
       '<div class="info-acts"><button class="btn btn-gold" data-act="drillKey" data-arg="' + esc(k) + '">' + ic('play') + 'جاوبها هلق</button></div></div>');
   };
@@ -3122,7 +3177,7 @@
     if (!storageOK) warn('localStorage unavailable, progress stays in memory until exported');
     // small hook for tests and debugging (read-only use)
     W.Miqwad = { version: VERSION, go: go, tab: tab, back: back, flush: flush, state: function () { return S; },
-      screen: function () { return cur.name; }, yardCtl: function () { return cur.name === 'yardRun' ? YCTL : null; }, content: function () { return { q: IX.qList.length, signs: IX.signList.length, marks: IX.markList.length, sc: IX.scList.length, lessons: CUR.lessons.length }; },
+      screen: function () { return cur.name; }, drill: function (keys, title) { startDrill('keys', arr(keys), title); }, yardCtl: function () { return cur.name === 'yardRun' ? YCTL : null; }, content: function () { return { q: IX.qList.length, signs: IX.signList.length, marks: IX.markList.length, sc: IX.scList.length, lessons: CUR.lessons.length }; },
       // test hook: the current question (index of the right option) in a quiz or exam screen
       peek: function () {
         if (cur.name === 'play' && SESS && !SESS.done) { var it = SESS.items[SESS.i]; return { screen: 'play', type: it.type, correct: it.correct, answered: !!it.answered, i: SESS.i, n: SESS.items.length }; }

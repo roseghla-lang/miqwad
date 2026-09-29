@@ -111,7 +111,13 @@
     "S1",
     "S4"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-mean-warning",
+    "w-pedestrian-crossing",
+    "w-bend-right",
+    "w-speed-hump"
+   ]
   },
   {
    "id": "signbasics-card-002",
@@ -125,7 +131,13 @@
     "S4",
     "S20"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-mean-prohib",
+    "r-no-overtaking",
+    "r-speed-80",
+    "r-no-left-turn"
+   ]
   },
   {
    "id": "signbasics-card-003",
@@ -139,7 +151,13 @@
     "S1",
     "S4"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-mean-mand",
+    "m-ahead-only",
+    "m-keep-right",
+    "m-roundabout"
+   ]
   },
   {
    "id": "signbasics-card-004",
@@ -153,7 +171,11 @@
     "S4",
     "S3"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "p-stop",
+    "p-give-way"
+   ]
   },
   {
    "id": "signbasics-card-005",
@@ -179,7 +201,13 @@
     "S4",
     "S17"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-mean-info",
+    "i-parking",
+    "i-one-way",
+    "i-salik"
+   ]
   },
   {
    "id": "signbasics-card-007",
@@ -193,7 +221,11 @@
     "S4",
     "S3"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "r-no-parking",
+    "r-no-stopping"
+   ]
   },
   {
    "id": "signbasics-card-008",
@@ -208,7 +240,12 @@
     "S12"
    ],
    "confidence": "medium",
-   "notes": "لوحات النهاية مذكورة في لوحات المعاهد، وشكل الخط الأحمر مأخوذ من النظام الدولي الذي تتبعه إشارات الإمارات"
+   "notes": "لوحات النهاية مذكورة في لوحات المعاهد، وشكل الخط الأحمر مأخوذ من النظام الدولي الذي تتبعه إشارات الإمارات",
+   "fig": [
+    "i-freeway-start",
+    "i-freeway-end",
+    "i-bus-lane-end"
+   ]
   },
   {
    "id": "signbasics-card-009",
@@ -222,7 +259,13 @@
     "S14",
     "S15"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "g-blue-direction",
+    "g-green-direction",
+    "g-brown-tourist",
+    "g-white-street"
+   ]
   },
   {
    "id": "signbasics-card-010",
@@ -236,7 +279,13 @@
     "S2",
     "S4"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "x-distance",
+    "x-length",
+    "x-time",
+    "x-trucks"
+   ]
   },
   {
    "id": "signbasics-card-011",
@@ -249,7 +298,11 @@
     "S6",
     "S1"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "po-stop-front",
+    "po-proceed"
+   ]
   },
   {
    "id": "signbasics-card-012",
@@ -263,7 +316,13 @@
     "S17"
    ],
    "confidence": "medium",
-   "notes": "بعض المصادر تذكر اللون البرتقالي، واعتمدنا الأصفر من دليل أبوظبي لإدارة المرور في مناطق العمل"
+   "notes": "بعض المصادر تذكر اللون البرتقالي، واعتمدنا الأصفر من دليل أبوظبي لإدارة المرور في مناطق العمل",
+   "fig": [
+    "fig-mean-temp",
+    "t-cones",
+    "t-barriers",
+    "t-arrow-board"
+   ]
   },
   {
    "id": "signbasics-card-013",
@@ -277,7 +336,11 @@
     "S4",
     "S3"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "m-roundabout",
+    "w-u-turn-ahead"
+   ]
   },
   {
    "id": "signbasics-card-014",
@@ -291,7 +354,11 @@
     "S4",
     "S3"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "p-give-way-oncoming",
+    "p-priority-over-oncoming"
+   ]
   },
   {
    "id": "signbasics-card-015",
@@ -304,7 +371,11 @@
     "S7",
     "S19"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "ls-variable-speed",
+    "ls-vms"
+   ]
   }
  ],
  "questions": [
@@ -331,7 +402,13 @@
     "S4"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "fig-shape-warning"
+   ],
+   "explain_fig": [
+    "fig-mean-warning"
+   ]
   },
   {
    "id": "signbasics-signs-basics-002",
@@ -357,7 +434,14 @@
     "S20"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "fig-shape-prohib"
+   ],
+   "explain_fig": [
+    "fig-mean-prohib",
+    "r-no-overtaking"
+   ]
   },
   {
    "id": "signbasics-signs-basics-003",
@@ -383,7 +467,13 @@
     "S4"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "m-ahead-only"
+   ],
+   "explain_fig": [
+    "fig-mean-mand"
+   ]
   },
   {
    "id": "signbasics-signs-basics-004",
@@ -408,7 +498,13 @@
     "S3"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "fig-shape-octagon"
+   ],
+   "explain_fig": [
+    "p-stop"
+   ]
   },
   {
    "id": "signbasics-signs-basics-005",
@@ -434,7 +530,16 @@
     "S3"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "opt_figs": [
+    "fig-shape-warning",
+    "fig-shape-octagon",
+    "fig-shape-giveway",
+    "r-no-entry"
+   ],
+   "explain_fig": [
+    "p-give-way"
+   ]
   },
   {
    "id": "signbasics-signs-basics-006",
@@ -459,7 +564,11 @@
     "S20"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "p-stop",
+    "p-give-way"
+   ]
   },
   {
    "id": "signbasics-signs-basics-007",
@@ -484,7 +593,11 @@
     "S1"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "po-proceed",
+    "tl-red"
+   ]
   },
   {
    "id": "signbasics-signs-basics-008",
@@ -508,7 +621,10 @@
     "S1"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "po-stop-front"
+   ]
   },
   {
    "id": "signbasics-signs-basics-009",
@@ -534,7 +650,13 @@
     "S3"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "m-roundabout"
+   ],
+   "explain_fig": [
+    "fig-roundabout-flow"
+   ]
   },
   {
    "id": "signbasics-signs-basics-010",
@@ -559,7 +681,11 @@
     "S3"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "w-u-turn-ahead",
+    "fig-uturn"
+   ]
   },
   {
    "id": "signbasics-signs-basics-011",
@@ -583,7 +709,11 @@
     "S4"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "w-crossroads",
+    "x-distance"
+   ]
   },
   {
    "id": "signbasics-signs-basics-012",
@@ -608,7 +738,11 @@
     "S4"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "r-no-parking",
+    "x-time"
+   ]
   },
   {
    "id": "signbasics-signs-basics-013",
@@ -632,7 +766,10 @@
     "S12"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "x-trucks"
+   ]
   },
   {
    "id": "signbasics-signs-basics-014",
@@ -655,7 +792,11 @@
     "S2"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "m-keep-right",
+    "x-buses"
+   ]
   },
   {
    "id": "signbasics-signs-basics-015",
@@ -680,7 +821,11 @@
     "S14"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "g-blue-direction",
+    "g-e-route"
+   ]
   },
   {
    "id": "signbasics-signs-basics-016",
@@ -703,7 +848,11 @@
     "S14"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "g-green-direction",
+    "g-d-route"
+   ]
   },
   {
    "id": "signbasics-signs-basics-017",
@@ -728,7 +877,10 @@
     "S17"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "g-brown-tourist"
+   ]
   },
   {
    "id": "signbasics-signs-basics-018",
@@ -751,7 +903,10 @@
     "S14"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "g-white-street"
+   ]
   },
   {
    "id": "signbasics-signs-basics-019",
@@ -776,7 +931,10 @@
     "S11"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "g-e-route"
+   ]
   },
   {
    "id": "signbasics-signs-basics-020",
@@ -799,7 +957,10 @@
     "S15"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "g-d-route"
+   ]
   },
   {
    "id": "signbasics-signs-basics-021",
@@ -823,7 +984,11 @@
     "S17"
    ],
    "confidence": "medium",
-   "notes": "بعض المصادر تذكر البرتقالي، لذلك لم نضعه خيارا خاطئا"
+   "notes": "بعض المصادر تذكر البرتقالي، لذلك لم نضعه خيارا خاطئا",
+   "explain_fig": [
+    "t-road-works",
+    "fig-mean-temp"
+   ]
   },
   {
    "id": "signbasics-signs-basics-022",
@@ -846,7 +1011,14 @@
     "S9"
    ],
    "confidence": "medium",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "r-speed-100",
+    "r-speed-60"
+   ],
+   "explain_fig": [
+    "t-road-works"
+   ]
   },
   {
    "id": "signbasics-signs-basics-023",
@@ -869,7 +1041,10 @@
     "S9"
    ],
    "confidence": "medium",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "t-cones"
+   ]
   },
   {
    "id": "signbasics-signs-basics-024",
@@ -895,7 +1070,11 @@
     "S3"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "r-no-parking",
+    "r-no-stopping"
+   ]
   },
   {
    "id": "signbasics-signs-basics-025",
@@ -919,7 +1098,13 @@
     "S4"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "r-no-left-turn"
+   ],
+   "explain_fig": [
+    "fig-mean-prohib"
+   ]
   },
   {
    "id": "signbasics-signs-basics-026",
@@ -945,7 +1130,11 @@
     "S3"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "p-give-way-oncoming",
+    "p-priority-over-oncoming"
+   ]
   },
   {
    "id": "signbasics-signs-basics-027",
@@ -970,7 +1159,14 @@
     "S12"
    ],
    "confidence": "medium",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "i-freeway-end"
+   ],
+   "explain_fig": [
+    "i-freeway-start",
+    "i-freeway-end"
+   ]
   },
   {
    "id": "signbasics-signs-basics-028",
@@ -1041,7 +1237,10 @@
     "S19"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "ls-variable-speed"
+   ]
   },
   {
    "id": "signbasics-signs-basics-031",
@@ -1063,7 +1262,10 @@
     "S8"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "w-tram-crossing"
+   ]
   },
   {
    "id": "signbasics-signs-basics-032",
@@ -1087,7 +1289,11 @@
     "S4"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-mean-warning",
+    "fig-mean-prohib"
+   ]
   }
  ]
 }

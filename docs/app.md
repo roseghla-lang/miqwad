@@ -49,7 +49,7 @@ utils -> storage (S) -> content index (IX) -> filters -> item keys -> curriculum
   (RTL: left = next), `F` flags an exam question, `Space` flips a flashcard.
 * **Sounds**: WebAudio tones created only after the first pointer/key gesture; toggle in settings.
 * **Motion**: `prefers-reduced-motion` or the in-app switch (تلقائي / خففها / كاملة) adds `.rm`.
-* **Test hook**: `window.Miqwad = {version, go, tab, back, flush, state(), screen(), content(), peek(), yardCtl()}`
+* **Test hook**: `window.Miqwad = {version, go, tab, back, flush, state(), screen(), content(), peek(), drill(keys), yardCtl()}`
   (`peek()` exposes the current question's right option and `yardCtl()` the mounted simulator controller;
   both are for tests only).
 
@@ -93,7 +93,7 @@ the click and falls back to selecting the textarea.
 
 | key | source | quiz types |
 |---|---|---|
-| `q:<id>` | bank question (`DATA.banks[*].questions`) | text MCQ (options shuffled; optional `signs`/`sign` ids render above, optional `scene`) |
+| `q:<id>` | bank question (`DATA.banks[*].questions`) | text MCQ (options shuffled; optional pictures `fig` / `opt_figs` / `explain_fig`, see below; optional `scene`) |
 | `sign:<id>` | `DATA.signs.signs` | sign → meaning (4 names), meaning → sign (4 drawings) |
 | `mk:<id>` | `DATA.markings.items` | marking → meaning |
 | `sc:<id>` | `DATA.scenarios` | scenario choice, scenario tap (hotspots) |
@@ -106,6 +106,21 @@ the click and falls back to selecting the textarea.
   (the scene area shows "المشهد المرسوم قيد التجهيز").
 * Every item carries `spec = {k, t, o}` (key, type, option order) so an exam can be rebuilt
   identically after a reload.
+
+**Pictures on questions and learn cards.** Ids are signs (`DATA.signs`), markings (`DATA.markings`) or
+concept figures (`DATA.figs` from `content/figs.json`: sign shapes, "meaning inside the shape" badges,
+top-down rule diagrams, car and safety pictures). Only drawn pictures show; an undrawn id is skipped.
+
+| field | where it shows |
+|---|---|
+| `question.fig` (1 to 3 ids; legacy `signs` / `sign` count too) | under the question text: one = big frame (square for signs, 4:3 for diagrams), several = a row of tiles, no captions |
+| `question.opt_figs` (one id or `null` per option, in `options` order) | inside the option buttons, which become a 2-column grid (4 on wide screens) of picture + text; follows the shuffle; dropped when fewer than 2 are drawn |
+| `question.explain_fig` (1 to 3 ids; also on scenarios) | in the feedback after answering, in the exam review and the question sheet, with captions (`name`) |
+| `card.fig` (1 to 4 ids) | top of the learn card with captions: one = big; a concept figure first = big with the rest in a row under it; signs only = one row |
+
+A picture in `fig` must never give the answer away (a rule diagram that shows the right move belongs in
+`explain_fig`). `python3 tools/figs.py check` validates every reference and prints coverage per bank;
+`python3 tools/figs.py apply mapping.json` adds pictures from a mapping file (see its header).
 
 ## 5. Spaced repetition (Leitner)
 
@@ -196,7 +211,8 @@ topics in units of 4, each unit closed by a challenge).
    exams, readiness); reference it in `curriculum.json` with `banks: ["<name>"]` or by `topics`.
 3. New sign drawings: register with `Signs.register(id, fn)`; the app picks them up at load
    (quizzes, flashcards, meaning → sign options). Markings use the same registry with their `mk-`,
-   `tl-`, `po-`... ids.
+   `tl-`, `po-`... ids, and so do concept figures (`fig-` ids listed in `content/figs.json`). Conventions,
+   file owners, style and the check tool (`tools/sign_gallery.py`) are in `docs/drawing.md`.
 4. Scenarios: `content/scenarios_<name>.json`; `type: 'choice'` needs `options` and `answer`,
    `type: 'tap'` needs `hotspots` and `answer` (hotspot id or ids). The app mounts
    `Scenes.mount(el, scenario, {onTap, hotspots, reducedMotion, autoplay: true})` (the engine plays the

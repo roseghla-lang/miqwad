@@ -233,6 +233,36 @@ async def run(page_path, viewport, allow, shots, headed):
         await shot('11_review')
         note('review ok')
 
+        # 7b. pictures on questions: a stem picture, picture options and explanation pictures
+        pick = await js('''() => {
+            const has = id => !!(id && window.Signs && Signs.has(id));
+            const qs = [].concat(...Object.values(DATA.banks).map(b => b.questions || []));
+            const stem = qs.find(q => (q.fig || []).some(has) && (q.explain_fig || []).some(has));
+            const opts = qs.find(q => Array.isArray(q.opt_figs) && q.opt_figs.filter(has).length >= 2);
+            return { stem: stem && stem.id, opts: opts && opts.id };
+        }''')
+        if pick.get('stem'):
+            await js('(k) => Miqwad.drill([k])', 'q:' + pick['stem'])
+            await page.wait_for_timeout(250)
+            await expect('.qi .qi-fig svg, .qi .qi-figs svg', 'question picture')
+            await answer(True)
+            await expect('.fb-figs svg', 'explanation picture')
+            await no_overflow('question with pictures')
+            await shot('11b_question_pictures')
+        if pick.get('opts'):
+            await js('(k) => Miqwad.drill([k])', 'q:' + pick['opts'])
+            await page.wait_for_timeout(250)
+            await expect('.opts-fig .opt-img svg', 'picture options')
+            n = await js('() => document.querySelectorAll(".opts-fig .opt-img svg").length')
+            if n < 2:
+                raise Fail(f'expected at least 2 picture options, got {n}')
+            await answer(False)
+            await no_overflow('picture options')
+            await shot('11c_picture_options')
+        if not pick.get('stem') and not pick.get('opts'):
+            raise Fail('no question with drawn pictures found')
+        note(f'pictures ok (stem: {pick.get("stem")}, options: {pick.get("opts")})')
+
         # 8. export the progress code, then import it back
         await js('() => Miqwad.tab("settings")')
         await page.wait_for_timeout(300)
