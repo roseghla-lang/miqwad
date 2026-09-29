@@ -130,10 +130,10 @@
      "scenery": "desert"
     },
     "view": {
-     "zoom": 1.6,
+     "zoom": 1.9,
      "center": {
       "x": 4.5,
-      "y": 28
+      "y": 30
      }
     },
     "actors": [
@@ -143,7 +143,7 @@
       "pos": {
        "dir": "up",
        "lane": 1,
-       "y": 3
+       "y": 5
       }
      },
      {
@@ -160,7 +160,7 @@
       "id": "ball",
       "type": "ball",
       "pos": {
-       "x": 10.5,
+       "x": 9.5,
        "y": 34
       },
       "color": "orange"
@@ -169,7 +169,7 @@
       "id": "kid1",
       "type": "pedestrian",
       "pos": {
-       "x": 13,
+       "x": 11.5,
        "y": 35.5
       },
       "variant": "child",
@@ -180,7 +180,7 @@
       "id": "kid2",
       "type": "pedestrian",
       "pos": {
-       "x": 16.5,
+       "x": 13.2,
        "y": 39
       },
       "variant": "child",
@@ -190,8 +190,8 @@
       "id": "kid3",
       "type": "pedestrian",
       "pos": {
-       "x": 17,
-       "y": 30
+       "x": 12.8,
+       "y": 30.5
       },
       "variant": "child",
       "color": "green"
@@ -216,8 +216,8 @@
        "t": 0.4,
        "actor": "kid2",
        "to": {
-        "x": 15.5,
-        "y": 37
+        "x": 12.5,
+        "y": 37.5
        },
        "dur": 1.5
       },
@@ -234,14 +234,18 @@
        "t": 1.9,
        "actor": "kid1",
        "to": {
-        "x": 9.6,
-        "y": 34.2
+        "x": 8.6,
+        "y": 34
        },
        "dur": 1.7
       }
      ]
     },
     "solution": [
+     {
+      "t": 0,
+      "labels": true
+     },
      {
       "t": 0,
       "actor": "me",
@@ -299,7 +303,7 @@
       "t": 2.7,
       "actor": "kid1",
       "to": {
-       "x": 10,
+       "x": 9.5,
        "y": 34.5
       },
       "dur": 1.8
@@ -316,7 +320,8 @@
       "dur": 4.5,
       "ease": "in"
      }
-    ]
+    ],
+    "labels": "never"
    },
    "hotspots": [
     {
@@ -374,7 +379,7 @@
      "zoom": 1.6,
      "center": {
       "x": 2,
-      "y": 30
+      "y": 29
      }
     },
     "actors": [
@@ -384,7 +389,7 @@
       "pos": {
        "dir": "up",
        "lane": 1,
-       "y": 0
+       "y": 4
       }
      },
      {
@@ -413,7 +418,7 @@
       "pos": {
        "dir": "down",
        "lane": 1,
-       "y": 66
+       "y": 57
       },
       "color": "blue"
      }
@@ -430,7 +435,7 @@
       {
        "t": 0,
        "actor": "oncoming",
-       "drive": 12,
+       "drive": 10,
        "dur": 3.5
       },
       {
@@ -460,13 +465,17 @@
     "solution": [
      {
       "t": 0,
+      "labels": true
+     },
+     {
+      "t": 0,
       "actor": "me",
       "brake": true
      },
      {
       "t": 0,
       "actor": "me",
-      "drive": 7,
+      "drive": 6,
       "dur": 1.8,
       "ease": "out"
      },
@@ -476,7 +485,7 @@
       "stop_at": {
        "y": 43
       },
-      "dur": 2.2
+      "dur": 1.6
      },
      {
       "t": 0.4,
@@ -506,7 +515,8 @@
       "dur": 5,
       "ease": "in"
      }
-    ]
+    ],
+    "labels": "never"
    },
    "hotspots": [
     {
@@ -552,7 +562,7 @@
       "y": 34
      }
     },
-    "labels": "solution",
+    "labels": "never",
     "actors": [
      {
       "id": "me",
@@ -639,6 +649,10 @@
      ]
     },
     "solution": [
+     {
+      "t": 0,
+      "labels": true
+     },
      {
       "t": 0,
       "actor": "taxi",
@@ -750,7 +764,7 @@
       "y": 18
      }
     },
-    "labels": "solution",
+    "labels": "never",
     "actors": [
      {
       "id": "me",
@@ -774,8 +788,8 @@
       "id": "walker",
       "type": "pedestrian",
       "pos": {
-       "x": -4.5,
-       "y": 38
+       "x": -10.5,
+       "y": 24
       },
       "color": "purple"
      }
@@ -786,9 +800,18 @@
       {
        "t": 0,
        "actor": "me",
-       "drive": 7,
+       "drive": 5,
        "dur": 3,
        "ease": "out"
+      },
+      {
+       "t": 0,
+       "actor": "walker",
+       "to": {
+        "x": -10.5,
+        "y": 27
+       },
+       "dur": 3
       },
       {
        "t": 1.2,
@@ -804,8 +827,8 @@
        "t": 1.5,
        "actor": "rev",
        "to": {
-        "x": 4.2,
-        "y": 22.9,
+        "x": 3.7,
+        "y": 19.7,
         "heading": 90
        },
        "reverse": true,
@@ -816,14 +839,18 @@
     "solution": [
      {
       "t": 0,
+      "labels": true
+     },
+     {
+      "t": 0,
       "actor": "me",
       "brake": true
      },
      {
       "t": 0,
       "actor": "me",
-      "drive": 1.5,
-      "dur": 1,
+      "drive": 1,
+      "dur": 0.8,
       "ease": "out"
      },
      {
@@ -832,7 +859,7 @@
       "to": {
        "dir": "up",
        "lane": 1,
-       "y": 18.5
+       "y": 16.8
       },
       "reverse": true,
       "dur": 2.6
@@ -908,13 +935,13 @@
      }
     },
     "view": {
-     "zoom": 1.45,
+     "zoom": 1.35,
      "center": {
       "x": 3,
-      "y": -12
+      "y": -14
      }
     },
-    "labels": "solution",
+    "labels": "never",
     "actors": [
      {
       "id": "me",
@@ -922,7 +949,7 @@
       "pos": {
        "arm": "S",
        "lane": 1,
-       "at": 25
+       "at": 32
       }
      },
      {
@@ -931,7 +958,7 @@
       "pos": {
        "arm": "S",
        "lane": 1,
-       "at": 9
+       "at": 14
       },
       "color": "orange",
       "signal": "right",
@@ -954,7 +981,7 @@
       {
        "t": 0,
        "actor": "me",
-       "drive": 7,
+       "drive": 10,
        "dur": 3,
        "ease": "out"
       },
@@ -965,7 +992,7 @@
         "arm": "S",
         "lane": 1,
         "at": 1.5,
-        "shift": -1.3
+        "shift": -1.2
        },
        "dur": 3,
        "ease": "out"
@@ -973,6 +1000,10 @@
      ]
     },
     "solution": [
+     {
+      "t": 0,
+      "labels": true
+     },
      {
       "t": 0,
       "actor": "me",
@@ -1046,6 +1077,13 @@
      },
      "len": 92,
      "scenery": "desert"
+    },
+    "view": {
+     "zoom": 1.4,
+     "center": {
+      "x": 1,
+      "y": 50
+     }
     },
     "actors": [
      {
@@ -1340,13 +1378,13 @@
      "len": 64
     },
     "view": {
-     "zoom": 1.2,
+     "zoom": 1.5,
      "center": {
-      "x": 2,
-      "y": 30
+      "x": 1.5,
+      "y": 32
      }
     },
-    "labels": "solution",
+    "labels": "never",
     "actors": [
      {
       "id": "me",
@@ -1354,17 +1392,16 @@
       "pos": {
        "dir": "up",
        "lane": 1,
-       "y": 4
+       "y": 6
       }
      },
      {
       "id": "bike",
       "type": "bicycle",
       "pos": {
-       "dir": "up",
-       "lane": 1,
-       "y": 24,
-       "shift": 1.1
+       "x": 4.6,
+       "y": 25,
+       "heading": 0
       },
       "label": "راكب دراجة"
      },
@@ -1375,7 +1412,7 @@
        "dir": "up",
        "lane": 1,
        "y": 46,
-       "shift": 0.5
+       "shift": 0.4
       },
       "color": "white",
       "signal": "hazard",
@@ -1404,12 +1441,16 @@
       {
        "t": 0,
        "actor": "bike",
-       "to": {
-        "dir": "up",
-        "lane": 1,
-        "y": 31,
-        "shift": 1.1
-       },
+       "path": [
+        [
+         4.6,
+         25
+        ],
+        [
+         4.6,
+         31
+        ]
+       ],
        "dur": 3
       },
       {
@@ -1421,6 +1462,10 @@
      ]
     },
     "solution": [
+     {
+      "t": 0,
+      "labels": true
+     },
      {
       "t": 0,
       "actor": "me",
@@ -1442,35 +1487,37 @@
      {
       "t": 0,
       "actor": "bike",
-      "to": {
-       "dir": "up",
-       "lane": 1,
-       "y": 40,
-       "shift": -1.3
-      },
-      "dur": 2.4
-     },
-     {
-      "t": 2.4,
-      "actor": "bike",
-      "to": {
-       "dir": "up",
-       "lane": 1,
-       "y": 51,
-       "shift": -1.3
-      },
-      "dur": 2.6
-     },
-     {
-      "t": 5.0,
-      "actor": "bike",
-      "to": {
-       "dir": "up",
-       "lane": 1,
-       "y": 64,
-       "shift": 1.1
-      },
-      "dur": 3
+      "path": [
+       [
+        4.6,
+        31
+       ],
+       [
+        4.5,
+        36
+       ],
+       [
+        2.1,
+        41
+       ],
+       [
+        2.0,
+        50.5
+       ],
+       [
+        3.3,
+        54.5
+       ],
+       [
+        4.6,
+        58
+       ],
+       [
+        4.6,
+        68
+       ]
+      ],
+      "dur": 8.4
      },
      {
       "t": 3.2,
@@ -1481,14 +1528,14 @@
       "t": 3.3,
       "actor": "me",
       "lane_change": "left",
-      "dist": 16,
-      "dur": 2.6
+      "dist": 12,
+      "dur": 2.4
      },
      {
-      "t": 5.9,
+      "t": 5.7,
       "actor": "me",
       "drive": 40,
-      "dur": 3.5
+      "dur": 3.6
      }
     ]
    },
@@ -1541,13 +1588,13 @@
      "len": 60
     },
     "view": {
-     "zoom": 1.2,
+     "zoom": 1.5,
      "center": {
-      "x": 1,
-      "y": 30
+      "x": 1.5,
+      "y": 33
      }
     },
-    "labels": "solution",
+    "labels": "never",
     "actors": [
      {
       "id": "me",
@@ -1555,7 +1602,7 @@
       "pos": {
        "dir": "up",
        "lane": 2,
-       "y": 6
+       "y": 8
       }
      },
      {
@@ -1608,7 +1655,7 @@
       {
        "t": 0,
        "actor": "me",
-       "drive": 13,
+       "drive": 12,
        "dur": 3.4
       },
       {
@@ -1632,6 +1679,10 @@
      ]
     },
     "solution": [
+     {
+      "t": 0,
+      "labels": true
+     },
      {
       "t": 0,
       "actor": "me",
@@ -1742,19 +1793,18 @@
      "zoom": 1.45,
      "center": {
       "x": 2,
-      "y": -10
+      "y": -9
      }
     },
-    "labels": "solution",
+    "labels": "never",
     "actors": [
      {
       "id": "me",
       "type": "me",
       "pos": {
-       "arm": "S",
-       "lane": 1,
-       "at": 18,
-       "shift": -0.35
+       "x": 1.35,
+       "y": -38,
+       "heading": 0
       },
       "signal": "right"
      },
@@ -1762,10 +1812,9 @@
       "id": "moto",
       "type": "motorcycle",
       "pos": {
-       "arm": "S",
-       "lane": 1,
-       "at": 34,
-       "shift": 1.3
+       "x": 3.15,
+       "y": -46,
+       "heading": 0
       },
       "variant": "delivery",
       "label": "دراجة توصيل"
@@ -1776,7 +1825,7 @@
       "pos": {
        "arm": "N",
        "lane": 1,
-       "at": 16
+       "at": 8
       },
       "color": "blue"
      },
@@ -1797,30 +1846,38 @@
       {
        "t": 0,
        "actor": "me",
-       "to": {
-        "arm": "S",
-        "lane": 1,
-        "at": 8,
-        "shift": -0.35
-       },
+       "path": [
+        [
+         1.35,
+         -38
+        ],
+        [
+         1.35,
+         -18
+        ]
+       ],
        "dur": 3,
        "ease": "out"
       },
       {
        "t": 0,
        "actor": "moto",
-       "to": {
-        "arm": "S",
-        "lane": 1,
-        "at": 12.5,
-        "shift": 1.3
-       },
+       "path": [
+        [
+         3.15,
+         -46
+        ],
+        [
+         3.15,
+         -21.3
+        ]
+       ],
        "dur": 3
       },
       {
        "t": 0,
        "actor": "c1",
-       "drive": 6,
+       "drive": 4,
        "dur": 3,
        "ease": "out"
       }
@@ -1829,20 +1886,39 @@
     "solution": [
      {
       "t": 0,
+      "labels": true
+     },
+     {
+      "t": 0,
       "actor": "me",
       "brake": true
      },
      {
       "t": 0,
       "actor": "moto",
-      "to": {
-       "arm": "N",
-       "lane": 1,
-       "dir": "out",
-       "at": 14,
-       "shift": 0.8
-      },
-      "dur": 2.4
+      "path": [
+       [
+        3.15,
+        -21.3
+       ],
+       [
+        3.15,
+        -8
+       ],
+       [
+        2.6,
+        4
+       ],
+       [
+        1.9,
+        16
+       ],
+       [
+        1.75,
+        40
+       ]
+      ],
+      "dur": 3.8
      },
      {
       "t": 0.2,
@@ -1851,12 +1927,12 @@
       "kmh": 24
      },
      {
-      "t": 3.0,
+      "t": 3.4,
       "actor": "me",
       "brake": false
      },
      {
-      "t": 3.1,
+      "t": 3.5,
       "actor": "me",
       "route": "S1->E",
       "kmh": 18,
@@ -1916,13 +1992,13 @@
      "scenery": "desert"
     },
     "view": {
-     "zoom": 1.2,
+     "zoom": 1.5,
      "center": {
-      "x": 1,
-      "y": 32
+      "x": 2,
+      "y": 34
      }
     },
-    "labels": "solution",
+    "labels": "never",
     "actors": [
      {
       "id": "me",
@@ -1930,7 +2006,7 @@
       "pos": {
        "dir": "up",
        "lane": 1,
-       "y": 6
+       "y": 8
       }
      },
      {
@@ -2005,13 +2081,17 @@
         "dir": "up",
         "lane": 1,
         "y": 50.4,
-        "shift": 1.2
+        "shift": 0.8
        },
        "dur": 2.0
       }
      ]
     },
     "solution": [
+     {
+      "t": 0,
+      "labels": true
+     },
      {
       "t": 0,
       "actor": "me",
@@ -2050,10 +2130,10 @@
       "to": {
        "dir": "up",
        "lane": "shoulder",
-       "y": 49.2,
-       "shift": 0.4
+       "y": 51.2,
+       "shift": 0.5
       },
-      "dur": 1.6
+      "dur": 1.8
      }
     ],
     "arrows": [
@@ -2116,10 +2196,10 @@
      "scenery": "desert"
     },
     "view": {
-     "zoom": 1.1,
+     "zoom": 1.4,
      "center": {
-      "x": 0,
-      "y": 34
+      "x": 1,
+      "y": 30
      }
     },
     "actors": [
@@ -2302,7 +2382,7 @@
     },
     "overlay": "fog",
     "visibility": 34,
-    "labels": "solution",
+    "labels": "never",
     "actors": [
      {
       "id": "me",
@@ -2359,6 +2439,10 @@
      ]
     },
     "solution": [
+     {
+      "t": 0,
+      "labels": true
+     },
      {
       "t": 0,
       "actor": "me",
@@ -2443,7 +2527,7 @@
       "y": 26
      }
     },
-    "labels": "solution",
+    "labels": "never",
     "actors": [
      {
       "id": "me",
@@ -2529,6 +2613,10 @@
      ]
     },
     "solution": [
+     {
+      "t": 0,
+      "labels": true
+     },
      {
       "t": 0.4,
       "actor": "haz",
@@ -3153,7 +3241,7 @@
       "y": 30
      }
     },
-    "labels": "solution",
+    "labels": "never",
     "actors": [
      {
       "id": "me",
@@ -3168,10 +3256,9 @@
       "id": "bike",
       "type": "bicycle",
       "pos": {
-       "dir": "up",
-       "lane": 1,
+       "x": 2.8,
        "y": 28,
-       "shift": 1.05
+       "heading": 0
       },
       "color": "black",
       "label": "دراجة بلا أضواء"
@@ -3199,12 +3286,16 @@
       {
        "t": 0,
        "actor": "bike",
-       "to": {
-        "dir": "up",
-        "lane": 1,
-        "y": 32,
-        "shift": 1.05
-       },
+       "path": [
+        [
+         2.8,
+         28
+        ],
+        [
+         2.8,
+         32
+        ]
+       ],
        "dur": 3
       },
       {
@@ -3216,6 +3307,10 @@
      ]
     },
     "solution": [
+     {
+      "t": 0,
+      "labels": true
+     },
      {
       "t": 0,
       "actor": "me",
@@ -3232,35 +3327,44 @@
      {
       "t": 0,
       "actor": "bike",
-      "to": {
-       "dir": "up",
-       "lane": 1,
-       "y": 50,
-       "shift": 1.05
-      },
+      "path": [
+       [
+        2.8,
+        32
+       ],
+       [
+        2.8,
+        50
+       ]
+      ],
       "dur": 7.5
      },
      {
       "t": 3.4,
       "actor": "me",
-      "to": {
-       "dir": "up",
-       "lane": 1,
-       "y": 57,
-       "shift": -1.3
-      },
-      "dur": 2.8
-     },
-     {
-      "t": 6.2,
-      "actor": "me",
-      "to": {
-       "dir": "up",
-       "lane": 1,
-       "y": 68,
-       "shift": 0
-      },
-      "dur": 1.6
+      "path": [
+       [
+        1.75,
+        25
+       ],
+       [
+        0.45,
+        33
+       ],
+       [
+        0.45,
+        56
+       ],
+       [
+        1.75,
+        64
+       ],
+       [
+        1.75,
+        74
+       ]
+      ],
+      "dur": 4.6
      }
     ],
     "callouts": [
@@ -3334,7 +3438,7 @@
       "y": 30
      }
     },
-    "labels": "solution",
+    "labels": "never",
     "actors": [
      {
       "id": "me",
@@ -3411,6 +3515,10 @@
      ]
     },
     "solution": [
+     {
+      "t": 0,
+      "labels": true
+     },
      {
       "t": 0,
       "actor": "me",
@@ -3669,7 +3777,7 @@
       "y": 32
      }
     },
-    "labels": "solution",
+    "labels": "never",
     "actors": [
      {
       "id": "me",
@@ -3760,6 +3868,10 @@
      ]
     },
     "solution": [
+     {
+      "t": 0,
+      "labels": true
+     },
      {
       "t": 0,
       "actor": "me",
