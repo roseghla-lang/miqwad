@@ -528,7 +528,7 @@
 
   reg('t-barriers', 'حواجز الأعمال المؤقتة', function (o, label) {
     // a line of barriers receding to the right; each segment has a trapezoid side profile (sloped ends)
-    var VP = [172, 40], A = [-14, 92], H = 42, D0 = 3, sl = 0.16;
+    var VP = [172, 40], A = [-14, 92], H = 42, D0 = 3, sl = 0.1;
     function P(d, v) {
       var t = d / (d + D0), x = A[0] + t * (VP[0] - A[0]);
       var yb = A[1] + t * (VP[1] - A[1]), yt = A[1] - H + t * (VP[1] - A[1] + H);
@@ -539,11 +539,11 @@
     function band(d0, d1, v0, v1, fill) {
       return poly([P(d0 + sl * v0, v0), P(d1 - sl * v0, v0), P(d1 - sl * v1, v1), P(d0 + sl * v1, v1)], fill);
     }
-    var s = poly([P(0, 0), P(5, 0), [VP[0], VP[1] + 18], [A[0], A[1] + 6]], '#30363F');
+    var s = poly([P(0, 0), P(5, 0), [VP[0], VP[1] + 10], [A[0], A[1] + 3.5]], '#30363F');
     var cols = [[RD, '#A3161F', '#E0555B'], ['#F2F2EE', '#C3C8CF', '#FFFFFF']];
     for (var i = 4; i >= 0; i--) {
       var c = cols[i % 2], d0 = i, d1 = i + 1, m = (d0 + d1) / 2;
-      s += poly([P(d1 - 0.07, 0.2), P(d1 + 0.07, 0.2), P(d1 + 0.07, 0.86), P(d1 - 0.07, 0.86)], '#4A4F57');
+      s += poly([P(d1 - 0.05, 0.25), P(d1 + 0.05, 0.25), P(d1 + 0.05, 0.9), P(d1 - 0.05, 0.9)], '#22262D');
       s += poly([P(d0, 0), P(d0 + sl, 1), P(d1 - sl, 1), P(d1, 0)], c[0]) +
         poly([P(d0 + sl, 1), P(d1 - sl, 1), PT(d1 - sl - 0.03, 0.1), PT(d0 + sl + 0.03, 0.1)], c[2]) +
         band(d0, d1, 0.56, 0.66, c[1]) +
