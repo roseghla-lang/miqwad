@@ -1,0 +1,2796 @@
+{
+ "module": "roads",
+ "updated": "2026-09-29",
+ "sources": {
+  "S1": {
+   "title": "مرسوم بقانون اتحادي رقم 14 لسنة 2024 بشأن تنظيم السير والمرور",
+   "url": "https://uaelegislation.gov.ae/ar/legislations/2598/download",
+   "publisher": "UAE Legislation portal",
+   "date": "2024-09-30"
+  },
+  "S3": {
+   "title": "Ministerial Resolution No. 130 of 1997, Executive Regulation of the Federal Traffic Law (English)",
+   "url": "https://uaelegislation.gov.ae/en/legislations/1020/download",
+   "publisher": "UAE Legislation portal",
+   "date": "1997, updated 2023-05-02"
+  },
+  "S4": {
+   "title": "القرار الوزاري رقم 130 لسنة 1997 باللائحة التنفيذية لقانون السير والمرور",
+   "url": "https://uaelegislation.gov.ae/ar/legislations/1020/download",
+   "publisher": "UAE Legislation portal",
+   "date": "1997, updated 2023-05-02"
+  },
+  "S5": {
+   "title": "Light Motor Vehicle Handbook, A Guide to Safe Driving, 7th edition (English)",
+   "url": "https://edi-uae.com/public/uploads/downloads/20190724133013RTA_Handbook_-_Light_Motor_Vehicle_(LMV)_-_English.pdf",
+   "publisher": "RTA Licensing Agency (copy hosted by Emirates Driving Institute)",
+   "date": "2016-01"
+  },
+  "S6": {
+   "title": "كتيب المركبات الآلية الخفيفة، دليل للقيادة الآمنة، الطبعة 3",
+   "url": "https://www.rta.ae/wpsv5/eservices/PDF_Catalog/Light_Motor_Handbook_AR.pdf",
+   "publisher": "RTA Licensing Agency",
+   "date": "2012-01"
+  },
+  "S7": {
+   "title": "كتيب المركبات الآلية الخفيفة، الطبعة 8",
+   "url": "https://www.drivedubai.ae/public/uploads/downloads/20210301161905RTA-Handbook-Light-Motor-Vechicle-Arabic.pdf",
+   "publisher": "RTA Licensing Agency (copy hosted by Dubai Driving Center)",
+   "date": "2021-03"
+  },
+  "S9": {
+   "title": "Dubai: 5 rules to follow when driving in the fast lane (Dubai Police, RTA)",
+   "url": "https://gulfnews.com/living-in-uae/transport/dubai-5-rules-to-follow-when-driving-in-the-fast-lane-2-1.1720015446210",
+   "publisher": "Gulf News",
+   "date": "2024-07-03"
+  },
+  "S10": {
+   "title": "Dubai Police warn: Slow driving in fast lanes as dangerous as speeding",
+   "url": "https://gulfnews.com/uae/transport/dubai-police-warn-slow-driving-in-fast-lanes-as-dangerous-as-speeding-dh400-fine-imposed-1.500256599",
+   "publisher": "Gulf News (Dubai Police statement)",
+   "date": "2025-09-04"
+  },
+  "S11": {
+   "title": "Think you're following UAE lane rules? The driving mistakes that could get you fined (RTA; Sharjah Police on hard shoulder)",
+   "url": "https://gulfnews.com/living-in-uae/transport/think-youre-following-uae-lane-rules-the-driving-mistakes-that-could-get-you-fined-1.500124462",
+   "publisher": "Gulf News",
+   "date": "2025-05-12"
+  },
+  "S14": {
+   "title": "«لا تتردد.. افسح الطريق فورا» حملة مشتركة لمركبات الطوارئ والإسعاف",
+   "url": "https://abudhabipolice.gov.ae/Media-Center/News/2025/05/29052025001",
+   "publisher": "Abu Dhabi Police (official site)",
+   "date": "2025-05-29"
+  },
+  "S16": {
+   "title": "UAE: Give way to emergency vehicles or face Dh3,000 traffic fine",
+   "url": "https://gulfnews.com/living-in-uae/transport/uae-give-way-to-emergency-vehicles-or-face-dh3000-traffic-fine-1.500247516",
+   "publisher": "Gulf News (Abu Dhabi Police, Civil Defence)",
+   "date": "2025-08-27"
+  },
+  "S21": {
+   "title": "Tailgating in Dubai: rules explained (cites RTA handbook two-second rule)",
+   "url": "https://gulfnews.com/living-in-uae/transport/dubai-tailgating-fine-rules-1.500083210",
+   "publisher": "Gulf News",
+   "date": "2026-09-20"
+  },
+  "S22": {
+   "title": "Don't use hazard lights and double safety distance during fog, Abu Dhabi Police advises",
+   "url": "https://gulfnews.com/uae/dont-use-hazard-lights-and-double-safety-distance-during-fog-abu-dhabi-police-advises-1.82879145",
+   "publisher": "Gulf News",
+   "date": "2021-10-18"
+  },
+  "S23": {
+   "title": "UAE: Driving with hazard lights on during fog? You could get fined; here's why",
+   "url": "https://www.khaleejtimes.com/uae/weather/driving-fog-hazard-lights-tips",
+   "publisher": "Khaleej Times",
+   "date": "2025-11-20"
+  }
+ },
+ "scenarios": [
+  {
+   "id": "rd-001",
+   "topic": "highway",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "highway-merge",
+    "params": {
+     "lanes": 3,
+     "accel": 50
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "lane": "accel",
+       "y": 28
+      }
+     },
+     {
+      "id": "blue",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "lane": 1,
+       "y": 14
+      },
+      "label": "في المسار الأيمن"
+     },
+     {
+      "id": "c2",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "lane": 2,
+       "y": 40
+      }
+     },
+     {
+      "id": "c3",
+      "type": "car",
+      "color": "red",
+      "pos": {
+       "lane": 3,
+       "y": 22
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "blue",
+      "drive": 95,
+      "dur": 4.2
+     },
+     {
+      "t": 0,
+      "actor": "c2",
+      "drive": 70,
+      "dur": 4.6
+     },
+     {
+      "t": 0,
+      "actor": "c3",
+      "drive": 90,
+      "dur": 4.4
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "route": "merge",
+      "merge_at": 72,
+      "dur": 6,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "track": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "أنت في مسار التسارع وتريد الدخول إلى الطريق السريع، أي إشارة تستخدم وإلى أي مسار تنتقل؟",
+   "options": [
+    "أشغل إشارة اليمين وأنتقل مباشرة إلى المسار الأوسط",
+    "أشغل إشارة اليسار وأندمج في المسار الأيمن عند فجوة آمنة",
+    "أشغل إشارة اليسار وأنتقل مباشرة إلى المسار الأيسر لأنه أسرع",
+    "لا أحتاج إلى إشارة لأن مسار التسارع ينتهي وحده"
+   ],
+   "answer": 1,
+   "explain": "الطريق السريع على يسارك، فشغل إشارة اليسار واندمج أولا في المسار الأيمن بسرعة قريبة من سرعة المرور\nالأولوية للمركبات على الطريق، فادخل في فجوة آمنة خلف السيارة الزرقاء",
+   "tip": "من المنحدر للمسار الأيمن أول، وبعدين فكر بالمسارات التانية",
+   "explain_fig": [
+    "fig-highway-merge"
+   ],
+   "src": [
+    "S5",
+    "S3",
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rd-002",
+   "topic": "highway",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "highway-exit",
+    "params": {
+     "lanes": 3,
+     "ramp_at": 38,
+     "decel": 30,
+     "len": 115
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "lane": 2,
+       "y": 8
+      }
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "lane": 1,
+       "y": 62
+      }
+     },
+     {
+      "id": "c3",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "lane": 3,
+       "y": 20
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "c1",
+      "drive": 60,
+      "dur": 3.4
+     },
+     {
+      "t": 0,
+      "actor": "c3",
+      "drive": 90,
+      "dur": 4.6
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "lane_change": "right",
+      "dist": 22,
+      "dur": 2.2
+     },
+     {
+      "t": 2.2,
+      "actor": "me",
+      "route": "exit",
+      "exit_at": 40,
+      "dur": 6,
+      "ease": "out"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "track": "solution",
+      "style": "ok"
+     }
+    ],
+    "callouts": [
+     {
+      "text": "ادخل من بداية مسار الخروج",
+      "at": {
+       "x": 30,
+       "y": 36
+      },
+      "when": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "تريد الخروج من المخرج القادم على اليمين وأنت في المسار الأوسط، ما التصرف الصحيح؟",
+   "options": [
+    "أبقى في مساري ثم أنعطف إلى المخرج عند الخطوط المائلة",
+    "أخفف سرعتي كثيرا في المسار الأوسط ثم أنتقل إلى مسار الخروج",
+    "أعبر المسار الأيمن ومسار الخروج في حركة واحدة عند آخر لحظة",
+    "أنتقل مبكرا إلى المسار الأيمن مع إشارة اليمين، ثم أدخل مسار الخروج من بدايته وأخفف سرعتي داخله"
+   ],
+   "answer": 3,
+   "explain": "استعد للمخرج مبكرا: انتقل مسارا بعد مسار إلى اليمين مع الإشارة والمرايا\nادخل مسار الخروج من بدايته وخفف سرعتك داخله، لا على الطريق السريع، ولا تعبر الخطوط المائلة",
+   "explain_fig": [
+    "fig-highway-exit",
+    "mk-hatched"
+   ],
+   "src": [
+    "S5",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rd-003",
+   "topic": "highway",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "highway-exit",
+    "params": {
+     "lanes": 3
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "lane": 1,
+       "y": 70
+      }
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "lane": 1,
+       "y": 36
+      }
+     },
+     {
+      "id": "c2",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "lane": 2,
+       "y": 52
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 45,
+      "dur": 3.2
+     },
+     {
+      "t": 0,
+      "actor": "c1",
+      "drive": 70,
+      "dur": 3.6
+     },
+     {
+      "t": 0,
+      "actor": "c2",
+      "drive": 60,
+      "dur": 3.4
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "track": "solution",
+      "style": "ok"
+     },
+     {
+      "path": [
+       [
+        10.3,
+        72
+       ],
+       [
+        11.8,
+        77
+       ],
+       [
+        14.5,
+        83
+       ]
+      ],
+      "style": "bad"
+     }
+    ],
+    "callouts": [
+     {
+      "text": "تابع إلى المخرج التالي",
+      "at": {
+       "x": 25,
+       "y": 50
+      },
+      "when": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "فاتك المخرج الذي تريده وأصبحت بجانب الخطوط المائلة، ماذا تفعل؟",
+   "options": [
+    "أتابع السير وأخرج من المخرج التالي",
+    "أعبر الخطوط المائلة بسرعة لألحق بالمخرج",
+    "أتوقف على جانب الطريق وأرجع للخلف إلى المخرج",
+    "أتوقف في مساري حتى يخلو الطريق ثم أدخل المخرج"
+   ],
+   "answer": 0,
+   "explain": "إذا فاتك المخرج فلا ترجع للخلف ولا تتوقف ولا تعبر الخطوط المائلة\nتابع السير واخرج من المخرج التالي ثم ارجع من طريق آخر",
+   "tip": "المخرج اللي فاتك راح، في غيره قدام",
+   "explain_fig": [
+    "fig-missed-exit"
+   ],
+   "src": [
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rd-004",
+   "topic": "highway",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": {
+      "up": 3,
+      "down": 3
+     },
+     "divided": true,
+     "median": {
+      "width": 4,
+      "barrier": true
+     },
+     "shoulder": {
+      "up": true
+     },
+     "len": 70,
+     "scenery": "desert"
+    },
+    "labels": "solution",
+    "view": {
+     "zoom": 1.3,
+     "center": {
+      "x": 6,
+      "y": 33
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 12
+      }
+     },
+     {
+      "id": "q1",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 20
+      },
+      "brake": true
+     },
+     {
+      "id": "q2",
+      "type": "truck",
+      "color": "blue",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 32
+      },
+      "brake": true
+     },
+     {
+      "id": "q3",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 15
+      },
+      "brake": true
+     },
+     {
+      "id": "q4",
+      "type": "car",
+      "color": "red",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 23
+      },
+      "brake": true
+     },
+     {
+      "id": "q5",
+      "type": "car",
+      "color": "black",
+      "pos": {
+       "dir": "up",
+       "lane": 3,
+       "y": 18
+      },
+      "brake": true
+     },
+     {
+      "id": "q6",
+      "type": "car",
+      "color": "green",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 44
+      },
+      "brake": true
+     },
+     {
+      "id": "q7",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "dir": "up",
+       "lane": 3,
+       "y": 38
+      },
+      "brake": true
+     },
+     {
+      "id": "amb",
+      "type": "ambulance",
+      "pos": {
+       "dir": "up",
+       "lane": "shoulder",
+       "y": 2
+      },
+      "visible": false,
+      "label": "الكتف لمركبات الطوارئ"
+     }
+    ],
+    "solution": [
+     {
+      "t": 0.4,
+      "actor": "amb",
+      "visible": true
+     },
+     {
+      "t": 0.4,
+      "actor": "amb",
+      "drive": 80,
+      "dur": 4.2
+     },
+     {
+      "t": 2.0,
+      "actor": "q2",
+      "brake": false
+     },
+     {
+      "t": 2.0,
+      "actor": "q2",
+      "drive": 4,
+      "dur": 2,
+      "ease": "inout"
+     }
+    ]
+   },
+   "q": "ازدحام شديد على الطريق السريع، وكتف الطريق على يمينك فارغ، والمخرج الذي تريده قريب، ماذا تفعل؟",
+   "options": [
+    "أسير على كتف الطريق حتى المخرج لأنه قريب",
+    "أسير على الكتف ببطء مع تشغيل أضواء التحذير",
+    "أبقى في مساري مع الطابور، وأترك الكتف فارغا للمركبات المعطلة والطوارئ",
+    "أتوقف على الكتف وأنتظر حتى يخف الازدحام"
+   ],
+   "answer": 2,
+   "explain": "كتف الطريق للمركبات المعطلة وخدمات الطوارئ فقط، وممنوع السير أو التجاوز عليه\nفي الازدحام تستخدمه سيارات الإسعاف والشرطة لتصل بسرعة، فاتركه فارغا",
+   "tip": "الكتف مش مسار زيادة، هو طريق الإسعاف",
+   "explain_fig": [
+    "mk-hard-shoulder"
+   ],
+   "src": [
+    "S11",
+    "S14",
+    "S16"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rd-005",
+   "topic": "lanes",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": {
+      "up": 3,
+      "down": 3
+     },
+     "divided": true,
+     "len": 80
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 3,
+       "y": 18
+      }
+     },
+     {
+      "id": "fast",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "dir": "up",
+       "lane": 3,
+       "y": 3
+      }
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 70
+      }
+     },
+     {
+      "id": "o1",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "dir": "down",
+       "lane": 2,
+       "y": 55
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "lane_change": "right",
+      "dist": 18,
+      "dur": 2
+     },
+     {
+      "t": 2,
+      "actor": "me",
+      "lane_change": "right",
+      "dist": 18,
+      "dur": 2
+     },
+     {
+      "t": 4,
+      "actor": "me",
+      "drive": 20,
+      "dur": 1.6
+     },
+     {
+      "t": 0,
+      "actor": "c1",
+      "drive": 30,
+      "dur": 5.6
+     },
+     {
+      "t": 0,
+      "actor": "o1",
+      "drive": 70,
+      "dur": 4
+     },
+     {
+      "t": 2.2,
+      "actor": "fast",
+      "drive": 90,
+      "dur": 3.4
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "track": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "تسير في المسار الأيسر على طريق بثلاثة مسارات، والطريق أمامك خال ولا تتجاوز أحدا، ماذا تفعل؟",
+   "options": [
+    "أبقى في المسار الأيسر لأنه أسرع",
+    "أعود إلى المسار الأيمن عندما يكون ذلك آمنا، مع الإشارة",
+    "أبقى في المسار الأيسر وأخفف سرعتي قليلا",
+    "أبقى في أي مسار أختاره لأن الطريق خال"
+   ],
+   "answer": 1,
+   "explain": "الزم أقصى اليمين عادة، والمسار الأيسر للتجاوز فقط\nبعد التجاوز أو إذا لم تكن تتجاوز أحدا ارجع إلى اليمين، وأفسح الطريق للمركبات الأسرع",
+   "tip": "الشمال للتجاوز وبس، خلصت؟ رجاع يمين",
+   "explain_fig": [
+    "fig-keep-right"
+   ],
+   "src": [
+    "S3",
+    "S5",
+    "S9",
+    "S10"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rd-006",
+   "topic": "lanes",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "tap",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": {
+      "up": 2,
+      "down": 2
+     },
+     "divided": true,
+     "len": 70
+    },
+    "labels": "never",
+    "view": {
+     "zoom": 1.3,
+     "center": {
+      "x": 2,
+      "y": 36
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 28
+      },
+      "signal": "left"
+     },
+     {
+      "id": "blue",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 25
+      },
+      "label": "في النقطة العمياء"
+     },
+     {
+      "id": "truck",
+      "type": "truck",
+      "color": "white",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 50
+      }
+     },
+     {
+      "id": "ahead",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 57
+      }
+     },
+     {
+      "id": "onc",
+      "type": "car",
+      "color": "red",
+      "pos": {
+       "dir": "down",
+       "lane": 2,
+       "y": 40
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "labels": true
+     },
+     {
+      "t": 0,
+      "actor": "blue",
+      "drive": 60,
+      "dur": 3.4
+     },
+     {
+      "t": 0,
+      "actor": "ahead",
+      "drive": 40,
+      "dur": 3.4
+     },
+     {
+      "t": 0,
+      "actor": "truck",
+      "drive": 14,
+      "dur": 5.6
+     },
+     {
+      "t": 0,
+      "actor": "onc",
+      "drive": 60,
+      "dur": 3.6
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 6,
+      "dur": 2.2
+     },
+     {
+      "t": 2.2,
+      "actor": "me",
+      "lane_change": "left",
+      "dist": 16,
+      "dur": 2.4
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "track": "solution",
+      "from_t": 2.2,
+      "style": "ok"
+     }
+    ]
+   },
+   "hotspots": [
+    {
+     "id": "blue",
+     "actor": "blue"
+    },
+    {
+     "id": "truck",
+     "actor": "truck"
+    },
+    {
+     "id": "ahead",
+     "actor": "ahead"
+    },
+    {
+     "id": "onc",
+     "actor": "onc"
+    }
+   ],
+   "q": "تريد الانتقال إلى المسار الأيسر، أي مركبة تمنعك من الانتقال الآن؟ انقر عليها",
+   "answer": "blue",
+   "explain": "السيارة الزرقاء بجانبك من الخلف في النقطة العمياء، وقد لا تظهر في المرآة\nقبل تغيير المسار: المرايا ثم الإشارة ثم التفاتة الرأس، وانتقل فقط بعد أن تمر",
+   "tip": "قبل ما تغير مسارك لف راسك، المراية ما بتفرجيك كل شي",
+   "explain_fig": [
+    "fig-blind-spots",
+    "fig-lane-change"
+   ],
+   "src": [
+    "S5",
+    "S6",
+    "S11"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rd-007",
+   "topic": "lanes",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": {
+      "up": 2,
+      "down": 2
+     },
+     "divided": true,
+     "len": 80,
+     "works": {
+      "dir": "up",
+      "lane": 1,
+      "from": 46,
+      "to": 80
+     },
+     "signs": [
+      {
+       "id": "t-lane-closed-right",
+       "dir": "up",
+       "y": 22
+      }
+     ]
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 8
+      }
+     },
+     {
+      "id": "blue",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 11
+      },
+      "label": "السيارة الزرقاء"
+     },
+     {
+      "id": "c2",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 36
+      }
+     },
+     {
+      "id": "onc",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "dir": "down",
+       "lane": 1,
+       "y": 60
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "blue",
+      "drive": 70,
+      "dur": 4.4
+     },
+     {
+      "t": 0,
+      "actor": "c2",
+      "drive": 60,
+      "dur": 4.2
+     },
+     {
+      "t": 0,
+      "actor": "onc",
+      "drive": 70,
+      "dur": 4
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 8,
+      "dur": 1.8,
+      "ease": "out"
+     },
+     {
+      "t": 1.8,
+      "actor": "me",
+      "lane_change": "left",
+      "dist": 18,
+      "dur": 2.4
+     },
+     {
+      "t": 4.2,
+      "actor": "me",
+      "drive": 40,
+      "dur": 3
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "track": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "أمامك أعمال طرق تغلق مسارك، والسيارة الزرقاء تسير في المسار الأيسر بجانبك، ما التصرف الصحيح؟",
+   "options": [
+    "أتابع حتى أصل إلى الأقماع ثم أدخل المسار الأيسر بسرعة",
+    "أتوقف أمام الأقماع حتى يسمح لي أحد بالدخول",
+    "أخفف سرعتي وأشغل إشارة اليسار مبكرا، وأنتقل خلف السيارة الزرقاء عند فجوة آمنة",
+    "أسرع لأدخل أمام السيارة الزرقاء قبل الأقماع"
+   ],
+   "answer": 2,
+   "explain": "عندما يغلق مسارك أمامك انتقل مبكرا إلى المسار المفتوح، وخفف سرعتك في منطقة الأعمال\nالإشارة لا تعطيك حق الانتقال، فانتظر فجوة آمنة خلف السيارة التي بجانبك",
+   "explain_fig": [
+    "t-lane-closed-right",
+    "fig-lane-change"
+   ],
+   "src": [
+    "S5",
+    "S6",
+    "S11"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rd-008",
+   "topic": "lanes",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "uturn",
+    "params": {
+     "lanes": 2,
+     "len": 70
+    },
+    "labels": "never",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 6
+      }
+     },
+     {
+      "id": "onc",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "dir": "down",
+       "lane": 2,
+       "y": 66
+      },
+      "label": "قادمة من الاتجاه المقابل"
+     },
+     {
+      "id": "onc2",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "dir": "down",
+       "lane": 1,
+       "y": 52
+      }
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 40
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "labels": true
+     },
+     {
+      "t": 0,
+      "actor": "c1",
+      "drive": 50,
+      "dur": 4
+     },
+     {
+      "t": 0,
+      "actor": "onc2",
+      "drive": 70,
+      "dur": 4.4
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "lane_change": "left",
+      "dist": 14,
+      "dur": 2.2
+     },
+     {
+      "t": 2.2,
+      "actor": "me",
+      "route": "uturn",
+      "until": "opening",
+      "dur": 2,
+      "ease": "out"
+     },
+     {
+      "t": 4.2,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 2.4,
+      "actor": "onc",
+      "drive": 80,
+      "dur": 5
+     },
+     {
+      "t": 5.9,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 6.0,
+      "actor": "me",
+      "route": "uturn",
+      "dur": 4,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "track": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "تريد الرجوع (يوتيرن) من الفتحة التي أمامك في الجزيرة الوسطى، وأنت الآن في المسار الأيمن، ما التصرف الصحيح؟",
+   "options": [
+    "أنتقل مبكرا إلى المسار الأيسر مع إشارة اليسار، وأنتظر عند الفتحة حتى تمر المركبات القادمة ثم أرجع",
+    "أرجع من المسار الأيمن مباشرة لأن الفتحة قريبة",
+    "أشغل إشارة اليمين وأدور من المسار الأيمن",
+    "أدخل الفتحة وأرجع فورا لأن من يرجع له الأولوية"
+   ],
+   "answer": 0,
+   "explain": "الرجوع في الإمارات إلى اليسار، فابدأ من المسار الأيسر مع إشارة اليسار\nأعط الأولوية لكل المركبات القادمة في الاتجاه المقابل، وارجع فقط عندما يخلو الطريق",
+   "tip": "اليوتيرن من أقصى الشمال، واللي جاي بوجهك إله الأولوية",
+   "explain_fig": [
+    "fig-uturn"
+   ],
+   "src": [
+    "S6",
+    "S3"
+   ],
+   "confidence": "medium",
+   "notes": "أولوية القادمين عند الرجوع ثابتة بدليل هيئة الطرق، أما البدء من المسار الأيسر فمستنتج من المادة 59 ومن قواعد الانعطاف يسارا"
+  },
+  {
+   "id": "rd-009",
+   "topic": "overtaking",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": {
+      "up": 2,
+      "down": 2
+     },
+     "divided": true,
+     "len": 90
+    },
+    "view": {
+     "zoom": 1.25,
+     "center": {
+      "x": 3,
+      "y": 48
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 16
+      }
+     },
+     {
+      "id": "truck",
+      "type": "truck",
+      "color": "orange",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 34
+      },
+      "label": "شاحنة بطيئة"
+     },
+     {
+      "id": "onc",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "dir": "down",
+       "lane": 1,
+       "y": 74
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "truck",
+      "drive": 20,
+      "dur": 8
+     },
+     {
+      "t": 0,
+      "actor": "onc",
+      "drive": 80,
+      "dur": 4
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "lane_change": "left",
+      "dist": 14,
+      "dur": 2
+     },
+     {
+      "t": 2,
+      "actor": "me",
+      "drive": 36,
+      "dur": 2.8
+     },
+     {
+      "t": 4.8,
+      "actor": "me",
+      "lane_change": "right",
+      "dist": 16,
+      "dur": 2.2
+     },
+     {
+      "t": 7.0,
+      "actor": "me",
+      "drive": 16,
+      "dur": 1.2
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "track": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "شاحنة بطيئة أمامك في المسار الأيمن والمسار الأيسر خال، كيف تتجاوزها؟",
+   "options": [
+    "من اليمين عبر حافة الطريق لأنها أقرب",
+    "من اليسار، ثم أبقى في المسار الأيسر حتى نهاية الطريق",
+    "من اليسار، ثم أعود أمامها مباشرة بعد أن تتجاوز مقدمة سيارتي مقدمتها",
+    "من اليسار مع الإشارة، ثم أعود إلى المسار الأيمن بعد أن أبتعد عنها مسافة كافية"
+   ],
+   "answer": 3,
+   "explain": "التجاوز في الإمارات من اليسار فقط، مع الإشارة وبعد التأكد أن المسار خال\nلا تعد أمام الشاحنة إلا بعد أن تترك مسافة كافية، ثم ارجع إلى المسار الأيمن",
+   "explain_fig": [
+    "fig-overtake-left"
+   ],
+   "src": [
+    "S3",
+    "S4",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rd-010",
+   "topic": "overtaking",
+   "level": 5,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": {
+      "up": 2,
+      "down": 2
+     },
+     "divided": true,
+     "zebra": {
+      "y": 42
+     },
+     "len": 60
+    },
+    "labels": "solution",
+    "view": {
+     "zoom": 1.5,
+     "center": {
+      "x": 3,
+      "y": 30
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 12
+      }
+     },
+     {
+      "id": "van",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 36.5
+      },
+      "brake": true,
+      "label": "توقفت قبل الممر"
+     },
+     {
+      "id": "ped",
+      "type": "pedestrian",
+      "variant": "woman",
+      "color": "purple",
+      "pos": {
+       "crossing": "zebra",
+       "side": "east"
+      },
+      "visible": false,
+      "label": "كانت مخفية خلف السيارة"
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "stop_at": "crossing",
+      "dur": 3
+     },
+     {
+      "t": 0.6,
+      "actor": "ped",
+      "visible": true
+     },
+     {
+      "t": 0.6,
+      "actor": "ped",
+      "to": {
+       "x": 0,
+       "y": 42
+      },
+      "dur": 6
+     },
+     {
+      "t": 6.9,
+      "actor": "van",
+      "brake": false
+     },
+     {
+      "t": 6.9,
+      "actor": "van",
+      "drive": 40,
+      "dur": 3.4,
+      "ease": "in"
+     },
+     {
+      "t": 7.1,
+      "actor": "me",
+      "drive": 40,
+      "dur": 3.4,
+      "ease": "in"
+     }
+    ]
+   },
+   "q": "السيارة في المسار الأيمن توقفت قبل ممر المشاة، ومسارك الأيسر يبدو خاليا، ماذا تفعل؟",
+   "options": [
+    "أتابع بسرعتي لأن مساري خال",
+    "أخفف وأتوقف قبل الممر أيضا، فقد يكون أمامها مشاة لا أراهم",
+    "أتجاوزها بسرعة قبل أن يبدأ أحد بالعبور",
+    "أطلق المنبه لأنبه السيارة المتوقفة ثم أتابع"
+   ],
+   "answer": 1,
+   "explain": "ممنوع التجاوز قرب ممرات المشاة، والسيارة المتوقفة قد تخفي مشاة يعبرون أمامها\nتوقف قبل الممر وانتظر حتى يصل المشاة إلى الرصيف",
+   "tip": "سيارة وقفت قبل الزيبرا؟ في حدا قدامها ما شفته",
+   "explain_fig": [
+    "mk-zebra"
+   ],
+   "src": [
+    "S3",
+    "S4",
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rd-011",
+   "topic": "overtaking",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": 1,
+     "center": "broken",
+     "len": 90,
+     "scenery": "desert"
+    },
+    "labels": "solution",
+    "view": {
+     "zoom": 1.5,
+     "center": {
+      "x": 0,
+      "y": 50
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 32
+      }
+     },
+     {
+      "id": "pass",
+      "type": "car",
+      "color": "red",
+      "pos": {
+       "dir": "down",
+       "lane": 1,
+       "y": 25,
+       "heading": 0
+      },
+      "wrong_way": true,
+      "signal": "left",
+      "label": "تتجاوزك"
+     },
+     {
+      "id": "onc",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "dir": "down",
+       "lane": 1,
+       "y": 76
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 16,
+      "dur": 4,
+      "ease": "out"
+     },
+     {
+      "t": 0,
+      "actor": "pass",
+      "signal": "off"
+     },
+     {
+      "t": 0,
+      "actor": "pass",
+      "path": [
+       [
+        -1.75,
+        25
+       ],
+       [
+        -1.75,
+        42
+       ],
+       [
+        0,
+        50
+       ],
+       [
+        1.75,
+        58
+       ],
+       [
+        1.75,
+        70
+       ],
+       [
+        1.75,
+        100
+       ]
+      ],
+      "dur": 3.6
+     },
+     {
+      "t": 0.8,
+      "actor": "pass",
+      "signal": "right"
+     },
+     {
+      "t": 2.4,
+      "actor": "pass",
+      "signal": "off"
+     },
+     {
+      "t": 0,
+      "actor": "onc",
+      "drive": 70,
+      "dur": 5.2
+     },
+     {
+      "t": 4,
+      "actor": "me",
+      "drive": 30,
+      "dur": 2.6
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "pass",
+      "track": "solution",
+      "style": "other"
+     }
+    ],
+    "callouts": [
+     {
+      "text": "خفف والتزم اليمين",
+      "at": {
+       "x": 10,
+       "y": 36
+      },
+      "when": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "سيارة حمراء بدأت تتجاوزك من اليسار على طريق بمسار واحد لكل اتجاه، ماذا تفعل؟",
+   "options": [
+    "أزيد سرعتي حتى لا تسبقني",
+    "أنتقل قليلا نحو وسط الطريق لأمنعها",
+    "أخفف سرعتي قليلا وألتزم يمين مساري حتى تكمل التجاوز",
+    "أفرمل بقوة وأتوقف في مكاني"
+   ],
+   "answer": 2,
+   "explain": "عندما يتجاوزك أحد خفف سرعتك قليلا والتزم أقصى يمين مسارك\nلا تزد سرعتك، فأنت بذلك تطيل وجوده في الاتجاه المقابل وتعرضه للخطر",
+   "tip": "حدا عم يسبقك؟ خليه يسبق، خفف شوي وضل يمين",
+   "explain_fig": [
+    "fig-overtake-left"
+   ],
+   "src": [
+    "S3",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rd-012",
+   "topic": "overtaking",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "tap",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": {
+      "up": 2,
+      "down": 2
+     },
+     "divided": true,
+     "len": 80
+    },
+    "labels": "never",
+    "view": {
+     "zoom": 1.25,
+     "center": {
+      "x": 2,
+      "y": 40
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 20
+      }
+     },
+     {
+      "id": "truck",
+      "type": "truck",
+      "color": "green",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 35
+      }
+     },
+     {
+      "id": "fast",
+      "type": "car",
+      "color": "red",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": -14
+      },
+      "signal": "left",
+      "label": "بدأت التجاوز قبلك"
+     },
+     {
+      "id": "ahead",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 54
+      }
+     },
+     {
+      "id": "onc",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "dir": "down",
+       "lane": 2,
+       "y": 56
+      }
+     }
+    ],
+    "intro": {
+     "len": 2.4,
+     "events": [
+      {
+       "t": 0,
+       "actor": "me",
+       "drive": 8,
+       "dur": 2.4
+      },
+      {
+       "t": 0,
+       "actor": "truck",
+       "drive": 8,
+       "dur": 2.4
+      },
+      {
+       "t": 0,
+       "actor": "fast",
+       "drive": 26,
+       "dur": 2.4
+      },
+      {
+       "t": 0,
+       "actor": "ahead",
+       "drive": 12,
+       "dur": 2.4
+      },
+      {
+       "t": 0,
+       "actor": "onc",
+       "drive": 26,
+       "dur": 2.4
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "labels": true
+     },
+     {
+      "t": 0,
+      "actor": "fast",
+      "signal": "off"
+     },
+     {
+      "t": 0,
+      "actor": "fast",
+      "drive": 120,
+      "dur": 4.4
+     },
+     {
+      "t": 0,
+      "actor": "truck",
+      "drive": 20,
+      "dur": 6
+     },
+     {
+      "t": 0,
+      "actor": "ahead",
+      "drive": 30,
+      "dur": 3.4
+     },
+     {
+      "t": 0,
+      "actor": "onc",
+      "drive": 40,
+      "dur": 2.6
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 8,
+      "dur": 2.6
+     },
+     {
+      "t": 2.6,
+      "actor": "me",
+      "lane_change": "left",
+      "dist": 16,
+      "dur": 2.2
+     },
+     {
+      "t": 4.8,
+      "actor": "me",
+      "drive": 30,
+      "dur": 2.4
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "fast",
+      "track": "solution",
+      "style": "warn"
+     }
+    ]
+   },
+   "hotspots": [
+    {
+     "id": "fast",
+     "actor": "fast"
+    },
+    {
+     "id": "truck",
+     "actor": "truck"
+    },
+    {
+     "id": "ahead",
+     "actor": "ahead"
+    },
+    {
+     "id": "onc",
+     "actor": "onc"
+    }
+   ],
+   "q": "تريد تجاوز الشاحنة التي أمامك، أي مركبة تجعل بدء التجاوز الآن خطرا؟ انقر عليها",
+   "answer": "fast",
+   "explain": "قبل التجاوز تأكد أن لا أحد خلفك بدأ يتجاوزك، فالسيارة الحمراء تقترب بسرعة في المسار الأيسر\nانظر في المرآة، واتركها تمر، ثم تجاوز الشاحنة عندما يخلو المسار",
+   "explain_fig": [
+    "fig-overtake-left",
+    "fig-lane-change"
+   ],
+   "src": [
+    "S3",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rd-013",
+   "topic": "speed",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": {
+      "up": 3,
+      "down": 3
+     },
+     "divided": true,
+     "median": {
+      "width": 4,
+      "barrier": true
+     },
+     "len": 70,
+     "scenery": "desert",
+     "signs": [
+      {
+       "id": "r-speed-120",
+       "dir": "up",
+       "y": 24
+      }
+     ]
+    },
+    "overlay": "fog",
+    "visibility": 30,
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 12
+      }
+     },
+     {
+      "id": "truck",
+      "type": "truck",
+      "color": "white",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 46
+      }
+     },
+     {
+      "id": "c2",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 34
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 6,
+      "dur": 4,
+      "ease": "out"
+     },
+     {
+      "t": 0,
+      "actor": "truck",
+      "drive": 14,
+      "dur": 4
+     },
+     {
+      "t": 0,
+      "actor": "c2",
+      "drive": 16,
+      "dur": 4
+     }
+    ],
+    "callouts": [
+     {
+      "text": "مسافة مضاعفة",
+      "at": {
+       "dir": "up",
+       "lane": 2,
+       "y": 30
+      },
+      "when": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "ضباب كثيف على طريق سريع لوحة السرعة فيه 120 كم/ساعة، ما التصرف الصحيح؟",
+   "options": [
+    "أسير بسرعة 120 كم/ساعة لأنها السرعة المسموحة",
+    "أشغل أضواء التحذير وأتابع بسرعتي",
+    "أقترب من الشاحنة لأسترشد بأضوائها الخلفية",
+    "أخفف سرعتي كثيرا وأضاعف مسافة الأمان وأستخدم الضوء المنخفض"
+   ],
+   "answer": 3,
+   "explain": "رقم اللوحة حد أقصى في الظروف الجيدة، وفي الضباب عليك أن تخفف كثيرا\nضاعف مسافة الأمان واستخدم الضوء المنخفض، ولا تشغل أضواء التحذير أثناء السير",
+   "tip": "بالضباب: خفف، بعد، وضو واطي",
+   "explain_fig": [
+    "fig-fog-lights",
+    "fig-gap-weather"
+   ],
+   "src": [
+    "S5",
+    "S3",
+    "S22",
+    "S23"
+   ],
+   "confidence": "high",
+   "notes": "مسافة الأمان حسب هيئة الطرق: ثانيتان على الأقل، و4 ثوان في المطر، وضعفها في الضباب، أما بنك السلامة فيذكر 3 ثوان نقلا عن جمعية أهلية، واعتمدنا أرقام الهيئة"
+  },
+  {
+   "id": "rd-014",
+   "topic": "speed",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": {
+      "up": 3,
+      "down": 3
+     },
+     "divided": true,
+     "median": {
+      "width": 4,
+      "barrier": true
+     },
+     "len": 60,
+     "scenery": "desert",
+     "signs": [
+      {
+       "id": "r-speed-100",
+       "dir": "up",
+       "y": 30
+      },
+      {
+       "id": "m-min-speed-60",
+       "dir": "up",
+       "y": 36
+      }
+     ]
+    },
+    "view": {
+     "zoom": 1.5,
+     "center": {
+      "x": 6,
+      "y": 26
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 14
+      }
+     },
+     {
+      "id": "c2",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 11
+      }
+     },
+     {
+      "id": "c3",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "dir": "up",
+       "lane": 3,
+       "y": 26
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 14,
+      "dur": 3.4
+     },
+     {
+      "t": 0,
+      "actor": "c2",
+      "drive": 20,
+      "dur": 3.4
+     },
+     {
+      "t": 0,
+      "actor": "c3",
+      "drive": 12,
+      "dur": 3.4
+     }
+    ]
+   },
+   "q": "تقود على طريق سريع في طقس صاف وحركة خفيفة، ولوحتان تبينان حدا أقصى 100 كم/ساعة وحدا أدنى 60 كم/ساعة، كيف تقود؟",
+   "options": [
+    "بين 60 و100 كم/ساعة، في المسار الأيمن",
+    "بسرعة 40 كم/ساعة في المسار الأيمن لأني مبتدئ",
+    "بسرعة 60 كم/ساعة في المسار الأيسر",
+    "بأي سرعة أقل من 100 كم/ساعة ما دمت في المسار الأيمن"
+   ],
+   "answer": 0,
+   "explain": "اللوحة الزرقاء الدائرية تحدد الحد الأدنى، وممنوع أن تسير أبطأ منها في الظروف العادية\nالتزم بين الحدين، وابق في المسار الأيمن إذا كنت أبطأ من غيرك",
+   "explain_fig": [
+    "m-min-speed-60",
+    "r-speed-100"
+   ],
+   "src": [
+    "S3",
+    "S6",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rd-015",
+   "topic": "distance",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": {
+      "up": 2,
+      "down": 2
+     },
+     "divided": true,
+     "len": 70,
+     "signs": [
+      {
+       "id": "r-speed-80",
+       "dir": "up",
+       "y": 44
+      }
+     ]
+    },
+    "labels": "solution",
+    "view": {
+     "zoom": 1.2,
+     "center": {
+      "x": 4,
+      "y": 42
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 25
+      }
+     },
+     {
+      "id": "blue",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 47
+      },
+      "label": "مرت باللوحة"
+     },
+     {
+      "id": "c2",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 18
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "blue",
+      "drive": 22,
+      "dur": 3.6
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 3,
+      "dur": 3.6,
+      "ease": "out"
+     },
+     {
+      "t": 0,
+      "actor": "c2",
+      "drive": 60,
+      "dur": 3.6
+     }
+    ],
+    "callouts": [
+     {
+      "text": "ثانيتان على الأقل",
+      "at": {
+       "x": 12,
+       "y": 50
+      },
+      "when": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "مرت السيارة الزرقاء بجانب اللوحة، ووصلت أنت إلى اللوحة نفسها بعد ثانية واحدة فقط، والطقس صاف، ماذا تفعل؟",
+   "options": [
+    "لا شيء، ثانية واحدة تكفي في الطقس الصافي",
+    "أتجاوزها من اليمين لأنها بطيئة",
+    "أخفف سرعتي حتى تصبح المسافة ثانيتين على الأقل",
+    "أقترب أكثر حتى لا تدخل سيارة أخرى أمامي"
+   ],
+   "answer": 2,
+   "explain": "اختر علامة ثابتة مثل لوحة، وعد الثواني من مرور المركبة التي أمامك بها حتى تصل أنت إليها\nفي الظروف الجيدة اترك ثانيتين على الأقل، وثانية واحدة تعني أنك قريب جدا",
+   "tip": "عد: ألف وواحد، ألف واتنين، إذا وصلت قبل ما تخلص قربت كتير",
+   "explain_fig": [
+    "fig-two-second"
+   ],
+   "src": [
+    "S5",
+    "S21"
+   ],
+   "confidence": "high",
+   "notes": "مسافة الأمان حسب هيئة الطرق: ثانيتان على الأقل، و4 ثوان في المطر، وضعفها في الضباب، أما بنك السلامة فيذكر 3 ثوان نقلا عن جمعية أهلية، واعتمدنا أرقام الهيئة"
+  },
+  {
+   "id": "rd-016",
+   "topic": "distance",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": {
+      "up": 3,
+      "down": 3
+     },
+     "divided": true,
+     "len": 80
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 8
+      }
+     },
+     {
+      "id": "lead",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 42
+      }
+     },
+     {
+      "id": "red",
+      "type": "car",
+      "color": "red",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 14
+      },
+      "label": "دخلت أمامك"
+     },
+     {
+      "id": "c3",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "dir": "up",
+       "lane": 3,
+       "y": 30
+      }
+     }
+    ],
+    "intro": {
+     "len": 2.6,
+     "events": [
+      {
+       "t": 0,
+       "actor": "me",
+       "drive": 10,
+       "dur": 2.6
+      },
+      {
+       "t": 0,
+       "actor": "lead",
+       "drive": 10,
+       "dur": 2.6
+      },
+      {
+       "t": 0,
+       "actor": "c3",
+       "drive": 12,
+       "dur": 2.6
+      },
+      {
+       "t": 0,
+       "actor": "red",
+       "lane_change": "right",
+       "dist": 16,
+       "dur": 2.6
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 3,
+      "dur": 3.6,
+      "ease": "out"
+     },
+     {
+      "t": 0,
+      "actor": "red",
+      "drive": 20,
+      "dur": 3.6
+     },
+     {
+      "t": 0,
+      "actor": "lead",
+      "drive": 20,
+      "dur": 3.6
+     },
+     {
+      "t": 0,
+      "actor": "c3",
+      "drive": 40,
+      "dur": 3.6
+     }
+    ],
+    "callouts": [
+     {
+      "text": "أعد بناء المسافة",
+      "at": {
+       "x": 5,
+       "y": 36
+      },
+      "when": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "تركت مسافة أمان جيدة أمامك، فدخلت السيارة الحمراء فيها، ماذا تفعل؟",
+   "options": [
+    "أقترب منها وأضيء الأضواء العالية لتبتعد",
+    "أخفف سرعتي قليلا حتى أستعيد مسافة ثانيتين على الأقل خلفها",
+    "أتجاوزها من اليمين لأستعيد مكاني",
+    "أبقى على سرعتي، فالمسافة الآن مسؤوليتها هي"
+   ],
+   "answer": 1,
+   "explain": "مسافة الأمان مسؤوليتك دائما، فإذا دخل أحد أمامك خفف سرعتك بهدوء حتى تعود ثانيتين على الأقل\nلا تلتصق به ولا تتجاوزه من اليمين",
+   "explain_fig": [
+    "fig-two-second"
+   ],
+   "src": [
+    "S3",
+    "S5",
+    "S10"
+   ],
+   "confidence": "high",
+   "notes": "مسافة الأمان حسب هيئة الطرق: ثانيتان على الأقل، و4 ثوان في المطر، وضعفها في الضباب، أما بنك السلامة فيذكر 3 ثوان نقلا عن جمعية أهلية، واعتمدنا أرقام الهيئة"
+  },
+  {
+   "id": "rd-017",
+   "topic": "distance",
+   "level": 5,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "tap",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": {
+      "up": 3,
+      "down": 0
+     },
+     "len": 90,
+     "signs": [
+      {
+       "id": "r-speed-60",
+       "dir": "up",
+       "y": 22
+      }
+     ]
+    },
+    "view": {
+     "zoom": 1.2,
+     "center": {
+      "x": 0,
+      "y": 46
+     }
+    },
+    "overlay": "rain",
+    "visibility": 120,
+    "labels": "never",
+    "actors": [
+     {
+      "id": "l1",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 80
+      }
+     },
+     {
+      "id": "f1",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 13
+      },
+      "label": "4 ثوان تقريبا"
+     },
+     {
+      "id": "l2",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 80
+      }
+     },
+     {
+      "id": "f2",
+      "type": "car",
+      "color": "red",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 47
+      },
+      "label": "ثانيتان تقريبا"
+     },
+     {
+      "id": "l3",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "dir": "up",
+       "lane": 3,
+       "y": 80
+      }
+     },
+     {
+      "id": "f3",
+      "type": "car",
+      "color": "yellow",
+      "pos": {
+       "dir": "up",
+       "lane": 3,
+       "y": 63
+      },
+      "label": "ثانية واحدة"
+     }
+    ],
+    "solution": {
+     "len": 3,
+     "events": [
+      {
+       "t": 0,
+       "actor": "f1",
+       "highlight": "ok"
+      },
+      {
+       "t": 0,
+       "actor": "f2",
+       "highlight": "bad"
+      },
+      {
+       "t": 0,
+       "actor": "f3",
+       "highlight": "bad"
+      },
+      {
+       "t": 0,
+       "labels": true
+      }
+     ]
+    },
+    "callouts": [
+     {
+      "text": "حوالي 67 مترا",
+      "at": {
+       "x": 13,
+       "y": 30
+      },
+      "when": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "hotspots": [
+    {
+     "id": "f1",
+     "actor": "f1"
+    },
+    {
+     "id": "f2",
+     "actor": "f2"
+    },
+    {
+     "id": "f3",
+     "actor": "f3"
+    }
+   ],
+   "q": "تمطر، وكل السيارات تسير بسرعة 60 كم/ساعة (حوالي 17 مترا في الثانية)، أي سيارة خلفية تترك المسافة الصحيحة خلف السيارة البيضاء التي أمامها؟ انقر عليها",
+   "answer": "f1",
+   "explain": "في المطر اترك 4 ثوان خلف المركبة التي أمامك حسب دليل هيئة الطرق\nعلى 60 كم/ساعة هذا حوالي 67 مترا، أما الثانيتان فتكفيان في الطقس الجيد فقط",
+   "tip": "شتي؟ ضاعف الثانيتين لأربعة",
+   "explain_fig": [
+    "fig-gap-weather"
+   ],
+   "src": [
+    "S6",
+    "S7",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": "مسافة الأمان حسب هيئة الطرق: ثانيتان على الأقل، و4 ثوان في المطر، وضعفها في الضباب، أما بنك السلامة فيذكر 3 ثوان نقلا عن جمعية أهلية، واعتمدنا أرقام الهيئة"
+  },
+  {
+   "id": "rd-018",
+   "topic": "parking",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "parking",
+    "params": {
+     "layout": "street",
+     "spaces": 4,
+     "sides": [
+      "east"
+     ],
+     "occupied": [
+      "P1",
+      "P4"
+     ]
+    },
+    "labels": "never",
+    "view": {
+     "zoom": 1.25,
+     "center": {
+      "x": 1,
+      "y": 23
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "space": "P2"
+      }
+     },
+     {
+      "id": "car",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 6
+      },
+      "label": "لها الأولوية"
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "labels": true
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "signal": "left"
+     },
+     {
+      "t": 0,
+      "actor": "car",
+      "drive": 60,
+      "dur": 3.4
+     },
+     {
+      "t": 3.6,
+      "actor": "me",
+      "leave": "up",
+      "dur": 4
+     }
+    ]
+   },
+   "q": "تريد الخروج من موقف على جانب الشارع، وسيارة زرقاء تقترب من خلفك، ماذا تفعل؟",
+   "options": [
+    "أخرج بسرعة قبل أن تصل",
+    "أشغل الإشارة وأخرج، فالإشارة تعطيني الأولوية",
+    "أخرج ببطء لتخفف هي سرعتها",
+    "أنظر في المرآة وأشغل إشارة اليسار وألتفت إلى النقطة العمياء، وأنتظر حتى تمر ثم أخرج"
+   ],
+   "answer": 3,
+   "explain": "الخارج من موقف يعطي الأولوية لكل المركبات على الطريق\nمرآة ثم إشارة ثم التفاتة رأس، وادخل الطريق فقط عندما يكون خاليا",
+   "tip": "طالع من الموقف؟ الشارع إلهم، انت استنى",
+   "explain_fig": [
+    "fig-pull-away"
+   ],
+   "src": [
+    "S6",
+    "S3",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rd-019",
+   "topic": "parking",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "parking",
+    "params": {
+     "layout": "bays",
+     "bays": 5,
+     "occupied": [
+      "R1",
+      "R3",
+      "L2",
+      "L4"
+     ]
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "bay": "R2"
+      }
+     },
+     {
+      "id": "car",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 3.2
+      },
+      "label": "تتحرك في الممر"
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "car",
+      "drive": 40,
+      "dur": 4
+     },
+     {
+      "t": 4.2,
+      "actor": "me",
+      "leave": "up",
+      "dur": 5
+     }
+    ]
+   },
+   "q": "تريد الخروج من الموقف بالرجوع إلى الخلف، وسيارة زرقاء تتحرك في الممر نحوك، ماذا تفعل؟",
+   "options": [
+    "أنتظر حتى تمر السيارة ويخلو الممر، ثم أرجع ببطء وأنا أنظر حولي باستمرار",
+    "أرجع بسرعة قبل أن تقترب السيارة",
+    "أطلق المنبه وأرجع لأن الممر للجميع",
+    "أرجع حتى منتصف الممر ثم أتوقف لتدور السيارة حولي"
+   ],
+   "answer": 0,
+   "explain": "الرجوع للخلف مسموح فقط عند الحاجة، ودون أن تعرقل السير أو تعرض أحدا للخطر\nالسيارة في الممر لها الأولوية، فانتظر حتى تمر ثم ارجع ببطء مع النظر في كل الاتجاهات",
+   "explain_fig": [
+    "fig-blind-spots"
+   ],
+   "src": [
+    "S3",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rd-020",
+   "topic": "parking",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "tap",
+   "scene": {
+    "template": "crossroads",
+    "params": {
+     "lanes": 1,
+     "crossings": [
+      "S"
+     ],
+     "size": 48
+    },
+    "labels": "solution",
+    "view": {
+     "zoom": 1.7,
+     "center": {
+      "x": 0,
+      "y": -22
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": 30
+      },
+      "signal": "right"
+     },
+     {
+      "id": "onc",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "dir": "out",
+       "at": 12
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "pull_over": "right",
+      "dist": 10,
+      "dur": 3
+     },
+     {
+      "t": 3.1,
+      "actor": "me",
+      "signal": "off"
+     },
+     {
+      "t": 0,
+      "actor": "onc",
+      "drive": 40,
+      "dur": 4
+     }
+    ],
+    "callouts": [
+     {
+      "text": "15 مترا على الأقل من التقاطع",
+      "at": {
+       "x": -12,
+       "y": -17
+      },
+      "when": "solution",
+      "style": "warn"
+     }
+    ]
+   },
+   "hotspots": [
+    {
+     "id": "far",
+     "at": {
+      "arm": "S",
+      "lane": 1,
+      "at": 21,
+      "shift": 0.7
+     },
+     "r": 2.6,
+     "label": "أبعد في الشارع"
+    },
+    {
+     "id": "near",
+     "at": {
+      "arm": "S",
+      "lane": 1,
+      "at": 4,
+      "shift": 0.7
+     },
+     "r": 2.6,
+     "label": "قبل الممر بقليل"
+    },
+    {
+     "id": "zebra",
+     "at": {
+      "x": 2,
+      "y": -9.5
+     },
+     "r": 2.2,
+     "label": "عند الممر"
+    }
+   ],
+   "q": "تبحث عن مكان توقف على يمين هذا الشارع قبل التقاطع، أين مسموح لك أن تقف؟ انقر عليه",
+   "answer": "far",
+   "explain": "ممنوع الوقوف على بعد أقل من 15 مترا من التقاطعات والدوارات والميادين، وممنوع الوقوف على ممر المشاة\nالسيارة المتوقفة قرب التقاطع تحجب الرؤية وتعرقل الانعطاف",
+   "tip": "قرب التقاطع؟ 15 متر ع الأقل، يعني تلات سيارات ونص تقريبا",
+   "explain_fig": [
+    "fig-parking-15m"
+   ],
+   "src": [
+    "S3",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  }
+ ]
+}

@@ -1,0 +1,4523 @@
+{
+ "module": "hazard",
+ "updated": "2026-09-29",
+ "sources": {
+  "S1": {
+   "title": "Light Motor Vehicle Handbook: A Guide to Safe Driving (8th edition)",
+   "url": "https://www.drivedubai.ae/public/uploads/downloads/20240612110831RTA-Handbook-Light-Motor-Vechicle-English.pdf",
+   "publisher": "RTA Dubai Licensing Agency (hosted by Drive Dubai)",
+   "date": "2024-06"
+  },
+  "S2": {
+   "title": "Driving Safely in Dubai (First Edition)",
+   "url": "https://licensing.rta.ae/handbook/DrivingSafelyInDubaiEN.pdf",
+   "publisher": "RTA Dubai Licensing Agency",
+   "date": "undated (accessed 2026-09)"
+  },
+  "S3": {
+   "title": "Federal Decree-Law No. 14 of 2024 on Traffic Regulation (Article 5 driver duties)",
+   "url": "https://uaelegislation.gov.ae/en/legislations/2598/download",
+   "publisher": "UAE Legislation portal",
+   "date": "2024-09"
+  },
+  "S4": {
+   "title": "شرطة أبوظبي تحذر من الاستخدام الخاطئ للإشارات الرباعية بالمركبات أثناء الضباب",
+   "url": "https://www.adpolice.gov.ae/ar-AE/Media-Center/News/2021/07/01/News_25618",
+   "publisher": "Abu Dhabi Police",
+   "date": "2018-11"
+  },
+  "S5": {
+   "title": "UAE: Driving with hazard lights on during fog? You could get fined; here's why",
+   "url": "https://www.khaleejtimes.com/uae/weather/driving-fog-hazard-lights-tips",
+   "publisher": "Khaleej Times",
+   "date": "2025-11"
+  },
+  "S6": {
+   "title": "How to drive safely in UAE fog: tips for motorists in reduced visibility",
+   "url": "https://www.thenationalnews.com/lifestyle/motoring/2026/02/11/how-to-drive-safely-in-uae-fog-tips-for-motorists-in-reduced-visibility/",
+   "publisher": "The National",
+   "date": "2026-02"
+  },
+  "S7": {
+   "title": "Abu Dhabi fog alert: speed limit reduced on major roads, police issue safety tips",
+   "url": "https://gulfnews.com/uae/abu-dhabi/abu-dhabi-fog-alert-speed-limit-reduced-on-major-roads-police-issue-safety-tips-1.500689257",
+   "publisher": "Gulf News",
+   "date": "2026-09"
+  },
+  "S8": {
+   "title": "شرطة دبي تحدد 8 إرشادات للقيادة خلال الضباب",
+   "url": "https://www.emaratalyoum.com/local-section/other/2026-02-26-1.2019337",
+   "publisher": "الإمارات اليوم",
+   "date": "2026-02"
+  },
+  "S9": {
+   "title": "4 مسببات رئيسة لحوادث الضباب على الطرق (وزارة الداخلية وشرطة أبوظبي)",
+   "url": "https://www.emaratalyoum.com/local-section/other/2024-10-31-1.1893559",
+   "publisher": "الإمارات اليوم",
+   "date": "2024-10"
+  },
+  "S10": {
+   "title": "UAE low visibility on the road: follow these safety rules for driving in fog, sandstorms",
+   "url": "https://gulfnews.com/uae/transport/uae-low-visibility-on-the-road-follow-these-safety-rules-for-driving-in-fog-sandstorms-1.86313361",
+   "publisher": "Gulf News",
+   "date": "2022-03"
+  },
+  "S15": {
+   "title": "نصائح إذاعية للسائقين بالقيادة الآمنة أثناء التقلبات الجوية",
+   "url": "https://www.adpolice.gov.ae/ar-AE/Media-Center/News/2021/06/29/Drivers-Are-Advised-Through-Radio-to-Drive-Safely-During-Bad-Weather-",
+   "publisher": "Abu Dhabi Police",
+   "date": "2012-03"
+  },
+  "S20": {
+   "title": "Dubai Police issue safety tips to handle tyre burst while driving",
+   "url": "https://www.khaleejtimes.com/uae/transport/dubai-police-issue-safety-tips-guidelines-to-handle-tyre-burst-while-driving",
+   "publisher": "Khaleej Times",
+   "date": "2024-07"
+  },
+  "S27": {
+   "title": "6 إجراءات يجب اتخاذها عند تعطل المركبة على الطريق (شرطة أبوظبي)",
+   "url": "https://www.emaratalyoum.com/local-section/accidents/2024-04-03-1.1840797",
+   "publisher": "الإمارات اليوم",
+   "date": "2024-04"
+  },
+  "S28": {
+   "title": "UAE: 8 safety tips to follow when vehicle breaks down in the middle of the road",
+   "url": "https://www.khaleejtimes.com/life-and-living/uae-8-safety-tips-to-follow-when-vehicle-breaks-down-in-the-middle-of-the-road",
+   "publisher": "Khaleej Times",
+   "date": "2024-04"
+  },
+  "S29": {
+   "title": "Vehicle Break Down: What to do?",
+   "url": "https://www.roadsafetyuae.com/vehicle-break-down/",
+   "publisher": "RoadSafetyUAE",
+   "date": "undated (accessed 2026-09)"
+  },
+  "S36": {
+   "title": "Hard Shoulder for Emergencies Only",
+   "url": "http://www.roadsafetyuae.com/hard-shoulder-for-emergencies-only/",
+   "publisher": "RoadSafetyUAE",
+   "date": "undated (accessed 2026-09)"
+  },
+  "S52": {
+   "title": "Dh500 fine and black points for driving with hazard lights on during fog in UAE (Abu Dhabi Police)",
+   "url": "https://gulfnews.com/uae/transport/dh500-fine-and-black-points-for-driving-with-hazard-lights-on-during-fog-in-uae-1.2146717",
+   "publisher": "Gulf News",
+   "date": "2018-11"
+  },
+  "S56": {
+   "title": "Basics of Driving, 4th edition (driving handbook)",
+   "url": "https://www.sdi.ae/public/uploads/downloads/20211205122542Driving-Handbook-English.pdf",
+   "publisher": "Sharjah Driving Institute",
+   "date": "2021"
+  }
+ },
+ "scenarios": [
+  {
+   "id": "hz-001",
+   "topic": "hazard",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "tap",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": 1,
+     "center": "broken",
+     "len": 50,
+     "scenery": "desert"
+    },
+    "view": {
+     "zoom": 1.6,
+     "center": {
+      "x": 4.5,
+      "y": 28
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 3
+      }
+     },
+     {
+      "id": "oncoming",
+      "type": "car",
+      "pos": {
+       "dir": "down",
+       "lane": 1,
+       "y": 47
+      },
+      "color": "silver"
+     },
+     {
+      "id": "ball",
+      "type": "ball",
+      "pos": {
+       "x": 10.5,
+       "y": 34
+      },
+      "color": "orange"
+     },
+     {
+      "id": "kid1",
+      "type": "pedestrian",
+      "pos": {
+       "x": 13,
+       "y": 35.5
+      },
+      "variant": "child",
+      "color": "red",
+      "label": "طفل يركض خلف الكرة"
+     },
+     {
+      "id": "kid2",
+      "type": "pedestrian",
+      "pos": {
+       "x": 16.5,
+       "y": 39
+      },
+      "variant": "child",
+      "color": "blue"
+     },
+     {
+      "id": "kid3",
+      "type": "pedestrian",
+      "pos": {
+       "x": 17,
+       "y": 30
+      },
+      "variant": "child",
+      "color": "green"
+     }
+    ],
+    "intro": {
+     "len": 3.6,
+     "events": [
+      {
+       "t": 0,
+       "actor": "me",
+       "drive": 15,
+       "dur": 3.6
+      },
+      {
+       "t": 0,
+       "actor": "oncoming",
+       "drive": 12,
+       "dur": 3.6
+      },
+      {
+       "t": 0.4,
+       "actor": "kid2",
+       "to": {
+        "x": 15.5,
+        "y": 37
+       },
+       "dur": 1.5
+      },
+      {
+       "t": 1.0,
+       "actor": "ball",
+       "to": {
+        "x": 6.3,
+        "y": 33.2
+       },
+       "dur": 2.6
+      },
+      {
+       "t": 1.9,
+       "actor": "kid1",
+       "to": {
+        "x": 9.6,
+        "y": 34.2
+       },
+       "dur": 1.7
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 5,
+      "dur": 1.6,
+      "ease": "out"
+     },
+     {
+      "t": 0,
+      "actor": "oncoming",
+      "drive": 50,
+      "dur": 3.6
+     },
+     {
+      "t": 0,
+      "actor": "ball",
+      "to": {
+       "dir": "up",
+       "lane": 1,
+       "y": 33
+      },
+      "dur": 1.0
+     },
+     {
+      "t": 0.2,
+      "actor": "kid1",
+      "to": {
+       "x": 5.2,
+       "y": 33.4
+      },
+      "dur": 1.2
+     },
+     {
+      "t": 1.5,
+      "actor": "kid1",
+      "to": {
+       "dir": "up",
+       "lane": 1,
+       "y": 33.2,
+       "shift": 0.6
+      },
+      "dur": 0.9
+     },
+     {
+      "t": 2.5,
+      "actor": "ball",
+      "visible": false
+     },
+     {
+      "t": 2.7,
+      "actor": "kid1",
+      "to": {
+       "x": 10,
+       "y": 34.5
+      },
+      "dur": 1.8
+     },
+     {
+      "t": 4.7,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 4.8,
+      "actor": "me",
+      "drive": 40,
+      "dur": 4.5,
+      "ease": "in"
+     }
+    ]
+   },
+   "hotspots": [
+    {
+     "id": "kid1",
+     "actor": "kid1",
+     "r": 2.2
+    },
+    {
+     "id": "ball",
+     "actor": "ball",
+     "r": 2.2
+    },
+    {
+     "id": "oncoming",
+     "actor": "oncoming"
+    }
+   ],
+   "q": "تسير بجانب ساحة رملية بلا سور يلعب فيها أطفال كرة القدم، انقر على الخطر الذي قد يدخل طريقك الآن",
+   "answer": [
+    "kid1",
+    "ball"
+   ],
+   "explain": "الكرة تتجه إلى الطريق، والطفل الذي يركض خلفها لن ينتبه لك\nخفف السرعة فورا واستعد للتوقف قبل أن يصل إلى مسارك",
+   "tip": "وين ما في كرة، في ولد راكض وراها",
+   "explain_fig": [
+    "w-children"
+   ],
+   "src": [
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": "seed 9, H44, H47"
+  },
+  {
+   "id": "hz-002",
+   "topic": "hazard",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "tap",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": 1,
+     "center": "broken",
+     "len": 60,
+     "bus_stop": {
+      "y": 30,
+      "dir": "up"
+     }
+    },
+    "view": {
+     "zoom": 1.6,
+     "center": {
+      "x": 2,
+      "y": 30
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 0
+      }
+     },
+     {
+      "id": "bus",
+      "type": "bus",
+      "pos": {
+       "dir": "up",
+       "lane": "bus",
+       "y": 30
+      },
+      "label": "حافلة في محطتها"
+     },
+     {
+      "id": "ped",
+      "type": "pedestrian",
+      "pos": {
+       "side": "east",
+       "y": 38.2
+      },
+      "color": "teal",
+      "label": "راكب نزل من الحافلة"
+     },
+     {
+      "id": "oncoming",
+      "type": "car",
+      "pos": {
+       "dir": "down",
+       "lane": 1,
+       "y": 66
+      },
+      "color": "blue"
+     }
+    ],
+    "intro": {
+     "len": 3.5,
+     "events": [
+      {
+       "t": 0,
+       "actor": "me",
+       "drive": 11,
+       "dur": 3.5
+      },
+      {
+       "t": 0,
+       "actor": "oncoming",
+       "drive": 12,
+       "dur": 3.5
+      },
+      {
+       "t": 1.0,
+       "actor": "ped",
+       "to": {
+        "dir": "up",
+        "lane": "bus",
+        "y": 37.8,
+        "shift": 0.3
+       },
+       "dur": 1.6
+      },
+      {
+       "t": 2.7,
+       "actor": "ped",
+       "to": {
+        "dir": "up",
+        "lane": 1,
+        "y": 37.8,
+        "shift": 1.2
+       },
+       "dur": 0.8
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 7,
+      "dur": 1.8,
+      "ease": "out"
+     },
+     {
+      "t": 0,
+      "actor": "oncoming",
+      "stop_at": {
+       "y": 43
+      },
+      "dur": 2.2
+     },
+     {
+      "t": 0.4,
+      "actor": "ped",
+      "to": {
+       "side": "west",
+       "y": 37.8
+      },
+      "dur": 3.6
+     },
+     {
+      "t": 4.3,
+      "actor": "oncoming",
+      "drive": 60,
+      "dur": 4.5,
+      "ease": "in"
+     },
+     {
+      "t": 4.4,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 4.5,
+      "actor": "me",
+      "drive": 50,
+      "dur": 5,
+      "ease": "in"
+     }
+    ]
+   },
+   "hotspots": [
+    {
+     "id": "ped",
+     "actor": "ped",
+     "r": 2.6
+    },
+    {
+     "id": "oncoming",
+     "actor": "oncoming"
+    }
+   ],
+   "q": "حافلة متوقفة في محطتها على يمينك، انقر على الخطر الذي يجب أن تستعد له",
+   "answer": "ped",
+   "explain": "راكب نزل من الحافلة ويعبر من أمامها، والحافلة تحجبه عنك حتى يصبح في مسارك\nعند المرور بحافلة متوقفة خفف السرعة واستعد للتوقف",
+   "tip": "الباص واقف؟ توقع حدا طالع من قدامه",
+   "src": [
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": "seed 3, H48"
+  },
+  {
+   "id": "hz-003",
+   "topic": "hazard",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": 2,
+     "center": "solid",
+     "len": 70
+    },
+    "view": {
+     "zoom": 1.15,
+     "center": {
+      "x": 3,
+      "y": 34
+     }
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 7
+      }
+     },
+     {
+      "id": "taxi",
+      "type": "taxi",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 21
+      },
+      "label": "سيارة أجرة"
+     },
+     {
+      "id": "c2",
+      "type": "car",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 12
+      },
+      "color": "silver"
+     },
+     {
+      "id": "man",
+      "type": "pedestrian",
+      "pos": {
+       "side": "east",
+       "y": 50
+      },
+      "color": "blue",
+      "label": "يطلب سيارة أجرة"
+     },
+     {
+      "id": "c3",
+      "type": "car",
+      "pos": {
+       "dir": "down",
+       "lane": 2,
+       "y": 62
+      },
+      "color": "white"
+     }
+    ],
+    "intro": {
+     "len": 3,
+     "events": [
+      {
+       "t": 0,
+       "actor": "me",
+       "drive": 10,
+       "dur": 3
+      },
+      {
+       "t": 0,
+       "actor": "taxi",
+       "drive": 10,
+       "dur": 3
+      },
+      {
+       "t": 0,
+       "actor": "c2",
+       "drive": 11,
+       "dur": 3
+      },
+      {
+       "t": 0,
+       "actor": "c3",
+       "drive": 16,
+       "dur": 3
+      },
+      {
+       "t": 1.2,
+       "actor": "man",
+       "say": "تاكسي"
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "actor": "taxi",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "taxi",
+      "pull_over": "right",
+      "dist": 15,
+      "dur": 2.8
+     },
+     {
+      "t": 0,
+      "actor": "man",
+      "say": null
+     },
+     {
+      "t": 0,
+      "actor": "c2",
+      "drive": 60,
+      "dur": 3.4
+     },
+     {
+      "t": 0,
+      "actor": "c3",
+      "drive": 50,
+      "dur": 3.4
+     },
+     {
+      "t": 0.3,
+      "actor": "me",
+      "drive": 9,
+      "dur": 3,
+      "ease": "out"
+     },
+     {
+      "t": 3.6,
+      "actor": "me",
+      "lane_change": "left",
+      "dist": 16,
+      "dur": 2.4
+     },
+     {
+      "t": 6.0,
+      "actor": "me",
+      "drive": 30,
+      "dur": 3
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "track": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "تسير خلف سيارة أجرة، ورأيت رجلا على الرصيف يلوح بيده، ما التصرف الأسلم؟",
+   "options": [
+    "أقترب من سيارة الأجرة حتى لا تدخل سيارة أخرى أمامي",
+    "أتجاوز سيارة الأجرة من يمينها قبل أن تصل إلى الرجل",
+    "أتوقع أن تتوقف سيارة الأجرة فجأة على اليمين، فأزيد المسافة وأستعد للفرملة",
+    "أطلق المنبه لأنبه سائق الأجرة أن يتابع"
+   ],
+   "answer": 2,
+   "explain": "سائق سيارة الأجرة سيحاول غالبا التوقف بسرعة عند الرجل\nزد المسافة وارفع قدمك عن البنزين، وتجاوزه من اليسار فقط بعد أن تتأكد أن المسار خال",
+   "tip": "حدا عم يأشر لتاكسي؟ التاكسي رح يوقف هلأ",
+   "src": [
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": "seed 5, H44"
+  },
+  {
+   "id": "hz-004",
+   "topic": "hazard",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "tap",
+   "scene": {
+    "template": "parking",
+    "params": {
+     "layout": "bays",
+     "bays": 8,
+     "len": 42,
+     "occupied": [
+      "R1",
+      "R2",
+      "R3",
+      "R4",
+      "R6",
+      "R7",
+      "L1",
+      "L2",
+      "L3",
+      "L5",
+      "L6",
+      "L8"
+     ]
+    },
+    "view": {
+     "zoom": 1.1,
+     "center": {
+      "x": 0,
+      "y": 18
+     }
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 2
+      }
+     },
+     {
+      "id": "rev",
+      "type": "car",
+      "pos": {
+       "bay": "R5"
+      },
+      "color": "blue",
+      "label": "تخرج من موقفها إلى الخلف"
+     },
+     {
+      "id": "walker",
+      "type": "pedestrian",
+      "pos": {
+       "x": -4.5,
+       "y": 38
+      },
+      "color": "purple"
+     }
+    ],
+    "intro": {
+     "len": 3,
+     "events": [
+      {
+       "t": 0,
+       "actor": "me",
+       "drive": 7,
+       "dur": 3,
+       "ease": "out"
+      },
+      {
+       "t": 1.2,
+       "actor": "rev",
+       "brake": true
+      },
+      {
+       "t": 1.5,
+       "actor": "rev",
+       "brake": false
+      },
+      {
+       "t": 1.5,
+       "actor": "rev",
+       "to": {
+        "x": 4.2,
+        "y": 22.9,
+        "heading": 90
+       },
+       "reverse": true,
+       "dur": 1.5
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 1.5,
+      "dur": 1,
+      "ease": "out"
+     },
+     {
+      "t": 0.2,
+      "actor": "rev",
+      "to": {
+       "dir": "up",
+       "lane": 1,
+       "y": 18.5
+      },
+      "reverse": true,
+      "dur": 2.6
+     },
+     {
+      "t": 3.2,
+      "actor": "rev",
+      "drive": 40,
+      "dur": 5,
+      "ease": "in"
+     },
+     {
+      "t": 5.0,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 5.2,
+      "actor": "me",
+      "drive": 30,
+      "dur": 5,
+      "ease": "in"
+     }
+    ]
+   },
+   "hotspots": [
+    {
+     "id": "rev",
+     "actor": "rev",
+     "r": 2.8
+    },
+    {
+     "id": "parked",
+     "at": {
+      "bay": "L5"
+     },
+     "r": 2.4
+    },
+    {
+     "id": "walker",
+     "actor": "walker"
+    }
+   ],
+   "q": "تسير ببطء في موقف مركز تجاري، انقر على الخطر الذي يجب أن تتوقف له",
+   "answer": "rev",
+   "explain": "السيارة الزرقاء بدأت تخرج من موقفها إلى الخلف، وسائقها قد لا يراك\nتوقف واتركها تخرج، والأضواء البيضاء الخلفية في أي سيارة متوقفة تعني أنها قد ترجع",
+   "tip": "ضو أبيض ورا السيارة؟ يعني راجعة لورا",
+   "src": [
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": "seed 7, H44. The engine does not draw reversing lights, so the car is already moving at the question frame"
+  },
+  {
+   "id": "hz-005",
+   "topic": "hazard",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "crossroads",
+    "params": {
+     "lanes": 1,
+     "control": "lights",
+     "lights": {
+      "S": "green",
+      "N": "green",
+      "E": "red",
+      "W": "red"
+     }
+    },
+    "view": {
+     "zoom": 1.45,
+     "center": {
+      "x": 3,
+      "y": -12
+     }
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": 25
+      }
+     },
+     {
+      "id": "truck",
+      "type": "truck",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": 9
+      },
+      "color": "orange",
+      "signal": "right",
+      "label": "تنعطف يمينا"
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "pos": {
+       "arm": "W",
+       "lane": 1,
+       "at": "stopline"
+      },
+      "color": "white"
+     }
+    ],
+    "intro": {
+     "len": 3,
+     "events": [
+      {
+       "t": 0,
+       "actor": "me",
+       "drive": 7,
+       "dur": 3,
+       "ease": "out"
+      },
+      {
+       "t": 0,
+       "actor": "truck",
+       "to": {
+        "arm": "S",
+        "lane": 1,
+        "at": 1.5,
+        "shift": -1.3
+       },
+       "dur": 3,
+       "ease": "out"
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "truck",
+      "route": "S1->E",
+      "kmh": 14
+     },
+     {
+      "t": 5.6,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 5.7,
+      "actor": "me",
+      "route": "S1->N",
+      "kmh": 24,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "truck",
+      "track": "solution",
+      "style": "warn"
+     }
+    ]
+   },
+   "q": "شاحنة طويلة أمامك تشغل إشارة اليمين، واتجهت نحو يسار مسارها قبل التقاطع فتركت مساحة على يمينها، ماذا تفعل؟",
+   "options": [
+    "أدخل المساحة على يمينها وأمر قبلها",
+    "أبقى خلفها على مسافة آمنة حتى تكمل انعطافها",
+    "أتجاوزها من اليسار وأدخل التقاطع أمامها",
+    "أطلق المنبه لتسرع في الانعطاف"
+   ],
+   "answer": 1,
+   "explain": "الشاحنة الطويلة تحتاج مساحة أكبر لتنعطف، فتبتعد أولا نحو اليسار ثم تنعطف يمينا\nلا تدخل من يمينها أبدا، فقد تحشرك بينها وبين الرصيف",
+   "tip": "الشاحنة مأشرة يمين ورايحة شمال؟ خليك وراها",
+   "explain_fig": [
+    "fig-truck-turn-right"
+   ],
+   "src": [
+    "S1",
+    "S56"
+   ],
+   "confidence": "high",
+   "notes": "seed 13, H50"
+  },
+  {
+   "id": "hz-006",
+   "topic": "hazard",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": {
+      "up": 3,
+      "down": 0
+     },
+     "shoulder": {
+      "up": true
+     },
+     "len": 92,
+     "scenery": "desert"
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 8
+      }
+     },
+     {
+      "id": "a1",
+      "type": "car",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 29
+      },
+      "color": "silver"
+     },
+     {
+      "id": "a2",
+      "type": "car",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 45
+      },
+      "color": "white"
+     },
+     {
+      "id": "a3",
+      "type": "car",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 60
+      },
+      "color": "blue"
+     },
+     {
+      "id": "a4",
+      "type": "car",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 75
+      },
+      "color": "red"
+     },
+     {
+      "id": "b1",
+      "type": "car",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 20
+      },
+      "color": "white"
+     },
+     {
+      "id": "b2",
+      "type": "truck",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 58
+      },
+      "color": "green"
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "pos": {
+       "dir": "up",
+       "lane": 3,
+       "y": 24
+      },
+      "color": "black"
+     },
+     {
+      "id": "c2",
+      "type": "car",
+      "pos": {
+       "dir": "up",
+       "lane": 3,
+       "y": 52
+      },
+      "color": "grey"
+     }
+    ],
+    "intro": {
+     "len": 3.2,
+     "events": [
+      {
+       "t": 0,
+       "actor": "me",
+       "drive": 12,
+       "dur": 3.2
+      },
+      {
+       "t": 0,
+       "actor": "a1",
+       "drive": 12,
+       "dur": 3.2
+      },
+      {
+       "t": 0,
+       "actor": "b1",
+       "drive": 12,
+       "dur": 3.2
+      },
+      {
+       "t": 0,
+       "actor": "c1",
+       "drive": 12,
+       "dur": 3.2
+      },
+      {
+       "t": 0.3,
+       "actor": "a4",
+       "brake": true
+      },
+      {
+       "t": 0,
+       "actor": "a4",
+       "drive": 5,
+       "dur": 3.2,
+       "ease": "out"
+      },
+      {
+       "t": 0.7,
+       "actor": "b2",
+       "brake": true
+      },
+      {
+       "t": 0,
+       "actor": "b2",
+       "drive": 7,
+       "dur": 3.2,
+       "ease": "out"
+      },
+      {
+       "t": 1.0,
+       "actor": "a3",
+       "brake": true
+      },
+      {
+       "t": 0,
+       "actor": "a3",
+       "drive": 7,
+       "dur": 3.2,
+       "ease": "out"
+      },
+      {
+       "t": 1.5,
+       "actor": "c2",
+       "brake": true
+      },
+      {
+       "t": 0,
+       "actor": "c2",
+       "drive": 9,
+       "dur": 3.2,
+       "ease": "out"
+      },
+      {
+       "t": 2.1,
+       "actor": "a2",
+       "brake": true
+      },
+      {
+       "t": 0,
+       "actor": "a2",
+       "drive": 10,
+       "dur": 3.2,
+       "ease": "out"
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 13,
+      "dur": 4.5,
+      "ease": "out"
+     },
+     {
+      "t": 1.6,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "a1",
+      "drive": 9,
+      "dur": 3.5,
+      "ease": "out"
+     },
+     {
+      "t": 0.6,
+      "actor": "a1",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "b1",
+      "drive": 12,
+      "dur": 3.5,
+      "ease": "out"
+     },
+     {
+      "t": 0.8,
+      "actor": "b1",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "c1",
+      "drive": 11,
+      "dur": 3.5,
+      "ease": "out"
+     },
+     {
+      "t": 0.7,
+      "actor": "c1",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "a2",
+      "drive": 2,
+      "dur": 1.5,
+      "ease": "out"
+     },
+     {
+      "t": 0,
+      "actor": "c2",
+      "drive": 2,
+      "dur": 1.5,
+      "ease": "out"
+     }
+    ],
+    "callouts": [
+     {
+      "text": "تخفيف مبكر وبالتدريج",
+      "actor": "me",
+      "when": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "على طريق سريع أضاءت أضواء الفرامل في عدة سيارات بعيدا أمامك، والسيارة التي أمامك مباشرة لم تفرمل بعد، ما التصرف الأسلم؟",
+   "options": [
+    "أرفع قدمي عن البنزين الآن وأخفف بالتدريج، وأنظر في المرآة",
+    "أحافظ على سرعتي حتى تفرمل السيارة التي أمامي مباشرة",
+    "أنتقل فورا إلى مسار آخر لأحافظ على سرعتي",
+    "أفرمل بقوة فورا حتى أتوقف تماما"
+   ],
+   "answer": 0,
+   "explain": "أضواء الفرامل البعيدة إنذار مبكر بازدحام أو خطر، فابدأ التخفيف قبل أن تفرمل السيارة التي أمامك\nالتخفيف التدريجي يعطي من خلفك وقتا ليخفف أيضا",
+   "tip": "شوف بعيد: الفرامل الحمرا قدام بخمس سيارات هي إنذارك",
+   "explain_fig": [
+    "fig-stopping-distance"
+   ],
+   "src": [
+    "S1",
+    "S8"
+   ],
+   "confidence": "high",
+   "notes": "seed 17, H44, H53, H7"
+  },
+  {
+   "id": "hz-007",
+   "topic": "hazard",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "tap",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": {
+      "up": 2,
+      "down": 1
+     },
+     "center": "solid",
+     "len": 64
+    },
+    "view": {
+     "zoom": 1.2,
+     "center": {
+      "x": 2,
+      "y": 30
+     }
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 4
+      }
+     },
+     {
+      "id": "bike",
+      "type": "bicycle",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 24,
+       "shift": 1.1
+      },
+      "label": "راكب دراجة"
+     },
+     {
+      "id": "van",
+      "type": "car",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 46,
+       "shift": 0.5
+      },
+      "color": "white",
+      "signal": "hazard",
+      "label": "سيارة متوقفة"
+     },
+     {
+      "id": "oncoming",
+      "type": "car",
+      "pos": {
+       "dir": "down",
+       "lane": 1,
+       "y": 56
+      },
+      "color": "red"
+     }
+    ],
+    "intro": {
+     "len": 3,
+     "events": [
+      {
+       "t": 0,
+       "actor": "me",
+       "drive": 10,
+       "dur": 3
+      },
+      {
+       "t": 0,
+       "actor": "bike",
+       "to": {
+        "dir": "up",
+        "lane": 1,
+        "y": 31,
+        "shift": 1.1
+       },
+       "dur": 3
+      },
+      {
+       "t": 0,
+       "actor": "oncoming",
+       "drive": 14,
+       "dur": 3
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 7,
+      "dur": 3,
+      "ease": "out"
+     },
+     {
+      "t": 0,
+      "actor": "oncoming",
+      "drive": 50,
+      "dur": 3.5
+     },
+     {
+      "t": 0,
+      "actor": "bike",
+      "to": {
+       "dir": "up",
+       "lane": 1,
+       "y": 40,
+       "shift": -1.3
+      },
+      "dur": 2.4
+     },
+     {
+      "t": 2.4,
+      "actor": "bike",
+      "to": {
+       "dir": "up",
+       "lane": 1,
+       "y": 51,
+       "shift": -1.3
+      },
+      "dur": 2.6
+     },
+     {
+      "t": 5.0,
+      "actor": "bike",
+      "to": {
+       "dir": "up",
+       "lane": 1,
+       "y": 64,
+       "shift": 1.1
+      },
+      "dur": 3
+     },
+     {
+      "t": 3.2,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 3.3,
+      "actor": "me",
+      "lane_change": "left",
+      "dist": 16,
+      "dur": 2.6
+     },
+     {
+      "t": 5.9,
+      "actor": "me",
+      "drive": 40,
+      "dur": 3.5
+     }
+    ]
+   },
+   "hotspots": [
+    {
+     "id": "bike",
+     "actor": "bike",
+     "r": 2.4
+    },
+    {
+     "id": "van",
+     "actor": "van"
+    },
+    {
+     "id": "oncoming",
+     "actor": "oncoming"
+    }
+   ],
+   "q": "انقر على مستخدم الطريق الذي قد يغير اتجاهه أمامك بعد لحظات",
+   "answer": "bike",
+   "explain": "راكب الدراجة سيبتعد نحو اليسار ليتجاوز السيارة المتوقفة، فيدخل أمامك\nخفف وأعطه مساحة، ولا تتجاوزه إلا بمسافة جانبية متر على الأقل",
+   "tip": "دراجة وقدامها سيارة واقفة؟ الدراجة رح تطلع لنص المسار",
+   "explain_fig": [
+    "fig-bike-gap"
+   ],
+   "src": [
+    "S1",
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": "seed 18, H49. Passing gap: 1 m in S1 and the rules bank, 1.5 m in S2 (open conflict in HANDOFF), the text says at least 1 m"
+  },
+  {
+   "id": "hz-008",
+   "topic": "hazard",
+   "level": 5,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "tap",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": 2,
+     "center": "solid",
+     "zebra": {
+      "y": 42
+     },
+     "len": 60
+    },
+    "view": {
+     "zoom": 1.2,
+     "center": {
+      "x": 1,
+      "y": 30
+     }
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 6
+      }
+     },
+     {
+      "id": "van",
+      "type": "truck",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 20
+      },
+      "color": "white",
+      "label": "توقفت قبل الممر"
+     },
+     {
+      "id": "ped",
+      "type": "pedestrian",
+      "pos": {
+       "crossing": "zebra",
+       "side": "east"
+      },
+      "variant": "woman",
+      "color": "purple",
+      "label": "تعبر من أمام الشاحنة"
+     },
+     {
+      "id": "oncoming",
+      "type": "car",
+      "pos": {
+       "dir": "down",
+       "lane": 2,
+       "y": 58
+      },
+      "color": "silver"
+     }
+    ],
+    "intro": {
+     "len": 3.4,
+     "events": [
+      {
+       "t": 0,
+       "actor": "van",
+       "stop_at": "crossing",
+       "dur": 3.0
+      },
+      {
+       "t": 1.5,
+       "actor": "van",
+       "brake": true
+      },
+      {
+       "t": 0,
+       "actor": "me",
+       "drive": 13,
+       "dur": 3.4
+      },
+      {
+       "t": 0,
+       "actor": "oncoming",
+       "drive": 9,
+       "dur": 3.4,
+       "ease": "out"
+      },
+      {
+       "t": 2.2,
+       "actor": "ped",
+       "to": {
+        "dir": "up",
+        "lane": 1,
+        "y": 42,
+        "shift": 0.6
+       },
+       "dur": 1.2
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "stop_at": "crossing",
+      "dur": 2.2
+     },
+     {
+      "t": 0,
+      "actor": "oncoming",
+      "stop_at": "crossing",
+      "dur": 2
+     },
+     {
+      "t": 0.2,
+      "actor": "ped",
+      "to": {
+       "crossing": "zebra",
+       "side": "west"
+      },
+      "dur": 5
+     },
+     {
+      "t": 5.6,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 5.6,
+      "actor": "van",
+      "brake": false
+     },
+     {
+      "t": 5.7,
+      "actor": "me",
+      "drive": 40,
+      "dur": 4.5,
+      "ease": "in"
+     },
+     {
+      "t": 5.8,
+      "actor": "van",
+      "drive": 40,
+      "dur": 5,
+      "ease": "in"
+     },
+     {
+      "t": 5.9,
+      "actor": "oncoming",
+      "drive": 40,
+      "dur": 4.5,
+      "ease": "in"
+     }
+    ]
+   },
+   "hotspots": [
+    {
+     "id": "ped",
+     "actor": "ped",
+     "r": 2.6
+    },
+    {
+     "id": "van",
+     "actor": "van"
+    },
+    {
+     "id": "oncoming",
+     "actor": "oncoming"
+    }
+   ],
+   "q": "أنت في المسار الأيسر، والشاحنة في المسار الأيمن توقفت فجأة قبل ممر المشاة، انقر على الخطر",
+   "answer": "ped",
+   "explain": "الشاحنة توقفت لأن امرأة تعبر، وهي مختفية أمامها عن نظرك حتى تدخل مسارك\nإذا توقفت مركبة بجانبك قبل ممر المشاة فخفف واستعد للتوقف",
+   "tip": "حدا وقف قبل الممر؟ في سبب ما عم تشوفه",
+   "src": [
+    "S1",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": "seed 29, H56"
+  },
+  {
+   "id": "hz-009",
+   "topic": "hazard",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "tap",
+   "scene": {
+    "template": "crossroads",
+    "params": {
+     "lanes": 1,
+     "control": "lights",
+     "lights": {
+      "S": "green",
+      "N": "green",
+      "E": "red",
+      "W": "red"
+     }
+    },
+    "view": {
+     "zoom": 1.45,
+     "center": {
+      "x": 2,
+      "y": -10
+     }
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": 18,
+       "shift": -0.35
+      },
+      "signal": "right"
+     },
+     {
+      "id": "moto",
+      "type": "motorcycle",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": 34,
+       "shift": 1.3
+      },
+      "variant": "delivery",
+      "label": "دراجة توصيل"
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "pos": {
+       "arm": "N",
+       "lane": 1,
+       "at": 16
+      },
+      "color": "blue"
+     },
+     {
+      "id": "ped",
+      "type": "pedestrian",
+      "pos": {
+       "arm": "W",
+       "side": "south",
+       "at": 6
+      },
+      "color": "green"
+     }
+    ],
+    "intro": {
+     "len": 3,
+     "events": [
+      {
+       "t": 0,
+       "actor": "me",
+       "to": {
+        "arm": "S",
+        "lane": 1,
+        "at": 8,
+        "shift": -0.35
+       },
+       "dur": 3,
+       "ease": "out"
+      },
+      {
+       "t": 0,
+       "actor": "moto",
+       "to": {
+        "arm": "S",
+        "lane": 1,
+        "at": 12.5,
+        "shift": 1.3
+       },
+       "dur": 3
+      },
+      {
+       "t": 0,
+       "actor": "c1",
+       "drive": 6,
+       "dur": 3,
+       "ease": "out"
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "moto",
+      "to": {
+       "arm": "N",
+       "lane": 1,
+       "dir": "out",
+       "at": 14,
+       "shift": 0.8
+      },
+      "dur": 2.4
+     },
+     {
+      "t": 0.2,
+      "actor": "c1",
+      "route": "N1->S",
+      "kmh": 24
+     },
+     {
+      "t": 3.0,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 3.1,
+      "actor": "me",
+      "route": "S1->E",
+      "kmh": 18,
+      "ease": "in"
+     }
+    ]
+   },
+   "hotspots": [
+    {
+     "id": "moto",
+     "actor": "moto",
+     "r": 2.4
+    },
+    {
+     "id": "c1",
+     "actor": "c1"
+    },
+    {
+     "id": "ped",
+     "actor": "ped"
+    }
+   ],
+   "q": "تريد الانعطاف يمينا عند الإشارة الخضراء، انقر على الخطر الذي يمنعك من الانعطاف الآن",
+   "answer": "moto",
+   "explain": "دراجة التوصيل تقترب من يمينك وستكون في طريقك إذا انعطفت الآن\nقبل الانعطاف انظر في المرآة ثم التفت إلى النقطة العمياء، وانتظر حتى تمر",
+   "tip": "قبل ما تلف يمين: مراية وبعدين لفتة راس",
+   "explain_fig": [
+    "fig-blind-spots"
+   ],
+   "src": [
+    "S1",
+    "S56"
+   ],
+   "confidence": "high",
+   "notes": "seed 26, H49, H52"
+  },
+  {
+   "id": "hz-010",
+   "topic": "hazard",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "tap",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": {
+      "up": 3,
+      "down": 0
+     },
+     "shoulder": {
+      "up": true
+     },
+     "len": 70,
+     "scenery": "desert"
+    },
+    "view": {
+     "zoom": 1.2,
+     "center": {
+      "x": 1,
+      "y": 32
+     }
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 6
+      }
+     },
+     {
+      "id": "broken",
+      "type": "car",
+      "pos": {
+       "dir": "up",
+       "lane": "shoulder",
+       "y": 47
+      },
+      "color": "silver",
+      "signal": "hazard",
+      "label": "معطلة على الكتف"
+     },
+     {
+      "id": "person",
+      "type": "pedestrian",
+      "pos": {
+       "dir": "up",
+       "lane": "shoulder",
+       "y": 50.8
+      },
+      "color": "orange",
+      "label": "يمشي حول سيارته"
+     },
+     {
+      "id": "c2",
+      "type": "car",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 26
+      },
+      "color": "blue"
+     },
+     {
+      "id": "c3",
+      "type": "car",
+      "pos": {
+       "dir": "up",
+       "lane": 3,
+       "y": 14
+      },
+      "color": "white"
+     }
+    ],
+    "intro": {
+     "len": 3.2,
+     "events": [
+      {
+       "t": 0,
+       "actor": "me",
+       "drive": 12,
+       "dur": 3.2
+      },
+      {
+       "t": 0,
+       "actor": "c2",
+       "drive": 14,
+       "dur": 3.2
+      },
+      {
+       "t": 0,
+       "actor": "c3",
+       "drive": 14,
+       "dur": 3.2
+      },
+      {
+       "t": 1.2,
+       "actor": "person",
+       "to": {
+        "dir": "up",
+        "lane": 1,
+        "y": 50.4,
+        "shift": 1.2
+       },
+       "dur": 2.0
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 6,
+      "dur": 2,
+      "ease": "out"
+     },
+     {
+      "t": 0,
+      "actor": "c2",
+      "drive": 50,
+      "dur": 3.6
+     },
+     {
+      "t": 0,
+      "actor": "c3",
+      "drive": 50,
+      "dur": 3.8
+     },
+     {
+      "t": 1.8,
+      "actor": "me",
+      "lane_change": "left",
+      "dist": 14,
+      "dur": 2.4
+     },
+     {
+      "t": 4.2,
+      "actor": "me",
+      "drive": 40,
+      "dur": 4
+     },
+     {
+      "t": 1.0,
+      "actor": "person",
+      "to": {
+       "dir": "up",
+       "lane": "shoulder",
+       "y": 49.2,
+       "shift": 0.4
+      },
+      "dur": 1.6
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "track": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "hotspots": [
+    {
+     "id": "person",
+     "actor": "person",
+     "r": 2.4
+    },
+    {
+     "id": "c2",
+     "actor": "c2"
+    },
+    {
+     "id": "c3",
+     "actor": "c3"
+    }
+   ],
+   "q": "على طريق سريع، سيارة متوقفة على الكتف الأيمن وتشغل الفلاشر، انقر على الخطر الأقرب إلى مسارك",
+   "answer": "person",
+   "explain": "سائق السيارة المعطلة يمشي حولها ويقترب من مسارك، وقد يدخل الطريق فجأة\nخفف السرعة، وانتقل إلى المسار الذي على يسارك إذا كان خاليا، ولا تنشغل بالنظر إلى الحادث",
+   "tip": "فلاشر عالكتف؟ في ناس حوالين السيارة",
+   "explain_fig": [
+    "ev-hazard-lights"
+   ],
+   "src": [
+    "S1",
+    "S36"
+   ],
+   "confidence": "high",
+   "notes": "seed 20, H65, H67"
+  },
+  {
+   "id": "hz-011",
+   "topic": "hazard",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": {
+      "up": 3,
+      "down": 0
+     },
+     "shoulder": {
+      "up": true
+     },
+     "len": 80,
+     "scenery": "desert"
+    },
+    "view": {
+     "zoom": 1.1,
+     "center": {
+      "x": 0,
+      "y": 34
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 8
+      }
+     },
+     {
+      "id": "h",
+      "type": "car",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 31
+      },
+      "color": "red"
+     },
+     {
+      "id": "b1",
+      "type": "car",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 14
+      },
+      "color": "white"
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "pos": {
+       "dir": "up",
+       "lane": 3,
+       "y": 44
+      },
+      "color": "silver"
+     }
+    ],
+    "intro": {
+     "len": 3.4,
+     "events": [
+      {
+       "t": 0,
+       "actor": "me",
+       "drive": 12,
+       "dur": 3.4
+      },
+      {
+       "t": 0,
+       "actor": "b1",
+       "drive": 12,
+       "dur": 3.4
+      },
+      {
+       "t": 0,
+       "actor": "c1",
+       "drive": 9,
+       "dur": 3.4,
+       "ease": "out"
+      },
+      {
+       "t": 0,
+       "actor": "h",
+       "drive": 8,
+       "dur": 3.4,
+       "ease": "out"
+      },
+      {
+       "t": 1.2,
+       "actor": "h",
+       "signal": "hazard",
+       "brake": true
+      },
+      {
+       "t": 1.9,
+       "actor": "c1",
+       "brake": true
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 11,
+      "dur": 4.2,
+      "ease": "out"
+     },
+     {
+      "t": 1.0,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "h",
+      "drive": 3,
+      "dur": 2,
+      "ease": "out"
+     },
+     {
+      "t": 0,
+      "actor": "c1",
+      "drive": 2,
+      "dur": 1.5,
+      "ease": "out"
+     },
+     {
+      "t": 0,
+      "actor": "b1",
+      "drive": 9,
+      "dur": 3.8,
+      "ease": "out"
+     },
+     {
+      "t": 1.2,
+      "actor": "b1",
+      "brake": true
+     }
+    ],
+    "callouts": [
+     {
+      "text": "مسافة أكبر",
+      "at": {
+       "dir": "up",
+       "lane": 2,
+       "y": 30
+      },
+      "when": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "على طريق سريع شغلت السيارة التي أمامك الفلاشر فجأة وبدأت تخفف، ما التصرف الصحيح؟",
+   "options": [
+    "أتجاوزها فورا من يمينها لأنها أبطأ مني",
+    "أطلق المنبه وأبقى على سرعتي خلفها",
+    "أفرمل بقوة وأتوقف في مساري فورا",
+    "أخفف بالتدريج وأزيد المسافة، وأنظر في المرآة لأن أمامها غالبا ازدحاما أو حادثا"
+   ],
+   "answer": 3,
+   "explain": "الفلاشر من السيارة التي أمامك تحذير من خطر أو ازدحام لا تراه بعد\nخفف بالتدريج وزد المسافة وراقب من خلفك، ولا تفرمل فجأة",
+   "tip": "اللي قدامك شغل فلاشر؟ هو شايف شي انت لسا ما شفته",
+   "explain_fig": [
+    "ev-hazard-lights"
+   ],
+   "src": [
+    "S1",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": "seed 30, H4 (hazard lights allowed to warn of a real danger ahead), H44"
+  },
+  {
+   "id": "wx-001",
+   "topic": "weather",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": 2,
+     "divided": true,
+     "median": {
+      "width": 3,
+      "barrier": true,
+      "palms": false
+     },
+     "len": 70,
+     "scenery": "desert"
+    },
+    "overlay": "fog",
+    "visibility": 34,
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 8
+      }
+     },
+     {
+      "id": "ahead",
+      "type": "car",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 33
+      },
+      "color": "red",
+      "label": "بالكاد تراها"
+     },
+     {
+      "id": "opp",
+      "type": "car",
+      "pos": {
+       "dir": "down",
+       "lane": 2,
+       "y": 46
+      },
+      "color": "white"
+     }
+    ],
+    "intro": {
+     "len": 2,
+     "events": [
+      {
+       "t": 0,
+       "actor": "me",
+       "drive": 7,
+       "dur": 2
+      },
+      {
+       "t": 0,
+       "actor": "ahead",
+       "drive": 5,
+       "dur": 2
+      },
+      {
+       "t": 0,
+       "actor": "opp",
+       "drive": 8,
+       "dur": 2
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 8,
+      "dur": 4,
+      "ease": "out"
+     },
+     {
+      "t": 0,
+      "actor": "ahead",
+      "drive": 14,
+      "dur": 4
+     },
+     {
+      "t": 0,
+      "actor": "opp",
+      "drive": 30,
+      "dur": 4
+     }
+    ],
+    "callouts": [
+     {
+      "text": "أضواء منخفضة ومسافة أكبر",
+      "actor": "me",
+      "when": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "تسير صباحا على طريق خارجي سرعته 100 كم/ساعة، ودخلت منطقة ضباب كثيف، أي مجموعة تصرفات صحيحة؟",
+   "options": [
+    "أخفف تدريجيا، وأشغل الأضواء المنخفضة وأضواء الضباب، وأزيد المسافة",
+    "أشغل الأضواء العالية لأرى أبعد، وأحافظ على سرعتي",
+    "أشغل الفلاشر وأتابع بالسرعة نفسها ليراني الآخرون",
+    "أفرمل بقوة وأتوقف في مساري حتى يخف الضباب"
+   ],
+   "answer": 0,
+   "explain": "في الضباب خفف دون فرملة مفاجئة، واستخدم الأضواء المنخفضة وأضواء الضباب، وزد المسافة كثيرا\nالأضواء العالية تنعكس على الضباب، والفلاشر أثناء السير مخالفة، والتوقف في المسار يسبب حوادث متسلسلة",
+   "tip": "ضباب: خفف، واطي، وبعد",
+   "explain_fig": [
+    "fig-fog-lights",
+    "fig-beam-low"
+   ],
+   "src": [
+    "S1",
+    "S4",
+    "S6",
+    "S8",
+    "S56"
+   ],
+   "confidence": "high",
+   "notes": "seed 34, H2, H3, H4, H5, H7"
+  },
+  {
+   "id": "wx-002",
+   "topic": "weather",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "tap",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": {
+      "up": 3,
+      "down": 0
+     },
+     "shoulder": {
+      "up": true
+     },
+     "len": 60,
+     "scenery": "desert"
+    },
+    "overlay": "fog",
+    "visibility": 44,
+    "view": {
+     "zoom": 1.15,
+     "center": {
+      "x": 2,
+      "y": 26
+     }
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 4
+      }
+     },
+     {
+      "id": "haz",
+      "type": "car",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 27
+      },
+      "color": "red",
+      "signal": "hazard",
+      "label": "الفلاشر أثناء السير"
+     },
+     {
+      "id": "b",
+      "type": "car",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 18
+      },
+      "color": "blue",
+      "label": "أضواء منخفضة"
+     },
+     {
+      "id": "c",
+      "type": "car",
+      "pos": {
+       "dir": "up",
+       "lane": 3,
+       "y": 12
+      },
+      "color": "white"
+     },
+     {
+      "id": "stopped",
+      "type": "car",
+      "pos": {
+       "x": 11.5,
+       "y": 34
+      },
+      "color": "silver",
+      "signal": "hazard",
+      "label": "متوقفة خارج الطريق"
+     }
+    ],
+    "intro": {
+     "len": 2.4,
+     "events": [
+      {
+       "t": 0,
+       "actor": "me",
+       "drive": 7,
+       "dur": 2.4
+      },
+      {
+       "t": 0,
+       "actor": "haz",
+       "drive": 7,
+       "dur": 2.4
+      },
+      {
+       "t": 0,
+       "actor": "b",
+       "drive": 7,
+       "dur": 2.4
+      },
+      {
+       "t": 0,
+       "actor": "c",
+       "drive": 7,
+       "dur": 2.4
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0.4,
+      "actor": "haz",
+      "signal": "off"
+     },
+     {
+      "t": 0,
+      "actor": "haz",
+      "drive": 14,
+      "dur": 4
+     },
+     {
+      "t": 0,
+      "actor": "b",
+      "drive": 14,
+      "dur": 4
+     },
+     {
+      "t": 0,
+      "actor": "c",
+      "drive": 14,
+      "dur": 4
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 12,
+      "dur": 4
+     }
+    ]
+   },
+   "hotspots": [
+    {
+     "id": "haz",
+     "actor": "haz",
+     "r": 2.6
+    },
+    {
+     "id": "b",
+     "actor": "b"
+    },
+    {
+     "id": "c",
+     "actor": "c"
+    },
+    {
+     "id": "stopped",
+     "actor": "stopped"
+    }
+   ],
+   "q": "في الضباب، انقر على السائق الذي يستخدم أضواء سيارته بطريقة خاطئة",
+   "answer": "haz",
+   "explain": "السيارة الحمراء تسير والفلاشر يعمل، وهذا ممنوع في الضباب لأن من خلفها لا يرى إشارات انعطافها وقد يظنها متوقفة\nالفلاشر للتوقف الاضطراري فقط، مثل السيارة الفضية المتوقفة خارج الطريق",
+   "tip": "الفلاشر للواقف، مش للماشي",
+   "explain_fig": [
+    "ev-hazard-lights"
+   ],
+   "src": [
+    "S4",
+    "S5",
+    "S52",
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": "H4, H8. Fine reported as AED 500 + 4 black points (ADP, art. 104 of Ministerial Resolution 178/2017), not in the text"
+  },
+  {
+   "id": "wx-003",
+   "topic": "weather",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": 2,
+     "divided": true,
+     "median": {
+      "width": 3,
+      "barrier": true,
+      "palms": false
+     },
+     "len": 64,
+     "scenery": "desert"
+    },
+    "overlay": "fog",
+    "visibility": 32,
+    "view": {
+     "zoom": 1.2,
+     "center": {
+      "x": 2,
+      "y": 26
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 5
+      }
+     },
+     {
+      "id": "truck",
+      "type": "truck",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 33
+      },
+      "color": "white"
+     }
+    ],
+    "intro": {
+     "len": 2.6,
+     "events": [
+      {
+       "t": 0,
+       "actor": "me",
+       "drive": 11,
+       "dur": 2.6
+      },
+      {
+       "t": 0,
+       "actor": "truck",
+       "drive": 5,
+       "dur": 2.6
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 7,
+      "dur": 4.5,
+      "ease": "out"
+     },
+     {
+      "t": 0,
+      "actor": "truck",
+      "drive": 12,
+      "dur": 4.5
+     }
+    ],
+    "callouts": [
+     {
+      "text": "لا تجاوز في الضباب",
+      "at": {
+       "dir": "up",
+       "lane": 2,
+       "y": 30
+      },
+      "when": "solution",
+      "style": "warn"
+     }
+    ]
+   },
+   "q": "في ضباب كثيف تقترب من شاحنة بطيئة في مسارك، والمسار الأيسر يبدو خاليا، ماذا تفعل؟",
+   "options": [
+    "أنتقل إلى المسار الأيسر وأتجاوزها بسرعة قبل أن يزيد الضباب",
+    "أقترب منها وأتبع أضواءها الخلفية حتى لا أضيع المسار",
+    "أبقى خلفها في مساري وأترك مسافة أكبر من المعتاد، ولا أتجاوز",
+    "أشغل الفلاشر وأتجاوزها من الكتف الأيمن"
+   ],
+   "answer": 2,
+   "explain": "في الضباب لا تتجاوز ولا تغير مسارك، لأن سيارة مسرعة قد تكون مختفية في المسار الذي يبدو خاليا\nابق في مسارك وزد المسافة، واستعن بخطوط الطريق وحافته اليمنى",
+   "tip": "بالضباب: لا تجاوز ولا تغيير مسار",
+   "explain_fig": [
+    "fig-gap-weather"
+   ],
+   "src": [
+    "S9",
+    "S6",
+    "S7",
+    "S56",
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": "H6, H5, H11"
+  },
+  {
+   "id": "wx-004",
+   "topic": "weather",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": 2,
+     "center": "solid",
+     "len": 60
+    },
+    "overlay": "rain",
+    "view": {
+     "zoom": 1.15,
+     "center": {
+      "x": 2,
+      "y": 24
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 8
+      }
+     },
+     {
+      "id": "red",
+      "type": "car",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 21
+      },
+      "color": "red"
+     },
+     {
+      "id": "opp",
+      "type": "car",
+      "pos": {
+       "dir": "down",
+       "lane": 1,
+       "y": 50
+      },
+      "color": "white"
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 5,
+      "dur": 3.5,
+      "ease": "out"
+     },
+     {
+      "t": 0,
+      "actor": "red",
+      "drive": 17,
+      "dur": 3.5
+     },
+     {
+      "t": 0,
+      "actor": "opp",
+      "drive": 45,
+      "dur": 3.5
+     }
+    ],
+    "callouts": [
+     {
+      "text": "4 ثوان على الأقل",
+      "at": {
+       "dir": "up",
+       "lane": 2,
+       "y": 26
+      },
+      "when": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "تمطر والطريق مبلل، وأنت تسير قريبا من السيارة الحمراء، كم ثانية على الأقل تترك بينكما حسب إرشادات هيئة الطرق؟",
+   "options": [
+    "ثانية واحدة",
+    "ثانيتان كالمعتاد",
+    "3 ثوان",
+    "4 ثوان"
+   ],
+   "answer": 3,
+   "explain": "الطريق المبلل يطيل مسافة التوقف ويزيد خطر الانزلاق المائي، لذلك اترك 4 ثوان على الأقل\nعد الثواني من لحظة مرور السيارة التي أمامك بعلامة ثابتة حتى تصلها أنت",
+   "tip": "مطر؟ ضاعف المسافة: 4 ثوان",
+   "explain_fig": [
+    "fig-gap-weather"
+   ],
+   "src": [
+    "S1",
+    "S56"
+   ],
+   "confidence": "high",
+   "notes": "H15, H18. Conflict C1: Dubai Police press (S10, S13) says 5 s in reduced visibility; 4 s is the RTA minimum, 5 s is not among the options"
+  },
+  {
+   "id": "wx-005",
+   "topic": "weather",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": {
+      "up": 3,
+      "down": 0
+     },
+     "shoulder": {
+      "up": true
+     },
+     "len": 64
+    },
+    "overlay": "rain",
+    "visibility": 50,
+    "view": {
+     "zoom": 1.2,
+     "center": {
+      "x": 1,
+      "y": 28
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 6
+      }
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 40
+      },
+      "color": "silver"
+     },
+     {
+      "id": "c3",
+      "type": "car",
+      "pos": {
+       "dir": "up",
+       "lane": 3,
+       "y": 30
+      },
+      "color": "blue"
+     }
+    ],
+    "intro": {
+     "len": 2.6,
+     "events": [
+      {
+       "t": 0,
+       "actor": "me",
+       "drive": 9,
+       "dur": 1.4
+      },
+      {
+       "t": 1.4,
+       "actor": "me",
+       "to": {
+        "dir": "up",
+        "lane": 2,
+        "y": 20.5,
+        "shift": 0.45
+       },
+       "dur": 0.6
+      },
+      {
+       "t": 2.0,
+       "actor": "me",
+       "to": {
+        "dir": "up",
+        "lane": 2,
+        "y": 24,
+        "shift": -0.2
+       },
+       "dur": 0.6
+      },
+      {
+       "t": 1.5,
+       "actor": "me",
+       "say": "!"
+      },
+      {
+       "t": 0,
+       "actor": "c1",
+       "drive": 12,
+       "dur": 2.6
+      },
+      {
+       "t": 0,
+       "actor": "c3",
+       "drive": 12,
+       "dur": 2.6
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "say": null
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "to": {
+       "dir": "up",
+       "lane": 2,
+       "y": 34,
+       "shift": 0
+      },
+      "dur": 3.5,
+      "ease": "out"
+     },
+     {
+      "t": 0,
+      "actor": "c1",
+      "drive": 24,
+      "dur": 3.5
+     },
+     {
+      "t": 0,
+      "actor": "c3",
+      "drive": 24,
+      "dur": 3.5
+     }
+    ],
+    "callouts": [
+     {
+      "text": "بلا فرامل وبلا بنزين",
+      "actor": "me",
+      "when": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "تسير تحت مطر غزير، وفجأة صار المقود خفيفا وبدأت مؤخرة السيارة تتمايل، ماذا تفعل؟",
+   "options": [
+    "أفرمل بقوة لأوقف السيارة بأسرع وقت",
+    "أمسك المقود بثبات وأرفع قدمي عن البنزين دون فرملة حتى تعود الإطارات للتماسك",
+    "أدير المقود بقوة يمينا ويسارا لأستعيد السيطرة",
+    "أضغط البنزين لأعبر منطقة الماء بسرعة"
+   ],
+   "answer": 1,
+   "explain": "هذا انزلاق مائي: الإطارات تسير فوق طبقة ماء\nلا تفرمل ولا تسرع، أمسك المقود بثبات وخفف البنزين، وبعد أن يعود التماسك فرمل أو سرع بلطف",
+   "tip": "المقود خف؟ لا فرامل ولا بنزين، ثبت إيديك",
+   "explain_fig": [
+    "fig-aquaplaning"
+   ],
+   "src": [
+    "S1",
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": "seed 35, H18. RTA also advises staying below 80 km/h in rain to prevent it"
+  },
+  {
+   "id": "wx-006",
+   "topic": "weather",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": 2,
+     "divided": true,
+     "median": {
+      "width": 3,
+      "barrier": false,
+      "palms": false
+     },
+     "len": 60,
+     "scenery": "desert"
+    },
+    "overlay": "dust",
+    "visibility": 30,
+    "view": {
+     "zoom": 1.15,
+     "center": {
+      "x": 2,
+      "y": 24
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 5
+      }
+     },
+     {
+      "id": "ahead",
+      "type": "car",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 26
+      },
+      "color": "white"
+     },
+     {
+      "id": "opp",
+      "type": "car",
+      "pos": {
+       "dir": "down",
+       "lane": 2,
+       "y": 42
+      },
+      "color": "grey"
+     }
+    ],
+    "intro": {
+     "len": 2,
+     "events": [
+      {
+       "t": 0,
+       "actor": "me",
+       "drive": 7,
+       "dur": 2
+      },
+      {
+       "t": 0,
+       "actor": "ahead",
+       "drive": 6,
+       "dur": 2
+      },
+      {
+       "t": 0,
+       "actor": "opp",
+       "drive": 8,
+       "dur": 2
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 6,
+      "dur": 4,
+      "ease": "out"
+     },
+     {
+      "t": 0,
+      "actor": "ahead",
+      "drive": 13,
+      "dur": 4
+     },
+     {
+      "t": 0,
+      "actor": "opp",
+      "drive": 30,
+      "dur": 4
+     }
+    ],
+    "callouts": [
+     {
+      "text": "أبطأ ومسافة أكبر",
+      "actor": "me",
+      "when": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "هبت عاصفة رملية على طريق خارجي وضعفت الرؤية، ما التصرف الصحيح وأنت ما زلت تسير؟",
+   "options": [
+    "أشغل الفلاشر وأتابع بسرعتي حتى أخرج من العاصفة",
+    "أشغل الأضواء العالية وأقترب من السيارة التي أمامي لأرى أضواءها",
+    "أتوقف في مساري وأنتظر حتى تهدأ العاصفة",
+    "أخفف السرعة، وأشغل الأضواء المنخفضة، وأزيد المسافة عن السيارة التي أمامي"
+   ],
+   "answer": 3,
+   "explain": "في العاصفة الرملية خفف واستخدم الأضواء المنخفضة وزد المسافة\nالفلاشر فقط بعد التوقف الكامل، وإذا انعدمت الرؤية اخرج من الطريق إلى مكان آمن ثم توقف",
+   "tip": "غبار: نفس قواعد الضباب",
+   "src": [
+    "S15",
+    "S10"
+   ],
+   "confidence": "high",
+   "notes": "H25, H24"
+  },
+  {
+   "id": "nt-001",
+   "topic": "night",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "tap",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": 1,
+     "center": "broken",
+     "len": 62,
+     "scenery": "desert"
+    },
+    "overlay": "night",
+    "visibility": 46,
+    "view": {
+     "zoom": 1.2,
+     "center": {
+      "x": 0,
+      "y": 30
+     }
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 4
+      }
+     },
+     {
+      "id": "bike",
+      "type": "bicycle",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 28,
+       "shift": 1.05
+      },
+      "color": "black",
+      "label": "دراجة بلا أضواء"
+     },
+     {
+      "id": "oncoming",
+      "type": "car",
+      "pos": {
+       "dir": "down",
+       "lane": 1,
+       "y": 60
+      },
+      "color": "silver"
+     }
+    ],
+    "intro": {
+     "len": 3,
+     "events": [
+      {
+       "t": 0,
+       "actor": "me",
+       "drive": 12,
+       "dur": 3
+      },
+      {
+       "t": 0,
+       "actor": "bike",
+       "to": {
+        "dir": "up",
+        "lane": 1,
+        "y": 32,
+        "shift": 1.05
+       },
+       "dur": 3
+      },
+      {
+       "t": 0,
+       "actor": "oncoming",
+       "drive": 14,
+       "dur": 3
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 9,
+      "dur": 3.2,
+      "ease": "out"
+     },
+     {
+      "t": 0,
+      "actor": "oncoming",
+      "drive": 60,
+      "dur": 3.4
+     },
+     {
+      "t": 0,
+      "actor": "bike",
+      "to": {
+       "dir": "up",
+       "lane": 1,
+       "y": 50,
+       "shift": 1.05
+      },
+      "dur": 7.5
+     },
+     {
+      "t": 3.4,
+      "actor": "me",
+      "to": {
+       "dir": "up",
+       "lane": 1,
+       "y": 57,
+       "shift": -1.3
+      },
+      "dur": 2.8
+     },
+     {
+      "t": 6.2,
+      "actor": "me",
+      "to": {
+       "dir": "up",
+       "lane": 1,
+       "y": 68,
+       "shift": 0
+      },
+      "dur": 1.6
+     }
+    ],
+    "callouts": [
+     {
+      "text": "متر على الأقل",
+      "at": {
+       "x": 0,
+       "y": 52
+      },
+      "when": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "hotspots": [
+    {
+     "id": "bike",
+     "actor": "bike",
+     "r": 2.4
+    },
+    {
+     "id": "oncoming",
+     "actor": "oncoming"
+    }
+   ],
+   "q": "ليلا على طريق جانبي غير مضاء، انقر على الخطر الذي ظهر في ضوء مصابيحك",
+   "answer": "bike",
+   "explain": "راكب دراجة بلا أضواء على يمين مسارك، ولا تراه إلا عندما يصبح قريبا\nخفف وانتظر مرور السيارة القادمة، ثم تجاوزه بمسافة جانبية متر على الأقل",
+   "tip": "بالليل سوق بسرعة بتقدر توقف فيها ضمن الضو اللي قدامك",
+   "explain_fig": [
+    "fig-bike-gap"
+   ],
+   "src": [
+    "S1",
+    "S2",
+    "S56"
+   ],
+   "confidence": "high",
+   "notes": "seed 32, H36, H37, H49. Passing gap: 1 m (S1) vs 1.5 m (S2), see HANDOFF stage 5"
+  },
+  {
+   "id": "nt-002",
+   "topic": "night",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "tap",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": 1,
+     "center": "broken",
+     "len": 60,
+     "scenery": "desert",
+     "signs": [
+      {
+       "id": "w-camels",
+       "dir": "up",
+       "y": 12
+      }
+     ]
+    },
+    "overlay": "night",
+    "visibility": 58,
+    "view": {
+     "zoom": 1.2,
+     "center": {
+      "x": 2,
+      "y": 30
+     }
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 3
+      }
+     },
+     {
+      "id": "camel1",
+      "type": "camel",
+      "pos": {
+       "x": 10,
+       "y": 36,
+       "heading": 270
+      },
+      "label": "جمل يقترب من الطريق"
+     },
+     {
+      "id": "camel2",
+      "type": "camel",
+      "pos": {
+       "x": 13.5,
+       "y": 40.5,
+       "heading": 270
+      }
+     },
+     {
+      "id": "oncoming",
+      "type": "car",
+      "pos": {
+       "dir": "down",
+       "lane": 1,
+       "y": 64
+      },
+      "color": "white"
+     }
+    ],
+    "intro": {
+     "len": 3,
+     "events": [
+      {
+       "t": 0,
+       "actor": "me",
+       "drive": 11,
+       "dur": 3
+      },
+      {
+       "t": 0,
+       "actor": "camel1",
+       "to": {
+        "x": 6.4,
+        "y": 35.4
+       },
+       "dur": 3
+      },
+      {
+       "t": 0.5,
+       "actor": "camel2",
+       "to": {
+        "x": 11.5,
+        "y": 40
+       },
+       "dur": 2.5
+      },
+      {
+       "t": 0,
+       "actor": "oncoming",
+       "drive": 8,
+       "dur": 3
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 8,
+      "dur": 2.6,
+      "ease": "out"
+     },
+     {
+      "t": 0,
+      "actor": "oncoming",
+      "stop_at": {
+       "y": 44
+      },
+      "dur": 2.4
+     },
+     {
+      "t": 0.4,
+      "actor": "camel1",
+      "to": {
+       "x": -7,
+       "y": 34.5
+      },
+      "dur": 6
+     },
+     {
+      "t": 1.2,
+      "actor": "camel2",
+      "to": {
+       "x": -6,
+       "y": 39.5
+      },
+      "dur": 6.5
+     },
+     {
+      "t": 7.9,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 8.0,
+      "actor": "me",
+      "drive": 45,
+      "dur": 5,
+      "ease": "in"
+     },
+     {
+      "t": 8.2,
+      "actor": "oncoming",
+      "drive": 50,
+      "dur": 5,
+      "ease": "in"
+     }
+    ]
+   },
+   "hotspots": [
+    {
+     "id": "camel1",
+     "actor": "camel1",
+     "r": 3
+    },
+    {
+     "id": "camel2",
+     "actor": "camel2",
+     "r": 3
+    },
+    {
+     "id": "oncoming",
+     "actor": "oncoming"
+    }
+   ],
+   "q": "ليلا على طريق خارجي بعد لوحة تحذير، انقر على الخطر الذي يجب أن تخفف له",
+   "answer": [
+    "camel1",
+    "camel2"
+   ],
+   "explain": "جمال قرب حافة الطريق، وقد تعبر فجأة ببطء ولا تراها في الظلام إلا وهي قريبة\nخفف واستعد للتوقف، وانتظر حتى تعبر",
+   "tip": "لوحة الجمل بالليل: رجلك عالفرامل",
+   "explain_fig": [
+    "w-camels"
+   ],
+   "src": [
+    "S3",
+    "S1",
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": "seed 14 night variant, H41, H37, H36"
+  },
+  {
+   "id": "nt-003",
+   "topic": "night",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": 1,
+     "center": "broken",
+     "len": 56,
+     "scenery": "desert"
+    },
+    "overlay": "night",
+    "visibility": 50,
+    "view": {
+     "zoom": 1.2,
+     "center": {
+      "x": 0,
+      "y": 26
+     }
+    },
+    "labels": "always",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 5
+      }
+     },
+     {
+      "id": "oncoming",
+      "type": "car",
+      "pos": {
+       "dir": "down",
+       "lane": 1,
+       "y": 44
+      },
+      "color": "silver",
+      "label": "أضواء عالية",
+      "highlight": "warn"
+     }
+    ],
+    "intro": {
+     "len": 2,
+     "events": [
+      {
+       "t": 0,
+       "actor": "me",
+       "drive": 6,
+       "dur": 2
+      },
+      {
+       "t": 0,
+       "actor": "oncoming",
+       "drive": 9,
+       "dur": 2
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "to": {
+       "dir": "up",
+       "lane": 1,
+       "y": 22,
+       "shift": 0.45
+      },
+      "dur": 3.4,
+      "ease": "out"
+     },
+     {
+      "t": 0,
+      "actor": "oncoming",
+      "drive": 50,
+      "dur": 3.4
+     }
+    ],
+    "callouts": [
+     {
+      "text": "انظر إلى الحافة اليمنى",
+      "at": {
+       "x": 5.5,
+       "y": 30
+      },
+      "when": "solution",
+      "style": "ok"
+     }
+    ],
+    "arrows": [
+     {
+      "path": [
+       [
+        3.2,
+        18
+       ],
+       [
+        3.2,
+        40
+       ]
+      ],
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "ليلا أبهرتك الأضواء العالية لسيارة قادمة من الاتجاه المقابل، ماذا تفعل؟",
+   "options": [
+    "أنظر إلى الحافة اليمنى للطريق، وأبقى في يمين مساري، وأخفف السرعة",
+    "أنظر مباشرة إلى أضوائها لأعرف أين هي بالضبط",
+    "أشغل أضوائي العالية أنا أيضا حتى ينتبه سائقها",
+    "أتحرك نحو منتصف الطريق لأبتعد عن الحافة المظلمة"
+   ],
+   "answer": 0,
+   "explain": "لا تنظر إلى الأضواء المبهرة، بل إلى الحافة اليمنى للطريق، وابق في يمين مسارك وخفف\nإذا لم تعد ترى شيئا فتوقف بأمان",
+   "tip": "ضو بعيونك؟ عيونك عاليمين",
+   "explain_fig": [
+    "fig-beam-high",
+    "fig-beam-low"
+   ],
+   "src": [
+    "S1",
+    "S56"
+   ],
+   "confidence": "high",
+   "notes": "seed 33, H39, H38"
+  },
+  {
+   "id": "nt-004",
+   "topic": "night",
+   "level": 5,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "tap",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": 3,
+     "divided": true,
+     "median": {
+      "width": 2,
+      "barrier": true,
+      "palms": false
+     },
+     "len": 70
+    },
+    "overlay": "night",
+    "visibility": 70,
+    "view": {
+     "zoom": 1.2,
+     "center": {
+      "x": 1,
+      "y": 32
+     }
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 3,
+       "y": 6
+      }
+     },
+     {
+      "id": "person",
+      "type": "pedestrian",
+      "pos": {
+       "x": 0,
+       "y": 44
+      },
+      "color": "black",
+      "label": "يستعد لعبور الطريق"
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 2
+      },
+      "color": "white"
+     },
+     {
+      "id": "c2",
+      "type": "car",
+      "pos": {
+       "dir": "down",
+       "lane": 2,
+       "y": 60
+      },
+      "color": "blue"
+     },
+     {
+      "id": "c3",
+      "type": "car",
+      "pos": {
+       "dir": "down",
+       "lane": 1,
+       "y": 30
+      },
+      "color": "silver"
+     }
+    ],
+    "intro": {
+     "len": 3,
+     "events": [
+      {
+       "t": 0,
+       "actor": "me",
+       "drive": 12,
+       "dur": 3
+      },
+      {
+       "t": 0,
+       "actor": "c1",
+       "drive": 11,
+       "dur": 3
+      },
+      {
+       "t": 0,
+       "actor": "c2",
+       "drive": 16,
+       "dur": 3
+      },
+      {
+       "t": 0,
+       "actor": "c3",
+       "drive": 16,
+       "dur": 3
+      },
+      {
+       "t": 1.6,
+       "actor": "person",
+       "to": {
+        "x": 0.6,
+        "y": 44
+       },
+       "dur": 1.4
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 9,
+      "dur": 3,
+      "ease": "out"
+     },
+     {
+      "t": 0,
+      "actor": "c1",
+      "drive": 9,
+      "dur": 3.2,
+      "ease": "out"
+     },
+     {
+      "t": 0.4,
+      "actor": "c1",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "c2",
+      "drive": 50,
+      "dur": 3.5
+     },
+     {
+      "t": 0,
+      "actor": "c3",
+      "drive": 30,
+      "dur": 2.5
+     },
+     {
+      "t": 0.8,
+      "actor": "person",
+      "to": {
+       "side": "east",
+       "y": 44
+      },
+      "dur": 5.5
+     },
+     {
+      "t": 6.6,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 6.6,
+      "actor": "c1",
+      "brake": false
+     },
+     {
+      "t": 6.7,
+      "actor": "me",
+      "drive": 45,
+      "dur": 4.5,
+      "ease": "in"
+     },
+     {
+      "t": 6.8,
+      "actor": "c1",
+      "drive": 45,
+      "dur": 4.8,
+      "ease": "in"
+     }
+    ]
+   },
+   "hotspots": [
+    {
+     "id": "person",
+     "actor": "person",
+     "r": 2.6
+    },
+    {
+     "id": "c1",
+     "actor": "c1"
+    },
+    {
+     "id": "c2",
+     "actor": "c2"
+    },
+    {
+     "id": "c3",
+     "actor": "c3"
+    }
+   ],
+   "q": "ليلا على طريق سريع مضاء قرب منطقة سكنية، انقر على الخطر",
+   "answer": "person",
+   "explain": "شخص بملابس داكنة يقف على الحاجز الأوسط وينظر إلى مسارك، وقد يعبر فجأة\nارفع قدمك عن البنزين وغط الفرامل، واستعد للتوقف",
+   "tip": "حدا واقف عالحاجز بالنص؟ اعتبره رح يقطع",
+   "src": [
+    "S1",
+    "S2",
+    "S56"
+   ],
+   "confidence": "high",
+   "notes": "seed 31, H36, H44"
+  },
+  {
+   "id": "em-001",
+   "topic": "emergency",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": {
+      "up": 3,
+      "down": 0
+     },
+     "shoulder": {
+      "up": true
+     },
+     "len": 70,
+     "scenery": "desert"
+    },
+    "view": {
+     "zoom": 1.1,
+     "center": {
+      "x": 1,
+      "y": 32
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 18
+      }
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 4
+      },
+      "color": "blue"
+     },
+     {
+      "id": "c3",
+      "type": "car",
+      "pos": {
+       "dir": "up",
+       "lane": 3,
+       "y": 36
+      },
+      "color": "white"
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "signal": "hazard"
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 7,
+      "dur": 2.4,
+      "ease": "out",
+      "signals": "none"
+     },
+     {
+      "t": 0,
+      "actor": "c1",
+      "drive": 60,
+      "dur": 3.2
+     },
+     {
+      "t": 0,
+      "actor": "c3",
+      "drive": 40,
+      "dur": 4
+     },
+     {
+      "t": 2.4,
+      "actor": "me",
+      "lane_change": "right",
+      "dist": 12,
+      "dur": 2.4,
+      "signals": "none"
+     },
+     {
+      "t": 4.8,
+      "actor": "me",
+      "pull_over": "right",
+      "dist": 12,
+      "dur": 2.6,
+      "signals": "none"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "track": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "بدأت سيارتك تفقد قوتها فجأة وأنت في المسار الأوسط على طريق سريع، ما التصرف الصحيح؟",
+   "options": [
+    "أتوقف فورا في مساري وأنزل لأفحص المحرك",
+    "أتابع ببطء في المسار الأوسط حتى تتوقف السيارة وحدها",
+    "أشغل الفلاشر وأنتقل بحذر إلى اليمين لأخرج من الطريق أو أتوقف على الكتف الأيمن",
+    "أنتقل إلى يسار الطريق وأتوقف بجانب الحاجز الأوسط"
+   ],
+   "answer": 2,
+   "explain": "شغل الفلاشر وتحرك بحذر نحو اليمين: إلى مخرج قريب إن أمكن، أو إلى الكتف الأيمن\nالتوقف في المسار أو على اليسار يعرضك لاصطدام السيارات المسرعة",
+   "tip": "عطل؟ فلاشر ويمين",
+   "explain_fig": [
+    "fig-breakdown"
+   ],
+   "src": [
+    "S2",
+    "S27",
+    "S28",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": "H65, H56, H66"
+  },
+  {
+   "id": "em-002",
+   "topic": "emergency",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "tap",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": {
+      "up": 3,
+      "down": 0
+     },
+     "shoulder": {
+      "up": true
+     },
+     "len": 60,
+     "scenery": "desert"
+    },
+    "view": {
+     "zoom": 1.35,
+     "center": {
+      "x": 4,
+      "y": 30
+     }
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": "shoulder",
+       "y": 32
+      },
+      "signal": "hazard"
+     },
+     {
+      "id": "g0",
+      "type": "barrier",
+      "pos": {
+       "x": 11.2,
+       "y": 14.0,
+       "heading": 90
+      }
+     },
+     {
+      "id": "g1",
+      "type": "barrier",
+      "pos": {
+       "x": 11.2,
+       "y": 16.05,
+       "heading": 90
+      }
+     },
+     {
+      "id": "g2",
+      "type": "barrier",
+      "pos": {
+       "x": 11.2,
+       "y": 18.1,
+       "heading": 90
+      }
+     },
+     {
+      "id": "g3",
+      "type": "barrier",
+      "pos": {
+       "x": 11.2,
+       "y": 20.15,
+       "heading": 90
+      }
+     },
+     {
+      "id": "g4",
+      "type": "barrier",
+      "pos": {
+       "x": 11.2,
+       "y": 22.2,
+       "heading": 90
+      }
+     },
+     {
+      "id": "g5",
+      "type": "barrier",
+      "pos": {
+       "x": 11.2,
+       "y": 24.25,
+       "heading": 90
+      }
+     },
+     {
+      "id": "g6",
+      "type": "barrier",
+      "pos": {
+       "x": 11.2,
+       "y": 26.299999999999997,
+       "heading": 90
+      }
+     },
+     {
+      "id": "g7",
+      "type": "barrier",
+      "pos": {
+       "x": 11.2,
+       "y": 28.349999999999998,
+       "heading": 90
+      }
+     },
+     {
+      "id": "g8",
+      "type": "barrier",
+      "pos": {
+       "x": 11.2,
+       "y": 30.4,
+       "heading": 90
+      }
+     },
+     {
+      "id": "g9",
+      "type": "barrier",
+      "pos": {
+       "x": 11.2,
+       "y": 32.45,
+       "heading": 90
+      }
+     },
+     {
+      "id": "g10",
+      "type": "barrier",
+      "pos": {
+       "x": 11.2,
+       "y": 34.5,
+       "heading": 90
+      }
+     },
+     {
+      "id": "g11",
+      "type": "barrier",
+      "pos": {
+       "x": 11.2,
+       "y": 36.55,
+       "heading": 90
+      }
+     },
+     {
+      "id": "g12",
+      "type": "barrier",
+      "pos": {
+       "x": 11.2,
+       "y": 38.599999999999994,
+       "heading": 90
+      }
+     },
+     {
+      "id": "g13",
+      "type": "barrier",
+      "pos": {
+       "x": 11.2,
+       "y": 40.65,
+       "heading": 90
+      }
+     },
+     {
+      "id": "g14",
+      "type": "barrier",
+      "pos": {
+       "x": 11.2,
+       "y": 42.699999999999996,
+       "heading": 90
+      }
+     },
+     {
+      "id": "g15",
+      "type": "barrier",
+      "pos": {
+       "x": 11.2,
+       "y": 44.75,
+       "heading": 90
+      }
+     },
+     {
+      "id": "g16",
+      "type": "barrier",
+      "pos": {
+       "x": 11.2,
+       "y": 46.8,
+       "heading": 90
+      }
+     },
+     {
+      "id": "g17",
+      "type": "barrier",
+      "pos": {
+       "x": 11.2,
+       "y": 48.849999999999994,
+       "heading": 90
+      }
+     },
+     {
+      "id": "p1",
+      "type": "pedestrian",
+      "pos": {
+       "x": 8.6,
+       "y": 33
+      },
+      "color": "blue",
+      "visible": false,
+      "collide": true
+     },
+     {
+      "id": "p2",
+      "type": "pedestrian",
+      "pos": {
+       "x": 8.6,
+       "y": 31
+      },
+      "variant": "woman",
+      "color": "purple",
+      "visible": false,
+      "collide": true
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 12
+      },
+      "color": "white"
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "p1",
+      "visible": true
+     },
+     {
+      "t": 0.5,
+      "actor": "p2",
+      "visible": true
+     },
+     {
+      "t": 0.3,
+      "actor": "p1",
+      "to": {
+       "x": 14.5,
+       "y": 36
+      },
+      "dur": 2.6
+     },
+     {
+      "t": 0.8,
+      "actor": "p2",
+      "to": {
+       "x": 14.5,
+       "y": 33.5
+      },
+      "dur": 2.6
+     },
+     {
+      "t": 0,
+      "actor": "c1",
+      "drive": 50,
+      "dur": 3
+     }
+    ],
+    "callouts": [
+     {
+      "text": "خلف الحاجز",
+      "at": {
+       "x": 15,
+       "y": 40
+      },
+      "when": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "hotspots": [
+    {
+     "id": "safe",
+     "rect": [
+      12.2,
+      24,
+      18,
+      42
+     ],
+     "label": "خلف الحاجز"
+    },
+    {
+     "id": "inside",
+     "actor": "me",
+     "r": 2.2
+    },
+    {
+     "id": "behind",
+     "rect": [
+      6.5,
+      20,
+      10.5,
+      28.5
+     ],
+     "label": "خلف السيارة على الكتف"
+    },
+    {
+     "id": "front",
+     "rect": [
+      6.5,
+      35.5,
+      10.5,
+      44
+     ],
+     "label": "أمام السيارة على الكتف"
+    },
+    {
+     "id": "left",
+     "rect": [
+      3.5,
+      26,
+      6.3,
+      38
+     ],
+     "label": "بين السيارة والمسار"
+    }
+   ],
+   "q": "أوقفت سيارتك المعطلة على الكتف الأيمن لطريق سريع وشغلت الفلاشر، انقر على المكان الأسلم لتنتظر فيه أنت والركاب",
+   "answer": "safe",
+   "explain": "انزلوا من الأبواب اليمنى بعيدا عن السيارات، وانتظروا خلف الحاجز بعيدا عن الطريق\nلا تنتظر داخل السيارة ولا بجانبها أو خلفها على الكتف، فقد تصطدم بها سيارة",
+   "tip": "عطل عالسريع؟ كلنا برا وورا الحاجز",
+   "explain_fig": [
+    "fig-breakdown"
+   ],
+   "src": [
+    "S2",
+    "S27",
+    "S28",
+    "S29"
+   ],
+   "confidence": "high",
+   "notes": "H65. Warning triangle distance differs (RTA 50 m, SDI about 100 m, conflict C2), not used here"
+  },
+  {
+   "id": "em-003",
+   "topic": "emergency",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": {
+      "up": 3,
+      "down": 0
+     },
+     "shoulder": {
+      "up": true
+     },
+     "len": 80,
+     "scenery": "desert"
+    },
+    "view": {
+     "zoom": 1.05,
+     "center": {
+      "x": 1,
+      "y": 36
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 8
+      }
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 34
+      },
+      "color": "silver"
+     },
+     {
+      "id": "c3",
+      "type": "car",
+      "pos": {
+       "dir": "up",
+       "lane": 3,
+       "y": 20
+      },
+      "color": "blue"
+     }
+    ],
+    "intro": {
+     "len": 2.4,
+     "events": [
+      {
+       "t": 0,
+       "actor": "me",
+       "drive": 8,
+       "dur": 1.4
+      },
+      {
+       "t": 1.4,
+       "actor": "me",
+       "to": {
+        "dir": "up",
+        "lane": 2,
+        "y": 22,
+        "shift": 0.55
+       },
+       "dur": 1.0
+      },
+      {
+       "t": 1.4,
+       "actor": "me",
+       "say": "!"
+      },
+      {
+       "t": 0,
+       "actor": "c1",
+       "drive": 12,
+       "dur": 2.4
+      },
+      {
+       "t": 0,
+       "actor": "c3",
+       "drive": 12,
+       "dur": 2.4
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "say": null
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "to": {
+       "dir": "up",
+       "lane": 2,
+       "y": 32,
+       "shift": 0
+      },
+      "dur": 2.6,
+      "ease": "out"
+     },
+     {
+      "t": 1.2,
+      "actor": "me",
+      "signal": "hazard"
+     },
+     {
+      "t": 0,
+      "actor": "c1",
+      "drive": 40,
+      "dur": 3
+     },
+     {
+      "t": 0,
+      "actor": "c3",
+      "drive": 50,
+      "dur": 3.4
+     },
+     {
+      "t": 2.6,
+      "actor": "me",
+      "lane_change": "right",
+      "dist": 12,
+      "dur": 2.4,
+      "signals": "none"
+     },
+     {
+      "t": 5.0,
+      "actor": "me",
+      "pull_over": "right",
+      "dist": 11,
+      "dur": 2.6,
+      "signals": "none"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "track": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "انفجر أحد إطارات سيارتك وأنت تسير بسرعة في المسار الأوسط، وبدأت السيارة تنحرف، ما التصرف الصحيح؟",
+   "options": [
+    "أفرمل بقوة فورا حتى تتوقف السيارة في مكانها",
+    "أمسك المقود بثبات، وأخفف البنزين تدريجيا، ثم أفرمل بلطف وأتجه إلى اليمين بعد التأكد أنه خال",
+    "أدير المقود بسرعة عكس الانحراف وأضغط البنزين لأستعيد التوازن",
+    "أتوقف في المسار الأوسط وأنزل لأفحص الإطار"
+   ],
+   "answer": 1,
+   "explain": "أمسك المقود بقوة وخفف البنزين تدريجيا، فالفرملة القوية قد تجعل السيارة تنحرف\nبعد أن تخف السرعة فرمل بلطف، وتأكد أن اليمين خال واتجه إلى جانب الطريق وشغل الفلاشر",
+   "tip": "بنشر عالسريع: ثبت المقود، لا تدعس فرامل",
+   "src": [
+    "S20",
+    "S56"
+   ],
+   "confidence": "high",
+   "notes": "seed 37, H59"
+  }
+ ]
+}

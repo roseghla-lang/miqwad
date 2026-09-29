@@ -1,0 +1,2675 @@
+{
+ "module": "junctions",
+ "updated": "2026-09-29",
+ "sources": {
+  "S1": {
+   "title": "مرسوم بقانون اتحادي رقم 14 لسنة 2024 بشأن تنظيم السير والمرور (Arabic text)",
+   "url": "https://uaelegislation.gov.ae/ar/legislations/2598/download",
+   "publisher": "UAE Legislation portal",
+   "date": "2024-09-30, in force 2025-03-29"
+  },
+  "S2": {
+   "title": "Federal Decree-Law No. 14 of 2024 On Traffic Regulation (English text)",
+   "url": "https://uaelegislation.gov.ae/en/legislations/2598/download",
+   "publisher": "UAE Legislation portal",
+   "date": "2024-09-30"
+  },
+  "S3": {
+   "title": "Ministerial Resolution No. 130 of 1997, Executive Regulation of the Federal Traffic Law (English)",
+   "url": "https://uaelegislation.gov.ae/en/legislations/1020/download",
+   "publisher": "UAE Legislation portal",
+   "date": "1997, listed in force, updated 2023-05-02"
+  },
+  "S4": {
+   "title": "القرار الوزاري رقم 130 لسنة 1997 باللائحة التنفيذية لقانون السير والمرور (Arabic)",
+   "url": "https://uaelegislation.gov.ae/ar/legislations/1020/download",
+   "publisher": "UAE Legislation portal",
+   "date": "1997, listed in force, updated 2023-05-02"
+  },
+  "S5": {
+   "title": "Light Motor Vehicle Handbook, A Guide to Safe Driving, 7th edition (English)",
+   "url": "https://edi-uae.com/public/uploads/downloads/20190724133013RTA_Handbook_-_Light_Motor_Vehicle_(LMV)_-_English.pdf",
+   "publisher": "RTA Licensing Agency (copy hosted by Emirates Driving Institute)",
+   "date": "2016-01"
+  },
+  "S6": {
+   "title": "كتيب المركبات الآلية الخفيفة، دليل للقيادة الآمنة، الطبعة 3 (Arabic)",
+   "url": "https://www.rta.ae/wpsv5/eservices/PDF_Catalog/Light_Motor_Handbook_AR.pdf",
+   "publisher": "RTA Licensing Agency",
+   "date": "2012-01"
+  },
+  "S8": {
+   "title": "New UAE traffic law: When should you give way, and when do you have the right of way?",
+   "url": "https://gulfnews.com/living-in-uae/transport/new-uae-traffic-law-when-should-you-give-way-and-when-do-you-have-the-right-of-way-1.1730289189795",
+   "publisher": "Gulf News",
+   "date": "2024-10-31"
+  },
+  "S11": {
+   "title": "Think you're following UAE lane rules? The driving mistakes that could get you fined (RTA; Sharjah Police on hard shoulder)",
+   "url": "https://gulfnews.com/living-in-uae/transport/think-youre-following-uae-lane-rules-the-driving-mistakes-that-could-get-you-fined-1.500124462",
+   "publisher": "Gulf News",
+   "date": "2025-05-12"
+  },
+  "S26": {
+   "title": "UAE back to school: When must drivers stop for pedestrians?",
+   "url": "https://www.emirates247.com/uae-guide/uae-back-to-school-when-must-drivers-stop-for-pedestrians-rules-fines-explained/5011",
+   "publisher": "Emirates 24/7 (cites Article 5 of the law)",
+   "date": "2026-08-28"
+  },
+  "M1": {
+   "title": "Light Motor Vehicle Handbook: A Guide to Safe Driving (3rd edition)",
+   "url": "https://russiadubai.com/upload/iblock/ac6/ac6fa71db851d0137a784bd80278acff.pdf",
+   "publisher": "Roads and Transport Authority (RTA) Dubai, Licensing Agency (copy hosted by a third party)",
+   "date": "2012-01"
+  },
+  "M7": {
+   "title": "Signal Chart (English)",
+   "url": "https://edi-uae.com/public/uploads/downloads/20260303120751Signal-Chart-English.pdf",
+   "publisher": "Emirates Driving Institute (Dubai)",
+   "date": "2026-01"
+  },
+  "M14": {
+   "title": "UAE traffic light guide: Avoid fines and stay safe at intersections",
+   "url": "https://gulfnews.com/living-in-uae/transport/uae-traffic-light-guide-avoid-fines-and-stay-safe-at-intersections-1.1720612632422",
+   "publisher": "Gulf News (citing MOI 999 magazine)",
+   "date": "2024-07-10"
+  },
+  "M16": {
+   "title": "Dangers of entering yellow box junction explained in Dubai campaign",
+   "url": "https://www.thenationalnews.com/uae/transport/dangers-of-entering-yellow-box-junction-explained-in-dubai-campaign-1.141300",
+   "publisher": "The National (Dubai Police campaign)",
+   "date": "2016-04-10"
+  },
+  "M17": {
+   "title": "Abu Dhabi Police warn drivers against stopping, parking in yellow box at intersections",
+   "url": "https://www.khaleejtimes.com/uae/transport/abu-dhabi-police-warning-stopping-parking-yellow-box-intersections",
+   "publisher": "Khaleej Times",
+   "date": "2026-06-08"
+  },
+  "M24": {
+   "title": "How to Pass the RTA Car Theory Test in Dubai",
+   "url": "https://www.excellencedriving.com/en/blogs/how-to-pass-the-rta-car-theory-test-in-dubai",
+   "publisher": "Excellence Driving (Dubai)",
+   "date": "2026-09-08"
+  }
+ },
+ "scenarios": [
+  {
+   "id": "jn-001",
+   "topic": "lights",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "crossroads",
+    "params": {
+     "lanes": 1,
+     "control": "lights",
+     "lights": {
+      "S": "red",
+      "N": "red",
+      "E": "green",
+      "W": "green"
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": 14
+      }
+     },
+     {
+      "id": "grey",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "arm": "W",
+       "lane": 1,
+       "at": 6
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "route": "S1->N",
+      "until": "stopline",
+      "dur": 2.6,
+      "ease": "out"
+     },
+     {
+      "t": 0,
+      "actor": "grey",
+      "route": "W1->E",
+      "kmh": 36
+     },
+     {
+      "t": 2.2,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 4.2,
+      "lights": {
+       "E": "amber",
+       "W": "amber"
+      }
+     },
+     {
+      "t": 5.6,
+      "lights": {
+       "E": "red",
+       "W": "red"
+      }
+     },
+     {
+      "t": 6.4,
+      "lights": {
+       "S": "green",
+       "N": "green"
+      }
+     },
+     {
+      "t": 6.6,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 6.8,
+      "actor": "me",
+      "route": "S1->N",
+      "kmh": 26,
+      "ease": "in"
+     }
+    ],
+    "callouts": [
+     {
+      "text": "قف قبل الخط",
+      "at": {
+       "x": 14,
+       "y": -17
+      },
+      "when": "solution",
+      "style": "warn"
+     }
+    ]
+   },
+   "q": "الإشارة الضوئية أمامك حمراء، ماذا تفعل؟",
+   "options": [
+    "أتوقف فوق خط التوقف لأكون جاهزا للانطلاق",
+    "أتوقف تماما قبل خط التوقف وأنتظر الضوء الأخضر",
+    "أتابع ببطء إذا لم أر سيارات قادمة من الجانبين",
+    "أتوقف بعد الخط عند بداية التقاطع لأرى الطريق أفضل"
+   ],
+   "answer": 1,
+   "explain": "الضوء الأحمر يعني التوقف التام قبل خط التوقف، لا فوقه ولا بعده\nانتظر حتى يصبح الضوء أخضر ولو بدا التقاطع خاليا",
+   "explain_fig": [
+    "tl-red",
+    "mk-stop-line"
+   ],
+   "tip": "الأحمر يعني قف قبل الخط، مش عليه ومش بعده",
+   "src": [
+    "S4",
+    "S6",
+    "M1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "jn-002",
+   "topic": "priority",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "tjunction",
+    "params": {
+     "side": "S",
+     "lanes": 1,
+     "control": "stop"
+    },
+    "view": {
+     "zoom": 1.2,
+     "center": {
+      "x": 0,
+      "y": -8
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": 13
+      },
+      "signal": "right"
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "route": "S1->E",
+      "until": "stopline",
+      "dur": 2.8,
+      "ease": "out"
+     },
+     {
+      "t": 2.7,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 4.8,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 4.9,
+      "actor": "me",
+      "route": "S1->E",
+      "kmh": 20,
+      "ease": "in"
+     }
+    ],
+    "callouts": [
+     {
+      "text": "توقف تام",
+      "at": {
+       "x": 12,
+       "y": -14
+      },
+      "when": "solution",
+      "style": "warn"
+     }
+    ]
+   },
+   "q": "وصلت إلى لوحة قف والطريق الرئيسي خال تماما في الاتجاهين، ماذا تفعل؟",
+   "options": [
+    "أخفف السرعة وأنعطف دون توقف لأن الطريق خال",
+    "أتوقف فقط إذا ظهرت سيارة على الطريق الرئيسي",
+    "أتوقف تماما عند خط التوقف، ثم أنظر في الاتجاهين وأنعطف",
+    "أطلق المنبه لأنبه الآخرين ثم أنعطف مباشرة"
+   ],
+   "answer": 2,
+   "explain": "لوحة قف تعني التوقف التام عند الخط في كل مرة، حتى لو كان الطريق خاليا\nبعد التوقف انظر في الاتجاهين ثم انطلق عندما يكون ذلك آمنا",
+   "explain_fig": [
+    "p-stop",
+    "mk-stop-line"
+   ],
+   "tip": "قف يعني العجلات توقف كليا، ولو الشارع فاضي",
+   "src": [
+    "S6",
+    "M1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "jn-003",
+   "topic": "priority",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "tjunction",
+    "params": {
+     "side": "S",
+     "lanes": 1,
+     "control": "giveway"
+    },
+    "view": {
+     "zoom": 1.15,
+     "center": {
+      "x": 0,
+      "y": -6
+     }
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": "stopline"
+      },
+      "signal": "right"
+     },
+     {
+      "id": "blue",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "arm": "W",
+       "lane": 1,
+       "at": 12
+      },
+      "label": "قادمة من يسارك"
+     },
+     {
+      "id": "white",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "arm": "E",
+       "lane": 1,
+       "at": 13
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "blue",
+      "route": "W1->E",
+      "kmh": 36
+     },
+     {
+      "t": 0,
+      "actor": "white",
+      "route": "E1->W",
+      "kmh": 36
+     },
+     {
+      "t": 3.4,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 3.5,
+      "actor": "me",
+      "route": "S1->E",
+      "kmh": 20,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "blue",
+      "route": "W1->E",
+      "style": "other"
+     }
+    ]
+   },
+   "q": "أمامك خط إفساح الطريق وتريد الانعطاف يمينا، ما التصرف الصحيح؟",
+   "options": [
+    "أنتظر عند الخط حتى تمر السيارة الزرقاء القادمة من يساري، ثم أنعطف",
+    "أنعطف دون توقف لأن السيارة الزرقاء ستخفف لي",
+    "أنتظر السيارة البيضاء فقط، فمن ينعطف يمينا ينظر إلى اليمين",
+    "أطلق المنبه وأنعطف قبل السيارة الزرقاء"
+   ],
+   "answer": 0,
+   "explain": "خط إفساح الطريق يعني أن الأولوية لمن على الطريق الرئيسي من الاتجاهين\nعندما تنعطف يمينا تدخل مسار السيارة القادمة من يسارك، فانتظرها حتى تمر",
+   "explain_fig": [
+    "p-give-way",
+    "mk-give-way-line"
+   ],
+   "src": [
+    "S6",
+    "S11",
+    "M1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "jn-004",
+   "topic": "priority",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "tap",
+   "scene": {
+    "template": "crossroads",
+    "params": {
+     "lanes": 1,
+     "control": "none",
+     "markings": "none"
+    },
+    "view": {
+     "zoom": 1.25
+    },
+    "labels": "never",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": 1
+      }
+     },
+     {
+      "id": "blue",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "arm": "W",
+       "lane": 1,
+       "at": 1
+      },
+      "label": "تمر أولا"
+     },
+     {
+      "id": "red",
+      "type": "car",
+      "color": "red",
+      "pos": {
+       "arm": "E",
+       "lane": 1,
+       "at": 1
+      },
+      "label": "تمر أخيرا"
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "red",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "blue",
+      "route": "W1->E",
+      "kmh": 24,
+      "ease": "in"
+     },
+     {
+      "t": 0,
+      "labels": true
+     },
+     {
+      "t": 3.0,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 3.1,
+      "actor": "me",
+      "route": "S1->N",
+      "kmh": 24,
+      "ease": "in"
+     },
+     {
+      "t": 6.2,
+      "actor": "red",
+      "brake": false
+     },
+     {
+      "t": 6.3,
+      "actor": "red",
+      "route": "E1->W",
+      "kmh": 24,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "blue",
+      "route": "W1->E",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "تقاطع طرق متساوية بلا إشارات ولا علامات، ووصلت السيارات الثلاث في الوقت نفسه، من يمر أولا؟ انقر عليه",
+   "hotspots": [
+    {
+     "id": "blue",
+     "actor": "blue"
+    },
+    {
+     "id": "red",
+     "actor": "red"
+    },
+    {
+     "id": "me",
+     "actor": "me"
+    }
+   ],
+   "answer": "blue",
+   "explain": "في التقاطع غير المنظم الأولوية للقادم من اليسار: السيارة الزرقاء ليس على يسارها أحد فتمر أولا\nثم أنت، لأنك على يسار السيارة الحمراء، وهي تمر أخيرا",
+   "explain_fig": [
+    "fig-unmarked-left"
+   ],
+   "tip": "بالتقاطع اللي ما فيه تنظيم: شوف شمالك، اللي جاي من شمالك بيمرق قبلك",
+   "src": [
+    "S1",
+    "S2",
+    "S4",
+    "S6",
+    "S8"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "jn-005",
+   "topic": "priority",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "tjunction",
+    "params": {
+     "side": "W",
+     "lanes": {
+      "main": 2,
+      "side": 1
+     },
+     "control": "none"
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": 9
+      }
+     },
+     {
+      "id": "blue",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "arm": "W",
+       "lane": 1,
+       "at": 1
+      },
+      "signal": "left",
+      "label": "طريق فرعي"
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "route": "S1->N",
+      "kmh": 30
+     },
+     {
+      "t": 0,
+      "actor": "blue",
+      "brake": true
+     },
+     {
+      "t": 3.4,
+      "actor": "blue",
+      "brake": false
+     },
+     {
+      "t": 3.5,
+      "actor": "blue",
+      "route": "W1->N",
+      "kmh": 20,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "route": "S1->N",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "أنت على الطريق الرئيسي وتسير إلى الأمام، وسيارة زرقاء تصل من طريق فرعي على يسارك، ولا توجد لوحات ولا إشارات، من يمر أولا؟",
+   "options": [
+    "السيارة الزرقاء، لأنها قادمة من يسارك",
+    "من يصل إلى التقاطع أولا",
+    "السيارة الزرقاء، لأنها شغلت إشارة الانعطاف",
+    "أنت، لأنك على الطريق الرئيسي"
+   ],
+   "answer": 3,
+   "explain": "عند التقاء طريق رئيسي بطريق فرعي بلا لوحات ولا إشارات، الأولوية لمن على الطريق الرئيسي\nقاعدة القادم من اليسار تطبق فقط عندما تتساوى الطرق، وإشارة الانعطاف لا تعطي أولوية",
+   "explain_fig": [
+    "fig-main-road-first"
+   ],
+   "tip": "الرئيسي قبل الفرعي، وبعدين بتجي قاعدة الشمال",
+   "src": [
+    "S1",
+    "S2",
+    "S3",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "jn-006",
+   "topic": "turning",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "crossroads",
+    "params": {
+     "lanes": 2,
+     "control": "lights",
+     "crossings": [
+      "W"
+     ],
+     "lights": {
+      "S": "green",
+      "N": "green",
+      "E": "red",
+      "W": "red"
+     }
+    },
+    "view": {
+     "zoom": 1.5,
+     "center": {
+      "x": -4,
+      "y": -1
+     }
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 2,
+       "at": "stopline"
+      },
+      "signal": "left"
+     },
+     {
+      "id": "onc",
+      "type": "car",
+      "color": "red",
+      "pos": {
+       "arm": "N",
+       "lane": 1,
+       "at": 9
+      },
+      "label": "تسير إلى الأمام"
+     },
+     {
+      "id": "ped",
+      "type": "pedestrian",
+      "color": "yellow",
+      "pos": {
+       "x": -13.9,
+       "y": 1.2
+      },
+      "label": "مشاة يعبرون"
+     },
+     {
+      "id": "ped2",
+      "type": "pedestrian",
+      "variant": "woman",
+      "color": "white",
+      "pos": {
+       "x": -12.6,
+       "y": 2.4
+      }
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": "stopline"
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "onc",
+      "route": "N1->S",
+      "kmh": 34
+     },
+     {
+      "t": 0,
+      "actor": "c1",
+      "route": "S1->N",
+      "kmh": 30,
+      "ease": "in"
+     },
+     {
+      "t": 0,
+      "actor": "ped",
+      "to": {
+       "crossing": "W",
+       "side": "south"
+      },
+      "dur": 4.2
+     },
+     {
+      "t": 0,
+      "actor": "ped2",
+      "to": {
+       "x": -12.6,
+       "y": -9.8
+      },
+      "dur": 4.4
+     },
+     {
+      "t": 4.6,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 4.7,
+      "actor": "me",
+      "route": "S2->W",
+      "kmh": 20,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "route": "S2->W",
+      "style": "me"
+     }
+    ]
+   },
+   "q": "الإشارة خضراء (دائرة وليست سهما) وتريد الانعطاف يسارا، وسيارة مقابلة تسير إلى الأمام، ومشاة يعبرون الشارع الذي ستدخله، ما التصرف الصحيح؟",
+   "options": [
+    "أنتظر حتى تمر السيارة المقابلة ويكمل المشاة العبور، ثم أنعطف",
+    "أنعطف فورا لأن الضوء أخضر لي",
+    "أنعطف قبل السيارة المقابلة لأني وصلت أولا، ثم أنتظر المشاة",
+    "أنتظر المشاة فقط، أما السيارة المقابلة فعليها أن تنتظرني"
+   ],
+   "answer": 0,
+   "explain": "الضوء الأخضر الدائري لا يعطيك الأولوية عند الانعطاف يسارا: اترك السيارات المقابلة تمر أولا\nوتوقف للمشاة الذين يعبرون الشارع الذي تدخله، ثم انعطف",
+   "explain_fig": [
+    "fig-turn-left",
+    "fig-turn-pedestrians"
+   ],
+   "src": [
+    "S3",
+    "S6",
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "jn-007",
+   "topic": "turning",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "tap",
+   "scene": {
+    "template": "crossroads",
+    "params": {
+     "lanes": 2,
+     "control": "lights",
+     "crossings": [
+      "E"
+     ],
+     "lights": {
+      "S": "green",
+      "N": "green",
+      "E": "red",
+      "W": "red"
+     }
+    },
+    "view": {
+     "zoom": 1.55,
+     "center": {
+      "x": 5,
+      "y": -3
+     }
+    },
+    "labels": "never",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": "stopline"
+      },
+      "signal": "right"
+     },
+     {
+      "id": "ped",
+      "type": "pedestrian",
+      "variant": "woman",
+      "color": "yellow",
+      "pos": {
+       "x": 13.4,
+       "y": -3.2
+      },
+      "label": "تعبر الشارع الذي تدخله"
+     },
+     {
+      "id": "ped2",
+      "type": "pedestrian",
+      "variant": "child",
+      "color": "white",
+      "pos": {
+       "x": 14.6,
+       "y": -4.0
+      }
+     },
+     {
+      "id": "onc",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "arm": "N",
+       "lane": 1,
+       "at": 8
+      }
+     },
+     {
+      "id": "west",
+      "type": "car",
+      "color": "green",
+      "pos": {
+       "arm": "W",
+       "lane": 1,
+       "at": "stopline"
+      },
+      "brake": true
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "onc",
+      "route": "N1->S",
+      "kmh": 34
+     },
+     {
+      "t": 0,
+      "labels": true
+     },
+     {
+      "t": 0,
+      "actor": "ped",
+      "to": {
+       "crossing": "E",
+       "side": "north"
+      },
+      "dur": 3.6
+     },
+     {
+      "t": 0,
+      "actor": "ped2",
+      "to": {
+       "x": 14.6,
+       "y": 9.8
+      },
+      "dur": 3.8
+     },
+     {
+      "t": 3.6,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 3.7,
+      "actor": "me",
+      "route": "S1->E",
+      "kmh": 20,
+      "ease": "in"
+     }
+    ]
+   },
+   "q": "إشارتك خضراء وتريد الانعطاف يمينا، من يجب أن تعطيه الأولوية قبل أن تنعطف؟ انقر عليه",
+   "hotspots": [
+    {
+     "id": "ped",
+     "actor": "ped",
+     "r": 2.2
+    },
+    {
+     "id": "ped2",
+     "actor": "ped2",
+     "r": 2.2
+    },
+    {
+     "id": "onc",
+     "actor": "onc"
+    },
+    {
+     "id": "west",
+     "actor": "west"
+    }
+   ],
+   "answer": [
+    "ped",
+    "ped2"
+   ],
+   "explain": "عندما تنعطف إلى شارع آخر خفف سرعتك وتوقف للمشاة الذين يعبرونه، حتى لو كانت إشارتك خضراء\nالسيارة البيضاء تسير إلى الأمام في جهتها، والخضراء متوقفة عند الأحمر",
+   "explain_fig": [
+    "fig-turn-pedestrians",
+    "fig-turn-right"
+   ],
+   "src": [
+    "S3",
+    "S1",
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "jn-008",
+   "topic": "lights",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "crossroads",
+    "params": {
+     "lanes": 2,
+     "divided": true,
+     "control": "lights",
+     "lights": {
+      "S": {
+       "main": "red",
+       "right": "green"
+      },
+      "N": "red",
+      "E": "green",
+      "W": "red"
+     }
+    },
+    "view": {
+     "zoom": 1.45,
+     "center": {
+      "x": 3,
+      "y": -8
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 2,
+       "at": "stopline"
+      }
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": "stopline"
+      },
+      "signal": "right"
+     },
+     {
+      "id": "c2",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "arm": "E",
+       "lane": 2,
+       "at": 9
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "c1",
+      "route": "S1->E",
+      "kmh": 20,
+      "ease": "in"
+     },
+     {
+      "t": 0,
+      "actor": "c2",
+      "route": "E2->W",
+      "kmh": 34
+     }
+    ],
+    "callouts": [
+     {
+      "text": "السهم لليمين فقط",
+      "at": {
+       "x": 18,
+       "y": -18
+      },
+      "when": "solution",
+      "style": "info"
+     }
+    ]
+   },
+   "q": "الضوء الرئيسي أحمر والسهم الأخضر لليمين مضاء، وأنت في المسار الأيسر وتريد المتابعة إلى الأمام، ماذا تفعل؟",
+   "options": [
+    "أتابع إلى الأمام لأن أحد الأضواء أخضر",
+    "أتقدم ببطء إلى وسط التقاطع وأنتظر هناك",
+    "أبقى متوقفا قبل الخط حتى يصبح الضوء الرئيسي أخضر",
+    "أتحرك مع السيارة الزرقاء لأنها تحركت"
+   ],
+   "answer": 2,
+   "explain": "السهم الأخضر يسمح بالسير في اتجاهه فقط، والضوء الأحمر الدائري يبقى لباقي الاتجاهات\nمن يريد المتابعة إلى الأمام ينتظر الضوء الأخضر الدائري",
+   "explain_fig": [
+    "tl-green-arrow",
+    "tl-red"
+   ],
+   "src": [
+    "S4",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "jn-009",
+   "topic": "lights",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "crossroads",
+    "params": {
+     "lanes": 2,
+     "divided": true,
+     "control": "lights",
+     "lights": {
+      "S": {
+       "main": "red",
+       "left": "green"
+      },
+      "N": "red",
+      "E": "red",
+      "W": "red"
+     }
+    },
+    "view": {
+     "zoom": 1.4,
+     "center": {
+      "x": 0,
+      "y": -5
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 2,
+       "at": "stopline"
+      },
+      "signal": "left"
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": "stopline"
+      }
+     },
+     {
+      "id": "onc",
+      "type": "car",
+      "color": "red",
+      "pos": {
+       "arm": "N",
+       "lane": 1,
+       "at": "stopline"
+      }
+     },
+     {
+      "id": "c3",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "arm": "E",
+       "lane": 1,
+       "at": "stopline"
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0.3,
+      "actor": "me",
+      "route": "S2->W",
+      "kmh": 20,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "route": "S2->W",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "الضوء الرئيسي أحمر والسهم الأخضر لليسار مضاء، وأنت في المسار الأيسر وتريد الانعطاف يسارا، ماذا تفعل؟",
+   "options": [
+    "أنعطف يسارا بحذر، فالسهم الأخضر يسمح بالانعطاف في اتجاهه",
+    "أنتظر حتى يصبح الضوء الرئيسي أخضر أيضا",
+    "أنتظر حتى تتحرك السيارة المقابلة ثم أنعطف",
+    "أتابع إلى الأمام لأن السهم أخضر"
+   ],
+   "answer": 0,
+   "explain": "السهم الأخضر يسمح لك بالسير في اتجاهه حتى لو كان الضوء الرئيسي أحمر، والسيارات المقابلة متوقفة عند إشارتها الحمراء\nانعطف بحذر وانتبه لأي مشاة ما زالوا يعبرون",
+   "explain_fig": [
+    "tl-green-arrow",
+    "fig-turn-left"
+   ],
+   "src": [
+    "S4",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "jn-010",
+   "topic": "lights",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "crossroads",
+    "params": {
+     "lanes": 1,
+     "control": "lights",
+     "size": 46,
+     "lights": {
+      "S": "green",
+      "N": "green",
+      "E": "red",
+      "W": "red"
+     }
+    },
+    "view": {
+     "zoom": 1.35,
+     "center": {
+      "x": 0,
+      "y": -16
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": 40
+      }
+     },
+     {
+      "id": "west",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "arm": "W",
+       "lane": 1,
+       "at": "stopline"
+      }
+     }
+    ],
+    "intro": {
+     "len": 1.6,
+     "events": [
+      {
+       "t": 0,
+       "actor": "me",
+       "drive": 12,
+       "dur": 1.6
+      },
+      {
+       "t": 1.4,
+       "lights": {
+        "S": "amber",
+        "N": "amber"
+       }
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "route": "S1->N",
+      "until": "stopline",
+      "dur": 3.6,
+      "ease": "out"
+     },
+     {
+      "t": 1.6,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 2.2,
+      "lights": {
+       "S": "red",
+       "N": "red"
+      }
+     },
+     {
+      "t": 3.2,
+      "lights": {
+       "W": "green",
+       "E": "green"
+      }
+     },
+     {
+      "t": 3.5,
+      "actor": "west",
+      "route": "W1->E",
+      "kmh": 30,
+      "ease": "in"
+     }
+    ],
+    "callouts": [
+     {
+      "text": "مسافة كافية للتوقف",
+      "at": {
+       "x": 14,
+       "y": -28
+      },
+      "when": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "تغير الضوء إلى الأصفر الآن وأنت على هذه المسافة من التقاطع، ماذا تفعل؟",
+   "options": [
+    "أزيد السرعة لأعبر قبل أن يصبح الضوء أحمر",
+    "أكمل بالسرعة نفسها، فالأصفر يعني الاستعداد فقط",
+    "أتوقف فجأة في مكاني",
+    "أخفف وأتوقف قبل خط التوقف، لأن المسافة تكفي للتوقف بأمان"
+   ],
+   "answer": 3,
+   "explain": "الضوء الأصفر يعني أن الإشارة ستصبح حمراء، فتوقف قبل الخط إذا كنت تستطيع التوقف بأمان\nلا تسرع لتلحق الإشارة",
+   "explain_fig": [
+    "tl-amber",
+    "fig-amber-no-return"
+   ],
+   "tip": "الأصفر مش دعوة للسرعة، إذا فيك توقف بأمان وقف",
+   "src": [
+    "S4",
+    "M1",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "jn-011",
+   "topic": "lights",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "crossroads",
+    "params": {
+     "lanes": 1,
+     "control": "lights",
+     "size": 46,
+     "lights": {
+      "S": "green",
+      "N": "green",
+      "E": "red",
+      "W": "red"
+     }
+    },
+    "view": {
+     "zoom": 1.35,
+     "center": {
+      "x": 0,
+      "y": -12
+     }
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": 22
+      }
+     },
+     {
+      "id": "back",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": 34
+      },
+      "label": "قريبة من خلفك"
+     },
+     {
+      "id": "west",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "arm": "W",
+       "lane": 1,
+       "at": "stopline"
+      }
+     }
+    ],
+    "intro": {
+     "len": 1.5,
+     "events": [
+      {
+       "t": 0,
+       "actor": "me",
+       "drive": 19,
+       "dur": 1.5
+      },
+      {
+       "t": 0,
+       "actor": "back",
+       "drive": 19,
+       "dur": 1.5
+      },
+      {
+       "t": 1.35,
+       "lights": {
+        "S": "amber",
+        "N": "amber"
+       }
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "route": "S1->N",
+      "kmh": 45
+     },
+     {
+      "t": 0,
+      "actor": "back",
+      "stop_at": "stopline",
+      "dur": 2.2
+     },
+     {
+      "t": 1.8,
+      "lights": {
+       "S": "red",
+       "N": "red"
+      }
+     },
+     {
+      "t": 3.6,
+      "lights": {
+       "W": "green",
+       "E": "green"
+      }
+     },
+     {
+      "t": 3.9,
+      "actor": "west",
+      "route": "W1->E",
+      "kmh": 30,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "track": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "تغير الضوء إلى الأصفر ومقدمة سيارتك على وشك الوصول إلى خط التوقف، ولا تستطيع التوقف بأمان قبله، ما التصرف الصحيح؟",
+   "options": [
+    "أضغط الفرامل بقوة وأتوقف ولو داخل التقاطع",
+    "أكمل عبور التقاطع بحذر دون أن أزيد سرعتي",
+    "أزيد السرعة بقوة لأعبر قبل الأحمر",
+    "أتوقف ثم أرجع إلى الخلف حتى أصبح قبل الخط"
+   ],
+   "answer": 1,
+   "explain": "إذا ظهر الأصفر وأنت قريب جدا ولا تستطيع التوقف بأمان قبل الخط فأكمل بحذر\nالفرملة القوية هنا قد تجعلك تقف داخل التقاطع أو تصدمك السيارة التي خلفك",
+   "explain_fig": [
+    "fig-amber-no-return",
+    "tl-amber"
+   ],
+   "src": [
+    "S4",
+    "M1"
+   ],
+   "confidence": "high",
+   "notes": "اللائحة التنفيذية (المادة 25): عند الأصفر توقف، إلا إذا كنت لا تستطيع التوقف بأمان فأكمل بحذر، والكتيب يسميها نقطة اللاعودة"
+  },
+  {
+   "id": "jn-012",
+   "topic": "lights",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "crossroads",
+    "params": {
+     "lanes": 1,
+     "control": "lights",
+     "lights": {
+      "S": "flash-amber",
+      "N": "flash-amber",
+      "E": "flash-amber",
+      "W": "flash-amber"
+     }
+    },
+    "view": {
+     "zoom": 1.25,
+     "center": {
+      "x": 0,
+      "y": -4
+     }
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": 9
+      }
+     },
+     {
+      "id": "blue",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "arm": "W",
+       "lane": 1,
+       "at": 1
+      },
+      "label": "من يسارك"
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "route": "S1->N",
+      "until": "stopline",
+      "dur": 2.2,
+      "ease": "out"
+     },
+     {
+      "t": 0,
+      "actor": "blue",
+      "route": "W1->E",
+      "kmh": 24,
+      "ease": "in"
+     },
+     {
+      "t": 1.8,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 3.6,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 3.7,
+      "actor": "me",
+      "route": "S1->N",
+      "kmh": 22,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "blue",
+      "route": "W1->E",
+      "style": "other"
+     }
+    ]
+   },
+   "q": "الإشارة الضوئية في التقاطع تومض بالأصفر في كل الاتجاهات، وسيارة من يسارك تدخل التقاطع، ماذا تفعل؟",
+   "options": [
+    "أتابع بسرعتي، فالأصفر الوامض لا يلزمني بشيء",
+    "أعامل الإشارة كأنها خضراء لي وحمراء للآخرين",
+    "أخفف وأنظر في كل الاتجاهات، وأترك السيارة تعبر، ثم أتقدم بحذر",
+    "أتوقف وأنتظر حتى يعود الضوء الأخضر مهما طال الوقت"
+   ],
+   "answer": 2,
+   "explain": "الأصفر الوامض يعني أن تتقدم بحذر إذا كان الطريق خاليا، وقد يعني أن الإشارة معطلة\nخفف وانظر في كل الاتجاهات، وأعط الأولوية لمن يستحقها مثل السيارة القادمة من يسارك",
+   "explain_fig": [
+    "tl-flashing-amber"
+   ],
+   "src": [
+    "S4",
+    "M14",
+    "M24",
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "jn-013",
+   "topic": "lights",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "crossroads",
+    "params": {
+     "lanes": 1,
+     "control": "lights",
+     "box": true,
+     "lights": {
+      "S": "green",
+      "N": "green",
+      "E": "red",
+      "W": "red"
+     }
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": 5
+      }
+     },
+     {
+      "id": "q1",
+      "type": "car",
+      "color": "red",
+      "pos": {
+       "arm": "N",
+       "lane": 1,
+       "dir": "out",
+       "at": 0.8
+      },
+      "brake": true,
+      "label": "طابور متوقف"
+     },
+     {
+      "id": "q2",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "arm": "N",
+       "lane": 1,
+       "dir": "out",
+       "at": 6.9
+      },
+      "brake": true
+     },
+     {
+      "id": "q3",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "arm": "N",
+       "lane": 1,
+       "dir": "out",
+       "at": 13
+      },
+      "brake": true
+     },
+     {
+      "id": "q4",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "arm": "N",
+       "lane": 1,
+       "dir": "out",
+       "at": 19.1
+      },
+      "brake": true
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "route": "S1->N",
+      "until": "stopline",
+      "dur": 1.6,
+      "ease": "out"
+     },
+     {
+      "t": 1.4,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 2.2,
+      "actor": "q4",
+      "brake": false
+     },
+     {
+      "t": 2.2,
+      "actor": "q3",
+      "brake": false
+     },
+     {
+      "t": 2.2,
+      "actor": "q2",
+      "brake": false
+     },
+     {
+      "t": 2.2,
+      "actor": "q1",
+      "brake": false
+     },
+     {
+      "t": 2.3,
+      "actor": "q4",
+      "drive": "end",
+      "kmh": 30,
+      "ease": "in"
+     },
+     {
+      "t": 2.5,
+      "actor": "q3",
+      "drive": "end",
+      "kmh": 30,
+      "ease": "in"
+     },
+     {
+      "t": 2.7,
+      "actor": "q2",
+      "drive": "end",
+      "kmh": 30,
+      "ease": "in"
+     },
+     {
+      "t": 2.9,
+      "actor": "q1",
+      "drive": "end",
+      "kmh": 30,
+      "ease": "in"
+     },
+     {
+      "t": 4.4,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 4.5,
+      "actor": "me",
+      "route": "S1->N",
+      "kmh": 26,
+      "ease": "in"
+     }
+    ],
+    "callouts": [
+     {
+      "text": "انتظر حتى يفرغ المخرج",
+      "at": {
+       "x": 16,
+       "y": -18
+      },
+      "when": "solution",
+      "style": "warn"
+     }
+    ]
+   },
+   "q": "إشارتك خضراء، لكن السيارات متوقفة بعد التقاطع في الشارع الذي تريد دخوله ولا مكان لسيارتك، ماذا تفعل؟",
+   "options": [
+    "أدخل الصندوق الأصفر لأن إشارتي خضراء، وأنتظر داخله",
+    "أنتظر قبل الصندوق الأصفر حتى يصبح مخرجي خاليا ويتسع لسيارتي",
+    "أدخل قليلا وأقف على طرف الصندوق فقط",
+    "أطلق المنبه ليتحرك الطابور ثم أدخل"
+   ],
+   "answer": 1,
+   "explain": "لا تدخل الصندوق الأصفر حتى لو كانت إشارتك خضراء، إلا إذا كان مخرجك بعده خاليا ويتسع لمركبتك\nإذا وقفت داخله ستغلق التقاطع على الاتجاهات الأخرى عندما تتغير الإشارة",
+   "explain_fig": [
+    "mk-yellow-box"
+   ],
+   "tip": "الصندوق الأصفر: ما بتفوت إلا إذا مكانك بعده فاضي",
+   "src": [
+    "M1",
+    "M7",
+    "M16",
+    "M17"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "jn-014",
+   "topic": "turning",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "tap",
+   "scene": {
+    "template": "crossroads",
+    "params": {
+     "lanes": 3,
+     "divided": true,
+     "control": "lights",
+     "arrows": false,
+     "lights": {
+      "S": "red",
+      "N": "red",
+      "E": "green",
+      "W": "green"
+     }
+    },
+    "view": {
+     "zoom": 1.4,
+     "center": {
+      "x": 4,
+      "y": -24
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 2,
+       "at": 27
+      },
+      "signal": "left"
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": "stopline"
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "lane_change": "left",
+      "dist": 10,
+      "dur": 2.0
+     },
+     {
+      "t": 2.0,
+      "actor": "me",
+      "route": "S3->S",
+      "until": "stopline",
+      "dur": 3.0,
+      "ease": "out"
+     },
+     {
+      "t": 4.8,
+      "actor": "me",
+      "brake": true
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "track": "solution",
+      "style": "ok"
+     }
+    ],
+    "callouts": [
+     {
+      "text": "المسار الأيسر",
+      "at": {
+       "arm": "S",
+       "lane": 3,
+       "at": 14
+      },
+      "when": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "تريد الالتفاف للخلف عند هذا التقاطع، في أي مسار يجب أن تنتظر؟ انقر عليه",
+   "hotspots": [
+    {
+     "id": "lane3",
+     "rect": [
+      1.2,
+      -28,
+      4.4,
+      -17
+     ],
+     "label": "المسار الأيسر"
+    },
+    {
+     "id": "lane2",
+     "rect": [
+      4.6,
+      -28,
+      7.9,
+      -17
+     ],
+     "label": "المسار الأوسط"
+    },
+    {
+     "id": "lane1",
+     "rect": [
+      8.1,
+      -28,
+      11.4,
+      -17
+     ],
+     "label": "المسار الأيمن"
+    }
+   ],
+   "answer": "lane3",
+   "explain": "الالتفاف للخلف يكون من المسار الأيسر أو من المسار المخصص له، مع إشارة اليسار\nوعندما تلتف أعط الأولوية لكل المركبات والمشاة",
+   "explain_fig": [
+    "fig-uturn"
+   ],
+   "tip": "اليوتيرن دايما من أقصى الشمال",
+   "src": [
+    "S3",
+    "S6"
+   ],
+   "confidence": "medium",
+   "notes": "المسار الأيسر للالتفاف مستنتج من المادة 59 من اللائحة (الانعطاف يسارا من أقصى اليسار) ومن كتيب هيئة الطرق"
+  },
+  {
+   "id": "jn-015",
+   "topic": "turning",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "uturn",
+    "params": {
+     "lanes": 2
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": "left",
+       "y": 29
+      },
+      "signal": "left"
+     },
+     {
+      "id": "onc",
+      "type": "car",
+      "color": "red",
+      "pos": {
+       "dir": "down",
+       "lane": 2,
+       "y": 58
+      },
+      "label": "قادمة من الاتجاه المقابل"
+     },
+     {
+      "id": "c2",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 14
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "onc",
+      "drive": "end",
+      "kmh": 40
+     },
+     {
+      "t": 0,
+      "actor": "c2",
+      "drive": "end",
+      "kmh": 40
+     },
+     {
+      "t": 3.4,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 3.5,
+      "actor": "me",
+      "route": "uturn",
+      "kmh": 18,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "route": "uturn",
+      "style": "me"
+     }
+    ]
+   },
+   "q": "تقف في المسار الأيسر عند فتحة الالتفاف وتريد الالتفاف للخلف، وسيارة حمراء تقترب في الاتجاه المقابل، ماذا تفعل؟",
+   "options": [
+    "ألتف فورا لأن السيارة الحمراء عليها أن تخفف لي",
+    "أشغل إشارة اليمين وألتف ببطء أمامها",
+    "أنتظر حتى تمر السيارة الحمراء ويخلو الطريق، ثم ألتف",
+    "أتقدم إلى منتصف الفتحة لأجبرها على التوقف"
+   ],
+   "answer": 2,
+   "explain": "من يلتف للخلف يعطي الأولوية لكل المركبات والمشاة على الطريق\nانتظر عند الفتحة حتى تمر السيارات القادمة من الاتجاه المقابل ويخلو الطريق",
+   "explain_fig": [
+    "fig-uturn"
+   ],
+   "src": [
+    "S6",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "jn-016",
+   "topic": "turning",
+   "level": 5,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "crossroads",
+    "params": {
+     "lanes": 2,
+     "control": "lights",
+     "lights": {
+      "S": "green",
+      "N": "green",
+      "E": "red",
+      "W": "red"
+     }
+    },
+    "view": {
+     "zoom": 1.3
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 2,
+       "at": "stopline"
+      },
+      "signal": "left"
+     },
+     {
+      "id": "blue",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "arm": "N",
+       "lane": 2,
+       "at": "stopline"
+      },
+      "signal": "left"
+     }
+    ],
+    "solution": [
+     {
+      "t": 0.2,
+      "actor": "me",
+      "route": "S2->W",
+      "kmh": 20,
+      "ease": "in"
+     },
+     {
+      "t": 0.9,
+      "actor": "blue",
+      "route": "N2->E",
+      "kmh": 20,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "route": "S2->W",
+      "style": "me"
+     },
+     {
+      "actor": "blue",
+      "route": "N2->E",
+      "style": "other"
+     }
+    ]
+   },
+   "q": "إشارتك خضراء وتريد الانعطاف يسارا، والسيارة الزرقاء المقابلة تريد الانعطاف يسارا أيضا، كيف تنعطفان؟",
+   "options": [
+    "يدور كل منكما حول منتصف التقاطع فيمر خلف الآخر",
+    "تنتظر حتى تنعطف السيارة الزرقاء لأنها جهة اليسار",
+    "تنعطف أنت أولا وهي تنتظر، لأنك وصلت قبلها",
+    "ينعطف كل منكما قريبا من يسار منتصف التقاطع، فلا يتقاطع مساراكما"
+   ],
+   "answer": 3,
+   "explain": "عند الانعطاف يسارا انعطف قريبا من يسار منتصف التقاطع، وادخل النصف الأيمن من الشارع الجديد\nبهذا يمر المنعطفان من الاتجاهين أمام بعضهما دون أن يتقاطع مساراهما، مع الانتباه للمشاة",
+   "explain_fig": [
+    "fig-turn-left"
+   ],
+   "src": [
+    "S3",
+    "S6"
+   ],
+   "confidence": "medium",
+   "notes": "القاعدة (الانعطاف قريبا من يسار منتصف التقاطع) من المادة 59 من اللائحة وكتيب هيئة الطرق، أما تطبيقها على منعطفين متقابلين فاستنتاج لم نجد له نصا إماراتيا صريحا"
+  },
+  {
+   "id": "jn-017",
+   "topic": "turning",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "crossroads",
+    "params": {
+     "lanes": 1,
+     "control": "none"
+    },
+    "view": {
+     "zoom": 1.15,
+     "center": {
+      "x": 2,
+      "y": -8
+     }
+    },
+    "actors": [
+     {
+      "id": "truck",
+      "type": "truck",
+      "color": "orange",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": 1,
+       "shift": -0.8
+      },
+      "signal": "right"
+     },
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": 15
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "truck",
+      "route": "S1->E",
+      "kmh": 14,
+      "ease": "in"
+     },
+     {
+      "t": 5.4,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 5.5,
+      "actor": "me",
+      "route": "S1->N",
+      "kmh": 24,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "truck",
+      "route": "S1->E",
+      "style": "warn"
+     }
+    ]
+   },
+   "q": "شاحنة طويلة أمامك تشغل إشارة اليمين عند التقاطع، وتبتعد قليلا عن الرصيف قبل أن تنعطف، ماذا تفعل؟",
+   "options": [
+    "أمر من يمينها بسرعة قبل أن تنعطف",
+    "أبقى خلفها وأنتظر حتى تكمل انعطافها",
+    "أطلق المنبه لتعود إلى جانب الرصيف",
+    "أتجاوزها من اليسار داخل التقاطع"
+   ],
+   "answer": 1,
+   "explain": "الشاحنة الطويلة تحتاج مساحة أكبر للانعطاف وقد تشغل أكثر من مسار\nابق خلفها ولا تدخل بجانبها من اليمين، والتجاوز داخل التقاطع ممنوع",
+   "explain_fig": [
+    "fig-truck-turn-right"
+   ],
+   "src": [
+    "S5",
+    "S3",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "jn-018",
+   "topic": "lights",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "tap",
+   "scene": {
+    "template": "crossroads",
+    "params": {
+     "lanes": 1,
+     "control": "lights",
+     "crossings": [
+      "S"
+     ],
+     "lights": {
+      "S": "red",
+      "N": "red",
+      "E": "green",
+      "W": "green"
+     }
+    },
+    "view": {
+     "zoom": 1.55,
+     "center": {
+      "x": 0,
+      "y": -6
+     }
+    },
+    "labels": "never",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": "stopline"
+      }
+     },
+     {
+      "id": "ped",
+      "type": "pedestrian",
+      "variant": "adult",
+      "color": "yellow",
+      "pos": {
+       "crossing": "S",
+       "side": "east"
+      },
+      "label": "ما زال يعبر"
+     },
+     {
+      "id": "late",
+      "type": "car",
+      "color": "red",
+      "pos": {
+       "arm": "E",
+       "lane": 1,
+       "at": 16
+      },
+      "label": "متأخرة في التقاطع"
+     },
+     {
+      "id": "north",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "arm": "N",
+       "lane": 1,
+       "at": "stopline"
+      }
+     }
+    ],
+    "intro": {
+     "len": 3.0,
+     "events": [
+      {
+       "t": 0,
+       "actor": "ped",
+       "to": {
+        "x": 2.0,
+        "y": -10.2
+       },
+       "dur": 3.0
+      },
+      {
+       "t": 0.2,
+       "lights": {
+        "E": "amber",
+        "W": "amber"
+       }
+      },
+      {
+       "t": 0.4,
+       "actor": "late",
+       "route": "E1->W",
+       "until": 26,
+       "dur": 2.6
+      },
+      {
+       "t": 2.0,
+       "lights": {
+        "E": "red",
+        "W": "red"
+       }
+      },
+      {
+       "t": 2.9,
+       "lights": {
+        "S": "green",
+        "N": "green"
+       }
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "labels": true
+     },
+     {
+      "t": 0,
+      "actor": "late",
+      "route": "E1->W",
+      "kmh": 36
+     },
+     {
+      "t": 0,
+      "actor": "ped",
+      "to": {
+       "crossing": "S",
+       "side": "west"
+      },
+      "dur": 2.6
+     },
+     {
+      "t": 3.2,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 3.3,
+      "actor": "me",
+      "route": "S1->N",
+      "kmh": 24,
+      "ease": "in"
+     },
+     {
+      "t": 3.3,
+      "actor": "north",
+      "route": "N1->S",
+      "kmh": 24,
+      "ease": "in"
+     }
+    ]
+   },
+   "q": "أصبحت إشارتك خضراء الآن، ما الذي يمنعك من الانطلاق فورا؟ انقر عليه",
+   "hotspots": [
+    {
+     "id": "ped",
+     "actor": "ped",
+     "r": 2.2
+    },
+    {
+     "id": "late",
+     "actor": "late"
+    },
+    {
+     "id": "north",
+     "actor": "north"
+    }
+   ],
+   "answer": [
+    "ped",
+    "late"
+   ],
+   "explain": "الضوء الأخضر لا يعني أن التقاطع خال: انتظر حتى يكمل المشاة العبور وتخرج أي مركبة متأخرة من التقاطع\nثم انطلق بحذر",
+   "explain_fig": [
+    "tl-green"
+   ],
+   "tip": "الأخضر يعني مسموح، مش يعني فاضي",
+   "src": [
+    "S1",
+    "S2",
+    "S6",
+    "M1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "jn-019",
+   "topic": "priority",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "crossroads",
+    "params": {
+     "lanes": 1,
+     "control": "none",
+     "markings": "none"
+    },
+    "view": {
+     "zoom": 1.2
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": 16
+      }
+     },
+     {
+      "id": "red",
+      "type": "car",
+      "color": "red",
+      "pos": {
+       "arm": "E",
+       "lane": 1,
+       "at": 20
+      },
+      "label": "لم تعطك الأولوية"
+     }
+    ],
+    "intro": {
+     "len": 1.6,
+     "events": [
+      {
+       "t": 0,
+       "actor": "me",
+       "drive": 10,
+       "dur": 1.6,
+       "ease": "out"
+      },
+      {
+       "t": 0,
+       "actor": "red",
+       "drive": 21,
+       "dur": 1.6
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 3,
+      "dur": 1.0,
+      "ease": "out"
+     },
+     {
+      "t": 0,
+      "actor": "red",
+      "route": "E1->W",
+      "kmh": 40
+     },
+     {
+      "t": 3.0,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 3.1,
+      "actor": "me",
+      "route": "S1->N",
+      "kmh": 24,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "red",
+      "track": "solution",
+      "style": "bad"
+     }
+    ]
+   },
+   "q": "في تقاطع بلا إشارات ولا علامات لك الأولوية على السيارة الحمراء القادمة من يمينك، لكنها تدخل التقاطع بسرعة دون أن تتوقف، ماذا تفعل؟",
+   "options": [
+    "أخفف وأتوقف لأتجنب الاصطدام، ولو كانت الأولوية لي",
+    "أتابع بسرعتي لأن الأولوية لي والخطأ عليها",
+    "أطلق المنبه وأسرع لأعبر قبلها",
+    "أنحرف فجأة إلى اليسار لأتفاداها"
+   ],
+   "answer": 0,
+   "explain": "صاحب الأولوية لا يتمسك بها، وعليه أن يتوقف إذا كان ذلك يمنع ارتباكا أو حادثا\nكانت الأولوية لك لأنك على يسار السيارة الحمراء، لكن السلامة أولا",
+   "tip": "الأولوية بتنعطى، ما بتنأخذ بالقوة",
+   "src": [
+    "S3",
+    "S1",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "jn-020",
+   "topic": "turning",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "tap",
+   "scene": {
+    "template": "crossroads",
+    "params": {
+     "lanes": 1,
+     "control": "none"
+    },
+    "view": {
+     "zoom": 1.3,
+     "center": {
+      "x": -6,
+      "y": -2
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": 1
+      },
+      "signal": "left"
+     }
+    ],
+    "solution": [
+     {
+      "t": 0.2,
+      "actor": "me",
+      "route": "S1->W",
+      "kmh": 18,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "track": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "تريد الانعطاف يسارا إلى الشارع الذي على يسارك، أين يجب أن تكون سيارتك بعد الانعطاف؟ انقر على المكان الصحيح",
+   "hotspots": [
+    {
+     "id": "right_half",
+     "rect": [
+      -28,
+      0.3,
+      -11,
+      3.3
+     ],
+     "label": "النصف الأيمن"
+    },
+    {
+     "id": "left_half",
+     "rect": [
+      -28,
+      -3.3,
+      -11,
+      -0.3
+     ],
+     "label": "النصف الأيسر"
+    }
+   ],
+   "answer": "right_half",
+   "explain": "القيادة في الإمارات على اليمين، فبعد الانعطاف يسارا تدخل النصف الأيمن من الشارع الجديد بالنسبة لاتجاه سيرك\nالنصف الآخر للمركبات القادمة نحوك",
+   "explain_fig": [
+    "fig-turn-left"
+   ],
+   "tip": "بعد أي انعطاف: خليك عاليمين",
+   "src": [
+    "S3",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  }
+ ]
+}
