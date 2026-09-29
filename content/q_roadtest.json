@@ -199,7 +199,13 @@
     "S4",
     "S26"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-yard-parallel",
+    "fig-yard-garage",
+    "fig-yard-angle",
+    "fig-yard-hill"
+   ]
   },
   {
    "id": "roadtest-card-002",
@@ -236,7 +242,12 @@
     "S16",
     "S26"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-yard-parallel",
+    "fig-yard-garage",
+    "fig-yard-angle"
+   ]
   },
   {
    "id": "roadtest-card-004",
@@ -252,7 +263,10 @@
     "S13",
     "S26"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-yard-lines"
+   ]
   },
   {
    "id": "roadtest-card-005",
@@ -268,7 +282,10 @@
     "S13",
     "S26"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-yard-kerb"
+   ]
   },
   {
    "id": "roadtest-card-006",
@@ -285,7 +302,10 @@
     "S13",
     "S26"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-yard-hill"
+   ]
   },
   {
    "id": "roadtest-card-007",
@@ -302,7 +322,10 @@
     "S13",
     "S26"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-yard-brake"
+   ]
   },
   {
    "id": "roadtest-card-008",
@@ -319,7 +342,10 @@
     "S13",
     "S26"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-yard-brake"
+   ]
   },
   {
    "id": "roadtest-card-009",
@@ -395,7 +421,10 @@
     "S29",
     "S38"
    ],
-   "confidence": "medium"
+   "confidence": "medium",
+   "fig": [
+    "fig-yard-parallel"
+   ]
   },
   {
    "id": "roadtest-card-014",
@@ -412,7 +441,10 @@
     "S29",
     "S38"
    ],
-   "confidence": "medium"
+   "confidence": "medium",
+   "fig": [
+    "fig-yard-parallel"
+   ]
   },
   {
    "id": "roadtest-card-015",
@@ -427,7 +459,10 @@
    "src": [
     "S36"
    ],
-   "confidence": "medium"
+   "confidence": "medium",
+   "fig": [
+    "fig-yard-garage"
+   ]
   },
   {
    "id": "roadtest-card-016",
@@ -543,7 +578,8 @@
    "confidence": "high",
    "fig": [
     "fig-lane-change",
-    "fig-blind-spots"
+    "fig-blind-spots",
+    "fig-pull-away"
    ]
   },
   {
@@ -716,7 +752,10 @@
     "S13",
     "S15"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "explain_fig": [
+    "fig-yard-brake"
+   ]
   },
   {
    "id": "roadtest-yard-004",
@@ -740,7 +779,10 @@
     "S13",
     "S26"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "explain_fig": [
+    "fig-yard-lines"
+   ]
   },
   {
    "id": "roadtest-yard-005",
@@ -765,7 +807,10 @@
     "S16",
     "S26"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-yard-parallel"
+   ]
   },
   {
    "id": "roadtest-yard-006",
@@ -789,7 +834,10 @@
     "S16",
     "S26"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-yard-garage"
+   ]
   },
   {
    "id": "roadtest-yard-007",
@@ -812,7 +860,10 @@
     "S13",
     "S26"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "explain_fig": [
+    "fig-yard-kerb"
+   ]
   },
   {
    "id": "roadtest-yard-008",
@@ -835,7 +886,10 @@
     "S29",
     "S38"
    ],
-   "confidence": "medium"
+   "confidence": "medium",
+   "explain_fig": [
+    "fig-yard-parallel"
+   ]
   },
   {
    "id": "roadtest-yard-009",
@@ -858,7 +912,10 @@
     "S29",
     "S38"
    ],
-   "confidence": "medium"
+   "confidence": "medium",
+   "explain_fig": [
+    "fig-yard-parallel"
+   ]
   },
   {
    "id": "roadtest-yard-010",
@@ -926,7 +983,10 @@
     "S13",
     "S26"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-yard-hill"
+   ]
   },
   {
    "id": "roadtest-yard-013",
@@ -950,7 +1010,10 @@
     "S16",
     "S26"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-yard-angle"
+   ]
   },
   {
    "id": "roadtest-yard-014",
@@ -974,7 +1037,10 @@
     "S13",
     "S26"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "explain_fig": [
+    "fig-yard-hill"
+   ]
   },
   {
    "id": "roadtest-yard-015",
@@ -997,7 +1063,10 @@
     "S13",
     "S26"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "explain_fig": [
+    "fig-yard-hill"
+   ]
   },
   {
    "id": "roadtest-yard-016",
@@ -1020,7 +1089,10 @@
     "S13",
     "S26"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "explain_fig": [
+    "fig-yard-brake"
+   ]
   },
   {
    "id": "roadtest-yard-017",
@@ -1042,7 +1114,10 @@
    "src": [
     "S38"
    ],
-   "confidence": "medium"
+   "confidence": "medium",
+   "explain_fig": [
+    "fig-yard-parallel"
+   ]
   },
   {
    "id": "roadtest-yard-018",
@@ -1108,7 +1183,10 @@
    "src": [
     "S36"
    ],
-   "confidence": "medium"
+   "confidence": "medium",
+   "explain_fig": [
+    "fig-yard-garage"
+   ]
   },
   {
    "id": "roadtest-yard-021",
@@ -1131,7 +1209,10 @@
     "S13",
     "S37"
    ],
-   "confidence": "medium"
+   "confidence": "medium",
+   "explain_fig": [
+    "fig-yard-hill"
+   ]
   },
   {
    "id": "roadtest-yard-022",
@@ -1176,7 +1257,10 @@
     "S13",
     "S26"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "explain_fig": [
+    "fig-yard-brake"
+   ]
   },
   {
    "id": "roadtest-yard-024",
@@ -1265,7 +1349,10 @@
     "S13",
     "S26"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "explain_fig": [
+    "fig-yard-brake"
+   ]
   },
   {
    "id": "roadtest-yard-028",
@@ -1434,7 +1521,7 @@
    ],
    "confidence": "high",
    "explain_fig": [
-    "fig-blind-spots"
+    "fig-pull-away"
    ]
   },
   {
@@ -1772,7 +1859,7 @@
    ],
    "confidence": "medium",
    "explain_fig": [
-    "fig-gear-selector"
+    "fig-gear-park"
    ]
   },
   {
@@ -1846,7 +1933,8 @@
    ],
    "confidence": "medium",
    "explain_fig": [
-    "fig-roundabout-left"
+    "fig-roundabout-left",
+    "fig-roundabout-lanes3"
    ]
   },
   {
@@ -1872,6 +1960,9 @@
    "confidence": "high",
    "fig": [
     "tl-amber"
+   ],
+   "explain_fig": [
+    "fig-amber-no-return"
    ]
   },
   {
@@ -2031,7 +2122,8 @@
    ],
    "confidence": "high",
    "explain_fig": [
-    "fig-two-second"
+    "fig-two-second",
+    "fig-gap-weather"
    ]
   },
   {
@@ -2247,7 +2339,8 @@
    ],
    "confidence": "medium",
    "explain_fig": [
-    "fig-roundabout-right"
+    "fig-roundabout-right",
+    "fig-roundabout-lanes3"
    ]
   },
   {

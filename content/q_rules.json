@@ -233,7 +233,10 @@
     "S6",
     "S25"
    ],
-   "confidence": "medium"
+   "confidence": "medium",
+   "fig": [
+    "fig-roundabout-lanes3"
+   ]
   },
   {
    "id": "rules-card-005",
@@ -293,7 +296,10 @@
     "S2",
     "S3"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-main-road-first"
+   ]
   },
   {
    "id": "rules-card-009",
@@ -482,7 +488,8 @@
    ],
    "confidence": "high",
    "fig": [
-    "ev-emergency-lights"
+    "ev-emergency-lights",
+    "fig-ev-two-way"
    ]
   },
   {
@@ -557,7 +564,8 @@
    ],
    "confidence": "high",
    "fig": [
-    "mk-hard-shoulder"
+    "mk-hard-shoulder",
+    "fig-ev-two-way"
    ]
   },
   {
@@ -726,7 +734,10 @@
     "S5",
     "S6"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-stopping-table"
+   ]
   },
   {
    "id": "rules-card-038",
@@ -800,6 +811,7 @@
    ],
    "confidence": "high",
    "fig": [
+    "fig-stopping-table",
     "fig-tyre-tread"
    ]
   },
@@ -899,7 +911,10 @@
    "src": [
     "S5"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-truck-turn-right"
+   ]
   },
   {
    "id": "rules-card-050",
@@ -1105,7 +1120,10 @@
     "S17",
     "S18"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-school-bus-stop"
+   ]
   },
   {
    "id": "rules-card-064",
@@ -1204,7 +1222,7 @@
    ],
    "confidence": "high",
    "fig": [
-    "fig-gear-selector"
+    "fig-gear-park"
    ]
   },
   {
@@ -1276,6 +1294,7 @@
    ],
    "confidence": "high",
    "fig": [
+    "fig-pull-away",
     "fig-lane-change"
    ]
   },
@@ -1557,6 +1576,7 @@
    "confidence": "medium",
    "notes": "المصدر معهد قيادة معتمد، ودليل هيئة الطرق لا يذكر الالتفاف في الدوار صراحة",
    "explain_fig": [
+    "fig-roundabout-lanes3",
     "fig-roundabout-left"
    ]
   },
@@ -1582,7 +1602,10 @@
     "S6"
    ],
    "confidence": "medium",
-   "notes": "معهد إكسلنس يسمح أيضا بالمسار الأيمن للاستمرار، لذلك لم نضعه بين الخيارات"
+   "notes": "معهد إكسلنس يسمح أيضا بالمسار الأيمن للاستمرار، لذلك لم نضعه بين الخيارات",
+   "explain_fig": [
+    "fig-roundabout-lanes3"
+   ]
   },
   {
    "id": "rules-roundabouts-009",
@@ -1607,7 +1630,10 @@
     "S6"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-roundabout-lanes3"
+   ]
   },
   {
    "id": "rules-roundabouts-010",
@@ -1791,7 +1817,10 @@
     "S25"
    ],
    "confidence": "medium",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-roundabout-lanes3"
+   ]
   },
   {
    "id": "rules-roundabouts-017",
@@ -1921,7 +1950,10 @@
     "S3"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-main-road-first"
+   ]
   },
   {
    "id": "rules-priority-002",
@@ -2062,6 +2094,9 @@
    "notes": "",
    "fig": [
     "w-t-junction"
+   ],
+   "explain_fig": [
+    "fig-main-road-first"
    ]
   },
   {
@@ -2894,6 +2929,9 @@
    "notes": "",
    "fig": [
     "ev-emergency-lights"
+   ],
+   "explain_fig": [
+    "fig-ev-two-way"
    ]
   },
   {
@@ -3119,6 +3157,9 @@
    "notes": "",
    "fig": [
     "ev-emergency-lights"
+   ],
+   "explain_fig": [
+    "fig-ev-two-way"
    ]
   },
   {
@@ -3244,6 +3285,9 @@
    "notes": "",
    "fig": [
     "ev-emergency-lights"
+   ],
+   "explain_fig": [
+    "fig-ev-two-way"
    ]
   },
   {
@@ -3827,6 +3871,7 @@
    "confidence": "high",
    "notes": "",
    "explain_fig": [
+    "fig-stopping-table",
     "fig-stopping-distance"
    ]
   },
@@ -3989,7 +4034,10 @@
     "S6"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-stopping-table"
+   ]
   },
   {
    "id": "rules-speed-012",
@@ -4247,7 +4295,10 @@
     "S6"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-stopping-table"
+   ]
   },
   {
    "id": "rules-distance-008",
@@ -4453,7 +4504,10 @@
     "S6"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-stopping-table"
+   ]
   },
   {
    "id": "rules-turning-001",
@@ -4709,7 +4763,10 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-truck-turn-right"
+   ]
   },
   {
    "id": "rules-turning-011",
@@ -5593,6 +5650,9 @@
    "notes": "",
    "explain_fig": [
     "ev-school-bus-single"
+   ],
+   "fig": [
+    "fig-school-bus-stop"
    ]
   },
   {
@@ -5621,6 +5681,9 @@
    "notes": "",
    "explain_fig": [
     "ev-school-bus-single"
+   ],
+   "fig": [
+    "fig-school-bus-stop"
    ]
   },
   {
@@ -5700,7 +5763,10 @@
     "S18"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "fig-school-bus-stop"
+   ]
   },
   {
    "id": "rules-school-bus-006",
@@ -5804,6 +5870,9 @@
    "explain_fig": [
     "ev-school-bus-single",
     "p-stop"
+   ],
+   "fig": [
+    "fig-school-bus-stop"
    ]
   },
   {
@@ -5828,7 +5897,10 @@
     "S18"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "fig-school-bus-stop"
+   ]
   },
   {
    "id": "rules-school-bus-011",
@@ -5876,7 +5948,10 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "fig-school-bus-stop"
+   ]
   },
   {
    "id": "rules-vulnerable-001",
@@ -6006,6 +6081,7 @@
    "confidence": "high",
    "notes": "",
    "explain_fig": [
+    "fig-truck-turn-right",
     "fig-truck-blind"
    ]
   },
@@ -6434,6 +6510,7 @@
    "confidence": "high",
    "notes": "",
    "explain_fig": [
+    "fig-pull-away",
     "fig-lane-change"
    ]
   },
@@ -6460,7 +6537,7 @@
    "confidence": "medium",
    "notes": "",
    "explain_fig": [
-    "fig-gear-selector"
+    "fig-gear-park"
    ]
   },
   {

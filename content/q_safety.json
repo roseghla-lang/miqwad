@@ -455,7 +455,8 @@
       ],
       "confidence": "high",
       "fig": [
-        "w-slippery-road"
+        "w-slippery-road",
+        "fig-gap-weather"
       ]
     },
     {
@@ -471,7 +472,8 @@
       ],
       "confidence": "high",
       "fig": [
-        "fig-aquaplaning"
+        "fig-aquaplaning",
+        "fig-gap-weather"
       ]
     },
     {
@@ -488,7 +490,8 @@
       ],
       "confidence": "high",
       "fig": [
-        "fig-water-depth"
+        "fig-water-depth",
+        "fig-flowing-water"
       ]
     },
     {
@@ -503,7 +506,10 @@
         "S14",
         "S3"
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "fig": [
+        "fig-flowing-water"
+      ]
     },
     {
       "id": "safety-card-011",
@@ -708,7 +714,8 @@
       ],
       "confidence": "high",
       "fig": [
-        "mk-bus-stop"
+        "mk-bus-stop",
+        "fig-school-bus-stop"
       ]
     },
     {
@@ -743,7 +750,8 @@
       ],
       "confidence": "high",
       "fig": [
-        "fig-truck-blind"
+        "fig-truck-blind",
+        "fig-truck-turn-right"
       ]
     },
     {
@@ -769,6 +777,7 @@
       ],
       "confidence": "high",
       "fig": [
+        "fig-stopping-table",
         "fig-stopping-distance"
       ]
     },
@@ -836,7 +845,8 @@
       ],
       "confidence": "high",
       "fig": [
-        "fig-breakdown"
+        "fig-breakdown",
+        "fig-gear-park"
       ]
     },
     {
@@ -1017,7 +1027,10 @@
         "S17",
         "S19"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "fig-tyre-dot"
+      ]
     },
     {
       "id": "safety-card-048",
@@ -1254,7 +1267,8 @@
       "confidence": "high",
       "fig": [
         "fig-blind-spots",
-        "fig-lane-change"
+        "fig-lane-change",
+        "fig-pull-away"
       ]
     },
     {
@@ -1397,7 +1411,10 @@
         "S14",
         "S56"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-gap-weather"
+      ]
     },
     {
       "id": "safety-weather-005",
@@ -1652,7 +1669,10 @@
         "S14",
         "S12"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-flowing-water"
+      ]
     },
     {
       "id": "safety-weather-015",
@@ -1945,7 +1965,10 @@
         "S45",
         "S46"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-flowing-water"
+      ]
     },
     {
       "id": "safety-weather-027",
@@ -2071,6 +2094,9 @@
       "confidence": "high",
       "fig": [
         "fig-aquaplaning"
+      ],
+      "explain_fig": [
+        "fig-gap-weather"
       ]
     },
     {
@@ -3177,7 +3203,7 @@
       ],
       "confidence": "high",
       "explain_fig": [
-        "fig-truck-blind"
+        "fig-truck-turn-right"
       ]
     },
     {
@@ -3419,6 +3445,9 @@
       "confidence": "high",
       "fig": [
         "fig-stopping-distance"
+      ],
+      "explain_fig": [
+        "fig-stopping-table"
       ]
     },
     {
@@ -4220,7 +4249,7 @@
       ],
       "confidence": "high",
       "explain_fig": [
-        "fig-gear-selector"
+        "fig-gear-park"
       ]
     },
     {
@@ -4525,7 +4554,7 @@
       ],
       "confidence": "high",
       "explain_fig": [
-        "fig-gear-selector"
+        "fig-gear-park"
       ]
     },
     {
@@ -4849,7 +4878,10 @@
         "S19",
         "S16"
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "explain_fig": [
+        "fig-tyre-dot"
+      ]
     },
     {
       "id": "safety-vehicle-030",

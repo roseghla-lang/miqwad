@@ -342,7 +342,7 @@
    "id": "fig-main-road-first",
    "group": "road",
    "name": "الطريق الرئيسي قبل الفرعي",
-   "draw": "Top-down T-junction without signs, lights or give-way lines: a wide main road running left to right with lane lines, and a narrow side road without markings joining from the SOUTH. Our car on the side road waiting at the mouth, facing north. A car on the main road passing in front with a green arrow. No text"
+   "draw": "Top-down T-junction without signs, lights or give-way lines: a wide main road running left to right with a centre line, and a narrow side road without markings joining from the SOUTH. Our car on the side road waiting at the mouth, facing north. Two cars on the main road, each with a green arrow: one in the near (southern) half coming from our LEFT and heading east, one in the far (northern) half coming from our RIGHT and heading west. No text"
   },
   {
    "id": "fig-truck-turn-right",
@@ -396,7 +396,7 @@
    "id": "fig-gap-weather",
    "group": "car",
    "name": "مسافة الأمان حسب الطقس",
-   "draw": "Three horizontal rows, each with a small weather icon on the right and a gold bar growing to the left (Arabic reading order): sun with the label ثانيتان (short bar), rain drops with 4 ثوان (longer bar), fog lines with 5 ثوان (longest bar). A tiny car icon at the start of each bar"
+   "draw": "Three horizontal rows, each with a small weather icon on the right and a gold bar growing to the left (Arabic reading order): sun with the label ثانيتان على الأقل (short bar), rain drops with 4 ثوان (bar twice as long), fog lines with the label ضاعفها أو أكثر (the longest bar, with a small plus mark at its end instead of a number). A tiny car icon at the start of each bar"
   },
   {
    "id": "fig-flowing-water",

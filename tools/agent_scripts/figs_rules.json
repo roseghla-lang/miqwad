@@ -33,6 +33,7 @@
   },
   "rules-roundabouts-007": {
    "explain_fig": [
+    "fig-roundabout-lanes3",
     "fig-roundabout-left"
    ]
   },
@@ -98,6 +99,9 @@
   "rules-priority-006": {
    "fig": [
     "w-t-junction"
+   ],
+   "explain_fig": [
+    "fig-main-road-first"
    ]
   },
   "rules-priority-007": {
@@ -197,6 +201,9 @@
   "rules-emergency-vehicles-001": {
    "fig": [
     "ev-emergency-lights"
+   ],
+   "explain_fig": [
+    "fig-ev-two-way"
    ]
   },
   "rules-emergency-vehicles-002": {
@@ -240,11 +247,17 @@
   "rules-emergency-vehicles-009": {
    "fig": [
     "ev-emergency-lights"
+   ],
+   "explain_fig": [
+    "fig-ev-two-way"
    ]
   },
   "rules-emergency-vehicles-014": {
    "fig": [
     "ev-emergency-lights"
+   ],
+   "explain_fig": [
+    "fig-ev-two-way"
    ]
   },
   "rules-overtaking-001": {
@@ -304,6 +317,7 @@
   },
   "rules-speed-005": {
    "explain_fig": [
+    "fig-stopping-table",
     "fig-stopping-distance"
    ]
   },
@@ -542,11 +556,17 @@
    ]
   },
   "rules-school-bus-001": {
+   "fig": [
+    "fig-school-bus-stop"
+   ],
    "explain_fig": [
     "ev-school-bus-single"
    ]
   },
   "rules-school-bus-002": {
+   "fig": [
+    "fig-school-bus-stop"
+   ],
    "explain_fig": [
     "ev-school-bus-single"
    ]
@@ -567,6 +587,9 @@
    ]
   },
   "rules-school-bus-009": {
+   "fig": [
+    "fig-school-bus-stop"
+   ],
    "explain_fig": [
     "ev-school-bus-single",
     "p-stop"
@@ -594,6 +617,7 @@
   },
   "rules-vulnerable-005": {
    "explain_fig": [
+    "fig-truck-turn-right",
     "fig-truck-blind"
    ]
   },
@@ -640,12 +664,13 @@
   },
   "rules-parking-008": {
    "explain_fig": [
+    "fig-pull-away",
     "fig-lane-change"
    ]
   },
   "rules-parking-009": {
    "explain_fig": [
-    "fig-gear-selector"
+    "fig-gear-park"
    ]
   },
   "rules-parking-011": {
@@ -713,6 +738,61 @@
    ],
    "explain_fig": [
     "fig-beam-low"
+   ]
+  },
+  "rules-roundabouts-008": {
+   "explain_fig": [
+    "fig-roundabout-lanes3"
+   ]
+  },
+  "rules-roundabouts-009": {
+   "explain_fig": [
+    "fig-roundabout-lanes3"
+   ]
+  },
+  "rules-roundabouts-016": {
+   "explain_fig": [
+    "fig-roundabout-lanes3"
+   ]
+  },
+  "rules-priority-001": {
+   "explain_fig": [
+    "fig-main-road-first"
+   ]
+  },
+  "rules-speed-011": {
+   "explain_fig": [
+    "fig-stopping-table"
+   ]
+  },
+  "rules-distance-007": {
+   "explain_fig": [
+    "fig-stopping-table"
+   ]
+  },
+  "rules-distance-015": {
+   "explain_fig": [
+    "fig-stopping-table"
+   ]
+  },
+  "rules-turning-010": {
+   "explain_fig": [
+    "fig-truck-turn-right"
+   ]
+  },
+  "rules-school-bus-005": {
+   "fig": [
+    "fig-school-bus-stop"
+   ]
+  },
+  "rules-school-bus-010": {
+   "fig": [
+    "fig-school-bus-stop"
+   ]
+  },
+  "rules-school-bus-012": {
+   "fig": [
+    "fig-school-bus-stop"
    ]
   }
  },
@@ -790,7 +870,8 @@
   },
   "rules-card-021": {
    "fig": [
-    "ev-emergency-lights"
+    "ev-emergency-lights",
+    "fig-ev-two-way"
    ]
   },
   "rules-card-022": {
@@ -811,7 +892,8 @@
   },
   "rules-card-026": {
    "fig": [
-    "mk-hard-shoulder"
+    "mk-hard-shoulder",
+    "fig-ev-two-way"
    ]
   },
   "rules-card-027": {
@@ -879,6 +961,7 @@
   },
   "rules-card-042": {
    "fig": [
+    "fig-stopping-table",
     "fig-tyre-tread"
    ]
   },
@@ -991,7 +1074,7 @@
   },
   "rules-card-070": {
    "fig": [
-    "fig-gear-selector"
+    "fig-gear-park"
    ]
   },
   "rules-card-072": {
@@ -1008,6 +1091,7 @@
   },
   "rules-card-075": {
    "fig": [
+    "fig-pull-away",
     "fig-lane-change"
    ]
   },
@@ -1031,6 +1115,31 @@
   "rules-card-081": {
    "fig": [
     "r-no-horn"
+   ]
+  },
+  "rules-card-004": {
+   "fig": [
+    "fig-roundabout-lanes3"
+   ]
+  },
+  "rules-card-008": {
+   "fig": [
+    "fig-main-road-first"
+   ]
+  },
+  "rules-card-037": {
+   "fig": [
+    "fig-stopping-table"
+   ]
+  },
+  "rules-card-049": {
+   "fig": [
+    "fig-truck-turn-right"
+   ]
+  },
+  "rules-card-063": {
+   "fig": [
+    "fig-school-bus-stop"
    ]
   }
  }

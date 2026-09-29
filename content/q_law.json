@@ -640,7 +640,10 @@
     "S31",
     "S36"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-minor-accident"
+   ]
   },
   {
    "id": "law-card-026",
@@ -1552,7 +1555,10 @@
     "S41"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-flowing-water"
+   ]
   },
   {
    "id": "law-law-029",
@@ -2074,6 +2080,9 @@
    "confidence": "high",
    "notes": "",
    "fig": [
+    "fig-school-bus-stop"
+   ],
+   "explain_fig": [
     "ev-school-bus-single"
    ]
   },
@@ -2445,7 +2454,8 @@
     "ev-emergency-lights"
    ],
    "explain_fig": [
-    "ev-highway-move-right"
+    "ev-highway-move-right",
+    "fig-ev-two-way"
    ]
   },
   {
@@ -2923,7 +2933,10 @@
     "S36"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-minor-accident"
+   ]
   },
   {
    "id": "law-accidents-005",
@@ -3289,7 +3302,10 @@
     "S31"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-minor-accident"
+   ]
   },
   {
    "id": "law-accidents-020",

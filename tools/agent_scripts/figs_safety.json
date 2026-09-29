@@ -76,6 +76,9 @@
   "safety-weather-031": {
    "fig": [
     "fig-aquaplaning"
+   ],
+   "explain_fig": [
+    "fig-gap-weather"
    ]
   },
   "safety-night-001": {
@@ -207,7 +210,7 @@
   },
   "safety-hazard-027": {
    "explain_fig": [
-    "fig-truck-blind"
+    "fig-truck-turn-right"
    ]
   },
   "safety-hazard-031": {
@@ -228,6 +231,9 @@
   "safety-hazard-037": {
    "fig": [
     "fig-stopping-distance"
+   ],
+   "explain_fig": [
+    "fig-stopping-table"
    ]
   },
   "safety-emergency-002": {
@@ -272,7 +278,7 @@
   },
   "safety-vehicle-004": {
    "explain_fig": [
-    "fig-gear-selector"
+    "fig-gear-park"
    ]
   },
   "safety-vehicle-005": {
@@ -317,7 +323,7 @@
   },
   "safety-vehicle-016": {
    "explain_fig": [
-    "fig-gear-selector"
+    "fig-gear-park"
    ]
   },
   "safety-vehicle-018": {
@@ -395,6 +401,26 @@
    "fig": [
     "r-speed-60"
    ]
+  },
+  "safety-weather-004": {
+   "explain_fig": [
+    "fig-gap-weather"
+   ]
+  },
+  "safety-weather-014": {
+   "explain_fig": [
+    "fig-flowing-water"
+   ]
+  },
+  "safety-weather-026": {
+   "explain_fig": [
+    "fig-flowing-water"
+   ]
+  },
+  "safety-vehicle-029": {
+   "explain_fig": [
+    "fig-tyre-dot"
+   ]
   }
  },
  "cards": {
@@ -416,17 +442,20 @@
   },
   "safety-card-007": {
    "fig": [
-    "w-slippery-road"
+    "w-slippery-road",
+    "fig-gap-weather"
    ]
   },
   "safety-card-008": {
    "fig": [
-    "fig-aquaplaning"
+    "fig-aquaplaning",
+    "fig-gap-weather"
    ]
   },
   "safety-card-009": {
    "fig": [
-    "fig-water-depth"
+    "fig-water-depth",
+    "fig-flowing-water"
    ]
   },
   "safety-card-015": {
@@ -458,7 +487,8 @@
   },
   "safety-card-025": {
    "fig": [
-    "mk-bus-stop"
+    "mk-bus-stop",
+    "fig-school-bus-stop"
    ]
   },
   "safety-card-026": {
@@ -469,11 +499,13 @@
   },
   "safety-card-027": {
    "fig": [
-    "fig-truck-blind"
+    "fig-truck-blind",
+    "fig-truck-turn-right"
    ]
   },
   "safety-card-029": {
    "fig": [
+    "fig-stopping-table",
     "fig-stopping-distance"
    ]
   },
@@ -484,7 +516,8 @@
   },
   "safety-card-034": {
    "fig": [
-    "fig-breakdown"
+    "fig-breakdown",
+    "fig-gear-park"
    ]
   },
   "safety-card-035": {
@@ -542,12 +575,23 @@
   "safety-card-064": {
    "fig": [
     "fig-blind-spots",
-    "fig-lane-change"
+    "fig-lane-change",
+    "fig-pull-away"
    ]
   },
   "safety-card-066": {
    "fig": [
     "r-speed-60"
+   ]
+  },
+  "safety-card-010": {
+   "fig": [
+    "fig-flowing-water"
+   ]
+  },
+  "safety-card-047": {
+   "fig": [
+    "fig-tyre-dot"
    ]
   }
  }

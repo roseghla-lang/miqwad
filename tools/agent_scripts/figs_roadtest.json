@@ -1,30 +1,290 @@
 {
  "questions": {
-  "roadtest-yard-002": {"explain_fig": ["fig-seat-belt"]},
-  "roadtest-roadtest-001": {"explain_fig": ["fig-seat-belt"]},
-  "roadtest-roadtest-003": {"explain_fig": ["fig-lane-change"]},
-  "roadtest-roadtest-006": {"explain_fig": ["fig-blind-spots"]},
-  "roadtest-roadtest-007": {"explain_fig": ["fig-blind-spots"]},
-  "roadtest-roadtest-008": {"explain_fig": ["fig-blind-spots", "fig-lane-change"]},
-  "roadtest-roadtest-009": {"fig": ["p-stop"], "explain_fig": ["mk-stop-line"]},
-  "roadtest-roadtest-010": {"explain_fig": ["fig-roundabout-priority"]},
-  "roadtest-roadtest-011": {"explain_fig": ["fig-roundabout-flow", "m-roundabout"]},
-  "roadtest-roadtest-012": {"fig": ["mk-zebra"]},
-  "roadtest-roadtest-020": {"explain_fig": ["fig-gear-selector"]},
-  "roadtest-roadtest-022": {"explain_fig": ["fig-roundabout-right", "fig-roundabout-left"]},
-  "roadtest-roadtest-023": {"explain_fig": ["fig-roundabout-left"]},
-  "roadtest-roadtest-024": {"fig": ["tl-amber"]},
-  "roadtest-roadtest-025": {"explain_fig": ["mk-yellow-box"]},
-  "roadtest-roadtest-031": {"explain_fig": ["fig-two-second"]},
-  "roadtest-roadtest-035": {"explain_fig": ["fig-roundabout-priority"]},
-  "roadtest-roadtest-037": {"fig": ["tl-green"], "explain_fig": ["fig-turn-left"]},
-  "roadtest-roadtest-038": {"fig": ["g-exit-countdown"], "explain_fig": ["fig-lane-change", "fig-highway-exit"]},
-  "roadtest-roadtest-040": {"explain_fig": ["fig-roundabout-right"]},
-  "roadtest-roadtest-044": {"explain_fig": ["fig-missed-exit"]}
+  "roadtest-yard-002": {
+   "explain_fig": [
+    "fig-seat-belt"
+   ]
+  },
+  "roadtest-roadtest-001": {
+   "explain_fig": [
+    "fig-seat-belt"
+   ]
+  },
+  "roadtest-roadtest-003": {
+   "explain_fig": [
+    "fig-lane-change"
+   ]
+  },
+  "roadtest-roadtest-006": {
+   "explain_fig": [
+    "fig-pull-away"
+   ]
+  },
+  "roadtest-roadtest-007": {
+   "explain_fig": [
+    "fig-blind-spots"
+   ]
+  },
+  "roadtest-roadtest-008": {
+   "explain_fig": [
+    "fig-blind-spots",
+    "fig-lane-change"
+   ]
+  },
+  "roadtest-roadtest-009": {
+   "fig": [
+    "p-stop"
+   ],
+   "explain_fig": [
+    "mk-stop-line"
+   ]
+  },
+  "roadtest-roadtest-010": {
+   "explain_fig": [
+    "fig-roundabout-priority"
+   ]
+  },
+  "roadtest-roadtest-011": {
+   "explain_fig": [
+    "fig-roundabout-flow",
+    "m-roundabout"
+   ]
+  },
+  "roadtest-roadtest-012": {
+   "fig": [
+    "mk-zebra"
+   ]
+  },
+  "roadtest-roadtest-020": {
+   "explain_fig": [
+    "fig-gear-park"
+   ]
+  },
+  "roadtest-roadtest-022": {
+   "explain_fig": [
+    "fig-roundabout-right",
+    "fig-roundabout-left"
+   ]
+  },
+  "roadtest-roadtest-023": {
+   "explain_fig": [
+    "fig-roundabout-left",
+    "fig-roundabout-lanes3"
+   ]
+  },
+  "roadtest-roadtest-024": {
+   "fig": [
+    "tl-amber"
+   ],
+   "explain_fig": [
+    "fig-amber-no-return"
+   ]
+  },
+  "roadtest-roadtest-025": {
+   "explain_fig": [
+    "mk-yellow-box"
+   ]
+  },
+  "roadtest-roadtest-031": {
+   "explain_fig": [
+    "fig-two-second",
+    "fig-gap-weather"
+   ]
+  },
+  "roadtest-roadtest-035": {
+   "explain_fig": [
+    "fig-roundabout-priority"
+   ]
+  },
+  "roadtest-roadtest-037": {
+   "fig": [
+    "tl-green"
+   ],
+   "explain_fig": [
+    "fig-turn-left"
+   ]
+  },
+  "roadtest-roadtest-038": {
+   "fig": [
+    "g-exit-countdown"
+   ],
+   "explain_fig": [
+    "fig-lane-change",
+    "fig-highway-exit"
+   ]
+  },
+  "roadtest-roadtest-040": {
+   "explain_fig": [
+    "fig-roundabout-right",
+    "fig-roundabout-lanes3"
+   ]
+  },
+  "roadtest-roadtest-044": {
+   "explain_fig": [
+    "fig-missed-exit"
+   ]
+  },
+  "roadtest-yard-003": {
+   "explain_fig": [
+    "fig-yard-brake"
+   ]
+  },
+  "roadtest-yard-004": {
+   "explain_fig": [
+    "fig-yard-lines"
+   ]
+  },
+  "roadtest-yard-005": {
+   "fig": [
+    "fig-yard-parallel"
+   ]
+  },
+  "roadtest-yard-006": {
+   "fig": [
+    "fig-yard-garage"
+   ]
+  },
+  "roadtest-yard-007": {
+   "explain_fig": [
+    "fig-yard-kerb"
+   ]
+  },
+  "roadtest-yard-008": {
+   "explain_fig": [
+    "fig-yard-parallel"
+   ]
+  },
+  "roadtest-yard-009": {
+   "explain_fig": [
+    "fig-yard-parallel"
+   ]
+  },
+  "roadtest-yard-012": {
+   "fig": [
+    "fig-yard-hill"
+   ]
+  },
+  "roadtest-yard-013": {
+   "fig": [
+    "fig-yard-angle"
+   ]
+  },
+  "roadtest-yard-014": {
+   "explain_fig": [
+    "fig-yard-hill"
+   ]
+  },
+  "roadtest-yard-015": {
+   "explain_fig": [
+    "fig-yard-hill"
+   ]
+  },
+  "roadtest-yard-016": {
+   "explain_fig": [
+    "fig-yard-brake"
+   ]
+  },
+  "roadtest-yard-017": {
+   "explain_fig": [
+    "fig-yard-parallel"
+   ]
+  },
+  "roadtest-yard-020": {
+   "explain_fig": [
+    "fig-yard-garage"
+   ]
+  },
+  "roadtest-yard-021": {
+   "explain_fig": [
+    "fig-yard-hill"
+   ]
+  },
+  "roadtest-yard-023": {
+   "explain_fig": [
+    "fig-yard-brake"
+   ]
+  },
+  "roadtest-yard-027": {
+   "explain_fig": [
+    "fig-yard-brake"
+   ]
+  }
  },
  "cards": {
-  "roadtest-card-002": {"fig": ["fig-seat-belt"]},
-  "roadtest-card-022": {"fig": ["fig-lane-change", "fig-blind-spots"]},
-  "roadtest-card-023": {"fig": ["tl-red", "p-stop", "r-no-entry", "mk-yellow-box"]}
+  "roadtest-card-002": {
+   "fig": [
+    "fig-seat-belt"
+   ]
+  },
+  "roadtest-card-022": {
+   "fig": [
+    "fig-lane-change",
+    "fig-blind-spots",
+    "fig-pull-away"
+   ]
+  },
+  "roadtest-card-023": {
+   "fig": [
+    "tl-red",
+    "p-stop",
+    "r-no-entry",
+    "mk-yellow-box"
+   ]
+  },
+  "roadtest-card-001": {
+   "fig": [
+    "fig-yard-parallel",
+    "fig-yard-garage",
+    "fig-yard-angle",
+    "fig-yard-hill"
+   ]
+  },
+  "roadtest-card-003": {
+   "fig": [
+    "fig-yard-parallel",
+    "fig-yard-garage",
+    "fig-yard-angle"
+   ]
+  },
+  "roadtest-card-004": {
+   "fig": [
+    "fig-yard-lines"
+   ]
+  },
+  "roadtest-card-005": {
+   "fig": [
+    "fig-yard-kerb"
+   ]
+  },
+  "roadtest-card-006": {
+   "fig": [
+    "fig-yard-hill"
+   ]
+  },
+  "roadtest-card-007": {
+   "fig": [
+    "fig-yard-brake"
+   ]
+  },
+  "roadtest-card-008": {
+   "fig": [
+    "fig-yard-brake"
+   ]
+  },
+  "roadtest-card-013": {
+   "fig": [
+    "fig-yard-parallel"
+   ]
+  },
+  "roadtest-card-014": {
+   "fig": [
+    "fig-yard-parallel"
+   ]
+  },
+  "roadtest-card-015": {
+   "fig": [
+    "fig-yard-garage"
+   ]
+  }
  }
 }

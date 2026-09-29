@@ -219,16 +219,22 @@
   "markings-lights-003": {
    "fig": [
     "tl-amber"
+   ],
+   "explain_fig": [
+    "fig-amber-no-return"
    ]
   },
   "markings-lights-004": {
    "fig": [
     "tl-amber"
+   ],
+   "explain_fig": [
+    "fig-amber-no-return"
    ]
   },
   "markings-lights-005": {
    "explain_fig": [
-    "tl-amber"
+    "fig-amber-no-return"
    ]
   },
   "markings-lights-006": {
@@ -490,7 +496,7 @@
   },
   "markings-card-015": {
    "fig": [
-    "tl-amber"
+    "fig-amber-no-return"
    ]
   },
   "markings-card-016": {

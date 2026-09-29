@@ -1,56 +1,292 @@
 {
  "questions": {
-  "law-law-022": {"explain_fig": ["w-children"]},
-  "law-law-023": {"fig": ["mk-zebra"]},
-  "law-law-025": {"explain_fig": ["mk-zebra"]},
-  "law-law-026": {"fig": ["r-speed-100"]},
-  "law-penalties-001": {"explain_fig": ["fig-black-points"]},
-  "law-penalties-002": {"explain_fig": ["fig-black-points"]},
-  "law-penalties-003": {"fig": ["fig-black-points"]},
-  "law-penalties-004": {"fig": ["fig-black-points"]},
-  "law-penalties-005": {"explain_fig": ["fig-black-points"]},
-  "law-penalties-006": {"explain_fig": ["fig-black-points"]},
-  "law-penalties-008": {"explain_fig": ["fig-black-points"]},
-  "law-penalties-012": {"fig": ["tl-red"]},
-  "law-penalties-013": {"fig": ["fig-no-phone"]},
-  "law-penalties-014": {"fig": ["ev-school-bus-single"]},
-  "law-penalties-015": {"explain_fig": ["mk-zebra"]},
-  "law-penalties-019": {"fig": ["tl-red"]},
-  "law-penalties-020": {"fig": ["fig-no-phone"]},
-  "law-penalties-021": {"fig": ["fig-seat-belt"]},
-  "law-penalties-023": {"explain_fig": ["fig-child-seat"]},
-  "law-penalties-024": {"explain_fig": ["fig-child-seat"]},
-  "law-penalties-025": {"fig": ["fig-two-second"]},
-  "law-penalties-027": {"explain_fig": ["mk-hard-shoulder"]},
-  "law-penalties-028": {"fig": ["ev-emergency-lights"], "explain_fig": ["ev-highway-move-right"]},
-  "law-penalties-029": {"fig": ["mk-zebra"]},
-  "law-penalties-030": {"explain_fig": ["fig-keep-right"]},
-  "law-penalties-031": {"explain_fig": ["m-min-speed-60"]},
-  "law-penalties-042": {"explain_fig": ["fig-black-points"]},
-  "law-penalties-043": {"explain_fig": ["mk-yellow-box"]},
-  "law-accidents-014": {"explain_fig": ["fig-breakdown"]},
-  "law-accidents-015": {"explain_fig": ["fig-breakdown"]},
-  "law-accidents-025": {"explain_fig": ["fig-breakdown"]},
-  "law-dubai-specific-001": {"explain_fig": ["i-salik"]},
-  "law-dubai-specific-002": {"explain_fig": ["i-salik"]},
-  "law-dubai-specific-003": {"fig": ["i-salik"]},
-  "law-dubai-specific-004": {"fig": ["i-salik"]},
-  "law-dubai-specific-008": {"fig": ["tl-red"]},
-  "law-sharjah-specific-006": {"fig": ["tl-red", "fig-no-phone"]}
+  "law-law-022": {
+   "explain_fig": [
+    "w-children"
+   ]
+  },
+  "law-law-023": {
+   "fig": [
+    "mk-zebra"
+   ]
+  },
+  "law-law-025": {
+   "explain_fig": [
+    "mk-zebra"
+   ]
+  },
+  "law-law-026": {
+   "fig": [
+    "r-speed-100"
+   ]
+  },
+  "law-penalties-001": {
+   "explain_fig": [
+    "fig-black-points"
+   ]
+  },
+  "law-penalties-002": {
+   "explain_fig": [
+    "fig-black-points"
+   ]
+  },
+  "law-penalties-003": {
+   "fig": [
+    "fig-black-points"
+   ]
+  },
+  "law-penalties-004": {
+   "fig": [
+    "fig-black-points"
+   ]
+  },
+  "law-penalties-005": {
+   "explain_fig": [
+    "fig-black-points"
+   ]
+  },
+  "law-penalties-006": {
+   "explain_fig": [
+    "fig-black-points"
+   ]
+  },
+  "law-penalties-008": {
+   "explain_fig": [
+    "fig-black-points"
+   ]
+  },
+  "law-penalties-012": {
+   "fig": [
+    "tl-red"
+   ]
+  },
+  "law-penalties-013": {
+   "fig": [
+    "fig-no-phone"
+   ]
+  },
+  "law-penalties-014": {
+   "fig": [
+    "fig-school-bus-stop"
+   ],
+   "explain_fig": [
+    "ev-school-bus-single"
+   ]
+  },
+  "law-penalties-015": {
+   "explain_fig": [
+    "mk-zebra"
+   ]
+  },
+  "law-penalties-019": {
+   "fig": [
+    "tl-red"
+   ]
+  },
+  "law-penalties-020": {
+   "fig": [
+    "fig-no-phone"
+   ]
+  },
+  "law-penalties-021": {
+   "fig": [
+    "fig-seat-belt"
+   ]
+  },
+  "law-penalties-023": {
+   "explain_fig": [
+    "fig-child-seat"
+   ]
+  },
+  "law-penalties-024": {
+   "explain_fig": [
+    "fig-child-seat"
+   ]
+  },
+  "law-penalties-025": {
+   "fig": [
+    "fig-two-second"
+   ]
+  },
+  "law-penalties-027": {
+   "explain_fig": [
+    "mk-hard-shoulder"
+   ]
+  },
+  "law-penalties-028": {
+   "fig": [
+    "ev-emergency-lights"
+   ],
+   "explain_fig": [
+    "ev-highway-move-right",
+    "fig-ev-two-way"
+   ]
+  },
+  "law-penalties-029": {
+   "fig": [
+    "mk-zebra"
+   ]
+  },
+  "law-penalties-030": {
+   "explain_fig": [
+    "fig-keep-right"
+   ]
+  },
+  "law-penalties-031": {
+   "explain_fig": [
+    "m-min-speed-60"
+   ]
+  },
+  "law-penalties-042": {
+   "explain_fig": [
+    "fig-black-points"
+   ]
+  },
+  "law-penalties-043": {
+   "explain_fig": [
+    "mk-yellow-box"
+   ]
+  },
+  "law-accidents-014": {
+   "explain_fig": [
+    "fig-breakdown"
+   ]
+  },
+  "law-accidents-015": {
+   "explain_fig": [
+    "fig-breakdown"
+   ]
+  },
+  "law-accidents-025": {
+   "explain_fig": [
+    "fig-breakdown"
+   ]
+  },
+  "law-dubai-specific-001": {
+   "explain_fig": [
+    "i-salik"
+   ]
+  },
+  "law-dubai-specific-002": {
+   "explain_fig": [
+    "i-salik"
+   ]
+  },
+  "law-dubai-specific-003": {
+   "fig": [
+    "i-salik"
+   ]
+  },
+  "law-dubai-specific-004": {
+   "fig": [
+    "i-salik"
+   ]
+  },
+  "law-dubai-specific-008": {
+   "fig": [
+    "tl-red"
+   ]
+  },
+  "law-sharjah-specific-006": {
+   "fig": [
+    "tl-red",
+    "fig-no-phone"
+   ]
+  },
+  "law-law-028": {
+   "explain_fig": [
+    "fig-flowing-water"
+   ]
+  },
+  "law-accidents-004": {
+   "explain_fig": [
+    "fig-minor-accident"
+   ]
+  },
+  "law-accidents-019": {
+   "explain_fig": [
+    "fig-minor-accident"
+   ]
+  }
  },
  "cards": {
-  "law-card-005": {"fig": ["mk-zebra", "w-children"]},
-  "law-card-009": {"fig": ["r-speed-80"]},
-  "law-card-012": {"fig": ["fig-black-points"]},
-  "law-card-013": {"fig": ["fig-black-points"]},
-  "law-card-014": {"fig": ["fig-black-points"]},
-  "law-card-015": {"fig": ["fig-black-points"]},
-  "law-card-019": {"fig": ["fig-no-phone", "fig-seat-belt", "fig-two-second"]},
-  "law-card-021": {"fig": ["ev-emergency-lights", "mk-zebra", "ev-school-bus-single"]},
-  "law-card-023": {"fig": ["fig-child-seat", "fig-seat-belt"]},
-  "law-card-030": {"fig": ["fig-breakdown"]},
-  "law-card-032": {"fig": ["i-salik"]},
-  "law-card-039": {"fig": ["tl-red", "fig-no-phone"]},
-  "law-card-041": {"fig": ["mk-zebra", "pl-red"]}
+  "law-card-005": {
+   "fig": [
+    "mk-zebra",
+    "w-children"
+   ]
+  },
+  "law-card-009": {
+   "fig": [
+    "r-speed-80"
+   ]
+  },
+  "law-card-012": {
+   "fig": [
+    "fig-black-points"
+   ]
+  },
+  "law-card-013": {
+   "fig": [
+    "fig-black-points"
+   ]
+  },
+  "law-card-014": {
+   "fig": [
+    "fig-black-points"
+   ]
+  },
+  "law-card-015": {
+   "fig": [
+    "fig-black-points"
+   ]
+  },
+  "law-card-019": {
+   "fig": [
+    "fig-no-phone",
+    "fig-seat-belt",
+    "fig-two-second"
+   ]
+  },
+  "law-card-021": {
+   "fig": [
+    "ev-emergency-lights",
+    "mk-zebra",
+    "ev-school-bus-single"
+   ]
+  },
+  "law-card-023": {
+   "fig": [
+    "fig-child-seat",
+    "fig-seat-belt"
+   ]
+  },
+  "law-card-030": {
+   "fig": [
+    "fig-breakdown"
+   ]
+  },
+  "law-card-032": {
+   "fig": [
+    "i-salik"
+   ]
+  },
+  "law-card-039": {
+   "fig": [
+    "tl-red",
+    "fig-no-phone"
+   ]
+  },
+  "law-card-041": {
+   "fig": [
+    "mk-zebra",
+    "pl-red"
+   ]
+  },
+  "law-card-025": {
+   "fig": [
+    "fig-minor-accident"
+   ]
+  }
  }
 }
