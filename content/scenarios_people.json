@@ -1,0 +1,3391 @@
+{
+ "module": "people",
+ "updated": "2026-09-29",
+ "sources": {
+  "S1": {
+   "title": "مرسوم بقانون اتحادي رقم 14 لسنة 2024 بشأن تنظيم السير والمرور (النص العربي)",
+   "url": "https://uaelegislation.gov.ae/ar/legislations/2598/download",
+   "publisher": "UAE Legislation portal",
+   "date": "2024-09 (in force 2025-03-29)"
+  },
+  "S2": {
+   "title": "Federal Decree-Law No. 14 of 2024 On Traffic Regulation (English text)",
+   "url": "https://uaelegislation.gov.ae/en/legislations/2598/download",
+   "publisher": "UAE Legislation portal",
+   "date": "2024-09"
+  },
+  "S3": {
+   "title": "Ministerial Resolution No. 130 of 1997, Executive Regulation of the Federal Traffic Law (English)",
+   "url": "https://uaelegislation.gov.ae/en/legislations/1020/download",
+   "publisher": "UAE Legislation portal",
+   "date": "1997, listed in force, updated 2023-05"
+  },
+  "S4": {
+   "title": "القرار الوزاري رقم 130 لسنة 1997 باللائحة التنفيذية لقانون السير والمرور (النص العربي)",
+   "url": "https://uaelegislation.gov.ae/ar/legislations/1020/download",
+   "publisher": "UAE Legislation portal",
+   "date": "1997, updated 2023-05"
+  },
+  "S5": {
+   "title": "Light Motor Vehicle Handbook, A Guide to Safe Driving, 7th edition",
+   "url": "https://edi-uae.com/public/uploads/downloads/20190724133013RTA_Handbook_-_Light_Motor_Vehicle_(LMV)_-_English.pdf",
+   "publisher": "RTA Licensing Agency (hosted by Emirates Driving Institute)",
+   "date": "2016-01"
+  },
+  "S6": {
+   "title": "كتيب المركبات الآلية الخفيفة، دليل للقيادة الآمنة، الطبعة 3",
+   "url": "https://www.rta.ae/wpsv5/eservices/PDF_Catalog/Light_Motor_Handbook_AR.pdf",
+   "publisher": "RTA Licensing Agency",
+   "date": "2012-01"
+  },
+  "S12": {
+   "title": "Dubai Police: Let emergency vehicles go, every second matters",
+   "url": "https://gulfnews.com/uae/dubai-police-let-emergency-vehicles-go-every-second-matters-1.66847995",
+   "publisher": "Gulf News (Dubai Police)",
+   "date": "2019-10-02"
+  },
+  "S13": {
+   "title": "شرطة دبي تفسح الطريق أمام مركبات الطوارئ بـ«الأمل»",
+   "url": "https://www.emaratalyoum.com/local-section/other/2019-10-03-1.1258016",
+   "publisher": "Emarat Al Youm (Dubai Police)",
+   "date": "2019-10-03"
+  },
+  "S14": {
+   "title": "«لا تتردد.. افسح الطريق فورا» حملة مشتركة لمركبات الطوارئ والإسعاف",
+   "url": "https://abudhabipolice.gov.ae/Media-Center/News/2025/05/29052025001",
+   "publisher": "Abu Dhabi Police",
+   "date": "2025-05-29"
+  },
+  "S15": {
+   "title": "Dh3,000 fine, 30 days impoundment: Sharjah warns against blocking emergency vehicles",
+   "url": "https://www.khaleejtimes.com/uae/emergencies/dh3000-fine-impoundment-blocking-emergency-vehicles",
+   "publisher": "Khaleej Times (Sharjah Police)",
+   "date": "2025-05-03"
+  },
+  "S16": {
+   "title": "UAE: Give way to emergency vehicles or face Dh3,000 traffic fine",
+   "url": "https://gulfnews.com/living-in-uae/transport/uae-give-way-to-emergency-vehicles-or-face-dh3000-traffic-fine-1.500247516",
+   "publisher": "Gulf News (Abu Dhabi Police)",
+   "date": "2025-08-27"
+  },
+  "S17": {
+   "title": "طرق دبي تؤكد تعليمات ذراع التوقف للحافلات المدرسية",
+   "url": "https://www.emaratalyoum.com/local-section/education/2026-04-21-1.2038053",
+   "publisher": "Emarat Al Youm (RTA)",
+   "date": "2026-04-21"
+  },
+  "S18": {
+   "title": "Dubai School Bus Stop Arm Rules: what drivers must know",
+   "url": "https://gulfnews.com/uae/transport/school-bus-stop-arm-rules-in-dubai-what-drivers-must-know-1.500514122",
+   "publisher": "Gulf News (RTA)",
+   "date": "2026-04-21"
+  },
+  "S19": {
+   "title": "Abu Dhabi Police urge motorists to follow rules around school buses",
+   "url": "https://www.thenationalnews.com/news/uae/2026/08/31/uae-school-bus-rules-drivers-parents-students-staff/",
+   "publisher": "The National (Abu Dhabi Police)",
+   "date": "2026-08-31"
+  },
+  "S20": {
+   "title": "Dh1,000 fine in UAE: Police issue warning against violating school bus stop sign rules",
+   "url": "https://www.khaleejtimes.com/uae/transport/dh1000-fine-in-uae-police-issue-warning-against-violating-school-bus-stop-sign-rules",
+   "publisher": "Khaleej Times (Abu Dhabi Police)",
+   "date": "2023-04-06"
+  },
+  "S26": {
+   "title": "UAE back to school: When must drivers stop for pedestrians?",
+   "url": "https://www.emirates247.com/uae-guide/uae-back-to-school-when-must-drivers-stop-for-pedestrians-rules-fines-explained/5011",
+   "publisher": "Emirates 24/7",
+   "date": "2026-08-28"
+  },
+  "S28": {
+   "title": "Ambulance behind you in the UAE? How to give way",
+   "url": "https://www.emirates247.com/uae-guide/ambulance-behind-you-in-the-uae-how-to-give-way-and-avoid-a-dh3000-fine/5032",
+   "publisher": "Emirates 24/7 (Abu Dhabi Police campaign)",
+   "date": "2026-08-29"
+  }
+ },
+ "scenarios": [
+  {
+   "id": "ev-001",
+   "topic": "emergency-vehicles",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": 3,
+     "divided": true,
+     "shoulder": true,
+     "median": {
+      "width": 4,
+      "palms": true
+     },
+     "len": 80
+    },
+    "labels": "solution",
+    "view": {
+     "zoom": 1.3,
+     "center": {
+      "x": 5,
+      "y": 38
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 3,
+       "y": 36
+      }
+     },
+     {
+      "id": "amb",
+      "type": "ambulance",
+      "pos": {
+       "dir": "up",
+       "lane": 3,
+       "y": 12
+      },
+      "label": "سيارة إسعاف"
+     },
+     {
+      "id": "c1",
+      "type": "truck",
+      "color": "white",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 32
+      }
+     },
+     {
+      "id": "c2",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 62
+      }
+     },
+     {
+      "id": "c3",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "dir": "down",
+       "lane": 2,
+       "y": 64
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "lane_change": "right",
+      "dist": 16,
+      "dur": 2.4
+     },
+     {
+      "t": 2.4,
+      "actor": "me",
+      "drive": 8,
+      "dur": 2.2,
+      "ease": "out"
+     },
+     {
+      "t": 0,
+      "actor": "c1",
+      "drive": 14,
+      "dur": 4.6,
+      "ease": "out"
+     },
+     {
+      "t": 0,
+      "actor": "c2",
+      "drive": 20,
+      "dur": 4.6
+     },
+     {
+      "t": 0,
+      "actor": "c3",
+      "drive": 80,
+      "dur": 4
+     },
+     {
+      "t": 1.5,
+      "actor": "amb",
+      "drive": 100,
+      "dur": 3.8,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "track": "solution",
+      "style": "ok"
+     },
+     {
+      "actor": "amb",
+      "track": "solution",
+      "style": "warn"
+     }
+    ],
+    "callouts": [
+     {
+      "text": "الكتف ليس لك",
+      "at": {
+       "dir": "up",
+       "lane": "shoulder",
+       "y": 20
+      },
+      "when": "solution",
+      "style": "bad"
+     }
+    ],
+    "alt": "طريق رئيسي بثلاثة مسارات وكتف، وأنت في المسار الأيسر وسيارة إسعاف خلفك في المسار نفسه"
+   },
+   "q": "تسير في المسار الأيسر على طريق رئيسي بثلاثة مسارات، وسيارة إسعاف تقترب خلفك بالصفارة والأضواء، ماذا تفعل؟",
+   "options": [
+    "أبقى في المسار الأيسر وأزيد سرعتي حتى أبتعد عنها",
+    "أنتقل إلى كتف الطريق وأتوقف عليه",
+    "أشغل إشارة اليمين وأنتقل بهدوء إلى المسار الأوسط وأترك المسار الأيسر لها",
+    "أضغط على الفرامل بقوة وأتوقف في مساري"
+   ],
+   "answer": 2,
+   "explain": "مركبات الطوارئ تستخدم المسار الأيسر في الطرق الرئيسية، فانتقل إلى اليمين بإشارة وبهدوء عندما يكون ذلك آمنا\nلا تدخل كتف الطريق لأنها قد تحتاجه في الازدحام، ولا تتوقف فجأة",
+   "tip": "الإسعاف بياخد الشمال، وإنت بتروح عاليمين",
+   "explain_fig": [
+    "ev-highway-move-right",
+    "ev-emergency-lights"
+   ],
+   "src": [
+    "S12",
+    "S14",
+    "S16",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "ev-002",
+   "topic": "emergency-vehicles",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": 2,
+     "divided": true,
+     "median": {
+      "width": 2,
+      "palms": false
+     },
+     "len": 60
+    },
+    "labels": "solution",
+    "view": {
+     "zoom": 1.15,
+     "center": {
+      "x": 4,
+      "y": 30
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 30
+      }
+     },
+     {
+      "id": "a2",
+      "type": "car",
+      "color": "red",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 37.5
+      }
+     },
+     {
+      "id": "a3",
+      "type": "car",
+      "color": "grey",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 44.5
+      }
+     },
+     {
+      "id": "b1",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 27
+      }
+     },
+     {
+      "id": "b2",
+      "type": "taxi",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 34.5
+      }
+     },
+     {
+      "id": "b3",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 42
+      }
+     },
+     {
+      "id": "amb",
+      "type": "ambulance",
+      "pos": {
+       "x": 4.5,
+       "y": 12
+      },
+      "label": "سيارة إسعاف"
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "path": [
+       [
+        2.75,
+        31.25
+       ],
+       [
+        2.38,
+        32.75
+       ],
+       [
+        2.0,
+        34.25
+       ],
+       [
+        2.0,
+        35
+       ]
+      ],
+      "dur": 2.2,
+      "ease": "inout"
+     },
+     {
+      "t": 0,
+      "actor": "a2",
+      "path": [
+       [
+        2.75,
+        38.75
+       ],
+       [
+        2.38,
+        40.25
+       ],
+       [
+        2.0,
+        41.75
+       ],
+       [
+        2.0,
+        42.5
+       ]
+      ],
+      "dur": 2.2,
+      "ease": "inout"
+     },
+     {
+      "t": 0,
+      "actor": "a3",
+      "path": [
+       [
+        2.75,
+        45.75
+       ],
+       [
+        2.38,
+        47.25
+       ],
+       [
+        2.0,
+        48.75
+       ],
+       [
+        2.0,
+        49.5
+       ]
+      ],
+      "dur": 2.2,
+      "ease": "inout"
+     },
+     {
+      "t": 0,
+      "actor": "b1",
+      "path": [
+       [
+        6.25,
+        28.25
+       ],
+       [
+        6.62,
+        29.75
+       ],
+       [
+        7.0,
+        31.25
+       ],
+       [
+        7.0,
+        32
+       ]
+      ],
+      "dur": 2.2,
+      "ease": "inout"
+     },
+     {
+      "t": 0,
+      "actor": "b2",
+      "path": [
+       [
+        6.25,
+        35.75
+       ],
+       [
+        6.62,
+        37.25
+       ],
+       [
+        7.0,
+        38.75
+       ],
+       [
+        7.0,
+        39.5
+       ]
+      ],
+      "dur": 2.2,
+      "ease": "inout"
+     },
+     {
+      "t": 0,
+      "actor": "b3",
+      "path": [
+       [
+        6.25,
+        43.25
+       ],
+       [
+        6.62,
+        44.75
+       ],
+       [
+        7.0,
+        46.25
+       ],
+       [
+        7.0,
+        47
+       ]
+      ],
+      "dur": 2.2,
+      "ease": "inout"
+     },
+     {
+      "t": 1.2,
+      "actor": "amb",
+      "path": [
+       [
+        4.5,
+        12
+       ],
+       [
+        4.5,
+        75
+       ]
+      ],
+      "dur": 4.6,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "amb",
+      "track": "solution",
+      "style": "warn"
+     }
+    ],
+    "callouts": [
+     {
+      "text": "ممر في الوسط",
+      "at": {
+       "x": 4.5,
+       "y": 54
+      },
+      "when": "solution",
+      "style": "ok"
+     }
+    ],
+    "alt": "طريق داخلي مزدحم بمسارين، وأنت في المسار الأيسر وسيارة إسعاف تقترب من الخلف"
+   },
+   "q": "طريق داخلي مزدحم بمسارين دون كتف، وأنت في المسار الأيسر، وسيارة إسعاف بصفارتها تقترب من الخلف، ماذا تفعل؟",
+   "options": [
+    "أتحرك قليلا إلى اليسار، ويتحرك من في المسار الأيمن قليلا إلى اليمين، فيفتح لها ممر في الوسط",
+    "أدخل المسار الأيمن بأي طريقة حتى لو اقتربت كثيرا من السيارة التي فيه",
+    "أتقدم حتى ألتصق بالسيارة التي أمامي لأترك لها مساحة خلفي",
+    "أبقى في مكاني تماما لأن الطريق مزدحم ولا يمكن فعل شيء"
+   ],
+   "answer": 0,
+   "explain": "في الطرق الداخلية المزدحمة تتحرك المركبات قليلا يمينا أو يسارا لتفتح لمركبة الطوارئ ممرا بين المسارين\nمن في المسار الأيسر يتحرك يسارا ومن في الأيمن يتحرك يمينا، ثم يعود كل واحد إلى مساره بعد مرورها",
+   "tip": "زحمة؟ افتحولها سحاب بالنص",
+   "explain_fig": [
+    "ev-internal-road"
+   ],
+   "src": [
+    "S12",
+    "S14",
+    "S16"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "ev-003",
+   "topic": "emergency-vehicles",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "crossroads",
+    "params": {
+     "lanes": 2,
+     "divided": true,
+     "control": "lights",
+     "lights": {
+      "S": "red",
+      "N": "red",
+      "E": "green",
+      "W": "green"
+     }
+    },
+    "labels": "solution",
+    "view": {
+     "zoom": 1.25,
+     "center": {
+      "x": 3,
+      "y": -14
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 2,
+       "at": 5
+      }
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": 5
+      }
+     },
+     {
+      "id": "amb",
+      "type": "ambulance",
+      "pos": {
+       "arm": "S",
+       "lane": 2,
+       "at": 14
+      },
+      "label": "سيارة إسعاف"
+     },
+     {
+      "id": "e1",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "arm": "E",
+       "lane": 2,
+       "at": "stopline"
+      },
+      "brake": true
+     },
+     {
+      "id": "w1",
+      "type": "car",
+      "color": "red",
+      "pos": {
+       "arm": "W",
+       "lane": 2,
+       "at": "stopline"
+      },
+      "brake": true
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "path": [
+       [
+        2.75,
+        -18.4
+       ],
+       [
+        2.35,
+        -17.08
+       ],
+       [
+        1.95,
+        -15.76
+       ],
+       [
+        1.95,
+        -15.1
+       ]
+      ],
+      "dur": 2.0,
+      "ease": "inout"
+     },
+     {
+      "t": 0,
+      "actor": "c1",
+      "path": [
+       [
+        6.25,
+        -18.4
+       ],
+       [
+        6.65,
+        -17.08
+       ],
+       [
+        7.05,
+        -15.76
+       ],
+       [
+        7.05,
+        -15.1
+       ]
+      ],
+      "dur": 2.0,
+      "ease": "inout"
+     },
+     {
+      "t": 1.6,
+      "actor": "amb",
+      "path": [
+       [
+        2.75,
+        -27
+       ],
+       [
+        4.5,
+        -22
+       ],
+       [
+        4.5,
+        60
+       ]
+      ],
+      "dur": 5.4,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "amb",
+      "track": "solution",
+      "style": "warn"
+     }
+    ],
+    "callouts": [
+     {
+      "text": "لا تقطع الأحمر",
+      "at": {
+       "x": -7,
+       "y": -17
+      },
+      "when": "solution",
+      "style": "warn"
+     }
+    ],
+    "alt": "تقاطع بإشارات ضوئية، وأنت متوقف عند الأحمر في المسار الأيسر وسيارة إسعاف خلفك"
+   },
+   "q": "أنت متوقف عند إشارة حمراء في المسار الأيسر، ووصلت سيارة إسعاف بصفارتها خلفك، ماذا تفعل؟",
+   "options": [
+    "أقطع الإشارة الحمراء بسرعة لأفتح لها الطريق",
+    "أتحرك قليلا إلى جانب مساري لأفسح لها، دون أن أتجاوز خط التوقف أو أقطع الإشارة الحمراء",
+    "أبقى في مكاني دون أي حركة حتى تصبح الإشارة خضراء",
+    "أرجع بالخلف قليلا لأفتح لها مساحة"
+   ],
+   "answer": 1,
+   "explain": "أفسح الطريق لمركبة الطوارئ بالتحرك إلى جانب مسارك إن أمكن، دون أن تقطع الإشارة الحمراء\nمركبة الطوارئ هي التي تعبر التقاطع بحذر، والمركبات على الطريق الآخر تتوقف لها حتى لو كانت إشارتها خضراء",
+   "tip": "افتحلها مطرح، بس الأحمر ما بينقطع",
+   "explain_fig": [
+    "ev-at-junction",
+    "tl-red"
+   ],
+   "src": [
+    "S12",
+    "S15",
+    "S13",
+    "S14"
+   ],
+   "confidence": "high",
+   "notes": "شرطة دبي 2019: أفسح دون قطع الإشارة الحمراء، وأعفت من اضطر لقطعها بعد مراجعة التصوير، وشرطة الشارقة 2025: مسموح التقدم بحذر إلى منطقة ممر المشاة دون قطع الإشارة، واعتمدنا: أفسح دون قطع الأحمر"
+  },
+  {
+   "id": "ev-004",
+   "topic": "emergency-vehicles",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "tap",
+   "scene": {
+    "template": "crossroads",
+    "params": {
+     "lanes": 2,
+     "divided": true,
+     "control": "lights",
+     "lights": {
+      "S": "green",
+      "N": "green",
+      "E": "red",
+      "W": "red"
+     }
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 2,
+       "at": 7
+      }
+     },
+     {
+      "id": "fire",
+      "type": "fire",
+      "pos": {
+       "arm": "W",
+       "lane": 2,
+       "at": 7
+      },
+      "label": "سيارة إطفاء"
+     },
+     {
+      "id": "e1",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "arm": "E",
+       "lane": 1,
+       "at": "stopline"
+      },
+      "brake": true
+     },
+     {
+      "id": "n1",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "arm": "N",
+       "lane": 2,
+       "at": 12
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "stop_at": "stopline",
+      "dur": 1.8
+     },
+     {
+      "t": 0,
+      "actor": "n1",
+      "stop_at": "stopline",
+      "dur": 2.2
+     },
+     {
+      "t": 0.9,
+      "actor": "fire",
+      "route": "W2->E",
+      "kmh": 26,
+      "ease": "in"
+     },
+     {
+      "t": 6.4,
+      "actor": "me",
+      "route": "S2->N",
+      "kmh": 24,
+      "ease": "in"
+     },
+     {
+      "t": 6.4,
+      "actor": "n1",
+      "route": "N2->S",
+      "kmh": 24,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "fire",
+      "route": "W2->E",
+      "style": "warn"
+     }
+    ],
+    "alt": "تقاطع وإشارتك خضراء، وسيارة إطفاء بأضوائها تقترب من الشارع على يسارك"
+   },
+   "hotspots": [
+    {
+     "id": "fire",
+     "actor": "fire",
+     "r": 4
+    },
+    {
+     "id": "e1",
+     "actor": "e1"
+    },
+    {
+     "id": "n1",
+     "actor": "n1"
+    }
+   ],
+   "q": "إشارتك خضراء وأنت تقترب من التقاطع، أي مركبة يجب أن تتوقف لتتركها تعبر أولا؟ انقر عليها",
+   "answer": "fire",
+   "explain": "مركبة الطوارئ بصفارتها وأضوائها قد تعبر الإشارة الحمراء بحذر، فإذا كانت إشارتك خضراء فتوقف ولا تدخل التقاطع حتى تعبر\nالسيارة المتوقفة عند الأحمر والسيارة المقابلة لا تمنعانك من السير مستقيما",
+   "tip": "الأخضر إلك، بس الطوارئ قبلك",
+   "explain_fig": [
+    "ev-at-junction"
+   ],
+   "src": [
+    "S14",
+    "S28",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "ev-005",
+   "topic": "emergency-vehicles",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": 1,
+     "center": "broken",
+     "len": 72
+    },
+    "labels": "solution",
+    "view": {
+     "zoom": 1.3,
+     "center": {
+      "x": 0,
+      "y": 37
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 14
+      }
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 26
+      }
+     },
+     {
+      "id": "c2",
+      "type": "car",
+      "color": "red",
+      "pos": {
+       "dir": "down",
+       "lane": 1,
+       "y": 48
+      }
+     },
+     {
+      "id": "amb",
+      "type": "ambulance",
+      "pos": {
+       "dir": "down",
+       "lane": 1,
+       "y": 60
+      },
+      "label": "سيارة إسعاف"
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "pull_over": "right",
+      "dist": 8,
+      "dur": 2.4
+     },
+     {
+      "t": 0,
+      "actor": "c1",
+      "pull_over": "right",
+      "dist": 7,
+      "dur": 2.4
+     },
+     {
+      "t": 0,
+      "actor": "c2",
+      "pull_over": "right",
+      "dist": 6,
+      "dur": 2.2
+     },
+     {
+      "t": 1.4,
+      "actor": "amb",
+      "path": [
+       [
+        -1.2,
+        56.5
+       ],
+       [
+        0,
+        52
+       ],
+       [
+        0,
+        -12
+       ]
+      ],
+      "dur": 4.6,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "amb",
+      "track": "solution",
+      "style": "warn"
+     }
+    ],
+    "alt": "طريق بمسار واحد لكل اتجاه، وسيارة إسعاف قادمة من الأمام خلف سيارة حمراء"
+   },
+   "q": "طريق بمسار واحد لكل اتجاه دون فاصل، وسيارة إسعاف بصفارتها قادمة من الأمام في الاتجاه المقابل، ماذا تفعل أنت والسيارة التي أمامك؟",
+   "options": [
+    "لا نفعل شيئا لأنها تسير في الاتجاه الآخر",
+    "نسرع لنعبر المكان قبل أن تصل إلينا",
+    "نتوقف في منتصف المسار ونشغل الأضواء العالية لتنبيهها",
+    "نتحرك إلى أقصى يمين مسارنا ونخفف أو نتوقف، فتمر في الوسط"
+   ],
+   "answer": 3,
+   "explain": "في الطريق بمسار واحد لكل اتجاه يتحرك الجميع إلى أقصى اليمين دون الخروج إلى الكتف، في الاتجاهين\nبذلك يفتح ممر في الوسط تمر منه مركبة الطوارئ",
+   "tip": "اتجاهين؟ الكل عاليمين والإسعاف بالنص",
+   "explain_fig": [
+    "fig-ev-two-way"
+   ],
+   "src": [
+    "S14",
+    "S28",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "ev-006",
+   "topic": "emergency-vehicles",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": 3,
+     "divided": true,
+     "median": {
+      "width": 4,
+      "palms": true
+     },
+     "len": 90
+    },
+    "labels": "solution",
+    "view": {
+     "zoom": 1.35,
+     "center": {
+      "x": 5,
+      "y": 45
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 3,
+       "y": 14
+      }
+     },
+     {
+      "id": "amb",
+      "type": "ambulance",
+      "pos": {
+       "dir": "up",
+       "lane": 3,
+       "y": -4
+      },
+      "label": "سيارة إسعاف"
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "color": "red",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 20
+      }
+     },
+     {
+      "id": "c2",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 44
+      }
+     },
+     {
+      "id": "c3",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "dir": "down",
+       "lane": 1,
+       "y": 80
+      }
+     }
+    ],
+    "intro": {
+     "len": 4.2,
+     "events": [
+      {
+       "t": 0,
+       "actor": "me",
+       "lane_change": "right",
+       "dist": 14,
+       "dur": 2.2
+      },
+      {
+       "t": 2.2,
+       "actor": "me",
+       "drive": 4,
+       "dur": 2.0,
+       "ease": "out"
+      },
+      {
+       "t": 0,
+       "actor": "c1",
+       "drive": 12,
+       "dur": 4.2,
+       "ease": "out"
+      },
+      {
+       "t": 0,
+       "actor": "c2",
+       "drive": 16,
+       "dur": 4.2,
+       "ease": "out"
+      },
+      {
+       "t": 0,
+       "actor": "c3",
+       "drive": 50,
+       "dur": 4.2
+      },
+      {
+       "t": 1.0,
+       "actor": "amb",
+       "drive": 66,
+       "dur": 3.2,
+       "ease": "in"
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "actor": "amb",
+      "drive": "end",
+      "dur": 1.5
+     },
+     {
+      "t": 0,
+      "actor": "c3",
+      "drive": "end",
+      "dur": 3
+     },
+     {
+      "t": 0.3,
+      "actor": "me",
+      "drive": 40,
+      "dur": 4.5,
+      "ease": "in"
+     },
+     {
+      "t": 0.3,
+      "actor": "c1",
+      "drive": 38,
+      "dur": 4.5,
+      "ease": "in"
+     },
+     {
+      "t": 0.3,
+      "actor": "c2",
+      "drive": 40,
+      "dur": 4.5,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "track": "solution",
+      "style": "ok"
+     },
+     {
+      "actor": "me",
+      "to": {
+       "dir": "up",
+       "lane": 3,
+       "y": 60
+      },
+      "style": "bad"
+     }
+    ],
+    "callouts": [
+     {
+      "text": "لا تلحق بها",
+      "at": {
+       "dir": "up",
+       "lane": 3,
+       "y": 62
+      },
+      "when": "solution",
+      "style": "bad"
+     }
+    ],
+    "alt": "سيارة إسعاف مرت في المسار الأيسر بعد أن انتقلت أنت إلى المسار الأوسط"
+   },
+   "q": "انتقلت يمينا ومرت سيارة الإسعاف، وأصبح المسار الأيسر خلفها خاليا، ما التصرف الصحيح الآن؟",
+   "options": [
+    "أدخل المسار الأيسر خلفها مباشرة وأستفيد من الطريق المفتوح",
+    "أطلق المنبه لأنبه السيارات التي أمامها",
+    "أتأكد من المرايا أنه لا تأتي مركبة طوارئ أخرى، ثم أتابع بشكل طبيعي دون أن ألحق بها",
+    "أتوقف تماما في مساري حتى تختفي عن نظري"
+   ],
+   "answer": 2,
+   "explain": "ممنوع أن تسير خلف مركبة الطوارئ لتستفيد من الطريق المفتوح، وشرطة دبي تعد ذلك مخالفة\nانظر في المرايا، فقد تأتي مركبة طوارئ ثانية، ثم تابع بهدوء",
+   "tip": "الإسعاف مش سيارة تسحبك وراها",
+   "explain_fig": [
+    "ev-highway-move-right"
+   ],
+   "src": [
+    "S12",
+    "S13",
+    "S16"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "ev-007",
+   "topic": "emergency-vehicles",
+   "level": 5,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "roundabout",
+    "params": {
+     "arms": 4,
+     "lanes": 1,
+     "ring": 1,
+     "island": "palms"
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "ring": "outer",
+       "angle": 145
+      }
+     },
+     {
+      "id": "amb",
+      "type": "ambulance",
+      "pos": {
+       "ring": "outer",
+       "angle": 240
+      },
+      "label": "سيارة إسعاف"
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "arm": "E",
+       "lane": 1,
+       "at": "stopline"
+      },
+      "brake": true
+     },
+     {
+      "id": "c2",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "arm": "N",
+       "lane": 1,
+       "at": 6
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "signal": "right"
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "route": "ring->E",
+      "kmh": 22
+     },
+     {
+      "t": 0.8,
+      "actor": "amb",
+      "route": "ring->N",
+      "kmh": 26
+     },
+     {
+      "t": 0,
+      "actor": "c2",
+      "brake": true
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "track": "solution",
+      "style": "ok"
+     },
+     {
+      "actor": "amb",
+      "track": "solution",
+      "style": "warn"
+     }
+    ],
+    "alt": "أنت داخل دوار بمسار واحد تريد المخرج الثالث، وسيارة إسعاف خلفك داخل الدوار"
+   },
+   "q": "أنت داخل الدوار متجه إلى المخرج الثالث، وسمعت صفارة سيارة إسعاف خلفك داخل الدوار، ماذا تفعل؟",
+   "options": [
+    "أتابع بهدوء وأخرج من أقرب مخرج، ثم أفسح لها إلى اليمين",
+    "أتوقف فورا داخل الدوار حتى تمر",
+    "أكمل إلى مخرجي كما خططت وأسرع قليلا حتى أبتعد عنها",
+    "أرجع بالخلف إلى المدخل الذي دخلت منه"
+   ],
+   "answer": 0,
+   "explain": "إذا كنت داخل الدوار ووصلت مركبة طوارئ فلا تتوقف داخله، بل تابع بهدوء واخرج من أقرب مخرج لتفسح لها الطريق\nوإذا كنت قبل الدوار فلا تدخله حتى تمر",
+   "tip": "جوا الدوار؟ أقرب طلعة وفضيلها الطريق",
+   "explain_fig": [
+    "ev-roundabout"
+   ],
+   "src": [
+    "S12",
+    "S14",
+    "S28"
+   ],
+   "confidence": "high",
+   "notes": "المخرج الأقرب هنا هو الأول (يمين)، وتغيير المخرج يحتاج إشارة يمين قبل الخروج"
+  },
+  {
+   "id": "sb-001",
+   "topic": "school-bus",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": 1,
+     "center": "broken",
+     "len": 56
+    },
+    "labels": "solution",
+    "view": {
+     "zoom": 1.25,
+     "center": {
+      "x": 0,
+      "y": 29
+     }
+    },
+    "actors": [
+     {
+      "id": "bus",
+      "type": "school-bus",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 30
+      },
+      "stop_arm": true,
+      "label": "حافلة مدرسية متوقفة"
+     },
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 10
+      }
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "dir": "down",
+       "lane": 1,
+       "y": 50
+      }
+     },
+     {
+      "id": "kid",
+      "type": "pedestrian",
+      "variant": "child",
+      "color": "red",
+      "pos": {
+       "side": "east",
+       "y": 38.5
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "stop_at": {
+       "behind": "bus",
+       "gap": 6
+      },
+      "dur": 2.6
+     },
+     {
+      "t": 0,
+      "actor": "c1",
+      "stop_at": {
+       "y": 46
+      },
+      "dur": 2.0
+     },
+     {
+      "t": 1.4,
+      "actor": "kid",
+      "to": {
+       "side": "west",
+       "y": 38.5
+      },
+      "dur": 4.2
+     },
+     {
+      "t": 6.0,
+      "actor": "bus",
+      "stop_arm": false
+     },
+     {
+      "t": 6.6,
+      "actor": "bus",
+      "drive": 45,
+      "dur": 4.5,
+      "ease": "in"
+     },
+     {
+      "t": 7.2,
+      "actor": "me",
+      "drive": 50,
+      "dur": 5.5,
+      "ease": "in"
+     },
+     {
+      "t": 6.8,
+      "actor": "c1",
+      "drive": 70,
+      "dur": 5,
+      "ease": "in"
+     }
+    ],
+    "callouts": [
+     {
+      "text": "5 أمتار على الأقل",
+      "at": {
+       "x": 5.2,
+       "y": 21.5
+      },
+      "when": "solution",
+      "style": "warn"
+     }
+    ],
+    "alt": "حافلة مدرسية متوقفة أمامك وذراع قف ممدودة، وطفل على الرصيف"
+   },
+   "q": "حافلة مدرسية أمامك توقفت ومدت ذراع قف وبدأت أضواؤها الحمراء تومض، ماذا تفعل؟",
+   "options": [
+    "أتجاوزها بسرعة من المسار المقابل قبل أن تصل السيارة الزرقاء",
+    "أتوقف تماما على بعد 5 أمتار على الأقل منها، وأنتظر حتى تنطوي الذراع وتنطفئ الأضواء",
+    "أخفف السرعة وأمر بجانبها ببطء مع إطلاق المنبه",
+    "أتوقف ملاصقا لها حتى لا تدخل سيارة بيننا"
+   ],
+   "answer": 1,
+   "explain": "ذراع قف في الحافلة المدرسية تلزمك بالتوقف التام على بعد 5 أمتار على الأقل\nلا تتحرك حتى يصل الطلاب إلى مكان آمن وتنطوي الذراع وتنطفئ الأضواء، ولا تتجاوز الحافلة أبدا",
+   "tip": "شفت ذراع قف؟ خمسة أمتار ووقفة كاملة",
+   "explain_fig": [
+    "ev-school-bus-single",
+    "fig-school-bus-stop"
+   ],
+   "src": [
+    "S17",
+    "S18",
+    "S19",
+    "S20"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "sb-002",
+   "topic": "school-bus",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": 2,
+     "center": "double",
+     "len": 64
+    },
+    "labels": "solution",
+    "view": {
+     "zoom": 1.2,
+     "center": {
+      "x": 0,
+      "y": 34
+     }
+    },
+    "actors": [
+     {
+      "id": "bus",
+      "type": "school-bus",
+      "pos": {
+       "dir": "down",
+       "lane": 1,
+       "y": 42
+      },
+      "stop_arm": true,
+      "label": "حافلة مدرسية متوقفة"
+     },
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 11
+      }
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 16
+      }
+     },
+     {
+      "id": "c2",
+      "type": "car",
+      "color": "red",
+      "pos": {
+       "dir": "down",
+       "lane": 1,
+       "y": 58
+      }
+     },
+     {
+      "id": "kid",
+      "type": "pedestrian",
+      "variant": "child",
+      "color": "teal",
+      "pos": {
+       "side": "west",
+       "y": 34
+      },
+      "visible": false
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "stop_at": {
+       "y": 26
+      },
+      "dur": 2.8
+     },
+     {
+      "t": 0,
+      "actor": "c1",
+      "stop_at": {
+       "y": 28
+      },
+      "dur": 2.6
+     },
+     {
+      "t": 0,
+      "actor": "c2",
+      "stop_at": {
+       "y": 56
+      },
+      "dur": 1.2
+     },
+     {
+      "t": 1.2,
+      "actor": "kid",
+      "visible": true
+     },
+     {
+      "t": 1.3,
+      "actor": "kid",
+      "to": {
+       "side": "east",
+       "y": 33.5
+      },
+      "dur": 5.5
+     },
+     {
+      "t": 7.2,
+      "actor": "bus",
+      "stop_arm": false
+     },
+     {
+      "t": 7.8,
+      "actor": "bus",
+      "drive": 60,
+      "dur": 5,
+      "ease": "in"
+     },
+     {
+      "t": 8.3,
+      "actor": "me",
+      "drive": 50,
+      "dur": 5,
+      "ease": "in"
+     },
+     {
+      "t": 8.3,
+      "actor": "c1",
+      "drive": 50,
+      "dur": 5,
+      "ease": "in"
+     },
+     {
+      "t": 8.4,
+      "actor": "c2",
+      "drive": 60,
+      "dur": 5,
+      "ease": "in"
+     }
+    ],
+    "callouts": [
+     {
+      "text": "الاتجاهان يتوقفان",
+      "at": {
+       "x": 4,
+       "y": 15
+      },
+      "when": "solution",
+      "style": "warn"
+     }
+    ],
+    "alt": "طريق بمسارين لكل اتجاه يفصلهما خط مزدوج مرسوم، وحافلة مدرسية متوقفة في الاتجاه المقابل وذراعها ممدودة"
+   },
+   "q": "حافلة مدرسية في الاتجاه المقابل توقفت ومدت ذراع قف، والطريق بمسارين لكل اتجاه يفصل بينهما خط متصل مزدوج مرسوم فقط، ماذا تفعل؟",
+   "options": [
+    "أتابع لأن الحافلة في الاتجاه الآخر والخط المتصل يفصل بيننا",
+    "أخفف فقط وأنتقل إلى المسار الأيمن البعيد عنها",
+    "أتوقف فقط إذا رأيت طالبا يعبر أمامي",
+    "أتوقف على بعد 5 أمتار على الأقل منها، لأن الخط المرسوم لا يجعل الطريق مقسما بفاصل"
+   ],
+   "answer": 3,
+   "explain": "الطريق المقسم هو الذي فيه فاصل حقيقي مثل جزيرة أو حاجز، والخط المرسوم لا يكفي\nلذلك يتوقف السائقون في الاتجاهين على بعد 5 أمتار على الأقل حتى تنطوي الذراع وتنطفئ الأضواء",
+   "tip": "خط مرسوم مش جزيرة، يعني الكل بيوقف",
+   "explain_fig": [
+    "ev-school-bus-single"
+   ],
+   "src": [
+    "S17",
+    "S18",
+    "S19"
+   ],
+   "confidence": "high",
+   "notes": "المصادر تفرق بين طريق فيه فاصل مادي (جزيرة أو حاجز) وطريق بلا فاصل، والخط المرسوم ليس فاصلا ماديا"
+  },
+  {
+   "id": "sb-003",
+   "topic": "school-bus",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": 2,
+     "divided": true,
+     "median": {
+      "width": 5,
+      "barrier": true,
+      "palms": true
+     },
+     "len": 64
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "bus",
+      "type": "school-bus",
+      "pos": {
+       "dir": "down",
+       "lane": 1,
+       "y": 38
+      },
+      "stop_arm": true,
+      "label": "حافلة مدرسية متوقفة"
+     },
+     {
+      "id": "d1",
+      "type": "car",
+      "color": "red",
+      "pos": {
+       "dir": "down",
+       "lane": 2,
+       "y": 57
+      }
+     },
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 10
+      }
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 20
+      }
+     },
+     {
+      "id": "kid",
+      "type": "pedestrian",
+      "variant": "child",
+      "color": "orange",
+      "pos": {
+       "side": "west",
+       "y": 39
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "d1",
+      "stop_at": {
+       "y": 53
+      },
+      "dur": 1.4
+     },
+     {
+      "t": 0,
+      "actor": "kid",
+      "to": {
+       "side": "west",
+       "y": 31
+      },
+      "dur": 4
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 70,
+      "kmh": 40
+     },
+     {
+      "t": 0,
+      "actor": "c1",
+      "drive": 60,
+      "kmh": 40
+     }
+    ],
+    "callouts": [
+     {
+      "text": "خلفها فقط يتوقف",
+      "actor": "d1",
+      "when": "solution",
+      "style": "warn"
+     }
+    ],
+    "alt": "طريق مقسم بجزيرة وحاجز، وحافلة مدرسية متوقفة في الاتجاه المقابل وذراعها ممدودة"
+   },
+   "q": "طريق مقسم بجزيرة وسطية وحاجز، وحافلة مدرسية في الاتجاه المقابل توقفت ومدت ذراع قف، ماذا تفعل؟",
+   "options": [
+    "أتوقف على بعد 5 أمتار على الأقل مثل السيارة التي خلفها",
+    "أتوقف في مساري حتى تتحرك الحافلة",
+    "أتابع بحذر وبسرعة مناسبة، فالتوقف واجب على المركبات التي خلفها فقط",
+    "أزيد سرعتي لأبتعد عن المكان قبل أن ينزل الطلاب"
+   ],
+   "answer": 2,
+   "explain": "في الطريق المقسم بفاصل تتوقف فقط المركبات التي تسير في اتجاه الحافلة وخلفها، في كل مساراتها\nأما الاتجاه المقابل خلف الجزيرة فيتابع بحذر",
+   "tip": "في جزيرة بالنص؟ اللي ورا الباص بس بيوقف",
+   "explain_fig": [
+    "ev-school-bus-dual"
+   ],
+   "src": [
+    "S17",
+    "S18",
+    "S19"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "sb-004",
+   "topic": "school-bus",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "tap",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": 2,
+     "divided": true,
+     "median": {
+      "width": 3,
+      "palms": false
+     },
+     "len": 64
+    },
+    "labels": "solution",
+    "view": {
+     "zoom": 1.3,
+     "center": {
+      "x": 4,
+      "y": 34
+     }
+    },
+    "actors": [
+     {
+      "id": "bus",
+      "type": "school-bus",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 42
+      },
+      "stop_arm": true,
+      "label": "حافلة مدرسية متوقفة"
+     },
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 12
+      }
+     },
+     {
+      "id": "kid",
+      "type": "pedestrian",
+      "variant": "child",
+      "color": "blue",
+      "pos": {
+       "side": "east",
+       "y": 44
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "stop_at": {
+       "y": 27
+      },
+      "dur": 2.6
+     },
+     {
+      "t": 1.0,
+      "actor": "kid",
+      "to": {
+       "side": "east",
+       "y": 52
+      },
+      "dur": 3
+     },
+     {
+      "t": 4.4,
+      "actor": "bus",
+      "stop_arm": false
+     },
+     {
+      "t": 5.0,
+      "actor": "bus",
+      "drive": 50,
+      "dur": 4.5,
+      "ease": "in"
+     },
+     {
+      "t": 5.6,
+      "actor": "me",
+      "drive": 50,
+      "dur": 5,
+      "ease": "in"
+     }
+    ],
+    "callouts": [
+     {
+      "text": "5 أمتار على الأقل",
+      "at": {
+       "x": 5.5,
+       "y": 33
+      },
+      "when": "solution",
+      "style": "warn"
+     }
+    ],
+    "alt": "طريق بمسارين في اتجاهك، وحافلة مدرسية متوقفة في المسار الأيمن وذراعها ممدودة، وأنت في المسار الأيسر"
+   },
+   "hotspots": [
+    {
+     "id": "back5",
+     "rect": [
+      1.5,
+      21,
+      5,
+      31.6
+     ],
+     "label": "قبل الحافلة بـ 5 أمتار أو أكثر"
+    },
+    {
+     "id": "close",
+     "rect": [
+      1.5,
+      31.8,
+      5,
+      36.6
+     ],
+     "label": "قريبا جدا منها"
+    },
+    {
+     "id": "beside",
+     "rect": [
+      1.5,
+      36.8,
+      5,
+      47.2
+     ],
+     "label": "بجانبها"
+    },
+    {
+     "id": "past",
+     "rect": [
+      1.5,
+      48,
+      5,
+      58
+     ],
+     "label": "بعد تجاوزها"
+    }
+   ],
+   "q": "أنت في المسار الأيسر، والحافلة المدرسية في المسار الأيمن مدت ذراع قف، أين تتوقف؟ انقر على المكان الصحيح",
+   "answer": "back5",
+   "explain": "ذراع قف تلزم كل المركبات التي خلف الحافلة بالتوقف، في كل المسارات وليس في مسارها فقط\nتوقف في مسارك على بعد 5 أمتار على الأقل خلفها، ولا تتجاوزها",
+   "tip": "مسارك فاضي؟ برضو بتوقف ورا الباص",
+   "explain_fig": [
+    "ev-school-bus-dual"
+   ],
+   "src": [
+    "S17",
+    "S18",
+    "S19"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "sb-005",
+   "topic": "school-bus",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": 1,
+     "center": "broken",
+     "len": 52
+    },
+    "labels": "solution",
+    "view": {
+     "zoom": 1.3,
+     "center": {
+      "x": 0,
+      "y": 28
+     }
+    },
+    "actors": [
+     {
+      "id": "bus",
+      "type": "school-bus",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 28
+      },
+      "stop_arm": true,
+      "label": "الذراع ما زالت ممدودة"
+     },
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 13.5
+      },
+      "brake": true
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "color": "grey",
+      "pos": {
+       "dir": "down",
+       "lane": 1,
+       "y": 45
+      },
+      "brake": true
+     },
+     {
+      "id": "kid",
+      "type": "pedestrian",
+      "variant": "child",
+      "color": "red",
+      "pos": {
+       "side": "east",
+       "y": 36
+      }
+     }
+    ],
+    "intro": {
+     "len": 4.2,
+     "events": [
+      {
+       "t": 0.2,
+       "actor": "kid",
+       "to": {
+        "side": "west",
+        "y": 36
+       },
+       "dur": 3.6
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 1.2,
+      "actor": "bus",
+      "stop_arm": false
+     },
+     {
+      "t": 1.8,
+      "actor": "bus",
+      "drive": 45,
+      "dur": 4.5,
+      "ease": "in"
+     },
+     {
+      "t": 2.3,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 2.4,
+      "actor": "me",
+      "drive": 45,
+      "dur": 5.5,
+      "ease": "in"
+     },
+     {
+      "t": 2.0,
+      "actor": "c1",
+      "brake": false
+     },
+     {
+      "t": 2.1,
+      "actor": "c1",
+      "drive": 60,
+      "dur": 5,
+      "ease": "in"
+     }
+    ],
+    "callouts": [
+     {
+      "text": "انتظر إغلاق الذراع",
+      "at": {
+       "x": -4,
+       "y": 12
+      },
+      "when": "solution",
+      "style": "ok"
+     }
+    ],
+    "alt": "أنت متوقف خلف حافلة مدرسية، والطالب وصل إلى الرصيف والذراع ما زالت ممدودة"
+   },
+   "q": "توقفت خلف حافلة مدرسية، والطالب عبر ووصل إلى الرصيف، لكن الذراع ما زالت ممدودة والأضواء تومض، ماذا تفعل؟",
+   "options": [
+    "أنتظر حتى تنطوي الذراع وتنطفئ الأضواء، ثم أتابع بحذر",
+    "أتجاوز الحافلة الآن لأن الطالب وصل إلى الرصيف",
+    "أطلق المنبه ليغلق السائق الذراع بسرعة",
+    "أتقدم ببطء حتى أصبح ملاصقا للحافلة لأستعد للانطلاق"
+   ],
+   "answer": 0,
+   "explain": "تبقى متوقفا حتى يصل الطلاب إلى مكان آمن وتنطوي الذراع وتنطفئ الأضواء الوامضة، وليس عند وصول الطالب فقط\nقد ينزل طالب آخر أو يعود أحدهم، والسائق وحده يعرف متى انتهى النزول",
+   "tip": "الذراع بتقرر مش إنت",
+   "explain_fig": [
+    "fig-school-bus-stop"
+   ],
+   "src": [
+    "S17",
+    "S18"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "pd-001",
+   "topic": "pedestrians",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": 1,
+     "zebra": {
+      "y": 34
+     },
+     "center": "solid",
+     "len": 50
+    },
+    "labels": "solution",
+    "view": {
+     "zoom": 1.3,
+     "center": {
+      "x": 0,
+      "y": 28
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 12
+      }
+     },
+     {
+      "id": "ped",
+      "type": "pedestrian",
+      "variant": "woman",
+      "color": "purple",
+      "pos": {
+       "x": -1.6,
+       "y": 34,
+       "heading": 270
+      },
+      "label": "ما زالت تعبر"
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "dir": "down",
+       "lane": 1,
+       "y": 41
+      },
+      "brake": true
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "stop_at": "crossing",
+      "dur": 2.4
+     },
+     {
+      "t": 0,
+      "actor": "ped",
+      "to": {
+       "crossing": "zebra",
+       "side": "west"
+      },
+      "dur": 3.2
+     },
+     {
+      "t": 3.8,
+      "actor": "me",
+      "drive": 45,
+      "dur": 4.5,
+      "ease": "in"
+     },
+     {
+      "t": 3.6,
+      "actor": "c1",
+      "brake": false
+     },
+     {
+      "t": 3.7,
+      "actor": "c1",
+      "drive": 50,
+      "dur": 4.5,
+      "ease": "in"
+     }
+    ],
+    "alt": "ممر مشاة وامرأة تعبره وقد تجاوزت مسارك إلى المسار المقابل"
+   },
+   "q": "امرأة تعبر ممر المشاة أمامك، وقد تجاوزت مسارك وأصبحت في المسار المقابل، ماذا تفعل؟",
+   "options": [
+    "أتابع لأنها لم تعد في مساري",
+    "أتوقف قبل الممر وأنتظر حتى تصل إلى الرصيف",
+    "أمر ببطء خلفها دون أن أتوقف",
+    "أطلق المنبه لتسرع في العبور"
+   ],
+   "answer": 1,
+   "explain": "القانون يلزمك بالتوقف حتى يكمل المشاة الذين بدؤوا العبور عبورهم، وليس حتى يخرجوا من مسارك فقط\nانتظر حتى تصل إلى الرصيف ثم تابع",
+   "tip": "الممر إلها لحد ما توصل الرصيف",
+   "explain_fig": [
+    "mk-zebra"
+   ],
+   "src": [
+    "S1",
+    "S2",
+    "S3",
+    "S26"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "pd-002",
+   "topic": "pedestrians",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "tap",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": 2,
+     "divided": true,
+     "median": {
+      "width": 3,
+      "palms": false
+     },
+     "zebra": {
+      "y": 44
+     },
+     "len": 64
+    },
+    "labels": "never",
+    "view": {
+     "zoom": 1.3,
+     "center": {
+      "x": 4,
+      "y": 38
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 8
+      }
+     },
+     {
+      "id": "bus",
+      "type": "bus",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 34.6
+      },
+      "brake": true,
+      "label": "حافلة متوقفة قبل الممر"
+     },
+     {
+      "id": "ped",
+      "type": "pedestrian",
+      "color": "green",
+      "pos": {
+       "crossing": "zebra",
+       "side": "east"
+      },
+      "label": "يخرج من أمام الحافلة"
+     },
+     {
+      "id": "c2",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 50
+      }
+     }
+    ],
+    "intro": {
+     "len": 3.4,
+     "events": [
+      {
+       "t": 0,
+       "actor": "me",
+       "drive": 12,
+       "dur": 3.4
+      },
+      {
+       "t": 0,
+       "actor": "c2",
+       "drive": 10,
+       "dur": 3.4
+      },
+      {
+       "t": 0.4,
+       "actor": "ped",
+       "to": {
+        "x": 5,
+        "y": 44
+       },
+       "dur": 3.0
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "labels": true
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "stop_at": "crossing",
+      "dur": 2.2
+     },
+     {
+      "t": 0,
+      "actor": "c2",
+      "drive": "end",
+      "dur": 2
+     },
+     {
+      "t": 0.3,
+      "actor": "ped",
+      "cross": "zebra",
+      "dur": 4.2
+     },
+     {
+      "t": 5.0,
+      "actor": "me",
+      "drive": 45,
+      "dur": 4.5,
+      "ease": "in"
+     },
+     {
+      "t": 5.4,
+      "actor": "bus",
+      "brake": false
+     },
+     {
+      "t": 5.5,
+      "actor": "bus",
+      "drive": 40,
+      "dur": 5,
+      "ease": "in"
+     }
+    ],
+    "alt": "طريق بمسارين، وحافلة متوقفة في المسار الأيمن قبل ممر المشاة، وأنت تقترب في المسار الأيسر"
+   },
+   "hotspots": [
+    {
+     "id": "ped",
+     "actor": "ped",
+     "r": 2.5
+    },
+    {
+     "id": "bus",
+     "actor": "bus"
+    },
+    {
+     "id": "c2",
+     "actor": "c2"
+    }
+   ],
+   "q": "تقترب في المسار الأيسر وحافلة متوقفة في المسار الأيمن قبل ممر المشاة، أين الخطر الذي يجب أن تتوقف له؟ انقر عليه",
+   "answer": "ped",
+   "explain": "المركبة المتوقفة قبل ممر المشاة قد تخفي عنك شخصا يعبر من أمامها، ولذلك ممنوع التجاوز قرب الممر\nتوقف قبل الممر وانتظر حتى يكمل العبور",
+   "tip": "حدا وقف قبل الممر؟ في سبب، وقف معه",
+   "explain_fig": [
+    "mk-zebra"
+   ],
+   "src": [
+    "S1",
+    "S3",
+    "S26"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "pd-003",
+   "topic": "pedestrians",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "crossroads",
+    "params": {
+     "lanes": 1,
+     "control": "lights",
+     "crossings": [
+      "E"
+     ],
+     "lights": {
+      "S": "green",
+      "N": "green",
+      "E": "red",
+      "W": "red"
+     }
+    },
+    "labels": "solution",
+    "view": {
+     "zoom": 1.8,
+     "center": {
+      "x": 6,
+      "y": -5
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": 3
+      },
+      "signal": "right"
+     },
+     {
+      "id": "p1",
+      "type": "pedestrian",
+      "color": "orange",
+      "pos": {
+       "x": 9.6,
+       "y": -2.6,
+       "heading": 0
+      },
+      "label": "يعبران الشارع"
+     },
+     {
+      "id": "p2",
+      "type": "pedestrian",
+      "variant": "woman",
+      "color": "blue",
+      "pos": {
+       "x": 8.7,
+       "y": -0.6,
+       "heading": 0
+      }
+     },
+     {
+      "id": "e1",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "arm": "E",
+       "lane": 1,
+       "at": "stopline"
+      },
+      "brake": true
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "route": "S1->E",
+      "until": 3,
+      "kmh": 14
+     },
+     {
+      "t": 0.7,
+      "actor": "me",
+      "stop_at": "crossing",
+      "dur": 2.0
+     },
+     {
+      "t": 0,
+      "actor": "p1",
+      "to": {
+       "crossing": "E",
+       "side": "north"
+      },
+      "dur": 4.5
+     },
+     {
+      "t": 0,
+      "actor": "p2",
+      "to": {
+       "x": 8.0,
+       "y": 5.4
+      },
+      "dur": 4.0
+     },
+     {
+      "t": 5.2,
+      "actor": "me",
+      "route": "S1->E",
+      "kmh": 20,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "track": "solution",
+      "style": "ok"
+     }
+    ],
+    "callouts": [
+     {
+      "text": "المشاة أولا",
+      "at": {
+       "x": 14,
+       "y": -9
+      },
+      "when": "solution",
+      "style": "ok"
+     }
+    ],
+    "alt": "تقاطع بإشارات، وأنت تريد الانعطاف يمينا وإشارتك خضراء، ومشاة يعبرون الشارع الذي ستدخله"
+   },
+   "q": "إشارتك خضراء وتريد الانعطاف يمينا، ومشاة يعبرون الشارع الذي ستدخله، ماذا تفعل؟",
+   "options": [
+    "أنعطف قبلهم بسرعة لأن إشارتي خضراء",
+    "أنعطف ببطء وأمر بينهم بحذر",
+    "أطلق المنبه لينتبهوا ثم أنعطف",
+    "أبدأ الانعطاف ببطء وأتوقف قبل الممر حتى يعبروا"
+   ],
+   "answer": 3,
+   "explain": "عند الانعطاف إلى طريق آخر خفف السرعة وتوقف للمشاة الذين يعبرونه، حتى لو كانت إشارتك خضراء\nالإشارة الخضراء تسمح لك بالحركة لكنها لا تعطيك أولوية على المشاة",
+   "tip": "بتلف؟ المشاة قبلك دايما",
+   "explain_fig": [
+    "fig-turn-pedestrians"
+   ],
+   "src": [
+    "S3",
+    "S4",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "pd-004",
+   "topic": "pedestrians",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "tap",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": 1,
+     "center": "broken",
+     "parked": {
+      "up": [
+       18,
+       24.5,
+       38,
+       44.5
+      ]
+     },
+     "len": 52
+    },
+    "labels": "never",
+    "view": {
+     "zoom": 1.4,
+     "center": {
+      "x": 0,
+      "y": 30
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 4
+      }
+     },
+     {
+      "id": "kid",
+      "type": "pedestrian",
+      "variant": "child",
+      "color": "yellow",
+      "pos": {
+       "side": "west",
+       "y": 33,
+       "heading": 90
+      },
+      "label": "طفل قد يركض إلى أمه"
+     },
+     {
+      "id": "mum",
+      "type": "pedestrian",
+      "variant": "woman",
+      "color": "purple",
+      "pos": {
+       "side": "east",
+       "y": 31.5
+      },
+      "label": "أمه على الجهة الأخرى"
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "dir": "down",
+       "lane": 1,
+       "y": 58
+      }
+     }
+    ],
+    "intro": {
+     "len": 3.0,
+     "events": [
+      {
+       "t": 0,
+       "actor": "me",
+       "drive": 12,
+       "dur": 3
+      },
+      {
+       "t": 0,
+       "actor": "c1",
+       "drive": 12,
+       "dur": 3
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "stop_at": {
+       "y": 24
+      },
+      "dur": 2.2
+     },
+     {
+      "t": 0,
+      "actor": "c1",
+      "stop_at": {
+       "y": 42
+      },
+      "dur": 1.8
+     },
+     {
+      "t": 0.5,
+      "actor": "kid",
+      "to": {
+       "side": "east",
+       "y": 33
+      },
+      "kmh": 7
+     },
+     {
+      "t": 4.8,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 4.9,
+      "actor": "me",
+      "drive": 40,
+      "dur": 4.5,
+      "ease": "in"
+     },
+     {
+      "t": 4.6,
+      "actor": "c1",
+      "drive": 50,
+      "dur": 4.5,
+      "ease": "in"
+     }
+    ],
+    "alt": "شارع سكني فيه سيارات متوقفة، وطفل على الرصيف المقابل وأمه على الرصيف الذي بجانبك"
+   },
+   "hotspots": [
+    {
+     "id": "kid",
+     "actor": "kid",
+     "r": 2.5
+    },
+    {
+     "id": "c1",
+     "actor": "c1"
+    },
+    {
+     "id": "parked",
+     "at": {
+      "dir": "up",
+      "lane": "parking",
+      "y": 44.5
+     },
+     "r": 3
+    }
+   ],
+   "q": "تسير في شارع سكني، أين الخطر الذي يجب أن تستعد له أكثر من غيره؟ انقر عليه",
+   "answer": "kid",
+   "explain": "الطفل على الرصيف المقابل وأمه على الجهة الأخرى، وقد يركض عبر الطريق إليها دون أن ينظر\nخفف السرعة واستعد للتوقف عندما ترى أطفالا قرب الطريق",
+   "tip": "ولد وأهله بالجهة التانية؟ أكيد رح يقطع",
+   "src": [
+    "S5",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "pd-005",
+   "topic": "pedestrians",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "crossroads",
+    "params": {
+     "lanes": 2,
+     "divided": true,
+     "control": "lights",
+     "crossings": [
+      "S"
+     ],
+     "lights": {
+      "S": "red",
+      "N": "red",
+      "E": "green",
+      "W": "green"
+     }
+    },
+    "labels": "solution",
+    "view": {
+     "zoom": 2.2,
+     "center": {
+      "x": 1,
+      "y": -15
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 2,
+       "at": "stopline"
+      }
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "color": "red",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": "stopline"
+      }
+     },
+     {
+      "id": "old",
+      "type": "pedestrian",
+      "color": "teal",
+      "pos": {
+       "x": 6.8,
+       "y": -13.6,
+       "heading": 270
+      },
+      "label": "رجل كبير في السن"
+     }
+    ],
+    "intro": {
+     "len": 4.0,
+     "events": [
+      {
+       "t": 0,
+       "actor": "old",
+       "to": {
+        "x": 3.2,
+        "y": -13.6
+       },
+       "dur": 4.0
+      },
+      {
+       "t": 1.6,
+       "lights": {
+        "E": "amber",
+        "W": "amber"
+       }
+      },
+      {
+       "t": 3.0,
+       "lights": {
+        "E": "red",
+        "W": "red"
+       }
+      },
+      {
+       "t": 3.6,
+       "lights": {
+        "S": "green",
+        "N": "green"
+       }
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "c1",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "old",
+      "to": {
+       "crossing": "S",
+       "side": "west"
+      },
+      "dur": 9.0
+     },
+     {
+      "t": 9.0,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 9.1,
+      "actor": "me",
+      "route": "S2->N",
+      "kmh": 22,
+      "ease": "in"
+     },
+     {
+      "t": 9.0,
+      "actor": "c1",
+      "brake": false
+     },
+     {
+      "t": 9.2,
+      "actor": "c1",
+      "route": "S1->N",
+      "kmh": 22,
+      "ease": "in"
+     }
+    ],
+    "alt": "أنت عند إشارة أصبحت خضراء، ورجل كبير في السن ما زال يعبر ممر المشاة أمامك ببطء"
+   },
+   "q": "أصبحت إشارتك خضراء، لكن رجلا كبيرا في السن ما زال يعبر الممر أمامك ببطء، ماذا تفعل؟",
+   "options": [
+    "أتحرك لأن الإشارة أصبحت خضراء لي",
+    "أطلق المنبه ليسرع",
+    "أنتظر بصبر حتى يصل إلى الرصيف، ثم أتحرك",
+    "ألتف من خلفه بعد أن يتجاوز مساري"
+   ],
+   "answer": 2,
+   "explain": "المشاة الذين بدؤوا العبور يكملون عبورهم حتى لو تغيرت الإشارة، وعليك أن تنتظر حتى يصلوا إلى الرصيف\nكبار السن أبطأ وقد لا يرون أو يسمعون جيدا، فأعطهم وقتهم ولا تستعجلهم",
+   "tip": "الأخضر ما بيعني امشي فوق حدا",
+   "explain_fig": [
+    "mk-zebra"
+   ],
+   "src": [
+    "S1",
+    "S2",
+    "S3",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "pd-006",
+   "topic": "vulnerable",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": 1,
+     "center": "broken",
+     "len": 64
+    },
+    "labels": "solution",
+    "view": {
+     "zoom": 1.3,
+     "center": {
+      "x": 0,
+      "y": 34
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 14
+      }
+     },
+     {
+      "id": "bike",
+      "type": "bicycle",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 23,
+       "shift": 1.0
+      },
+      "label": "دراجة هوائية"
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "color": "red",
+      "pos": {
+       "dir": "down",
+       "lane": 1,
+       "y": 49
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "bike",
+      "drive": 40,
+      "kmh": 15
+     },
+     {
+      "t": 0,
+      "actor": "c1",
+      "drive": 60,
+      "dur": 4
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 8,
+      "dur": 3.0,
+      "ease": "out"
+     },
+     {
+      "t": 3.0,
+      "actor": "me",
+      "path": [
+       [
+        0.9,
+        27
+       ],
+       [
+        0.3,
+        32
+       ],
+       [
+        0.3,
+        50
+       ],
+       [
+        0.9,
+        56
+       ],
+       [
+        1.75,
+        63
+       ],
+       [
+        1.75,
+        101
+       ]
+      ],
+      "dur": 6.4
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "track": "solution",
+      "from_t": 3.0,
+      "style": "ok"
+     }
+    ],
+    "callouts": [
+     {
+      "text": "متر واحد على الأقل",
+      "at": {
+       "x": -5,
+       "y": 21
+      },
+      "when": "solution",
+      "style": "ok"
+     }
+    ],
+    "alt": "طريق بمسار واحد لكل اتجاه، ودراجة هوائية أمامك على يمين المسار، وسيارة قادمة من الاتجاه المقابل"
+   },
+   "q": "دراجة هوائية أمامك على يمين المسار، وسيارة تقترب من الاتجاه المقابل، ما التصرف الصحيح؟",
+   "options": [
+    "أبقى خلفها حتى تمر السيارة المقابلة، ثم أتجاوزها تاركا مترا واحدا على الأقل بيني وبينها",
+    "أتجاوزها الآن بسرعة قبل أن تصل السيارة المقابلة",
+    "أتجاوزها داخل مساري دون أن أبتعد عنها لأن المساحة تكفي",
+    "أطلق المنبه لتخرج من الطريق"
+   ],
+   "answer": 0,
+   "explain": "لا تتجاوز الدراجة إلا إذا استطعت الابتعاد عنها يسارا بأمان تاركا مترا واحدا على الأقل\nإذا كانت هناك سيارة مقابلة أو لم تكفي المساحة فابق خلفها حتى يصبح التجاوز آمنا",
+   "tip": "الدراجة بدها متر، والمتر بده طريق فاضي",
+   "explain_fig": [
+    "fig-bike-gap"
+   ],
+   "src": [
+    "S5",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": "كتيب هيئة الطرق: متر واحد على الأقل، ودليل القيادة الآمنة بدبي يذكر مترا ونصف، والمرحلة 5 تدقق هذا التعارض"
+  },
+  {
+   "id": "pd-007",
+   "topic": "vulnerable",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "tap",
+   "scene": {
+    "template": "road",
+    "params": {
+     "lanes": 2,
+     "divided": true,
+     "median": {
+      "width": 3,
+      "palms": true
+     },
+     "len": 64
+    },
+    "labels": "never",
+    "view": {
+     "zoom": 1.4,
+     "center": {
+      "x": 4,
+      "y": 32
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 30
+      },
+      "signal": "right"
+     },
+     {
+      "id": "moto",
+      "type": "motorcycle",
+      "variant": "delivery",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 26.5
+      },
+      "label": "دراجة نارية في النقطة العمياء"
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "dir": "up",
+       "lane": 1,
+       "y": 52
+      }
+     },
+     {
+      "id": "c2",
+      "type": "car",
+      "color": "grey",
+      "pos": {
+       "dir": "up",
+       "lane": 2,
+       "y": 14
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "labels": true
+     },
+     {
+      "t": 0,
+      "actor": "moto",
+      "drive": 50,
+      "dur": 3
+     },
+     {
+      "t": 0,
+      "actor": "c1",
+      "drive": 60,
+      "dur": 5.5
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 10,
+      "dur": 2.2
+     },
+     {
+      "t": 0,
+      "actor": "c2",
+      "drive": 26,
+      "dur": 5.5
+     },
+     {
+      "t": 2.2,
+      "actor": "me",
+      "lane_change": "right",
+      "dist": 18,
+      "dur": 2.6
+     }
+    ],
+    "alt": "طريق بمسارين في اتجاهك، وأنت في المسار الأيسر تريد الانتقال إلى اليمين، ودراجة نارية خلفك قليلا على اليمين"
+   },
+   "hotspots": [
+    {
+     "id": "moto",
+     "actor": "moto",
+     "r": 2.5
+    },
+    {
+     "id": "c1",
+     "actor": "c1"
+    },
+    {
+     "id": "c2",
+     "actor": "c2"
+    }
+   ],
+   "q": "شغلت إشارة اليمين لتنتقل إلى المسار الأيمن، ما الذي يمنعك من الانتقال الآن؟ انقر عليه",
+   "answer": "moto",
+   "explain": "الدراجة النارية صغيرة وقد تختفي في النقطة العمياء فلا تراها في المرآة\nقبل تغيير المسار انظر في المرآة ثم التفت برأسك، وانتظر حتى تمر",
+   "tip": "مراية، إشارة، ولفتة راس",
+   "explain_fig": [
+    "fig-blind-spots",
+    "fig-lane-change"
+   ],
+   "src": [
+    "S5",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "pd-008",
+   "topic": "vulnerable",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "tjunction",
+    "params": {
+     "side": "E",
+     "lanes": 1,
+     "control": "giveway"
+    },
+    "labels": "solution",
+    "view": {
+     "zoom": 1.5,
+     "center": {
+      "x": 2,
+      "y": -6
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": 14
+      },
+      "signal": "right"
+     },
+     {
+      "id": "bike",
+      "type": "bicycle",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": 6,
+       "shift": 1.0
+      },
+      "label": "يتابع مستقيما"
+     },
+     {
+      "id": "n1",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "arm": "N",
+       "lane": 1,
+       "at": 3
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "bike",
+      "path": [
+       [
+        2.75,
+        24
+       ]
+      ],
+      "kmh": 18
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 9,
+      "dur": 3.2,
+      "ease": "out"
+     },
+     {
+      "t": 0,
+      "actor": "n1",
+      "route": "N1->S",
+      "kmh": 30
+     },
+     {
+      "t": 5.4,
+      "actor": "me",
+      "route": "S1->E",
+      "kmh": 16,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "bike",
+      "track": "solution",
+      "style": "warn"
+     },
+     {
+      "actor": "me",
+      "track": "solution",
+      "style": "ok"
+     }
+    ],
+    "alt": "أنت على الطريق الرئيسي تريد الانعطاف يمينا إلى شارع جانبي، ودراجة هوائية أمامك على يمين المسار"
+   },
+   "q": "تريد الانعطاف يمينا إلى الشارع الجانبي، وراكب دراجة هوائية يسير أمامك على يمين المسار ويتابع مستقيما، ماذا تفعل؟",
+   "options": [
+    "أتجاوزه بسرعة ثم أنعطف أمامه",
+    "أبقى خلفه وأخفف، وأنظر في المرآة وعلى يميني، ثم أنعطف بعد أن يعبر مدخل الشارع",
+    "أنعطف بجانبه لأن الدراجة تسير على طرف الطريق",
+    "أطلق المنبه ليتوقف حتى أنعطف"
+   ],
+   "answer": 1,
+   "explain": "الانعطاف أمام الدراجة يقطع طريقها، وهي صغيرة وراكبها بلا حماية\nابق خلفها وانظر في المرآة والنقطة العمياء، وانعطف بعد أن تعبر المدخل",
+   "tip": "بتلف يمين؟ الدراجة اللي عاليمين قبلك",
+   "explain_fig": [
+    "fig-blind-spots"
+   ],
+   "src": [
+    "S5",
+    "S6"
+   ],
+   "confidence": "medium",
+   "notes": ""
+  }
+ ]
+}
