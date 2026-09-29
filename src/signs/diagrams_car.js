@@ -118,10 +118,10 @@
     var d = M([[cx - r, cy + r * 0.05], [cx - r * 0.3, cy + r * 0.7], [cx + r, cy - r * 0.65]]), w = o.sw || r * 0.5;
     return (o.halo === false ? '' : sk(d, C.pill, w + 1.8, { opacity: 0.75 })) + sk(d, C.ok, w);
   }
-  // round badge: dark disc, coloured ring, check or X
+  // round badge: tinted dark disc (no coloured ring, so it never looks like a sign) with a check or an X
   function badge(ok, cx, cy, r) {
-    return circ(cx, cy, r, C.pill, { stroke: ok ? C.ok : C.red, 'stroke-width': f(r * 0.16) }) +
-      (ok ? checkMark(cx, cy + r * 0.02, r * 0.5, { halo: false, sw: r * 0.24 }) : xMark(cx, cy, r * 0.38, { halo: false, sw: r * 0.24 }));
+    return circ(cx, cy, r, ok ? '#1C3A2C' : '#45202A', { stroke: C.pill, 'stroke-width': f(r * 0.14), 'stroke-opacity': 0.6 }) +
+      (ok ? checkMark(cx, cy + r * 0.02, r * 0.52, { halo: false, sw: r * 0.26 }) : xMark(cx, cy, r * 0.4, { halo: false, sw: r * 0.26 }));
   }
   function tile(x, y, w, h, o) {
     o = o || {};
@@ -153,7 +153,7 @@
     head: 'M93,-18.3L98.4,-17.8C99.2,-16.6 99.4,-15.6 99.4,-14.6L94.6,-15C93.4,-15.6 92.8,-16.8 93,-18.3Z',
     tail: 'M1.2,-17.4C1.6,-18.4 2.6,-19 4.2,-19.3L5.8,-19.4L6,-15.8L1.1,-15.2Z',
     wheels: [[21, -9], [80, -9]], wr: 9,
-    lamp: [98.6, -16.2], fog: [96.6, -9.2], tailPt: [1.6, -17]
+    lamp: [98.6, -16.2], fog: [96.6, -9.2]
   };
   function wheelSide(cx, cy, r, rim) {
     return circ(cx, cy, r, C.tyre) + circ(cx, cy, r * 0.62, rim || C.rim) + circ(cx, cy, r * 0.42, C.hub) +
@@ -223,7 +223,8 @@
       sk(M([[cx + h * 0.075, top + h * 0.6], [cx + h * 0.09, y - h * 0.03]]), fill, h * 0.1);
   }
 
-  // car seat, side view facing RIGHT; origin = rear bottom of the cushion. o: restraint:false, back (backrest top, local y)
+  // car seat, side view facing RIGHT; origin = rear bottom of the cushion (1 unit = the seat-belt figure's scale).
+  // o.restraint: false hides the head restraint
   var SEAT = '#3A4A63', SEAT_HI = '#50627F';
   function seatSide(x, y, s, o) {
     o = o || {};
@@ -289,25 +290,25 @@
   }
 
   // ------------------------------------------------------------------ shared scene parts
-  // night side scene: sky, far desert, road band (y 76..104), near verge
+  // night side scene: sky, low dunes, road band (y 64..100), near verge
   function nightRoad() {
     var s = panel(C.night);
-    [[12, 12, 0.6], [34, 7, 0.5], [57, 16, 0.7], [83, 9, 0.5], [104, 24, 0.6], [22, 34, 0.5], [70, 40, 0.4], [150, 46, 0.5],
-      [44, 52, 0.4], [96, 50, 0.4]].forEach(function (p) { s += circ(p[0], p[1], p[2], C.ink, { opacity: 0.55 }); });
-    s += path('M0,62Q22,56 44,60T88,59T132,58T160,60L160,73L0,73Z', '#0F1520');
-    s += rect(0, 72, 160, 32, 0, '#1C2027') + line(0, 72.4, 160, 72.4, C.kerb, 0.7, { opacity: 0.25 });
-    s += band(104, 120, '#0D1118') + line(0, 104, 160, 104, C.kerb, 0.8, { opacity: 0.35 });
+    [[12, 12, 0.6], [34, 7, 0.5], [57, 16, 0.7], [83, 9, 0.5], [104, 24, 0.6], [22, 34, 0.5], [70, 38, 0.4], [150, 42, 0.5],
+      [44, 44, 0.4], [96, 44, 0.4]].forEach(function (p) { s += circ(p[0], p[1], p[2], C.ink, { opacity: 0.55 }); });
+    s += path('M0,54Q22,48 44,52T88,51T132,50T160,52L160,65L0,65Z', '#0F1520');
+    s += rect(0, 64, 160, 36, 0, '#1C2027') + line(0, 64.4, 160, 64.4, C.kerb, 0.7, { opacity: 0.25 });
+    s += band(100, 120, '#0D1118') + line(0, 100, 160, 100, C.kerb, 0.8, { opacity: 0.35 });
     return s;
   }
   // light as stacked translucent polygons (no gradients): [[points], opacity]
   function glow(layers, col) {
     return layers.map(function (l) { return path(M(l[0]) + 'Z', col || C.beam, { opacity: l[1] }); }).join('');
   }
-  // roadside reflector post on the near verge; lit posts glow
+  // roadside reflector post standing on the near verge (base y 100); lit posts glow
   function post(x, lit) {
-    return rect(x - 0.8, 95.5, 1.6, 8.8, 0.4, lit ? '#B8BEC8' : '#343A44') +
-      (lit ? circ(x, 97.2, 3.2, C.amber, { opacity: 0.3 }) : '') +
-      rect(x - 1.1, 96, 2.2, 2.6, 0.5, lit ? C.amber : '#4A4234');
+    return rect(x - 0.8, 91.5, 1.6, 8.8, 0.4, lit ? '#B8BEC8' : '#343A44') +
+      (lit ? circ(x, 93.2, 3.2, C.amber, { opacity: 0.3 }) : '') +
+      rect(x - 1.1, 92, 2.2, 2.6, 0.5, lit ? C.amber : '#4A4234');
   }
   function roadDashes(y, x0, x1, dash, gap, col, sw, o) {
     var s = '', x;
@@ -342,36 +343,36 @@
 
   // ================================================================== 2 and 3. low and high beam
   function beamScene(high, lab) {
-    var s = nightRoad(), x0 = 4, y0 = 100, len = 60;
+    var s = nightRoad(), x0 = 3, y0 = 97, len = 66;
     var L = carPt(x0, y0, len, CAR.lamp), lx = L[0], ly = L[1];
     // how far the light reaches along the road
-    var reach = high ? 160 : 116;
+    var reach = high ? 160 : 124;
     if (high) {
       // main beam: long and straight, lights the road and the air far ahead
       s += glow([
-        [[[lx, ly - 1.4], [160, 60], [160, 103.8], [84, 103.8], [lx, ly + 1.4]], 0.08],
-        [[[lx, ly - 1], [160, 70], [160, 100], [lx, ly + 1]], 0.09],
-        [[[lx, ly - 0.7], [160, 78], [160, 95], [lx, ly + 0.7]], 0.11],
-        [[[lx, ly - 0.4], [160, 83.5], [160, 90.5], [lx, ly + 0.4]], 0.14]
+        [[[lx, ly - 1.4], [160, 50], [160, 99.8], [92, 99.8], [lx, ly + 1.4]], 0.08],
+        [[[lx, ly - 1], [160, 62], [160, 97], [lx, ly + 1]], 0.09],
+        [[[lx, ly - 0.7], [160, 72], [160, 92], [lx, ly + 0.7]], 0.11],
+        [[[lx, ly - 0.4], [160, 79], [160, 87], [lx, ly + 0.4]], 0.14]
       ]);
-      s += path('M66,103.8Q110,93 160,91.8L160,103.8Z', C.beam, { opacity: 0.16 });
+      s += path('M72,99.8Q114,89 160,87.8L160,99.8Z', C.beam, { opacity: 0.16 });
     } else {
-      // dipped beam: short, angled down onto the road
+      // dipped beam: short, angled down onto the road (about a third of the picture)
       s += glow([
-        [[[lx, ly - 1], [117, 95.4], [111, 103.8], [68, 103.8], [lx, ly + 1]], 0.1],
-        [[[lx, ly - 0.7], [104, 96.4], [72, 103.4], [lx, ly + 0.7]], 0.13],
-        [[[lx, ly - 0.4], [89, 96.6], [70, 101.4], [lx, ly + 0.4]], 0.16]
+        [[[lx, ly - 1], [124, 90.5], [117, 99.8], [74, 99.8], [lx, ly + 1]], 0.1],
+        [[[lx, ly - 0.7], [110, 91.8], [78, 99.4], [lx, ly + 0.7]], 0.13],
+        [[[lx, ly - 0.4], [94, 92.2], [76, 97.8], [lx, ly + 0.4]], 0.16]
       ]);
-      s += path('M64,103.8Q92,95 118,95.8Q98,104.2 64,103.8Z', C.beam, { opacity: 0.26 });
+      s += path('M70,99.8Q98,90.5 125,91.2Q104,100.2 70,99.8Z', C.beam, { opacity: 0.26 });
     }
     // centre line: bright only where the light reaches
     for (var x = 2; x < 160; x += 16) {
-      var lit = x > 62 && x < reach - 6;
-      s += line(x, 88, Math.min(x + 8, 159), 88, C.lineW, 0.9, { opacity: lit ? 0.8 : 0.12 });
+      var lit = x > 70 && x < reach - 6;
+      s += line(x, 81, Math.min(x + 8, 159), 81, C.lineW, 0.9, { opacity: lit ? 0.8 : 0.12 });
     }
     s += carSide(x0, y0, len, { head: 'on', tail: 'on', body: '#D9D6CC' });
-    s += circ(lx, ly, 2.4, C.beam, { opacity: 0.55 });
-    [82, 106, 130, 153].forEach(function (px) { s += post(px, px < reach - 4); });
+    s += circ(lx, ly, 2.6, C.beam, { opacity: 0.55 });
+    [88, 110, 132, 154].forEach(function (px) { s += post(px, px < reach - 4); });
     // dashboard symbol in the corner
     s += tile(122, 9, 30, 22, { fill: C.pill }) + beamIcon(138.5, 20, 1.05, high ? C.dBlue : C.dGreen, high);
     return K.svg(s, VB, lab);

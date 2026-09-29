@@ -197,14 +197,18 @@
     if (hang) s += rect(x + w * 0.22 - 0.8, y - hang, 1.6, hang + 0.5, 0, FV.poleD) + rect(x + w * 0.78 - 0.8, y - hang, 1.6, hang + 0.5, 0, FV.poleD);
     return s + rect(x, y, w, h, 2.2, FV.led, { stroke: '#3C4552', sw: 1.2 });
   }
+  // LED symbols with a soft glow that follows the symbol
   function ledX(cx, cy, a, col) {
     var d = 'M' + n(cx - a) + ',' + n(cy - a) + 'L' + n(cx + a) + ',' + n(cy + a) +
       'M' + n(cx + a) + ',' + n(cy - a) + 'L' + n(cx - a) + ',' + n(cy + a);
-    return circ(cx, cy, a * 1.45, col, { op: 0.1 }) + stroke(d, col, a * 0.95, { op: 0.22 }) + stroke(d, col, a * 0.5);
+    return stroke(d, col, a * 1.05, { op: 0.16 }) + stroke(d, col, a * 0.78, { op: 0.22 }) + stroke(d, col, a * 0.5);
   }
   function ledDown(cx, cy, a, col) {
-    return circ(cx, cy, a * 1.45, col, { op: 0.1 }) +
-      K.arrow('straight', { x: cx - a, y: cy - a, w: 2 * a, h: 2 * a, rot: 180, fill: col, p: { len: 60, sw: 19, hw: 46, hl: 28 } });
+    var sw = a * 0.58, hw = a * 1.5, hl = a * 0.9, t = cy - a, b = cy + a;
+    var pts = [[cx - sw / 2, t], [cx + sw / 2, t], [cx + sw / 2, b - hl], [cx + hw / 2, b - hl], [cx, b], [cx - hw / 2, b - hl],
+      [cx - sw / 2, b - hl]];
+    return poly(pts, 'none', { stroke: col, sw: a * 0.34, join: 'round', op: 0.16 }) +
+      poly(pts, 'none', { stroke: col, sw: a * 0.17, join: 'round', op: 0.24 }) + poly(pts, col);
   }
   // road seen from the driver's seat below a gantry: lines given at y0 converge to (50, vy)
   function roadAhead(y0, vy, xs, o) {
@@ -491,11 +495,11 @@
     s += path('M' + n(xl(62)) + ',62L' + n(xr(62)) + ',62L70,100H8A8,8 0 0 1 0,92V88Z', FV.road);
     s += line(xr(62), 62, 70, 100, FV.pole, 1.4, { cap: 'butt' });
     s += line(xl(84) + 2, 84, xr(84) - 2, 84, FV.white, 1.7, { dash: '3.4 2.6', cap: 'butt' });
-    s += rect(76, 22, 4.6, 73, 1, FV.pole) + rect(79, 22, 1.6, 73, 0, FV.poleD) + rect(75.3, 20.4, 6, 2.6, 1, FV.poleD) +
-      rect(73.4, 93, 9.8, 3.2, 1, FV.poleD);
-    s += rect(64, 25.2, 13, 2.6, 0.8, FV.poleD) + rect(64, 38.2, 13, 2.6, 0.8, FV.poleD);
-    s += rect(34, 17, 32, 32, 6, FV.housing, { stroke: FV.edge, sw: 1.3 });
-    s += lamp(50, 33, 11.5, FV.amber, true) + rays(50, 33, 17, 23.5, FV.amber, ALL8, 2.4);
+    s += rect(78.5, 22, 4.6, 73, 1, FV.pole) + rect(81.5, 22, 1.6, 73, 0, FV.poleD) + rect(77.8, 20.4, 6, 2.6, 1, FV.poleD) +
+      rect(75.9, 93, 9.8, 3.2, 1, FV.poleD);
+    s += rect(66, 25.2, 13.5, 2.6, 0.8, FV.poleD) + rect(66, 38.2, 13.5, 2.6, 0.8, FV.poleD);
+    s += rect(32.5, 15.5, 35, 35, 6.5, FV.housing, { stroke: FV.edge, sw: 1.3 });
+    s += lamp(50, 33, 11, FV.amber, true) + rays(50, 33, 19.5, 25.5, FV.amber, ALL8, 2.4);
     return pic(s, label);
   });
   reg('tl-green-arrow', 'السهم الأخضر', function (o, label) {
@@ -716,18 +720,18 @@
     ].forEach(function (r) { s += rect(r[0], r[1], r[2], r[3], 0, TD.kerb); });
     // lane divider on the ring, centre lines on the arms, broken give-way lines at the four entries
     s += circ(cx, cy, (Ro + Ri) / 2, 'none', { stroke: TD.white, sw: 0.9, dash: '3.2 3.2' });
-    s += line(cx, cy + Ro + 1, cx, 100, TD.white, 1.1, { cap: 'butt' }) + line(cx, 0, cx, cy - Ro - 1, TD.white, 1.1, { cap: 'butt' });
-    s += line(0, cy, cx - Ro - 1, cy, TD.white, 1.1, { cap: 'butt' }) + line(cx + Ro + 1, cy, 100, cy, TD.white, 1.1, { cap: 'butt' });
+    s += line(cx, cy + Ro + 1, cx, 100, TD.yellow, 1.1, { cap: 'butt' }) + line(cx, 0, cx, cy - Ro - 1, TD.yellow, 1.1, { cap: 'butt' });
+    s += line(0, cy, cx - Ro - 1, cy, TD.yellow, 1.1, { cap: 'butt' }) + line(cx + Ro + 1, cy, 100, cy, TD.yellow, 1.1, { cap: 'butt' });
     var g = Ro + 1.8, gd = { dash: '1.9 1.5', cap: 'butt' };
     s += line(cx + 0.7, cy + g, cx + hw, cy + g, TD.white, 1.3, gd) + line(cx + g, cy - hw, cx + g, cy - 0.7, TD.white, 1.3, gd);
     s += line(cx - hw, cy - g, cx - 0.7, cy - g, TD.white, 1.3, gd) + line(cx - g, cy + 0.7, cx - g, cy + hw, TD.white, 1.3, gd);
     s += circ(cx, cy, Ri + 0.8, TD.kerb) + circ(cx, cy, Ri, TD.sand) + circ(cx, cy, Ri * 0.5, '#B7A276');
     // a car already on the ring (outer lane, anticlockwise) leaves calmly by the nearest exit, signalling right
-    var ph = 104, ro = Ri + 0.75 * (Ro - Ri), rad = ph * Math.PI / 180, pc = [cx + ro * Math.cos(rad), cy - ro * Math.sin(rad)];
+    var ph = 121, ro = Ri + 0.75 * (Ro - Ri), rad = ph * Math.PI / 180, pc = [cx + ro * Math.cos(rad), cy - ro * Math.sin(rad)];
     var hd = [-Math.sin(rad), -Math.cos(rad)], hdeg = Math.atan2(hd[1], hd[0]) * 180 / Math.PI;
     s += place(car(PAINT.blue, { ind: 'R' }), pc[0], pc[1], hdeg + 90, m);
     var f0 = add(pc, hd, 2.3 * m + 1.4);
-    s += arrowC(f0, add(f0, hd, 9), [20, cy - hw / 2], [4, cy - hw / 2], TD.ok, { sw: 1.9 });
+    s += arrowC(f0, add(f0, hd, 6), [19, cy - hw / 2], [4, cy - hw / 2], TD.ok, { sw: 1.9 });
     // our car waits at the right entry, the ambulance enters from the bottom
     s += place(car(null, { me: true, brake: true }), cx + g + 1 + 2.3 * m, cy - hw / 2, -90, m);
     s += place(ambulance(), cx + hw / 2, cy + Ro + 3 * m + 0.6, 0, m);
