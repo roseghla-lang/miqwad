@@ -438,12 +438,12 @@ kbd { font-family: var(--f-num); font-size: .75rem; padding: 1px 6px; border-rad
 .figc figcaption { font-size: .78rem; line-height: 1.45; color: var(--ink2); text-align: center; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 .qi-figs .figc { width: 112px; }
 .qi-figs .figc.is-wide { width: 180px; }
-.fb-figs { display: grid; grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: 10px; }
-.fb-figs.n1 { grid-template-columns: minmax(0, 190px); }
-.fb-figs .figc.is-wide { grid-column: span 2; }
-.fb-figs.n1 .figc.is-wide { grid-column: auto; }
+.fb-figs { display: flex; flex-wrap: wrap; justify-content: center; align-items: flex-start; gap: 10px; }
+.fb-figs .figc { width: 104px; }
+.fb-figs .figc.is-wide { width: 196px; }
+.fb-figs.n1 .figc { width: 150px; }
+.fb-figs.n1 .figc.is-wide { width: min(100%, 330px); }
 .fb-figs .figc-img { background: rgba(10, 14, 21, .55); }
-.fb-figs.n1:has(.is-wide) { grid-template-columns: minmax(0, 320px); }
 .xrev-figs { display: flex; justify-content: center; gap: 8px; flex-wrap: wrap; }
 .xrev-figs .figc { width: 92px; }
 .xrev-figs .figc.is-wide { width: 150px; }
