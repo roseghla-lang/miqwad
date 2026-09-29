@@ -77,7 +77,11 @@
   // measured advance widths (em) of the labels used here, Alexandria 700
   var EM = {
     'مسافة التوقف': 7.35, 'رد الفعل': 4.21, 'الفرملة': 3.62, 'توقف': 2.84, 'افحص قريبا': 5.84, 'معلومة': 4.04,
-    'وقوف': 2.98, 'رجوع': 2.31, 'محايد': 2.82, 'قيادة': 2.66, '145 سم': 3.71, '1.5 ملم': 3.53
+    'وقوف': 2.98, 'رجوع': 2.31, 'محايد': 2.82, 'قيادة': 2.66, '145 سم': 3.71, '1.5 ملم': 3.53,
+    '30 سم': 3.35, '60 ث': 2.6, 'مسافة الفرملة': 7.43, '20 كم/ساعة': 5.98, '30 كم/ساعة': 5.97, '40 كم/ساعة': 5.99,
+    '3 م': 1.61, '6 م': 1.64, '11 م': 1.83, 'ثانيتان على الأقل': 8.28, '4 ثوان': 3.07, 'ضاعفها أو أكثر': 6.97,
+    'الأسبوع': 3.82, 'السنة': 2.87, '33 م': 2.21, '87 م': 2.23, '130 م': 2.73, '60 كم/ساعة': 6, '100 كم/ساعة': 6.49,
+    '120 كم/ساعة': 6.4
   };
   function tw(str, size, latin) {
     var e = EM[str];
@@ -160,22 +164,25 @@
       circ(cx, cy, r * 0.14, rim || C.rim);
   }
   // x = rear end, y = ground line, len = bumper to bumper.  o: body, outline, sw, head/tail/fog ('on'),
-  // hazard (amber corner lamps lit), shadow:false, rim
+  // hazard (amber corner lamps lit), shadow:false, rim, rot (degrees, around the rear ground point),
+  // simple (icon size: no seams, handles or highlight)
   function carSide(x, y, len, o) {
     o = o || {};
     var body = o.body || C.me, s = '';
-    if (o.shadow !== false) s += ell(50, 0.3, 47, 2, '#000000', { opacity: 0.35 });
+    if (o.shadow !== false && !o.simple) s += ell(50, 0.3, 47, 2, '#000000', { opacity: 0.35 });
     s += path(CAR.body, body, { stroke: o.outline || C.gold, 'stroke-width': o.sw || 1.3, 'stroke-linejoin': 'round' });
-    s += sk('M6,-19.6L93,-19.1', '#FFFFFF', 0.7, { opacity: 0.35 });
     s += path(CAR.winR, C.glass) + path(CAR.winF, C.glass);
-    s += sk('M50.4,-23.2L50.4,-8.2M31,-21.6L31,-8.4M71.4,-21.4L69.6,-8.4', '#000000', 0.45, { opacity: 0.22 });
-    s += rect(42.5, -19.6, 4, 1.1, 0.5, '#000000', { opacity: 0.25 }) + rect(62, -19.6, 4, 1.1, 0.5, '#000000', { opacity: 0.25 });
+    if (!o.simple) {
+      s += sk('M6,-19.6L93,-19.1', '#FFFFFF', 0.7, { opacity: 0.35 });
+      s += sk('M50.4,-23.2L50.4,-8.2M31,-21.6L31,-8.4M71.4,-21.4L69.6,-8.4', '#000000', 0.45, { opacity: 0.22 });
+      s += rect(42.5, -19.6, 4, 1.1, 0.5, '#000000', { opacity: 0.25 }) + rect(62, -19.6, 4, 1.1, 0.5, '#000000', { opacity: 0.25 });
+    }
     s += path(CAR.head, o.head === 'on' ? C.lampOn : C.lamp);
     s += path(CAR.tail, o.tail === 'on' ? C.tailOn : C.tail);
     if (o.fog) s += rect(94.4, -10.2, 4.6, 2, 1, o.fog === 'on' ? C.lampOn : '#8C939E');
     if (o.hazard) s += circ(99, -11.6, 1.3, C.amber) + circ(1.4, -12.6, 1.3, C.amber);
     CAR.wheels.forEach(function (w) { s += wheelSide(w[0], w[1], CAR.wr, o.rim); });
-    return g(s, tr(x, y, len / 100));
+    return g(s, tr(x, y, len / 100, o.rot));
   }
   // point of a car-local coordinate in picture space
   function carPt(x, y, len, p) { return [x + p[0] * len / 100, y + p[1] * len / 100]; }
@@ -668,29 +675,45 @@
     return K.svg(s, VB, lab);
   });
 
-  // ================================================================== 12. automatic gear selector
-  reg('fig-gear-selector', 'غيارات الأوتوماتيك', function (o, lab) {
+  // ================================================================== 12. automatic gear selector (and 17. park)
+  // lever pulled up from its base (handbrake), red arrow = pull
+  function handbrakeIcon(cx, cy, s, col) {
+    var q = path(rr(-8.5, 4.6, 17, 3.4, [1.2, 1.2, 1.2, 1.2]), col, { opacity: 0.55 }) +
+      path('M-6.4,5.2L-4.4,1.6L-1,1.6L1,5.2Z', col) + sk('M-2.7,2.4L2.4,-2.2', col, 2) +
+      sk('M1.8,-1.6L6.2,-5.6', col, 3.8) + circ(7.3, -6.6, 1.25, C.gold) +
+      sk('M-6,-2.6Q-5,-7.4 -0.4,-8.2', C.red, 1.1) + arrowHead(1.2, -8.3, 8, 2.8, C.red);
+    return g(q, tr(cx, cy, s));
+  }
+  function gearScene(sel, lab) {
     var s = panel(), rows = [['P', 'وقوف'], ['R', 'رجوع'], ['N', 'محايد'], ['D', 'قيادة']], y0 = 22, step = 24;
+    var si = sel === 'P' ? 0 : 3, dy = y0 + si * step;
     s += rect(46, 7, 104, 106, 12, '#1A2231', { stroke: '#2F3B50', 'stroke-width': 1 });
     s += rect(58, 14, 9, 92, 4.5, '#0A0E15', { stroke: '#2F3B50', 'stroke-width': 0.8 });
-    // highlight D
-    var dy = y0 + 3 * step;
+    // highlight the selected gear
     s += rect(72, dy - 10, 72, 20, 7, C.gold, { opacity: 0.14 }) + rect(72, dy - 10, 72, 20, 7, 'none', { stroke: C.gold, 'stroke-width': 1 });
     rows.forEach(function (r, i) {
-      var y = y0 + i * step, on = r[0] === 'D';
+      var y = y0 + i * step, on = i === si;
       s += txt(r[0], 84, y, 14, on ? C.gold : C.ink, { latin: true });
       s += label(r[1], 118, y + 0.5, 9.5, on ? C.gold : C.muted);
     });
-    // lever knob in D
+    // lever knob in the selected gear
     s += rect(54, dy - 7, 17, 14, 5, '#2A3140', { stroke: C.gold, 'stroke-width': 1.4 }) + rect(57.5, dy - 2, 10, 4, 2, '#3C4556');
-    // brake pedal beside P and R: press the brake to move the lever
-    var my = y0 + step / 2;
-    s += sk('M41,' + f(y0) + 'L37.5,' + f(y0) + 'L37.5,' + f(y0 + step) + 'L41,' + f(y0 + step), C.ink, 1.1, { opacity: 0.7 });
-    s += line(33.5, my, 37.5, my, C.ink, 1.1, { opacity: 0.7 });
-    s += tile(8, my - 13, 25.5, 26, { fill: C.pill, r: 6 }) + pedalIcon(20.8, my + 2.4, 1.45, C.ink, C.pill);
-    s += sk('M20.8,' + f(my - 10.4) + 'L20.8,' + f(my - 6.6), C.red, 1.3) + arrowHead(20.8, my - 5.6, 270, 3.4, C.red);
+    if (sel === 'P') {
+      // handbrake on as well, beside P
+      s += line(33.5, y0, 44.5, y0, C.ink, 1.1, { opacity: 0.7 });
+      s += tile(8, y0 - 13, 25.5, 26, { fill: C.pill, r: 6 }) + handbrakeIcon(20.2, y0 + 1.2, 1.12, C.ink);
+    } else {
+      // brake pedal beside P and R: press the brake to move the lever
+      var my = y0 + step / 2;
+      s += sk('M41,' + f(y0) + 'L37.5,' + f(y0) + 'L37.5,' + f(y0 + step) + 'L41,' + f(y0 + step), C.ink, 1.1, { opacity: 0.7 });
+      s += line(33.5, my, 37.5, my, C.ink, 1.1, { opacity: 0.7 });
+      s += tile(8, my - 13, 25.5, 26, { fill: C.pill, r: 6 }) + pedalIcon(20.8, my + 2.4, 1.45, C.ink, C.pill);
+      s += sk('M20.8,' + f(my - 10.4) + 'L20.8,' + f(my - 6.6), C.red, 1.3) + arrowHead(20.8, my - 5.6, 270, 3.4, C.red);
+    }
     return K.svg(s, VB, lab);
-  });
+  }
+  reg('fig-gear-selector', 'غيارات الأوتوماتيك', function (o, lab) { return gearScene('D', lab); });
+  reg('fig-gear-park', 'قبل النزول: الغيار على P', function (o, lab) { return gearScene('P', lab); });
 
   // ================================================================== 13. no phone in the hand
   reg('fig-no-phone', 'لا هاتف في يدك أثناء القيادة', function (o, lab) {
@@ -780,6 +803,187 @@
     s += txt('0', xr, cy + 17, 10, C.ink, { latin: true });
     s += txt('24', mx, cy + 25, 11, C.red, { latin: true });
     s += sk('M' + f(xr) + ',' + f(cy - 17) + 'L46,' + f(cy - 17), C.gold, 1.2) + arrowHead(43, cy - 17, 180, 5, C.gold);
+    return K.svg(s, VB, lab);
+  });
+  // ================================================================== batch 2: yard, gaps, water, tyre date, stopping table
+  // side-view car facing LEFT (for rows that read right to left): xr = its rear end, on the right
+  function carSideL(xr, y, len, o) { return g(carSide(0, 0, len, o), 'translate(' + f(xr) + ' ' + f(y) + ') scale(-1 1)'); }
+  // dashed outline of the car where it was a moment earlier
+  function carGhost(x, y, len) {
+    var st = { stroke: C.muted, 'stroke-width': 2.2, 'stroke-dasharray': '6 5', opacity: 0.75 };
+    return g(path(CAR.body, 'none', mix(st, { 'stroke-linejoin': 'round' })) +
+      CAR.wheels.map(function (w) { return circ(w[0], w[1], CAR.wr, 'none', st); }).join(''), tr(x, y, len / 100));
+  }
+  // accelerator: tall narrow pad hinged at the floor
+  function accelIcon(cx, cy, s, col, rib) {
+    var q = path(rr(-2.8, -6.4, 5.6, 11, [1.6, 1.6, 1.2, 1.2]), col) + rect(-3.8, 5, 7.6, 1.8, 0.6, col) +
+      line(-1.3, -3.6, 1.3, -3.6, rib || C.pill, 0.6) + line(-1.3, -1.1, 1.3, -1.1, rib || C.pill, 0.6) +
+      line(-1.3, 1.4, 1.3, 1.4, rib || C.pill, 0.6);
+    return g(q, tr(cx, cy, s));
+  }
+  function timerIcon(cx, cy, r, col) {
+    var s = rect(cx - 2.2, cy - r - 3.6, 4.4, 2.8, 0.8, col) + line(cx + r * 0.74, cy - r * 0.74, cx + r * 0.95, cy - r * 0.95, col, 1.6) +
+      circ(cx, cy, r, C.pill, { stroke: col, 'stroke-width': 1.6 });
+    for (var a = 0; a < 360; a += 30) {
+      var p = arcPt(cx, cy, r - 1.6, a), q = arcPt(cx, cy, r - (a % 90 ? 2.8 : 3.8), a);
+      s += line(p[0], p[1], q[0], q[1], col, 0.8);
+    }
+    return s + line(cx, cy, cx, cy - r * 0.62, C.gold, 1.5) + circ(cx, cy, 1.3, C.gold);
+  }
+  function sunIcon(cx, cy, s) {
+    var q = circ(0, 0, 4.4, '#F5C04A'), a;
+    for (a = 0; a < 360; a += 45) { var p = arcPt(0, 0, 6.4, a), e = arcPt(0, 0, 8.6, a); q += line(p[0], p[1], e[0], e[1], '#F5C04A', 1.3); }
+    return g(q, tr(cx, cy, s));
+  }
+  function rainIcon(cx, cy, s) {
+    var q = path('M-7,1.4Q-9.6,1.4 -9.6,-1.4Q-9.6,-4.2 -6.6,-4.2Q-5.8,-8.4 -1.4,-8.4Q2.6,-8.4 3.6,-5Q8.8,-5.4 9.2,-1.6Q9.2,1.4 6.4,1.4Z', '#AFC2D8');
+    [[-5, 4.4], [0, 5.6], [5, 4.4]].forEach(function (d) {
+      q += path('M' + pt(d[0], d[1]) + 'Q' + pt(d[0] + 1.3, d[1] + 2) + ' ' + pt(d[0], d[1] + 2.9) + 'Q' + pt(d[0] - 1.3, d[1] + 2) + ' ' + pt(d[0], d[1]) + 'Z', C.water);
+    });
+    return g(q, tr(cx, cy, s));
+  }
+  function fogIcon(cx, cy, s) {
+    var q = line(-8, -5, 6, -5, '#B8C0CC', 1.8) + line(-5, -0.6, 9, -0.6, '#B8C0CC', 1.8) + line(-9, 3.8, 5, 3.8, '#B8C0CC', 1.8) +
+      line(-4, 8.2, 8, 8.2, '#B8C0CC', 1.8);
+    return g(q, tr(cx, cy - 1.5, s));
+  }
+
+  // ================================================================== 16. yard hill start
+  reg('fig-yard-hill', 'المنحدر: لا ترجع 30 سم', function (o, lab) {
+    var s = panel(), rise = 30, gy0 = 102, ang = Math.atan2(rise, 160), ca = Math.cos(ang), sa = Math.sin(ang);
+    var deg = ang * 180 / Math.PI, x0 = 30, p0 = [x0, gy0 - x0 * rise / 160], len = 66, k = len / 100;
+    // point t units along the ramp from the car's rear, off units below the surface
+    function along(t, off) { off = off || 0; return [p0[0] + t * ca + off * sa, p0[1] - t * sa + off * ca]; }
+    s += path('M0,' + f(gy0) + 'L160,' + f(gy0 - rise) + 'L160,110A10,10 0 0 1 150,120L10,120A10,10 0 0 1 0,110Z', C.asphalt);
+    s += sk('M0,' + f(gy0) + 'L160,' + f(gy0 - rise), '#6B737E', 1.2);
+    // white stop line just in front of the car
+    var l0 = along(len + 2.5, 0.2), l1 = along(len + 8.5, 0.2);
+    s += line(l0[0], l0[1], l1[0], l1[1], C.lineW, 2.4);
+    // roll-back limit: short red zone behind the rear wheel, 30 cm
+    var w = 21 * k, z0 = along(w - 13, 0.2), z1 = along(w, 0.2);
+    s += line(z0[0], z0[1], z1[0], z1[1], C.red, 2.6);
+    var d0 = along(w - 13, 4.2), d1 = along(w, 4.2), lp = along(w - 6.5, 12);
+    s += dim(d0[0], d0[1], d1[0], d1[1], { tick: 1.6, sw: 1.2 }) + label('30 سم', lp[0], lp[1], 8.5, C.gold, { pill: true });
+    s += carSide(p0[0], p0[1], len, { rot: -deg, tail: 'on' });
+    // brake, then accelerator (foot moves right); 60 seconds to move off
+    s += tile(8, 8, 58, 28, { fill: C.pill }) + pedalIcon(21, 23.4, 1.35, C.ink, C.pill) +
+      sk('M30,21.6L41.5,21.6', C.gold, 1.4) + arrowHead(44, 21.6, 0, 4.4, C.gold) + accelIcon(53.5, 21.4, 1.3, C.ink, C.pill);
+    s += timerIcon(143, 23, 9.5, C.ink) + label('60 ث', 119, 23, 9, C.ink);
+    return K.svg(s, VB, lab);
+  });
+
+  // ================================================================== 17. yard sudden braking
+  reg('fig-yard-brake', 'الفرملة المفاجئة: مسافة الفرملة', function (o, lab) {
+    var s = panel(), ry = 33, a = 60, c = 136, len = 44, k = len / 100;
+    s += rect(0, ry, 160, 13, 0, C.asphalt) + line(0, ry + 0.4, 160, ry + 0.4, C.kerb, 0.7, { opacity: 0.45 }) +
+      roadDashes(ry + 5, 4, 160, 9, 7, C.lineW, 0.9, { opacity: 0.5 }) + line(0, ry + 12.6, 160, ry + 12.6, C.kerb, 0.9);
+    // red stop signal where the braking starts
+    var px = a - 6;
+    s += rect(px - 0.9, 10, 1.8, ry - 9.6, 0.4, '#6B737E') + rect(px - 4.2, 5, 8.4, 11, 2.2, '#15181D', { stroke: '#5A6470', 'stroke-width': 0.6 }) +
+      circ(px, 10.5, 5.4, '#E5352B', { opacity: 0.25 }) + circ(px, 10.5, 3, '#E5352B');
+    // where the brake is pressed (dashed) and where the car stops
+    s += carGhost(a - 99.6 * k, ry + 9.5, len);
+    s += carSide(c - 99.6 * k, ry + 9.5, len, { tail: 'on' });
+    s += line(a, ry + 13, a, 52, C.gold, 0.8, { opacity: 0.7 }) + line(c, ry + 13, c, 52, C.gold, 0.8, { opacity: 0.7 });
+    s += dim(a, 50.5, c, 50.5, { tick: 2.6, sw: 1.3 }) + label('مسافة الفرملة', (a + c) / 2, 59, 9, C.gold);
+    // the three test limits, right to left: speed, then braking distance
+    var rows = [['20 كم/ساعة', '3 م', 3], ['30 كم/ساعة', '6 م', 6], ['40 كم/ساعة', '11 م', 11]], ty = 67, rh = 16;
+    s += tile(22, ty, 116, rh * 3, { r: 7 }) + line(26, ty + rh, 134, ty + rh, C.tileLine, 0.8) + line(26, ty + 2 * rh, 134, ty + 2 * rh, C.tileLine, 0.8);
+    rows.forEach(function (r, i) {
+      var y = ty + rh * i + rh / 2;
+      s += txt(r[0], 130, y, 9, C.ink, { anchor: 'start' });
+      s += label(r[1], 62, y, 9, C.gold);
+      s += path(rr(50 - r[2] * 2.1, y - 2, r[2] * 2.1, 4, [2, 0, 0, 2]), C.gold, { opacity: 0.85 });
+    });
+    return K.svg(s, VB, lab);
+  });
+
+  // ================================================================== 18. following gap by weather
+  reg('fig-gap-weather', 'مسافة الأمان حسب الطقس', function (o, lab) {
+    var s = panel(), xs = 112;
+    var rows = [
+      { icon: sunIcon, word: 'ثانيتان على الأقل', len: 34 },
+      { icon: rainIcon, word: '4 ثوان', len: 68 },
+      { icon: fogIcon, word: 'ضاعفها أو أكثر', len: 94, plus: true }
+    ];
+    rows.forEach(function (r, i) {
+      var y = 24 + i * 36;
+      s += tile(135, y - 10, 22, 22, { fill: C.pill }) + r.icon(146, y + 1, 1);
+      s += carSideL(132, y + 9.5, 19, { simple: true, sw: 2 });
+      s += path(rr(xs - r.len, y + 2.5, r.len, 7, [3.5, 0, 0, 3.5]), C.gold);
+      s += txt(r.word, xs, y - 7, 8.5, C.ink, { anchor: 'start' });
+      if (r.plus) {
+        var px = xs - r.len - 6;
+        s += line(px - 3, y + 6, px + 3, y + 6, C.gold, 1.8) + line(px, y + 3, px, y + 9, C.gold, 1.8);
+      }
+    });
+    return K.svg(s, VB, lab);
+  });
+
+  // ================================================================== 19. never cross flowing water
+  reg('fig-flowing-water', 'لا تعبر ماء جاريا مهما كان قليلا', function (o, lab) {
+    var s = panel(), prof = 'M0,76L64,76C76,76 78,99 92,99L128,99C142,99 144,76 156,76L160,76';
+    // water filling the dip, then the road and ground (they hide the water below the road surface)
+    s += rect(70, 81, 82, 19, 0, C.water, { opacity: 0.9 });
+    s += path(prof + 'L160,110A10,10 0 0 1 150,120L10,120A10,10 0 0 1 0,110Z', '#262B33');
+    s += sk(prof, '#6B737E', 1.3);
+    s += sk('M73,81.2L147,81.2', C.waterHi, 1.2);
+    // fast current across the road
+    [[86, 84], [97, 88], [123, 88], [134, 84]].forEach(function (c) {
+      s += sk('M' + pt(c[0] - 4, c[1]) + 'Q' + pt(c[0] + 2, c[1] + 1) + ' ' + pt(c[0] + 3.6, c[1] + 5.6), '#FFFFFF', 1.1, { opacity: 0.9 }) +
+        arrowHead(c[0] + 4, c[1] + 7.2, 290, 3.4, '#FFFFFF');
+    });
+    // our car stopped before the water
+    s += carSide(8, 76, 52, { tail: 'on' });
+    // not through it: red dashed path with X; turn back instead: green arrow
+    s += sk('M62,72L64,72C76,72 78,94 92,94L128,94C142,94 144,72 156,72', C.red, 1.6, { 'stroke-dasharray': '3.5 2.5' });
+    s += badge(false, 110, 93, 6.5);
+    s += sk('M56,54C60,34 26,28 18,44', C.ok, 2.2) + arrowHead(16.8, 47.6, 250, 6, C.ok);
+    return K.svg(s, VB, lab);
+  });
+
+  // ================================================================== 20. tyre date code
+  reg('fig-tyre-dot', 'تاريخ صنع الإطار: الأسبوع ثم السنة', function (o, lab) {
+    var s = panel(), ox = 80, oy = 640, x;
+    function yAt(r, xx) { return oy - Math.sqrt(r * r - (xx - ox) * (xx - ox)); }
+    function arc(r) { return 'A' + r + ',' + r + ' 0 0 1 '; }
+    // tread shoulder, sidewall, rim flange (arcs of one big circle)
+    s += path('M0,' + f(yAt(628, 0)) + arc(628) + '160,' + f(yAt(628, 160)) + 'L160,' + f(yAt(540, 160)) +
+      'A540,540 0 0 0 0,' + f(yAt(540, 0)) + 'Z', '#262A31');
+    s += path('M0,' + f(yAt(628, 0)) + arc(628) + '160,' + f(yAt(628, 160)) + 'L160,' + f(yAt(612, 160)) +
+      'A612,612 0 0 0 0,' + f(yAt(612, 0)) + 'Z', '#1A1D22');
+    for (x = 6; x < 158; x += 9) s += line(x, yAt(628, x) + 1.4, x, yAt(612, x) - 2, '#0C0E11', 2.4);
+    s += sk('M0,' + f(yAt(604, 0)) + arc(604) + '160,' + f(yAt(604, 160)), '#343942', 1);
+    s += path('M0,' + f(yAt(540, 0)) + arc(540) + '160,' + f(yAt(540, 160)) + 'L160,110A10,10 0 0 1 150,120L10,120A10,10 0 0 1 0,110Z', '#8C939E');
+    s += sk('M0,' + f(yAt(533, 0)) + arc(533) + '160,' + f(yAt(533, 160)), '#B8BEC8', 1.4);
+    // moulded text: raised rubber (dark edge + lighter face)
+    function mould(str, xx, size, fill) {
+      var yy = yAt(582, xx);
+      return K.text(str, f(xx + 0.5), f(yy + 0.7), size, { fill: '#0E1013', family: 'latin', weight: 700 }) +
+        K.text(str, f(xx), f(yy), size, { fill: fill || '#707A89', family: 'latin', weight: 700 });
+    }
+    var fx = 108, fy = yAt(582, fx), dw = 2.41 * 21;
+    s += mould('DOT', 30, 12.5) + mould('U2LL', 58, 11);
+    s += rect(fx - dw / 2 - 5, fy - 12, dw + 10, 24, 6, 'none', { stroke: '#707A89', 'stroke-width': 1.5 }) + mould('2324', fx, 21, C.ink);
+    // week then year
+    var bx0 = fx - dw / 2, bx1 = fx + dw / 2, by = fy + 15;
+    s += sk('M' + pt(bx0 + 0.5, by - 3) + 'L' + pt(bx0 + 0.5, by) + 'L' + pt(fx - 1.2, by) + 'L' + pt(fx - 1.2, by - 3), C.gold, 1.3);
+    s += sk('M' + pt(fx + 1.2, by - 3) + 'L' + pt(fx + 1.2, by) + 'L' + pt(bx1 - 0.5, by) + 'L' + pt(bx1 - 0.5, by - 3), C.gold, 1.3);
+    s += label('الأسبوع', (bx0 + fx) / 2 - 5, by + 11, 8.5, C.gold) + label('السنة', (fx + bx1) / 2 + 6, by + 11, 8.5, C.gold);
+    return K.svg(s, VB, lab);
+  });
+
+  // ================================================================== 21. stopping distance by speed (to scale)
+  reg('fig-stopping-table', 'مسافة التوقف حسب السرعة', function (o, lab) {
+    var s = panel(), xs = 126, sc = (xs - 12) / 130;
+    var rows = [['60 كم/ساعة', '33 م', 33, C.gold], ['100 كم/ساعة', '87 م', 87, '#E2A65C'], ['120 كم/ساعة', '130 م', 130, C.red]];
+    rows.forEach(function (r, i) {
+      var y = 27 + i * 35, L = r[2] * sc;
+      s += carSideL(148, y + 9, 22, { simple: true, sw: 2 });
+      s += path(rr(xs - L, y - 2, L, 11, [3, 0, 0, 3]), r[3]);
+      s += txt(r[0], 148, y - 11, 8.5, C.ink, { anchor: 'start' });
+      s += txt(r[1], xs - L + tw(r[1], 8.5) / 2 + 3.5, y + 3.6, 8.5, C.pill);
+    });
     return K.svg(s, VB, lab);
   });
 })();
