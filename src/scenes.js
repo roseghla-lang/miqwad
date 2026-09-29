@@ -3370,7 +3370,7 @@
     'turning', 'highway', 'pedestrians', 'school-bus', 'emergency-vehicles', 'vulnerable', 'parking', 'lights-horn', 'weather', 'night',
     'hazard', 'emergency', 'accidents', 'vehicle', 'law', 'penalties', 'driver', 'roadtest', 'yard', 'dubai-specific', 'sharjah-specific'];
   var SCENARIO_KEYS = ['id', 'topic', 'level', 'exam', 'type', 'scene', 'q', 'options', 'answer', 'explain', 'tip', 'hotspots', 'src',
-    'confidence', 'notes', '_file'];
+    'confidence', 'notes', '_file', 'explain_fig', 'critical', 'severity'];
 
   function arabicIssues(s, where, isQuestion) {
     var out = [];

@@ -1,0 +1,2238 @@
+{
+ "module": "roundabouts",
+ "updated": "2026-09-29",
+ "sources": {
+  "S1": {
+   "title": "مرسوم بقانون اتحادي رقم 14 لسنة 2024 بشأن تنظيم السير والمرور (النص العربي)",
+   "url": "https://uaelegislation.gov.ae/ar/legislations/2598/download",
+   "publisher": "UAE Legislation portal",
+   "date": "2024-09 (in force 2025-03-29)"
+  },
+  "S2": {
+   "title": "Federal Decree-Law No. 14 of 2024 On Traffic Regulation (English text)",
+   "url": "https://uaelegislation.gov.ae/en/legislations/2598/download",
+   "publisher": "UAE Legislation portal",
+   "date": "2024-09"
+  },
+  "S3": {
+   "title": "Ministerial Resolution No. 130 of 1997, Executive Regulation of the Federal Traffic Law (English)",
+   "url": "https://uaelegislation.gov.ae/en/legislations/1020/download",
+   "publisher": "UAE Legislation portal",
+   "date": "1997, listed in force, updated 2023-05"
+  },
+  "S4": {
+   "title": "القرار الوزاري رقم 130 لسنة 1997 باللائحة التنفيذية لقانون السير والمرور (النص العربي)",
+   "url": "https://uaelegislation.gov.ae/ar/legislations/1020/download",
+   "publisher": "UAE Legislation portal",
+   "date": "1997, updated 2023-05"
+  },
+  "S5": {
+   "title": "Light Motor Vehicle Handbook, A Guide to Safe Driving, 7th edition",
+   "url": "https://edi-uae.com/public/uploads/downloads/20190724133013RTA_Handbook_-_Light_Motor_Vehicle_(LMV)_-_English.pdf",
+   "publisher": "RTA Licensing Agency (hosted by Emirates Driving Institute)",
+   "date": "2016-01"
+  },
+  "S6": {
+   "title": "كتيب المركبات الآلية الخفيفة، دليل للقيادة الآمنة، الطبعة 3",
+   "url": "https://www.rta.ae/wpsv5/eservices/PDF_Catalog/Light_Motor_Handbook_AR.pdf",
+   "publisher": "RTA Licensing Agency",
+   "date": "2012-01"
+  },
+  "S12": {
+   "title": "Dubai Police: Let emergency vehicles go, every second matters",
+   "url": "https://gulfnews.com/uae/dubai-police-let-emergency-vehicles-go-every-second-matters-1.66847995",
+   "publisher": "Gulf News (Dubai Police)",
+   "date": "2019-10-02"
+  },
+  "S14": {
+   "title": "«لا تتردد.. افسح الطريق فورا» حملة مشتركة لمركبات الطوارئ والإسعاف",
+   "url": "https://abudhabipolice.gov.ae/Media-Center/News/2025/05/29052025001",
+   "publisher": "Abu Dhabi Police",
+   "date": "2025-05-29"
+  },
+  "S25": {
+   "title": "Roundabout Driving Rules in UAE: 2 and 3 lane roundabout guide",
+   "url": "https://www.excellencedriving.com/en/blogs/roundabout-rules-uae",
+   "publisher": "Excellence Driving (RTA-licensed institute, Dubai)",
+   "date": "2025-12-09"
+  },
+  "S26": {
+   "title": "UAE back to school: When must drivers stop for pedestrians?",
+   "url": "https://www.emirates247.com/uae-guide/uae-back-to-school-when-must-drivers-stop-for-pedestrians-rules-fines-explained/5011",
+   "publisher": "Emirates 24/7",
+   "date": "2026-08-28"
+  },
+  "S28": {
+   "title": "Ambulance behind you in the UAE? How to give way",
+   "url": "https://www.emirates247.com/uae-guide/ambulance-behind-you-in-the-uae-how-to-give-way-and-avoid-a-dh3000-fine/5032",
+   "publisher": "Emirates 24/7 (Abu Dhabi Police campaign)",
+   "date": "2026-08-29"
+  }
+ },
+ "scenarios": [
+  {
+   "id": "rb-001",
+   "topic": "roundabouts",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "roundabout",
+    "params": {
+     "lanes": 1,
+     "ring": 1
+    },
+    "view": {
+     "zoom": 1.25
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": "stopline"
+      }
+     },
+     {
+      "id": "red",
+      "type": "car",
+      "color": "red",
+      "pos": {
+       "ring": "outer",
+       "before": "S",
+       "deg": 75
+      },
+      "label": "تدور داخل الدوار"
+     },
+     {
+      "id": "blue",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "arm": "E",
+       "lane": 1,
+       "at": "stopline"
+      },
+      "label": "تنتظر مثلك"
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "blue",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "red",
+      "route": "ring->N",
+      "kmh": 26
+     },
+     {
+      "t": 3.4,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 3.5,
+      "actor": "me",
+      "route": "S1->E",
+      "kmh": 22,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "red",
+      "track": "solution",
+      "style": "other"
+     },
+     {
+      "actor": "me",
+      "track": "solution",
+      "style": "me"
+     }
+    ]
+   },
+   "q": "أنت عند خط الدخول إلى الدوار، إلى أي جهة تنظر لتتأكد أن الطريق خال قبل أن تدخل؟",
+   "options": [
+    "إلى يمينك، حيث تنتظر السيارة الزرقاء",
+    "إلى الأمام فقط، نحو المخرج الذي تريده",
+    "إلى يسارك، فمن هناك تأتي المركبات التي تدور في الدوار",
+    "إلى المرآة الخلفية فقط"
+   ],
+   "answer": 2,
+   "explain": "المركبات في الدوار تدور عكس عقارب الساعة، فتصل إلى مدخلك من جهة اليسار ولها الأولوية\nانظر يسارا وادخل عندما تجد فجوة آمنة",
+   "tip": "بالدوار عينك عاليسار قبل ما تدخل",
+   "explain_fig": [
+    "fig-roundabout-priority"
+   ],
+   "src": [
+    "S1",
+    "S2",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rb-002",
+   "topic": "roundabouts",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "roundabout",
+    "params": {
+     "lanes": 1,
+     "ring": 1
+    },
+    "view": {
+     "zoom": 1.25
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": 4
+      }
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "arm": "N",
+       "lane": 1,
+       "at": 6
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "route": "S1->W",
+      "kmh": 22
+     },
+     {
+      "t": 0,
+      "actor": "c1",
+      "brake": true
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "track": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "تريد الخروج من الدوار إلى الشارع الذي على يسارك (المخرج الثالث)، كيف تسير داخل الدوار؟",
+   "options": [
+    "أنعطف يسارا مباشرة وأدور مع عقارب الساعة لأنه الطريق الأقصر",
+    "أنعطف يمينا عند الدخول وأدور عكس عقارب الساعة والجزيرة على يساري حتى أصل إلى مخرجي",
+    "أمر فوق طرف الجزيرة الوسطى إذا كانت منخفضة",
+    "أدخل مستقيما نحو الجزيرة ثم أختار الاتجاه الأسهل"
+   ],
+   "answer": 1,
+   "explain": "السير في الإمارات على اليمين، لذلك تدخل الدوار بالانعطاف يمينا وتدور عكس عقارب الساعة\nحتى لو كان مخرجك على اليسار تدور حول الجزيرة وتبقيها على يسارك",
+   "tip": "مهما كان مخرجك، الجزيرة دايما عيسارك",
+   "explain_fig": [
+    "fig-roundabout-flow",
+    "fig-roundabout-left"
+   ],
+   "src": [
+    "S1",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rb-003",
+   "topic": "roundabouts",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "roundabout",
+    "params": {
+     "lanes": 2,
+     "ring": 2
+    },
+    "view": {
+     "zoom": 1.3,
+     "center": {
+      "x": 4,
+      "y": -14
+     }
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 2,
+       "at": 13
+      }
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "ring": "inner",
+       "angle": 25
+      }
+     },
+     {
+      "id": "c2",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "arm": "E",
+       "lane": 1,
+       "at": 8
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "lane_change": "right",
+      "dist": 10,
+      "dur": 1.9
+     },
+     {
+      "t": 1.9,
+      "actor": "me",
+      "route": "S1->E",
+      "kmh": 22
+     },
+     {
+      "t": 0,
+      "actor": "c1",
+      "route": "ring->W",
+      "kmh": 24
+     },
+     {
+      "t": 0,
+      "actor": "c2",
+      "brake": true
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "track": "solution",
+      "style": "ok"
+     }
+    ],
+    "callouts": [
+     {
+      "text": "المسار الأيمن وإشارة اليمين",
+      "at": {
+       "x": 17,
+       "y": -27
+      },
+      "when": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "أنت في المسار الأيسر وتريد الخروج من المخرج الأول (يمينا) في هذا الدوار، ما التصرف الصحيح؟",
+   "options": [
+    "أبقى في المسار الأيسر وأخرج من المخرج الأول عبر المسار الخارجي",
+    "أدخل من المسار الأيسر ثم أنتقل إلى المسار الخارجي قبل المخرج",
+    "أدخل من المسار الأيسر وأشغل إشارة اليسار",
+    "أنتقل بأمان قبل الدوار إلى المسار الأيمن، وأشغل إشارة اليمين وأبقى فيه حتى أخرج"
+   ],
+   "answer": 3,
+   "explain": "للمخرج الأول اختر المسار الأيمن قبل الدخول، وشغل إشارة اليمين من بداية الاقتراب\nابق في المسار الخارجي حتى تخرج، فتغيير المسار داخل الدوار ممنوع",
+   "explain_fig": [
+    "fig-roundabout-right"
+   ],
+   "src": [
+    "S6",
+    "S25"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rb-004",
+   "topic": "roundabouts",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "roundabout",
+    "params": {
+     "lanes": 1,
+     "ring": 1
+    },
+    "view": {
+     "zoom": 1.25
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": "stopline"
+      }
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "color": "green",
+      "pos": {
+       "arm": "N",
+       "lane": 1,
+       "at": "stopline"
+      },
+      "label": "تنتظر عند مخرجك"
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "route": "S1->N",
+      "kmh": 22,
+      "ease": "in"
+     },
+     {
+      "t": 0,
+      "actor": "c1",
+      "brake": true
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "track": "solution",
+      "style": "ok"
+     }
+    ],
+    "callouts": [
+     {
+      "text": "هنا تشغل إشارة اليمين",
+      "at": {
+       "ring": 1,
+       "angle": 55
+      },
+      "when": "solution",
+      "style": "gold"
+     }
+    ]
+   },
+   "q": "تريد المتابعة إلى الأمام والخروج من المخرج الثاني، متى تشغل إشارة اليمين؟",
+   "options": [
+    "قبل الدخول إلى الدوار مباشرة",
+    "بعد أن تتجاوز المخرج الأول، وقبل الوصول إلى مخرجك",
+    "عندما تصل إلى مخرجك وتبدأ الخروج",
+    "لا تحتاج إلى إشارة لأنك تسير إلى الأمام"
+   ],
+   "answer": 1,
+   "explain": "عند المتابعة إلى الأمام لا تعط إشارة عند الدخول\nبعد أن تتجاوز المخرج الأول شغل إشارة اليمين، فيعرف من ينتظر عند مخرجك أنك ستخرج",
+   "tip": "عدي المخرج اللي قبل مخرجك، وبعدين يمين",
+   "src": [
+    "S6",
+    "S25"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rb-005",
+   "topic": "roundabouts",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "roundabout",
+    "params": {
+     "lanes": 2,
+     "ring": 2
+    },
+    "view": {
+     "zoom": 1.45,
+     "center": {
+      "x": 6,
+      "y": -4
+     }
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "ring": "outer",
+       "angle": 170
+      }
+     },
+     {
+      "id": "slow",
+      "type": "car",
+      "color": "yellow",
+      "pos": {
+       "ring": "outer",
+       "angle": 127
+      },
+      "label": "سيارة بطيئة"
+     },
+     {
+      "id": "c2",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "arm": "E",
+       "lane": 1,
+       "at": "stopline"
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "slow",
+      "route": "ring->N",
+      "kmh": 14
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "route": "ring->N",
+      "kmh": 14
+     },
+     {
+      "t": 0,
+      "actor": "c2",
+      "brake": true
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "track": "solution",
+      "style": "ok"
+     }
+    ],
+    "callouts": [
+     {
+      "text": "ممنوع التجاوز داخل الدوار",
+      "at": {
+       "ring": "inner",
+       "angle": 100
+      },
+      "when": "solution",
+      "style": "warn"
+     }
+    ]
+   },
+   "q": "داخل الدوار سيارة بطيئة أمامك في المسار نفسه، والمسار الداخلي بجانبك فارغ، ماذا تفعل؟",
+   "options": [
+    "أنتقل إلى المسار الداخلي وأتجاوزها ثم أعود أمامها",
+    "أطلق المنبه لتسرع أو تفسح لي",
+    "أبقى خلفها في مساري بمسافة آمنة حتى أخرج",
+    "أتجاوزها من جهة اليمين على حافة الدوار"
+   ],
+   "answer": 2,
+   "explain": "التجاوز ممنوع في الدوارات، وتغيير المسار داخل الدوار ممنوع أيضا\nابق خلف السيارة البطيئة في مسارك حتى تصل إلى مخرجك",
+   "explain_fig": [
+    "r-no-overtaking"
+   ],
+   "src": [
+    "S3",
+    "S4",
+    "S25"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rb-006",
+   "topic": "roundabouts",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "tap",
+   "scene": {
+    "template": "roundabout",
+    "params": {
+     "lanes": 1,
+     "ring": 1
+    },
+    "view": {
+     "zoom": 1.2
+    },
+    "labels": "never",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": "stopline"
+      }
+     },
+     {
+      "id": "ring",
+      "type": "car",
+      "color": "red",
+      "pos": {
+       "ring": "outer",
+       "before": "S",
+       "deg": 62
+      },
+      "label": "لها الأولوية"
+     },
+     {
+      "id": "west",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "arm": "W",
+       "lane": 1,
+       "at": "stopline"
+      },
+      "label": "تنتظر خارج الدوار"
+     },
+     {
+      "id": "east",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "arm": "E",
+       "lane": 1,
+       "at": "stopline"
+      },
+      "label": "تنتظر خارج الدوار"
+     },
+     {
+      "id": "north",
+      "type": "taxi",
+      "pos": {
+       "arm": "N",
+       "lane": 1,
+       "at": 5
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "labels": true
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "west",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "east",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "ring",
+      "route": "ring->N",
+      "kmh": 26
+     },
+     {
+      "t": 3.2,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 3.3,
+      "actor": "me",
+      "route": "S1->E",
+      "kmh": 22,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "ring",
+      "track": "solution",
+      "style": "warn"
+     }
+    ]
+   },
+   "hotspots": [
+    {
+     "id": "ring",
+     "actor": "ring"
+    },
+    {
+     "id": "west",
+     "actor": "west"
+    },
+    {
+     "id": "east",
+     "actor": "east"
+    },
+    {
+     "id": "north",
+     "actor": "north"
+    }
+   ],
+   "q": "تريد الدخول إلى الدوار، انقر على المركبة التي يجب أن تتركها تمر قبل أن تدخل",
+   "answer": "ring",
+   "explain": "الأولوية للمركبة التي تدور داخل الدوار وتأتيك من يسارك، وهي السيارة الحمراء\nالسيارات التي تنتظر عند المداخل الأخرى ما زالت خارج الدوار، فلا تتقدم عليك",
+   "tip": "اللي جوا الدوار أول، واللي برا بيستنى",
+   "explain_fig": [
+    "fig-roundabout-priority"
+   ],
+   "src": [
+    "S1",
+    "S2",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rb-007",
+   "topic": "roundabouts",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "roundabout",
+    "params": {
+     "lanes": 3,
+     "ring": 3
+    },
+    "view": {
+     "zoom": 1.1,
+     "center": {
+      "x": 0,
+      "y": -14
+     }
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 2,
+       "at": 12
+      }
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": "stopline"
+      }
+     },
+     {
+      "id": "c2",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "arm": "W",
+       "lane": 2,
+       "at": 12
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "lane_change": "left",
+      "dist": 8,
+      "dur": 1.6
+     },
+     {
+      "t": 1.6,
+      "actor": "me",
+      "route": "S3->W",
+      "kmh": 26
+     },
+     {
+      "t": 0,
+      "actor": "c1",
+      "route": "S1->E",
+      "kmh": 20,
+      "ease": "in"
+     },
+     {
+      "t": 0,
+      "actor": "c2",
+      "brake": true
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "track": "solution",
+      "style": "ok"
+     }
+    ],
+    "callouts": [
+     {
+      "text": "المسار الأيسر للمخرج الثالث",
+      "at": {
+       "x": -21,
+       "y": -44
+      },
+      "when": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "في دوار بثلاثة مسارات تريد الانعطاف يسارا (المخرج الثالث)، وأنت الآن في المسار الأوسط، ما التصرف الصحيح؟",
+   "options": [
+    "أنتقل بأمان قبل الدوار إلى المسار الأيسر مع إشارة اليسار، وأبقى في المسار الداخلي حتى أتجاوز المخرج الثاني ثم أشغل إشارة اليمين",
+    "أبقى في المسار الأوسط لأنه يصل إلى كل المخارج",
+    "أنتقل إلى المسار الأيمن لأن الخروج من الدوار يكون دائما من اليمين",
+    "أدخل من المسار الأوسط ثم أنتقل إلى المسار الداخلي وأنا داخل الدوار"
+   ],
+   "answer": 0,
+   "explain": "للانعطاف يسارا اختر المسار الأيسر قبل الدخول (أو ما تحدده الأسهم)، وابق في مسارك داخل الدوار\nبعد أن تتجاوز المخرج الثاني شغل إشارة اليمين واخرج بأمان",
+   "explain_fig": [
+    "fig-roundabout-left",
+    "fig-roundabout-lanes3"
+   ],
+   "src": [
+    "S6",
+    "S25"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rb-008",
+   "topic": "roundabouts",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "roundabout",
+    "params": {
+     "lanes": 2,
+     "ring": 2,
+     "arrows": {
+      "S": [
+       "right",
+       "straight+left"
+      ]
+     }
+    },
+    "view": {
+     "zoom": 1.7,
+     "center": {
+      "x": 2,
+      "y": -26
+     }
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": 24
+      }
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "color": "red",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": "stopline"
+      },
+      "signal": "right",
+      "label": "تنعطف يمينا"
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "c1",
+      "route": "S1->E",
+      "kmh": 20,
+      "ease": "in"
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "lane_change": "left",
+      "dist": 11,
+      "dur": 2.1
+     },
+     {
+      "t": 2.1,
+      "actor": "me",
+      "route": "S2->N",
+      "kmh": 24
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "track": "solution",
+      "style": "ok"
+     }
+    ]
+   },
+   "q": "تريد المتابعة إلى الأمام (المخرج الثاني)، انظر إلى الأسهم المرسومة على مدخل هذا الدوار، أي مسار تستخدم؟",
+   "options": [
+    "المسار الأيمن، فهو المسار المعتاد للمتابعة إلى الأمام",
+    "أي مسار، فالأسهم على الأرض للإرشاد فقط",
+    "المسار الأيمن، ثم أنتقل داخل الدوار إلى المسار الداخلي",
+    "المسار الأيسر، لأن سهمه يسمح بالمتابعة إلى الأمام وسهم الأيمن لليمين فقط"
+   ],
+   "answer": 3,
+   "explain": "الأسهم المرسومة على مدخل الدوار تحدد اتجاه كل مسار، وهي المرجع قبل أي قاعدة عامة\nهنا سهم المسار الأيمن لليمين فقط، فانتقل بأمان إلى المسار الأيسر قبل الدخول",
+   "tip": "قبل الدوار اقرا الأسهم عالأرض، هي اللي بتحكم",
+   "explain_fig": [
+    "mk-arrow-right",
+    "mk-arrow-straight-left",
+    "fig-roundabout-lanes3"
+   ],
+   "src": [
+    "S6",
+    "S25"
+   ],
+   "confidence": "medium",
+   "notes": "المصادر تقول اتبع الأسهم المرسومة، وصياغة أولوية الأسهم ثقتها متوسطة في ورقة الحقائق (F3)"
+  },
+  {
+   "id": "rb-009",
+   "topic": "roundabouts",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "roundabout",
+    "params": {
+     "lanes": 2,
+     "ring": 2,
+     "control": "lights",
+     "lights": {
+      "S": "red",
+      "N": "red",
+      "W": "green",
+      "E": "red"
+     }
+    },
+    "view": {
+     "zoom": 1.3,
+     "center": {
+      "x": 0,
+      "y": -8
+     }
+    },
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": "stopline"
+      }
+     },
+     {
+      "id": "w1",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "arm": "W",
+       "lane": 1,
+       "at": 7
+      }
+     },
+     {
+      "id": "e1",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "arm": "E",
+       "lane": 2,
+       "at": "stopline"
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "e1",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "w1",
+      "route": "W1->E",
+      "kmh": 30
+     },
+     {
+      "t": 3.6,
+      "lights": {
+       "W": "amber"
+      }
+     },
+     {
+      "t": 4.6,
+      "lights": {
+       "W": "red",
+       "S": "green"
+      }
+     },
+     {
+      "t": 4.8,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 5.0,
+      "actor": "me",
+      "route": "S1->N",
+      "kmh": 24,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "w1",
+      "track": "solution",
+      "style": "warn"
+     }
+    ]
+   },
+   "q": "دوار تنظمه إشارات ضوئية، والإشارة أمامك حمراء مع أن الدوار يبدو خاليا، ماذا تفعل؟",
+   "options": [
+    "أدخل لأن الدوار خال ولا أحد داخله له الأولوية",
+    "أتوقف قبل الخط وأنتظر الإشارة الخضراء، ثم أدخل بحذر",
+    "أنظر إلى يساري فقط، فإذا لم أر أحدا أدخل",
+    "أدخل ببطء مع تشغيل أضواء التحذير"
+   ],
+   "answer": 1,
+   "explain": "في الدوار الذي تنظمه إشارات ضوئية تتبع الإشارة: الأحمر يعني التوقف قبل الخط حتى لو بدا الدوار خاليا\nالمركبات القادمة من مدخل آخر إشارتها خضراء وقد تصل إلى أمامك بسرعة",
+   "explain_fig": [
+    "tl-red"
+   ],
+   "src": [
+    "S3",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rb-010",
+   "topic": "roundabouts",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "tap",
+   "scene": {
+    "template": "roundabout",
+    "params": {
+     "lanes": 1,
+     "ring": 1,
+     "crossings": [
+      "E"
+     ]
+    },
+    "view": {
+     "zoom": 1.8,
+     "center": {
+      "x": 12,
+      "y": -2
+     }
+    },
+    "labels": "never",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "ring": "outer",
+       "angle": 135
+      },
+      "signal": "right"
+     },
+     {
+      "id": "ped",
+      "type": "pedestrian",
+      "variant": "woman",
+      "color": "orange",
+      "pos": {
+       "x": 19.8,
+       "y": -3.6
+      },
+      "label": "تبدأ العبور"
+     },
+     {
+      "id": "ent",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "arm": "E",
+       "lane": 1,
+       "at": "stopline"
+      }
+     },
+     {
+      "id": "behind",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": "stopline"
+      }
+     },
+     {
+      "id": "north",
+      "type": "car",
+      "color": "green",
+      "pos": {
+       "ring": "outer",
+       "angle": 25
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "labels": true
+     },
+     {
+      "t": 0,
+      "actor": "ped",
+      "to": {
+       "x": 19.8,
+       "y": 6.2
+      },
+      "dur": 4.2
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "route": "ring->E",
+      "kmh": 16
+     },
+     {
+      "t": 1.0,
+      "actor": "me",
+      "stop_at": "crossing",
+      "dur": 2.2
+     },
+     {
+      "t": 0,
+      "actor": "ent",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "behind",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "north",
+      "route": "ring->W",
+      "kmh": 22
+     },
+     {
+      "t": 5.2,
+      "actor": "me",
+      "drive": "end",
+      "dur": 3,
+      "ease": "in"
+     }
+    ]
+   },
+   "hotspots": [
+    {
+     "id": "ped",
+     "actor": "ped",
+     "r": 3
+    },
+    {
+     "id": "ent",
+     "actor": "ent"
+    },
+    {
+     "id": "behind",
+     "actor": "behind"
+    },
+    {
+     "id": "north",
+     "actor": "north"
+    }
+   ],
+   "q": "أنت تخرج من الدوار إلى المخرج الأول، أين الخطر الذي يجب أن تستعد له الآن؟ انقر عليه",
+   "answer": "ped",
+   "explain": "على المخرج ممر مشاة وامرأة بدأت العبور، فخفف وتوقف قبل الممر حتى تكمل عبورها\nالسيارات عند المداخل تنتظر خارج الدوار ولا تقطع طريقك",
+   "tip": "طالع من الدوار؟ عينك عالممر اللي بعده",
+   "explain_fig": [
+    "mk-zebra",
+    "fig-turn-pedestrians"
+   ],
+   "src": [
+    "S1",
+    "S2",
+    "S3",
+    "S26"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rb-011",
+   "topic": "roundabouts",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "tap",
+   "scene": {
+    "template": "roundabout",
+    "params": {
+     "lanes": 2,
+     "ring": 2
+    },
+    "view": {
+     "zoom": 1.2
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 2,
+       "at": "stopline"
+      },
+      "signal": "left"
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "route": "S2->W",
+      "kmh": 22,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "track": "solution",
+      "style": "ok"
+     }
+    ],
+    "callouts": [
+     {
+      "text": "هنا تبدل إلى إشارة اليمين",
+      "at": {
+       "ring": "inner",
+       "angle": 340
+      },
+      "when": "solution",
+      "style": "gold"
+     }
+    ]
+   },
+   "hotspots": [
+    {
+     "id": "after-n",
+     "at": {
+      "ring": "inner",
+      "angle": 342
+     },
+     "r": 4.5
+    },
+    {
+     "id": "entry",
+     "at": {
+      "ring": "inner",
+      "angle": 165
+     },
+     "r": 4.5
+    },
+    {
+     "id": "after-e",
+     "at": {
+      "ring": "inner",
+      "angle": 75
+     },
+     "r": 4.5
+    },
+    {
+     "id": "at-w",
+     "at": {
+      "ring": "inner",
+      "angle": 262
+     },
+     "r": 4.5
+    }
+   ],
+   "q": "تريد الانعطاف يسارا (المخرج الثالث) وإشارة اليسار تعمل، انقر على المكان في الدوار الذي تبدل فيه إلى إشارة اليمين",
+   "answer": "after-n",
+   "explain": "للمخرج الثالث تبقي إشارة اليسار وأنت تدور، وبعد أن تتجاوز المخرج الثاني (الشمالي) تبدلها إلى إشارة اليمين\nهكذا يعرف من ينتظر عند مخرجك أنك ستخرج",
+   "explain_fig": [
+    "fig-roundabout-left"
+   ],
+   "src": [
+    "S6",
+    "S25"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rb-012",
+   "topic": "roundabouts",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "roundabout",
+    "params": {
+     "lanes": 2,
+     "ring": 2
+    },
+    "view": {
+     "zoom": 1.35,
+     "center": {
+      "x": -6,
+      "y": -2
+     }
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "ring": "inner",
+       "angle": 312
+      },
+      "signal": "left"
+     },
+     {
+      "id": "w1",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "arm": "W",
+       "lane": 1,
+       "at": "stopline"
+      },
+      "label": "تنتظرك"
+     },
+     {
+      "id": "n1",
+      "type": "car",
+      "color": "orange",
+      "pos": {
+       "arm": "N",
+       "lane": 1,
+       "dir": "out",
+       "at": 1
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "route": "ring->S",
+      "kmh": 20,
+      "signals": "none"
+     },
+     {
+      "t": 1.8,
+      "actor": "me",
+      "signal": "right"
+     },
+     {
+      "t": 5.0,
+      "actor": "me",
+      "signal": "off"
+     },
+     {
+      "t": 0,
+      "actor": "w1",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "n1",
+      "drive": 30,
+      "dur": 3
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "track": "solution",
+      "style": "ok"
+     }
+    ],
+    "callouts": [
+     {
+      "text": "هنا: إشارة اليمين",
+      "at": {
+       "ring": "inner",
+       "angle": 245
+      },
+      "when": "solution",
+      "style": "gold"
+     }
+    ]
+   },
+   "q": "أنت في المسار الداخلي وتريد العودة من الطريق الذي جئت منه (المخرج الرابع)، وتقترب الآن من المخرج الثالث، ما التصرف الصحيح؟",
+   "options": [
+    "أبقي إشارة اليسار تعمل حتى أخرج من الدوار",
+    "أنتقل الآن إلى المسار الخارجي لأقترب من مخرجي",
+    "أبقى في مساري، وبعد أن أتجاوز المخرج الثالث أشغل إشارة اليمين وأخرج بحذر",
+    "أتوقف داخل الدوار حتى يخلو المسار الخارجي تماما"
+   ],
+   "answer": 2,
+   "explain": "للالتفاف في الدوار استخدم المسار الأيسر وابق فيه، فتغيير المسار داخل الدوار ممنوع\nبعد أن تتجاوز المخرج الذي قبل مخرجك شغل إشارة اليمين، فالخروج من الدوار يكون دائما بإشارة اليمين",
+   "explain_fig": [
+    "fig-roundabout-left"
+   ],
+   "src": [
+    "S25",
+    "S6"
+   ],
+   "confidence": "medium",
+   "notes": "الالتفاف في الدوار غير مذكور في كتيب هيئة الطرق، والمصدر معهد إكسلنس (F7)، أما إشارة اليمين للخروج ومنع تغيير المسار فمن الكتيب أيضا"
+  },
+  {
+   "id": "rb-013",
+   "topic": "roundabouts",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "roundabout",
+    "params": {
+     "lanes": 2,
+     "ring": 2
+    },
+    "view": {
+     "zoom": 1.3,
+     "center": {
+      "x": 2,
+      "y": -6
+     }
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": "stopline"
+      },
+      "signal": "right"
+     },
+     {
+      "id": "truck",
+      "type": "truck",
+      "color": "orange",
+      "pos": {
+       "ring": "inner",
+       "before": "S",
+       "deg": 62
+      },
+      "signal": "right",
+      "label": "شاحنة طويلة"
+     },
+     {
+      "id": "c2",
+      "type": "car",
+      "color": "silver",
+      "pos": {
+       "arm": "S",
+       "lane": 2,
+       "at": "stopline"
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "c2",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "truck",
+      "route": "ring->E",
+      "to_lane": 1,
+      "kmh": 18
+     },
+     {
+      "t": 5.2,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 5.3,
+      "actor": "me",
+      "route": "S1->E",
+      "kmh": 18,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "truck",
+      "track": "solution",
+      "style": "warn"
+     }
+    ]
+   },
+   "q": "شاحنة طويلة تدور في المسار الداخلي قادمة من يسارك وتريد الخروج من المخرج الأول نفسه، والمسار الخارجي أمامك يبدو فارغا، ماذا تفعل؟",
+   "options": [
+    "أنتظر حتى تمر الشاحنة وتخرج، فهي طويلة وتحتاج إلى المسارين عند الدوران والخروج",
+    "أدخل المسار الخارجي فورا لأن الشاحنة في المسار الداخلي",
+    "أدخل وأسير بجانبها حتى أصل إلى مخرجي قبلها",
+    "أطلق المنبه لتعرف الشاحنة أنني سأدخل أمامها"
+   ],
+   "answer": 0,
+   "explain": "الشاحنة داخل الدوار لها الأولوية، والمركبات الطويلة تحتاج إلى مساحة أكبر للدوران وقد تشغل أكثر من مسار\nلا تسر بجانبها، انتظر حتى تخرج ثم ادخل خلفها بمسافة كافية",
+   "tip": "الشاحنة بتاخد مسارين، لا تحشر حالك جنبها",
+   "explain_fig": [
+    "fig-truck-turn-right",
+    "fig-truck-blind"
+   ],
+   "src": [
+    "S5",
+    "S1",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rb-014",
+   "topic": "roundabouts",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "roundabout",
+    "params": {
+     "lanes": 1,
+     "ring": 1
+    },
+    "view": {
+     "zoom": 1.15
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": "stopline"
+      }
+     },
+     {
+      "id": "amb",
+      "type": "ambulance",
+      "pos": {
+       "arm": "W",
+       "lane": 1,
+       "at": 9
+      },
+      "label": "سيارة إسعاف"
+     },
+     {
+      "id": "c1",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "arm": "E",
+       "lane": 1,
+       "at": "stopline"
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "c1",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "amb",
+      "route": "W1->E",
+      "kmh": 32
+     },
+     {
+      "t": 4.4,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 4.5,
+      "actor": "me",
+      "route": "S1->N",
+      "kmh": 22,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "amb",
+      "track": "solution",
+      "style": "warn"
+     }
+    ]
+   },
+   "q": "أنت عند مدخل الدوار وتسمع صفارة سيارة إسعاف تقترب من الدوار من جهة يسارك، والدوار أمامك فارغ، ماذا تفعل؟",
+   "options": [
+    "أدخل بسرعة قبل أن تصل سيارة الإسعاف إلى الدوار",
+    "أدخل ثم أتوقف داخل الدوار لأفسح لها الطريق",
+    "أرجع إلى الخلف قليلا لأبتعد عن طريقها",
+    "أبقى خارج الدوار عند خط الدخول حتى تمر سيارة الإسعاف، ثم أدخل بحذر"
+   ],
+   "answer": 3,
+   "explain": "إذا اقتربت مركبة طوارئ من الدوار فلا تدخله، فهي تحتاج الدوار فارغا لتمر بسرعة\nانتظر عند خط الدخول حتى تمر، ولا تلحق بها بعد مرورها",
+   "explain_fig": [
+    "ev-roundabout"
+   ],
+   "src": [
+    "S12",
+    "S14",
+    "S28"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rb-015",
+   "topic": "roundabouts",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "roundabout",
+    "params": {
+     "lanes": 1,
+     "ring": 1
+    },
+    "view": {
+     "zoom": 1.15
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "ring": "outer",
+       "angle": 152
+      },
+      "signal": "left"
+     },
+     {
+      "id": "amb",
+      "type": "ambulance",
+      "pos": {
+       "ring": "outer",
+       "angle": 228
+      },
+      "label": "سيارة إسعاف خلفك"
+     },
+     {
+      "id": "n1",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "arm": "N",
+       "lane": 1,
+       "at": "stopline"
+      }
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "route": "ring->E",
+      "kmh": 20,
+      "until": "exit"
+     },
+     {
+      "t": 3.0,
+      "actor": "me",
+      "pull_over": "right",
+      "dist": 10,
+      "dur": 2.2
+     },
+     {
+      "t": 0.6,
+      "actor": "amb",
+      "route": "ring->N",
+      "kmh": 20
+     },
+     {
+      "t": 0,
+      "actor": "n1",
+      "brake": true
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "me",
+      "track": "solution",
+      "style": "ok"
+     },
+     {
+      "actor": "amb",
+      "track": "solution",
+      "style": "warn"
+     }
+    ]
+   },
+   "q": "أنت داخل الدوار وتريد المخرج الثالث، وظهرت خلفك سيارة إسعاف بصفارتها وأضوائها، ما التصرف الصحيح؟",
+   "options": [
+    "أتوقف فورا في مكاني داخل الدوار",
+    "أتابع بهدوء وأخرج من أقرب مخرج، ثم أفسح لها الطريق على اليمين",
+    "أسرع لأصل إلى مخرجي قبلها",
+    "أقترب من الجزيرة الوسطى لتتجاوزني من اليمين داخل الدوار"
+   ],
+   "answer": 1,
+   "explain": "إذا كنت داخل الدوار ووصلت مركبة طوارئ فتابع بهدوء واخرج من أقرب مخرج، ثم أفسح لها على اليمين\nالتوقف المفاجئ داخل الدوار يسد طريقها ويربك من خلفك",
+   "tip": "إسعاف وإنت جوا الدوار؟ أقرب مخرج وبس",
+   "explain_fig": [
+    "ev-roundabout"
+   ],
+   "src": [
+    "S12",
+    "S14",
+    "S28"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rb-016",
+   "topic": "roundabouts",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "tap",
+   "scene": {
+    "template": "roundabout",
+    "params": {
+     "lanes": 2,
+     "ring": 2
+    },
+    "view": {
+     "zoom": 1.35,
+     "center": {
+      "x": 6,
+      "y": -4
+     }
+    },
+    "labels": "never",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "ring": "outer",
+       "angle": 180
+      }
+     },
+     {
+      "id": "cut",
+      "type": "car",
+      "color": "red",
+      "pos": {
+       "ring": "inner",
+       "angle": 178
+      },
+      "label": "تقطع مسارك لتخرج"
+     },
+     {
+      "id": "ent",
+      "type": "car",
+      "color": "white",
+      "pos": {
+       "arm": "E",
+       "lane": 1,
+       "at": "stopline"
+      }
+     },
+     {
+      "id": "nth",
+      "type": "car",
+      "color": "blue",
+      "pos": {
+       "arm": "N",
+       "lane": 1,
+       "at": "stopline"
+      }
+     },
+     {
+      "id": "wst",
+      "type": "taxi",
+      "pos": {
+       "arm": "W",
+       "lane": 2,
+       "at": "stopline"
+      }
+     }
+    ],
+    "intro": {
+     "len": 2.0,
+     "events": [
+      {
+       "t": 0,
+       "actor": "me",
+       "drive": 5,
+       "dur": 2.0
+      },
+      {
+       "t": 0,
+       "actor": "cut",
+       "drive": 3,
+       "dur": 0.8
+      },
+      {
+       "t": 0.8,
+       "actor": "cut",
+       "lane_change": "right",
+       "dist": 9,
+       "dur": 2.0
+      }
+     ]
+    },
+    "solution": [
+     {
+      "t": 0,
+      "labels": true
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "drive": 2.5,
+      "dur": 1.4,
+      "ease": "out"
+     },
+     {
+      "t": 0,
+      "actor": "cut",
+      "path": [
+       [
+        15.2,
+        -7.6
+       ],
+       [
+        19.5,
+        -6.7
+       ],
+       [
+        26,
+        -6.5
+       ],
+       [
+        50,
+        -6.5
+       ]
+      ],
+      "kmh": 20
+     },
+     {
+      "t": 0.3,
+      "actor": "cut",
+      "signal": "right"
+     },
+     {
+      "t": 0,
+      "actor": "ent",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "nth",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "wst",
+      "brake": true
+     },
+     {
+      "t": 2.6,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 2.7,
+      "actor": "me",
+      "route": "ring->N",
+      "kmh": 18,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "cut",
+      "track": "solution",
+      "style": "bad"
+     }
+    ]
+   },
+   "hotspots": [
+    {
+     "id": "cut",
+     "actor": "cut",
+     "r": 3
+    },
+    {
+     "id": "ent",
+     "actor": "ent"
+    },
+    {
+     "id": "nth",
+     "actor": "nth"
+    },
+    {
+     "id": "wst",
+     "actor": "wst"
+    }
+   ],
+   "q": "أنت تدور في المسار الخارجي لتتابع إلى الأمام، أين الخطر الذي يجب أن تتصرف معه فورا؟ انقر عليه",
+   "answer": "cut",
+   "explain": "السيارة الحمراء تنتقل من المسار الداخلي إلى مسارك لتخرج من المخرج الأول، وتغيير المسار داخل الدوار ممنوع\nحتى لو كان الحق معك خفف واستعد للتوقف لتتجنب الاصطدام",
+   "tip": "الحق معك ما بيحميك، خفف وخليه يمرق",
+   "src": [
+    "S25",
+    "S6",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rb-017",
+   "topic": "roundabouts",
+   "level": 5,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "roundabout",
+    "params": {
+     "lanes": 1,
+     "ring": 1,
+     "control": "lights",
+     "lights": {
+      "S": "flash-amber",
+      "E": "flash-amber",
+      "N": "flash-amber",
+      "W": "flash-amber"
+     }
+    },
+    "view": {
+     "zoom": 1.25
+    },
+    "labels": "solution",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": "stopline"
+      }
+     },
+     {
+      "id": "red",
+      "type": "car",
+      "color": "red",
+      "pos": {
+       "ring": "outer",
+       "before": "S",
+       "deg": 70
+      },
+      "label": "قادمة من يسارك"
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "red",
+      "route": "ring->N",
+      "kmh": 24
+     },
+     {
+      "t": 3.4,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 3.5,
+      "actor": "me",
+      "route": "S1->N",
+      "kmh": 20,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "red",
+      "track": "solution",
+      "style": "other"
+     }
+    ]
+   },
+   "q": "الإشارة الضوئية عند مدخل هذا الدوار صفراء وامضة، وسيارة تدور داخله قادمة من يسارك، ماذا تفعل؟",
+   "options": [
+    "أخفف وأعطي الأولوية للسيارة القادمة من يساري، ثم أدخل بحذر",
+    "أدخل لأن الأصفر الوامض يعطيني الأولوية",
+    "أتوقف وأنتظر حتى تصبح الإشارة خضراء مهما طال الوقت",
+    "أسرع لأدخل قبل أن تتحول الإشارة إلى الأحمر"
+   ],
+   "answer": 0,
+   "explain": "الأصفر الوامض عند الدوار يعني أفسح الطريق، والأولوية للقادم من اليسار\nخفف واترك السيارة التي تدور تمر، ثم ادخل بحذر",
+   "tip": "أصفر بيرمش؟ اعتبره إشارة أفسح الطريق",
+   "explain_fig": [
+    "tl-flashing-amber-fixed",
+    "tl-flashing-amber"
+   ],
+   "src": [
+    "S3",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": "المادة 25 من اللائحة التنفيذية: الأصفر الوامض على الأعمدة الثابتة عند الدوارات يعني أفسح الطريق والأولوية للقادم من اليسار، والمحرك يرسم رأس إشارة كاملا وليس مصباحا واحدا على عمود"
+  },
+  {
+   "id": "rb-018",
+   "topic": "roundabouts",
+   "level": 5,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "type": "choice",
+   "scene": {
+    "template": "roundabout",
+    "params": {
+     "lanes": 1,
+     "ring": 1
+    },
+    "view": {
+     "zoom": 1.3,
+     "center": {
+      "x": -2,
+      "y": -4
+     }
+    },
+    "labels": "never",
+    "actors": [
+     {
+      "id": "me",
+      "type": "me",
+      "pos": {
+       "arm": "S",
+       "lane": 1,
+       "at": "stopline"
+      }
+     },
+     {
+      "id": "red",
+      "type": "car",
+      "color": "red",
+      "pos": {
+       "ring": "outer",
+       "before": "S",
+       "deg": 58
+      },
+      "signal": "right",
+      "label": "نسي الإشارة وتابع"
+     }
+    ],
+    "solution": [
+     {
+      "t": 0,
+      "labels": true
+     },
+     {
+      "t": 0,
+      "actor": "me",
+      "brake": true
+     },
+     {
+      "t": 0,
+      "actor": "red",
+      "route": "ring->E",
+      "kmh": 24,
+      "signals": "none"
+     },
+     {
+      "t": 3.2,
+      "actor": "me",
+      "brake": false
+     },
+     {
+      "t": 3.3,
+      "actor": "me",
+      "route": "S1->N",
+      "kmh": 20,
+      "ease": "in"
+     }
+    ],
+    "arrows": [
+     {
+      "actor": "red",
+      "track": "solution",
+      "style": "warn"
+     }
+    ]
+   },
+   "q": "سيارة تدور في الدوار قادمة من يسارك وإشارة اليمين فيها تعمل، كأنها ستخرج قبل أن تصل إليك، هل تدخل الآن؟",
+   "options": [
+    "نعم، الإشارة تعني أنها ستخرج قبل مدخلي",
+    "نعم، إذا أطلقت المنبه لأنبهها أنني سأدخل",
+    "لا، أنتظر حتى أتأكد أنها بدأت تخرج فعلا أو مرت من أمامي",
+    "لا، أنتظر حتى يخلو الدوار كله من السيارات"
+   ],
+   "answer": 2,
+   "explain": "السيارة داخل الدوار لها الأولوية حتى تخرج منه فعلا، والإشارة وحدها لا تكفي فقد تكون منسية أو خاطئة\nانتظر حتى ترى السيارة تنعطف إلى المخرج أو تمر، ولا تحتاج أن يخلو الدوار كله",
+   "tip": "الإشارة وعد مش أكيد، استنى تشوف الدركسيون",
+   "src": [
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "confidence": "medium",
+   "notes": "مبني على أولوية من داخل الدوار (F2) وعلى أن صاحب الأولوية أو غيره قد يخطئ فعلى السائق تجنب الاصطدام (F17)، ولا يوجد نص رسمي يذكر الإشارة المنسية تحديدا"
+  }
+ ]
+}
