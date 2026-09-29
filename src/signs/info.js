@@ -211,7 +211,8 @@
     return PA('M1,30L1,12C1,9.5 2.5,8 5,8L14,8C15.8,8 16.8,8.8 17.5,10.5L19,14L19,30Z', fill) +
       PA('M4,11L13.6,11C14.4,11 15,11.4 15.3,12.2L16.4,15.6L4,15.6Z', bg) +
       R(20.5, 1, 30, 29, fill) + PG([[52, 1], [58.5, 4.5], [58.5, 26.5], [52, 29]], fill) +
-      R(4, 29, 47, 3, fill) + R(61, 26, 10, 10.5, fill, 0.8) + LN(66, 26, 66, 36.5, bg, 1.3) +
+      R(4, 29, 47, 3, fill) + PG([[61, 25], [64.5, 21.5], [75, 21.5], [71.5, 25]], fill) + R(61, 25.8, 10.5, 11.2, fill) +
+      PG([[72.3, 25.4], [75, 22.6], [75, 33.5], [72.3, 36.4]], fill) +
       PA('M11,32m-5,0a5,5 0 1,0 10,0a5,5 0 1,0 -10,0Z', fill) + CI(11, 32, 1.8, bg) +
       PA('M40,32m-5,0a5,5 0 1,0 10,0a5,5 0 1,0 -10,0Z', fill) + CI(40, 32, 1.8, bg);
   }
@@ -497,10 +498,11 @@
   });
 
   reg('t-flagman', 'عامل بعلم أمامك', function (o, label) {
-    var box = K.fit('warn', 'flagman'), gb = K.glyphBox('flagman', box), s = gb.s;
-    var flag = [[8.4, 3.4], [0, 4.6], [0.8, 19.4], [12.4, 17.6]].map(function (p) { return [gb.x + p[0] * s, gb.y + (p[1] - 2.3) * s]; });
-    return K.warn(glyph('flagman', box) + PG(flag, RD, ' stroke="' + RD + '" stroke-width="0.5" stroke-linejoin="round"'),
-      { bg: YE, label: label });
+    // flagman glyph a little smaller than its tuned box, so that a bigger red flag still clears the red border
+    var k = 0.29, x = 44.3, y = 74 - 98.5 * k;
+    var flag = [[8.4, 3.4], [-11, 6.2], [-12, 29], [14.4, 24.7]].map(function (p) { return [x + p[0] * k, y + (p[1] - 2.3) * k]; });
+    return K.warn(glyph('flagman', { x: x, y: y, w: 56.8 * k, h: 98.5 * k }) +
+      PG(flag, RD, ' stroke="' + RD + '" stroke-width="0.6" stroke-linejoin="round"'), { bg: YE, label: label });
   });
 
   reg('t-cones', 'أقماع المرور', function (o, label) {
@@ -508,23 +510,47 @@
       { horizon: 56 });
   });
 
-  reg('t-barriers', 'حواجز الأعمال المؤقتة', function (o, label) {
-    var top = 50, bot = 88, bw = 36, tw = 22;
-    function cl(pts) { return pts.map(function (p) { return [Math.max(1, Math.min(99, p[0])), p[1]]; }); }
-    function xl(cx, y) { return cx - tw / 2 - (bw - tw) / 2 * (y - top) / (bot - top); }
-    function xr(cx, y) { return cx + tw / 2 + (bw - tw) / 2 * (y - top) / (bot - top); }
-    function seg(cx, fill, shade) {
-      var out = PG(cl([[xl(cx, bot), bot], [xl(cx, top + 3), top + 3], [cx - tw / 2 + 3, top], [cx + tw / 2 - 3, top],
-        [xr(cx, top + 3), top + 3], [xr(cx, bot), bot]]), fill);
-      out += PG(cl([[xl(cx, 60), 60], [xr(cx, 60), 60], [xr(cx, 64), 64], [xl(cx, 64), 64]]), shade);
-      if (cx > 10 && cx < 90) out += R(cx - 11, bot - 8, 8, 5.5, '#2A2F37', 1) + R(cx + 3, bot - 8, 8, 5.5, '#2A2F37', 1) +
-        R(cx - 4.5, top - 2.5, 9, 3.5, shade, 1.2);
+  // keep a polygon between x0 and x1 (Sutherland-Hodgman on two vertical lines)
+  function clipX(pts, x0, x1) {
+    function half(ps, inside, cut) {
+      var out = [];
+      for (var i = 0; i < ps.length; i++) {
+        var p = ps[i], q = ps[(i + 1) % ps.length], ip = inside(p), iq = inside(q);
+        if (ip) out.push(p);
+        if (ip !== iq) out.push(cut(p, q));
+      }
       return out;
     }
-    function lug(x, y, fill) { return R(x - 5, y, 10, 6, fill, 2); }
-    var s = seg(14, RD, '#A3161F') + seg(86, RD, '#A3161F') + seg(50, '#F2F2EE', '#C9CDD3') +
-      lug(32, 55, '#A3161F') + lug(32, 73, '#C9CDD3') + lug(68, 55, '#A3161F') + lug(68, 73, '#C9CDD3');
-    return tile(s, label, { horizon: 62 });
+    function at(x) { return function (p, q) { var t = (x - p[0]) / (q[0] - p[0]); return [x, p[1] + (q[1] - p[1]) * t]; }; }
+    pts = half(pts, function (p) { return p[0] >= x0; }, at(x0));
+    return pts.length ? half(pts, function (p) { return p[0] <= x1; }, at(x1)) : pts;
+  }
+
+  reg('t-barriers', 'حواجز الأعمال المؤقتة', function (o, label) {
+    // a line of barriers receding to the right; each segment has a trapezoid side profile (sloped ends)
+    var VP = [172, 40], A = [-14, 92], H = 42, D0 = 3, sl = 0.16;
+    function P(d, v) {
+      var t = d / (d + D0), x = A[0] + t * (VP[0] - A[0]);
+      var yb = A[1] + t * (VP[1] - A[1]), yt = A[1] - H + t * (VP[1] - A[1] + H);
+      return [x, yb + (yt - yb) * v];
+    }
+    function PT(d, k) { var b = P(d, 0), t = P(d, 1); return [t[0], t[1] - (b[1] - t[1]) * k]; }
+    function poly(pts, fill) { pts = clipX(pts, 1.2, 98.8); return pts.length > 2 ? PG(pts, fill) : ''; }
+    function band(d0, d1, v0, v1, fill) {
+      return poly([P(d0 + sl * v0, v0), P(d1 - sl * v0, v0), P(d1 - sl * v1, v1), P(d0 + sl * v1, v1)], fill);
+    }
+    var s = poly([P(0, 0), P(5, 0), [VP[0], VP[1] + 18], [A[0], A[1] + 6]], '#30363F');
+    var cols = [[RD, '#A3161F', '#E0555B'], ['#F2F2EE', '#C3C8CF', '#FFFFFF']];
+    for (var i = 4; i >= 0; i--) {
+      var c = cols[i % 2], d0 = i, d1 = i + 1, m = (d0 + d1) / 2;
+      s += poly([P(d1 - 0.07, 0.2), P(d1 + 0.07, 0.2), P(d1 + 0.07, 0.86), P(d1 - 0.07, 0.86)], '#4A4F57');
+      s += poly([P(d0, 0), P(d0 + sl, 1), P(d1 - sl, 1), P(d1, 0)], c[0]) +
+        poly([P(d0 + sl, 1), P(d1 - sl, 1), PT(d1 - sl - 0.03, 0.1), PT(d0 + sl + 0.03, 0.1)], c[2]) +
+        band(d0, d1, 0.56, 0.66, c[1]) +
+        poly([PT(m - 0.09, 0.02), PT(m + 0.09, 0.02), PT(m + 0.09, 0.13), PT(m - 0.09, 0.13)], c[1]) +
+        band(d0 + 0.2, m - 0.1, 0.06, 0.2, '#2A2F37') + band(m + 0.1, d1 - 0.2, 0.06, 0.2, '#2A2F37');
+    }
+    return tile(s, label, { horizon: 40 });
   });
 
   reg('t-arrow-board', 'لوحة السهم الوامض', function (o, label) {

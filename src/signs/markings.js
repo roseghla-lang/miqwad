@@ -203,9 +203,9 @@
     for (var d = Math.ceil((lo - (off || 0)) / gap) * gap + (off || 0); d <= hi; d += gap) {
       var k = d - (cx * nx + cy * ny), px = cx + nx * k, py = cy + ny * k;
       var s = segIn([px - ux * 300, py - uy * 300], [px + ux * 300, py + uy * 300], P);
-      if (s.length) out += line(s[0][0], s[0][1], s[1][0], s[1][1], col, w);
+      if (s.length) out += 'M' + f(s[0][0]) + ' ' + f(s[0][1]) + 'L' + f(s[1][0]) + ' ' + f(s[1][1]);
     }
-    return out;
+    return out ? path(out, 'none', { stroke: col, sw: w }) : '';
   }
 
   // ================================================================ road kit
@@ -241,13 +241,11 @@
     var c = o.me ? C.me : (o.c || C.silver), dk = shade(c, -0.45), s = '';
     if (o.me) s += rect(-1.4, -2.75, 2.8, 5.5, 'none', { rx: 1.05, stroke: C.gold, sw: 0.28, op: 0.45 });
     s += rect(-0.975, -2.3, 1.95, 4.6, c, { rx: 0.62, stroke: o.me ? C.gold : dk, sw: o.me ? 0.3 : 0.14 });
-    s += path('M-0.8 -1.16L0.8 -1.16L0.66 -0.42L-0.66 -0.42Z', C.glass);
-    s += rect(-0.66, -0.42, 1.32, 1.6, shade(c, o.me ? -0.06 : 0.1), { rx: 0.15 });
-    s += path('M-0.66 1.18L0.66 1.18L0.74 1.68L-0.74 1.68Z', C.glass);
-    s += rect(-0.87, -0.95, 0.11, 2.2, C.glass, { op: 0.75 }) + rect(0.76, -0.95, 0.11, 2.2, C.glass, { op: 0.75 });
-    s += rect(-1.13, -1.02, 0.22, 0.17, dk, { rx: 0.05 }) + rect(0.91, -1.02, 0.22, 0.17, dk, { rx: 0.05 });
-    s += rect(-0.84, -2.26, 0.48, 0.17, C.lamp, { rx: 0.06 }) + rect(0.36, -2.26, 0.48, 0.17, C.lamp, { rx: 0.06 });
-    s += rect(-0.84, 2.1, 0.46, 0.15, C.tail, { rx: 0.05 }) + rect(0.38, 2.1, 0.46, 0.15, C.tail, { rx: 0.05 });
+    if (!o.lite) s += rect(-0.66, -0.42, 1.32, 1.6, shade(c, o.me ? -0.06 : 0.1), { rx: 0.15 });
+    s += path('M-.8 -1.16H.8L.66 -.42H-.66ZM-.66 1.18H.66L.74 1.68H-.74ZM-.87 -.95h.11v2.2h-.11ZM.76 -.95h.11v2.2h-.11Z', C.glass);
+    if (!o.lite) s += path('M-1.13 -1.02h.22v.17h-.22ZM.91 -1.02h.22v.17h-.22Z', dk);
+    s += path('M-.84 -2.26h.48v.17h-.48ZM.36 -2.26h.48v.17h-.48Z', C.lamp);
+    s += path('M-.84 2.1h.46v.15h-.46ZM.38 2.1h.46v.15h-.46Z', C.tail);
     if (o.ind) s += indicators(0.975, 2.3, o.ind);
     return grp(at(x, y, o.rot, len / 4.6), s);
   }
@@ -410,7 +408,9 @@
   }
 
   // ================================================================ scene helpers
-  function street(x0, x1) { return asphalt(x0, 0, x1, 100) + block(-10, -10, x0, 110, 0) + block(x1, -10, 110, 110, 0); }
+  function street(x0, x1) {
+    return asphalt(x0, 0, x1, 100) + area(boxPts(x0 - KW, 0, x0, 100), C.kerb) + area(boxPts(x1, 0, x1 + KW, 100), C.kerb);
+  }
   // zebra crossing: n bars parallel to the traffic, spread over x0..x1, from y0 to y1
   function zebra(x0, x1, y0, y1, n) {
     var m = 1.6, bw = (x1 - x0 - 2 * m) / (n + (n - 1) / 1.35), g = bw / 1.35, out = '';
@@ -504,12 +504,11 @@
 
   reg('mk-hard-shoulder', 'كتف الطريق', function (o, label) {
     var s = highway();
-    s += car(21, 16, 19, { c: C.silver }) + car(21, 45, 19, { c: C.red }) + car(21, 74, 19, { c: C.dark });
-    s += car(42.6, 30, 19, { c: C.green }) + car(42.6, 60, 19, { c: C.blue }) + car(42.6, 89, 19, { c: C.silver });
-    s += car(64.2, 22, 19, { c: C.dark }) + car(64.2, 51, 19, { c: C.silver });
+    [[21, 16, C.silver], [21, 45, C.red], [21, 74, C.dark], [42.6, 30, C.green], [42.6, 60, C.blue], [42.6, 89, C.silver],
+      [64.2, 22, C.dark], [64.2, 51, C.silver]].forEach(function (q) { s += car(q[0], q[1], 19, { c: q[2], lite: true }); });
     s += car(64.2, 82, 19, { me: true });
-    s += route([69, 72, 72, 66, 84.5, 68, 84.5, 58], 'bad');
-    s += xMark(78.5, 67, 4);
+    s += route([68.5, 72, 71, 65, 84.5, 67, 84.5, 51], 'bad');
+    s += xMark(79.5, 63.5, 3.8);
     s += ambulance(84.5, 25, 24);
     return tile(s, label, true);
   });
@@ -540,7 +539,7 @@
     s += broken(50, 100, 50, 68, C.white, 3) + broken(50, 30, 50, 0, C.white, 3);
     s += zebra(16, 84, 36, 62, 7);
     s += pedSign(92, 73, 11);
-    s += walker(88.2, 48, 7, { rot: -90 });
+    s += walker(86.6, 49, 9.5, { rot: -90 });
     return tile(s, label);
   });
 
@@ -645,9 +644,9 @@
       block(-10, 70, 30, 110, [0, 6, 0, 0]) + block(70, 70, 110, 110, [6, 0, 0, 0]);
     s += solid(50, 0, 50, 27, C.yellow) + solid(50, 73, 50, 100, C.yellow) + solid(0, 50, 27, 50, C.yellow) + solid(73, 50, 100, 50, C.yellow);
     s += rect(50, 71, 20, 4, C.white) + rect(30, 25, 20, 4, C.white) + rect(25, 50, 4, 20, C.white) + rect(71, 30, 4, 20, C.white);
-    var box = boxPts(31.5, 31.5, 68.5, 68.5);
-    s += hatch(box, 45, 7.4, C.yellow, 1.8) + hatch(box, -45, 7.4, C.yellow, 1.8);
-    s += rect(31.5, 31.5, 37, 37, 'none', { stroke: C.yellow, sw: 2.4 });
+    var box = boxPts(34.5, 34.5, 65.5, 65.5);
+    s += hatch(box, 45, 6.3, C.yellow, 1.7, 3.15) + hatch(box, -45, 6.3, C.yellow, 1.7, 3.15);
+    s += rect(34.5, 34.5, 31, 31, 'none', { stroke: C.yellow, sw: 2.4 });
     s += car(60, 16.5, 21, { c: C.red });
     s += car(60, 88, 21, { me: true });
     s += signal(80.5, 84.5, 0.72, 'g');
@@ -671,7 +670,7 @@
     s += area(E.concat(offsetPts(E, -XW).reverse()), C.asphalt);
     s += area([[XL, tip]].concat(up, [[XL, -4]]), C.asphalt);
     // chevrons pointing in the direction of travel, apex on the gore's centre line
-    var k = Math.SQRT1_2;
+    var k = Math.SQRT1_2, ch = '';
     for (var ya = 80; ya > -40; ya -= 8.2) {
       var xr = hit([XL, ya], [1, 0], E);
       if (!xr || xr[0] - XL < 4) continue;
@@ -679,9 +678,10 @@
       [l, r].forEach(function (e) {
         if (!e) return;
         var sg = segIn(a, e, TILE);
-        if (sg.length) s += line(sg[0][0], sg[0][1], sg[1][0], sg[1][1], C.white, 2.4);
+        if (sg.length) ch += 'M' + f(sg[0][0]) + ' ' + f(sg[0][1]) + 'L' + f(sg[1][0]) + ' ' + f(sg[1][1]);
       });
     }
+    s += path(ch, 'none', { stroke: C.white, sw: 2.4 });
     s += broken(XL, 100, XL, tip, C.white, 0, 3.2, [4.5, 3.5]) + solid(XL, tip, XL, 0);
     s += path(pl(trim(up)), 'none', { stroke: C.white, sw: LW });
     s += path(pl(trim(offsetPts(E, -XW + 1.2))), 'none', { stroke: C.white, sw: LW });
@@ -692,8 +692,7 @@
     var s = asphalt(14, 0, 76, 100) + asphalt(70, 36, 110, 60);
     s += block(-10, -10, 14, 110, 0) + block(76, -10, 110, 36, [0, 0, 0, 5]) + block(76, 60, 110, 110, [5, 0, 0, 0]);
     s += broken(45, 100, 45, 0, C.white, 2);
-    s += rect(47.4, 37, 27.4, 22, 'none', { stroke: C.yellow, sw: 2.4 });
-    s += line(47.4, 37, 74.8, 59, C.yellow, 1.8) + line(74.8, 37, 47.4, 59, C.yellow, 1.8);
+    s += rect(47.6, 37.2, 27, 21.6, 'none', { stroke: C.yellow, sw: 2.6 });
     s += car(61, 17, 22, { c: C.blue });
     s += car(61, 74, 22, { me: true });
     s += car(29.5, 50, 22, { c: C.silver });
@@ -711,25 +710,29 @@
   reg('mk-bus-stop', 'علامة موقف الحافلات', function (o, label) {
     var s = street(8, 84);
     s += broken(40, 100, 40, 0, C.white, 2);
-    s += rect(69.4, 16, 13.4, 68, 'none', { stroke: C.white, sw: 2.2 });
-    s += bus(76.1, 50, 50);
-    s += rect(88.6, 30, 8.6, 30, '#6F8196', { rx: 1.2, stroke: '#A9B6C4', sw: 0.8 }) + rect(90.2, 32, 2, 26, '#4E5D6E');
+    s += rect(68.8, 6, 14, 88, 'none', { stroke: C.white, sw: 2.2 });
+    s += bus(75.8, 36, 50);
+    s += rect(88.6, 22, 8.6, 30, '#6F8196', { rx: 1.2, stroke: '#A9B6C4', sw: 0.8 }) + rect(90.2, 24, 2, 26, '#4E5D6E');
     s += car(24, 30, 23, { c: C.dark }) + car(56, 70, 23, { me: true });
     return tile(s, label);
   });
 
   // ---------- devices
   reg('mk-rumble-strips', 'أشرطة الاهتزاز', function (o, label) {
-    var ring = arcPts(50, -18, 46, 0, 180, 6), isl = arcPts(50, -18, 26, 0, 180, 8);
-    var s = area(ring, C.kerb) + area(arcPts(50, -18, 46 - KW, 0, 180, 6), C.asphalt);
-    s += asphalt(20, 12, 80, 100) + block(-10, 20, 20, 110, 0) + block(80, 20, 110, 110, 0);
-    s += area(arcPts(50, -18, 46 - KW, 0, 180, 6).concat([[80, 22], [20, 22]]), C.asphalt);
-    s += area(isl, C.kerb) + area(arcPts(50, -18, 26 - KW, 0, 180, 8), '#3E5B3A');
-    s += broken(20, 31, 80, 31, C.white, 0, 3, [4.3, 4.3]);
-    s += broken(50, 100, 50, 36, C.white, 4);
-    [45, 66, 89].forEach(function (y) {
-      for (var i = 0; i < 5; i++) s += rect(20, y - 6 + i * 3, 60, 1.6, C.yellow);
+    // roundabout at the top (centre above the tile), two entry lanes x 22..78, give-way line at y 32
+    var cx = 50, cy = -20, R = 48, a0 = Math.atan2(19 + 20, 22 - cx) * 180 / Math.PI;
+    var s = area(arcPts(cx, cy, R, 0, 360, 6), C.asphalt) + asphalt(22, 12, 78, 100);
+    var left = [[22, 112], [22, 19]].concat(arcPts(cx, cy, R, a0, 172, 6).slice(1));
+    var right = [[78, 112], [78, 19]].concat(arcPts(cx, cy, R, 180 - a0, 8, 6).slice(1));
+    s += kerbAlong(offsetPts(left, KW / 2)) + kerbAlong(offsetPts(right, -KW / 2));
+    s += area(arcPts(cx, cy, 28, 0, 360, 8), C.kerb) + area(arcPts(cx, cy, 28 - KW, 0, 360, 8), '#3E5B3A');
+    s += broken(22, 32, 78, 32, C.white, 0, 3, [4.3, 4.3]);
+    s += broken(50, 100, 50, 37, C.white, 4);
+    var st = '';
+    [49.4, 66.8, 90].forEach(function (y) {
+      for (var i = 0; i < 5; i++) st += 'M22 ' + f(y - 6.6 + i * 2.9) + 'h56v1.6h-56Z';
     });
+    s += path(st, C.yellow);
     return tile(s, label);
   });
 
@@ -753,15 +756,19 @@
     var RE = offsetPts(E, -XW + 1.2);
     s += path(pl(trim(RE)), 'none', { stroke: C.white, sw: LW });
     s += rect(0, 0, 100, 100, '#0B1019', { rx: 8, op: 0.5 });          // night
+    var glow = {}, core = {};
     function stud(x, y, col) {
       if (y < 2.6 || y > 97.4) return '';
-      return circ(x, y, 2.5, col, { op: 0.32 }) + rect(x - 1.05, y - 0.8, 2.1, 1.6, col, { rx: 0.4 });
+      glow[col] = (glow[col] || '') + 'M' + f(x - 2.5) + ' ' + f(y) + 'a2.5 2.5 0 1 0 5 0a2.5 2.5 0 1 0 -5 0Z';
+      core[col] = (core[col] || '') + 'M' + f(x - 1.05) + ' ' + f(y - 0.8) + 'h2.1v1.6h-2.1Z';
+      return '';
     }
     [X0 + XW, X0 + 2 * XW].forEach(function (x) { for (var y = 88; y > 0; y -= 21) s += stud(x, y, '#FFFFFF'); });
     for (var y = 95; y > 0; y -= 10.5) s += stud(X0 + 5.8, y, '#FFFFFF');
     for (var y2 = 5; y2 < tip; y2 += 10.5) s += stud(XL - 2.6, y2, '#FFFFFF');
     RE.forEach(function (p, i) { if (i % 3 === 1) s += stud(p[0] - 2.6, p[1], '#FFFFFF'); });
     [46, 55, 64, 73].forEach(function (y) { s += stud(XL, y, '#43D67F'); });
+    for (var k in glow) s += path(glow[k], k, { op: 0.32 }) + path(core[k], k);
     return tile(s, label, true);
   });
 
@@ -772,7 +779,6 @@
     s += rect(52.6, 36, 15.8, 15.8, C.sBlue, { rx: 1 });
     s += glyphOr('wheelchair', { x: 54.4, y: 37.4, w: 12.2, h: 13, fill: C.white }, circ(60.5, 44, 5, C.white));
     s += wheelchairSign(60.5, 11, 12);
-    s += car(18.5, 47, 21, { c: C.blue }) + car(81.5, 47, 21, { c: C.silver });
     return tile(s, label);
   });
 })();

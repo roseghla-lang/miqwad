@@ -66,6 +66,11 @@
     return path(rr(0, y0, 160, y1 - y0, [y0 <= 0 ? 10 : 0, y0 <= 0 ? 10 : 0, y1 >= 120 ? 10 : 0, y1 >= 120 ? 10 : 0]), fill, o);
   }
   function panel(fill) { return rect(0, 0, 160, 120, 10, fill || C.panel); }
+  // panel-coloured cover over everything outside a region (even-odd hole), so a drawing can look cropped
+  // by a frame without clip paths
+  function cover(holeD, fill) {
+    return path(rr(0, 0, 160, 120, [10, 10, 10, 10]) + holeD, fill || C.panel, { 'fill-rule': 'evenodd' });
+  }
   function arcPt(cx, cy, r, deg) { var a = deg * Math.PI / 180; return [cx + r * Math.cos(a), cy - r * Math.sin(a)]; }
 
   // ------------------------------------------------------------------ text (K.text sets the embedded fonts)
@@ -218,15 +223,30 @@
       sk(M([[cx + h * 0.075, top + h * 0.6], [cx + h * 0.09, y - h * 0.03]]), fill, h * 0.1);
   }
 
+  // car seat, side view facing RIGHT; origin = rear bottom of the cushion. o: restraint:false, back (backrest top, local y)
+  var SEAT = '#3A4A63', SEAT_HI = '#50627F';
+  function seatSide(x, y, s, o) {
+    o = o || {};
+    var q = '', st = { stroke: SEAT_HI, 'stroke-width': 1 };
+    if (o.restraint !== false) {
+      q += line(-4, -56, -2.6, -50, '#6B737E', 1.4) + line(0.6, -56, 2, -50, '#6B737E', 1.4) +
+        path(rr(-11, -72.5, 13, 18, [4.5, 4.5, 4.5, 4.5]), SEAT, st);
+    }
+    q += path('M-4,-50L8,-51Q11,-51 11.4,-48L16,-6L0,-2Q-4,-2 -4.4,-6L-8,-45Q-8,-50 -4,-50Z', SEAT, st);
+    q += path('M0,-10L46,-14Q51,-14 51,-9L50,-4Q49.6,-1 45,-0.6L4,2Q-2,2 -1.4,-4Z', SEAT, st);
+    return g(q, tr(x, y, s));
+  }
+
   // ------------------------------------------------------------------ icons (centred at 0,0 unless noted)
-  function eyeIcon(cx, cy, s, col) {
-    var q = sk('M-5,0Q0,-4.4 5,0Q0,4.4 -5,0Z', col, 1.1) + circ(0, 0, 2, col) + circ(0, 0, 0.8, C.pill);
+  function eyeIcon(cx, cy, s, col, bg) {
+    var q = sk('M-5,0Q0,-4.4 5,0Q0,4.4 -5,0Z', col, 1.1) + circ(0, 0, 2, col) + circ(0, 0, 0.8, bg || C.pill);
     return g(q, tr(cx, cy, s));
   }
-  function pedalIcon(cx, cy, s, col) {
+  // brake pedal: wide ribbed pad on an arm hanging from a pivot
+  function pedalIcon(cx, cy, s, col, rib) {
     var q = sk('M1.8,-5.8L0.2,-1.2', col, 1.3) + circ(1.9, -5.9, 1.1, col) +
       path(rr(-4.6, -1.8, 9.2, 5.6, [1.4, 1.4, 1.4, 1.4]), col) +
-      line(-3, 0.2, 3, 0.2, C.pill, 0.7) + line(-3, 2, 3, 2, C.pill, 0.7);
+      line(-3, 0.2, 3, 0.2, rib || C.pill, 0.7) + line(-3, 2, 3, 2, rib || C.pill, 0.7);
     return g(q, tr(cx, cy, s));
   }
   // dashboard headlamp symbol: lamp dome on the right, rays on the left (ISO style); high = straight rays
@@ -269,15 +289,25 @@
   }
 
   // ------------------------------------------------------------------ shared scene parts
-  // night side scene: sky, horizon, road band (y 74..98), verge
+  // night side scene: sky, far desert, road band (y 76..104), near verge
   function nightRoad() {
     var s = panel(C.night);
-    [[12, 12, 0.6], [34, 7, 0.5], [57, 16, 0.7], [83, 9, 0.5], [104, 22, 0.6], [22, 34, 0.5], [70, 38, 0.4], [148, 44, 0.5], [44, 50, 0.4]]
-      .forEach(function (p) { s += circ(p[0], p[1], p[2], C.ink, { opacity: 0.55 }); });
-    s += rect(0, 62, 160, 12, 0, '#0F1520');
-    s += rect(0, 74, 160, 24, 0, '#1C2027') + line(0, 74.4, 160, 74.4, C.kerb, 0.7, { opacity: 0.25 });
-    s += band(98, 120, '#0D1118') + line(0, 97.8, 160, 97.8, C.kerb, 0.8, { opacity: 0.35 });
+    [[12, 12, 0.6], [34, 7, 0.5], [57, 16, 0.7], [83, 9, 0.5], [104, 24, 0.6], [22, 34, 0.5], [70, 40, 0.4], [150, 46, 0.5],
+      [44, 52, 0.4], [96, 50, 0.4]].forEach(function (p) { s += circ(p[0], p[1], p[2], C.ink, { opacity: 0.55 }); });
+    s += rect(0, 62, 160, 14, 0, '#0F1520');
+    s += rect(0, 76, 160, 28, 0, '#1C2027') + line(0, 76.4, 160, 76.4, C.kerb, 0.7, { opacity: 0.25 });
+    s += band(104, 120, '#0D1118') + line(0, 104, 160, 104, C.kerb, 0.8, { opacity: 0.35 });
     return s;
+  }
+  // light as stacked translucent polygons (no gradients): [[points], opacity]
+  function glow(layers, col) {
+    return layers.map(function (l) { return path(M(l[0]) + 'Z', col || C.beam, { opacity: l[1] }); }).join('');
+  }
+  // roadside reflector post on the near verge; lit posts glow
+  function post(x, lit) {
+    return rect(x - 0.8, 95.5, 1.6, 8.8, 0.4, lit ? '#B8BEC8' : '#343A44') +
+      (lit ? circ(x, 97.2, 3.2, C.amber, { opacity: 0.3 }) : '') +
+      rect(x - 1.1, 96, 2.2, 2.6, 0.5, lit ? C.amber : '#4A4234');
   }
   function roadDashes(y, x0, x1, dash, gap, col, sw, o) {
     var s = '', x;
@@ -287,53 +317,61 @@
 
   // ================================================================== 1. stopping distance
   reg('fig-stopping-distance', 'مسافة التوقف: رد الفعل ثم الفرملة', function (o, lab) {
-    var a = 54, b = 87, c = 139, s = panel();
+    var a = 54, b = 88, c = 139, s = panel(), ry = 63;
     // road, side view
-    s += rect(0, 66, 160, 14, 0, C.asphalt) + line(0, 66.4, 160, 66.4, C.kerb, 0.7, { opacity: 0.45 }) +
-      roadDashes(71.5, 4, 160, 9, 7, C.lineW, 0.9, { opacity: 0.55 }) + line(0, 79.6, 160, 79.6, C.kerb, 0.9);
-    // motion lines, car, obstacle
-    s += line(1.5, 60.5, 6, 60.5, C.muted, 0.9, { opacity: 0.6 }) + line(0.5, 64.5, 5.5, 64.5, C.muted, 0.9, { opacity: 0.6 }) +
-      line(2, 68.5, 6.5, 68.5, C.muted, 0.9, { opacity: 0.6 });
-    s += carSide(8, 76.5, 46);
-    s += personFront(149, 75.5, 27, C.ink);
-    // guides and overall bracket
-    s += line(a, 33, a, 84, C.muted, 0.6, { 'stroke-dasharray': '1.6 1.8', opacity: 0.6 }) +
-      line(c, 33, c, 84, C.muted, 0.6, { 'stroke-dasharray': '1.6 1.8', opacity: 0.6 }) +
-      line(b, 82, b, 86, C.muted, 0.6, { opacity: 0.6 });
-    s += dim(a, 31, c, 31, { color: C.ink, tick: 2.6, sw: 1.1 });
-    s += label('مسافة التوقف', (a + c) / 2, 21.5, 9.5, C.ink);
-    // the two parts
-    s += path(rr(a, 88, b - a, 8, [0, 0, 0, 0]), C.gold) + path(rr(b, 88, c - b, 8, [0, 3, 3, 0]), C.red);
-    s += circ(a, 92, 7.2, C.pill, { stroke: C.gold, 'stroke-width': 1.3 }) + eyeIcon(a, 92, 0.95, C.gold);
-    s += circ(b, 92, 7.2, C.pill, { stroke: C.red, 'stroke-width': 1.3 }) + pedalIcon(b, 92.3, 0.95, C.red);
-    s += label('رد الفعل', (a + b) / 2 + 2, 107, 8.5, C.gold) + label('الفرملة', (b + c) / 2 + 2, 107, 8.5, C.red);
+    s += rect(0, ry, 160, 14, 0, C.asphalt) + line(0, ry + 0.4, 160, ry + 0.4, C.kerb, 0.7, { opacity: 0.45 }) +
+      roadDashes(ry + 5.5, 4, 160, 9, 7, C.lineW, 0.9, { opacity: 0.55 }) + line(0, ry + 13.6, 160, ry + 13.6, C.kerb, 0.9);
+    // motion lines, our car at the moment the driver sees the hazard, the hazard
+    s += line(1.5, ry - 5.5, 6, ry - 5.5, C.muted, 0.9, { opacity: 0.6 }) + line(0.5, ry - 1.5, 5.5, ry - 1.5, C.muted, 0.9, { opacity: 0.6 }) +
+      line(2, ry + 2.5, 6.5, ry + 2.5, C.muted, 0.9, { opacity: 0.6 });
+    s += carSide(8, ry + 10.5, 46);
+    s += personFront(149, ry + 9.5, 27, C.ink);
+    // guides and the overall bracket
+    s += line(a, 31, a, 83, C.muted, 0.6, { 'stroke-dasharray': '1.6 1.8', opacity: 0.6 }) +
+      line(c, 31, c, 83, C.muted, 0.6, { 'stroke-dasharray': '1.6 1.8', opacity: 0.6 }) +
+      line(b, ry + 15, b, 83, C.muted, 0.6, { opacity: 0.7 });
+    s += dim(a, 29, c, 29, { color: C.ink, tick: 2.6, sw: 1.1 });
+    s += label('مسافة التوقف', (a + c) / 2, 19.5, 9.5, C.ink);
+    // the two parts, end to end: reaction (eye) then braking (pedal)
+    s += path(rr(a, 84, b - a, 11, [3, 0, 0, 3]), C.gold) + path(rr(b, 84, c - b, 11, [0, 3, 3, 0]), C.red);
+    s += line(b, 84, b, 95, C.pill, 0.8, { opacity: 0.6 });
+    s += eyeIcon(a + 7.2, 89.5, 0.95, C.pill, C.gold) + pedalIcon(b + 7, 90, 0.95, '#FFFFFF', C.red);
+    s += label('رد الفعل', (a + b) / 2, 105.5, 8.5, C.gold) + label('الفرملة', (b + c) / 2, 105.5, 8.5, C.red);
     return K.svg(s, VB, lab);
   });
 
   // ================================================================== 2 and 3. low and high beam
   function beamScene(high, lab) {
-    var s = nightRoad(), x0 = 8, y0 = 93, len = 48;
-    var L = carPt(x0, y0, len, CAR.lamp);
-    // light: air cone + lit road surface, drawn in layers (no gradients)
-    var far = high ? 158 : 104;
+    var s = nightRoad(), x0 = 5, y0 = 100, len = 56;
+    var L = carPt(x0, y0, len, CAR.lamp), lx = L[0], ly = L[1];
+    // how far the light reaches along the road
+    var reach = high ? 160 : 116;
     if (high) {
-      s += path(M([[L[0], L[1] - 1.2], [158, 70], [158, 97], [70, 97.5], [L[0], L[1] + 1.2]]) + 'Z', C.beam, { opacity: 0.1 });
-      s += path(M([[L[0], L[1] - 0.8], [158, 77], [158, 92], [L[0], L[1] + 0.8]]) + 'Z', C.beam, { opacity: 0.14 });
-      s += path(M([[L[0], L[1] - 0.4], [158, 82], [158, 88], [L[0], L[1] + 0.4]]) + 'Z', C.beam, { opacity: 0.2 });
-      s += path('M60,97.4Q110,82 158,80L158,97.4Z', C.beam, { opacity: 0.12 });
+      // main beam: long and straight, lights the road and the air far ahead
+      s += glow([
+        [[[lx, ly - 1.4], [160, 64], [160, 103.8], [80, 103.8], [lx, ly + 1.4]], 0.08],
+        [[[lx, ly - 1], [160, 72], [160, 100], [lx, ly + 1]], 0.1],
+        [[[lx, ly - 0.6], [160, 80], [160, 94], [lx, ly + 0.6]], 0.13],
+        [[[lx, ly - 0.3], [132, 86], [132, 92], [lx, ly + 0.3]], 0.16]
+      ]);
+      s += path('M64,103.8Q108,93.5 160,92.2L160,103.8Z', C.beam, { opacity: 0.16 });
     } else {
-      s += path(M([[L[0], L[1] - 1], [far, 88.5], [far - 6, 96.8], [62, 97.5], [L[0], L[1] + 1]]) + 'Z', C.beam, { opacity: 0.12 });
-      s += path(M([[L[0], L[1] - 0.6], [far - 8, 90.5], [66, 96.8], [L[0], L[1] + 0.6]]) + 'Z', C.beam, { opacity: 0.18 });
-      s += path('M58,97.4Q80,88.6 ' + f(far) + ',89.2Q' + f(far - 20) + ',95 58,97.4Z', C.beam, { opacity: 0.28 });
+      // dipped beam: short, angled down onto the road
+      s += glow([
+        [[[lx, ly - 1], [116, 95.2], [110, 103.8], [66, 103.8], [lx, ly + 1]], 0.1],
+        [[[lx, ly - 0.7], [102, 96.2], [70, 103.4], [lx, ly + 0.7]], 0.13],
+        [[[lx, ly - 0.4], [86, 96.4], [68, 101.2], [lx, ly + 0.4]], 0.16]
+      ]);
+      s += path('M62,103.8Q90,95 117,95.6Q96,104.2 62,103.8Z', C.beam, { opacity: 0.26 });
     }
-    // centre line: bright where lit
-    var x;
-    for (x = 4; x < 160; x += 16) {
-      var lit = x > 56 && x < far - 4;
-      s += line(x, 82.5, x + 8, 82.5, C.lineW, 0.9, { opacity: lit ? 0.75 : 0.14 });
+    // centre line: bright only where the light reaches
+    for (var x = 2; x < 160; x += 16) {
+      var lit = x > 60 && x < reach - 6;
+      s += line(x, 89.6, Math.min(x + 8, 159), 89.6, C.lineW, 0.9, { opacity: lit ? 0.8 : 0.12 });
     }
     s += carSide(x0, y0, len, { head: 'on', tail: 'on', body: '#D9D6CC' });
-    s += circ(L[0], L[1], 2.2, C.beam, { opacity: 0.5 });
+    s += circ(lx, ly, 2.4, C.beam, { opacity: 0.55 });
+    [80, 104, 128, 152].forEach(function (px) { s += post(px, px < reach - 4); });
     // dashboard symbol in the corner
     s += tile(122, 9, 30, 22, { fill: C.pill }) + beamIcon(138.5, 20, 1.05, high ? C.dBlue : C.dGreen, high);
     return K.svg(s, VB, lab);
@@ -343,84 +381,109 @@
 
   // ================================================================== 4. fog: dipped beam + front fog lamps
   reg('fig-fog-lights', 'في الضباب: المنخفضة وأضواء الضباب', function (o, lab) {
-    var s = panel('#1A2230'), x0 = 8, y0 = 92, len = 52;
-    s += rect(0, 72, 160, 20, 0, '#262C35') + band(92, 120, '#1A1F27') + line(0, 91.8, 160, 91.8, C.kerb, 0.8, { opacity: 0.35 });
-    s += roadDashes(80, 4, 160, 8, 8, C.lineW, 0.8, { opacity: 0.3 });
+    var s = panel('#1A212D'), x0 = 6, y0 = 98, len = 54, i;
+    // fog: the air gets paler toward the horizon
+    s += rect(0, 36, 160, 12, 0, '#1F2733') + rect(0, 48, 160, 12, 0, '#252E3B') + rect(0, 60, 160, 16, 0, '#2C3543');
+    s += rect(0, 76, 160, 26, 0, '#262C35') + line(0, 76.4, 160, 76.4, C.kerb, 0.6, { opacity: 0.2 });
+    s += band(102, 120, '#1B2029') + line(0, 102, 160, 102, C.kerb, 0.8, { opacity: 0.35 });
+    // centre line fading into the fog ahead
+    for (i = 0; i < 10; i++) {
+      var dx = 2 + i * 16;
+      s += line(dx, 89, Math.min(dx + 8, 159), 89, C.lineW, 0.9, { opacity: Math.max(0.05, 0.6 - i * 0.07) });
+    }
     var L = carPt(x0, y0, len, CAR.lamp), F = carPt(x0, y0, len, CAR.fog);
-    // dipped beam (short, down) and fog lamps (wide, flat, low)
-    s += path(M([[L[0], L[1] - 0.8], [100, 84], [96, 91.5], [66, 91.5], [L[0], L[1] + 0.8]]) + 'Z', C.beam, { opacity: 0.16 });
-    s += path(M([[F[0], F[1] - 0.8], [112, 86.5], [116, 91.6], [62, 91.6], [F[0], F[1] + 0.6]]) + 'Z', C.beam, { opacity: 0.2 });
-    s += path('M60,91.6Q90,85.5 116,88.5L116,91.6Z', C.beam, { opacity: 0.2 });
+    // dipped headlamps: short, down
+    s += glow([
+      [[[L[0], L[1] - 0.8], [100, 93.5], [96, 101.8], [66, 101.8], [L[0], L[1] + 0.8]], 0.13],
+      [[[L[0], L[1] - 0.5], [86, 95], [68, 100.5], [L[0], L[1] + 0.5]], 0.15]
+    ]);
+    // front fog lamps: wide, flat, hugging the road
+    s += glow([
+      [[[F[0], F[1] - 0.8], [104, 96.4], [112, 101.8], [62, 101.8], [F[0], F[1] + 0.6]], 0.16],
+      [[[F[0], F[1] - 0.5], [92, 97.8], [96, 101.6], [64, 101.6], [F[0], F[1] + 0.4]], 0.18]
+    ]);
+    s += path('M60,101.8Q88,97 114,98.6L114,101.8Z', C.beam, { opacity: 0.18 });
     s += carSide(x0, y0, len, { head: 'on', tail: 'on', fog: 'on' });
-    s += circ(L[0], L[1], 2, C.beam, { opacity: 0.55 }) + circ(F[0], F[1], 1.8, C.beam, { opacity: 0.55 });
-    // fog bands over the scene
-    [[30, 7, 0.1], [45, 8, 0.13], [60, 7, 0.12], [74, 7, 0.1]].forEach(function (b, i) {
-      s += rect(i % 2 ? -10 : 8, b[0], 170, b[1], b[1] / 2, '#C9D0DA', { opacity: b[2] });
+    s += circ(L[0], L[1], 2.2, C.beam, { opacity: 0.6 }) + circ(F[0], F[1], 2, C.beam, { opacity: 0.6 });
+    // fog wisps over the whole scene
+    [[92, 44, 64, 5, 0.07], [52, 56, 50, 5, 0.08], [112, 66, 46, 5, 0.09], [42, 78, 40, 4.5, 0.07], [118, 86, 40, 5, 0.1],
+      [80, 34, 56, 4, 0.05], [138, 52, 20, 4, 0.08]].forEach(function (w) {
+      s += ell(w[0], w[1], w[2], w[3], '#D5DBE3', { opacity: w[4] });
     });
-    s += rect(40, 52, 120, 5, 2.5, '#C9D0DA', { opacity: 0.1 }) + rect(0, 66, 110, 5, 2.5, '#C9D0DA', { opacity: 0.08 });
     // not in fog: high beam, hazard lights while moving
-    s += tile(124, 8, 28, 22, { fill: C.pill }) + beamIcon(140, 19, 1, C.dBlue, true) + xMark(138, 19, 6.5, { sw: 2 });
-    s += tile(92, 8, 28, 22, { fill: C.pill }) + hazardIcon(106, 19.6, 1, C.dRed) + xMark(106, 19, 6.5, { sw: 2 });
+    s += tile(124, 8, 28, 22, { fill: C.pill }) + beamIcon(140.5, 19, 1, C.dBlue, true) + xMark(138, 19, 6, { sw: 1.8 });
+    s += tile(92, 8, 28, 22, { fill: C.pill }) + hazardIcon(106, 19.8, 1, C.ink) + xMark(106, 19, 6, { sw: 1.8 });
     return K.svg(s, VB, lab);
   });
 
   // ================================================================== 5. breakdown on the hard shoulder (top-down)
   reg('fig-breakdown', 'تعطلت؟ الفلاشر والمثلث وانتظر خلف الحاجز', function (o, lab) {
-    var s = rect(0, 0, 160, 120, 10, C.sand), sc = 7;
-    // carriageway (lanes up), shoulder, barrier, sand verge
-    s += path(rr(0, 0, 110, 120, [10, 0, 0, 10]), C.asphalt);
-    s += rect(110, 0, 22, 120, 0, C.asphaltDark);
-    s += rect(108.9, 0, 1.2, 120, 0, C.lineW);
-    [83.4, 57.8].forEach(function (x) {
-      for (var y = -20; y < 120; y += 63) s += rect(x, y, 1.1, 21, 0, C.lineW, { opacity: 0.9 });
+    // 8 units per metre: lanes 3.5 m, hard shoulder 3 m. Traffic drives UP; the shoulder is on the RIGHT
+    var s = rect(0, 0, 160, 120, 10, C.sand), sc = 8, y;
+    s += path(rr(0, 0, 120, 120, [10, 0, 0, 10]), C.asphalt);
+    s += rect(96, 0, 24, 120, 0, C.asphaltDark);
+    s += rect(94.6, 0, 1.3, 120, 0, C.lineW);
+    // broken lane lines (3 m dash, 6 m gap), cut at the picture edges
+    [[65.4, 6], [36.6, 42], [7.8, 22]].forEach(function (l) {
+      for (y = l[1] - 72; y < 120; y += 72) {
+        var y0 = Math.max(0, y), y1 = Math.min(120, y + 24);
+        if (y1 > y0 + 0.5) s += rect(l[0], y0, 1.2, y1 - y0, 0, C.lineW, { opacity: 0.9 });
+      }
     });
-    s += rect(132, 0, 2.2, 120, 0, '#C4CAD2') + rect(131.6, 0, 0.5, 120, 0, '#6B737E');
-    for (var y = 4; y < 120; y += 14) s += rect(134.2, y, 1.6, 1.6, 0.3, '#5A6270');
-    // traffic still passing in the lanes
-    s += carTop(70.5, 84, sc, { body: '#3F6FB5' });
-    s += sk('M70.5,64L70.5,56', '#97A1B4', 1.6) + arrowHead(70.5, 53.5, 90, 5, '#97A1B4');
-    // our car stopped on the shoulder with hazard lights, triangle well behind it
-    var cx = 122.5, cy = 36;
-    s += line(cx, cy + 2.3 * sc + 5, cx, 100, C.gold, 1.4, { 'stroke-dasharray': '3.5 3' });
+    // crash barrier with its posts, sand beyond
+    s += rect(120, 0, 3, 120, 0, '#C4CAD2') + rect(119.6, 0, 0.6, 120, 0, '#6B737E');
+    for (y = 5; y < 118; y += 12) s += rect(123.3, y, 1.8, 1.8, 0.3, '#5A6270');
+    // traffic still passing close by
+    s += carTop(80.6, 92, sc, { body: '#B8BEC8' });
+    s += sk('M80.6,70L80.6,62.5', C.muted, 1.6) + arrowHead(80.6, 60, 90, 5, C.muted);
+    s += carTop(22.2, 30, sc, { body: '#4A505A' });
+    // our car on the shoulder, hazard lights on; warning triangle well behind it
+    var cx = 108.2, cy = 33;
+    s += line(cx, cy + 2.3 * sc + 6, cx, 97, C.gold, 1.5, { 'stroke-dasharray': '3.5 3' });
     s += carTop(cx, cy, sc, { me: true, hazard: true });
-    s += path('M122.5,97.6L128.2,107.4L116.8,107.4Z', '#FFFFFF', { stroke: C.red, 'stroke-width': 2.2, 'stroke-linejoin': 'round' });
-    // people waiting beyond the barrier, ahead of the car
-    s += personTop(145, 14, 2.3, '#2E5A9A') + personTop(153, 20, 2.3, '#8A3A34');
+    s += path('M108.2,98.6L114.2,109L102.2,109Z', '#FFFFFF', { stroke: C.red, 'stroke-width': 2.4, 'stroke-linejoin': 'round' });
+    // everyone out, waiting beyond the barrier, ahead of the car
+    s += personTop(137, 12, 2.6, '#2E5A9A') + personTop(149, 17, 2.6, '#8A3A34');
+    s += badge(true, 143, 34, 6);
     return K.svg(s, VB, lab);
   });
 
   // ================================================================== 6. tyre tread depth
-  function treadSection(x0, x1, top, grooveBottom, grooves, gw) {
-    var s = '', base = grooveBottom, bottom = base + 30;
-    s += path(rr(x0, base - 1, x1 - x0, bottom - base + 1, [0, 0, 5, 5]), '#23272E', { stroke: '#3A414C', 'stroke-width': 0.8 });
-    s += line(x0 + 3, base + 11, x1 - 3, base + 11, '#4E5664', 1, { 'stroke-dasharray': '2.4 1.4' }) +
-      line(x0 + 3, base + 16, x1 - 3, base + 16, '#4E5664', 1, { 'stroke-dasharray': '2.4 1.4' });
-    // blocks between grooves
+  // cut through a tyre tread: carcass with steel belts, blocks on top separated by grooves (gx = groove left edges)
+  var RUB = '#2C3139', RUB_BLOCK = '#3B424D', RUB_EDGE = '#59616E';
+  function treadSection(x0, x1, top, base, grooves, gw) {
+    var s = '', i;
+    s += path(rr(x0, base - 1, x1 - x0, 29, [0, 0, 5, 5]), RUB, { stroke: RUB_EDGE, 'stroke-width': 0.8 });
+    s += line(x0 + 3, base + 10, x1 - 3, base + 10, '#667080', 1, { 'stroke-dasharray': '2.4 1.4' }) +
+      line(x0 + 3, base + 15, x1 - 3, base + 15, '#667080', 1, { 'stroke-dasharray': '2.4 1.4' });
     var edges = [x0];
     grooves.forEach(function (gx) { edges.push(gx, gx + gw); });
     edges.push(x1);
-    for (var i = 0; i < edges.length; i += 2) {
-      var bx0 = edges[i], bx1 = edges[i + 1];
-      s += path(rr(bx0, top, bx1 - bx0, base - top + 0.5, [i === 0 ? 0 : 2.5, i === edges.length - 2 ? 0 : 2.5, 0, 0]), '#2E333B',
-        { stroke: '#4A515C', 'stroke-width': 0.8 });
+    for (i = 0; i < edges.length; i += 2) {
+      var bx0 = edges[i], bx1 = edges[i + 1], r0 = i === 0 ? 0 : 2.5, r1 = i === edges.length - 2 ? 0 : 2.5;
+      s += path(rr(bx0, top, bx1 - bx0, base - top + 0.5, [r0, r1, 0, 0]), RUB_BLOCK, { stroke: RUB_EDGE, 'stroke-width': 0.8 });
+      s += line(bx0 + r0 + 1, top + 1.3, bx1 - r1 - 1, top + 1.3, '#7C8594', 0.8, { opacity: 0.8 });
     }
     return s;
   }
   reg('fig-tyre-tread', 'عمق نقشة الإطار 1.5 ملم على الأقل', function (o, lab) {
     var s = panel(), top = 50, gb = 68;
-    // good tread (right, read first): gauge in one groove, depth in the next
+    // good tread (right, read first): gauge in one groove, the depth marked in the next
     s += treadSection(56, 152, top, gb, [76, 114], 11);
-    // depth gauge standing on the blocks, pin down to the groove floor
     s += rect(69.5, top - 3, 24, 3, 1, '#C9CED6', { stroke: '#6B737E', 'stroke-width': 0.6 }) +
       rect(80.7, top - 4, 1.6, gb - top + 4, 0.6, '#C9CED6') +
-      rect(75.5, 16, 12, top - 19, 2.5, '#C9CED6', { stroke: '#6B737E', 'stroke-width': 0.6 }) +
-      line(78, 22, 81.5, 22, '#4A515C', 0.7) + line(78, 26, 83.5, 26, '#4A515C', 0.7) + line(78, 30, 81.5, 30, '#4A515C', 0.7) +
-      line(78, 34, 83.5, 34, '#4A515C', 0.7) + line(78, 38, 81.5, 38, '#4A515C', 0.7) + line(78, 42, 83.5, 42, '#4A515C', 0.7);
+      rect(75.5, 18, 12, top - 21, 2.5, '#C9CED6', { stroke: '#6B737E', 'stroke-width': 0.6 }) +
+      rect(78.5, 14, 6, 4.5, 1.2, '#8C939E');
+    for (var t = 0; t < 5; t++) s += line(78, 23 + t * 4.4, t % 2 ? 81.5 : 83.5, 23 + t * 4.4, '#4A515C', 0.7);
     s += dim(119.5, top, 119.5, gb, { tick: 3.2, sw: 1.5 });
     s += label('1.5 ملم', 119.5, 38, 9, C.gold, { pill: true });
     s += badge(true, 145, 22, 6.5);
-    // worn tread (left): almost no groove
-    s += treadSection(10, 44, gb - 3.5, gb, [22.5, 33], 2.2);
+    // worn tread (left): the blocks are gone, only faint traces of the grooves
+    s += path(rr(10, gb - 1, 34, 29, [0, 0, 5, 5]), RUB, { stroke: RUB_EDGE, 'stroke-width': 0.8 });
+    s += line(13, gb + 10, 41, gb + 10, '#667080', 1, { 'stroke-dasharray': '2.4 1.4' }) +
+      line(13, gb + 15, 41, gb + 15, '#667080', 1, { 'stroke-dasharray': '2.4 1.4' });
+    s += path(rr(10, gb - 3.6, 34, 4, [1.2, 1.2, 0, 0]), RUB_BLOCK, { stroke: RUB_EDGE, 'stroke-width': 0.8 });
+    s += rect(21.4, gb - 3.4, 1.4, 1.1, 0.3, RUB) + rect(31.6, gb - 3.4, 1.4, 1.1, 0.3, RUB);
     s += badge(false, 27, 48, 6.5);
     return K.svg(s, VB, lab);
   });
@@ -432,12 +495,7 @@
     s += sk('M18,10L96,10Q104,10 110,16L136,44', '#2E3A4E', 1.4) + path('M112,58L150,52L152,72L118,74Z', '#212B3B') +
       sk('M20,106L150,106', '#2E3A4E', 1.4);
     // seat: head restraint on posts, reclined backrest, cushion
-    var seat = '#3A4A63', seatHi = '#50627F';
-    s += line(40.5, 34, 42, 40, '#6B737E', 1.4) + line(45.5, 34, 47, 40, '#6B737E', 1.4);
-    s += path(rr(34.5, 17.5, 13, 18, [4.5, 4.5, 4.5, 4.5]), seat, { stroke: seatHi, 'stroke-width': 1 });
-    s += path('M40,40L52,39Q55,39 55.4,42L60,84L44,88Q40,88 39.6,84L36,45Q36,40 40,40Z', seat, { stroke: seatHi, 'stroke-width': 1 });
-    s += path('M44,80L90,76Q95,76 95,81L94,86Q93.6,89 89,89.4L48,92Q42,92 42.6,86Z', seat, { stroke: seatHi, 'stroke-width': 1 });
-    s += sk('M49,92L52,106M84,89.6L86,106', '#4A5568', 2);
+    s += seatSide(44, 90, 1) + sk('M49,92L52,106M84,89.6L86,106', '#4A5568', 2);
     // steering wheel and column
     s += sk('M104,68L118,63', '#4A515C', 3);
     s += path('M97.2,47.5Q99.2,46.5 100.6,48.4L108.4,77.2Q109,79.6 106.7,80.4Q104.6,81 104,78.6L96.3,50Q95.8,48.2 97.2,47.5Z', '#5A6270');
@@ -448,12 +506,12 @@
     s += sk('M58,47L74,64L97,58', cloth, 6.4) + circ(99, 57.6, 3.2, C.skin);
     s += rect(52.5, 34, 6, 8, 2, C.skin);
     s += circ(55.5, 28, 8.6, C.skin) + path('M47,26.5Q48,18.6 56,18.6Q63,18.8 64.2,25Q59,21.8 54,23.4Q50.4,24.8 49.6,30Z', '#3A2A20');
-    // seat belt: over the shoulder and chest, low across the hips
-    s += sk('M47.5,38.5L55.5,46L62,62L65,79', C.gold, 3.4) + sk('M48,81.5L65,79.5', C.gold, 3.4);
+    // seat belt: over the shoulder and across the chest, low across the hips
+    s += sk('M47.5,38.5L54.5,44.5L62.5,61L65.5,79', C.gold, 3.4) + sk('M48,81.5L65,79.5', C.gold, 3.4);
     s += rect(63.2, 76.6, 4.4, 5.4, 1.2, '#B8BEC8') + circ(46.8, 38.2, 1.8, '#6B737E');
-    // checks
-    s += badge(true, 22, 26, 6.5) + badge(true, 80, 34, 6.5);
-    s += sk('M28.5,26L33.5,26.5', C.ok, 0.9, { opacity: 0.6 }) + sk('M74,37.5L66,50', C.ok, 0.9, { opacity: 0.6 });
+    // checks: restraint high and close, belt worn right
+    s += badge(true, 20, 26, 6.5) + badge(true, 80, 34, 6.5);
+    s += sk('M26.5,26L31.5,26.5', C.ok, 0.9, { opacity: 0.6 }) + sk('M74,37.5L66,50', C.ok, 0.9, { opacity: 0.6 });
     return K.svg(s, VB, lab);
   });
 

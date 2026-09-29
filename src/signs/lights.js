@@ -722,11 +722,12 @@
     s += line(cx - hw, cy - Ro - 1.6, cx - 0.6, cy - Ro - 1.6, TD.white, 1.2, { dash: '1.8 1.4', cap: 'butt' });
     s += line(cx - Ro - 1.6, cy + 0.6, cx - Ro - 1.6, cy + hw, TD.white, 1.2, { dash: '1.8 1.4', cap: 'butt' });
     s += circ(cx, cy, Ri + 0.7, TD.kerb) + circ(cx, cy, Ri, TD.sand) + circ(cx, cy, Ri * 0.55, '#B7A276');
-    // car inside moves from the inner to the outer lane (anticlockwise), signalling right
-    var ph = 140, r1 = 16.75, pc = [cx + r1 * Math.cos(ph * Math.PI / 180), cy - r1 * Math.sin(ph * Math.PI / 180)];
-    s += place(car(PAINT.blue, { ind: 'R' }), pc[0], pc[1], 180 - ph + 180 + 90 - 180, m);
-    var e1 = [cx + 26.25 * Math.cos(185 * Math.PI / 180), cy - 26.25 * Math.sin(185 * Math.PI / 180)];
-    s += arrowC([pc[0] - 4.2, pc[1] + 4.6], [pc[0] - 7.4, pc[1] + 8.6], [e1[0], e1[1] - 6], e1, TD.ok, { sw: 1.7 });
+    // car already on the ring (outer lane, anticlockwise) leaves calmly by the nearest exit, signalling right
+    var ph = 105, ro = 26.25, pc = [cx + ro * Math.cos(ph * Math.PI / 180), cy - ro * Math.sin(ph * Math.PI / 180)];
+    var hd = [-Math.sin(ph * Math.PI / 180), -Math.cos(ph * Math.PI / 180)], hdeg = Math.atan2(hd[1], hd[0]) * 180 / Math.PI;
+    s += place(car(PAINT.blue, { ind: 'R' }), pc[0], pc[1], hdeg + 90, m);
+    var f0 = add(pc, hd, 7.4);
+    s += arrowC(f0, add(f0, hd, 8.5), [19, cy - hw / 2], [5, cy - hw / 2], TD.ok, { sw: 1.8 });
     // our car waits at the right entry, the ambulance enters from the bottom
     s += place(car(null, { me: true, brake: true }), cx + Ro + 3 + 2.3 * m, cy - hw / 2, -90, m);
     s += place(ambulance(), cx + hw / 2, cy + Ro + 7.2, 0, m);
