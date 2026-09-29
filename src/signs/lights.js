@@ -54,6 +54,21 @@
       (o.cap || 'round') + '" stroke-linejoin="' + (o.join || 'round') + '"' +
       (o.dash ? ' stroke-dasharray="' + o.dash + '"' : '') + (o.op != null ? ' opacity="' + n(o.op) + '"' : '') + '/>';
   }
+  // several straight strokes in one path: list of [x1, y1, x2, y2]
+  function segs(list, col, w, o) {
+    return stroke(list.map(function (q) { return 'M' + n(q[0]) + ',' + n(q[1]) + 'L' + n(q[2]) + ',' + n(q[3]); }).join(''), col, w, o);
+  }
+  // several discs of radius r in one path (overlaps merge, so translucent glows do not stack up)
+  function discs(pts, r, fill, o) {
+    return path(pts.map(function (p) {
+      return 'M' + n(p[0] - r) + ',' + n(p[1]) + 'a' + n(r) + ',' + n(r) + ' 0 1,0 ' + n(2 * r) + ',0a' + n(r) + ',' + n(r) + ' 0 1,0 ' +
+        n(-2 * r) + ',0Z';
+    }).join(''), fill, o);
+  }
+  // several rectangles in one path: list of [x, y, w, h]
+  function boxes(list, fill, o) {
+    return path(list.map(function (b) { return 'M' + n(b[0]) + ',' + n(b[1]) + 'h' + n(b[2]) + 'v' + n(b[3]) + 'h' + n(-b[2]) + 'Z'; }).join(''), fill, o);
+  }
   function grp(inner, tf, op) {
     return '<g' + (tf ? ' transform="' + tf + '"' : '') + (op != null ? ' opacity="' + n(op) + '"' : '') + '>' + inner + '</g>';
   }
@@ -119,10 +134,10 @@
   function tint(col, k) { return mix(FV.off, col, k == null ? 0.16 : k); }
   function glow(cx, cy, r, col) { return circ(cx, cy, r * 1.62, col, { op: 0.15 }) + circ(cx, cy, r * 1.3, col, { op: 0.25 }); }
   function rays(cx, cy, r0, r1, col, angs, w) {
-    return angs.map(function (a) {
+    return segs(angs.map(function (a) {
       var d = dir(a);
-      return line(cx + d[0] * r0, cy + d[1] * r0, cx + d[0] * r1, cy + d[1] * r1, col, w || 2.2);
-    }).join('');
+      return [cx + d[0] * r0, cy + d[1] * r0, cx + d[0] * r1, cy + d[1] * r1];
+    }), col, w || 2.2);
   }
   var SIDE = [-38, 0, 38, 142, 180, 218], ALL8 = [0, 45, 90, 135, 180, 225, 270, 315];
   // hood over a round lamp, seen from the front: a dark band around the top half
@@ -291,13 +306,13 @@
       s += path('M-4.6,28.2L-10.6,30Q-12.9,30.7 -13.1,33.4L-13.4,59.3L13.4,59.3L13.1,33.4Q12.9,30.7 10.6,30L4.6,28.2L0,39.2Z', c.vest);
       s += path('M-1.3,29L1.3,29L1.7,31.2L1.1,37.2L0,38.8L-1.1,37.2L-1.7,31.2Z', c.tie);
       s += path('M-4.6,27.3L-1.2,29.1L-2.9,31.6Z', c.shirtD) + path('M4.6,27.3L1.2,29.1L2.9,31.6Z', c.shirtD);
-      s += poly([[-10.4, 30.1], [-7.3, 29.2], [-7.3, 47.2], [-10.4, 47.2]], c.band) + poly([[10.4, 30.1], [7.3, 29.2], [7.3, 47.2], [10.4, 47.2]], c.band);
+      s += path('M-10.4,30.1L-7.3,29.2V47.2H-10.4ZM10.4,30.1L7.3,29.2V47.2H10.4Z', c.band);
     } else {
       s += path('M-5.2,27.7Q0,29.1 5.2,27.7L10.6,30Q12.9,30.7 13.1,33.4L13.4,59.3L-13.4,59.3L-13.1,33.4Q-12.9,30.7 -10.6,30Z', c.vest);
       s += stroke('M-9.6,30.8L9.6,47.2M9.6,30.8L-9.6,47.2', c.band, 3.1, { cap: 'butt' });
       s += path('M-5.3,26.2Q0,27.6 5.3,26.2L5.5,28.4Q0,29.8 -5.5,28.4Z', c.shirtD);
     }
-    s += rect(-13.4, 47.2, 26.8, 3.1, 0, c.band) + rect(-13.4, 52.6, 26.8, 3.1, 0, c.band);
+    s += boxes([[-13.4, 47.2, 26.8, 3.1], [-13.4, 52.6, 26.8, 3.1]], c.band);
     s += rect(-13.7, 58.4, 27.4, 3.8, 0.8, c.belt) + (rear ? '' : rect(-2.2, 58.9, 4.4, 2.8, 0.6, c.badge));
     // neck and head
     s += rect(-3.6, 21.4, 7.2, 7.4, 2, c.skinD);
@@ -347,19 +362,22 @@
   function vShadow(hw, hl, r) { return rect(-hw + 0.14, -hl + 0.24, 2 * hw, 2 * hl, r, '#000000', { op: 0.32 }); }
   function brakes(hw, hl) {
     return rect(-hw - 0.25, hl - 0.3, 2 * hw + 0.5, 1.15, 0.5, '#FF2A2A', { op: 0.3 }) +
-      rect(-hw + 0.12, hl - 0.22, 0.56, 0.2, 0.05, '#FF4A3D') + rect(hw - 0.68, hl - 0.22, 0.56, 0.2, 0.05, '#FF4A3D');
+      boxes([[-hw + 0.12, hl - 0.22, 0.56, 0.2], [hw - 0.68, hl - 0.22, 0.56, 0.2]], '#FF4A3D');
   }
-  function indicators(side, hw, hl) {
-    var sg = side === 'L' ? -1 : 1, x = sg * (hw - 0.1), s = '';
-    [[-hl + 0.14, -1], [hl - 0.14, 1]].forEach(function (p) {
-      var base = sg > 0 ? (p[1] < 0 ? -45 : 45) : (p[1] < 0 ? -135 : 135);
-      s += circ(x, p[0], 0.8, TD.ind, { op: 0.35 }) + circ(x, p[0], 0.27, '#FFC24A');
+  // corner lamps with short flash strokes pointing away from the vehicle: pts [x, y, baseAngle]
+  function flashers(pts, glowR, col, core, rayCol) {
+    var sg = [];
+    pts.forEach(function (p) {
       [-32, 0, 32].forEach(function (k) {
-        var d = dir(base + k);
-        s += line(x + d[0] * 0.62, p[0] + d[1] * 0.62, x + d[0] * 1.2, p[0] + d[1] * 1.2, TD.ind, 0.15);
+        var d = dir(p[2] + k);
+        sg.push([p[0] + d[0] * glowR * 0.62, p[1] + d[1] * glowR * 0.62, p[0] + d[0] * glowR * 1.18, p[1] + d[1] * glowR * 1.18]);
       });
     });
-    return s;
+    return discs(pts, glowR * 0.82, col, { op: 0.34 }) + discs(pts, glowR * 0.25, core) + segs(sg, rayCol || col, glowR * 0.14);
+  }
+  function indicators(side, hw, hl) {
+    var sg = side === 'L' ? -1 : 1, x = sg * (hw - 0.1);
+    return flashers([[x, -hl + 0.14, sg > 0 ? -45 : -135], [x, hl - 0.14, sg > 0 ? 45 : 135]], 1.05, TD.ind, '#FFC24A');
   }
   // passenger car 4.6 x 1.95 m, nose up, centred on 0,0 (metres)
   function car(col, o) {
@@ -367,12 +385,11 @@
     var hl = 2.3, hw = 0.975, me = !!o.me, c = me ? TD.me : (col || PAINT.silver), dk = shade(c, -0.4), s = vShadow(hw, hl, 0.6);
     if (me) s += rect(-hw - 0.45, -hl - 0.45, 2 * hw + 0.9, 2 * hl + 0.9, 0.95, 'none', { stroke: TD.gold, sw: 0.5, op: 0.4 });
     s += rect(-hw, -hl, 2 * hw, 2 * hl, 0.58, c, { stroke: me ? TD.gold : dk, sw: me ? 0.3 : 0.12 });
-    s += path('M-0.8,-1.08L0.8,-1.08L0.67,-0.36L-0.67,-0.36Z', TD.glass);
     s += rect(-0.67, -0.36, 1.34, 1.56, 0.16, shade(c, me ? -0.05 : 0.09));
-    s += path('M-0.67,1.2L0.67,1.2L0.75,1.7L-0.75,1.7Z', TD.glass);
-    s += rect(-hw - 0.16, -1.02, 0.22, 0.16, 0.05, dk) + rect(hw - 0.06, -1.02, 0.22, 0.16, 0.05, dk);
-    s += rect(-hw + 0.13, -hl + 0.05, 0.5, 0.17, 0.06, TD.headL) + rect(hw - 0.63, -hl + 0.05, 0.5, 0.17, 0.06, TD.headL);
-    s += rect(-hw + 0.13, hl - 0.2, 0.48, 0.15, 0.05, TD.tailL) + rect(hw - 0.61, hl - 0.2, 0.48, 0.15, 0.05, TD.tailL);
+    s += path('M-0.8,-1.08L0.8,-1.08L0.67,-0.36L-0.67,-0.36ZM-0.67,1.2L0.67,1.2L0.75,1.7L-0.75,1.7Z', TD.glass);
+    s += boxes([[-hw - 0.16, -1.02, 0.22, 0.16], [hw - 0.06, -1.02, 0.22, 0.16]], dk);
+    s += boxes([[-hw + 0.13, -hl + 0.05, 0.5, 0.17], [hw - 0.63, -hl + 0.05, 0.5, 0.17]], TD.headL);
+    s += boxes([[-hw + 0.13, hl - 0.2, 0.48, 0.15], [hw - 0.61, hl - 0.2, 0.48, 0.15]], TD.tailL);
     if (o.brake) s += brakes(hw, hl);
     if (o.ind) s += indicators(o.ind, hw, hl);
     return s;
@@ -383,8 +400,7 @@
     s += circ(-h, y, 2.2, '#FF2A2A', { op: 0.3 }) + circ(h, y, 2.2, '#3D7BFF', { op: 0.34 });
     s += rect(-h - 0.06, y - 0.27, w + 0.12, 0.54, 0.14, '#1B1E23');
     s += rect(-h, y - 0.21, h - 0.04, 0.42, 0.1, '#FF4A3D') + rect(0.04, y - 0.21, h - 0.04, 0.42, 0.1, '#5A8BFF');
-    [150, 180, 210].forEach(function (a) { var d = dir(a); s += line(-h + d[0] * 0.75, y + d[1] * 0.75, -h + d[0] * 1.45, y + d[1] * 1.45, '#FF6A5E', 0.17); });
-    [-30, 0, 30].forEach(function (a) { var d = dir(a); s += line(h + d[0] * 0.75, y + d[1] * 0.75, h + d[0] * 1.45, y + d[1] * 1.45, '#7FA6FF', 0.17); });
+    s += rays(-h, y, 0.75, 1.45, '#FF6A5E', [150, 180, 210], 0.17) + rays(h, y, 0.75, 1.45, '#7FA6FF', [-30, 0, 30], 0.17);
     return s;
   }
   // ambulance 6.0 x 2.25 m: white, red side stripes, red crescent, light bar near the front
@@ -396,8 +412,8 @@
     s += rect(-0.9, -1.7, 1.8, 4.45, 0.2, '#FBFBFC', { stroke: '#D5D8DC', sw: 0.06 });
     s += rect(-hw, -1.6, 0.26, 4.35, 0, SIGN.red) + rect(hw - 0.26, -1.6, 0.26, 4.35, 0, SIGN.red);
     s += circ(0, 0.9, 0.66, SIGN.red) + circ(0.26, 0.82, 0.55, '#FBFBFC');
-    s += rect(-hw + 0.13, -hl + 0.05, 0.5, 0.17, 0.06, TD.headL) + rect(hw - 0.63, -hl + 0.05, 0.5, 0.17, 0.06, TD.headL);
-    s += rect(-hw + 0.13, hl - 0.2, 0.5, 0.15, 0.05, TD.tailL) + rect(hw - 0.63, hl - 0.2, 0.5, 0.15, 0.05, TD.tailL);
+    s += boxes([[-hw + 0.13, -hl + 0.05, 0.5, 0.17], [hw - 0.63, -hl + 0.05, 0.5, 0.17]], TD.headL);
+    s += boxes([[-hw + 0.13, hl - 0.2, 0.5, 0.15], [hw - 0.63, hl - 0.2, 0.5, 0.15]], TD.tailL);
     s += lightBar(-1.98, 1.9);
     return s;
   }
@@ -410,11 +426,8 @@
     s += rect(-0.5, -3.1, 1, 1.5, 0.15, shade(Y, -0.12)) + rect(-0.5, 1.6, 1, 1.5, 0.15, shade(Y, -0.12));
     s += rect(-hw, -4.1, 0.16, 9, 0, '#1A1A1A') + rect(hw - 0.16, -4.1, 0.16, 9, 0, '#1A1A1A');
     s += rect(-0.9, 5.0, 1.8, 0.2, 0.05, TD.glass);
-    [[-1, -1], [1, -1], [-1, 1], [1, 1]].forEach(function (k) {
-      var x = k[0] * (hw - 0.3), y = k[1] * (hl - 0.3), base = k[0] > 0 ? (k[1] < 0 ? -45 : 45) : (k[1] < 0 ? -135 : 135);
-      s += circ(x, y, 1.25, '#FF2A2A', { op: 0.33 }) + circ(x, y, 0.3, '#FF6257');
-      [-30, 0, 30].forEach(function (a) { var d = dir(base + a); s += line(x + d[0] * 0.7, y + d[1] * 0.7, x + d[0] * 1.35, y + d[1] * 1.35, '#FF6257', 0.15); });
-    });
+    s += flashers([[-hw + 0.3, -hl + 0.3, -135], [hw - 0.3, -hl + 0.3, -45], [-hw + 0.3, hl - 0.3, 135], [hw - 0.3, hl - 0.3, 45]],
+      1.25, '#FF2A2A', '#FF6257', '#FF6257');
     return s;
   }
   // road maintenance truck 8 x 2.5 m: white cab, flatbed, amber beacon on the cab, arrow board at the rear
@@ -432,7 +445,7 @@
     s += rect(-1.35, 3.35, 2.7, 1.6, 0.18, FV.amber, { op: 0.12 });
     // flashing amber beacon on the cab roof
     s += circ(0, -2.75, 1.6, FV.amber, { op: 0.3 }) + circ(0, -2.75, 0.34, '#FFD27A', { stroke: FV.amber, sw: 0.12 });
-    ALL8.forEach(function (a) { var d = dir(a); s += line(d[0] * 0.75, -2.75 + d[1] * 0.75, d[0] * 1.4, -2.75 + d[1] * 1.4, FV.amber, 0.16); });
+    s += rays(0, -2.75, 0.75, 1.4, FV.amber, ALL8, 0.16);
     return s;
   }
   function cone(x, y, k) {
@@ -757,7 +770,7 @@
     s += rect(xl, 0, xr - xl, 100, 0, TD.asph) + rect(xl - 1.3, 0, 1.3, 100, 0, TD.kerb) + rect(xr, 0, 1.3, 100, 0, TD.kerb);
     s += rect(a1, 0, med, 100, 0, TD.kerb) + rect(a1 + 1.2, 0, med - 2.4, 100, 0, TD.sand);
     s += vLines([a1 - 1.3, b1 + 1.3], TD.yellow, 1) + vLines([a1 - lw, b1 + lw], TD.white, 1.2, '8 9');
-    var bx = xr - 0.3 * m - 1.25 * m, bTop = 5.2, bBot = bTop + 10.6 * m, yStop = bBot + 7.3 * m;
+    var bx = xr - 0.3 * m - 1.25 * m, bTop = 6.4, bBot = bTop + 10.6 * m, yStop = bBot + 7.3 * m;
     // both lanes behind the bus stop 5 m back
     s += place(car(null, { me: true, brake: true }), b1 + 1.5 * lw, yStop, 0, m);
     s += place(car(PAINT.red, { brake: true }), b1 + lw / 2, yStop, 0, m);

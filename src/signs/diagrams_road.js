@@ -64,18 +64,24 @@
     var u = 1 - t, a = u * u * u, b = 3 * u * u * t, c = 3 * u * t * t, d = t * t * t;
     return [a * p[0][0] + b * p[1][0] + c * p[2][0] + d * p[3][0], a * p[0][1] + b * p[1][1] + c * p[2][1] + d * p[3][1]];
   }
-  function bzPts(p, n) { var o = []; for (var i = 0; i <= n; i++) o.push(bz(p, i / n)); return o; }
+  function bzD(p, t) {
+    var u = 1 - t;
+    return [3 * u * u * (p[1][0] - p[0][0]) + 6 * u * t * (p[2][0] - p[1][0]) + 3 * t * t * (p[3][0] - p[2][0]),
+      3 * u * u * (p[1][1] - p[0][1]) + 6 * u * t * (p[2][1] - p[1][1]) + 3 * t * t * (p[3][1] - p[2][1])];
+  }
+  // points along a cubic, shifted sideways by d (d > 0 = to the right of the direction of travel)
+  function bzSide(p, n, d) {
+    var o = [];
+    for (var i = 0; i <= n; i++) {
+      var t = i / n, q = bz(p, t), v = bzD(p, t), l = hyp(v[0], v[1]) || 1;
+      o.push([q[0] - v[1] / l * d, q[1] + v[0] / l * d]);
+    }
+    return o;
+  }
   function bzCut(p, t) { // first part of a cubic, up to t
     function lp(a, b) { return [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t]; }
     var a = lp(p[0], p[1]), b = lp(p[1], p[2]), c = lp(p[2], p[3]), d = lp(a, b), e = lp(b, c);
     return [p[0], a, d, lp(d, e)];
-  }
-  // offset a polyline sideways: d > 0 = to the right of its direction
-  function offsetPts(pts, d) {
-    return pts.map(function (q, i) {
-      var a = pts[Math.max(0, i - 1)], b = pts[Math.min(pts.length - 1, i + 1)], tx = b[0] - a[0], ty = b[1] - a[1], l = hyp(tx, ty) || 1;
-      return [q[0] - ty / l * d, q[1] + tx / l * d];
-    });
   }
   function clampPts(pts) { return pts.map(function (q) { return [Math.max(0, Math.min(W, q[0])), Math.max(0, Math.min(H, q[1]))]; }); }
   // x of a polyline at height y
@@ -160,6 +166,7 @@
   // amber indicator: dots at the front and rear corners of one side, with short flash strokes
   function blink(side, hl, hw, s) {
     var sx = side === 'L' ? -1 : 1, q = '';
+    s = Math.min(s, 4.2);
     [[-1, -hl + 0.32 * s], [1, hl - 0.32 * s]].forEach(function (c) {
       var fy = c[0], x = sx * (hw - 0.16 * s), y = c[1];
       q += circ(x, y, 1.0 * s, P.amber, { opacity: 0.38 }) + circ(x, y, 0.42 * s, '#FFC24A');
@@ -477,9 +484,9 @@
     q += arrow(pen, P.gold, { dash: true, w: 2 });
     // signal right just after passing the north exit
     var am = 250, mk = [cx + ri * Math.cos(am * D2R), cy + ri * Math.sin(am * D2R)];
-    q += line(mk[0] - 3, mk[1] - 4, 50, 17, P.amber, 0.8, { 'stroke-dasharray': '1.6 1.4', opacity: 0.9 });
+    q += line(mk[0] - 3, mk[1] - 4, 52, 16, P.amber, 0.8, { 'stroke-dasharray': '1.6 1.4', opacity: 0.9 });
     q += signalMark(mk[0], mk[1], am);
-    q += tag('إشارة يمين', 29, 15, { col: P.amber, size: 8.5, pad: 0.9 });
+    q += tag('إشارة يمين', 30, 14, { col: P.amber, size: 8, pad: 0.9 });
     q += car(x2, 102.5, 0, { me: true, s: s });
     return fig(label, q);
   });
@@ -523,7 +530,7 @@
     var s = 3.1, cx = 80, cy = 54, lw = 12, q = bigCross(cx, cy, lw), R = 28;
     var xs = cx + lw / 2, ye = cy - lw / 2;
     // oncoming car goes straight first
-    q += arrow(new Pen(cx - lw / 2, 22.5, 180).L(cx - lw / 2, 84), P.ok, { w: 2.2 });
+    q += arrow(new Pen(cx - lw / 2, 22.5, 180).L(cx - lw / 2, 76), P.ok, { w: 2.2 });
     q += car(cx - lw / 2, 13, 180, { color: P.red, s: s });
     // our left turn passes just left of the junction centre and ends in the left lane of the west arm
     q += arrow(new Pen(xs, 82, 0).L(xs, ye + R).arc(xs - R, ye + R, 270, true).L(15, ye), P.gold, { dash: true, w: 2 });
@@ -602,78 +609,79 @@
   });
 
   reg('fig-two-second', 'قاعدة الثانيتين', function (o, label) {
-    var s = 4, lw = 16, x0 = 48, cxl = x0 + lw, x1 = x0 + 2 * lw, xc = cxl + lw / 2, q = '';
+    var s = 4, lw = 18, x0 = 44, cxl = x0 + lw, x1 = cxl + lw, xc = cxl + lw / 2, q = '';
     q += surface(outline([[x0, 0], [x0, H], [x1, H], [x1, 0]]));
     q += mark(cxl, 0, cxl, H, P.yellow, 0.9, [3 * s, 6 * s], 4);
-    var yA = 25, yB = 95; // rear of the car ahead (level with the post), front of our car
-    // street lamp on the right pavement, level with the rear of the car ahead
-    var px = x1 + 6.5;
-    q += circ(xc + 4, yA, 7, P.head, { opacity: 0.1 });
-    q += mark(x0 + 1, yA, px, yA, P.ink, 0.8, [1.5, 1.5]);
-    q += line(px, yA, xc + 4, yA, '#9AA3AE', 1.4, ROUND) + rect(xc + 1.6, yA - 1.2, 4.8, 2.4, P.head, { rx: 1.1 }) +
-      circ(px, yA, 2.4, '#B8BEC8', { stroke: P.pill, 'stroke-width': 0.7 });
+    var yA = 25, yB = 95, ym = (yA + yB) / 2; // rear of the car ahead (level with the post), front of our car
+    // street lamp on the right pavement, level with the rear of the car ahead, and its reference line
+    var px = x1 + 6;
+    q += mark(cxl + 1, yA, px, yA, P.ink, 0.8, [1.5, 1.5]);
+    q += line(px, yA, x1 + 1.2, yA, '#9AA3AE', 1.4, ROUND) + rect(x1 - 0.8, yA - 1.3, 3.4, 2.6, P.head, { rx: 1.1, stroke: P.pill, 'stroke-width': 0.4 }) +
+      circ(px, yA, 2.5, '#B8BEC8', { stroke: P.pill, 'stroke-width': 0.7 });
     q += car(xc, yA - 9.2, 0, { color: P.blue, s: s });
     q += car(xc, yB + 9.2, 0, { me: true, s: s });
     // two-second bracket in the gap, ticks 1 and 2
-    var ym = (yA + yB) / 2;
     q += dim(xc, yB - 1, xc, yA + 1, null, { tick: 3.4 });
     q += line(xc - 3.4, ym, xc + 3.4, ym, P.gold, 1.2, ROUND);
-    q += txt('1', xc - 7.5, ym, 9, P.gold) + txt('2', xc - 7.5, yA + 2.5, 9, P.gold);
-    q += tag('ثانيتان', x1 + 26, ym, { col: P.gold, size: 10.5 });
+    q += txt('1', xc - 6.8, ym, 9, P.gold) + txt('2', xc - 6.8, yA + 5.5, 9, P.gold);
+    q += tag('ثانيتان', x1 + 29, ym, { col: P.gold, size: 10.5 });
     return fig(label, q);
   });
 
   reg('fig-bike-gap', 'متر على الأقل عند تجاوز الدراجة', function (o, label) {
-    var s = 6, lw = 22, x0 = 46, cxl = x0 + lw, x1 = cxl + lw, k = 1.5, q = '';
+    var s = 8, lw = 28, x0 = 44, cxl = x0 + lw, x1 = cxl + lw, k = 1.35, q = '';
     q += surface(outline([[x0, 0], [x0, H], [x1, H], [x1, 0]]));
-    q += mark(cxl, 0, cxl, H, P.yellow, 1, [3 * s, 4 * s], 10);
-    var gap = 7, xb = x1 - 6.2, hb = 0.31 * k * s, yb = 60, xcar = xb - hb - gap - 0.975 * s, ycar = 60;
+    q += mark(cxl, 0, cxl, H, P.yellow, 1.1, [3 * s, 4 * s], 14);
+    // cyclist near the right kerb; our car passes it across the broken centre line, leaving at least 1 m
+    var hb = 0.31 * k * s, xb = x1 - 0.5 * s - hb, gap = 9, hwc = 0.975 * s, xcar = xb - hb - gap - hwc, yb = 66, ycar = 52 + 2.3 * s;
     q += cyclist(xb, yb, 0, { s: s, k: k });
     q += car(xcar, ycar, 0, { me: true, s: s });
-    var yd = yb - 0.63 * k * s + 0.4;
-    q += dim(xcar + 0.975 * s + 0.3, yd, xb - hb - 0.2, yd, null, { tick: 2.4 });
-    q += tag('1 م', xb - hb - gap / 2 - 1.5, yd - 16, { col: P.gold, size: 10, pad: 0.8 });
+    var yd = yb - 0.16 * k * s, xa = xcar + hwc, xz = xb - hb, lx = (xa + xz) / 2;
+    q += dim(xa + 0.2, yd, xz - 0.2, yd, null, { tick: 2.6 });
+    q += line(lx, 47.6, lx, yd - 3.4, P.gold, 0.8, { 'stroke-dasharray': '1.5 1.3' });
+    q += tag('1 م', lx, 40, { col: P.gold, size: 10.5, pad: 0.8 });
     return fig(label, q);
   });
 
   reg('fig-blind-spots', 'النقطة العمياء', function (o, label) {
-    var s = 5, lw = 19, x0 = 43, q = carriageway(x0, lw, 2, 12, s), xr = x0 + 1.5 * lw, xl = x0 + lw / 2, cy = 37;
-    var hw = 0.975 * s, mY = cy - 0.72 * s, mxL = xr - hw - 0.4, mxR = xr + hw + 0.4, a1 = 3, a2 = 21, len = 62;
+    var s = 5, lw = 19, x0 = 40, q = carriageway(x0, lw, 2, 16, s), xr = x0 + 1.5 * lw, xl = x0 + lw / 2, cy = 32;
+    var hw = 0.975 * s, hl = 2.3 * s, mY = cy - 0.8 * s, mxL = xr - hw - 0.4, mxR = xr + hw + 0.4, a1 = 4, a2 = 20, len = 52;
     function ray(x, y, deg, l, sx) { return [x + sx * Math.sin(deg * D2R) * l, y + Math.cos(deg * D2R) * l]; }
-    // mirror views (green): side mirrors and the interior mirror
-    q += zone([[mxL, mY], ray(mxL, mY, a1, len, -1), ray(mxL, mY, a2, len, -1)], P.ok, 0.16, 0.45);
-    q += zone([[mxR, mY], ray(mxR, mY, a1, len, 1), ray(mxR, mY, a2, len, 1)], P.ok, 0.16, 0.45);
-    q += zone([[xr, cy - 0.9 * s], ray(xr, cy - 0.9 * s, 8, len + 4, -1), ray(xr, cy - 0.9 * s, 8, len + 4, 1)], P.ok, 0.16, 0.45);
-    // blind spots (red): beside and behind the rear quarters, outside the mirror views
-    var yP = cy - 0.1 * s, kk = Math.tan(a2 * D2R), wl = lw - 1.5, yE = cy + 2.3 * s + 4.6 * s * 0.9;
+    // what the mirrors show (green): both side mirrors and the interior mirror
+    q += zone([[mxL, mY], ray(mxL, mY, a1, len, -1), ray(mxL, mY, a2, len, -1)], P.ok, 0.15, 0.4);
+    q += zone([[mxR, mY], ray(mxR, mY, a1, len, 1), ray(mxR, mY, a2, len, 1)], P.ok, 0.15, 0.4);
+    q += zone([[xr, cy - 0.9 * s], ray(xr, cy - 0.9 * s, 7, len + 6, -1), ray(xr, cy - 0.9 * s, 7, len + 6, 1)], P.ok, 0.15, 0.4);
+    // blind spots (red): beside and just behind the rear quarters, outside the mirror views
+    var yP = cy - 0.1 * s, kk = Math.tan(a2 * D2R), wl = lw - 1.5, yE = cy + hl + 4.4 * s;
     [-1, 1].forEach(function (sx) {
-      var mx = sx < 0 ? mxL : mxR, far = xr + sx * (hw + wl), e0 = mx + sx * (yP - mY) * kk, e1 = mx + sx * (yE - mY) * kk;
-      q += zone([[e0, yP], [far, yP], [far, yE], [e1, yE]], P.x, 0.34);
+      var mx = sx < 0 ? mxL : mxR, far = xr + sx * (hw + wl);
+      q += zone([[mx + sx * (yP - mY) * kk, yP], [far, yP], [far, yE], [mx + sx * (yE - mY) * kk, yE]], P.x, 0.4, 0.95);
     });
-    q += car(xl, cy + 17, 0, { color: P.blue, s: s });
+    q += car(xl, cy + 17.5, 0, { color: P.blue, s: s });
     q += car(xr, cy, 0, { me: true, s: s, driver: true });
-    // head check: the driver (left seat) looks over the left shoulder
-    var hx = xr - 0.38 * s, hy = cy - 0.12 * s;
-    q += arrow(new Pen(hx + 5.2 * Math.cos(262 * D2R), hy + 5.2 * Math.sin(262 * D2R), 172).arc(hx, hy, 150, true), P.gold, { w: 1.5 });
-    q += tag('التفت', xl - 1, cy - 13, { col: P.gold, size: 9.5 });
+    // head check: the driver (left seat) looks back over the left shoulder
+    var hx = xr - 0.38 * s, hy = cy - 0.12 * s, rh = 7;
+    q += arrow(new Pen(hx + rh * Math.cos(292 * D2R), hy + rh * Math.sin(292 * D2R), 270).arc(hx, hy, 203, true), P.gold, { w: 1.7 });
+    q += tag('التفت', xl - 3, 12, { col: P.gold, size: 9.5 });
     return fig(label, q, true);
   });
 
   reg('fig-truck-blind', 'مناطق الشاحنة العمياء', function (o, label) {
-    var s = 3.5, lw = 14, x0 = 57, q = carriageway(x0, lw, 3, 11, s), xm = x0 + 1.5 * lw, xr = x0 + 2.5 * lw;
-    var L = 15 * s, hw = 1.25 * s, yc = 60, top = yc - L / 2, bot = yc + L / 2, sh = x0 + 3 * lw + 11;
-    // front of the cab, the whole right side (largest), the left side near the cab, and behind the trailer
-    q += zone([[xm - hw - 1, top - 1.2], [xm + hw + 2.5, top - 1.2], [xm + hw + 3.5, top - 13], [xm - hw - 1.5, top - 13]], P.x, 0.3);
-    q += zone([[xm + hw + 1, top + 1.5], [xm + hw + 13, top + 1.5], [sh - 1, bot], [xm + hw + 1, bot]], P.x, 0.3);
-    q += zone([[xm - hw - 1, top + 5], [xm - hw - 8, top + 7.5], [xm - hw - 11, top + 24], [xm - hw - 1, top + 24]], P.x, 0.3);
-    q += zone([[xm - hw - 0.5, bot + 1.2], [xm + hw + 0.5, bot + 1.2], [xm + hw + 3.5, H - 2], [xm - hw - 3.5, H - 2]], P.x, 0.3);
+    var s = 3.5, lw = 14, x0 = 57, q = carriageway(x0, lw, 3, 12, s), xm = x0 + 1.5 * lw, xr = x0 + 2.5 * lw;
+    var L = 15 * s, hw = 1.25 * s, yc = 60, top = yc - L / 2, bot = yc + L / 2, sh = x0 + 3 * lw + 12;
+    function rz(pts) { return path(outline(pts).fill, P.x, { 'fill-opacity': 0.32, stroke: P.x, 'stroke-opacity': 0.9, 'stroke-width': 0.8 }); }
+    // directly in front of the cab, the whole right side (largest), the left side near the cab, behind the trailer
+    q += rz([[xm - hw - 1, top - 1.3, 2], [xm + hw + 2, top - 1.3, 2], [xm + hw + 3, top - 13, 2.5], [xm - hw - 1.5, top - 13, 2.5]]);
+    q += rz([[xm + hw + 1, top + 1, 2], [xm + hw + 12, top + 1, 3], [sh - 1.5, bot, 3], [xm + hw + 1, bot, 2]]);
+    q += rz([[xm - hw - 1, top + 5, 1.5], [xm - hw - 9, top + 7.5, 2.5], [xm - hw - 10.5, top + 23, 2.5], [xm - hw - 1, top + 23, 1.5]]);
+    q += rz([[xm - hw - 0.5, bot + 1.3, 1.5], [xm + hw + 0.5, bot + 1.3, 1.5], [xm + hw + 3.5, H - 1.5, 2.5], [xm - hw - 3.5, H - 1.5, 2.5]]);
     q += truck(xm, yc, 0, { s: s, len: 15, color: '#3F6FB5' });
     q += car(xr, yc + 3, 0, { me: true, s: s });
     return fig(label, q, true);
   });
 
   reg('fig-parking-15m', 'لا وقوف على بعد أقل من 15 مترا من التقاطع', function (o, label) {
-    var s = 3.4, yj = 26, x0 = 38, lw = 15, pk = 9, xpk = x0 + 2 * lw, x1 = xpk + pk, m15 = 15 * s, yz = yj + m15, q = '';
+    var s = 3.4, yj = 26, x0 = 34, lw = 15, pk = 9, xpk = x0 + 2 * lw, x1 = xpk + pk, m15 = 15 * s, yz = yj + m15, q = '';
     q += surface(outline([[0, 0, 10], [W, 0, 10], [W, yj], [x1, yj, 8], [x1, H], [x0, H], [x0, yj, 8], [0, yj]]));
     q += mark(0, yj / 2, W, yj / 2, P.yellow, 0.9, [3 * s, 6 * s], 4);
     q += mark(x0 + lw, yj + 3, x0 + lw, H, P.yellow, 0.9, [3 * s, 6 * s]);
@@ -686,8 +694,10 @@
     var xp = xpk + pk / 2;
     q += car(xp, yz + 2.5 + 7.82, 0, { me: true, s: s }) + car(xp, yz + 2.5 + 7.82 + 18.4, 0, { color: P.dark, s: s });
     // measure and sign on the pavement
-    q += dim(x1 + 9, yj, x1 + 9, yz, '15 م', { size: 10 });
-    var sx = x1 + 34, sy = yj + 16;
+    var xd = x1 + 7;
+    q += dim(xd, yj, xd, yz, null);
+    q += tag('15 م', xd + 21, yj + m15 / 2, { col: P.gold, size: 10.5 });
+    var sx = x1 + 58, sy = yj + 18;
     q += line(sx, sy + 7.5, sx, sy + 13, '#8A929E', 1.5, ROUND) + circ(sx, sy + 13.5, 1.4, '#6B737F') +
       circ(sx, sy, 7.2, P.white) + circ(sx, sy, 6.5, P.signRed) + circ(sx, sy, 4.6, P.signBlue) +
       line(sx - 3.25, sy - 3.25, sx + 3.25, sy + 3.25, P.signRed, 1.7);
@@ -728,18 +738,18 @@
     var s = HW.s, lw = HW.lw, x0 = HW.x0, xe = x0 + 3 * lw, xa = xe + lw, yN = 84, yT0 = 44, yT1 = 12;
     // on-ramp from the bottom right, joining a parallel acceleration lane that tapers away
     var ramp = [[xa + 44, 128], [xa + 22, 108], [xe + lw / 2, 100], [xe + lw / 2, yN]];
-    var cL = bzPts(ramp, 14), eL = offsetPts(cL, -lw / 2), eR = offsetPts(cL, lw / 2);
+    var eL = bzSide(ramp, 16, -lw / 2), eR = bzSide(ramp, 16, lw / 2);
     var q = highway();
     q += path(pl(clampPts(eL.concat(eR.slice().reverse()))) + 'Z', P.asph);
-    q += path('M' + f(xe) + ' ' + f(yN) + 'L' + f(xe) + ' ' + f(yT1) + 'L' + f(xa) + ' ' + f(yT0) + 'L' + f(xa) + ' ' + f(yN) + 'Z', P.asph);
+    q += path('M' + f(xe) + ' ' + f(yN + 0.6) + 'L' + f(xe) + ' ' + f(yT1) + 'L' + f(xa) + ' ' + f(yT0) + 'L' + f(xa) + ' ' + f(yN + 0.6) + 'Z', P.asph);
     // lines: lane 1 edge below the nose, merge line, taper edge, ramp edges
     q += mark(xe, yN, xe, H, P.white, 0.9) + mark(xe, 0, xe, yT1, P.white, 0.9);
     q += mark(xe, yT1 + 4, xe, yN, P.white, 1.4, [2 * s, 1.6 * s]);
-    q += stroke([[xe, yT1], [xa - 0.3, yT0], [xa - 0.3, yN]].concat(offsetPts(cL, lw / 2 - 0.3).reverse().slice(1)).map(function (p2) { return [Math.min(W, p2[0]), Math.min(H, p2[1])]; }), P.white, 0.9);
-    q += stroke(clampPts(offsetPts(cL, -lw / 2 + 0.3)), P.white, 0.9);
+    q += stroke([[xe, yT1], [xa - 0.3, yT0]].concat(clampPts(bzSide(ramp, 16, lw / 2 - 0.3)).reverse()), P.white, 0.9);
+    q += stroke(clampPts(bzSide(ramp, 16, -lw / 2 + 0.3)), P.white, 0.9);
     // cars on lane 1 with a gap, other lanes
     var x1c = xe - lw / 2, xac = xa - lw / 2;
-    q += car(x1c, 12, 0, { color: P.silver, s: s }) + car(x1c, 104, 0, { color: P.red, s: s }) +
+    q += car(x1c, 9, 0, { color: P.silver, s: s }) + car(x1c, 104, 0, { color: P.red, s: s }) +
       car(x0 + 1.5 * lw, 56, 0, { color: P.dark, s: s }) + car(x0 + lw / 2, 92, 0, { color: P.green, s: s });
     q += arrow(new Pen(xac, 51, 0).to(x1c, 31, 0, 7, 7), P.gold, { dash: true, w: 2.1 });
     q += car(xac, 60, 0, { me: true, s: s, ind: 'L' });
@@ -750,18 +760,17 @@
     var s = HW.s, lw = HW.lw, x0 = HW.x0, xe = x0 + 3 * lw, xa = xe + lw, yO0 = 112, yO1 = 92, yG = 62;
     // deceleration lane (taper from the bottom), then the exit ramp veering right to the top edge
     var ramp = [[xe + lw / 2, yG], [xe + lw / 2, 38], [xa + 12, 16], [xa + 40, -6]];
-    var cL = bzPts(ramp, 14), eL = offsetPts(cL, -lw / 2), eR = offsetPts(cL, lw / 2);
+    var eL = bzSide(ramp, 16, -lw / 2), eR = bzSide(ramp, 16, lw / 2);
     var q = highway();
-    q += path('M' + f(xe) + ' ' + f(yO0) + 'L' + f(xa) + ' ' + f(yO1) + 'L' + f(xa) + ' ' + f(yG) + 'L' + f(xe) + ' ' + f(yG) + 'Z', P.asph);
+    q += path('M' + f(xe) + ' ' + f(yO0) + 'L' + f(xa) + ' ' + f(yO1) + 'L' + f(xa) + ' ' + f(yG - 0.6) + 'L' + f(xe) + ' ' + f(yG - 0.6) + 'Z', P.asph);
     q += path(pl(clampPts(eL.concat(eR.slice().reverse()))) + 'Z', P.asph);
-    // painted gore between lane 1 and the ramp
-    var gore = [[xe, yG]].concat(clampPts(eL).slice(1)).concat([[xe, 0]]);
-    q += path(pl(gore) + 'Z', P.asph);
+    // painted gore between lane 1 and the ramp, chevrons pointing in the direction of travel
+    q += path(pl([[xe, yG]].concat(clampPts(eL).slice(1), [[xe, 0]])) + 'Z', P.asph);
     q += chevrons(xe, eL, yG, 2, 8);
     q += mark(xe, yO0, xe, H, P.white, 0.9) + mark(xe, 0, xe, yG, P.white, 0.9);
     q += mark(xe, yG, xe, yO0 - 2, P.white, 1.4, [2 * s, 1.6 * s]);
-    q += stroke([[xe, yO0], [xa - 0.3, yO1]].concat(clampPts(offsetPts(cL, lw / 2 - 0.3))), P.white, 0.9);
-    q += stroke(clampPts(offsetPts(cL, -lw / 2 + 0.3)), P.white, 0.9);
+    q += stroke([[xe, yO0], [xa - 0.3, yO1]].concat(clampPts(bzSide(ramp, 16, lw / 2 - 0.3))), P.white, 0.9);
+    q += stroke(clampPts(bzSide(ramp, 16, -lw / 2 + 0.3)), P.white, 0.9);
     var x1c = xe - lw / 2, xac = xa - lw / 2;
     q += car(x0 + 1.5 * lw, 42, 0, { color: P.blue, s: s }) + car(x0 + lw / 2, 80, 0, { color: P.silver, s: s });
     q += arrow(new Pen(x1c, 94, 0).to(xac, 76, 0, 7, 7).L(xac, yG).bz(bzCut(ramp, 0.72)), P.gold, { dash: true, w: 2.1 });
@@ -770,26 +779,25 @@
   });
 
   reg('fig-missed-exit', 'فاتك المخرج؟ كمل للمخرج التالي', function (o, label) {
-    var s = HW.s, lw = HW.lw, x0 = HW.x0, xe = x0 + 3 * lw, xa = xe + lw, yG = 118, yN = 92;
+    var s = HW.s, lw = HW.lw, x0 = HW.x0, xe = x0 + 3 * lw, yCut = 72;
     // the exit ramp left at the bottom: gore nose at the bottom edge, ramp going up to the right
-    var ramp = [[xe + lw / 2, yG], [xe + lw / 2, 92], [xa + 22, 58], [xa + 50, -8]];
-    var cL = bzPts(ramp, 16), eL = offsetPts(cL, -lw / 2), eR = offsetPts(cL, lw / 2);
+    var ramp = [[xe + lw / 2, H], [xe + lw / 2, 96], [xe + 21, 66], [xe + 59, -8]];
+    var eL = bzSide(ramp, 20, -lw / 2), eR = bzSide(ramp, 20, lw / 2);
     var q = highway();
-    q += rect(xe, yG, lw, H - yG, P.asph);
     q += path(pl(clampPts(eL.concat(eR.slice().reverse()))) + 'Z', P.asph);
-    // painted gore near the nose, then a sand nose
-    var yCut = yN, gx = (xe + xAt(eL, yCut)) / 2, gr = (xAt(eL, yCut) - xe) / 2 - 1.2;
-    q += path(pl([[xe, yG]].concat(eL.filter(function (p2) { return p2[1] <= yG && p2[1] >= yCut; })).concat([[xAt(eL, yCut), yCut], [xe, yCut]])) + 'Z', P.asph);
-    q += chevrons(xe, eL, yG, yCut + 2, 7);
-    q += circ(gx, yCut, gr, P.sand);
+    // painted gore near the nose (chevrons), then a rounded sand nose
+    var xg = xAt(eL, yCut), gr = (xg - xe) / 2 - 1.3;
+    q += path(pl([[xe, H]].concat(eL.filter(function (p2) { return p2[1] > yCut; }), [[xg, yCut], [xe, yCut]])) + 'Z', P.asph);
+    q += chevrons(xe, eL, H, yCut + 3, 7);
+    q += circ((xe + xg) / 2, yCut, gr, P.sand);
     q += mark(xe, 0, xe, H, P.white, 0.9);
-    q += stroke(clampPts(offsetPts(cL, -lw / 2 + 0.3)), P.white, 0.9) + stroke(clampPts(offsetPts(cL, lw / 2 - 0.3)), P.white, 0.9);
-    var x1c = xe - lw / 2, yc = 62;
-    // wrong: cutting across the gore, reversing to the ramp
-    q += arrow(new Pen(x1c + 2.5, yc - 8.5, 25).to(bz(ramp, 0.7)[0], bz(ramp, 0.7)[1], 27, 9, 9), P.bad, { dash: true, w: 1.9 });
-    q += redX(xe + 13, 49);
-    q += arrow(new Pen(x1c, yc + 9, 180).L(x1c, 98).to(xe + 5.5, 112, 150, 5, 4), P.bad, { dash: true, w: 1.9 });
-    q += redX(x1c, 90);
+    q += stroke(clampPts(bzSide(ramp, 20, -lw / 2 + 0.3)), P.white, 0.9) + stroke(clampPts(bzSide(ramp, 20, lw / 2 - 0.3)), P.white, 0.9);
+    var x1c = xe - lw / 2, yc = 60, tgt = bz(ramp, 0.74);
+    // wrong: cutting across the gore, or reversing back to the ramp
+    q += arrow(new Pen(x1c + 2.5, yc - 8.5, 25).to(tgt[0], tgt[1], 28, 9, 9), P.bad, { dash: true, w: 1.9 });
+    q += redX(xe + 12, 47.5);
+    q += arrow(new Pen(x1c, yc + 9, 180).L(x1c, 98).to(xe + 7, 107, 140, 5, 4), P.bad, { dash: true, w: 1.9 });
+    q += redX(x1c, 88);
     // right: carry on to the next exit
     q += arrow(new Pen(x1c, yc - 9, 0).L(x1c, 12), P.ok, { w: 2.3 });
     q += car(x0 + 1.5 * lw, 26, 0, { color: P.silver, s: s }) + car(x0 + lw / 2, 88, 0, { color: P.blue, s: s });
@@ -802,16 +810,15 @@
     var s = 5.2, lw = 19, cxv = 44, cyh = 36, r = 11, q = crossroads(cxv - lw, cxv + lw, cyh - lw, cyh + lw, r);
     var dash = [3 * s, 6 * s];
     q += mark(cxv, cyh + lw + 2, cxv, H, P.yellow, 0.9, dash) + mark(cxv, 0, cxv, cyh - lw - 2, P.yellow, 0.9, dash);
-    q += mark(0, cyh, cxv - lw - 2, cyh, P.yellow, 0.9, dash) + mark(W, cyh, cxv + lw + r + 16, cyh, P.yellow, 0.9, dash);
-    // zebra across the east arm, just past the corner
-    var zx = cxv + lw + r + 3, zw = 15;
+    q += mark(0, cyh, cxv - lw - 2, cyh, P.yellow, 0.9, dash) + mark(W, cyh, cxv + lw + r + 22, cyh, P.yellow, 0.9, dash);
+    // zebra across the east arm, just past the corner, with two pedestrians crossing
+    var zx = cxv + lw + r + 3, zw = 16;
     for (var y = cyh - lw + 1.6; y < cyh + lw - 1.5; y += 5.2) q += rect(zx, y, zw, 2.6, P.white);
-    q += ped(zx + zw / 2 + 0.5, cyh - 8, 180, { s: s, k: 1.45, color: '#E2A65C' }) + ped(zx + zw / 2 - 1, cyh + 9, 0, { s: s, k: 1.45, color: '#4A8FD8' });
-    q += arrow(new Pen(zx + zw + 3.5, cyh - 15, 180).L(zx + zw + 3.5, cyh - 6), P.grey, { w: 1.5 });
-    q += arrow(new Pen(zx + zw + 3.5, cyh + 16, 0).L(zx + zw + 3.5, cyh + 7), P.grey, { w: 1.5 });
+    var pa = zx + zw / 2 - 3.2, pb = zx + zw / 2 + 3.4;
+    q += arrow(new Pen(pa, cyh - 7.5, 180).L(pa, cyh - 3), P.grey, { w: 1.3 }) + arrow(new Pen(pb, cyh + 8.5, 0).L(pb, cyh + 4), P.grey, { w: 1.3 });
+    q += ped(pa, cyh - 12.5, 180, { s: s, k: 2, color: '#E2A65C' }) + ped(pb, cyh + 13.5, 0, { s: s, k: 2, color: '#4A8FD8' });
     // our right turn stops at the wait bar before the crossing
-    var xs = cxv + lw / 2, ye = cyh + lw / 2, xw = zx - 3, x1 = cxv + lw, y1 = cyh + lw;
-    var rt = 12;
+    var xs = cxv + lw / 2, ye = cyh + lw / 2, xw = zx - 3, y1 = cyh + lw, rt = 12;
     q += arrow(new Pen(xs, y1 + 5, 0).L(xs, ye + rt).arc(xs + rt, ye + rt, 270, false).L(xw - 6.5, ye), P.gold, { dash: true, w: 2.1 });
     q += waitBar(xw, ye, 1, 0, 13);
     q += car(xs, y1 + 5.8 + 12, 0, { me: true, s: s, ind: 'R' });
