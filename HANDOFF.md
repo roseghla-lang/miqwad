@@ -133,10 +133,14 @@ dist/index.html
 
 ## ملاحظات للكمال
 
-- الأدوات بتحتاج Playwright مع Chromium:
+- الأدوات بتحتاج Playwright مع Chromium (ببيئة Claude Code على الويب Chromium مركب مسبقا، فركب النسخة اللي بتطابقه وما تعمل `playwright install`):
   ```
-  pip install playwright
-  playwright install chromium
+  pip install playwright==1.56.0
+  ```
+- فحص الرسومات بعد أي تعديل:
+  ```
+  python3 tools/sign_gallery.py <outdir> --only w-
+  python3 tools/figs.py check
   ```
 - بعض المسارات بـ `BRIEF.md` مكتوبة كمسار مطلق، فبدلها بمسار المشروع عندك:
   ```

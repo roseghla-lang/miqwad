@@ -164,15 +164,16 @@
   var S0 = 3.3; // default scale: units per metre
 
   // amber indicator: dots at the front and rear corners of one side, with short flash strokes
-  function blink(side, hl, hw, s) {
-    var sx = side === 'L' ? -1 : 1, q = '';
-    s = Math.min(s, 4.2);
-    [[-1, -hl + 0.32 * s], [1, hl - 0.32 * s]].forEach(function (c) {
-      var fy = c[0], x = sx * (hw - 0.16 * s), y = c[1];
-      q += circ(x, y, 1.0 * s, P.amber, { opacity: 0.38 }) + circ(x, y, 0.42 * s, '#FFC24A');
-      [[1, 0], [0.74, 0.67], [0.3, 0.95]].forEach(function (d) {
-        var dx = sx * d[0], dy = fy * d[1], r0 = 1.2 * s, r1 = 1.95 * s;
-        q += line(x + dx * r0, y + dy * r0, x + dx * r1, y + dy * r1, P.amber, 0.3 * s, ROUND);
+  // side 'L', 'R' or 'both' (hazard lights); col: lamp colour (amber by default)
+  function blink(side, hl, hw, s, col, few) {
+    if (side === 'both') return blink('L', hl, hw, s, col, true) + blink('R', hl, hw, s, col, true);
+    var sx = side === 'L' ? -1 : 1, q = '', sc = Math.min(s, 4.2), c1 = col || P.amber, c2 = col ? shade(col, 0.2) : '#FFC24A';
+    [[-1, -hl + 0.32 * sc], [1, hl - 0.32 * sc]].forEach(function (c) {
+      var fy = c[0], x = sx * (hw - 0.16 * sc), y = c[1];
+      q += circ(x, y, 1.0 * sc, c1, { opacity: 0.38 }) + circ(x, y, 0.42 * sc, c2);
+      (few ? [[1, 0], [0.6, 0.8]] : [[1, 0], [0.74, 0.67], [0.3, 0.95]]).forEach(function (d) {
+        var dx = sx * d[0], dy = fy * d[1], r0 = 1.2 * sc, r1 = 1.95 * sc;
+        q += line(x + dx * r0, y + dy * r0, x + dx * r1, y + dy * r1, c1, 0.3 * sc, ROUND);
       });
     });
     return q;
@@ -267,7 +268,8 @@
   }
 
   // label on a dark pill (widths measured in Alexandria 700 at size 10)
-  var TW = { 'انتظر': 27.23, 'أولا': 17.09, 'إشارة يمين': 55.7, 'يمين': 23.55, 'ثانيتان': 31.72, '1 م': 17.8, '15 م': 24.75, 'التفت': 29.06 };
+  var TW = { 'انتظر': 27.23, 'أولا': 17.09, 'إشارة يمين': 55.7, 'يمين': 23.55, 'ثانيتان': 31.72, '1 م': 17.8, '15 م': 24.75, 'التفت': 29.06,
+    '30 سم': 35.09, '60°': 18.92 };
   function txt(str, x, y, size, col) {
     var ar = /[؀-ۿ]/.test(str);
     var t = K.text(str, x, y, size, { fill: col, weight: 700, family: ar ? 'head' : 'latin' });
@@ -278,6 +280,12 @@
     var size = o.size || 9, tw = (TW[str] != null ? TW[str] : str.length * 5.8) * size / 10;
     var w = tw + size * (o.pad || 1.1), h = size + 5;
     return rect(x - w / 2, y - h / 2, w, h, P.pill, { rx: h / 2, opacity: 0.85 }) + txt(str, x, y + 0.3, size, o.col || P.ink);
+  }
+
+  // round badge with a short text (step numbers)
+  function badge(str, x, y, col, r) {
+    r = r || 5;
+    return circ(x, y, r + 0.9, P.pill, { opacity: 0.85 }) + circ(x, y, r, col) + txt(str, x, y + 0.3, r * 1.5, P.pill);
   }
 
   // gold dimension line with end ticks, small heads and an optional label on it
@@ -357,8 +365,10 @@
   function fil(fr, c, p, q) { return 'A' + f(fr) + ' ' + f(fr) + ' 0 0 ' + sweep(c, p, q) + ' ' + pt(q); }
 
   // roundabout surface with 4 arms (N, E, S, W): asphalt + kerbs
+  function arr4(v) { return typeof v === 'number' ? [v, v, v, v] : v; }
   function ringSurface(cx, cy, R, hw, fr) {
-    var arms = [270, 0, 90, 180].map(function (a) { return { m: armSide(cx, cy, R, hw, fr, a, -1), p: armSide(cx, cy, R, hw, fr, a, 1) }; });
+    var hws = arr4(hw);
+    var arms = [270, 0, 90, 180].map(function (a, i) { return { m: armSide(cx, cy, R, hws[i], fr, a, -1), p: armSide(cx, cy, R, hws[i], fr, a, 1) }; });
     var d = 'M' + pt(arms[0].m.tr), kerb = '';
     arms.forEach(function (A, i) {
       var B = arms[(i + 1) % 4];
@@ -399,27 +409,28 @@
   }
 
   // ================================================================== roundabouts
-  // 4-arm roundabout: centre, outer radius R, island radius Ri, arm half-width hw (lanes + half median),
-  // median width wm, lanes per direction n, lane width lw, scale s
-  function roundabout(cx, cy, R, Ri, hw, wm, n, lw, s) {
-    var q = ringSurface(cx, cy, R, hw, 7), dash = [3 * s, 6 * s];
-    [270, 0, 90, 180].forEach(function (a) {
-      var sd = armSide(cx, cy, R, hw, 7, a, 1);
+  // 4-arm roundabout. o: {cx, cy, R (outer), Ri (island), hw (arm half-width: lanes + half median; number or [N, E, S, W]),
+  // wm (median width), n (lanes per direction; number or [N, E, S, W]), lw (lane width), s (scale), rl (ring lanes)}
+  function roundabout(o) {
+    var cx = o.cx, cy = o.cy, R = o.R, Ri = o.Ri, wm = o.wm, lw = o.lw, s = o.s, hws = arr4(o.hw), ns = arr4(o.n);
+    var rl = o.rl || (Math.max.apply(null, ns) > 1 ? 2 : 1), q = ringSurface(cx, cy, R, hws, 7), dash = [3 * s, 6 * s];
+    [270, 0, 90, 180].forEach(function (a, i) {
+      var hw = hws[i], sd = armSide(cx, cy, R, hw, 7, a, 1);
       q += armMedian(cx, cy, a, R + 2.2, wm);
       // give-way line across the entry lanes (anticlockwise side = entry for right-hand traffic)
       q += armLine(cx, cy, a, R + 1.2, -(wm / 2 + 0.6), R + 1.2, -(hw - 0.7), P.white, 1, [1.6, 1.3]);
-      if (n > 1) {
-        q += armLine(cx, cy, a, sd.tf + 2, -(wm / 2 + lw), sd.tb, -(wm / 2 + lw), P.white, 0.9, dash);
-        q += armLine(cx, cy, a, sd.tf + 2, wm / 2 + lw, sd.tb, wm / 2 + lw, P.white, 0.9, dash);
+      for (var k = 1; k < ns[i]; k++) {
+        q += armLine(cx, cy, a, sd.tf + 2, -(wm / 2 + k * lw), sd.tb, -(wm / 2 + k * lw), P.white, 0.9, dash);
+        q += armLine(cx, cy, a, sd.tf + 2, wm / 2 + k * lw, sd.tb, wm / 2 + k * lw, P.white, 0.9, dash);
       }
     });
-    if (n > 1) q += circ(cx, cy, (R + Ri) / 2, 'none', { stroke: P.white, 'stroke-width': 0.9, 'stroke-dasharray': f(2.4 * s) + ' ' + f(4.2 * s) });
+    for (var j = 1; j < rl; j++) q += circ(cx, cy, Ri + (R - Ri) * j / rl, 'none', { stroke: P.white, 'stroke-width': 0.9, 'stroke-dasharray': f(2.4 * s) + ' ' + f(4.2 * s) });
     return q + island(cx, cy, Ri);
   }
 
   reg('fig-roundabout-flow', 'الدوران عكس عقارب الساعة', function (o, label) {
     var s = 3.4, cx = 80, cy = 54, R = 36, Ri = 19.5, rr = 27.75;
-    var q = roundabout(cx, cy, R, Ri, 14.5, 3, 1, 13, s);
+    var q = roundabout({ cx: cx, cy: cy, R: R, Ri: Ri, hw: 14.5, wm: 3, n: 1, lw: 13, s: s });
     q += arrow(ringPen(cx, cy, rr, 231).arc(cx, cy, 177, true), P.ink, { w: 1.6, op: 0.85 });
     q += arrow(ringPen(cx, cy, rr, 126).arc(cx, cy, 46, true), P.ink, { w: 1.6, op: 0.85 });
     q += arrow(ringPen(cx, cy, rr, -7).arc(cx, cy, -84, true), P.ink, { w: 1.6, op: 0.85 });
@@ -454,7 +465,7 @@
 
   // 2-lane roundabout used by the lane-choice figures
   var RB2 = { s: 2.8, cx: 80, cy: 54, R: 40, Ri: 18, hw: 21.5, wm: 3, lw: 10 };
-  function roundabout2() { return roundabout(RB2.cx, RB2.cy, RB2.R, RB2.Ri, RB2.hw, RB2.wm, 2, RB2.lw, RB2.s); }
+  function roundabout2() { return roundabout({ cx: RB2.cx, cy: RB2.cy, R: RB2.R, Ri: RB2.Ri, hw: RB2.hw, wm: RB2.wm, n: 2, lw: RB2.lw, s: RB2.s }); }
 
   reg('fig-roundabout-right', 'المخرج الأول: المسار الأيمن وإشارة اليمين', function (o, label) {
     var q = roundabout2(), s = RB2.s;
@@ -822,6 +833,394 @@
     q += arrow(new Pen(xs, y1 + 5, 0).L(xs, ye + rt).arc(xs + rt, ye + rt, 270, false).L(xw - 6.5, ye), P.gold, { dash: true, w: 2.1 });
     q += waitBar(xw, ye, 1, 0, 13);
     q += car(xs, y1 + 5.8 + 12, 0, { me: true, s: s, ind: 'R' });
+    return fig(label, q);
+  });
+
+  // ================================================================== more road users and marks (second batch)
+  // our car as an outline ghost (one position of a sequence); o.final = the goal position (firmer)
+  function ghostCar(x, y, h, o) {
+    o = o || {};
+    var s = o.s || S0, L = 4.6 * s, Wd = 1.95 * s, hl = L / 2, hw = Wd / 2, q = '';
+    function m(v) { return v * s; }
+    q += rect(-hw, -hl, Wd, L, P.me, { rx: m(0.55), 'fill-opacity': o.final ? 0.42 : 0.2, stroke: P.gold, 'stroke-width': Math.max(0.8, m(0.2)),
+      'stroke-dasharray': o.final ? null : f(m(0.5)) + ' ' + f(m(0.32)) });
+    q += poly([[m(-0.8), m(-1.2)], [m(0.8), m(-1.2)], [m(0.66), m(-0.45)], [m(-0.66), m(-0.45)]], P.glass, { opacity: 0.55 });
+    q += poly([[m(-0.68), m(1.05)], [m(0.68), m(1.05)], [m(0.78), m(1.6)], [m(-0.78), m(1.6)]], P.glass, { opacity: 0.55 });
+    return G(q, { transform: tr(x, y, h) });
+  }
+
+  // green check in a round badge
+  function okMark(x, y, r) {
+    r = r || 5;
+    return circ(x, y, r + 0.9, P.pill, { opacity: 0.8 }) + circ(x, y, r, P.ok) +
+      path('M' + f(x - r * 0.5) + ' ' + f(y + r * 0.02) + 'L' + f(x - r * 0.13) + ' ' + f(y + r * 0.4) + 'L' + f(x + r * 0.5) + ' ' + f(y - r * 0.36), 'none',
+        { stroke: P.pill, 'stroke-width': r * 0.3, 'stroke-linecap': 'round', 'stroke-linejoin': 'round' });
+  }
+
+  // yard kerb: black and white blocks along a vertical line (band centred on x)
+  function kerbBW(x, y0, y1, w, step) {
+    step = step || 5;
+    var q = rect(x - w / 2, y0, w, y1 - y0, '#E6E6E1');
+    for (var y = y0; y < y1 - 0.01; y += 2 * step) q += rect(x - w / 2, y, w, Math.min(step, y1 - y), '#1E2228');
+    return q;
+  }
+  // yard pole seen from above
+  function pole(x, y, r) {
+    r = r || 1.8;
+    return circ(x, y, r + 0.7, P.pill, { opacity: 0.55 }) + circ(x, y, r, '#F2C230') + circ(x, y, r * 0.45, '#1B2230');
+  }
+  // small red contact mark (hit, damage)
+  function hitMark(x, y, r) {
+    r = r || 3;
+    var pts = [];
+    for (var k = 0; k < 16; k++) { var a = k * Math.PI / 8, rr = k % 2 ? r * 0.45 : r; pts.push([x + rr * Math.cos(a), y + rr * Math.sin(a)]); }
+    return poly(pts, '#FFB21E', { stroke: P.x, 'stroke-width': 0.7, 'stroke-linejoin': 'round' });
+  }
+  function octagon(x, y, r) {
+    var pts = [];
+    for (var k = 0; k < 8; k++) { var a = (22.5 + 45 * k) * D2R; pts.push([x + r * Math.cos(a), y + r * Math.sin(a)]); }
+    return pts;
+  }
+
+  // school bus 10.6 x 2.5 m, yellow, black side stripes. o: {s, stopArm, flash}
+  function schoolBus(x, y, h, o) {
+    o = o || {};
+    var s = o.s || S0, L = 10.6 * s, Wd = 2.5 * s, hl = L / 2, hw = Wd / 2, yel = '#F2C230', q = '';
+    function m(v) { return v * s; }
+    q += rect(-hw, -hl, Wd, L, yel, { rx: m(0.4), stroke: shade(yel, -0.5), 'stroke-width': Math.max(0.4, m(0.1)) });
+    q += rect(-hw + m(0.25), -hl + m(0.22), Wd - m(0.5), m(0.7), P.glass, { rx: m(0.15) });
+    q += rect(-hw + m(0.32), -hl + m(1.25), Wd - m(0.64), L - m(1.8), shade(yel, 0.14), { rx: m(0.25) });
+    q += rect(-hw, -hl + m(1.2), m(0.16), L - m(1.8), '#1A1A1A') + rect(hw - m(0.16), -hl + m(1.2), m(0.16), L - m(1.8), '#1A1A1A');
+    q += rect(-m(0.55), -hl + m(3.2), m(1.1), m(1.4), shade(yel, -0.12), { rx: m(0.15) }) + rect(-m(0.55), m(1.4), m(1.1), m(1.4), shade(yel, -0.12), { rx: m(0.15) });
+    if (o.flash) q += blink('both', hl, hw, s, '#E5352B');
+    if (o.stopArm) {
+      var ay = -hl + m(1.9), oc = octagon(-hw - 5.6, ay, 3.5);
+      q += line(-hw, ay, -hw - 2.4, ay, '#4A505A', 1.1) + poly(octagon(-hw - 5.6, ay, 4.2), P.white) + poly(oc, P.signRed);
+      q += poly(octagon(-hw - 5.6, ay, 2.6), 'none', { stroke: P.white, 'stroke-width': 0.45 });
+    }
+    return G(q, { transform: tr(x, y, h) });
+  }
+
+  // ambulance 6 x 2.25 m: white box, red side stripes, red and blue light bar with flashes
+  function ambulance(x, y, h, o) {
+    o = o || {};
+    var s = o.s || S0, L = 6 * s, Wd = 2.25 * s, hl = L / 2, hw = Wd / 2, wh = '#F2F3F5', q = '';
+    function m(v) { return v * s; }
+    q += rect(-hw, -hl, Wd, L, wh, { rx: m(0.4), stroke: '#8D939B', 'stroke-width': Math.max(0.4, m(0.1)) });
+    q += poly([[-hw + m(0.22), -hl + m(0.35)], [hw - m(0.22), -hl + m(0.35)], [hw - m(0.32), -hl + m(1.0)], [-hw + m(0.32), -hl + m(1.0)]], P.glass);
+    q += rect(-hw + m(0.25), -hl + m(1.25), Wd - m(0.5), L - m(1.6), '#E7E9EC', { rx: m(0.2) });
+    q += rect(-hw, -hl + m(1.5), m(0.26), L - m(2.1), P.signRed) + rect(hw - m(0.26), -hl + m(1.5), m(0.26), L - m(2.1), P.signRed);
+    q += rect(-m(0.2), m(0.2), m(0.4), m(1.4), P.signRed) + rect(-m(0.7), m(0.7), m(1.4), m(0.4), P.signRed);
+    var by = -hl + m(1.35), bw = Wd * 0.36;
+    q += circ(-hw * 0.6, by, m(1.25), '#FF2A2A', { opacity: 0.35 }) + circ(hw * 0.6, by, m(1.25), '#3D7BFF', { opacity: 0.38 });
+    q += rect(-bw - m(0.05), by - m(0.22), 2 * bw + m(0.1), m(0.44), '#1B1E23', { rx: m(0.12) });
+    q += rect(-bw, by - m(0.17), bw, m(0.34), '#FF4A3D', { rx: m(0.08) }) + rect(0, by - m(0.17), bw, m(0.34), '#5A8BFF', { rx: m(0.08) });
+    [[-1, '#FF4A3D'], [1, '#5A8BFF']].forEach(function (c) {
+      [-35, 0, 35].forEach(function (d) {
+        var a = (c[0] < 0 ? 180 : 0) + c[0] * d, ca = Math.cos(a * D2R), sa = Math.sin(a * D2R), x0 = c[0] * (hw + m(0.25)), r0 = m(0.2), r1 = m(0.85);
+        q += line(x0 + ca * r0, by + sa * r0, x0 + ca * r1, by + sa * r1, c[1], m(0.16), ROUND);
+      });
+    });
+    return G(q, { transform: tr(x, y, h) });
+  }
+
+  // phone with signal arcs (report)
+  function phoneIcon(x, y) {
+    return rect(x - 2.3, y - 3.8, 4.6, 7.6, '#1B2230', { rx: 1, stroke: P.ink, 'stroke-width': 0.6 }) + rect(x - 1.5, y - 2.8, 3, 4.9, '#4A8FD8', { rx: 0.4 }) +
+      path('M' + f(x + 3.4) + ' ' + f(y - 4.4) + 'A3 3 0 0 1 ' + f(x + 5.2) + ' ' + f(y - 1.6), 'none', { stroke: P.ink, 'stroke-width': 0.8, 'stroke-linecap': 'round' }) +
+      path('M' + f(x + 4.4) + ' ' + f(y - 6.6) + 'A5.4 5.4 0 0 1 ' + f(x + 7.6) + ' ' + f(y - 1.4), 'none', { stroke: P.ink, 'stroke-width': 0.8, 'stroke-linecap': 'round' });
+  }
+
+  // traffic signal head drawn face on (icon), lit = 'red' | 'amber' | 'green'
+  function signalHead(x, y, lit) {
+    var q = line(x, y + 9, x, y + 15, '#6B737F', 1.6, ROUND) + rect(x - 3.8, y - 10.4, 7.6, 20.8, '#15181D', { rx: 2, stroke: '#5A6475', 'stroke-width': 0.7 });
+    [['red', -6.3, '#E5352B'], ['amber', 0, '#F5A623'], ['green', 6.3, '#2FC36B']].forEach(function (l) {
+      var on = l[0] === lit;
+      if (on) q += circ(x, y + l[1], 5, l[2], { opacity: 0.28 });
+      q += circ(x, y + l[1], 2.4, on ? l[2] : '#2A2F37', { stroke: on ? shade(l[2], 0.3) : shade(l[2], -0.55), 'stroke-width': 0.5 });
+    });
+    return q;
+  }
+
+  // painted white lane arrow, pointing up, base at (x, y), kind: 'straight' | 'right' | 'left-u'
+  function laneArrow(x, y, kind, len) {
+    len = len || 13;
+    var o = { w: 1.5, casing: false }, q = '';
+    if (kind === 'straight') q += arrow(new Pen(x, y, 0).L(x, y - len + 4.4), P.white, o);
+    if (kind === 'right') q += arrow(new Pen(x, y, 0).L(x, y - len + 7).arc(x + 4, y - len + 7, 270, false).L(x + 4.4, y - len + 3), P.white, o);
+    if (kind === 'left-u') {
+      q += arrow(new Pen(x, y, 0).L(x, y - len + 7).arc(x - 4, y - len + 7, 270, true).L(x - 4.4, y - len + 3), P.white, o);
+      q += arrow(new Pen(x, y - len + 8, 0).L(x, y - len + 5).arc(x - 3.2, y - len + 5, 180, true).L(x - 6.4, y - len + 7.2), P.white, o);
+    }
+    return q;
+  }
+
+  // ================================================================== yard (parking test) diagrams
+  reg('fig-yard-parallel', 'الركن الموازي خطوة بخطوة', function (o, label) {
+    var s = 8, kx = 112, kw = 2.6, ki = kx - kw / 2, bw = 2.5 * s, bx = ki - bw, yf = 50, yr = yf + 7 * s, hw = 0.975 * s, hl = 2.3 * s, q = '';
+    q += rect(0, 0, ki, H, P.asph, { rx: 10 }) + rect(10, 0, ki - 10, H, P.asph) + kerbBW(kx, 0, H, kw, 5);
+    q += mark(bx, yf, bx, yr, P.white, 1) + mark(bx, yf, ki, yf, P.white, 1) + mark(bx, yr, ki, yr, P.white, 1);
+    // parked car in front of the space
+    var xp = ki - 0.3 * s - hw, yp = yf - 0.8 * s - hl;
+    q += car(xp, yp, 0, { color: P.silver, s: s });
+    // 1: alongside it, about 0.8 m away, rear bumpers level; 2: reversing at a clear angle toward the kerb;
+    // 3: parallel to the kerb, about 30 cm from it (drawn a little wider to stay visible)
+    var x1 = xp - 2 * hw - 0.8 * s, y1 = yp, h2 = 325, rd = [-Math.sin(h2 * D2R), Math.cos(h2 * D2R)], x2 = 86, y2 = 57;
+    var rear2 = [x2 + hl * rd[0], y2 + hl * rd[1]], x3 = ki - 3.4 - hw, y3 = (yf + yr) / 2;
+    q += ghostCar(x1, y1, 0, { s: s }) + ghostCar(x2, y2, h2, { s: s }) + ghostCar(x3, y3, 0, { s: s, final: true });
+    q += arrow(new Pen(x1, y1 + hl, 180).to(rear2[0], rear2[1], 145, 9, 9).to(x3, y3 + hl - 1, 180, 11, 11), P.gold, { dash: true, w: 2.1 });
+    q += pole(bx, yf) + pole(bx, yr) + pole(ki - 2, yf, 1.4) + pole(ki - 2, yr, 1.4);
+    // about 30 cm to the kerb
+    var yd = y3 - hl + 9;
+    q += G(line(x3 + hw + 0.4, yd, 118, yd, P.pill, 3, ROUND), { opacity: 0.5 }) + line(x3 + hw + 0.4, yd, 118, yd, P.gold, 1.2) +
+      line(x3 + hw + 0.4, yd - 2.4, x3 + hw + 0.4, yd + 2.4, P.gold, 1.2, ROUND) + line(ki, yd - 2.4, ki, yd + 2.4, P.gold, 1.2, ROUND);
+    q += tag('30 سم', 138, yd, { col: P.gold, size: 9.5, pad: 0.9 });
+    q += badge('1', x1, y1, P.gold, 5.4) + badge('2', x2, y2, P.gold, 5.4) + badge('3', x3, y3, P.gold, 5.4);
+    return fig(label, q);
+  });
+
+  reg('fig-yard-garage', 'الكراج بالرجوع خطوة بخطوة', function (o, label) {
+    var s = 7, bw = 3.2 * s, bd = 5.5 * s, xo = 76, xb = xo + bd, kx = xb + 1.5 + 1.3, hw = 0.975 * s, hl = 2.3 * s, q = '';
+    q += rect(0, 0, kx - 1.3, H, P.asph, { rx: 10 }) + rect(10, 0, kx - 11.3, H, P.asph) + kerbBW(kx, 0, H, 2.6, 5);
+    var yt = 64, lines = [yt - 2 * bw, yt - bw, yt, yt + bw, yt + 2 * bw];
+    lines.forEach(function (yy) { if (yy > 0.5 && yy < H - 0.5) q += mark(xo, yy, xb, yy, P.white, 1); });
+    q += mark(xb, 0, xb, H, P.white, 1);
+    q += car(xb - 2.5 - hl, yt - bw / 2, 270, { color: P.blue, s: s }) + car(xb - 2.5 - hl, yt + 1.5 * bw, 270, { color: P.dark, s: s });
+    // 1: passing about 1 m from the bay ends, rear level with the far line of the bay
+    var x1 = xo - 1 * s - hw, y1 = yt - hl;
+    // 2: reversing on full lock, angled into the bay
+    var h2 = 305, rd = [-Math.sin(h2 * D2R), Math.cos(h2 * D2R)], rear2 = [xo + 8, yt + bw / 2 - 2], x2 = rear2[0] - hl * rd[0], y2 = rear2[1] - hl * rd[1];
+    // 3: straight in the bay, stopped before the back line, equal space on both sides
+    var x3 = xb - 2.5 - hl, y3 = yt + bw / 2;
+    q += ghostCar(x1, y1, 0, { s: s }) + ghostCar(x2, y2, h2, { s: s }) + ghostCar(x3, y3, 270, { s: s, final: true });
+    q += arrow(new Pen(x1, y1 + hl, 180).to(rear2[0], rear2[1], 125, 7, 7).to(x3 + hl - 5, y3, 90, 7, 7), P.gold, { dash: true, w: 2.1 });
+    var tx = x3 + 5, g = (bw - 2 * hw) / 2;
+    [[yt, yt + g], [yt + bw - g, yt + bw]].forEach(function (t) {
+      q += line(tx, t[0] + 0.7, tx, t[1] - 0.7, P.gold, 1.4) + line(tx - 1.8, t[0] + 0.7, tx + 1.8, t[0] + 0.7, P.gold, 1.1, ROUND) +
+        line(tx - 1.8, t[1] - 0.7, tx + 1.8, t[1] - 0.7, P.gold, 1.1, ROUND);
+    });
+    q += badge('1', x1, y1 - 2, P.gold, 5.4) + badge('2', x2, y2, P.gold, 5.4) + badge('3', x3 - 4, y3, P.gold, 5.4);
+    return fig(label, q);
+  });
+
+  reg('fig-yard-angle', 'الموقف المائل 60 درجة', function (o, label) {
+    var s = 5.5, xo = 72, dx = 29, xb = xo + dx, kx = xb + 2.8, a = 60, ua = [Math.sin(a * D2R), -Math.cos(a * D2R)];
+    var op = 3 * s / Math.sin(a * D2R), dy = dx / Math.tan(a * D2R), hw = 0.975 * s, hl = 2.3 * s, q = '';
+    q += rect(0, 0, kx - 1.3, H, P.asph, { rx: 10 }) + rect(10, 0, kx - 11.3, H, P.asph) + kerbBW(kx, 0, H, 2.6, 5);
+    var ys = [];
+    for (var i = -1; i < 7; i++) ys.push(60.5 + (i - 3) * op);
+    ys.forEach(function (yk) {
+      var p0 = [xo, yk], p1 = [xb, yk - dy];
+      if (p1[1] > H - 0.5 || p0[1] < 0.5) return;
+      if (p0[1] > H) p0 = [xo + (p0[1] - H) * Math.tan(a * D2R), H];
+      if (p1[1] < 0) p1 = [xo + yk * Math.tan(a * D2R), 0];
+      q += mark(p0[0], p0[1], p1[0], p1[1], P.white, 1);
+    });
+    q += mark(xb, 0, xb, H, P.white, 1);
+    // target bay between ys[4] and ys[5]; a parked car two bays further up
+    var ya = (ys[4] + ys[5]) / 2, df = 29, c3 = [xo + (df - hl) * ua[0], ya + (df - hl) * ua[1]];
+    q += car(c3[0], c3[1] - 2 * op, a, { color: P.silver, s: s });
+    q += ghostCar(c3[0], c3[1], a, { s: s, final: true });
+    // our car starts slightly wide and drives forward on a smooth curve into the bay
+    var xs = 46, ys0 = 101, ea = [xo - 3 * ua[0], ya - 3 * ua[1]];
+    q += arrow(new Pen(xs, ys0 - hl - 1, 0).to(ea[0], ea[1], a, 12, 8), P.gold, { dash: true, w: 2.1 });
+    q += car(xs, ys0, 0, { me: true, s: s, ind: 'R' });
+    // the 60 degree angle between a bay line and the aisle
+    var ay = ys[4], ar = 11;
+    q += mark(xo, ay, xo, ay - ar - 4, P.gold, 1, [1.6, 1.2]);
+    q += path('M' + f(xo) + ' ' + f(ay - ar) + 'A' + ar + ' ' + ar + ' 0 0 1 ' + f(xo + ar * ua[0]) + ' ' + f(ay + ar * ua[1]), 'none', { stroke: P.gold, 'stroke-width': 1.5 });
+    q += tag('60°', xo - 13, ay - 8, { col: P.gold, size: 9.5, pad: 0.9 });
+    return fig(label, q);
+  });
+
+  // part of a convex polygon to the right of x = xl
+  function clipRight(pts, xl) {
+    var out = [];
+    for (var i = 0; i < pts.length; i++) {
+      var a = pts[i], b = pts[(i + 1) % pts.length], ina = a[0] >= xl, inb = b[0] >= xl;
+      if (ina) out.push(a);
+      if (ina !== inb) { var t = (xl - a[0]) / (b[0] - a[0]); out.push([xl, a[1] + (b[1] - a[1]) * t]); }
+    }
+    return out;
+  }
+  function carCorners(x, y, h, L, Wd) {
+    var c = Math.cos(h * D2R), sn = Math.sin(h * D2R);
+    return [[-Wd / 2, -L / 2], [Wd / 2, -L / 2], [Wd / 2, L / 2], [-Wd / 2, L / 2]].map(function (p) { return [x + p[0] * c - p[1] * sn, y + p[0] * sn + p[1] * c]; });
+  }
+
+  reg('fig-yard-lines', 'السيارة كلها داخل الخطوط', function (o, label) {
+    var s = 10.5, bw = 3.0 * s, bd = 5.4 * s, xm = 80, xl = xm - bw, xr = xm + bw, yb = 30, yo = yb + bd, L = 4.6 * s, Wd = 1.95 * s, q = '';
+    q += rect(0, 0, W, H, P.asph, { rx: 10 });
+    q += mark(xl, yb, xl, yo, P.white, 1.2) + mark(xm, yb, xm, yo, P.white, 1.2) + mark(xr, yb, xr, yo, P.white, 1.2) + mark(xl - 0.6, yb, xr + 0.6, yb, P.white, 1.2);
+    // left bay: a corner and the mirror cross the line
+    var h1 = 8, c1 = [xm - 7.2, yb + bd / 2 + 1];
+    q += car(c1[0], c1[1], h1, { color: P.silver, s: s });
+    var part = clipRight(carCorners(c1[0], c1[1], h1, L, Wd), xm), sn = Math.sin(h1 * D2R), cs = Math.cos(h1 * D2R);
+    var mc = [c1[0] + (Wd / 2 + 0.07 * s) * cs + 0.775 * s * sn, c1[1] + (Wd / 2 + 0.07 * s) * sn - 0.775 * s * cs];
+    if (part.length > 2) q += poly(part, P.x, { 'fill-opacity': 0.45, stroke: P.x, 'stroke-width': 1.2, 'stroke-linejoin': 'round' });
+    q += poly(carCorners(mc[0], mc[1], h1, 0.17 * s, 0.22 * s), P.x, { 'fill-opacity': 0.6, stroke: P.x, 'stroke-width': 1.1, 'stroke-linejoin': 'round' });
+    q += redX(c1[0] - 1, c1[1] + 6, 5.5);
+    // right bay: fully inside the lines
+    q += car(xm + bw / 2, yb + bd / 2 + 1, 0, { color: P.silver, s: s });
+    q += okMark(xm + bw / 2, yb + bd / 2 + 7, 6);
+    return fig(label, q);
+  });
+
+  reg('fig-yard-kerb', 'لا رصيف ولا عمود', function (o, label) {
+    var s = 6.5, kx = 104, kw = 2.6, ki = kx - kw / 2, bw = 2.5 * s, bx = ki - bw, blen = 7 * s, hw = 0.975 * s, hl = 2.3 * s, q = '';
+    q += rect(0, 0, ki, H, P.asph, { rx: 10 }) + rect(10, 0, ki - 10, H, P.asph) + kerbBW(kx, 0, H, kw, 5);
+    var boxes = [7, 7 + blen + 11];
+    boxes.forEach(function (y) { q += mark(bx, y, bx, y + blen, P.white, 1) + mark(bx, y, ki, y, P.white, 1) + mark(bx, y + blen, ki, y + blen, P.white, 1); });
+    // wrong: the rear wheel climbs the kerb and the rear bumper hits the pole
+    var ya = boxes[0], h1 = 351, rd = [-Math.sin(h1 * D2R), Math.cos(h1 * D2R)], rv = [Math.cos(h1 * D2R), Math.sin(h1 * D2R)];
+    var rear = [ki - 4.2, ya + blen - 0.2], c1 = [rear[0] - hl * rd[0], rear[1] - hl * rd[1]];
+    q += car(c1[0], c1[1], h1, { color: P.me, s: s, op: 0.55 });
+    var wheel = [c1[0] + (hl - 0.95 * s) * rd[0] + (hw - 0.1 * s) * rv[0], c1[1] + (hl - 0.95 * s) * rd[1] + (hw - 0.1 * s) * rv[1]];
+    q += pole(bx, ya) + pole(bx, ya + blen) + pole(ki - 2, ya, 1.4) + pole(ki - 2, ya + blen, 1.4);
+    q += circ(wheel[0], wheel[1], 4, 'none', { stroke: P.x, 'stroke-width': 1.5 }) + hitMark(ki - 2.6, ya + blen - 1.4, 3.4);
+    q += redX(bx - 17, c1[1], 5.2);
+    // right: parallel, small gaps to the kerb and to both poles
+    var yb = boxes[1], x2 = ki - 2.8 - hw, y2 = yb + blen / 2;
+    q += car(x2, y2, 0, { me: true, s: s });
+    q += pole(bx, yb) + pole(bx, yb + blen) + pole(ki - 2, yb, 1.4) + pole(ki - 2, yb + blen, 1.4);
+    q += okMark(bx - 17, y2, 5.8);
+    return fig(label, q);
+  });
+
+  // ================================================================== more junction and road rules
+  reg('fig-roundabout-lanes3', 'اتبع أسهم المسارات عند الدوار', function (o, label) {
+    var s = 2.6, cx = 80, cy = 52, R = 44, Ri = 14, lw = 10, wm = 3;
+    var q = roundabout({ cx: cx, cy: cy, R: R, Ri: Ri, hw: [21.5, 21.5, 31.5, 21.5], wm: wm, n: [2, 2, 3, 2], lw: lw, s: s, rl: 3 });
+    var l1 = cx + wm / 2 + 2.5 * lw, l2 = cx + wm / 2 + 1.5 * lw, l3 = cx + wm / 2 + 0.5 * lw, yA = 116, c1 = P.ok, c2 = P.gold, c3 = '#7FB2EE';
+    q += laneArrow(l1, yA, 'right') + laneArrow(l2, yA, 'straight') + laneArrow(l3, yA, 'left-u');
+    var o2 = { w: 1.7 };
+    // lane 1 -> first exit (east), outer ring lane
+    q += arrow(new Pen(l1, 99, 0).L(l1, 89).arc(l1 + 20.5, 89, 270, false).L(150, cy + wm / 2 + 1.5 * lw), c1, o2);
+    // lane 2 -> second exit (north), middle ring lane
+    var r2 = 29, p2 = [cx + r2 * Math.cos(40 * D2R), cy + r2 * Math.sin(40 * D2R)];
+    q += arrow(new Pen(l2, 99, 0).L(l2, 90).to(p2[0], p2[1], 40, 7, 6).arc(cx, cy, -40, true).to(cx + wm / 2 + 1.5 * lw, 13, 0, 5, 5), c2, o2);
+    // lane 3 -> third exit (west), inner ring lane
+    var r3 = 19, p3 = [cx + r3 * Math.cos(50 * D2R), cy + r3 * Math.sin(50 * D2R)];
+    q += arrow(new Pen(l3, 99, 0).L(l3, 88).to(p3[0], p3[1], 50, 7, 6).arc(cx, cy, 215 - 360, true).to(40, cy - wm / 2 - lw / 2, 270, 6, 7).L(12, cy - wm / 2 - lw / 2), c3, o2);
+    return fig(label, q);
+  });
+
+  reg('fig-main-road-first', 'الطريق الرئيسي قبل الفرعي', function (o, label) {
+    var s = 3.4, lw = 13, y0 = 16, y1 = y0 + 4 * lw, cy = y0 + 2 * lw, sx0 = 67, sx1 = 93, q = '';
+    q += surface(outline([[0, y0], [W, y0], [W, y1], [sx1, y1, 8], [sx1, H], [sx0, H], [sx0, y1, 8], [0, y1]]));
+    q += dbl(0, cy, W, cy, P.yellow);
+    q += mark(0, y0 + lw, W, y0 + lw, P.white, 0.9, [3 * s, 6 * s], 4) + mark(0, y1 - lw, W, y1 - lw, P.white, 0.9, [3 * s, 6 * s], 4);
+    // main road traffic from both sides goes first
+    q += arrow(new Pen(49, y1 - lw / 2, 90).L(126, y1 - lw / 2), P.ok, { w: 2.1 });
+    q += car(40.8, y1 - lw / 2, 90, { color: P.blue, s: s });
+    q += arrow(new Pen(111, y0 + lw / 2, 270).L(34, y0 + lw / 2), P.ok, { w: 2.1 });
+    q += car(119.2, y0 + lw / 2, 270, { color: P.red, s: s });
+    // our car waits at the mouth of the side road
+    q += car((80 + sx1) / 2, y1 + 3.5 + 7.82, 0, { me: true, s: s, brake: true });
+    return fig(label, q);
+  });
+
+  reg('fig-truck-turn-right', 'الشاحنة الطويلة تنعطف بزاوية واسعة', function (o, label) {
+    var s = 3.8, lv = 15, lh = 10, cx = 48, cy = 28, x0 = cx - 2 * lv, x1 = cx + 2 * lv, y0 = cy - 2 * lh, y1 = cy + 2 * lh;
+    var q = crossroads(x0, x1, y0, y1, 8), dash = [3 * s, 6 * s];
+    q += dbl(cx, y1 + 2, cx, H, P.yellow) + dbl(x1 + 2, cy, W, cy, P.yellow) + dbl(0, cy, x0 - 2, cy, P.yellow);
+    q += mark(cx + lv, y1 + 2, cx + lv, H, P.white, 0.9, dash) + mark(cx - lv, y1 + 2, cx - lv, H, P.white, 0.9, dash);
+    q += mark(x1 + 2, cy + lh, W, cy + lh, P.white, 0.9, dash) + mark(x1 + 2, cy - lh, W, cy - lh, P.white, 0.9, dash);
+    var xl = cx + 1.5 * lv, ht = 355, xt = xl - 5, yt = y1 + 2.5 + 6 * s;
+    // the truck's wide swept path: a little left first, then wide into the east arm
+    q += arrow(new Pen(xt - 2, y1 + 2, ht).to(cx + 13, cy + 8, 352, 5, 5).to(96, cy + 5, 98, 13, 12).to(146, cy + 1.5 * lh, 90, 18, 14), P.grey, { w: 2.8, op: 0.9 });
+    // a car squeezing into the gap on the truck's right: never
+    q += car(x1 - 3.8, yt + 3, 358, { color: P.green, s: s, op: 0.5 });
+    q += truck(xt, yt, ht, { s: s, len: 12, color: '#C0453A' });
+    q += G(blink('R', 6 * s, 1.25 * s, s), { transform: tr(xt, yt, ht) });
+    q += redX(x1 - 3.8, yt + 3, 4.4);
+    // our car waits behind the truck
+    var yc = yt + 6 * s + 4 + 2.3 * s + 1;
+    q += waitBar(xl, yc - 2.3 * s - 2.6, 0, -1, 12);
+    q += car(xl, yc, 0, { me: true, s: s });
+    return fig(label, q);
+  });
+
+  reg('fig-school-bus-stop', 'حافلة مدرسية متوقفة وذراع قف مفتوح', function (o, label) {
+    var s = 4.6, lw = 18, x0 = 52, cxl = x0 + lw, x1 = cxl + lw, q = '';
+    q += surface(outline([[x0, 0], [x0, H], [x1, H], [x1, 0]]));
+    q += mark(cxl, 0, cxl, H, P.yellow, 0.9, [3 * s, 6 * s], 6);
+    var xb = x1 - 0.3 * s - 1.25 * s, yb = 36;
+    q += schoolBus(xb, yb, 0, { s: s, stopArm: true, flash: true });
+    // children at the kerb near the door
+    q += ped(x1 + 8, yb - 18, 270, { s: s, k: 2.9, color: '#E2A65C' }) + ped(x1 + 19, yb - 11, 250, { s: s, k: 2.9, color: '#8CC8A0' }) +
+      ped(x1 + 9, yb - 3.5, 285, { s: s, k: 2.9, color: '#DE9090' });
+    q += car(cxl + lw / 2 + 0.5, 98, 0, { me: true, s: s });
+    return fig(label, q);
+  });
+
+  reg('fig-ev-two-way', 'طريق باتجاهين: الجميع يتحرك يمينا', function (o, label) {
+    var s = 4.2, lw = 20, x0 = 50, cxl = x0 + lw, x1 = cxl + lw, q = '';
+    q += surface(outline([[x0, 0], [x0, H], [x1, H], [x1, 0]]));
+    q += mark(cxl, 0, cxl, H, P.yellow, 1, [3 * s, 6 * s], 8);
+    // the ambulance passes through the middle that everybody leaves free
+    q += arrow(new Pen(cxl + 8, 90, 0).to(cxl + 0.5, 62, 0, 10, 10).L(cxl + 0.5, 32), P.grey, { dash: true, w: 1.8, op: 0.9 });
+    q += ambulance(cxl + lw / 2, 105, 0, { s: s });
+    // our car and the oncoming car both move to their own right edge and slow down
+    q += arrow(new Pen(cxl + lw / 2, 47, 0).to(x1 - 5.5, 22, 0, 9, 9), P.ok, { w: 2.2 });
+    q += car(cxl + lw / 2, 57, 0, { me: true, s: s });
+    q += arrow(new Pen(cxl - lw / 2, 29, 180).to(x0 + 5.5, 54, 180, 9, 9), P.ok, { w: 2.2 });
+    q += car(cxl - lw / 2, 19, 180, { color: P.red, s: s });
+    return fig(label, q);
+  });
+
+  reg('fig-pull-away', 'الانطلاق من جانب الطريق', function (o, label) {
+    var s = 5, lw = 18, x0 = 44, pk = 13, x1 = x0 + 2 * lw, xk = x1 + pk, q = '';
+    q += surface(outline([[x0, 0], [x0, H], [xk, H], [xk, 0]]));
+    q += mark(x0 + 0.9, 0, x0 + 0.9, H, P.yellow, 0.9) + mark(x0 + lw, 0, x0 + lw, H, P.white, 0.9, [3 * s, 6 * s], 3) + mark(x1, 0, x1, H, P.white, 0.8, [1.5 * s, 1.5 * s]);
+    var xr = x0 + 1.5 * lw, xc = x1 + pk / 2 - 0.4, yc = 88, hl = 2.3 * s;
+    // the car that was behind has passed (now further up the lane)
+    q += car(xr, 15, 0, { color: P.blue, s: s });
+    // our car: mirrors, left signal, look over the left shoulder, then merge smoothly
+    q += arrow(new Pen(xc, yc - hl - 0.5, 0).to(xr, 50, 0, 13, 13).L(xr, 36), P.gold, { dash: true, w: 2.1 });
+    q += car(xc, yc, 0, { me: true, s: s, ind: 'L', driver: true });
+    var hx = xc - 0.38 * s, hy = yc - 0.12 * s, rh = 7;
+    q += arrow(new Pen(hx + rh * Math.cos(292 * D2R), hy + rh * Math.sin(292 * D2R), 270).arc(hx, hy, 203, true), P.gold, { w: 1.7 });
+    return fig(label, q);
+  });
+
+  reg('fig-minor-accident', 'حادث بسيط: انقل السيارتين إلى مكان آمن', function (o, label) {
+    var s = 3.6, lw = 15, x0 = 28, n = 3, xe = x0 + n * lw, sh = 19, q = carriageway(x0, lw, n, sh, s, true);
+    q += mark(xe, 0, xe, H, P.white, 0.9);
+    var xm = x0 + 1.5 * lw, L = 4.6 * s, ya = 54, yb = ya + L + 0.4, xs = xe + sh / 2;
+    // before: the two cars touching in the middle lane (faded)
+    q += car(xm, ya, 0, { color: P.blue, s: s, op: 0.45 }) + car(xm, yb, 0, { me: true, s: s, op: 0.45 });
+    q += hitMark(xm + 1, ya + L / 2 + 0.2, 3.6);
+    // after: both moved onto the shoulder, hazard lights on
+    var y2a = 20, y2b = y2a + L + 8;
+    q += arrow(new Pen(xm + 4.5, ya - 7, 40).to(xs - 5, y2a + 3, 20, 7, 6), P.gold, { dash: true, w: 1.9 });
+    q += arrow(new Pen(xm + 4.5, yb - 3, 40).to(xs - 5, y2b + 5, 15, 8, 6), P.gold, { dash: true, w: 1.9 });
+    q += car(xs, y2a, 0, { color: P.blue, s: s, ind: 'both' }) + car(xs, y2b, 0, { me: true, s: s, ind: 'both' });
+    // people wait safely beyond the road edge, one reports by phone
+    var px = xe + sh + 14;
+    q += ped(px, 38, 270, { s: s, k: 3.6, color: '#4A8FD8' }) + ped(px + 13, 52, 250, { s: s, k: 3.6, color: '#8CC8A0' });
+    q += phoneIcon(px + 24, 44);
+    return fig(label, q, true);
+  });
+
+  reg('fig-amber-no-return', 'الأصفر: توقف إذا قدرت بأمان', function (o, label) {
+    var s = 3.8, lw = 17, x0 = 62, x1 = x0 + 2 * lw, ys = 30, yz = 52, q = '';
+    q += surface(outline([[0, 0, 10], [W, 0, 10], [W, 24], [x1, 24, 7], [x1, H], [x0, H], [x0, 24, 7], [0, 24]]));
+    q += mark(x0 + 0.9, 30, x0 + 0.9, H, P.yellow, 0.9) + mark(x0 + lw, 36, x0 + lw, H, P.white, 0.9, [3 * s, 6 * s], 2);
+    // zones: far back (green: you can still stop), just before the line (gold: too close, continue carefully)
+    q += rect(x0 + 1.6, yz, 2 * lw - 2.2, H - yz, P.ok, { opacity: 0.16 }) + rect(x0 + 1.6, ys + 1.6, 2 * lw - 2.2, yz - ys - 1.6, P.gold, { opacity: 0.24 });
+    q += mark(x0 + 1.6, yz, x1 - 0.6, yz, P.ink, 0.9, [2, 1.8]);
+    q += mark(x0 + 1.2, ys, x1 - 0.4, ys, P.white, 2.2);
+    q += signalHead(x1 + 11, 20, 'amber');
+    var xl = x0 + lw / 2, xr = x0 + 1.5 * lw, L = 4.6 * s;
+    // left lane: far back when the amber comes on, it stops before the line
+    q += arrow(new Pen(xl, 76, 0).L(xl, 41), P.ok, { w: 2, dash: true });
+    q += waitBar(xl, ys + 3.4, 0, -1, 11);
+    q += car(xl, 76 + L / 2 + 1, 0, { me: true, s: s, op: 0.55 });
+    q += okMark(xl - 14.5, 90, 5);
+    // right lane: already very close to the line, it continues carefully
+    q += arrow(new Pen(xr, yz - L - 1.5, 0).L(xr, 8), P.gold, { w: 2 });
+    q += car(xr, yz - L / 2 - 0.5, 0, { me: true, s: s, op: 0.55 });
     return fig(label, q);
   });
 })();
