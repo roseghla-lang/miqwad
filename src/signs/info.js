@@ -20,9 +20,6 @@
     return '<circle cx="' + f(cx) + '" cy="' + f(cy) + '" r="' + f(r) + '" fill="' + fill + '"' +
       (op != null ? ' opacity="' + op + '"' : '') + '/>';
   }
-  function EL(cx, cy, rx, ry, fill) {
-    return '<ellipse cx="' + f(cx) + '" cy="' + f(cy) + '" rx="' + f(rx) + '" ry="' + f(ry) + '" fill="' + fill + '"/>';
-  }
   function PA(d, fill, extra) { return '<path d="' + d + '" fill="' + fill + '"' + (extra || '') + '/>'; }
   function ST(d, col, w, cap, join, extra) {
     return '<path d="' + d + '" fill="none" stroke="' + col + '" stroke-width="' + f(w) + '" stroke-linecap="' +
@@ -43,7 +40,8 @@
   function LA(str, x, y, size, fill, weight, anchor) {
     return K.text(str, x, y, size, { fill: fill || WH, weight: weight || 700, family: 'latin', anchor: anchor });
   }
-  function glyph(name, box) { return K.glyph(name, box); }
+  // shared pictograms (glyphs.js); an empty drawing instead of an error if that file did not load
+  function glyph(name, box) { return typeof K.glyph === 'function' ? K.glyph(name, box) : ''; }
 
   // ------------------------------------------------------------------ arrows
   // straight arrow, tail (x1,y1) to tip (x2,y2)
@@ -339,13 +337,13 @@
   var LA7 = { sw: 7, hw: 18, hl: 14 };
   reg('i-lane-added', 'إضافة مسار', function (o, label) {
     var s = upArrow(22, 93, 11, LA7, WH) + upArrow(42, 93, 11, LA7, WH) +
-      PG([[62, 62], [65.5, 50], [58.5, 50]], WH) + upArrow(62, 50.5, 11, LA7, WH);
+      PG([[65.5, 74], [65.5, 50], [58.5, 50]], WH) + upArrow(62, 50.5, 11, LA7, WH);
     return board(s, 84, 100, BL, label);
   });
 
   reg('i-lane-joining', 'انضمام مسار', function (o, label) {
     var s = upArrow(22, 93, 11, LA7, WH) + upArrow(42, 93, 11, LA7, WH) +
-      tArrow(78.5, 97, -35, [['L', 18.5], ['A', 30, 35], ['L', 36.6]], LA7, WH);
+      tArrow(74.5, 92.5, -35, [['L', 12.2], ['A', 30, 35], ['L', 36.3]], LA7, WH);
     return board(s, 84, 100, BL, label);
   });
 
@@ -393,22 +391,22 @@
   var GA = { sw: 8, hw: 21, hl: 16 };
   reg('g-blue-direction', 'لوحة اتجاهات زرقاء (طريق اتحادي)', function (o, label) {
     var s = eShield(9, 28, 0.38, 'E 11') +
-      AR('أبوظبي', 89, 23.4, 15) + LA('Abu Dhabi', 89, 44.5, 12) +
-      AR('جبل علي', 89, 63.7, 15) + LA('Jebel Ali', 89, 84.8, 12) +
+      AR('أبوظبي', 89, 21.9, 15) + LA('Abu Dhabi', 89, 43.9, 14) +
+      AR('جبل علي', 89, 63.7, 15) + LA('Jebel Ali', 89, 85.7, 14) +
       upArrow(142, 86, 16, GA, WH);
     return board(s, 160, 100, BL, label);
   });
 
   reg('g-green-direction', 'لوحة اتجاهات خضراء (طرق دبي)', function (o, label) {
     var s = dShield(9, 28, 0.38, 'D 94') +
-      AR('جميرا', 89, 25.2, 15) + LA('Jumeirah', 89, 42, 12) +
-      AR('السطوة', 89, 63.2, 15) + LA('Al Satwa', 89, 80, 12) +
-      upArrow(141, 47, 15, { sw: 7, hw: 19, hl: 14 }, WH) + sArrow(126, 69, 155, 69, 7, 19, 14, WH);
+      AR('جميرا', 89, 23.7, 15) + LA('Jumeirah', 89, 41.4, 14) +
+      AR('السطوة', 89, 63.2, 15) + LA('Al Satwa', 89, 80.9, 14) +
+      upArrow(141, 46, 14, { sw: 7, hw: 19, hl: 14 }, WH) + sArrow(126, 69.8, 155, 69.8, 7, 19, 14, WH);
     return board(s, 162, 100, GR, label);
   });
 
   reg('g-brown-tourist', 'لوحة سياحية بنية', function (o, label) {
-    var s = tower(12, 12, 0.95, WH) + AR('برج خليفة', 84, 39, 17) + LA('Burj Khalifa', 84, 63, 13) +
+    var s = tower(12, 12, 0.95, WH) + AR('برج خليفة', 84, 38, 17) + LA('Burj Khalifa', 84, 63.5, 14.5) +
       upArrow(142, 84, 20, { sw: 7, hw: 19, hl: 14 }, WH);
     return board(s, 160, 100, BR, label);
   });
@@ -423,9 +421,9 @@
   });
 
   reg('g-exit', 'لوحة المخرج', function (o, label) {
-    var s = R(54.8, 0.8, 90.4, 40, WH, 6) + R(0.8, 26.8, 148.4, 84.4, WH, 8) +
-      R(57.2, 3.2, 85.6, 36, GR, 3.8) + R(3.2, 29.2, 143.6, 79.6, GR, 5.8) +
-      LA('EXIT', 72.5, 16.5, 10, WH, 700) + LA('41', 94.6, 16.5, 15, WH, 700) + AR('مخرج', 122.1, 16, 12, WH, 700) +
+    var s = R(50.8, 0.8, 94.4, 40, WH, 6) + R(0.8, 26.8, 148.4, 84.4, WH, 8) +
+      R(53.2, 3.2, 89.6, 36, GR, 3.8) + R(3.2, 29.2, 143.6, 79.6, GR, 5.8) +
+      LA('EXIT', 67.6, 17.4, 11, WH, 700) + LA('41', 92.3, 17.4, 17, WH, 700) + AR('مخرج', 122.6, 15.6, 13, WH, 700) +
       AR('ديرة', 56, 59, 26, WH, 700) + LA('Deira', 56, 88, 19, WH, 700) +
       sArrow(100, 97, 135, 60, 8.5, 22, 17, WH);
     return K.svg(s, '0 0 150 112', label);
@@ -448,28 +446,28 @@
   });
 
   reg('g-distance', 'لوحة المسافات', function (o, label) {
-    var s = AR('جبل علي', 46, 18.6, 16) + LA('Jebel Ali', 46, 40.8, 12.5) + AR('أبوظبي', 46, 64.9, 16) + LA('Abu Dhabi', 46, 87.1, 12.5);
-    [['25', 28.8], ['120', 73.4]].forEach(function (r) {
+    var s = AR('جبل علي', 46, 17.8, 16) + LA('Jebel Ali', 46, 40.5, 13.5) + AR('أبوظبي', 46, 63.9, 16) + LA('Abu Dhabi', 46, 86.6, 13.5);
+    [['25', 28.3], ['120', 72.9]].forEach(function (r) {
       s += LA(r[0], 125, r[1], 24, WH, 700, 'end') + AR('كم', 136.5, r[1] - 7.3, 9) + LA('km', 136.5, r[1] + 5, 8.5);
     });
     return board(s, 150, 100, BL, label);
   });
 
   reg('g-lane-drop', 'لوحة مخرج بمسارين', function (o, label) {
-    var a = { sw: 7, hw: 18, hl: 13 };
-    var s = LN(92, 9, 92, 91, WH, 1.6) +
-      AR('أبوظبي', 48, 20, 14) + LA('Abu Dhabi', 48, 39.8, 11) +
-      sArrow(30, 50, 30, 92, a.sw, a.hw, a.hl, WH) + sArrow(66, 50, 66, 92, a.sw, a.hw, a.hl, WH) +
-      AR('ديرة', 134, 20, 14) + LA('Deira', 134, 39.8, 11) +
-      AR('مخرج', 146, 53.5, 10) + LA('EXIT', 121, 54.5, 9.5) +
-      tArrow(116, 62, 180, [['L', 9], ['A', 11, -45], ['L', 1]], a, WH) +
-      tArrow(146, 62, 180, [['L', 9], ['A', 11, -45], ['L', 1]], a, WH);
-    return board(s, 180, 100, GR, label);
+    var a = { sw: 7, hw: 18, hl: 13 }, bend = [['L', 7], ['A', 10, -45], ['L', 1]];
+    var s = LN(80, 9, 80, 91, WH, 1.6) +
+      AR('أبوظبي', 41, 21, 16) + LA('Abu Dhabi', 41, 43.2, 12.5) +
+      sArrow(24, 53, 24, 92, a.sw, a.hw, a.hl, WH) + sArrow(58, 53, 58, 92, a.sw, a.hw, a.hl, WH) +
+      AR('ديرة', 119, 21, 16) + LA('Deira', 119, 43.2, 12.5) +
+      AR('مخرج', 132, 57.2, 11) + LA('EXIT', 103.5, 58.2, 10.5) +
+      tArrow(103, 67, 180, bend, a, WH) + tArrow(133, 67, 180, bend, a, WH);
+    return board(s, 160, 100, GR, label);
   });
 
   // ------------------------------------------------------------------ TEMPORARY WORKS
   reg('t-road-works', 'أعمال طرق أمامك', function (o, label) {
-    return K.warn(glyph('worker', K.fit('warn', 'worker')), { bg: YE, label: label });
+    var box = typeof K.fit === 'function' ? K.fit('warn', 'worker') : { x: 28, y: 42.6, w: 44, h: 31.4, ay: 1 };
+    return K.warn(glyph('worker', box), { bg: YE, label: label });
   });
 
   var TL = { sw: 8, hw: 20, hl: 15 };

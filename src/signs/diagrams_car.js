@@ -294,8 +294,8 @@
     var s = panel(C.night);
     [[12, 12, 0.6], [34, 7, 0.5], [57, 16, 0.7], [83, 9, 0.5], [104, 24, 0.6], [22, 34, 0.5], [70, 40, 0.4], [150, 46, 0.5],
       [44, 52, 0.4], [96, 50, 0.4]].forEach(function (p) { s += circ(p[0], p[1], p[2], C.ink, { opacity: 0.55 }); });
-    s += rect(0, 62, 160, 14, 0, '#0F1520');
-    s += rect(0, 76, 160, 28, 0, '#1C2027') + line(0, 76.4, 160, 76.4, C.kerb, 0.7, { opacity: 0.25 });
+    s += path('M0,62Q22,56 44,60T88,59T132,58T160,60L160,73L0,73Z', '#0F1520');
+    s += rect(0, 72, 160, 32, 0, '#1C2027') + line(0, 72.4, 160, 72.4, C.kerb, 0.7, { opacity: 0.25 });
     s += band(104, 120, '#0D1118') + line(0, 104, 160, 104, C.kerb, 0.8, { opacity: 0.35 });
     return s;
   }
@@ -342,36 +342,36 @@
 
   // ================================================================== 2 and 3. low and high beam
   function beamScene(high, lab) {
-    var s = nightRoad(), x0 = 5, y0 = 100, len = 56;
+    var s = nightRoad(), x0 = 4, y0 = 100, len = 60;
     var L = carPt(x0, y0, len, CAR.lamp), lx = L[0], ly = L[1];
     // how far the light reaches along the road
     var reach = high ? 160 : 116;
     if (high) {
       // main beam: long and straight, lights the road and the air far ahead
       s += glow([
-        [[[lx, ly - 1.4], [160, 64], [160, 103.8], [80, 103.8], [lx, ly + 1.4]], 0.08],
-        [[[lx, ly - 1], [160, 72], [160, 100], [lx, ly + 1]], 0.1],
-        [[[lx, ly - 0.6], [160, 80], [160, 94], [lx, ly + 0.6]], 0.13],
-        [[[lx, ly - 0.3], [132, 86], [132, 92], [lx, ly + 0.3]], 0.16]
+        [[[lx, ly - 1.4], [160, 60], [160, 103.8], [84, 103.8], [lx, ly + 1.4]], 0.08],
+        [[[lx, ly - 1], [160, 70], [160, 100], [lx, ly + 1]], 0.09],
+        [[[lx, ly - 0.7], [160, 78], [160, 95], [lx, ly + 0.7]], 0.11],
+        [[[lx, ly - 0.4], [160, 83.5], [160, 90.5], [lx, ly + 0.4]], 0.14]
       ]);
-      s += path('M64,103.8Q108,93.5 160,92.2L160,103.8Z', C.beam, { opacity: 0.16 });
+      s += path('M66,103.8Q110,93 160,91.8L160,103.8Z', C.beam, { opacity: 0.16 });
     } else {
       // dipped beam: short, angled down onto the road
       s += glow([
-        [[[lx, ly - 1], [116, 95.2], [110, 103.8], [66, 103.8], [lx, ly + 1]], 0.1],
-        [[[lx, ly - 0.7], [102, 96.2], [70, 103.4], [lx, ly + 0.7]], 0.13],
-        [[[lx, ly - 0.4], [86, 96.4], [68, 101.2], [lx, ly + 0.4]], 0.16]
+        [[[lx, ly - 1], [117, 95.4], [111, 103.8], [68, 103.8], [lx, ly + 1]], 0.1],
+        [[[lx, ly - 0.7], [104, 96.4], [72, 103.4], [lx, ly + 0.7]], 0.13],
+        [[[lx, ly - 0.4], [89, 96.6], [70, 101.4], [lx, ly + 0.4]], 0.16]
       ]);
-      s += path('M62,103.8Q90,95 117,95.6Q96,104.2 62,103.8Z', C.beam, { opacity: 0.26 });
+      s += path('M64,103.8Q92,95 118,95.8Q98,104.2 64,103.8Z', C.beam, { opacity: 0.26 });
     }
     // centre line: bright only where the light reaches
     for (var x = 2; x < 160; x += 16) {
-      var lit = x > 60 && x < reach - 6;
-      s += line(x, 89.6, Math.min(x + 8, 159), 89.6, C.lineW, 0.9, { opacity: lit ? 0.8 : 0.12 });
+      var lit = x > 62 && x < reach - 6;
+      s += line(x, 88, Math.min(x + 8, 159), 88, C.lineW, 0.9, { opacity: lit ? 0.8 : 0.12 });
     }
     s += carSide(x0, y0, len, { head: 'on', tail: 'on', body: '#D9D6CC' });
     s += circ(lx, ly, 2.4, C.beam, { opacity: 0.55 });
-    [80, 104, 128, 152].forEach(function (px) { s += post(px, px < reach - 4); });
+    [82, 106, 130, 153].forEach(function (px) { s += post(px, px < reach - 4); });
     // dashboard symbol in the corner
     s += tile(122, 9, 30, 22, { fill: C.pill }) + beamIcon(138.5, 20, 1.05, high ? C.dBlue : C.dGreen, high);
     return K.svg(s, VB, lab);
@@ -381,33 +381,33 @@
 
   // ================================================================== 4. fog: dipped beam + front fog lamps
   reg('fig-fog-lights', 'في الضباب: المنخفضة وأضواء الضباب', function (o, lab) {
-    var s = panel('#1A212D'), x0 = 6, y0 = 98, len = 54, i;
-    // fog: the air gets paler toward the horizon
-    s += rect(0, 36, 160, 12, 0, '#1F2733') + rect(0, 48, 160, 12, 0, '#252E3B') + rect(0, 60, 160, 16, 0, '#2C3543');
-    s += rect(0, 76, 160, 26, 0, '#262C35') + line(0, 76.4, 160, 76.4, C.kerb, 0.6, { opacity: 0.2 });
-    s += band(102, 120, '#1B2029') + line(0, 102, 160, 102, C.kerb, 0.8, { opacity: 0.35 });
-    // centre line fading into the fog ahead
+    var s = panel('#1A212D'), x0 = 4, y0 = 99, len = 58, i;
+    // fog: the air gets paler toward the horizon, the far road fades out
+    s += rect(0, 34, 160, 12, 0, '#1F2733') + rect(0, 46, 160, 12, 0, '#252E3B') + rect(0, 58, 160, 16, 0, '#2C3543');
+    s += rect(0, 73, 160, 30, 0, '#262C35') + line(0, 73.4, 160, 73.4, C.kerb, 0.6, { opacity: 0.2 });
+    s += band(103, 120, '#1B2029') + line(0, 103, 160, 103, C.kerb, 0.8, { opacity: 0.35 });
     for (i = 0; i < 10; i++) {
       var dx = 2 + i * 16;
-      s += line(dx, 89, Math.min(dx + 8, 159), 89, C.lineW, 0.9, { opacity: Math.max(0.05, 0.6 - i * 0.07) });
+      s += line(dx, 87, Math.min(dx + 8, 159), 87, C.lineW, 0.9, { opacity: Math.max(0.04, 0.6 - i * 0.075) });
     }
     var L = carPt(x0, y0, len, CAR.lamp), F = carPt(x0, y0, len, CAR.fog);
-    // dipped headlamps: short, down
+    // dipped headlamps: short, angled down
     s += glow([
-      [[[L[0], L[1] - 0.8], [100, 93.5], [96, 101.8], [66, 101.8], [L[0], L[1] + 0.8]], 0.13],
-      [[[L[0], L[1] - 0.5], [86, 95], [68, 100.5], [L[0], L[1] + 0.5]], 0.15]
+      [[[L[0], L[1] - 0.8], [104, 94], [99, 102.8], [70, 102.8], [L[0], L[1] + 0.8]], 0.13],
+      [[[L[0], L[1] - 0.5], [90, 95.5], [72, 101.6], [L[0], L[1] + 0.5]], 0.15]
     ]);
     // front fog lamps: wide, flat, hugging the road
     s += glow([
-      [[[F[0], F[1] - 0.8], [104, 96.4], [112, 101.8], [62, 101.8], [F[0], F[1] + 0.6]], 0.16],
-      [[[F[0], F[1] - 0.5], [92, 97.8], [96, 101.6], [64, 101.6], [F[0], F[1] + 0.4]], 0.18]
+      [[[F[0], F[1] - 0.9], [108, 97], [116, 102.8], [64, 102.8], [F[0], F[1] + 0.6]], 0.16],
+      [[[F[0], F[1] - 0.5], [96, 98.4], [100, 102.6], [66, 102.6], [F[0], F[1] + 0.4]], 0.18]
     ]);
-    s += path('M60,101.8Q88,97 114,98.6L114,101.8Z', C.beam, { opacity: 0.18 });
+    s += path('M62,102.8Q90,98 118,99.4L118,102.8Z', C.beam, { opacity: 0.18 });
     s += carSide(x0, y0, len, { head: 'on', tail: 'on', fog: 'on' });
-    s += circ(L[0], L[1], 2.2, C.beam, { opacity: 0.6 }) + circ(F[0], F[1], 2, C.beam, { opacity: 0.6 });
-    // fog wisps over the whole scene
-    [[92, 44, 64, 5, 0.07], [52, 56, 50, 5, 0.08], [112, 66, 46, 5, 0.09], [42, 78, 40, 4.5, 0.07], [118, 86, 40, 5, 0.1],
-      [80, 34, 56, 4, 0.05], [138, 52, 20, 4, 0.08]].forEach(function (w) {
+    s += circ(L[0], L[1], 2.3, C.beam, { opacity: 0.6 }) + circ(F[0], F[1], 2.1, C.beam, { opacity: 0.6 });
+    // fog wisps drifting over the whole scene (thin, faint, overlapping)
+    [[96, 40, 58, 2.6, 0.08], [44, 47, 38, 2.2, 0.07], [118, 52, 38, 2.4, 0.09], [70, 58, 56, 2.6, 0.08], [28, 64, 26, 2.2, 0.08],
+      [124, 66, 34, 2.6, 0.1], [84, 74, 44, 2.4, 0.08], [40, 80, 34, 2.2, 0.07], [128, 84, 30, 2.6, 0.1], [98, 92, 40, 2.4, 0.08],
+      [58, 70, 20, 1.8, 0.07], [146, 76, 12, 2, 0.08]].forEach(function (w) {
       s += ell(w[0], w[1], w[2], w[3], '#D5DBE3', { opacity: w[4] });
     });
     // not in fog: high beam, hazard lights while moving
@@ -472,9 +472,9 @@
     s += treadSection(56, 152, top, gb, [76, 114], 11);
     s += rect(69.5, top - 3, 24, 3, 1, '#C9CED6', { stroke: '#6B737E', 'stroke-width': 0.6 }) +
       rect(80.7, top - 4, 1.6, gb - top + 4, 0.6, '#C9CED6') +
-      rect(75.5, 18, 12, top - 21, 2.5, '#C9CED6', { stroke: '#6B737E', 'stroke-width': 0.6 }) +
-      rect(78.5, 14, 6, 4.5, 1.2, '#8C939E');
-    for (var t = 0; t < 5; t++) s += line(78, 23 + t * 4.4, t % 2 ? 81.5 : 83.5, 23 + t * 4.4, '#4A515C', 0.7);
+      rect(75, 27, 13, top - 30, 3, '#C9CED6', { stroke: '#6B737E', 'stroke-width': 0.6 }) +
+      rect(79.3, 12, 4.4, 15.5, 1, '#E3D3A6', { stroke: '#8C7A4E', 'stroke-width': 0.5 });
+    for (var t = 0; t < 6; t++) s += line(79.3, 14 + t * 2.4, t % 2 ? 81.2 : 82.4, 14 + t * 2.4, '#6B5A3A', 0.6);
     s += dim(119.5, top, 119.5, gb, { tick: 3.2, sw: 1.5 });
     s += label('1.5 ملم', 119.5, 38, 9, C.gold, { pill: true });
     s += badge(true, 145, 22, 6.5);
@@ -516,70 +516,71 @@
   });
 
   // ================================================================== 8. child seat in the rear
+  // cut-away of the family car: side panels removed, interior visible (same profile and scale rules as carSide)
+  function carCut(x, y, len) {
+    var q = ell(50, 0.3, 47, 2, '#000000', { opacity: 0.35 });
+    q += path(CAR.body, '#111823', { stroke: C.gold, 'stroke-width': 1.1, 'stroke-linejoin': 'round' });
+    q += path(CAR.winR, '#1D2839') + path(CAR.winF, '#1D2839');
+    q += sk('M50.4,-33.6L50.4,-9', C.gold, 0.6, { opacity: 0.45 }) + sk('M28.6,-23.2L73.4,-22.2', C.gold, 0.5, { opacity: 0.3 });
+    q += path('M79,-20.6L90,-19.6L88.4,-13.6L82,-12.4Z', '#243044');
+    q += path(CAR.head, C.lamp) + path(CAR.tail, C.tail);
+    return g(q, tr(x, y, len / 100));
+  }
+  function carWheels(x, y, len) {
+    return g(CAR.wheels.map(function (w) { return wheelSide(w[0], w[1], CAR.wr); }).join(''), tr(x, y, len / 100));
+  }
   reg('fig-child-seat', 'الطفل في مقعده في الخلف', function (o, lab) {
-    var s = panel(), gy = 104;
-    // cut-away car body (facing right): shell outline, interior dark
-    var shell = 'M26,96L25,80Q25,70 31,66L47,62L60,42Q63,38 69,38L109,38Q114,38 118,42L132,60L148,64Q155,66 155,74L155,92Q155,96 151,96Z';
-    s += path(shell, '#0F1520', { stroke: C.gold, 'stroke-width': 1.6, 'stroke-linejoin': 'round' });
-    s += sk('M49,63L61,44Q63.5,41 68,41L108,41Q112,41 115,44L129,61', '#1F2A3C', 1.2);
-    s += sk('M92,41L92,90', '#1F2A3C', 1.2);
-    s += wheelSide(45, gy - 9, 9) + wheelSide(133, gy - 9, 9);
-    s += rect(29, 88, 124, 4, 1.5, '#1F2733');
-    // front passenger seat, empty
-    var seat = '#3A4A63', seatHi = '#50627F';
-    s += path('M103,56Q105,52 108,52Q111,52 111,56L109,66L104,66Z', seat, { stroke: seatHi, 'stroke-width': 0.8 });
-    s += path('M103,66L110,66L108,84L101,86Z', seat, { stroke: seatHi, 'stroke-width': 0.8 });
-    s += path('M101,80L126,78Q129,78 129,81L128,85L101,87Z', seat, { stroke: seatHi, 'stroke-width': 0.8 });
-    // rear bench
-    s += path('M52,56Q53,52 57,52Q61,52 61,56L60,84L50,86Z', seat, { stroke: seatHi, 'stroke-width': 0.8 });
-    s += path('M50,80L88,78Q91,78 91,81L90,85L50,87Z', seat, { stroke: seatHi, 'stroke-width': 0.8 });
-    // child seat (forward facing) with the child, harness
-    s += path('M60,52Q61,47 66,47L71,47Q75,47 75,51L74,62L79,64Q82,65 82,68L82,76Q82,80 78,80L62,80Q58,80 58.4,76Z', '#7A4E86',
-      { stroke: '#A77AB3', 'stroke-width': 0.8 });
-    s += circ(69.5, 55, 5.2, C.skin) + path('M64.4,54Q64.8,49.4 69.6,49.4Q74,49.6 74.6,53.6Q71,51.8 67.6,52.8Q65.6,53.6 65.2,56.2Z', '#3A2A20');
-    s += path('M65,61Q69,59.5 73,61L74,73L66,74Z', '#8FB4D8') + sk('M72,74L79,74L81,82', '#46546B', 4);
-    s += sk('M66.4,61L69,72M72.4,61L70.4,72', C.gold, 1.5) + circ(69.8, 71.4, 1.4, C.gold);
-    // height ruler beside the child with the 145 cm mark
-    s += rect(9, 20, 7, 84, 1.2, '#E8DFC6') ;
-    for (var i = 0; i <= 14; i++) {
-      var yy = 104 - i * 5.6;
-      s += line(9, yy, i % 2 ? 11.4 : 13, yy, '#6B5A3A', 0.6);
+    var s = panel(), x0 = 22, gy = 106, len = 134, i;
+    s += carCut(x0, gy, len);
+    // rear bench (no head restraint shown) and the empty front passenger seat
+    s += seatSide(64, 95.3, 0.42, { restraint: false }) + seatSide(96, 95.3, 0.42);
+    // forward-facing child seat on the rear bench, child strapped in with the harness
+    var cx = 66, cy = 89.4, cs = '';
+    cs += path('M0,0L-1,-17Q-1,-21 3,-21L8.4,-21Q11.4,-21 11.2,-18L10.6,-10L16,-9Q19,-8.4 19,-5.4L19,-2Q19,1 16,1L3,1Q0,1 0,0Z',
+      '#7A4E86', { stroke: '#A77AB3', 'stroke-width': 0.8 });
+    cs += sk('M7.2,-4L15.2,-4.6L17.6,1.6', '#46546B', 3.6);
+    cs += path('M2.4,-10.4Q5.6,-12 8.8,-10.4L9.4,-2.6L3,-2.2Z', '#8FB4D8');
+    cs += circ(5.4, -14.8, 4.4, C.skin) + path('M1,-15.4Q1.2,-19.4 5.4,-19.4Q9.4,-19.2 9.8,-15.8Q6.6,-17.4 3.8,-16.4Q2,-15.6 1.8,-13.2Z', '#3A2A20');
+    cs += sk('M3.4,-10.2L5.8,-3.6M8.4,-10.2L6.2,-3.6', C.gold, 1.3) + circ(6, -3.4, 1.2, C.gold);
+    s += g(cs, tr(cx, cy, 1));
+    s += carWheels(x0, gy, len);
+    // height ruler: 145 cm mark near the top, the child well below it
+    s += rect(6, 18, 7, 88, 1.2, '#E8DFC6');
+    for (i = 0; i <= 14; i++) {
+      var yy = 106 - i * 5.52;
+      s += line(6, yy, i % 2 ? 8.4 : 10, yy, '#6B5A3A', 0.6);
     }
-    s += line(7, 26, 20, 26, C.gold, 1.8) + label('145 سم', 34.5, 26, 8.5, C.gold, { pill: true });
-    s += line(20, 47, 60, 47, C.muted, 0.6, { 'stroke-dasharray': '1.6 1.6', opacity: 0.8 });
-    s += badge(true, 142, 20, 6.5);
+    s += line(4.5, 26, 16, 26, C.gold, 1.8) + label('145 سم', 36, 26, 8.5, C.gold, { pill: true });
+    s += line(14.5, cy - 19.4, cx + 1, cy - 19.4, C.muted, 0.6, { 'stroke-dasharray': '1.6 1.6', opacity: 0.8 });
+    s += badge(true, 76, 47, 6);
     return K.svg(s, VB, lab);
   });
 
   // ================================================================== 9. aquaplaning
   reg('fig-aquaplaning', 'الانزلاق المائي', function (o, lab) {
-    var s = panel(), cx = 70, cy = 58, r = 32, road = 97;
+    var s = panel(), cx = 66, cy = 59.4, r = 32, road = 99, wt = 91.2;
+    // road surface under a layer of water
     s += band(road, 120, C.asphalt) + line(0, road, 160, road, '#5A6270', 1);
-    // spray thrown behind the tyre
-    s += sk('M40,90Q24,78 10,58', C.waterHi, 1.4, { opacity: 0.5 }) + sk('M44,92Q26,86 8,78', C.waterHi, 1.4, { opacity: 0.45 }) +
-      sk('M38,86Q30,70 24,52', C.waterHi, 1.2, { opacity: 0.4 });
-    [[16, 64, 1.4], [22, 58, 1], [12, 72, 1.2], [28, 66, 1.1], [18, 80, 1.3], [30, 76, 0.9], [8, 66, 0.9], [24, 50, 0.9], [34, 58, 0.8]]
-      .forEach(function (d) { s += circ(d[0], d[1], d[2], C.waterHi, { opacity: 0.8 }); });
-    // water film on the road and the wedge building up in front of the tyre
-    s += rect(0, road - 4.2, 160, 4.2, 0, C.water, { opacity: 0.85 });
-    s += path('M160,' + f(road - 4.2) + 'L112,' + f(road - 4.2) + 'Q101,' + f(road - 5) + ' 94.5,' + f(cy + 22.6) +
-      'L94,' + f(road) + 'L160,' + f(road) + 'Z', C.water);
-    // tyre lifted onto the water
-    s += circ(cx, cy, r, C.tyre);
-    for (var a = 0; a < 360; a += 15) {
-      var p = arcPt(cx, cy, r - 0.4, a), q = arcPt(cx, cy, r - 4.2, a);
-      s += line(p[0], p[1], q[0], q[1], '#3A414C', 1.6);
-    }
-    s += circ(cx, cy, r * 0.62, C.rim) + circ(cx, cy, r * 0.5, '#2A3038');
+    // spray thrown up behind the tyre
+    s += sk('M40,88Q26,80 14,62', C.waterHi, 1.6, { opacity: 0.45 }) + sk('M44,90Q28,86 10,80', C.waterHi, 1.4, { opacity: 0.4 }) +
+      sk('M37,85Q30,72 26,54', C.waterHi, 1.2, { opacity: 0.35 });
+    [[14, 60, 1.5], [20, 56, 1.1], [10, 70, 1.3], [26, 64, 1.2], [16, 78, 1.4], [28, 74, 1], [7, 64, 1], [24, 50, 1], [33, 58, 0.9],
+      [8, 80, 1.1], [30, 82, 0.9], [18, 68, 0.8]].forEach(function (d) { s += circ(d[0], d[1], d[2], C.waterHi, { opacity: 0.85 }); });
+    // tyre riding on the water: its bottom sits on the water surface, not on the road
+    s += circ(cx, cy, r, '#1D2127') + circ(cx, cy, r - 3.2, 'none', { stroke: '#2B3038', 'stroke-width': 1.2 });
+    s += circ(cx, cy, r * 0.6, C.rim) + circ(cx, cy, r * 0.48, '#2A3038');
     for (var k = 0; k < 5; k++) {
       var sp = arcPt(cx, cy, r * 0.5, 90 + k * 72);
-      s += line(cx, cy, sp[0], sp[1], C.rim, 3.2);
+      s += line(cx, cy, sp[0], sp[1], C.rim, 3.4);
     }
-    s += circ(cx, cy, 4, C.rim) + circ(cx, cy, 1.6, C.hub);
-    s += path('M' + f(cx - 26) + ',' + f(road - 4.2) + 'Q' + f(cx) + ',' + f(road - 6.6) + ' ' + f(cx + 26) + ',' + f(road - 4.2) +
-      'L' + f(cx + 26) + ',' + f(road) + 'L' + f(cx - 26) + ',' + f(road) + 'Z', C.water, { opacity: 0.9 });
-    s += sk('M100,' + f(road - 4.6) + 'Q110,' + f(road - 5.2) + ' 124,' + f(road - 4.6), C.waterHi, 1, { opacity: 0.9 });
-    // direction of travel, speed
+    s += circ(cx, cy, 4.2, C.rim) + circ(cx, cy, 1.6, C.hub);
+    // water film (tyre bottom hidden just under its surface) and the wedge pushed up in front of the tyre
+    var fp = arcPt(cx, cy, r, -40);
+    s += path('M0,' + f(wt) + 'L' + f(cx - 2) + ',' + f(wt) + 'L' + pt(cx, cy + r) + 'A' + r + ',' + r + ' 0 0 0 ' + pt(fp[0], fp[1]) +
+      'C104,' + f(wt - 1) + ' 122,' + f(wt) + ' 150,' + f(wt) + 'L160,' + f(wt) + 'L160,' + f(road) + 'L0,' + f(road) + 'Z', C.water);
+    s += sk('M126,' + f(wt - 0.2) + 'C112,' + f(wt - 0.6) + ' 100,' + f(wt - 3) + ' ' + pt(fp[0] + 1.6, fp[1] + 1.6), C.waterHi, 1.2);
+    s += sk('M' + f(cx - 30) + ',' + f(wt + 0.2) + 'L' + f(cx + 18) + ',' + f(wt + 0.2), C.waterHi, 0.9, { opacity: 0.7 });
+    // direction of travel, speed too high for the water
     s += sk('M112,60L128,60', C.muted, 1.4) + arrowHead(131, 60, 0, 5, C.muted);
     s += speedoIcon(138, 24, 11);
     return K.svg(s, VB, lab);
@@ -597,10 +598,12 @@
       'T80,' + f(waterY) + 'T96,' + f(waterY) + 'T112,' + f(waterY) + 'T128,' + f(waterY) + 'T144,' + f(waterY) + 'T160,' + f(waterY),
       C.waterHi, 1.4);
     // gold mark on the front wheel: full tyre height, half at the axle
-    s += dim(fx, gy, fx, gy - 2 * wr, { tick: 3, sw: 1.1, halo: true });
-    s += line(fx - 4.5, waterY, fx + 4.5, waterY, C.gold, 1.8);
+    s += line(fx, gy, fx, gy - 2 * wr, C.pill, 3, { opacity: 0.6 });
+    s += line(fx, waterY, fx, gy - 2 * wr, C.gold, 1.1, { 'stroke-dasharray': '2 1.6' }) + line(fx, gy, fx, waterY, C.gold, 2);
+    s += line(fx - 3, gy - 2 * wr, fx + 3, gy - 2 * wr, C.gold, 1.2) + line(fx - 3, gy, fx + 3, gy, C.gold, 1.4) +
+      line(fx - 5, waterY, fx + 5, waterY, C.gold, 2);
     // deeper water: not allowed
-    var deep = gy - 2 * wr - 8;
+    var deep = gy - 2 * wr - 1.5;
     s += line(4, deep, 138, deep, C.red, 1.6, { 'stroke-dasharray': '4 3' });
     s += badge(false, 148, deep, 7);
     return K.svg(s, VB, lab);
@@ -679,10 +682,12 @@
     });
     // lever knob in D
     s += rect(54, dy - 7, 17, 14, 5, '#2A3140', { stroke: C.gold, 'stroke-width': 1.4 }) + rect(57.5, dy - 2, 10, 4, 2, '#3C4556');
-    // brake pedal beside P and R
-    s += sk('M40,' + f(y0) + 'L36,' + f(y0) + 'L36,' + f(y0 + step) + 'L40,' + f(y0 + step), C.red, 1.2);
-    s += circ(20, y0 + step / 2, 12, C.pill, { stroke: C.red, 'stroke-width': 1.2 }) + pedalIcon(20, y0 + step / 2 + 0.6, 1.35, C.red);
-    s += line(32, y0 + step / 2, 36, y0 + step / 2, C.red, 1.2);
+    // brake pedal beside P and R: press the brake to move the lever
+    var my = y0 + step / 2;
+    s += sk('M41,' + f(y0) + 'L37.5,' + f(y0) + 'L37.5,' + f(y0 + step) + 'L41,' + f(y0 + step), C.ink, 1.1, { opacity: 0.7 });
+    s += line(33.5, my, 37.5, my, C.ink, 1.1, { opacity: 0.7 });
+    s += tile(8, my - 13, 25.5, 26, { fill: C.pill, r: 6 }) + pedalIcon(20.8, my + 2.4, 1.45, C.ink, C.pill);
+    s += sk('M20.8,' + f(my - 10.4) + 'L20.8,' + f(my - 6.6), C.red, 1.3) + arrowHead(20.8, my - 5.6, 270, 3.4, C.red);
     return K.svg(s, VB, lab);
   });
 
@@ -690,9 +695,10 @@
   reg('fig-no-phone', 'لا هاتف في يدك أثناء القيادة', function (o, lab) {
     var s = panel(), x0 = 26, y0 = 6, w = 108, h = 108;
     s += rect(x0, y0, w, h, 20, '#1A1E28');
-    // steering wheel (top of the rim)
-    s += sk('M36,110A50,50 0 0 1 124,110', '#4A515C', 10) + sk('M38.5,104.5A47,47 0 0 1 121.5,104.5', '#5E6673', 1.6, { opacity: 0.8 });
-    // hand holding a phone above the wheel
+    // steering wheel (top of the rim), cropped by the frame
+    s += sk('M30,112A56,56 0 0 1 130,112', '#4A515C', 10) + sk('M33.6,106.4A52,52 0 0 1 126.4,106.4', '#5E6673', 1.6, { opacity: 0.8 });
+    // hand holding a phone above the wheel, forearm coming up from below
+    s += path('M70.4,114L68,96L92,96L89.6,114Z', '#7D93B8');
     s += path('M64,62Q62,76 66,86L70,98L92,98L94,84Q99,72 97,58Z', C.skin);
     s += rect(65, 18, 30, 52, 6, '#101521', { stroke: '#394356', 'stroke-width': 1.2 }) + rect(68, 23, 24, 41, 3, '#3D6FB0') +
       rect(70.5, 27, 19, 3, 1.5, '#8DBDF0', { opacity: 0.8 }) + rect(70.5, 33, 13, 3, 1.5, '#8DBDF0', { opacity: 0.6 }) +
@@ -700,49 +706,56 @@
     s += path(rr(60.5, 40, 7.5, 6, [3, 1, 1, 3]), C.skin) + path(rr(60, 47.5, 8, 6, [3, 1, 1, 3]), C.skin) +
       path(rr(60.5, 55, 7.5, 6, [3, 1, 1, 3]), C.skin);
     s += path('M93,70L93,50Q93,46 96,46Q99,46 99,50L99,66Q99,74 94,78Z', C.skin);
-    // red rounded square frame and bar
+    // everything outside the frame is covered, then the red rounded square frame and bar
+    s += cover(rr(x0 + 1, y0 + 1, w - 2, h - 2, [19, 19, 19, 19]));
     s += rect(x0 + 2.5, y0 + 2.5, w - 5, h - 5, 18, 'none', { stroke: C.red, 'stroke-width': 5 });
     s += line(x0 + 15, y0 + 15, x0 + w - 15, y0 + h - 15, C.red, 8);
     return K.svg(s, VB, lab);
   });
 
   // ================================================================== 14. mirror, signal, head check
-  function mirrorIcon(cx, cy) {
+  // left wing mirror as the driver sees it: housing on the left, arm to the door on the right, a car behind in the glass
+  function mirrorIcon(cx, cy, k) {
     var s = '';
-    s += path('M4,6L14,4L14,10L4,11Z', '#3A414C');
-    s += path('M-14,-9Q-14,-12 -11,-12L7,-12Q11,-12 11,-8L10,8Q10,11 6,11L-11,11Q-14,11 -14,8Z', '#3A414C', { stroke: '#5A6270', 'stroke-width': 0.8 });
-    s += path('M-12,-8Q-12,-10 -10,-10L6,-10Q9,-10 8.8,-7.4L8.2,6.6Q8,9 5.6,9L-10,9Q-12,9 -12,7Z', '#9FB4CC');
-    // car behind, reflected (front view)
-    s += path('M-7,4L-6,-1Q-5.5,-3 -3.5,-3L1.5,-3Q3.5,-3 4,-1L5,4Z', '#3F6FB5') + rect(-8, 1, 14, 5, 1.5, '#3F6FB5') +
-      path('M-5,-0.6L-4.4,-2Q-4.1,-2.4 -3.4,-2.4L1.4,-2.4Q2.1,-2.4 2.4,-2L3,-0.6Z', '#1B2230') +
-      rect(-7, 2.2, 2.6, 1.4, 0.6, C.lampOn) + rect(3, 2.2, 2.6, 1.4, 0.6, C.lampOn) + rect(-7.4, 6, 2.2, 2, 0.5, '#222') + rect(3.6, 6, 2.2, 2, 0.5, '#222');
-    return g(s, tr(cx, cy, 1));
+    s += path('M9,1L15.5,-1.5L16.5,5.5L9,7Z', '#3A414C') + rect(15, -4.5, 3, 13, 1.2, '#2A3038');
+    s += path('M-15,-6Q-15,-12 -9,-12L6,-11Q10.5,-10.6 10.5,-6.5L10.5,6.5Q10.5,10.6 6,11L-9,12Q-15,12 -15,6Z', '#3A414C',
+      { stroke: '#5A6270', 'stroke-width': 0.8 });
+    s += path('M-13,-5.6Q-13,-10 -8.6,-10L5.4,-9.1Q8.5,-8.8 8.5,-5.8L8.5,5.8Q8.5,8.8 5.4,9.1L-8.6,10Q-13,10 -13,5.6Z', '#A9BCD2');
+    // car behind (front view)
+    s += path('M-7.2,3.6L-6,-1.4Q-5.5,-3.2 -3.6,-3.2L1.6,-3.2Q3.5,-3.2 4,-1.4L5.2,3.6Z', '#3F6FB5') + rect(-8.2, 1, 14.4, 5.2, 1.6, '#3F6FB5') +
+      path('M-5.1,-0.8L-4.5,-2.2Q-4.2,-2.6 -3.5,-2.6L1.5,-2.6Q2.2,-2.6 2.5,-2.2L3.1,-0.8Z', C.glass) +
+      rect(-7.2, 2.2, 2.6, 1.4, 0.6, C.lampOn) + rect(3.2, 2.2, 2.6, 1.4, 0.6, C.lampOn) +
+      rect(-7.4, 6.1, 2.2, 1.9, 0.5, '#1B2230') + rect(3.8, 6.1, 2.2, 1.9, 0.5, '#1B2230');
+    s += sk('M-11,-2L-7,-8.4M-11.4,4L-4.4,-7.6', '#FFFFFF', 0.8, { opacity: 0.35 });
+    return g(s, tr(cx, cy, k));
   }
-  function signalIcon(cx, cy) {
-    var s = path('M-10,0L-1,-8.5L-1,-3.8L9,-3.8L9,3.8L-1,3.8L-1,8.5Z', C.amber);
-    s += flash(-1, 0, 11.5, 15, [60, 90, 120, 240, 270, 300], C.amber, 1.2);
-    return g(s, tr(cx, cy, 1));
+  // amber indicator arrow blinking (to the left)
+  function signalIcon(cx, cy, k) {
+    var s = circ(-1, 0, 12, C.amber, { opacity: 0.2 }) + path('M-10,0L-1,-8.5L-1,-3.8L9,-3.8L9,3.8L-1,3.8L-1,8.5Z', C.amber);
+    s += flash(-1, 0, 13, 16.5, [55, 90, 125, 235, 270, 305], C.amber, 1.2);
+    return g(s, tr(cx, cy, k));
   }
-  function headCheckIcon(cx, cy) {
+  // head check: head turned over the left shoulder, curved arrow
+  function headCheckIcon(cx, cy, k) {
     var s = '';
     s += path('M-15,15Q-15,6 -8,4L8,4Q15,6 15,15Z', '#7D93B8');
     s += rect(-3, -1, 6, 6, 2, C.skin);
     s += circ(0, -6, 7.2, C.skin) + path('M-2,-13Q6,-13.6 7.2,-6Q7.2,-0.6 3.8,1.4Q2.4,-4 -1,-6.4Q-2.8,-8 -2,-13Z', '#3A2A20') +
       path('M-7,-6.4L-9.4,-4.2L-6.8,-3.4Z', C.skin) + circ(-4.2, -7.4, 0.9, '#1B2230');
     s += sk('M8,-15Q2,-21 -8,-18.5Q-13,-17 -15,-11.5', C.gold, 1.6) + arrowHead(-15.6, -9.6, 250, 5, C.gold);
-    return g(s, tr(cx, cy, 1));
+    return g(s, tr(cx, cy, k));
   }
   reg('fig-lane-change', 'مرآة ثم إشارة ثم التفاتة', function (o, lab) {
-    var s = panel(), w = 42, gap = 11, x0 = (160 - 3 * w - 2 * gap) / 2, top = 22, h = 80;
-    var draw = [mirrorIcon, signalIcon, headCheckIcon];
+    var s = panel(), w = 44, gap = 9, x0 = (160 - 3 * w - 2 * gap) / 2, top = 24, h = 76, my = top + h / 2 + 3;
+    var draw = [mirrorIcon, signalIcon, headCheckIcon], ks = [1.2, 1.15, 1.2];
     for (var i = 0; i < 3; i++) {
       var x = x0 + (2 - i) * (w + gap), mx = x + w / 2;
       s += tile(x, top, w, h, { r: 8 });
-      s += draw[i](mx, top + h / 2 + 4);
+      s += draw[i](mx, my, ks[i]);
       s += circ(mx, top, 7.5, C.gold) + txt(String(i + 1), mx, top + 0.4, 10, C.pill, { latin: true, weight: 800 });
       if (i < 2) {
         var ax = x - gap / 2;
-        s += line(ax + 3.2, top + h / 2 + 4, ax - 1.4, top + h / 2 + 4, C.gold, 1.2) + arrowHead(ax - 2.4, top + h / 2 + 4, 180, 4, C.gold);
+        s += line(ax + 2.6, my, ax - 0.6, my, C.gold, 1.2) + arrowHead(ax - 1.8, my, 180, 3.6, C.gold);
       }
     }
     return K.svg(s, VB, lab);
@@ -750,24 +763,22 @@
 
   // ================================================================== 15. black points gauge
   reg('fig-black-points', 'النقاط السوداء: 24 نقطة تعني حجز الرخصة', function (o, lab) {
-    var s = panel(), cy = 58, r = 2.3, pitch = 5.05, gapX = 2.6, xr = 150;
-    // light track, right to left
-    s += rect(38, cy - 7, 116, 14, 7, '#D8D3C4');
-    var x = xr - 3, n;
+    var s = panel(), cy = 60, r = 2.3, pitch = 4.55, gapX = 1.7, xr = 149.5, n;
+    // light track: points add up from right to left, in groups of four
+    s += rect(33, cy - 8.5, 123, 17, 8.5, '#D8D3C4');
+    var x = xr;
     for (n = 1; n <= 23; n++) {
       s += circ(x, cy, r, '#151515');
-      x -= pitch;
-      if (n % 4 === 0) x -= gapX;
+      if (n < 23) { x -= pitch; if (n % 4 === 0) x -= gapX; }
     }
-    // the 24th point: licence withheld
-    var mx = 22;
-    s += circ(mx, cy, 15, C.red, { opacity: 0.18 }) + circ(mx, cy, 15, 'none', { stroke: C.red, 'stroke-width': 1.6 });
-    s += licenceCard(mx - 1.5, cy - 1, 1.05) + lockIcon(mx + 6.5, cy + 4.5, 0.95, C.red);
-    s += sk('M' + f(x + 3.5) + ',' + f(cy) + 'L38.5,' + f(cy), C.red, 1.2, { 'stroke-dasharray': '1.5 1.5' });
-    // ends
-    s += txt('0', xr - 3, cy + 17, 10, C.ink, { latin: true });
-    s += txt('24', mx, cy + 26, 11, C.red, { latin: true });
-    s += sk('M140,' + f(cy - 16) + 'L48,' + f(cy - 16), C.gold, 1.2) + arrowHead(45, cy - 16, 180, 5, C.gold);
+    // the 24th point: the licence is withheld
+    var mx = 20;
+    s += rect(mx - 15, cy - 15, 30, 30, 7, '#3A1D22', { stroke: C.red, 'stroke-width': 1.6 });
+    s += licenceCard(mx - 1.2, cy - 2, 1.12) + lockIcon(mx + 6.8, cy + 5, 1, C.red);
+    // ends and direction
+    s += txt('0', xr, cy + 17, 10, C.ink, { latin: true });
+    s += txt('24', mx, cy + 25, 11, C.red, { latin: true });
+    s += sk('M' + f(xr) + ',' + f(cy - 17) + 'L46,' + f(cy - 17), C.gold, 1.2) + arrowHead(43, cy - 17, 180, 5, C.gold);
     return K.svg(s, VB, lab);
   });
 })();

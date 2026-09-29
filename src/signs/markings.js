@@ -17,7 +17,7 @@
     me: '#F4F2EA', gold: '#D9B978', ok: '#8CC8A0', bad: '#DE9090', x: '#E0564F', other: '#97A1B4',
     amber: '#FFB21E',
     blue: '#3F6FB5', red: '#C0453A', silver: '#B8BEC8', dark: '#4A505A', green: '#3C8A5E',
-    sRed: '#C8202A', sBlue: '#1F5AA6', sGreen: '#1E7B47', busLane: '#8C2A2A',
+    sRed: '#C8202A', sBlue: '#1F5AA6', busLane: '#8C2A2A',
     housing: '#15181D', housingEdge: '#5A6475'
   };
   // Line widths are exaggerated so they still show at 64 px (true 0.15 m lane line, 0.3 m stop line)
@@ -225,7 +225,7 @@
 
   // ================================================================ vehicles and people (metres, front up)
   var PATHC = { me: C.gold, ok: C.ok, bad: C.bad, other: C.other };
-  function indicators(hw, hl, side, s) {
+  function indicators(hw, hl, side) {
     var x = side === 'l' ? -1 : 1, out = '';
     [[-hl + 0.32, -1], [hl - 0.32, 1]].forEach(function (p) {
       var cx = x * (hw - 0.1), cy = p[0], dy = p[1];
@@ -273,7 +273,7 @@
     s += rect(-1.08, -5.97, 0.5, 0.16, C.lamp) + rect(0.58, -5.97, 0.5, 0.16, C.lamp);
     return grp(at(x, y, o.rot, len / 12), s);
   }
-  // ambulance 6 x 2.3 m: white, red side stripes, red + blue light bar
+  // ambulance 6 x 2.3 m: white, red side stripes, red + blue light bar, red crescent
   function ambulance(x, y, len, o) {
     o = o || {};
     var s = '';
@@ -282,7 +282,7 @@
     s += path('M-0.98 -2.12L0.98 -2.12L0.9 -1.5L-0.9 -1.5Z', C.glass);
     s += rect(-1.15, -0.7, 0.3, 3.4, C.sRed) + rect(0.85, -0.7, 0.3, 3.4, C.sRed);
     s += rect(-1.0, -1.35, 1.0, 0.5, '#E5352B', { rx: 0.12 }) + rect(0, -1.35, 1.0, 0.5, '#2F6FE0', { rx: 0.12 });
-    s += rect(-0.18, 0.4, 0.36, 1.3, C.sRed) + rect(-0.65, 0.87, 1.3, 0.36, C.sRed);
+    s += circ(-0.08, 1.05, 0.62, C.sRed) + circ(0.16, 0.97, 0.52, '#F2F3F5');     // red crescent on the roof
     s += rect(-0.98, -2.97, 0.46, 0.16, C.lamp) + rect(0.52, -2.97, 0.46, 0.16, C.lamp);
     return grp(at(x, y, o.rot, len / 6), s);
   }
@@ -364,14 +364,12 @@
     var s = 'M' + f(q[0]) + ' ' + f(q[1]);
     for (var i = 2; i < n; i += 6) s += 'C' + [q[i], q[i + 1], q[i + 2], q[i + 3], q[i + 4], q[i + 5]].map(f).join(' ');
     var bx = ex - dx * hl, by = ey - dy * hl;
-    return path(s, 'none', { stroke: col, sw: sw, dash: o.solid ? null : '4 3' }) +
+    return path(s, 'none', { stroke: col, sw: sw, dash: '4 3' }) +
       poly([[ex, ey], [bx - dy * hw / 2, by + dx * hw / 2], [bx + dy * hw / 2, by - dx * hw / 2]], col);
   }
-  function xMark(x, y, r) {
-    var a = { cap: 'round' };
-    return line(x - r, y - r, x + r, y + r, '#1A1E26', 5.4, { cap: 'round', op: 0.55 }) +
-      line(x + r, y - r, x - r, y + r, '#1A1E26', 5.4, { cap: 'round', op: 0.55 }) +
-      line(x - r, y - r, x + r, y + r, C.x, 3, a) + line(x + r, y - r, x - r, y + r, C.x, 3, a);
+  function xMark(x, y, r) {                         // red X on a dark backing so it shows over white lines
+    var d = 'M' + f(x - r) + ' ' + f(y - r) + 'L' + f(x + r) + ' ' + f(y + r) + 'M' + f(x + r) + ' ' + f(y - r) + 'L' + f(x - r) + ' ' + f(y + r);
+    return path(d, 'none', { stroke: '#1A1E26', sw: 5.4, cap: 'round', op: 0.55 }) + path(d, 'none', { stroke: C.x, sw: 3, cap: 'round' });
   }
 
   // ================================================================ painted arrows (white road arrows)
@@ -441,11 +439,11 @@
 
   reg('mk-solid-lane', 'خط أبيض متصل بين المسارات', function (o, label) {
     var s = asphalt(0, 0, 100, 19) + asphalt(12, 0, 88, 100);
-    s += block(-10, 19, 12, 110, [5, 0, 0, 0]) + block(88, 19, 110, 110, [0, 0, 0, 5]);
-    s += stopBar(12, 88, 24);
-    [37.33, 62.67].forEach(function (x) { s += solid(x, 26.5, x, 60) + broken(x, 100, x, 60, C.white, 3); });
-    s += laneArrow('left', 24.67, 57, 0.46) + laneArrow('straight', 50, 57, 0.46) + laneArrow('right', 75.33, 57, 0.46);
-    s += signal(94.5, 32, 0.78, 'r');
+    s += block(-10, 19, 12, 110, [0, 5, 0, 0]) + block(88, 19, 110, 110, [5, 0, 0, 0]);
+    s += stopBar(12, 88, 26.5);
+    [37.33, 62.67].forEach(function (x) { s += solid(x, 29, x, 62) + broken(x, 100, x, 62, C.white, 1); });
+    s += laneArrow('left', 24.67, 59, 0.46) + laneArrow('straight', 50, 59, 0.46) + laneArrow('right', 75.33, 59, 0.46);
+    s += signal(94.5, 34, 0.78, 'r');
     return tile(s, label);
   });
 
@@ -548,7 +546,7 @@
     s += broken(50, 100, 50, 75, C.white, 3) + broken(50, 24, 50, 0, C.white, 3);
     s += stopBar(16, 84, 70.5);
     s += zebra(16, 84, 30, 60, 7);
-    s += signal(8.2, 75, 0.78, 'r') + signal(91.8, 75, 0.78, 'r');
+    s += signal(8, 76, 0.95, 'r') + signal(92, 76, 0.95, 'r');
     s += circ(92, 45, 1.6, '#7D8692') + rect(89.6, 39.2, 4.8, 4.2, '#F2C230', { rx: 0.8 }) + circ(92, 41.3, 1.1, '#15181D');
     return tile(s, label);
   });
@@ -639,17 +637,18 @@
 
   // ---------- painted areas
   reg('mk-yellow-box', 'الصندوق الأصفر', function (o, label) {
-    var s = asphalt(30, 0, 70, 100) + asphalt(0, 30, 100, 70);
-    s += block(-10, -10, 30, 30, [0, 0, 6, 0]) + block(70, -10, 110, 30, [0, 0, 0, 6]) +
-      block(-10, 70, 30, 110, [0, 6, 0, 0]) + block(70, 70, 110, 110, [6, 0, 0, 0]);
-    s += solid(50, 0, 50, 27, C.yellow) + solid(50, 73, 50, 100, C.yellow) + solid(0, 50, 27, 50, C.yellow) + solid(73, 50, 100, 50, C.yellow);
-    s += rect(50, 71, 20, 4, C.white) + rect(30, 25, 20, 4, C.white) + rect(25, 50, 4, 20, C.white) + rect(71, 30, 4, 20, C.white);
-    var box = boxPts(34.5, 34.5, 65.5, 65.5);
-    s += hatch(box, 45, 6.3, C.yellow, 1.7, 3.15) + hatch(box, -45, 6.3, C.yellow, 1.7, 3.15);
-    s += rect(34.5, 34.5, 31, 31, 'none', { stroke: C.yellow, sw: 2.4 });
-    s += car(60, 16.5, 21, { c: C.red });
-    s += car(60, 88, 21, { me: true });
-    s += signal(80.5, 84.5, 0.72, 'g');
+    // crossroads: north-south road x 30..70, east-west road y 42..74, box over the junction
+    var s = asphalt(30, 0, 70, 100) + asphalt(0, 42, 100, 74);
+    s += block(-10, -10, 30, 42, [0, 0, 6, 0]) + block(70, -10, 110, 42, [0, 0, 0, 6]) +
+      block(-10, 74, 30, 110, [0, 6, 0, 0]) + block(70, 74, 110, 110, [6, 0, 0, 0]);
+    s += solid(50, 0, 50, 39, C.yellow) + solid(50, 77, 50, 100, C.yellow) + solid(0, 58, 27, 58, C.yellow) + solid(73, 58, 100, 58, C.yellow);
+    s += rect(50, 75.5, 20, 4, C.white) + rect(30, 36.5, 20, 4, C.white) + rect(25.5, 58, 4, 16, C.white) + rect(70.5, 42, 4, 16, C.white);
+    var box = boxPts(33.5, 45, 66.5, 71);
+    s += hatch(box, 45, 6.1, C.yellow, 1.7, 2) + hatch(box, -45, 6.1, C.yellow, 1.7, 2);
+    s += rect(33.5, 45, 33, 26, 'none', { stroke: C.yellow, sw: 2.4 });
+    s += car(60, 13.5, 18, { c: C.red }) + car(60, 34.3, 18, { c: C.blue });
+    s += car(60, 90, 18, { me: true });
+    s += signal(80.5, 87, 0.7, 'g');
     return tile(s, label);
   });
 
@@ -658,7 +657,7 @@
     var dia = [[50, 97], [61, 62], [50, 27], [39, 62]];
     s += hatch(dia, -45, 4.6, C.white, 1.8);
     s += poly(dia, 'none', { stroke: C.white, sw: LW });
-    s += solid(50, 100, 50, 97, C.yellow) ;
+    s += solid(50, 100, 50, 97, C.yellow);
     s += solid(39, 29, 39, 0, C.yellow) + broken(61, 29, 61, 0, C.white, 3);
     s += laneArrow('left', 50, 25, 0.36);
     return tile(s, label);
@@ -695,7 +694,6 @@
     s += rect(47.6, 37.2, 27, 21.6, 'none', { stroke: C.yellow, sw: 2.6 });
     s += car(61, 17, 22, { c: C.blue });
     s += car(61, 74, 22, { me: true });
-    s += car(29.5, 50, 22, { c: C.silver });
     return tile(s, label);
   });
 
@@ -713,7 +711,6 @@
     s += rect(68.8, 6, 14, 88, 'none', { stroke: C.white, sw: 2.2 });
     s += bus(75.8, 36, 50);
     s += rect(88.6, 22, 8.6, 30, '#6F8196', { rx: 1.2, stroke: '#A9B6C4', sw: 0.8 }) + rect(90.2, 24, 2, 26, '#4E5D6E');
-    s += car(24, 30, 23, { c: C.dark }) + car(56, 70, 23, { me: true });
     return tile(s, label);
   });
 

@@ -116,7 +116,7 @@
   function nightPanel(h) {
     return tile(FV.night) + lowBand(h - 14, '#18202E') + lowBand(h - 6, '#1E2738') + lowBand(h, '#0E131B');
   }
-  function tint(col, k) { return mix(FV.off, col, k == null ? 0.2 : k); }
+  function tint(col, k) { return mix(FV.off, col, k == null ? 0.16 : k); }
   function glow(cx, cy, r, col) { return circ(cx, cy, r * 1.62, col, { op: 0.15 }) + circ(cx, cy, r * 1.3, col, { op: 0.25 }); }
   function rays(cx, cy, r0, r1, col, angs, w) {
     return angs.map(function (a) {
@@ -142,11 +142,11 @@
     if (lit) s += glow(cx, cy, r, col);
     if (!o.arrow) {
       s += circ(cx, cy, r, lit ? col : tint(col));
-      s += circ(cx - r * 0.32, cy - r * 0.34, r * 0.34, '#FFFFFF', { op: lit ? 0.3 : 0.05 });
+      s += circ(cx - r * 0.32, cy - r * 0.34, r * 0.34, '#FFFFFF', { op: lit ? 0.3 : 0.035 });
     } else {
-      var a = r * 0.72;
-      s += circ(cx, cy, r, FV.face) + (lit ? circ(cx, cy, r, col, { op: 0.13 }) : '');
-      s += K.arrow(o.arrow, { x: cx - a, y: cy - a, w: 2 * a, h: 2 * a, rot: o.rot, fill: lit ? col : tint(col, 0.3),
+      var a = r * 0.76;
+      s += circ(cx, cy, r, FV.face) + (lit ? circ(cx, cy, r, col, { op: 0.1 }) : '');
+      s += K.arrow(o.arrow, { x: cx - a, y: cy - a, w: 2 * a, h: 2 * a, rot: o.rot, fill: lit ? col : tint(col, 0.24),
         p: LAMP_ARROW[o.arrow] });
     }
     return s;
@@ -174,11 +174,11 @@
     var s = rect(30, 5, 40, 90, 5, FV.housing, { stroke: FV.edge, sw: 1.3 }), fl = '';
     [[9.5, FV.red, top, 'person-standing'], [51.5, FV.green, bottom, 'person-walk']].forEach(function (f, i) {
       var y = f[0], col = f[1], lit = f[2], fx = 34.5, fw = 31, fh = 39;
+      if (lit) s += rect(fx - 4, y - 4, fw + 8, fh + 8, 8, col, { op: 0.13 }) + rect(fx - 2, y - 2, fw + 4, fh + 4, 5.5, col, { op: 0.2 });
       s += rect(fx - 1.2, y - 2.6, fw + 2.4, 3, 1.2, FV.visor);
-      if (lit) s += rect(fx - 3.5, y - 3.5, fw + 7, fh + 7, 7, col, { op: 0.16 }) + rect(fx - 1.6, y - 1.6, fw + 3.2, fh + 3.2, 5, col, { op: 0.22 });
-      s += rect(fx, y, fw, fh, 3.5, FV.face) + (lit ? rect(fx, y, fw, fh, 3.5, col, { op: 0.12 }) : '');
-      var gh = 31, box = f[3] === 'person-walk' ? { x: 50 - 9.4, y: y + 4, w: 18.8, h: gh } : { x: 50 - 6, y: y + 4, w: 12, h: gh };
-      box.fill = lit ? col : tint(col, 0.3);
+      s += rect(fx, y, fw, fh, 3.5, FV.face) + (lit ? ell(50, y + fh / 2, 11, 16, col, { op: 0.1 }) : '');
+      var box = f[3] === 'person-walk' ? { x: 50 - 9.6, y: y + 3.8, w: 19.2, h: 31.5 } : { x: 50 - 6.2, y: y + 3.8, w: 12.4, h: 31.5 };
+      box.fill = lit ? col : tint(col, 0.22);
       s += K.glyph(f[3], box);
       if (flash && i === 1 && lit) fl += rays(50, y + fh / 2, 21, 27, col, SIDE, 2.4);
     });
@@ -232,10 +232,10 @@
   // viewer's left (vl) and on the viewer's right (vr): 0 = pointing right, 90 = down, -90 = up, 180 = left.
   // Front view: the officer's RIGHT arm is on the viewer's LEFT. Rear view: his right arm is on the viewer's right.
   var OFC = {
-    day: { skin: '#C68E62', skinD: '#A2704B', palm: '#E6BA94', hair: '#2B231E', cap: '#27324A', capBand: '#11161F',
+    day: { skin: '#C68E62', skinD: '#A2704B', palm: '#E6BA94', hair: '#2B231E', cap: '#C4B58F', capL: '#6B614C', capBand: '#1B212C',
       peak: '#0A0D12', badge: '#D9B978', shirt: '#D2C4A0', shirtD: '#B3A580', tie: '#2C3444', vest: '#C9DB3C',
       band: '#E8EDF0', belt: '#23262C', trousers: '#7B7257', shoe: '#121418', line: '#0E1219', eye: '#2A1D16' },
-    night: { skin: '#8E6547', skinD: '#74523A', palm: '#A87F5F', hair: '#1C1714', cap: '#1C2535', capBand: '#0C1017',
+    night: { skin: '#8E6547', skinD: '#74523A', palm: '#A87F5F', hair: '#1C1714', cap: '#877F68', capL: '#3E392D', capBand: '#10141B',
       peak: '#07090D', badge: '#A8905E', shirt: '#958C74', shirtD: '#7A735F', tie: '#1E2430', vest: '#A8BA34',
       band: '#F4F7F9', belt: '#17191E', trousers: '#4F4A3A', shoe: '#0B0C0F', line: '#06080C', eye: '#1A120E' }
   };
@@ -247,17 +247,17 @@
   function handAt(W, a, c, side) {
     var kind = a.hand || 'relaxed';
     if (kind === 'lamp') return lampAt(W, a, c);
-    var ang = a.ha == null ? a.a2 : a.ha, th = a.thumb || -side, s = '', w = kind === 'relaxed' ? 2.7 : 3.2;
+    var ang = a.ha == null ? a.a2 : a.ha, th = a.thumb || -side, s = '', w = kind === 'relaxed' ? 2.6 : 3.3;
     if (kind !== 'relaxed') {
-      s += ell(th * 3.1, -3.3, 1.5, 2.8, c.skinD, { stroke: c.line, sw: 0.45,
-        tf: 'rotate(' + n(th * 24) + ' ' + n(th * 3.1) + ' -3.3)' });
+      s += ell(th * 3.5, -3.9, 1.45, 3, c.skin, { stroke: c.line, sw: 0.45,
+        tf: 'rotate(' + n(th * 34) + ' ' + n(th * 3.5) + ' -3.9)' });
     }
-    s += path('M' + n(-w) + ',0.8L' + n(-w) + ',-5.8Q' + n(-w) + ',-9.8 0,-9.8Q' + n(w) + ',-9.8 ' + n(w) + ',-5.8L' + n(w) + ',0.8Z',
-      c.skin, { stroke: c.line, sw: 0.45 });
+    s += path('M' + n(-w * 0.82) + ',0.9L' + n(-w) + ',-5.4L' + n(-w) + ',-7.9Q' + n(-w) + ',-10.3 ' + n(-w + 2.1) + ',-10.3H' +
+      n(w - 2.1) + 'Q' + n(w) + ',-10.3 ' + n(w) + ',-7.9L' + n(w) + ',-5.4L' + n(w * 0.82) + ',0.9Z', c.skin, { stroke: c.line, sw: 0.45 });
     if (kind === 'palm') {
-      s += ell(0, -3.2, 2.15, 2.6, c.palm) + stroke('M-1.1,-9.2V-6.3M1.1,-9.2V-6.3', c.skinD, 0.5);
+      s += ell(0, -3.3, 2.2, 2.7, c.palm) + stroke('M-1.65,-9.7V-6.7M0,-9.9V-6.7M1.65,-9.7V-6.7', c.skinD, 0.42);
     } else if (kind === 'back') {
-      s += stroke('M-2.3,-5.4Q0,-6.2 2.3,-5.4', c.skinD, 0.55) + stroke('M-1.1,-9.2V-6.6M1.1,-9.2V-6.6', c.skinD, 0.45);
+      s += stroke('M-2.5,-5.6Q0,-6.5 2.5,-5.6', c.skinD, 0.55) + stroke('M-1.65,-9.7V-6.9M0,-9.9V-6.9M1.65,-9.7V-6.9', c.skinD, 0.42);
     }
     return grp(s, 'translate(' + n(W[0]) + ' ' + n(W[1]) + ') rotate(' + n(ang + 90) + ')');
   }
@@ -306,11 +306,12 @@
       s += path('M-7.3,10.5L7.3,10.5C7.6,15.6 7.1,20 4.7,22Q0,23.8 -4.7,22C-7.1,20 -7.6,15.6 -7.3,10.5Z', c.hair);
     }
     // peaked cap
-    s += path('M-8.3,9.7C-10.2,7.2 -12.4,3.6 -11.5,2C-10.4,0.2 -4.4,0 0,0C4.4,0 10.4,0.2 11.5,2C12.4,3.6 10.2,7.2 8.3,9.7Z', c.cap);
+    s += path('M-8.3,9.7C-10.2,7.2 -12.4,3.6 -11.5,2C-10.4,0.2 -4.4,0 0,0C4.4,0 10.4,0.2 11.5,2C12.4,3.6 10.2,7.2 8.3,9.7Z', c.cap,
+      { stroke: c.capL, sw: 0.7, join: 'round' });
     s += rect(-8.7, 7.2, 17.4, 3.5, 0.9, c.capBand);
     if (!rear) {
       s += path('M-9,10.1Q0,13.9 9,10.1L8.4,12.1Q0,15.9 -8.4,12.1Z', c.peak);
-      s += circ(0, 4.4, 2.3, c.badge) + circ(0, 4.4, 1.05, c.cap);
+      s += circ(0, 4.3, 2.4, c.badge) + circ(0, 4.3, 1.1, c.capL);
     }
     // arms: ghost positions first, then the real arms
     (o.ghosts || []).forEach(function (g) { s += drawArm(g.side, g, c); });
@@ -483,16 +484,18 @@
     return pic(dusk(80) + head(50, 7.3, R3(1, true)), label);
   });
   reg('tl-flashing-amber-fixed', 'ضوء أصفر وامض ثابت على عمود', function (o, label) {
-    var s = dusk(70);
-    // roundabout entry in the background: road to a kerbed island with a low planted mound
-    s += path('M40,70L60,70L78,100H22Z', FV.road);
-    s += ell(50, 70.5, 22, 3.6, '#8C8062') + ell(50, 70.2, 18, 2.6, '#6E7A55') + ell(50, 71.4, 22.6, 3.8, 'none', { stroke: FV.pole, sw: 0.8 });
-    s += line(44, 76, 56, 76, FV.white, 1, { dash: '2.4 2', cap: 'butt' });
-    // the pole and the single-lamp housing
-    s += rect(64.5, 46, 4.6, 50, 1, FV.pole) + rect(67.5, 46, 1.6, 50, 0, FV.poleD) + rect(62.5, 94, 8.6, 3, 1, FV.poleD);
-    s += rect(52, 38.5, 16, 3.2, 1, FV.poleD);
-    s += rect(36, 17, 32, 32, 6, FV.housing, { stroke: FV.edge, sw: 1.3 });
-    s += lamp(52, 33, 11.5, FV.amber, true) + rays(52, 33, 17, 23.5, FV.amber, ALL8.filter(function (a) { return a !== 45 && a !== 90; }), 2.4);
+    // road entry with a broken give-way line; the single lamp stands on its own pole on the verge at the right
+    var vx = 40, vy = 56, s = dusk(62);
+    function xl(y) { return vx - vx * (y - vy) / (88 - vy); }
+    function xr(y) { return vx + (70 - vx) * (y - vy) / (100 - vy); }
+    s += path('M' + n(xl(62)) + ',62L' + n(xr(62)) + ',62L70,100H8A8,8 0 0 1 0,92V88Z', FV.road);
+    s += line(xr(62), 62, 70, 100, FV.pole, 1.4, { cap: 'butt' });
+    s += line(xl(84) + 2, 84, xr(84) - 2, 84, FV.white, 1.7, { dash: '3.4 2.6', cap: 'butt' });
+    s += rect(76, 22, 4.6, 73, 1, FV.pole) + rect(79, 22, 1.6, 73, 0, FV.poleD) + rect(75.3, 20.4, 6, 2.6, 1, FV.poleD) +
+      rect(73.4, 93, 9.8, 3.2, 1, FV.poleD);
+    s += rect(64, 25.2, 13, 2.6, 0.8, FV.poleD) + rect(64, 38.2, 13, 2.6, 0.8, FV.poleD);
+    s += rect(34, 17, 32, 32, 6, FV.housing, { stroke: FV.edge, sw: 1.3 });
+    s += lamp(50, 33, 11.5, FV.amber, true) + rays(50, 33, 17, 23.5, FV.amber, ALL8, 2.4);
     return pic(s, label);
   });
   reg('tl-green-arrow', 'السهم الأخضر', function (o, label) {
@@ -647,161 +650,159 @@
   });
 
   reg('ev-highway-move-right', 'مركبة طوارئ خلفك على طريق رئيسي', function (o, label) {
-    var m = 3.8, lw = 3.6 * m, x0 = 21.9, xa = x0 + m, x1 = xa + lw, x2 = x1 + lw, x3 = x2 + lw, xr = x3 + 3 * m;
+    var m = 4.2, lw = 3.6 * m, x0 = 50 - 14.6 * m / 2, xa = x0 + 0.8 * m, x1 = xa + lw, x2 = x1 + lw, x3 = x2 + lw, xr = x3 + 3 * m;
     var s = tile(TD.sand);
     s += rect(x0, 0, xr - x0, 100, 0, TD.shoul) + rect(xa, 0, x3 - xa, 100, 0, TD.asph);
     s += vLines([xa], TD.yellow, 1.3) + vLines([x3], TD.white, 1.3) + vLines([x1, x2], TD.white, 1.2, '8 10');
     var cl = xa + lw / 2, cm = x1 + lw / 2, cr = x2 + lw / 2;
-    // ambulance behind in the left lane
-    s += place(ambulance(), cl, 84.5, 0, m);
-    // our car leaves the left lane for the middle lane, car ahead moves from the middle to the right lane
-    s += place(car(null, { me: true, ind: 'R' }), cl + 5.4, 56, 16, m);
-    s += arrowC([cl + 8.6, 45], [cl + 10.6, 38.5], [cm, 38], [cm, 30], TD.gold, { sw: 2 });
-    s += place(car(PAINT.blue, { ind: 'R' }), cm + 4.4, 26, 15, m);
-    s += arrowC([cm + 7.4, 15.4], [cm + 9.2, 9.5], [cr, 9.4], [cr, 3], TD.other, { sw: 1.8 });
+    // the ambulance comes up the left lane; our car moves to the middle lane, the car ahead to the right lane;
+    // the hard shoulder (right) stays empty
+    s += place(ambulance(), cl, 85.4, 0, m);
+    s += place(car(null, { me: true, ind: 'R' }), cl + 6, 60.5, 17, m);
+    s += arrowC([cl + 9.7, 48.3], [cl + 11.4, 43], [cm, 42], [cm, 34.5], TD.gold, { sw: 2 });
+    s += place(car(PAINT.blue, { ind: 'R' }), cm + 6.4, 23, 17, m);
+    s += arrowC([cm + 10.1, 11.4], [cm + 11.6, 7.2], [cr, 7], [cr, 2], TD.other, { sw: 1.8 });
     return pic(s, label);
   });
 
   reg('ev-internal-road', 'مركبة طوارئ في طريق داخلي مزدحم', function (o, label) {
-    var m = 5, xl = 32, xr = 68, s = tile(TD.pave);
+    var m = 5.4, lw = 3.6 * m, xl = 50 - lw, xr = 50 + lw, s = tile(TD.pave);
     s += rect(xl, 0, xr - xl, 100, 0, TD.asph) + rect(xl - 1.3, 0, 1.3, 100, 0, TD.kerb) + rect(xr, 0, 1.3, 100, 0, TD.kerb);
-    s += vLines([50], TD.white, 1.1, '8 9');
-    var L = 39, R = 61;
-    s += place(car(PAINT.red), L, 16, -6, m) + place(car(PAINT.silver), R, 18, 6, m);
-    s += place(car(PAINT.green), L, 45, -6, m) + place(car(null, { me: true }), R, 47, 6, m);
-    s += arrowPath([[L - 6.2, 12], [L - 10.6, 8.6]], TD.other, { sw: 1.6 }) + arrowPath([[L - 6.2, 41], [L - 10.6, 37.6]], TD.other, { sw: 1.6 });
-    s += arrowPath([[R + 6.2, 14], [R + 10.6, 10.6]], TD.other, { sw: 1.6 }) + arrowPath([[R + 6.2, 43], [R + 10.6, 39.6]], TD.gold, { sw: 1.9 });
-    s += place(ambulance(), 50, 81, 0, m);
-    s += arrowPath([[50, 64], [50, 5]], TD.other, { sw: 1.5, dash: '4 3' });
+    var L = 50 - lw / 2 - 2.2, R = 50 + lw / 2 + 2.2;
+    // queued cars edge outward (left lane to the left, right lane to the right), opening a corridor in the middle
+    s += place(car(PAINT.red), L, 15, -6, m) + place(car(PAINT.silver), R, 16, 6, m);
+    s += place(car(PAINT.green), L, 45, -6, m) + place(car(null, { me: true }), R, 46, 6, m);
+    [[L, 15, -1, TD.other], [R, 16, 1, TD.other], [L, 45, -1, TD.other], [R, 46, 1, TD.gold]].forEach(function (c) {
+      var x = c[0] + c[2] * 7, y = c[1] - 5;
+      s += arrowPath([[x, y], [x + c[2] * 6.4, y - 6.4]], c[3], { sw: c[3] === TD.gold ? 2 : 1.7 });
+    });
+    s += arrowPath([[50, 62.5], [50, 3]], TD.other, { sw: 1.6, dash: '4 3' });
+    s += place(ambulance(), 50, 80.5, 0, m);
     return pic(s, label);
   });
 
   reg('ev-at-junction', 'مركبة طوارئ عند التقاطع', function (o, label) {
-    var m = 4.2, w = 7.2 * m, a = 50 - w / 2, b = 50 + w / 2, s = tile(TD.pave);
+    var m = 5, w = 7.2 * m, a = 50 - w / 2, b = 50 + w / 2, k = 1.3, s = tile(TD.pave);
     s += rect(a, 0, w, 100, 0, TD.asph) + rect(0, a, 100, w, 0, TD.asph);
     // kerbs along the four corners
-    [[0, a - 1.2, a - 1.2, 1.2], [b + 1.2, a - 1.2, 100 - b - 1.2, 1.2], [0, b, a - 1.2, 1.2], [b + 1.2, b, 100 - b - 1.2, 1.2]].forEach(function (r) {
+    [[0, a - k, a - k, k], [b + k, a - k, 100 - b - k, k], [0, b, a - k, k], [b + k, b, 100 - b - k, k],
+      [a - k, 0, k, a], [b, 0, k, a], [a - k, b, k, 100 - b], [b, b, k, 100 - b]].forEach(function (r) {
       s += rect(r[0], r[1], r[2], r[3], 0, TD.kerb);
     });
-    [[a - 1.2, 0, 1.2, a], [b, 0, 1.2, a], [a - 1.2, b, 1.2, 100 - b], [b, b, 1.2, 100 - b]].forEach(function (r) {
-      s += rect(r[0], r[1], r[2], r[3], 0, TD.kerb);
-    });
-    // centre lines on the approaches and stop lines
-    s += line(50, 0, 50, a - 3.5, TD.yellow, 1.2, { cap: 'butt' }) + line(50, b + 3.5, 50, 100, TD.yellow, 1.2, { cap: 'butt' });
-    s += line(0, 50, a - 3.5, 50, TD.yellow, 1.2, { cap: 'butt' }) + line(b + 3.5, 50, 100, 50, TD.yellow, 1.2, { cap: 'butt' });
-    s += line(50, b + 3.5, b, b + 3.5, TD.white, 1.8, { cap: 'butt' }) + line(a, a - 3.5, 50, a - 3.5, TD.white, 1.8, { cap: 'butt' });
-    s += line(b + 3.5, a, b + 3.5, 50, TD.white, 1.8, { cap: 'butt' }) + line(a - 3.5, 50, a - 3.5, b, TD.white, 1.8, { cap: 'butt' });
-    // signals: red for the bottom approach, green for the right approach
-    s += tdSignal(b + 6.5, b + 8.5, 'red') + tdSignal(b + 6.5, a - 9.5, 'green');
-    // ambulance crosses its stop line on red, its path dashed
+    // yellow centre lines on the approaches, white stop lines
+    var sl = 3.6;
+    s += line(50, 0, 50, a - sl, TD.yellow, 1.2, { cap: 'butt' }) + line(50, b + sl, 50, 100, TD.yellow, 1.2, { cap: 'butt' });
+    s += line(0, 50, a - sl, 50, TD.yellow, 1.2, { cap: 'butt' }) + line(b + sl, 50, 100, 50, TD.yellow, 1.2, { cap: 'butt' });
+    s += line(50, b + sl, b, b + sl, TD.white, 2, { cap: 'butt' }) + line(a, a - sl, 50, a - sl, TD.white, 2, { cap: 'butt' });
+    s += line(b + sl, a, b + sl, 50, TD.white, 2, { cap: 'butt' }) + line(a - sl, 50, a - sl, b, TD.white, 2, { cap: 'butt' });
+    // signals at the near right corners: red for the bottom approach, green for the right approach
+    s += tdSignal(b + 8.5, b + 12, 'red') + tdSignal(b + 8.5, a - 12, 'green');
+    // the ambulance crosses its stop line on red (path dashed); our car waits although its light is green
     var xn = 50 + w / 4, yw = 50 - w / 4;
-    s += arrowPath([[xn, 57], [xn, 4]], TD.other, { sw: 1.6, dash: '4 3' });
-    s += place(ambulance(), xn, 70, 0, m);
-    // our car waits on the right approach although its light is green
-    s += place(car(null, { me: true, brake: true }), b + 3.5 + 1.5 + 2.3 * m, yw, -90, m);
+    s += arrowPath([[xn, 60.5], [xn, 3]], TD.other, { sw: 1.7, dash: '4 3' });
+    s += place(ambulance(), xn, 78, 0, m);
+    s += place(car(null, { me: true, brake: true }), b + sl + 1.6 + 2.3 * m, yw, -90, m);
     return pic(s, label);
   });
 
   reg('ev-roundabout', 'مركبة طوارئ عند الدوار', function (o, label) {
-    var cx = 50, cy = 44, Ro = 31, Ri = 12, m = 2.64, hw = 9.5, s = tile(TD.pave);
-    // arms, then the circulating carriageway on top, then the island
-    s += rect(cx - hw, cy, 2 * hw, 100 - cy, 0, TD.asph) + rect(cx - hw, 0, 2 * hw, cy, 0, TD.asph);
-    s += rect(0, cy - hw, 100, 2 * hw, 0, TD.asph);
-    s += circ(cx, cy, Ro + 0.6, 'none', { stroke: TD.kerb, sw: 1.2 }) + circ(cx, cy, Ro, TD.asph);
-    // arm kerbs
-    [[cx - hw - 1.2, 0, 1.2, cy - 29.4], [cx + hw, 0, 1.2, cy - 29.4], [cx - hw - 1.2, cy + 29.4, 1.2, 100 - cy - 29.4],
-      [cx + hw, cy + 29.4, 1.2, 100 - cy - 29.4]].forEach(function (r) { s += rect(r[0], r[1], r[2], r[3], 0, TD.kerb); });
-    [[0, cy - hw - 1.2, cx - 29.4, 1.2], [0, cy + hw, cx - 29.4, 1.2], [cx + 29.4, cy - hw - 1.2, 100 - cx - 29.4, 1.2],
-      [cx + 29.4, cy + hw, 100 - cx - 29.4, 1.2]].forEach(function (r) { s += rect(r[0], r[1], r[2], r[3], 0, TD.kerb); });
-    // lane divider on the ring, give-way lines at the four entries, centre lines on the arms
-    s += circ(cx, cy, 21.5, 'none', { stroke: TD.white, sw: 0.9, dash: '3.2 3.2' });
-    s += line(cx, cy + Ro + 1, cx, 100, TD.white, 1, { cap: 'butt' }) + line(cx, 0, cx, cy - Ro - 1, TD.white, 1, { cap: 'butt' });
-    s += line(0, cy, cx - Ro - 1, cy, TD.white, 1, { cap: 'butt' }) + line(cx + Ro + 1, cy, 100, cy, TD.white, 1, { cap: 'butt' });
-    s += line(cx + 0.6, cy + Ro + 1.6, cx + hw, cy + Ro + 1.6, TD.white, 1.2, { dash: '1.8 1.4', cap: 'butt' });
-    s += line(cx + Ro + 1.6, cy - hw, cx + Ro + 1.6, cy - 0.6, TD.white, 1.2, { dash: '1.8 1.4', cap: 'butt' });
-    s += line(cx - hw, cy - Ro - 1.6, cx - 0.6, cy - Ro - 1.6, TD.white, 1.2, { dash: '1.8 1.4', cap: 'butt' });
-    s += line(cx - Ro - 1.6, cy + 0.6, cx - Ro - 1.6, cy + hw, TD.white, 1.2, { dash: '1.8 1.4', cap: 'butt' });
-    s += circ(cx, cy, Ri + 0.7, TD.kerb) + circ(cx, cy, Ri, TD.sand) + circ(cx, cy, Ri * 0.55, '#B7A276');
-    // car already on the ring (outer lane, anticlockwise) leaves calmly by the nearest exit, signalling right
-    var ph = 105, ro = 26.25, pc = [cx + ro * Math.cos(ph * Math.PI / 180), cy - ro * Math.sin(ph * Math.PI / 180)];
-    var hd = [-Math.sin(ph * Math.PI / 180), -Math.cos(ph * Math.PI / 180)], hdeg = Math.atan2(hd[1], hd[0]) * 180 / Math.PI;
+    var cx = 50, cy = 42, Ro = 32, Ri = 12, hw = 10, m = (Ro - Ri) / 7.2, k = 1.3, s = tile(TD.pave);
+    var ya = Math.sqrt(Ro * Ro - hw * hw);            // where an arm edge meets the ring
+    // arms, the circulating carriageway, kerbs, then the island
+    s += rect(cx - hw, 0, 2 * hw, 100, 0, TD.asph) + rect(0, cy - hw, 100, 2 * hw, 0, TD.asph);
+    s += circ(cx, cy, Ro + k / 2, 'none', { stroke: TD.kerb, sw: k }) + circ(cx, cy, Ro, TD.asph);
+    [[cx - hw - k, 0, k, cy - ya], [cx + hw, 0, k, cy - ya], [cx - hw - k, cy + ya, k, 100 - cy - ya], [cx + hw, cy + ya, k, 100 - cy - ya],
+      [0, cy - hw - k, cx - ya, k], [0, cy + hw, cx - ya, k], [cx + ya, cy - hw - k, 100 - cx - ya, k], [cx + ya, cy + hw, 100 - cx - ya, k]
+    ].forEach(function (r) { s += rect(r[0], r[1], r[2], r[3], 0, TD.kerb); });
+    // lane divider on the ring, centre lines on the arms, broken give-way lines at the four entries
+    s += circ(cx, cy, (Ro + Ri) / 2, 'none', { stroke: TD.white, sw: 0.9, dash: '3.2 3.2' });
+    s += line(cx, cy + Ro + 1, cx, 100, TD.white, 1.1, { cap: 'butt' }) + line(cx, 0, cx, cy - Ro - 1, TD.white, 1.1, { cap: 'butt' });
+    s += line(0, cy, cx - Ro - 1, cy, TD.white, 1.1, { cap: 'butt' }) + line(cx + Ro + 1, cy, 100, cy, TD.white, 1.1, { cap: 'butt' });
+    var g = Ro + 1.8, gd = { dash: '1.9 1.5', cap: 'butt' };
+    s += line(cx + 0.7, cy + g, cx + hw, cy + g, TD.white, 1.3, gd) + line(cx + g, cy - hw, cx + g, cy - 0.7, TD.white, 1.3, gd);
+    s += line(cx - hw, cy - g, cx - 0.7, cy - g, TD.white, 1.3, gd) + line(cx - g, cy + 0.7, cx - g, cy + hw, TD.white, 1.3, gd);
+    s += circ(cx, cy, Ri + 0.8, TD.kerb) + circ(cx, cy, Ri, TD.sand) + circ(cx, cy, Ri * 0.5, '#B7A276');
+    // a car already on the ring (outer lane, anticlockwise) leaves calmly by the nearest exit, signalling right
+    var ph = 104, ro = Ri + 0.75 * (Ro - Ri), rad = ph * Math.PI / 180, pc = [cx + ro * Math.cos(rad), cy - ro * Math.sin(rad)];
+    var hd = [-Math.sin(rad), -Math.cos(rad)], hdeg = Math.atan2(hd[1], hd[0]) * 180 / Math.PI;
     s += place(car(PAINT.blue, { ind: 'R' }), pc[0], pc[1], hdeg + 90, m);
-    var f0 = add(pc, hd, 7.4);
-    s += arrowC(f0, add(f0, hd, 8.5), [19, cy - hw / 2], [5, cy - hw / 2], TD.ok, { sw: 1.8 });
+    var f0 = add(pc, hd, 2.3 * m + 1.4);
+    s += arrowC(f0, add(f0, hd, 9), [20, cy - hw / 2], [4, cy - hw / 2], TD.ok, { sw: 1.9 });
     // our car waits at the right entry, the ambulance enters from the bottom
-    s += place(car(null, { me: true, brake: true }), cx + Ro + 3 + 2.3 * m, cy - hw / 2, -90, m);
-    s += place(ambulance(), cx + hw / 2, cy + Ro + 7.2, 0, m);
+    s += place(car(null, { me: true, brake: true }), cx + g + 1 + 2.3 * m, cy - hw / 2, -90, m);
+    s += place(ambulance(), cx + hw / 2, cy + Ro + 3 * m + 0.6, 0, m);
     return pic(s, label);
   });
 
-  function busRoad(s, x0, x1) { return s; }
-  void busRoad;
-
   reg('ev-school-bus-single', 'الحافلة المدرسية وذراع قف: طريق غير مقسوم', function (o, label) {
-    var m = 3.1, lw = 3.6 * m, xl = 50 - lw, xr = 50 + lw, s = tile(TD.pave);
+    var m = 3.2, lw = 3.6 * m, xl = 50 - lw, xr = 50 + lw, s = tile(TD.pave);
     s += rect(xl, 0, xr - xl, 100, 0, TD.asph) + rect(xl - 1.3, 0, 1.3, 100, 0, TD.kerb) + rect(xr, 0, 1.3, 100, 0, TD.kerb);
     s += vLines([50], TD.yellow, 1.1, '7 7');
-    var bx = xr - 0.9 - 1.25 * m, bTop = 34, bBot = bTop + 10.6 * m;
-    // oncoming car stopped 5 m before the bus, our car stopped 5 m behind it
-    s += place(car(PAINT.blue, { brake: true }), 50 - lw / 2, bTop - 5 * m - 2.3 * m, 180, m);
-    s += place(car(null, { me: true, brake: true }), 50 + lw / 2, bBot + 5 * m + 2.3 * m, 0, m);
+    var bx = xr - 0.3 * m - 1.25 * m, bTop = 2.2 + 9.6 * m, bBot = bTop + 10.6 * m;
+    // oncoming car stopped 5 m before the bus, our car stopped 5 m behind it (both directions stop)
+    s += place(car(PAINT.blue, { brake: true }), 50 - lw / 2, bTop - 7.3 * m, 180, m);
+    s += place(car(null, { me: true, brake: true }), 50 + lw / 2, bBot + 7.3 * m, 0, m);
     s += place(schoolBus(), bx, (bTop + bBot) / 2, 0, m);
-    s += stopArm(bx - 1.25 * m, bTop + 1.9 * m, bx - 1.25 * m - 7, 4.6);
-    s += dimV(xl - 5, bTop - 5 * m, bTop) + dimV(xr + 5, bBot, bBot + 5 * m);
+    s += stopArm(bx - 1.25 * m, bTop + 1.9 * m, bx - 1.25 * m - 7.4, 4.8);
+    s += dimV(xl - 6, bTop - 5 * m, bTop) + dimV(xr + 6, bBot, bBot + 5 * m);
     return pic(s, label);
   });
 
   reg('ev-school-bus-dual', 'الحافلة المدرسية وذراع قف: طريق مقسوم', function (o, label) {
-    var m = 3.1, lw = 3.6 * m, med = 2 * m, a1 = 50 - med / 2, b1 = 50 + med / 2, xl = a1 - 2 * lw, xr = b1 + 2 * lw, s = tile(TD.pave);
+    var m = 4.4, lw = 3.6 * m, med = 2 * m, a1 = 50 - med / 2, b1 = 50 + med / 2, xl = a1 - 2 * lw, xr = b1 + 2 * lw, s = tile(TD.pave);
     s += rect(xl, 0, xr - xl, 100, 0, TD.asph) + rect(xl - 1.3, 0, 1.3, 100, 0, TD.kerb) + rect(xr, 0, 1.3, 100, 0, TD.kerb);
-    s += rect(a1, 0, med, 100, 0, TD.kerb) + rect(a1 + 1.1, 0, med - 2.2, 100, 0, TD.sand);
-    s += vLines([a1 - 1.2, b1 + 1.2], TD.yellow, 0.9) + vLines([a1 - lw, b1 + lw], TD.white, 1.1, '7 7');
-    var bx = xr - 0.9 - 1.25 * m, bTop = 16, bBot = bTop + 10.6 * m, yStop = bBot + 5 * m + 2.3 * m;
+    s += rect(a1, 0, med, 100, 0, TD.kerb) + rect(a1 + 1.2, 0, med - 2.4, 100, 0, TD.sand);
+    s += vLines([a1 - 1.3, b1 + 1.3], TD.yellow, 1) + vLines([a1 - lw, b1 + lw], TD.white, 1.2, '8 9');
+    var bx = xr - 0.3 * m - 1.25 * m, bTop = 5.2, bBot = bTop + 10.6 * m, yStop = bBot + 7.3 * m;
+    // both lanes behind the bus stop 5 m back
     s += place(car(null, { me: true, brake: true }), b1 + 1.5 * lw, yStop, 0, m);
     s += place(car(PAINT.red, { brake: true }), b1 + lw / 2, yStop, 0, m);
     s += place(schoolBus(), bx, (bTop + bBot) / 2, 0, m);
-    s += stopArm(bx - 1.25 * m, bTop + 1.9 * m, bx - 1.25 * m - 7, 4.6);
-    s += dimV(xr + 5, bBot, bBot + 5 * m);
-    // the other carriageway keeps moving down
-    s += place(car(PAINT.silver), a1 - lw / 2, 22, 180, m) + arrowPath([[a1 - lw / 2, 31], [a1 - lw / 2, 45]], TD.ok, { sw: 1.7 });
-    s += place(car(PAINT.green), a1 - 1.5 * lw, 62, 180, m) + arrowPath([[a1 - 1.5 * lw, 71], [a1 - 1.5 * lw, 85]], TD.ok, { sw: 1.7 });
+    s += stopArm(bx - 1.25 * m, bTop + 1.9 * m, bx - 1.25 * m - 8.4, 5.4);
+    s += dimV(xr + 6, bBot, bBot + 5 * m);
+    // beyond the median the other direction keeps moving
+    s += place(car(PAINT.silver), a1 - lw / 2, 17, 180, m) + arrowPath([[a1 - lw / 2, 29], [a1 - lw / 2, 45]], TD.ok, { sw: 2 });
+    s += place(car(PAINT.green), a1 - 1.5 * lw, 62, 180, m) + arrowPath([[a1 - 1.5 * lw, 74], [a1 - 1.5 * lw, 90]], TD.ok, { sw: 2 });
     return pic(s, label);
   });
 
   reg('ev-service-amber', 'ضوء أصفر وامض على مركبة أو معدات في الطريق', function (o, label) {
-    var m = 4, lw = 3.6 * m, x0 = 20.4, xa = x0 + m, x1 = xa + lw, x2 = x1 + lw, x3 = x2 + lw, xr = x3 + 3 * m, s = tile(TD.sand);
+    var m = 5, lw = 3.6 * m, x0 = 50 - 14.3 * m / 2, xa = x0 + m, x1 = xa + lw, x2 = x1 + lw, x3 = x2 + lw, xr = x3 + 2.5 * m;
+    var s = tile(TD.sand);
     s += rect(x0, 0, xr - x0, 100, 0, TD.shoul) + rect(xa, 0, x3 - xa, 100, 0, TD.asph);
     s += vLines([xa], TD.yellow, 1.3) + vLines([x3], TD.white, 1.3) + vLines([x1, x2], TD.white, 1.2, '8 10');
     var cr = x2 + lw / 2, cm = x1 + lw / 2;
-    s += place(workTruck(), cr, 22, 0, m);
-    for (var i = 0; i < 6; i++) { var t = i / 5; s += cone(x3 - 2.4 - (lw - 4.6) * t, 92 - 40 * t, 1.5); }
-    s += place(car(null, { me: true, ind: 'L' }), cm + 5.2, 80, -16, m);
-    s += arrowC([cm + 2.4, 68.6], [cm + 0.6, 62], [cm, 58], [cm, 49], TD.gold, { sw: 2 });
+    // maintenance truck stopped in the right lane, cones tapering in before it, our car moves to the middle lane
+    s += place(workTruck(), cr, 23, 0, m);
+    for (var i = 0; i < 6; i++) { var t = i / 5; s += cone(x3 - 3 - (lw - 6.5) * t, 97 - 42 * t, 1.9); }
+    s += place(car(null, { me: true, ind: 'L' }), cm + 6.5, 81, -16, m);
+    s += arrowC([cm + 2.6, 66.8], [cm + 1, 61.5], [cm, 59.5], [cm, 50], TD.gold, { sw: 2.1 });
     return pic(s, label);
   });
 
   reg('ev-hazard-lights', 'أضواء التحذير (الفلاشر) في سيارة أمامك', function (o, label) {
-    var s = dusk(48);
-    // carriageway on the left, hard shoulder on the right of the solid edge line
-    s += path('M22,48L36,48L52,100H8A8,8 0 0 1 0,92V60Z', FV.road);
-    s += path('M36,48L42,48L100,80V92A8,8 0 0 1 92,100H52Z', '#282D36');
-    s += line(36, 48, 52, 100, FV.white, 1.3, { cap: 'butt' }) + line(29, 48, 5, 90, FV.white, 1.1, { dash: '5 5', cap: 'butt' });
+    var s = dusk(46);
+    // carriageway on the left, hard shoulder to the right of the solid edge line
+    s += path('M18,46L32,46L40,100H8A8,8 0 0 1 0,92V58Z', FV.road);
+    s += path('M32,46L38,46L100,76V92A8,8 0 0 1 92,100H40Z', '#282D36');
+    s += line(32, 46, 40, 100, FV.white, 1.4, { cap: 'butt' }) + line(25, 46, 0, 85, FV.white, 1.1, { dash: '5 5', cap: 'butt' });
     // the stopped car, seen from behind
-    var cx = 70;
-    s += ell(cx, 90.5, 22, 2.8, '#000000', { op: 0.4 });
-    s += rect(cx - 18.5, 80, 8, 10.5, 1.8, '#101317') + rect(cx + 10.5, 80, 8, 10.5, 1.8, '#101317');
-    s += path('M' + (cx - 14) + ',55C' + (cx - 13) + ',52.6 ' + (cx - 11) + ',52 ' + (cx - 8) + ',52H' + (cx + 8) + 'C' + (cx + 11) + ',52 ' + (cx + 13) + ',52.6 ' + (cx + 14) + ',55L' + (cx + 18) + ',67H' + (cx - 18) + 'Z', '#A9B0BA');
-    s += path('M' + (cx - 11.6) + ',55.4H' + (cx + 11.6) + 'L' + (cx + 14.6) + ',65H' + (cx - 14.6) + 'Z', '#1B2230');
-    s += rect(cx - 20.5, 65.5, 41, 18, 4.5, '#B8BEC8', { stroke: '#7E858E', sw: 0.8 });
-    s += rect(cx - 7.5, 73.5, 15, 5.2, 1, '#F2F2EE', { stroke: '#7E858E', sw: 0.5 });
-    s += rect(cx - 20, 80, 40, 3.8, 1.8, '#8D939B');
-    // tail lamps: red part dark, amber indicators lit on both sides (hazard lights)
+    var cx = 67;
+    s += ell(cx, 92, 24, 3, '#000000', { op: 0.4 });
+    s += rect(cx - 20, 80, 8.4, 11.6, 2, '#101317') + rect(cx + 11.6, 80, 8.4, 11.6, 2, '#101317');
+    s += path('M' + n(cx - 15.5) + ',52.5C' + n(cx - 14.4) + ',49.6 ' + n(cx - 12.2) + ',49 ' + n(cx - 9) + ',49H' + n(cx + 9) + 'C' + n(cx + 12.2) +
+      ',49 ' + n(cx + 14.4) + ',49.6 ' + n(cx + 15.5) + ',52.5L' + n(cx + 19.6) + ',65.5H' + n(cx - 19.6) + 'Z', '#A9B0BA');
+    s += path('M' + n(cx - 12.6) + ',52.6H' + n(cx + 12.6) + 'L' + n(cx + 15.8) + ',63.4H' + n(cx - 15.8) + 'Z', '#1B2230');
+    s += rect(cx - 22.5, 64, 45, 20.5, 5, '#B8BEC8', { stroke: '#7E858E', sw: 0.8 });
+    s += rect(cx - 8, 73.4, 16, 5.6, 1, '#F2F2EE', { stroke: '#7E858E', sw: 0.5 });
+    s += rect(cx - 22, 80.4, 44, 4.2, 2, '#8D939B');
+    // tail lamps: red parts unlit, amber indicators lit on BOTH sides at once (hazard lights)
     [-1, 1].forEach(function (k) {
-      var xo = cx + k * 16.2, xa = cx + k * 18.2;
-      s += rect(xo - 3.6, 67.6, 7.2, 5, 1.2, '#7A1C1C');
-      s += circ(xa, 70.1, 6.4, FV.amber, { op: 0.2 }) + circ(xa, 70.1, 4.3, FV.amber, { op: 0.3 });
-      s += rect(xa - 2.4, 67.6, 4.8, 5, 1.2, FV.amber) + rect(xa - 1.6, 68.3, 2, 1.4, 0.6, '#FFFFFF', { op: 0.45 });
-      s += rays(xa, 70.1, 7.6, 11.2, FV.amber, k < 0 ? [205, 180, 155, 130] : [-25, 0, 25, 50], 2);
+      var xo = cx + k * 17.4, xa = cx + k * 19.6;
+      s += rect(xo - 4, 66.4, 8, 5.4, 1.3, '#7A1C1C');
+      s += circ(xa, 69.1, 7, FV.amber, { op: 0.18 }) + circ(xa, 69.1, 4.6, FV.amber, { op: 0.3 });
+      s += rect(xa - 2.6, 66.4, 5.2, 5.4, 1.3, FV.amber) + rect(xa - 1.8, 67.1, 2.2, 1.5, 0.6, '#FFFFFF', { op: 0.45 });
+      s += rays(xa, 69.1, 8, 11.8, FV.amber, k < 0 ? [205, 180, 155, 128] : [-25, 0, 25, 52], 2.1);
     });
     return pic(s, label);
   });
