@@ -33,7 +33,7 @@
     },
     {
      "id": "u01-priority",
-     "title": "قف وأفسح الطريق",
+     "title": "قف وأفسح والطريق الضيق",
      "kind": "lesson",
      "learn": {
       "signs": {
@@ -41,13 +41,20 @@
         "p-stop",
         "p-give-way",
         "w-stop-ahead",
-        "w-give-way-ahead"
+        "w-give-way-ahead",
+        "p-give-way-oncoming",
+        "p-priority-over-oncoming"
        ]
       },
       "markings": {
        "ids": [
         "mk-stop-line",
         "mk-give-way-line"
+       ]
+      },
+      "cards": {
+       "ids": [
+        "signbasics-card-014"
        ]
       }
      },
@@ -57,7 +64,9 @@
         "p-stop",
         "p-give-way",
         "w-stop-ahead",
-        "w-give-way-ahead"
+        "w-give-way-ahead",
+        "p-give-way-oncoming",
+        "p-priority-over-oncoming"
        ]
       },
       "markings": {
@@ -66,7 +75,7 @@
         "mk-give-way-line"
        ]
       },
-      "count": 6
+      "count": 8
      }
     },
     {
@@ -413,9 +422,6 @@
       "cards": {
        "topics": [
         "priority"
-       ],
-       "ids": [
-        "signbasics-card-014"
        ]
       },
       "signs": {
@@ -424,9 +430,7 @@
         "w-t-junction",
         "w-side-road-right",
         "w-side-road-left",
-        "w-staggered-junction",
-        "p-give-way-oncoming",
-        "p-priority-over-oncoming"
+        "w-staggered-junction"
        ]
       }
      },
@@ -442,9 +446,7 @@
         "w-t-junction",
         "w-side-road-right",
         "w-side-road-left",
-        "w-staggered-junction",
-        "p-give-way-oncoming",
-        "p-priority-over-oncoming"
+        "w-staggered-junction"
        ]
       },
       "scenarios": {
