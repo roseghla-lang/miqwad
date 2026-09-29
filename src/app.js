@@ -1157,7 +1157,7 @@
       '</section>';
   }
   function quickHTML() {
-    var ns = IX.signList.length, nsc = IX.scList.length, yl = yardList().length;
+    var ns = IX.signList.length, nsc = IX.scList.length, yl = yardList().filter(function (e) { return !isFreeYard(e); }).length;
     var q = [
       ['signs', 'sign', 'الإشارات', ns ? nf(ns, 'إشارة', 'إشارتين', 'إشارات') : 'قيد التجهيز'],
       ['flash', 'cards', 'بطاقات سريعة', 'اقلب واحفظ'],
@@ -2239,20 +2239,26 @@
           guides.map(function (g) { return yardGuideCard(g, false); }).join('') + '</div></section>';
         return h + '<button class="set-link" data-act="go" data-arg="journey">' + ic('route') + '<span>مشوار الرخصة خطوة بخطوة</span>' + ic('next') + '</button></div>';
       }
-      var groups = [['both', 'بامتحان دبي والشارقة'], ['dubai', 'بدبي'], ['sharjah', 'بالشارقة']];
+      // official test exercises first (grouped by emirate), then practice-only extras that are not in the real test
+      var official = list.filter(function (e) { return !isFreeYard(e); }), extras = list.filter(isFreeYard);
+      var groups = [['both', 'بامتحان دبي والشارقة'], ['dubai', 'بامتحان دبي بس'], ['sharjah', 'بامتحان الشارقة بس']];
+      function yxSec(title, note, its) {
+        return '<section class="sec"><div class="sec-h"><h2>' + title + '</h2><span class="sec-note">' + nf(its.length, 'تمرين', 'تمرينين', 'تمارين') + '</span></div>' +
+          (note ? '<p class="sec-sub">' + note + '</p>' : '') + '<div class="yx-list">' + its.map(yxCard).join('') + '</div></section>';
+      }
       groups.forEach(function (g) {
-        var its = list.filter(function (e) { return e.em === g[0]; });
-        if (!its.length) return;
-        h += '<section class="sec"><div class="sec-h"><h2>' + g[1] + '</h2><span class="sec-note">' + nf(its.length, 'تمرين', 'تمرينين', 'تمارين') + '</span></div><div class="yx-list">' +
-          its.map(function (e) {
-            var g = yardGuideFor(e.id);
-            return '<article class="yx"><div class="yx-h"><h3>' + esc(e.title) + '</h3>' + (isFreeYard(e) ? '' : yardChip(e.id)) + '</div>' + (e.desc ? '<p>' + esc(e.desc) + '</p>' : '') +
-              (g ? '<details class="guide guide-in"><summary>' + ic('list') + '<span>الخطوات</span></summary>' + yardGuideBody(g) + '</details>' : '') +
-              (isFreeYard(e) ? '<div class="yx-acts"><button class="btn btn-gold btn-sm" data-act="yardGo" data-arg="' + esc(e.id) + '|learn">' + ic('play') + 'تدرب بحرية</button></div></article>'
-              : '<div class="yx-acts"><button class="btn btn-ghost btn-sm" data-act="yardGo" data-arg="' + esc(e.id) + '|learn">' + ic('play') + 'تعلم</button>' +
-              '<button class="btn btn-gold btn-sm" data-act="yardGo" data-arg="' + esc(e.id) + '|test">' + ic('exam') + 'امتحني</button></div></article>');
-          }).join('') + '</div></section>';
+        var its = official.filter(function (e) { return e.em === g[0]; });
+        if (its.length) h += yxSec(g[1], '', its);
       });
+      if (extras.length) h += yxSec('تمارين إضافية', 'مش من الامتحان الرسمي، بس بتقوي تحكمك بالسيارة', extras);
+      function yxCard(e) {
+        var g = yardGuideFor(e.id);
+        return '<article class="yx"><div class="yx-h"><h3>' + esc(e.title) + '</h3>' + (isFreeYard(e) ? '' : yardChip(e.id)) + '</div>' + (e.desc ? '<p>' + esc(e.desc) + '</p>' : '') +
+          (g ? '<details class="guide guide-in"><summary>' + ic('list') + '<span>الخطوات</span></summary>' + yardGuideBody(g) + '</details>' : '') +
+          (isFreeYard(e) ? '<div class="yx-acts"><button class="btn btn-gold btn-sm" data-act="yardGo" data-arg="' + esc(e.id) + '|learn">' + ic('play') + (e.id === 'free' ? 'تدرب بحرية' : 'تدرب') + '</button></div></article>'
+          : '<div class="yx-acts"><button class="btn btn-ghost btn-sm" data-act="yardGo" data-arg="' + esc(e.id) + '|learn">' + ic('play') + 'تعلم</button>' +
+          '<button class="btn btn-gold btn-sm" data-act="yardGo" data-arg="' + esc(e.id) + '|test">' + ic('exam') + 'امتحني</button></div></article>');
+      }
       return h + '<button class="set-link" data-act="drill" data-arg="yard">' + ic('list') + '<span>أسئلة عن اختبار الساحة</span>' + ic('next') + '</button></div>';
     }
   };

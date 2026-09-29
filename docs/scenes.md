@@ -710,9 +710,9 @@ Divided 2-lane arms, all controlled by lights. `params.lights` sets the question
 }
 ```
 
-### 13.4 Unmarked crossroads (priority to the right) (`ex-jn-01`)
+### 13.4 Unmarked crossroads (priority to the left) (`ex-jn-01`)
 
-`"control":"none"` and `"markings":"none"` give a junction without lines or signs. The blue car is on arm E, which is on the RIGHT of a driver coming from S. The solution lets the blue car pass (`"E1->W"`) and then `me` goes straight.
+`"control":"none"` and `"markings":"none"` give a junction without lines or signs. The blue car is on arm W, which is on the LEFT of a driver coming from S (heading north). UAE law (Decree-Law 14/2024, art. 6) gives priority to the vehicle coming from the LEFT at an unregulated junction of equal roads. The solution lets the blue car pass (`"W1->E"`) and then `me` goes straight.
 
 ```json
 {
@@ -731,27 +731,27 @@ Divided 2-lane arms, all controlled by lights. `params.lights` sets the question
         "id": "blue",
         "type": "car",
         "color": "blue",
-        "pos": { "arm": "E", "lane": 1, "at": 2 },
-        "label": "قادمة من يمينك"
+        "pos": { "arm": "W", "lane": 1, "at": 2 },
+        "label": "قادمة من يسارك"
       }
     ],
     "solution": [
       { "t": 0, "actor": "me", "brake": true },
-      { "t": 0, "actor": "blue", "route": "E1->W", "kmh": 24, "ease": "in" },
+      { "t": 0, "actor": "blue", "route": "W1->E", "kmh": 24, "ease": "in" },
       { "t": 3.2, "actor": "me", "brake": false },
       { "t": 3.3, "actor": "me", "route": "S1->N", "kmh": 24, "ease": "in" }
     ],
-    "arrows": [{ "actor": "blue", "route": "E1->W", "style": "other" }]
+    "arrows": [{ "actor": "blue", "route": "W1->E", "style": "other" }]
   },
-  "q": "تقاطع ليس فيه إشارات ولا علامات، وسيارة زرقاء تصل من يمينك في الوقت نفسه، من يمر أولا؟",
+  "q": "تقاطع ليس فيه إشارات ولا علامات، وسيارة زرقاء تصل من يسارك في الوقت نفسه، من يمر أولا؟",
   "options": [
     "أنت، لأنك تسير مستقيما",
     "من يطلق المنبه أولا",
     "الأسرع منكما",
-    "السيارة الزرقاء، لأنها قادمة من يمينك"
+    "السيارة الزرقاء، لأنها قادمة من يسارك"
   ],
   "answer": 3,
-  "explain": "في التقاطع الذي لا تنظمه إشارات أو علامات أعط الأولوية للمركبة القادمة من يمينك\nخفف السرعة قبل التقاطع واستعد للتوقف",
+  "explain": "في التقاطع الذي لا تنظمه إشارات أو علامات أعط الأولوية للمركبة القادمة من يسارك (عكس أوروبا)\nخفف السرعة قبل التقاطع واستعد للتوقف",
   "src": [],
   "confidence": "medium"
 }

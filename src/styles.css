@@ -128,6 +128,7 @@ kbd { font-family: var(--f-num); font-size: .75rem; padding: 1px 6px; border-rad
 .sec-h h2 { font-family: var(--f-head); font-size: 1.06rem; font-weight: 700; margin: 0; }
 .sec-note { font-size: .8rem; color: var(--muted); display: inline-flex; align-items: center; gap: 5px; }
 .sec-note .ic { width: 16px; height: 16px; color: var(--warn); }
+.sec-sub { margin: -4px 0 0; font-size: .86rem; color: var(--muted); }
 .linkbtn { display: inline-flex; align-items: center; min-height: 44px; padding: 0 4px; color: var(--gold); font-size: .84rem;
   text-decoration: underline; text-decoration-color: rgba(217, 185, 120, .45); text-underline-offset: 4px; }
 .linkbtn:disabled { color: var(--muted); text-decoration: none; }
