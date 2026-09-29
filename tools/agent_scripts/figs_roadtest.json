@@ -1,0 +1,30 @@
+{
+ "questions": {
+  "roadtest-yard-002": {"explain_fig": ["fig-seat-belt"]},
+  "roadtest-roadtest-001": {"explain_fig": ["fig-seat-belt"]},
+  "roadtest-roadtest-003": {"explain_fig": ["fig-lane-change"]},
+  "roadtest-roadtest-006": {"explain_fig": ["fig-blind-spots"]},
+  "roadtest-roadtest-007": {"explain_fig": ["fig-blind-spots"]},
+  "roadtest-roadtest-008": {"explain_fig": ["fig-blind-spots", "fig-lane-change"]},
+  "roadtest-roadtest-009": {"fig": ["p-stop"], "explain_fig": ["mk-stop-line"]},
+  "roadtest-roadtest-010": {"explain_fig": ["fig-roundabout-priority"]},
+  "roadtest-roadtest-011": {"explain_fig": ["fig-roundabout-flow", "m-roundabout"]},
+  "roadtest-roadtest-012": {"fig": ["mk-zebra"]},
+  "roadtest-roadtest-020": {"explain_fig": ["fig-gear-selector"]},
+  "roadtest-roadtest-022": {"explain_fig": ["fig-roundabout-right", "fig-roundabout-left"]},
+  "roadtest-roadtest-023": {"explain_fig": ["fig-roundabout-left"]},
+  "roadtest-roadtest-024": {"fig": ["tl-amber"]},
+  "roadtest-roadtest-025": {"explain_fig": ["mk-yellow-box"]},
+  "roadtest-roadtest-031": {"explain_fig": ["fig-two-second"]},
+  "roadtest-roadtest-035": {"explain_fig": ["fig-roundabout-priority"]},
+  "roadtest-roadtest-037": {"fig": ["tl-green"], "explain_fig": ["fig-turn-left"]},
+  "roadtest-roadtest-038": {"fig": ["g-exit-countdown"], "explain_fig": ["fig-lane-change", "fig-highway-exit"]},
+  "roadtest-roadtest-040": {"explain_fig": ["fig-roundabout-right"]},
+  "roadtest-roadtest-044": {"explain_fig": ["fig-missed-exit"]}
+ },
+ "cards": {
+  "roadtest-card-002": {"fig": ["fig-seat-belt"]},
+  "roadtest-card-022": {"fig": ["fig-lane-change", "fig-blind-spots"]},
+  "roadtest-card-023": {"fig": ["tl-red", "p-stop", "r-no-entry", "mk-yellow-box"]}
+ }
+}

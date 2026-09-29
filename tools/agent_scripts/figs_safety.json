@@ -1,0 +1,554 @@
+{
+ "questions": {
+  "safety-weather-001": {
+   "explain_fig": [
+    "fig-fog-lights"
+   ]
+  },
+  "safety-weather-002": {
+   "explain_fig": [
+    "ev-hazard-lights",
+    "fig-fog-lights"
+   ]
+  },
+  "safety-weather-003": {
+   "explain_fig": [
+    "w-slippery-road"
+   ]
+  },
+  "safety-weather-007": {
+   "explain_fig": [
+    "fig-fog-lights"
+   ]
+  },
+  "safety-weather-009": {
+   "explain_fig": [
+    "fig-beam-low"
+   ]
+  },
+  "safety-weather-010": {
+   "explain_fig": [
+    "ev-hazard-lights"
+   ]
+  },
+  "safety-weather-011": {
+   "explain_fig": [
+    "w-sand-dunes"
+   ]
+  },
+  "safety-weather-015": {
+   "explain_fig": [
+    "fig-aquaplaning"
+   ]
+  },
+  "safety-weather-016": {
+   "explain_fig": [
+    "fig-aquaplaning"
+   ]
+  },
+  "safety-weather-020": {
+   "fig": [
+    "ls-variable-speed"
+   ]
+  },
+  "safety-weather-021": {
+   "explain_fig": [
+    "fig-fog-lights",
+    "ev-hazard-lights"
+   ]
+  },
+  "safety-weather-025": {
+   "explain_fig": [
+    "mk-edge-line",
+    "mk-road-studs"
+   ]
+  },
+  "safety-weather-027": {
+   "explain_fig": [
+    "fig-water-depth"
+   ]
+  },
+  "safety-weather-028": {
+   "explain_fig": [
+    "fig-fog-lights"
+   ]
+  },
+  "safety-weather-031": {
+   "fig": [
+    "fig-aquaplaning"
+   ]
+  },
+  "safety-night-001": {
+   "explain_fig": [
+    "fig-beam-low"
+   ]
+  },
+  "safety-night-004": {
+   "explain_fig": [
+    "fig-beam-high",
+    "fig-beam-low"
+   ]
+  },
+  "safety-night-005": {
+   "fig": [
+    "fig-beam-high"
+   ],
+   "explain_fig": [
+    "fig-beam-low"
+   ]
+  },
+  "safety-night-006": {
+   "explain_fig": [
+    "fig-beam-low"
+   ]
+  },
+  "safety-night-009": {
+   "explain_fig": [
+    "fig-beam-low"
+   ]
+  },
+  "safety-night-011": {
+   "explain_fig": [
+    "fig-stopping-distance",
+    "fig-beam-low"
+   ]
+  },
+  "safety-night-012": {
+   "fig": [
+    "w-camels"
+   ]
+  },
+  "safety-night-014": {
+   "explain_fig": [
+    "fig-bike-gap"
+   ]
+  },
+  "safety-night-017": {
+   "explain_fig": [
+    "fig-beam-high",
+    "fig-beam-low"
+   ]
+  },
+  "safety-hazard-003": {
+   "explain_fig": [
+    "w-children"
+   ]
+  },
+  "safety-hazard-004": {
+   "explain_fig": [
+    "w-children"
+   ]
+  },
+  "safety-hazard-005": {
+   "explain_fig": [
+    "w-children"
+   ]
+  },
+  "safety-hazard-006": {
+   "fig": [
+    "mk-bus-stop"
+   ]
+  },
+  "safety-hazard-010": {
+   "fig": [
+    "mk-signal-crossing"
+   ]
+  },
+  "safety-hazard-012": {
+   "explain_fig": [
+    "w-children"
+   ]
+  },
+  "safety-hazard-013": {
+   "fig": [
+    "mk-bus-stop"
+   ]
+  },
+  "safety-hazard-014": {
+   "explain_fig": [
+    "fig-blind-spots",
+    "fig-lane-change"
+   ]
+  },
+  "safety-hazard-016": {
+   "explain_fig": [
+    "fig-truck-blind"
+   ]
+  },
+  "safety-hazard-017": {
+   "explain_fig": [
+    "w-camels"
+   ]
+  },
+  "safety-hazard-018": {
+   "explain_fig": [
+    "t-road-works"
+   ]
+  },
+  "safety-hazard-019": {
+   "explain_fig": [
+    "i-lane-joining"
+   ]
+  },
+  "safety-hazard-021": {
+   "explain_fig": [
+    "fig-bike-gap"
+   ]
+  },
+  "safety-hazard-023": {
+   "fig": [
+    "ev-hazard-lights"
+   ]
+  },
+  "safety-hazard-026": {
+   "explain_fig": [
+    "fig-turn-pedestrians"
+   ]
+  },
+  "safety-hazard-027": {
+   "explain_fig": [
+    "fig-truck-blind"
+   ]
+  },
+  "safety-hazard-031": {
+   "explain_fig": [
+    "fig-blind-spots"
+   ]
+  },
+  "safety-hazard-032": {
+   "explain_fig": [
+    "w-crosswind"
+   ]
+  },
+  "safety-hazard-035": {
+   "explain_fig": [
+    "mk-zebra"
+   ]
+  },
+  "safety-hazard-037": {
+   "fig": [
+    "fig-stopping-distance"
+   ]
+  },
+  "safety-emergency-002": {
+   "explain_fig": [
+    "ev-hazard-lights"
+   ]
+  },
+  "safety-emergency-004": {
+   "explain_fig": [
+    "fig-breakdown"
+   ]
+  },
+  "safety-emergency-005": {
+   "explain_fig": [
+    "fig-breakdown"
+   ]
+  },
+  "safety-emergency-006": {
+   "explain_fig": [
+    "fig-breakdown"
+   ]
+  },
+  "safety-emergency-007": {
+   "explain_fig": [
+    "fig-breakdown"
+   ]
+  },
+  "safety-emergency-012": {
+   "explain_fig": [
+    "mk-hard-shoulder"
+   ]
+  },
+  "safety-emergency-022": {
+   "explain_fig": [
+    "fig-breakdown"
+   ]
+  },
+  "safety-vehicle-003": {
+   "explain_fig": [
+    "fig-dash-lights"
+   ]
+  },
+  "safety-vehicle-004": {
+   "explain_fig": [
+    "fig-gear-selector"
+   ]
+  },
+  "safety-vehicle-005": {
+   "explain_fig": [
+    "fig-gear-selector"
+   ]
+  },
+  "safety-vehicle-007": {
+   "explain_fig": [
+    "fig-dash-lights"
+   ]
+  },
+  "safety-vehicle-009": {
+   "explain_fig": [
+    "fig-dash-lights"
+   ]
+  },
+  "safety-vehicle-010": {
+   "explain_fig": [
+    "fig-dash-lights"
+   ]
+  },
+  "safety-vehicle-012": {
+   "explain_fig": [
+    "fig-seat-belt"
+   ]
+  },
+  "safety-vehicle-013": {
+   "explain_fig": [
+    "fig-seat-belt"
+   ]
+  },
+  "safety-vehicle-014": {
+   "explain_fig": [
+    "fig-seat-belt"
+   ]
+  },
+  "safety-vehicle-015": {
+   "explain_fig": [
+    "fig-gear-selector"
+   ]
+  },
+  "safety-vehicle-016": {
+   "explain_fig": [
+    "fig-gear-selector"
+   ]
+  },
+  "safety-vehicle-018": {
+   "explain_fig": [
+    "fig-dash-lights"
+   ]
+  },
+  "safety-vehicle-019": {
+   "explain_fig": [
+    "fig-dash-lights"
+   ]
+  },
+  "safety-vehicle-021": {
+   "explain_fig": [
+    "fig-dash-lights"
+   ]
+  },
+  "safety-vehicle-022": {
+   "fig": [
+    "w-steep-descent"
+   ]
+  },
+  "safety-vehicle-023": {
+   "explain_fig": [
+    "fig-seat-belt"
+   ]
+  },
+  "safety-vehicle-026": {
+   "explain_fig": [
+    "fig-blind-spots"
+   ]
+  },
+  "safety-vehicle-028": {
+   "explain_fig": [
+    "fig-tyre-tread"
+   ]
+  },
+  "safety-driver-001": {
+   "explain_fig": [
+    "fig-no-phone"
+   ]
+  },
+  "safety-driver-008": {
+   "explain_fig": [
+    "fig-no-phone"
+   ]
+  },
+  "safety-driver-013": {
+   "explain_fig": [
+    "fig-keep-right"
+   ]
+  },
+  "safety-driver-016": {
+   "explain_fig": [
+    "fig-blind-spots",
+    "fig-lane-change"
+   ]
+  },
+  "safety-driver-020": {
+   "fig": [
+    "fig-blind-spots"
+   ]
+  },
+  "safety-driver-023": {
+   "fig": [
+    "fig-no-phone"
+   ]
+  },
+  "safety-driver-024": {
+   "fig": [
+    "fig-no-phone"
+   ]
+  },
+  "safety-driver-025": {
+   "fig": [
+    "r-speed-60"
+   ]
+  }
+ },
+ "cards": {
+  "safety-card-001": {
+   "fig": [
+    "fig-fog-lights"
+   ]
+  },
+  "safety-card-002": {
+   "fig": [
+    "ev-hazard-lights",
+    "fig-fog-lights"
+   ]
+  },
+  "safety-card-006": {
+   "fig": [
+    "ls-variable-speed"
+   ]
+  },
+  "safety-card-007": {
+   "fig": [
+    "w-slippery-road"
+   ]
+  },
+  "safety-card-008": {
+   "fig": [
+    "fig-aquaplaning"
+   ]
+  },
+  "safety-card-009": {
+   "fig": [
+    "fig-water-depth"
+   ]
+  },
+  "safety-card-015": {
+   "fig": [
+    "fig-beam-low"
+   ]
+  },
+  "safety-card-016": {
+   "fig": [
+    "fig-beam-high",
+    "fig-beam-low"
+   ]
+  },
+  "safety-card-018": {
+   "fig": [
+    "fig-stopping-distance",
+    "fig-beam-low"
+   ]
+  },
+  "safety-card-019": {
+   "fig": [
+    "w-camels"
+   ]
+  },
+  "safety-card-024": {
+   "fig": [
+    "w-children"
+   ]
+  },
+  "safety-card-025": {
+   "fig": [
+    "mk-bus-stop"
+   ]
+  },
+  "safety-card-026": {
+   "fig": [
+    "fig-bike-gap",
+    "fig-blind-spots"
+   ]
+  },
+  "safety-card-027": {
+   "fig": [
+    "fig-truck-blind"
+   ]
+  },
+  "safety-card-029": {
+   "fig": [
+    "fig-stopping-distance"
+   ]
+  },
+  "safety-card-031": {
+   "fig": [
+    "ev-hazard-lights"
+   ]
+  },
+  "safety-card-034": {
+   "fig": [
+    "fig-breakdown"
+   ]
+  },
+  "safety-card-035": {
+   "fig": [
+    "fig-breakdown"
+   ]
+  },
+  "safety-card-044": {
+   "fig": [
+    "mk-hard-shoulder",
+    "fig-missed-exit"
+   ]
+  },
+  "safety-card-046": {
+   "fig": [
+    "fig-tyre-tread"
+   ]
+  },
+  "safety-card-049": {
+   "fig": [
+    "fig-dash-lights"
+   ]
+  },
+  "safety-card-050": {
+   "fig": [
+    "fig-dash-lights"
+   ]
+  },
+  "safety-card-051": {
+   "fig": [
+    "fig-gear-selector"
+   ]
+  },
+  "safety-card-052": {
+   "fig": [
+    "fig-seat-belt",
+    "fig-gear-selector"
+   ]
+  },
+  "safety-card-053": {
+   "fig": [
+    "fig-seat-belt"
+   ]
+  },
+  "safety-card-058": {
+   "fig": [
+    "fig-no-phone"
+   ]
+  },
+  "safety-card-062": {
+   "fig": [
+    "fig-keep-right"
+   ]
+  },
+  "safety-card-064": {
+   "fig": [
+    "fig-blind-spots",
+    "fig-lane-change"
+   ]
+  },
+  "safety-card-066": {
+   "fig": [
+    "r-speed-60"
+   ]
+  }
+ }
+}

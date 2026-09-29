@@ -335,7 +335,11 @@
    "src": [
     "S1"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "mk-zebra",
+    "w-children"
+   ]
   },
   {
    "id": "law-card-006",
@@ -389,7 +393,10 @@
     "S7",
     "S11"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "r-speed-80"
+   ]
   },
   {
    "id": "law-card-010",
@@ -429,7 +436,10 @@
     "S14",
     "S15"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-black-points"
+   ]
   },
   {
    "id": "law-card-013",
@@ -443,7 +453,10 @@
     "S14",
     "S15"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-black-points"
+   ]
   },
   {
    "id": "law-card-014",
@@ -458,7 +471,10 @@
     "S16",
     "S17"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-black-points"
+   ]
   },
   {
    "id": "law-card-015",
@@ -473,7 +489,10 @@
     "S18",
     "S19"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-black-points"
+   ]
   },
   {
    "id": "law-card-016",
@@ -528,7 +547,12 @@
     "S4",
     "S13"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-no-phone",
+    "fig-seat-belt",
+    "fig-two-second"
+   ]
   },
   {
    "id": "law-card-020",
@@ -555,7 +579,12 @@
     "S22",
     "S42"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "ev-emergency-lights",
+    "mk-zebra",
+    "ev-school-bus-single"
+   ]
   },
   {
    "id": "law-card-022",
@@ -581,7 +610,11 @@
     "S5",
     "S13"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-child-seat",
+    "fig-seat-belt"
+   ]
   },
   {
    "id": "law-card-024",
@@ -673,7 +706,10 @@
     "S5",
     "S45"
    ],
-   "confidence": "medium"
+   "confidence": "medium",
+   "fig": [
+    "fig-breakdown"
+   ]
   },
   {
    "id": "law-card-031",
@@ -700,7 +736,10 @@
    "src": [
     "S39"
    ],
-   "confidence": "medium"
+   "confidence": "medium",
+   "fig": [
+    "i-salik"
+   ]
   },
   {
    "id": "law-card-033",
@@ -791,7 +830,11 @@
     "S27",
     "S28"
    ],
-   "confidence": "medium"
+   "confidence": "medium",
+   "fig": [
+    "tl-red",
+    "fig-no-phone"
+   ]
   },
   {
    "id": "law-card-040",
@@ -814,7 +857,11 @@
    "src": [
     "S28"
    ],
-   "confidence": "medium"
+   "confidence": "medium",
+   "fig": [
+    "mk-zebra",
+    "pl-red"
+   ]
   }
  ],
  "questions": [
@@ -1351,7 +1398,10 @@
     "S1"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "w-children"
+   ]
   },
   {
    "id": "law-law-023",
@@ -1375,7 +1425,10 @@
     "S4"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "mk-zebra"
+   ]
   },
   {
    "id": "law-law-024",
@@ -1421,7 +1474,10 @@
     "S1"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "mk-zebra"
+   ]
   },
   {
    "id": "law-law-026",
@@ -1445,7 +1501,10 @@
     "S7"
    ],
    "confidence": "high",
-   "notes": "حسب نص المرسوم بقانون اتحادي 14 لسنة 2024 (المادة 39)، النافذ منذ 29 مارس 2025، والمبالغ قابلة للتعديل"
+   "notes": "حسب نص المرسوم بقانون اتحادي 14 لسنة 2024 (المادة 39)، النافذ منذ 29 مارس 2025، والمبالغ قابلة للتعديل",
+   "fig": [
+    "r-speed-100"
+   ]
   },
   {
    "id": "law-law-027",
@@ -1662,7 +1721,10 @@
     "S14"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-black-points"
+   ]
   },
   {
    "id": "law-penalties-002",
@@ -1688,7 +1750,10 @@
     "S15"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-black-points"
+   ]
   },
   {
    "id": "law-penalties-003",
@@ -1713,7 +1778,10 @@
     "S15"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "fig-black-points"
+   ]
   },
   {
    "id": "law-penalties-004",
@@ -1738,7 +1806,10 @@
     "S15"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "fig-black-points"
+   ]
   },
   {
    "id": "law-penalties-005",
@@ -1762,7 +1833,10 @@
     "S15"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-black-points"
+   ]
   },
   {
    "id": "law-penalties-006",
@@ -1789,7 +1863,10 @@
     "S17"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-black-points"
+   ]
   },
   {
    "id": "law-penalties-007",
@@ -1839,7 +1916,10 @@
     "S15"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-black-points"
+   ]
   },
   {
    "id": "law-penalties-009",
@@ -1938,7 +2018,10 @@
     "S26"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "tl-red"
+   ]
   },
   {
    "id": "law-penalties-013",
@@ -1962,7 +2045,10 @@
     "S13"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "fig-no-phone"
+   ]
   },
   {
    "id": "law-penalties-014",
@@ -1986,7 +2072,10 @@
     "S13"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "ev-school-bus-single"
+   ]
   },
   {
    "id": "law-penalties-015",
@@ -2010,7 +2099,10 @@
     "S13"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "mk-zebra"
+   ]
   },
   {
    "id": "law-penalties-016",
@@ -2107,7 +2199,10 @@
     "S26"
    ],
    "confidence": "high",
-   "notes": "حسب الجدول المعمول به في 2026 (القرار الوزاري 178 لسنة 2017 وتعديلاته)، المصدر: جدول بوابة حكومة الإمارات، وقائمة الإمارات 24/7 بتاريخ 17 يونيو 2026، والأرقام قابلة للتعديل"
+   "notes": "حسب الجدول المعمول به في 2026 (القرار الوزاري 178 لسنة 2017 وتعديلاته)، المصدر: جدول بوابة حكومة الإمارات، وقائمة الإمارات 24/7 بتاريخ 17 يونيو 2026، والأرقام قابلة للتعديل",
+   "fig": [
+    "tl-red"
+   ]
   },
   {
    "id": "law-penalties-020",
@@ -2131,7 +2226,10 @@
     "S13"
    ],
    "confidence": "high",
-   "notes": "حسب الجدول المعمول به في 2026 (القرار الوزاري 178 لسنة 2017 وتعديلاته)، المصدر: جدول بوابة حكومة الإمارات، وقائمة الإمارات 24/7 بتاريخ 17 يونيو 2026، والأرقام قابلة للتعديل"
+   "notes": "حسب الجدول المعمول به في 2026 (القرار الوزاري 178 لسنة 2017 وتعديلاته)، المصدر: جدول بوابة حكومة الإمارات، وقائمة الإمارات 24/7 بتاريخ 17 يونيو 2026، والأرقام قابلة للتعديل",
+   "fig": [
+    "fig-no-phone"
+   ]
   },
   {
    "id": "law-penalties-021",
@@ -2155,7 +2253,10 @@
     "S13"
    ],
    "confidence": "high",
-   "notes": "حسب الجدول المعمول به في 2026 (القرار الوزاري 178 لسنة 2017 وتعديلاته)، المصدر: جدول بوابة حكومة الإمارات، وقائمة الإمارات 24/7 بتاريخ 17 يونيو 2026، والأرقام قابلة للتعديل"
+   "notes": "حسب الجدول المعمول به في 2026 (القرار الوزاري 178 لسنة 2017 وتعديلاته)، المصدر: جدول بوابة حكومة الإمارات، وقائمة الإمارات 24/7 بتاريخ 17 يونيو 2026، والأرقام قابلة للتعديل",
+   "fig": [
+    "fig-seat-belt"
+   ]
   },
   {
    "id": "law-penalties-022",
@@ -2204,7 +2305,10 @@
     "S13"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-child-seat"
+   ]
   },
   {
    "id": "law-penalties-024",
@@ -2228,7 +2332,10 @@
     "S4"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-child-seat"
+   ]
   },
   {
    "id": "law-penalties-025",
@@ -2252,7 +2359,10 @@
     "S13"
    ],
    "confidence": "high",
-   "notes": "حسب الجدول المعمول به في 2026 (القرار الوزاري 178 لسنة 2017 وتعديلاته)، المصدر: جدول بوابة حكومة الإمارات، وقائمة الإمارات 24/7 بتاريخ 17 يونيو 2026، والأرقام قابلة للتعديل"
+   "notes": "حسب الجدول المعمول به في 2026 (القرار الوزاري 178 لسنة 2017 وتعديلاته)، المصدر: جدول بوابة حكومة الإمارات، وقائمة الإمارات 24/7 بتاريخ 17 يونيو 2026، والأرقام قابلة للتعديل",
+   "fig": [
+    "fig-two-second"
+   ]
   },
   {
    "id": "law-penalties-026",
@@ -2301,7 +2411,10 @@
     "S42"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "mk-hard-shoulder"
+   ]
   },
   {
    "id": "law-penalties-028",
@@ -2327,7 +2440,13 @@
     "S42"
    ],
    "confidence": "high",
-   "notes": "حسب الجدول المعمول به في 2026 كما أعلنته شرطة الشارقة (مايو 2025) وشرطة أبوظبي (أغسطس 2026)، أما الجدول الأصلي لسنة 2017 فكان 1000 درهم و6 نقاط بدون حجز"
+   "notes": "حسب الجدول المعمول به في 2026 كما أعلنته شرطة الشارقة (مايو 2025) وشرطة أبوظبي (أغسطس 2026)، أما الجدول الأصلي لسنة 2017 فكان 1000 درهم و6 نقاط بدون حجز",
+   "fig": [
+    "ev-emergency-lights"
+   ],
+   "explain_fig": [
+    "ev-highway-move-right"
+   ]
   },
   {
    "id": "law-penalties-029",
@@ -2351,7 +2470,10 @@
     "S13"
    ],
    "confidence": "high",
-   "notes": "حسب الجدول المعمول به في 2026 (القرار الوزاري 178 لسنة 2017 وتعديلاته)، المصدر: جدول بوابة حكومة الإمارات، وقائمة الإمارات 24/7 بتاريخ 17 يونيو 2026، والأرقام قابلة للتعديل"
+   "notes": "حسب الجدول المعمول به في 2026 (القرار الوزاري 178 لسنة 2017 وتعديلاته)، المصدر: جدول بوابة حكومة الإمارات، وقائمة الإمارات 24/7 بتاريخ 17 يونيو 2026، والأرقام قابلة للتعديل",
+   "fig": [
+    "mk-zebra"
+   ]
   },
   {
    "id": "law-penalties-030",
@@ -2374,7 +2496,10 @@
     "S4"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-keep-right"
+   ]
   },
   {
    "id": "law-penalties-031",
@@ -2398,7 +2523,10 @@
     "S13"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "m-min-speed-60"
+   ]
   },
   {
    "id": "law-penalties-032",
@@ -2669,7 +2797,10 @@
     "S4"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-black-points"
+   ]
   },
   {
    "id": "law-penalties-043",
@@ -2692,7 +2823,10 @@
     "S4"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "mk-yellow-box"
+   ]
   },
   {
    "id": "law-accidents-001",
@@ -3029,7 +3163,10 @@
     "S4"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-breakdown"
+   ]
   },
   {
    "id": "law-accidents-015",
@@ -3047,12 +3184,15 @@
     "حوالي كيلومتر واحد"
    ],
    "answer": 1,
-   "explain": "المثلث ينبه القادمين من الخلف مبكرا، ودليل معهد الشارقة للسياقة يذكر حوالي 100 متر قبل السيارة المتعطلة",
+   "explain": "المثلث ينبه القادمين من الخلف مبكرا، ودليل معهد الشارقة للسياقة يذكر حوالي 100 متر خلف السيارة المتعطلة",
    "src": [
     "S45"
    ],
    "confidence": "medium",
-   "notes": "الرقم من دليل معهد الشارقة للسياقة (2021)، ولم نجد مسافة بالأمتار في النص القانوني الاتحادي"
+   "notes": "الرقم من دليل معهد الشارقة للسياقة (2021)، ولم نجد مسافة بالأمتار في النص القانوني الاتحادي",
+   "explain_fig": [
+    "fig-breakdown"
+   ]
   },
   {
    "id": "law-accidents-016",
@@ -3293,7 +3433,10 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-breakdown"
+   ]
   },
   {
    "id": "law-dubai-specific-001",
@@ -3315,7 +3458,10 @@
     "S39"
    ],
    "confidence": "medium",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "i-salik"
+   ]
   },
   {
    "id": "law-dubai-specific-002",
@@ -3338,7 +3484,10 @@
     "S4"
    ],
    "confidence": "medium",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "i-salik"
+   ]
   },
   {
    "id": "law-dubai-specific-003",
@@ -3360,7 +3509,10 @@
     "S39"
    ],
    "confidence": "medium",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "i-salik"
+   ]
   },
   {
    "id": "law-dubai-specific-004",
@@ -3382,7 +3534,10 @@
     "S39"
    ],
    "confidence": "medium",
-   "notes": "الأوقات والمبالغ الدقيقة قابلة للتغيير، راجع سالك قبل الاعتماد عليها"
+   "notes": "الأوقات والمبالغ الدقيقة قابلة للتغيير، راجع سالك قبل الاعتماد عليها",
+   "fig": [
+    "i-salik"
+   ]
   },
   {
    "id": "law-dubai-specific-005",
@@ -3477,7 +3632,10 @@
     "S26"
    ],
    "confidence": "high",
-   "notes": "حسب مرسوم دبي رقم 30 لسنة 2023 المعمول به في 2026، المصدر: بوابة تشريعات دبي (يونيو 2023) والمكتب الإعلامي لحكومة دبي (يوليو 2023)"
+   "notes": "حسب مرسوم دبي رقم 30 لسنة 2023 المعمول به في 2026، المصدر: بوابة تشريعات دبي (يونيو 2023) والمكتب الإعلامي لحكومة دبي (يوليو 2023)",
+   "fig": [
+    "tl-red"
+   ]
   },
   {
    "id": "law-dubai-specific-009",
@@ -3707,7 +3865,11 @@
     "S28"
    ],
    "confidence": "medium",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "tl-red",
+    "fig-no-phone"
+   ]
   },
   {
    "id": "law-sharjah-specific-007",

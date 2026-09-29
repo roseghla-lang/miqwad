@@ -577,9 +577,9 @@
 
   {"id": "ev-roundabout", "cat": "emergency", "name": "مركبة طوارئ عند الدوار",
    "meaning": "مركبة الطوارئ تحتاج الدوار فارغا لتمر بسرعة",
-   "action": "إذا كنت قبل الدوار فلا تدخل، وإذا كنت داخله فأكمل وانتقل إلى اليمين في أقرب فرصة",
+   "action": "إذا كنت قبل الدوار فلا تدخل، وإذا كنت داخله فتابع بهدوء واخرج من أقرب مخرج لتفسح لها الطريق",
    "level": 3, "confuse": ["ev-at-junction"],
-   "draw": "Top-down: roundabout with anticlockwise circulation; an ambulance with flashing lights entering from the bottom; a car waiting at the right entry without entering; a car inside the roundabout moving to the outer right lane",
+   "draw": "Top-down: roundabout with anticlockwise circulation; an ambulance with flashing lights entering from the bottom; a car waiting at the right entry without entering; a car already inside the roundabout leaving calmly by the nearest exit (arrow out through that exit)",
    "colors": "asphalt #2A2F37, lane white #F2F2EE, kerb #9AA3AE, sand #C9B48A (central island), red #C8202A, blue #1F5AA6",
    "text": "", "uae_note": "",
    "src": ["S9", "S20"], "confidence": "high", "notes": ""},

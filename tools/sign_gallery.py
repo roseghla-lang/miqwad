@@ -72,6 +72,8 @@ def script_files(only_files):
 
 PAGE_JS = r"""
 (function () {
+ // measure only after the embedded fonts are ready (text width decides the ink-bounds check)
+ (document.fonts && document.fonts.ready ? document.fonts.ready : Promise.resolve()).then(function () {
   var M = window.__MANIFEST, OPT = window.__OPT;
   var rep = { items: [], problems: [], drawn: 0, missing: [], extra: [] };
   var catalog = {}; M.forEach(function (m) { catalog[m.id] = m; });
@@ -87,7 +89,7 @@ PAGE_JS = r"""
     if (!catalog[id] && want(id)) { list.push({ id: id, name: (window.FigNames && FigNames[id]) || '', cat: 'extra', kind: 'extra' }); rep.extra.push(id); }
   });
   var holder = document.createElement('div');
-  holder.style.cssText = 'position:absolute;left:-9999px;top:0;width:400px;height:400px;visibility:hidden';
+  holder.style.cssText = 'position:fixed;left:0;top:0;width:400px;height:400px;visibility:hidden;pointer-events:none;overflow:hidden';
   document.body.appendChild(holder);
   function check(id, s) {
     var probs = [];
@@ -178,8 +180,10 @@ PAGE_JS = r"""
       (rec.probs.length ? '<div class="pr">' + esc(rec.probs.join(' · ')) + '</div>' : '');
     cur.querySelector('.grid').appendChild(cell);
   });
+  holder.parentNode.removeChild(holder);
   rep.sheets = sheets.length;
   window.__report = rep;
+ });
 })();
 """
 
@@ -200,7 +204,7 @@ body { margin: 0; padding: 0; background: #1b212b; color: #EAE6DB; font: 12px/1.
 .smalls svg { width: 100%; height: 100%; display: block; }
 .s64 { width: 64px; height: 64px; } .s36 { width: 36px; height: 36px; }
 .dark { background: #0D131E; } .light { background: #C7CCD4; }
-.id { font-weight: 700; font-size: 12px; color: #D9B978; word-break: break-all; }
+.id { font-weight: 700; font-size: 12px; color: #D9B978; word-break: break-all; direction: ltr; text-align: right; }
 .nm { font-family: 'Readex Pro', sans-serif; font-size: 12px; color: #EAE6DB; }
 .pr { color: #DE9090; font-size: 11px; }
 .detail { width: 600px; height: 600px; padding: 20px; background: #0D131E; }
@@ -219,7 +223,8 @@ def build_page(out, args, files):
            'per': max(1, args.per), 'title': html.escape(args.title or '')}
     fonts = (SRC / 'fonts.css').as_uri()
     tags = '\n'.join('<script src="%s"></script>' % p.as_uri() for p in files)
-    page = ('<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><title>Sign gallery</title>'
+    # right-to-left like the app (SVG text inherits direction, and text-anchor start/end flip in RTL)
+    page = ('<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><title>Sign gallery</title>'
             '<link rel="stylesheet" href="%s"><style>%s</style></head><body><div id="sheets"></div>'
             '<div id="detail"></div>'
             '<script>window.__MANIFEST=%s;window.__OPT=%s;</script>\n%s\n<script>%s</script></body></html>') % (

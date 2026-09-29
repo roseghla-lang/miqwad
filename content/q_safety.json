@@ -359,7 +359,10 @@
         "S10",
         "S56"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "fig-fog-lights"
+      ]
     },
     {
       "id": "safety-card-002",
@@ -374,7 +377,11 @@
         "S6",
         "S11"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "ev-hazard-lights",
+        "fig-fog-lights"
+      ]
     },
     {
       "id": "safety-card-003",
@@ -430,7 +437,10 @@
         "S9",
         "S8"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "ls-variable-speed"
+      ]
     },
     {
       "id": "safety-card-007",
@@ -443,7 +453,10 @@
         "S2",
         "S56"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "w-slippery-road"
+      ]
     },
     {
       "id": "safety-card-008",
@@ -456,7 +469,10 @@
         "S1",
         "S2"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "fig-aquaplaning"
+      ]
     },
     {
       "id": "safety-card-009",
@@ -470,7 +486,10 @@
         "S13",
         "S45"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "fig-water-depth"
+      ]
     },
     {
       "id": "safety-card-010",
@@ -551,7 +570,10 @@
         "S2",
         "S3"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "fig-beam-low"
+      ]
     },
     {
       "id": "safety-card-016",
@@ -564,7 +586,11 @@
         "S1",
         "S56"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "fig-beam-high",
+        "fig-beam-low"
+      ]
     },
     {
       "id": "safety-card-017",
@@ -588,7 +614,11 @@
         "S1",
         "S2"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "fig-stopping-distance",
+        "fig-beam-low"
+      ]
     },
     {
       "id": "safety-card-019",
@@ -599,7 +629,10 @@
       "src": [
         "S3"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "w-camels"
+      ]
     },
     {
       "id": "safety-card-020",
@@ -659,7 +692,10 @@
         "S1",
         "S3"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "w-children"
+      ]
     },
     {
       "id": "safety-card-025",
@@ -670,7 +706,10 @@
       "src": [
         "S1"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "mk-bus-stop"
+      ]
     },
     {
       "id": "safety-card-026",
@@ -684,7 +723,11 @@
         "S2",
         "S56"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "fig-bike-gap",
+        "fig-blind-spots"
+      ]
     },
     {
       "id": "safety-card-027",
@@ -698,7 +741,10 @@
         "S2",
         "S56"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "fig-truck-blind"
+      ]
     },
     {
       "id": "safety-card-028",
@@ -721,7 +767,10 @@
       "src": [
         "S1"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "fig-stopping-distance"
+      ]
     },
     {
       "id": "safety-card-030",
@@ -745,7 +794,10 @@
         "S29",
         "S36"
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "fig": [
+        "ev-hazard-lights"
+      ]
     },
     {
       "id": "safety-card-032",
@@ -782,7 +834,10 @@
         "S28",
         "S29"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "fig-breakdown"
+      ]
     },
     {
       "id": "safety-card-035",
@@ -796,7 +851,10 @@
         "S56",
         "S34"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "fig-breakdown"
+      ]
     },
     {
       "id": "safety-card-036",
@@ -910,7 +968,11 @@
         "S36",
         "S27"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "mk-hard-shoulder",
+        "fig-missed-exit"
+      ]
     },
     {
       "id": "safety-card-045",
@@ -938,7 +1000,10 @@
         "S37",
         "S53"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "fig-tyre-tread"
+      ]
     },
     {
       "id": "safety-card-047",
@@ -978,7 +1043,10 @@
         "S38",
         "S56"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "fig-dash-lights"
+      ]
     },
     {
       "id": "safety-card-050",
@@ -990,7 +1058,10 @@
         "S37",
         "S38"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "fig-dash-lights"
+      ]
     },
     {
       "id": "safety-card-051",
@@ -1003,7 +1074,10 @@
         "S56",
         "S21"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "fig-gear-selector"
+      ]
     },
     {
       "id": "safety-card-052",
@@ -1017,7 +1091,11 @@
         "S39",
         "S40"
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "fig": [
+        "fig-seat-belt",
+        "fig-gear-selector"
+      ]
     },
     {
       "id": "safety-card-053",
@@ -1031,7 +1109,10 @@
         "S40",
         "S41"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "fig-seat-belt"
+      ]
     },
     {
       "id": "safety-card-054",
@@ -1089,7 +1170,10 @@
         "S56",
         "S12"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "fig-no-phone"
+      ]
     },
     {
       "id": "safety-card-059",
@@ -1139,7 +1223,10 @@
         "S1",
         "S2"
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "fig": [
+        "fig-keep-right"
+      ]
     },
     {
       "id": "safety-card-063",
@@ -1164,7 +1251,11 @@
         "S1",
         "S56"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "fig-blind-spots",
+        "fig-lane-change"
+      ]
     },
     {
       "id": "safety-card-065",
@@ -1190,7 +1281,10 @@
       "src": [
         "S1"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "r-speed-60"
+      ]
     }
   ],
   "questions": [
@@ -1218,7 +1312,10 @@
         "S10",
         "S56"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-fog-lights"
+      ]
     },
     {
       "id": "safety-weather-002",
@@ -1244,7 +1341,11 @@
         "S6",
         "S52"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "ev-hazard-lights",
+        "fig-fog-lights"
+      ]
     },
     {
       "id": "safety-weather-003",
@@ -1268,7 +1369,10 @@
         "S1",
         "S2"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "w-slippery-road"
+      ]
     },
     {
       "id": "safety-weather-004",
@@ -1365,7 +1469,10 @@
         "S9",
         "S56"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-fog-lights"
+      ]
     },
     {
       "id": "safety-weather-008",
@@ -1416,7 +1523,10 @@
         "S11",
         "S56"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-beam-low"
+      ]
     },
     {
       "id": "safety-weather-010",
@@ -1441,7 +1551,10 @@
         "S2",
         "S56"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "ev-hazard-lights"
+      ]
     },
     {
       "id": "safety-weather-011",
@@ -1464,7 +1577,10 @@
         "S1",
         "S2"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "w-sand-dunes"
+      ]
     },
     {
       "id": "safety-weather-012",
@@ -1558,7 +1674,10 @@
       "src": [
         "S1"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-aquaplaning"
+      ]
     },
     {
       "id": "safety-weather-016",
@@ -1580,7 +1699,10 @@
       "src": [
         "S1"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-aquaplaning"
+      ]
     },
     {
       "id": "safety-weather-017",
@@ -1671,7 +1793,10 @@
         "S7",
         "S9"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "ls-variable-speed"
+      ]
     },
     {
       "id": "safety-weather-021",
@@ -1695,7 +1820,11 @@
         "S6",
         "S4"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-fog-lights",
+        "ev-hazard-lights"
+      ]
     },
     {
       "id": "safety-weather-022",
@@ -1788,7 +1917,11 @@
         "S56",
         "S6"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "mk-edge-line",
+        "mk-road-studs"
+      ]
     },
     {
       "id": "safety-weather-026",
@@ -1835,7 +1968,10 @@
         "S1"
       ],
       "confidence": "high",
-      "notes": "بعض النصائح الصحفية تسمح بالعبور حتى مستوى المصد، واعتمدنا قاعدة هيئة الطرق (نصف الإطار) لأنها المصدر الرسمي"
+      "notes": "بعض النصائح الصحفية تسمح بالعبور حتى مستوى المصد، واعتمدنا قاعدة هيئة الطرق (نصف الإطار) لأنها المصدر الرسمي",
+      "explain_fig": [
+        "fig-water-depth"
+      ]
     },
     {
       "id": "safety-weather-028",
@@ -1860,7 +1996,10 @@
         "S9",
         "S50"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-fog-lights"
+      ]
     },
     {
       "id": "safety-weather-029",
@@ -1929,7 +2068,10 @@
       "src": [
         "S1"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "fig-aquaplaning"
+      ]
     },
     {
       "id": "safety-weather-032",
@@ -1947,7 +2089,7 @@
         "5 ثوان"
       ],
       "answer": 3,
-      "explain": "المسافة المعتادة 3 ثوان تقريبا، ومع ضعف الرؤية زدها إلى 5 ثوان على الأقل",
+      "explain": "في الظروف الجيدة لا تقل المسافة عن ثانيتين (ودليل القيادة الآمنة ينصح بـ 3 ثوان)، ومع ضعف الرؤية زدها إلى 5 ثوان على الأقل",
       "src": [
         "S13",
         "S10"
@@ -1977,7 +2119,10 @@
         "S2",
         "S3"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-beam-low"
+      ]
     },
     {
       "id": "safety-night-002",
@@ -2047,7 +2192,11 @@
         "S1",
         "S56"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-beam-high",
+        "fig-beam-low"
+      ]
     },
     {
       "id": "safety-night-005",
@@ -2070,7 +2219,13 @@
         "S1",
         "S56"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "fig-beam-high"
+      ],
+      "explain_fig": [
+        "fig-beam-low"
+      ]
     },
     {
       "id": "safety-night-006",
@@ -2093,7 +2248,10 @@
         "S1",
         "S56"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-beam-low"
+      ]
     },
     {
       "id": "safety-night-007",
@@ -2160,7 +2318,10 @@
       "src": [
         "S1"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-beam-low"
+      ]
     },
     {
       "id": "safety-night-010",
@@ -2206,7 +2367,11 @@
       "src": [
         "S1"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-stopping-distance",
+        "fig-beam-low"
+      ]
     },
     {
       "id": "safety-night-012",
@@ -2229,7 +2394,10 @@
         "S3",
         "S1"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "w-camels"
+      ]
     },
     {
       "id": "safety-night-013",
@@ -2275,7 +2443,10 @@
         "S1",
         "S2"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-bike-gap"
+      ]
     },
     {
       "id": "safety-night-015",
@@ -2344,7 +2515,11 @@
         "S56",
         "S1"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-beam-high",
+        "fig-beam-low"
+      ]
     },
     {
       "id": "safety-hazard-001",
@@ -2411,7 +2586,10 @@
       "src": [
         "S1"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "w-children"
+      ]
     },
     {
       "id": "safety-hazard-004",
@@ -2434,7 +2612,10 @@
         "S3",
         "S1"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "w-children"
+      ]
     },
     {
       "id": "safety-hazard-005",
@@ -2457,7 +2638,10 @@
         "S1",
         "S3"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "w-children"
+      ]
     },
     {
       "id": "safety-hazard-006",
@@ -2479,7 +2663,10 @@
       "src": [
         "S1"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "mk-bus-stop"
+      ]
     },
     {
       "id": "safety-hazard-007",
@@ -2571,7 +2758,10 @@
         "S1",
         "S3"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "mk-signal-crossing"
+      ]
     },
     {
       "id": "safety-hazard-011",
@@ -2615,7 +2805,10 @@
       "src": [
         "S1"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "w-children"
+      ]
     },
     {
       "id": "safety-hazard-013",
@@ -2638,7 +2831,10 @@
         "S1",
         "S56"
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "fig": [
+        "mk-bus-stop"
+      ]
     },
     {
       "id": "safety-hazard-014",
@@ -2661,7 +2857,11 @@
         "S1",
         "S56"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-blind-spots",
+        "fig-lane-change"
+      ]
     },
     {
       "id": "safety-hazard-015",
@@ -2708,7 +2908,10 @@
         "S56"
       ],
       "confidence": "high",
-      "notes": "دليل هيئة الطرق يذكر نقطة عمياء بجانب الباب الأيسر للشاحنة، ويبدو النص منقولا من دليل دولة تقود على اليسار، لذلك لم نحدد جهة الجانب"
+      "notes": "دليل هيئة الطرق يذكر نقطة عمياء بجانب الباب الأيسر للشاحنة، ويبدو النص منقولا من دليل دولة تقود على اليسار، لذلك لم نحدد جهة الجانب",
+      "explain_fig": [
+        "fig-truck-blind"
+      ]
     },
     {
       "id": "safety-hazard-017",
@@ -2730,7 +2933,10 @@
       "src": [
         "S3"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "w-camels"
+      ]
     },
     {
       "id": "safety-hazard-018",
@@ -2753,7 +2959,10 @@
         "S3",
         "S1"
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "explain_fig": [
+        "t-road-works"
+      ]
     },
     {
       "id": "safety-hazard-019",
@@ -2775,7 +2984,10 @@
       "src": [
         "S1"
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "explain_fig": [
+        "i-lane-joining"
+      ]
     },
     {
       "id": "safety-hazard-020",
@@ -2819,7 +3031,10 @@
       "src": [
         "S1"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-bike-gap"
+      ]
     },
     {
       "id": "safety-hazard-022",
@@ -2864,7 +3079,10 @@
         "S29",
         "S36"
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "fig": [
+        "ev-hazard-lights"
+      ]
     },
     {
       "id": "safety-hazard-024",
@@ -2931,7 +3149,10 @@
       "src": [
         "S2"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-turn-pedestrians"
+      ]
     },
     {
       "id": "safety-hazard-027",
@@ -2954,7 +3175,10 @@
         "S1",
         "S56"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-truck-blind"
+      ]
     },
     {
       "id": "safety-hazard-028",
@@ -3045,7 +3269,10 @@
         "S1",
         "S56"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-blind-spots"
+      ]
     },
     {
       "id": "safety-hazard-032",
@@ -3069,7 +3296,10 @@
         "S2",
         "S56"
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "explain_fig": [
+        "w-crosswind"
+      ]
     },
     {
       "id": "safety-hazard-033",
@@ -3138,7 +3368,10 @@
         "S3",
         "S1"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "mk-zebra"
+      ]
     },
     {
       "id": "safety-hazard-036",
@@ -3183,7 +3416,10 @@
       "src": [
         "S1"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "fig-stopping-distance"
+      ]
     },
     {
       "id": "safety-emergency-001",
@@ -3231,7 +3467,10 @@
         "S2",
         "S56"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "ev-hazard-lights"
+      ]
     },
     {
       "id": "safety-emergency-003",
@@ -3279,7 +3518,10 @@
         "S28",
         "S29"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-breakdown"
+      ]
     },
     {
       "id": "safety-emergency-005",
@@ -3303,7 +3545,10 @@
         "S34",
         "S56"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-breakdown"
+      ]
     },
     {
       "id": "safety-emergency-006",
@@ -3328,7 +3573,10 @@
         "S28",
         "S29"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-breakdown"
+      ]
     },
     {
       "id": "safety-emergency-007",
@@ -3351,7 +3599,10 @@
         "S29",
         "S28"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-breakdown"
+      ]
     },
     {
       "id": "safety-emergency-008",
@@ -3467,7 +3718,10 @@
         "S36",
         "S27"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "mk-hard-shoulder"
+      ]
     },
     {
       "id": "safety-emergency-013",
@@ -3702,7 +3956,10 @@
         "S2"
       ],
       "confidence": "high",
-      "notes": "دليل معهد الشارقة للسياقة يذكر حوالي 100 متر، وموقع RoadSafetyUAE يذكر 100 متر على الأقل على الطرق السريعة، وهذا السؤال مبني على رقم هيئة الطرق"
+      "notes": "دليل معهد الشارقة للسياقة يذكر حوالي 100 متر، وموقع RoadSafetyUAE يذكر 100 متر على الأقل على الطرق السريعة، وهذا السؤال مبني على رقم هيئة الطرق",
+      "explain_fig": [
+        "fig-breakdown"
+      ]
     },
     {
       "id": "safety-emergency-023",
@@ -3934,7 +4191,10 @@
         "S37",
         "S38"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-dash-lights"
+      ]
     },
     {
       "id": "safety-vehicle-004",
@@ -3958,7 +4218,10 @@
         "S56",
         "S29"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-gear-selector"
+      ]
     },
     {
       "id": "safety-vehicle-005",
@@ -3982,7 +4245,10 @@
         "S39",
         "S56"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-gear-selector"
+      ]
     },
     {
       "id": "safety-vehicle-006",
@@ -4028,7 +4294,10 @@
         "S37",
         "S38"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-dash-lights"
+      ]
     },
     {
       "id": "safety-vehicle-008",
@@ -4073,7 +4342,10 @@
         "S38",
         "S54"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-dash-lights"
+      ]
     },
     {
       "id": "safety-vehicle-010",
@@ -4096,7 +4368,10 @@
         "S37",
         "S38"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-dash-lights"
+      ]
     },
     {
       "id": "safety-vehicle-011",
@@ -4143,7 +4418,10 @@
         "S1",
         "S56"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-seat-belt"
+      ]
     },
     {
       "id": "safety-vehicle-013",
@@ -4166,7 +4444,10 @@
         "S40",
         "S56"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-seat-belt"
+      ]
     },
     {
       "id": "safety-vehicle-014",
@@ -4189,7 +4470,10 @@
         "S56",
         "S41"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-seat-belt"
+      ]
     },
     {
       "id": "safety-vehicle-015",
@@ -4212,7 +4496,10 @@
         "S39",
         "S56"
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "explain_fig": [
+        "fig-gear-selector"
+      ]
     },
     {
       "id": "safety-vehicle-016",
@@ -4236,7 +4523,10 @@
         "S39",
         "S56"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-gear-selector"
+      ]
     },
     {
       "id": "safety-vehicle-017",
@@ -4285,7 +4575,10 @@
         "S54",
         "S56"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-dash-lights"
+      ]
     },
     {
       "id": "safety-vehicle-019",
@@ -4309,7 +4602,10 @@
         "S38",
         "S56"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-dash-lights"
+      ]
     },
     {
       "id": "safety-vehicle-020",
@@ -4356,7 +4652,10 @@
         "S38",
         "S37"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-dash-lights"
+      ]
     },
     {
       "id": "safety-vehicle-022",
@@ -4379,7 +4678,10 @@
         "S39",
         "S56"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "w-steep-descent"
+      ]
     },
     {
       "id": "safety-vehicle-023",
@@ -4402,7 +4704,10 @@
         "S40",
         "S56"
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "explain_fig": [
+        "fig-seat-belt"
+      ]
     },
     {
       "id": "safety-vehicle-024",
@@ -4469,7 +4774,10 @@
         "S42",
         "S56"
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "explain_fig": [
+        "fig-blind-spots"
+      ]
     },
     {
       "id": "safety-vehicle-027",
@@ -4515,7 +4823,10 @@
         "S2"
       ],
       "confidence": "high",
-      "notes": "دليل معهد الشارقة للسياقة ينصح بتغيير الإطار إذا قلت النقشة عن 6 ملم، ومصادر عالمية تذكر 1.6 ملم، وهذا السؤال مبني على رقم هيئة الطرق"
+      "notes": "دليل معهد الشارقة للسياقة ينصح بتغيير الإطار إذا قلت النقشة عن 6 ملم، ومصادر عالمية تذكر 1.6 ملم، وهذا السؤال مبني على رقم هيئة الطرق",
+      "explain_fig": [
+        "fig-tyre-tread"
+      ]
     },
     {
       "id": "safety-vehicle-029",
@@ -4607,7 +4918,10 @@
         "S56",
         "S12"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-no-phone"
+      ]
     },
     {
       "id": "safety-driver-002",
@@ -4769,7 +5083,10 @@
         "S12",
         "S1"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-no-phone"
+      ]
     },
     {
       "id": "safety-driver-009",
@@ -4885,7 +5202,10 @@
         "S1",
         "S2"
       ],
-      "confidence": "medium"
+      "confidence": "medium",
+      "explain_fig": [
+        "fig-keep-right"
+      ]
     },
     {
       "id": "safety-driver-014",
@@ -4952,7 +5272,11 @@
         "S1",
         "S56"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "explain_fig": [
+        "fig-blind-spots",
+        "fig-lane-change"
+      ]
     },
     {
       "id": "safety-driver-017",
@@ -5045,7 +5369,10 @@
       "src": [
         "S1"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "fig-blind-spots"
+      ]
     },
     {
       "id": "safety-driver-021",
@@ -5112,7 +5439,10 @@
         "S1"
       ],
       "confidence": "high",
-      "notes": "دليل معهد الشارقة للسياقة يذكر أن خطر الحادث المميت أعلى 9 مرات، وهذا رقم مختلف لمقياس مختلف"
+      "notes": "دليل معهد الشارقة للسياقة يذكر أن خطر الحادث المميت أعلى 9 مرات، وهذا رقم مختلف لمقياس مختلف",
+      "fig": [
+        "fig-no-phone"
+      ]
     },
     {
       "id": "safety-driver-024",
@@ -5134,7 +5464,10 @@
         "S56"
       ],
       "confidence": "high",
-      "notes": "دليل هيئة الطرق في دبي يذكر أن احتمال الاصطدام أعلى 4 مرات، وهذا رقم مختلف لمقياس مختلف"
+      "notes": "دليل هيئة الطرق في دبي يذكر أن احتمال الاصطدام أعلى 4 مرات، وهذا رقم مختلف لمقياس مختلف",
+      "fig": [
+        "fig-no-phone"
+      ]
     },
     {
       "id": "safety-driver-025",
@@ -5156,7 +5489,10 @@
       "src": [
         "S1"
       ],
-      "confidence": "high"
+      "confidence": "high",
+      "fig": [
+        "r-speed-60"
+      ]
     }
   ]
 }

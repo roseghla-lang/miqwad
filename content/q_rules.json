@@ -183,7 +183,11 @@
     "S1",
     "S6"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-roundabout-flow",
+    "m-roundabout"
+   ]
   },
   {
    "id": "rules-card-002",
@@ -197,7 +201,10 @@
     "S2",
     "S6"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-roundabout-priority"
+   ]
   },
   {
    "id": "rules-card-003",
@@ -210,7 +217,10 @@
     "S6",
     "S25"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-roundabout-right"
+   ]
   },
   {
    "id": "rules-card-004",
@@ -236,7 +246,10 @@
     "S6",
     "S25"
    ],
-   "confidence": "medium"
+   "confidence": "medium",
+   "fig": [
+    "fig-roundabout-left"
+   ]
   },
   {
    "id": "rules-card-006",
@@ -263,7 +276,10 @@
     "S14",
     "S5"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "ev-roundabout"
+   ]
   },
   {
    "id": "rules-card-008",
@@ -292,7 +308,10 @@
     "S3",
     "S8"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-unmarked-left"
+   ]
   },
   {
    "id": "rules-card-010",
@@ -303,7 +322,11 @@
    "src": [
     "S6"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "p-stop",
+    "p-give-way"
+   ]
   },
   {
    "id": "rules-card-011",
@@ -315,7 +338,11 @@
     "S3",
     "S6"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-turn-left",
+    "fig-uturn"
+   ]
   },
   {
    "id": "rules-card-012",
@@ -361,7 +388,10 @@
    "src": [
     "S3"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-keep-right"
+   ]
   },
   {
    "id": "rules-card-016",
@@ -374,7 +404,10 @@
     "S9",
     "S10"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-keep-right"
+   ]
   },
   {
    "id": "rules-card-017",
@@ -388,7 +421,11 @@
     "S6",
     "S3"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-lane-change",
+    "fig-blind-spots"
+   ]
   },
   {
    "id": "rules-card-018",
@@ -400,7 +437,11 @@
     "S6",
     "S11"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "mk-solid-center",
+    "mk-solid-lane"
+   ]
   },
   {
    "id": "rules-card-019",
@@ -423,7 +464,11 @@
    "src": [
     "S6"
    ],
-   "confidence": "medium"
+   "confidence": "medium",
+   "fig": [
+    "mk-bus-lane",
+    "i-bus-lane-start"
+   ]
   },
   {
    "id": "rules-card-021",
@@ -435,7 +480,10 @@
     "S3",
     "S5"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "ev-emergency-lights"
+   ]
   },
   {
    "id": "rules-card-022",
@@ -447,7 +495,11 @@
     "S12",
     "S14"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "ev-highway-move-right",
+    "ev-internal-road"
+   ]
   },
   {
    "id": "rules-card-023",
@@ -460,7 +512,10 @@
     "S15",
     "S14"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "ev-at-junction"
+   ]
   },
   {
    "id": "rules-card-024",
@@ -472,7 +527,10 @@
     "S12",
     "S14"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "ev-roundabout"
+   ]
   },
   {
    "id": "rules-card-025",
@@ -497,7 +555,10 @@
     "S16",
     "S28"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "mk-hard-shoulder"
+   ]
   },
   {
    "id": "rules-card-027",
@@ -510,7 +571,10 @@
     "S3",
     "S4"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-overtake-left"
+   ]
   },
   {
    "id": "rules-card-028",
@@ -534,7 +598,11 @@
     "S4",
     "S11"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "r-no-overtaking",
+    "mk-solid-center"
+   ]
   },
   {
    "id": "rules-card-030",
@@ -558,7 +626,10 @@
     "S5",
     "S6"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-bike-gap"
+   ]
   },
   {
    "id": "rules-card-032",
@@ -571,7 +642,11 @@
     "S19",
     "S22"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "mk-hard-shoulder",
+    "ev-school-bus-dual"
+   ]
   },
   {
    "id": "rules-card-033",
@@ -583,7 +658,10 @@
     "S5",
     "S3"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "r-speed-80"
+   ]
   },
   {
    "id": "rules-card-034",
@@ -595,7 +673,13 @@
    "src": [
     "S5"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "r-speed-40",
+    "r-speed-80",
+    "r-speed-100",
+    "r-speed-120"
+   ]
   },
   {
    "id": "rules-card-035",
@@ -607,7 +691,13 @@
     "S3",
     "S1"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "w-pedestrian-crossing",
+    "w-children",
+    "w-bend-right",
+    "w-camels"
+   ]
   },
   {
    "id": "rules-card-036",
@@ -620,7 +710,10 @@
     "S6",
     "S5"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "m-min-speed-60"
+   ]
   },
   {
    "id": "rules-card-037",
@@ -646,7 +739,10 @@
     "S5",
     "S21"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-two-second"
+   ]
   },
   {
    "id": "rules-card-039",
@@ -658,7 +754,10 @@
     "S5",
     "S21"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-two-second"
+   ]
   },
   {
    "id": "rules-card-040",
@@ -685,7 +784,10 @@
     "S5",
     "S6"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-stopping-distance"
+   ]
   },
   {
    "id": "rules-card-042",
@@ -696,7 +798,10 @@
    "src": [
     "S5"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-tyre-tread"
+   ]
   },
   {
    "id": "rules-card-043",
@@ -707,7 +812,10 @@
    "src": [
     "S5"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-truck-blind"
+   ]
   },
   {
    "id": "rules-card-044",
@@ -730,7 +838,11 @@
     "S3",
     "S6"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-turn-right",
+    "fig-turn-pedestrians"
+   ]
   },
   {
    "id": "rules-card-046",
@@ -742,7 +854,10 @@
     "S3",
     "S6"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-turn-left"
+   ]
   },
   {
    "id": "rules-card-047",
@@ -754,7 +869,11 @@
     "S6",
     "S3"
    ],
-   "confidence": "medium"
+   "confidence": "medium",
+   "fig": [
+    "fig-uturn",
+    "r-no-u-turn"
+   ]
   },
   {
    "id": "rules-card-048",
@@ -766,7 +885,10 @@
     "S3",
     "S1"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-turn-pedestrians"
+   ]
   },
   {
    "id": "rules-card-049",
@@ -788,7 +910,10 @@
    "src": [
     "S5"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-missed-exit"
+   ]
   },
   {
    "id": "rules-card-051",
@@ -801,7 +926,10 @@
     "S1",
     "S3"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-highway-merge"
+   ]
   },
   {
    "id": "rules-card-052",
@@ -812,7 +940,11 @@
    "src": [
     "S5"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-highway-exit",
+    "mk-chevron"
+   ]
   },
   {
    "id": "rules-card-053",
@@ -824,7 +956,11 @@
     "S11",
     "S14"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "mk-hard-shoulder",
+    "fig-breakdown"
+   ]
   },
   {
    "id": "rules-card-054",
@@ -837,7 +973,11 @@
     "S9",
     "S3"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-keep-right",
+    "m-min-speed-60"
+   ]
   },
   {
    "id": "rules-card-055",
@@ -849,7 +989,11 @@
     "S1",
     "S3"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "mk-zebra",
+    "w-pedestrian-crossing"
+   ]
   },
   {
    "id": "rules-card-056",
@@ -873,7 +1017,10 @@
     "S1",
     "S2"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "w-children"
+   ]
   },
   {
    "id": "rules-card-058",
@@ -909,7 +1056,10 @@
     "S17",
     "S18"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "ev-school-bus-single"
+   ]
   },
   {
    "id": "rules-card-061",
@@ -923,7 +1073,10 @@
     "S18",
     "S20"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "ev-school-bus-single"
+   ]
   },
   {
    "id": "rules-card-062",
@@ -936,7 +1089,11 @@
     "S18",
     "S19"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "ev-school-bus-single",
+    "ev-school-bus-dual"
+   ]
   },
   {
    "id": "rules-card-063",
@@ -960,7 +1117,10 @@
     "S19",
     "S5"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "ev-school-bus-dual"
+   ]
   },
   {
    "id": "rules-card-065",
@@ -983,7 +1143,10 @@
    "src": [
     "S5"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-blind-spots"
+   ]
   },
   {
    "id": "rules-card-067",
@@ -996,7 +1159,10 @@
     "S5",
     "S6"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-bike-gap"
+   ]
   },
   {
    "id": "rules-card-068",
@@ -1007,7 +1173,10 @@
    "src": [
     "S5"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-truck-blind"
+   ]
   },
   {
    "id": "rules-card-069",
@@ -1018,7 +1187,10 @@
    "src": [
     "S3"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "w-camels"
+   ]
   },
   {
    "id": "rules-card-070",
@@ -1030,7 +1202,10 @@
     "S3",
     "S5"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-gear-selector"
+   ]
   },
   {
    "id": "rules-card-071",
@@ -1055,7 +1230,11 @@
     "S3",
     "S4"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-parking-15m",
+    "mk-bus-stop"
+   ]
   },
   {
    "id": "rules-card-073",
@@ -1066,7 +1245,11 @@
    "src": [
     "S24"
    ],
-   "confidence": "medium"
+   "confidence": "medium",
+   "fig": [
+    "mk-disabled-bay",
+    "i-parking-pod"
+   ]
   },
   {
    "id": "rules-card-074",
@@ -1091,7 +1274,10 @@
     "S3",
     "S5"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-lane-change"
+   ]
   },
   {
    "id": "rules-card-076",
@@ -1114,7 +1300,11 @@
     "S3",
     "S5"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-beam-low",
+    "fig-beam-high"
+   ]
   },
   {
    "id": "rules-card-078",
@@ -1127,7 +1317,11 @@
     "S22",
     "S23"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "ev-hazard-lights",
+    "fig-fog-lights"
+   ]
   },
   {
    "id": "rules-card-079",
@@ -1138,7 +1332,10 @@
    "src": [
     "S22"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-fog-lights"
+   ]
   },
   {
    "id": "rules-card-080",
@@ -1163,7 +1360,10 @@
     "S4",
     "S6"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "r-no-horn"
+   ]
   }
  ],
  "questions": [
@@ -1191,7 +1391,10 @@
     "S6"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-roundabout-priority"
+   ]
   },
   {
    "id": "rules-roundabouts-002",
@@ -1216,7 +1419,11 @@
     "S6"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-roundabout-flow",
+    "m-roundabout"
+   ]
   },
   {
    "id": "rules-roundabouts-003",
@@ -1240,7 +1447,10 @@
     "S25"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-roundabout-right"
+   ]
   },
   {
    "id": "rules-roundabouts-004",
@@ -1265,7 +1475,10 @@
     "S25"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-roundabout-right"
+   ]
   },
   {
    "id": "rules-roundabouts-005",
@@ -1289,7 +1502,10 @@
     "S25"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-roundabout-left"
+   ]
   },
   {
    "id": "rules-roundabouts-006",
@@ -1313,7 +1529,10 @@
     "S25"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-roundabout-left"
+   ]
   },
   {
    "id": "rules-roundabouts-007",
@@ -1336,7 +1555,10 @@
     "S25"
    ],
    "confidence": "medium",
-   "notes": "المصدر معهد قيادة معتمد، ودليل هيئة الطرق لا يذكر الالتفاف في الدوار صراحة"
+   "notes": "المصدر معهد قيادة معتمد، ودليل هيئة الطرق لا يذكر الالتفاف في الدوار صراحة",
+   "explain_fig": [
+    "fig-roundabout-left"
+   ]
   },
   {
    "id": "rules-roundabouts-008",
@@ -1433,7 +1655,10 @@
     "S25"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-roundabout-priority"
+   ]
   },
   {
    "id": "rules-roundabouts-012",
@@ -1457,7 +1682,13 @@
     "S14"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "ev-emergency-lights"
+   ],
+   "explain_fig": [
+    "ev-roundabout"
+   ]
   },
   {
    "id": "rules-roundabouts-013",
@@ -1475,14 +1706,17 @@
     "تنتقل فجأة إلى المسار الأيسر لتفسح لها"
    ],
    "answer": 2,
-   "explain": "داخل الدوار لا تتوقف ولا تغير مسارك فجأة، تابع واخرج من أقرب مخرج وافسح لها الطريق نحو اليمين",
+   "explain": "داخل الدوار لا تتوقف ولا تغير مسارك فجأة، تابع بهدوء واخرج من أقرب مخرج لتفسح لها الطريق",
    "src": [
     "S12",
     "S14",
     "S28"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "ev-roundabout"
+   ]
   },
   {
    "id": "rules-roundabouts-014",
@@ -1530,7 +1764,10 @@
     "S6"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-roundabout-right"
+   ]
   },
   {
    "id": "rules-roundabouts-016",
@@ -1602,7 +1839,10 @@
     "S4"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-parking-15m"
+   ]
   },
   {
    "id": "rules-roundabouts-019",
@@ -1626,7 +1866,10 @@
     "S6"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-roundabout-priority"
+   ]
   },
   {
    "id": "rules-roundabouts-020",
@@ -1650,7 +1893,10 @@
     "S1"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-turn-pedestrians"
+   ]
   },
   {
    "id": "rules-priority-001",
@@ -1703,7 +1949,10 @@
     "S8"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-unmarked-left"
+   ]
   },
   {
    "id": "rules-priority-003",
@@ -1750,7 +1999,13 @@
     "S6"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "p-stop"
+   ],
+   "explain_fig": [
+    "mk-stop-line"
+   ]
   },
   {
    "id": "rules-priority-005",
@@ -1774,7 +2029,13 @@
     "S11"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "p-give-way"
+   ],
+   "explain_fig": [
+    "mk-give-way-line"
+   ]
   },
   {
    "id": "rules-priority-006",
@@ -1798,7 +2059,10 @@
     "S1"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "w-t-junction"
+   ]
   },
   {
    "id": "rules-priority-007",
@@ -1822,7 +2086,10 @@
     "S6"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-turn-left"
+   ]
   },
   {
    "id": "rules-priority-008",
@@ -1869,7 +2136,10 @@
     "S6"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-uturn"
+   ]
   },
   {
    "id": "rules-priority-010",
@@ -1965,7 +2235,13 @@
     "S6"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "tl-green"
+   ],
+   "explain_fig": [
+    "fig-turn-left"
+   ]
   },
   {
    "id": "rules-priority-014",
@@ -2013,7 +2289,10 @@
     "S6"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-turn-left"
+   ]
   },
   {
    "id": "rules-priority-016",
@@ -2062,7 +2341,15 @@
     "S6"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "p-stop",
+    "p-give-way"
+   ],
+   "explain_fig": [
+    "mk-stop-line",
+    "mk-give-way-line"
+   ]
   },
   {
    "id": "rules-priority-018",
@@ -2134,7 +2421,10 @@
     "S3"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "tl-green"
+   ]
   },
   {
    "id": "rules-lanes-001",
@@ -2182,7 +2472,10 @@
     "S9"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-keep-right"
+   ]
   },
   {
    "id": "rules-lanes-003",
@@ -2206,7 +2499,10 @@
     "S10"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-keep-right"
+   ]
   },
   {
    "id": "rules-lanes-004",
@@ -2230,7 +2526,10 @@
     "S10"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-keep-right"
+   ]
   },
   {
    "id": "rules-lanes-005",
@@ -2256,7 +2555,10 @@
     "S11"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-lane-change"
+   ]
   },
   {
    "id": "rules-lanes-006",
@@ -2280,7 +2582,10 @@
     "S6"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-blind-spots"
+   ]
   },
   {
    "id": "rules-lanes-007",
@@ -2304,7 +2609,10 @@
     "S6"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "mk-solid-lane"
+   ]
   },
   {
    "id": "rules-lanes-008",
@@ -2352,7 +2660,11 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-overtake-left",
+    "fig-keep-right"
+   ]
   },
   {
    "id": "rules-lanes-010",
@@ -2374,7 +2686,10 @@
     "S6"
    ],
    "confidence": "medium",
-   "notes": "المعلومة من دليل هيئة الطرق (طبعة 2012)، راجع اللوحات لأن بعض المسارات لها أوقات تشغيل"
+   "notes": "المعلومة من دليل هيئة الطرق (طبعة 2012)، راجع اللوحات لأن بعض المسارات لها أوقات تشغيل",
+   "fig": [
+    "mk-bus-lane"
+   ]
   },
   {
    "id": "rules-lanes-011",
@@ -2422,7 +2737,10 @@
     "S3"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-missed-exit"
+   ]
   },
   {
    "id": "rules-lanes-013",
@@ -2493,7 +2811,10 @@
     "S3"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-keep-right"
+   ]
   },
   {
    "id": "rules-lanes-016",
@@ -2542,7 +2863,10 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-keep-right"
+   ]
   },
   {
    "id": "rules-emergency-vehicles-001",
@@ -2567,7 +2891,10 @@
     "S6"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "ev-emergency-lights"
+   ]
   },
   {
    "id": "rules-emergency-vehicles-002",
@@ -2590,7 +2917,10 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "ev-emergency-lights"
+   ]
   },
   {
    "id": "rules-emergency-vehicles-003",
@@ -2614,7 +2944,10 @@
     "S14"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "ev-highway-move-right"
+   ]
   },
   {
    "id": "rules-emergency-vehicles-004",
@@ -2639,7 +2972,13 @@
     "S16"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "ev-emergency-lights"
+   ],
+   "explain_fig": [
+    "ev-internal-road"
+   ]
   },
   {
    "id": "rules-emergency-vehicles-005",
@@ -2665,7 +3004,11 @@
     "S13"
    ],
    "confidence": "high",
-   "notes": "شرطة الشارقة: يمكن التقدم بحذر إلى منطقة ممر المشاة دون تجاوز الإشارة الحمراء، وشرطة دبي أعلنت في 2019 إعفاء من اضطر لتجاوز الأحمر لإفساح الطريق بعد مراجعة التصوير"
+   "notes": "شرطة الشارقة: يمكن التقدم بحذر إلى منطقة ممر المشاة دون تجاوز الإشارة الحمراء، وشرطة دبي أعلنت في 2019 إعفاء من اضطر لتجاوز الأحمر لإفساح الطريق بعد مراجعة التصوير",
+   "fig": [
+    "tl-red",
+    "ev-emergency-lights"
+   ]
   },
   {
    "id": "rules-emergency-vehicles-006",
@@ -2689,7 +3032,14 @@
     "S28"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "tl-green",
+    "ev-emergency-lights"
+   ],
+   "explain_fig": [
+    "ev-at-junction"
+   ]
   },
   {
    "id": "rules-emergency-vehicles-007",
@@ -2738,7 +3088,10 @@
     "S16"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "mk-hard-shoulder"
+   ]
   },
   {
    "id": "rules-emergency-vehicles-009",
@@ -2763,7 +3116,10 @@
     "S3"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "ev-emergency-lights"
+   ]
   },
   {
    "id": "rules-emergency-vehicles-010",
@@ -2885,7 +3241,10 @@
     "S28"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "ev-emergency-lights"
+   ]
   },
   {
    "id": "rules-emergency-vehicles-015",
@@ -2980,7 +3339,10 @@
     "S4"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-overtake-left"
+   ]
   },
   {
    "id": "rules-overtaking-002",
@@ -3122,7 +3484,10 @@
     "S6"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-bike-gap"
+   ]
   },
   {
    "id": "rules-overtaking-008",
@@ -3146,7 +3511,10 @@
     "S6"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "mk-solid-center"
+   ]
   },
   {
    "id": "rules-overtaking-009",
@@ -3170,7 +3538,10 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "mk-solid-center"
+   ]
   },
   {
    "id": "rules-overtaking-010",
@@ -3194,7 +3565,10 @@
     "S10"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-overtake-left"
+   ]
   },
   {
    "id": "rules-overtaking-011",
@@ -3242,7 +3616,10 @@
     "S3"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-overtake-left"
+   ]
   },
   {
    "id": "rules-overtaking-013",
@@ -3266,7 +3643,10 @@
     "S14"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "mk-hard-shoulder"
+   ]
   },
   {
    "id": "rules-overtaking-014",
@@ -3291,7 +3671,10 @@
     "S19"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "ev-school-bus-dual"
+   ]
   },
   {
    "id": "rules-overtaking-015",
@@ -3338,7 +3721,10 @@
     "S3"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "r-speed-80"
+   ]
   },
   {
    "id": "rules-speed-002",
@@ -3386,7 +3772,10 @@
     "S6"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "m-min-speed-60"
+   ]
   },
   {
    "id": "rules-speed-004",
@@ -3410,7 +3799,10 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "r-speed-40"
+   ]
   },
   {
    "id": "rules-speed-005",
@@ -3433,7 +3825,10 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-stopping-distance"
+   ]
   },
   {
    "id": "rules-speed-006",
@@ -3456,7 +3851,12 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": "الأرقام من دليل هيئة الطرق (طبعة 2016)، والحد الفعلي هو المكتوب على اللوحة"
+   "notes": "الأرقام من دليل هيئة الطرق (طبعة 2016)، والحد الفعلي هو المكتوب على اللوحة",
+   "explain_fig": [
+    "r-speed-40",
+    "r-speed-60",
+    "r-speed-80"
+   ]
   },
   {
    "id": "rules-speed-007",
@@ -3479,7 +3879,11 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": "بعض الطرق في الإمارات لها حدود مختلفة، التزم باللوحة"
+   "notes": "بعض الطرق في الإمارات لها حدود مختلفة، التزم باللوحة",
+   "explain_fig": [
+    "r-speed-100",
+    "r-speed-120"
+   ]
   },
   {
    "id": "rules-speed-008",
@@ -3504,7 +3908,10 @@
     "S3"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "r-speed-100"
+   ]
   },
   {
    "id": "rules-speed-009",
@@ -3529,7 +3936,10 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "m-min-speed-60"
+   ]
   },
   {
    "id": "rules-speed-010",
@@ -3552,7 +3962,10 @@
     "S3"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "r-speed-100"
+   ]
   },
   {
    "id": "rules-speed-011",
@@ -3648,7 +4061,10 @@
     "S3"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "r-speed-40"
+   ]
   },
   {
    "id": "rules-distance-001",
@@ -3671,7 +4087,10 @@
     "S3"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-two-second"
+   ]
   },
   {
    "id": "rules-distance-002",
@@ -3696,7 +4115,10 @@
     "S21"
    ],
    "confidence": "high",
-   "notes": "بعض مواقع التوعية تنصح بثلاث ثوان، والمعتمد هنا دليل هيئة الطرق"
+   "notes": "بعض مواقع التوعية تنصح بثلاث ثوان، والمعتمد هنا دليل هيئة الطرق",
+   "explain_fig": [
+    "fig-two-second"
+   ]
   },
   {
    "id": "rules-distance-003",
@@ -3720,7 +4142,10 @@
     "S21"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-two-second"
+   ]
   },
   {
    "id": "rules-distance-004",
@@ -3768,7 +4193,10 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-fog-lights"
+   ]
   },
   {
    "id": "rules-distance-006",
@@ -3792,7 +4220,10 @@
     "S6"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-stopping-distance"
+   ]
   },
   {
    "id": "rules-distance-007",
@@ -3839,7 +4270,10 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-truck-blind"
+   ]
   },
   {
    "id": "rules-distance-009",
@@ -3862,7 +4296,11 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-stopping-distance",
+    "fig-tyre-tread"
+   ]
   },
   {
    "id": "rules-distance-010",
@@ -3886,7 +4324,10 @@
     "S3"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-two-second"
+   ]
   },
   {
    "id": "rules-distance-011",
@@ -3910,7 +4351,10 @@
     "S10"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-keep-right"
+   ]
   },
   {
    "id": "rules-distance-012",
@@ -3982,7 +4426,10 @@
     "S21"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-stopping-distance"
+   ]
   },
   {
    "id": "rules-distance-015",
@@ -4054,7 +4501,10 @@
     "S6"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-turn-right"
+   ]
   },
   {
    "id": "rules-turning-003",
@@ -4077,7 +4527,10 @@
     "S3"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-turn-left"
+   ]
   },
   {
    "id": "rules-turning-004",
@@ -4123,7 +4576,10 @@
     "S6"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "r-no-u-turn"
+   ]
   },
   {
    "id": "rules-turning-006",
@@ -4147,7 +4603,10 @@
     "S6"
    ],
    "confidence": "medium",
-   "notes": "مستنتج من قاعدة الانعطاف يسارا في اللائحة، ولم نجد نصا صريحا عن مسار الالتفاف"
+   "notes": "مستنتج من قاعدة الانعطاف يسارا في اللائحة، ولم نجد نصا صريحا عن مسار الالتفاف",
+   "explain_fig": [
+    "fig-uturn"
+   ]
   },
   {
    "id": "rules-turning-007",
@@ -4170,7 +4629,10 @@
     "S6"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "tl-green-arrow"
+   ]
   },
   {
    "id": "rules-turning-008",
@@ -4194,7 +4656,10 @@
     "S1"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-turn-pedestrians"
+   ]
   },
   {
    "id": "rules-turning-009",
@@ -4218,7 +4683,10 @@
     "S3"
    ],
    "confidence": "medium",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-blind-spots"
+   ]
   },
   {
    "id": "rules-turning-010",
@@ -4265,7 +4733,10 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-missed-exit"
+   ]
   },
   {
    "id": "rules-turning-012",
@@ -4289,7 +4760,10 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-blind-spots"
+   ]
   },
   {
    "id": "rules-turning-013",
@@ -4313,7 +4787,10 @@
     "S3"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "tl-green"
+   ]
   },
   {
    "id": "rules-turning-014",
@@ -4336,7 +4813,10 @@
     "S6"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-turn-left"
+   ]
   },
   {
    "id": "rules-turning-015",
@@ -4383,7 +4863,10 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-missed-exit"
+   ]
   },
   {
    "id": "rules-highway-002",
@@ -4407,7 +4890,10 @@
     "S3"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-highway-merge"
+   ]
   },
   {
    "id": "rules-highway-003",
@@ -4430,7 +4916,10 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-highway-exit"
+   ]
   },
   {
    "id": "rules-highway-004",
@@ -4455,7 +4944,11 @@
     "S16"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "mk-hard-shoulder",
+    "fig-breakdown"
+   ]
   },
   {
    "id": "rules-highway-005",
@@ -4478,7 +4971,13 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "mk-chevron"
+   ],
+   "explain_fig": [
+    "fig-highway-exit"
+   ]
   },
   {
    "id": "rules-highway-006",
@@ -4503,7 +5002,10 @@
     "S10"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-keep-right"
+   ]
   },
   {
    "id": "rules-highway-007",
@@ -4528,7 +5030,10 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-highway-merge"
+   ]
   },
   {
    "id": "rules-highway-008",
@@ -4552,7 +5057,10 @@
     "S6"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "m-min-speed-60"
+   ]
   },
   {
    "id": "rules-highway-009",
@@ -4576,7 +5084,10 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "mk-arrow-merge"
+   ]
   },
   {
    "id": "rules-highway-010",
@@ -4599,7 +5110,10 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-highway-merge"
+   ]
   },
   {
    "id": "rules-highway-011",
@@ -4622,7 +5136,10 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-missed-exit"
+   ]
   },
   {
    "id": "rules-highway-012",
@@ -4646,7 +5163,10 @@
     "S1"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "mk-hard-shoulder"
+   ]
   },
   {
    "id": "rules-highway-013",
@@ -4669,7 +5189,11 @@
     "S5"
    ],
    "confidence": "medium",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "g-exit-countdown",
+    "fig-missed-exit"
+   ]
   },
   {
    "id": "rules-highway-014",
@@ -4717,7 +5241,10 @@
     "S3"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "mk-zebra"
+   ]
   },
   {
    "id": "rules-pedestrians-002",
@@ -4765,7 +5292,10 @@
     "S4"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "mk-zebra"
+   ]
   },
   {
    "id": "rules-pedestrians-004",
@@ -4860,7 +5390,10 @@
     "S1"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "tl-green"
+   ]
   },
   {
    "id": "rules-pedestrians-008",
@@ -4978,7 +5511,10 @@
     "S27"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "mk-zebra"
+   ]
   },
   {
    "id": "rules-pedestrians-013",
@@ -5025,7 +5561,10 @@
     "S5"
    ],
    "confidence": "medium",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "mk-bus-stop"
+   ]
   },
   {
    "id": "rules-school-bus-001",
@@ -5051,7 +5590,10 @@
     "S19"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "ev-school-bus-single"
+   ]
   },
   {
    "id": "rules-school-bus-002",
@@ -5076,7 +5618,10 @@
     "S20"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "ev-school-bus-single"
+   ]
   },
   {
    "id": "rules-school-bus-003",
@@ -5101,7 +5646,10 @@
     "S19"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "ev-school-bus-single"
+   ]
   },
   {
    "id": "rules-school-bus-004",
@@ -5125,7 +5673,10 @@
     "S18"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "ev-school-bus-dual"
+   ]
   },
   {
    "id": "rules-school-bus-005",
@@ -5221,7 +5772,10 @@
     "S19"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "ev-school-bus-dual"
+   ]
   },
   {
    "id": "rules-school-bus-009",
@@ -5246,7 +5800,11 @@
     "S20"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "ev-school-bus-single",
+    "p-stop"
+   ]
   },
   {
    "id": "rules-school-bus-010",
@@ -5341,7 +5899,10 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-blind-spots"
+   ]
   },
   {
    "id": "rules-vulnerable-002",
@@ -5365,7 +5926,10 @@
     "S6"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-blind-spots"
+   ]
   },
   {
    "id": "rules-vulnerable-003",
@@ -5388,7 +5952,10 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-truck-blind"
+   ]
   },
   {
    "id": "rules-vulnerable-004",
@@ -5411,7 +5978,10 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": "الدليل الإنجليزي يذكر جهة الباب الأيسر للشاحنة، ويبدو منقولا من دول القيادة على اليسار، لذلك صغنا الإجابة بشكل عام"
+   "notes": "الدليل الإنجليزي يذكر جهة الباب الأيسر للشاحنة، ويبدو منقولا من دول القيادة على اليسار، لذلك صغنا الإجابة بشكل عام",
+   "explain_fig": [
+    "fig-truck-blind"
+   ]
   },
   {
    "id": "rules-vulnerable-005",
@@ -5434,7 +6004,10 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-truck-blind"
+   ]
   },
   {
    "id": "rules-vulnerable-006",
@@ -5457,7 +6030,10 @@
     "S3"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "w-camels"
+   ]
   },
   {
    "id": "rules-vulnerable-007",
@@ -5480,7 +6056,10 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-bike-gap"
+   ]
   },
   {
    "id": "rules-vulnerable-008",
@@ -5504,7 +6083,10 @@
     "S3"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-blind-spots"
+   ]
   },
   {
    "id": "rules-vulnerable-009",
@@ -5527,7 +6109,10 @@
     "S3"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "w-camels"
+   ]
   },
   {
    "id": "rules-vulnerable-010",
@@ -5573,7 +6158,10 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-truck-blind"
+   ]
   },
   {
    "id": "rules-vulnerable-012",
@@ -5645,7 +6233,10 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-bike-gap"
+   ]
   },
   {
    "id": "rules-parking-001",
@@ -5691,7 +6282,11 @@
     "S24"
    ],
    "confidence": "medium",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "i-parking-pod",
+    "mk-disabled-bay"
+   ]
   },
   {
    "id": "rules-parking-003",
@@ -5738,7 +6333,10 @@
     "S4"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-parking-15m"
+   ]
   },
   {
    "id": "rules-parking-005",
@@ -5834,7 +6432,10 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-lane-change"
+   ]
   },
   {
    "id": "rules-parking-009",
@@ -5857,7 +6458,10 @@
     "S5"
    ],
    "confidence": "medium",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-gear-selector"
+   ]
   },
   {
    "id": "rules-parking-010",
@@ -5904,7 +6508,10 @@
     "S4"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "mk-bus-stop"
+   ]
   },
   {
    "id": "rules-parking-012",
@@ -5974,7 +6581,10 @@
     "S3"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-breakdown"
+   ]
   },
   {
    "id": "rules-parking-015",
@@ -5998,7 +6608,10 @@
     "S4"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-parking-15m"
+   ]
   },
   {
    "id": "rules-lights-horn-001",
@@ -6045,7 +6658,10 @@
     "S5"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-beam-high"
+   ]
   },
   {
    "id": "rules-lights-horn-003",
@@ -6069,7 +6685,13 @@
     "S3"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "fig-beam-high"
+   ],
+   "explain_fig": [
+    "fig-beam-low"
+   ]
   },
   {
    "id": "rules-lights-horn-004",
@@ -6093,7 +6715,11 @@
     "S23"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-breakdown",
+    "ev-hazard-lights"
+   ]
   },
   {
    "id": "rules-lights-horn-005",
@@ -6117,7 +6743,10 @@
     "S23"
    ],
    "confidence": "high",
-   "notes": "الشرطة تحذر من استخدامها أثناء السير، وبعض المصادر تعتبره مخالفة"
+   "notes": "الشرطة تحذر من استخدامها أثناء السير، وبعض المصادر تعتبره مخالفة",
+   "explain_fig": [
+    "fig-fog-lights"
+   ]
   },
   {
    "id": "rules-lights-horn-006",
@@ -6141,7 +6770,10 @@
     "S23"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-fog-lights"
+   ]
   },
   {
    "id": "rules-lights-horn-007",
@@ -6189,7 +6821,10 @@
     "S4"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "r-no-horn"
+   ]
   },
   {
    "id": "rules-lights-horn-009",
@@ -6260,7 +6895,10 @@
     "S3"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-beam-low"
+   ]
   },
   {
    "id": "rules-lights-horn-012",
@@ -6284,7 +6922,10 @@
     "S22"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "explain_fig": [
+    "fig-breakdown"
+   ]
   },
   {
    "id": "rules-lights-horn-013",
@@ -6354,7 +6995,13 @@
     "S3"
    ],
    "confidence": "high",
-   "notes": ""
+   "notes": "",
+   "fig": [
+    "fig-beam-high"
+   ],
+   "explain_fig": [
+    "fig-beam-low"
+   ]
   }
  ]
 }

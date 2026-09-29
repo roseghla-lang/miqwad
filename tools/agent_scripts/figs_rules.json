@@ -1,0 +1,1037 @@
+{
+ "questions": {
+  "rules-roundabouts-001": {
+   "explain_fig": [
+    "fig-roundabout-priority"
+   ]
+  },
+  "rules-roundabouts-002": {
+   "explain_fig": [
+    "fig-roundabout-flow",
+    "m-roundabout"
+   ]
+  },
+  "rules-roundabouts-003": {
+   "explain_fig": [
+    "fig-roundabout-right"
+   ]
+  },
+  "rules-roundabouts-004": {
+   "explain_fig": [
+    "fig-roundabout-right"
+   ]
+  },
+  "rules-roundabouts-005": {
+   "explain_fig": [
+    "fig-roundabout-left"
+   ]
+  },
+  "rules-roundabouts-006": {
+   "explain_fig": [
+    "fig-roundabout-left"
+   ]
+  },
+  "rules-roundabouts-007": {
+   "explain_fig": [
+    "fig-roundabout-left"
+   ]
+  },
+  "rules-roundabouts-011": {
+   "explain_fig": [
+    "fig-roundabout-priority"
+   ]
+  },
+  "rules-roundabouts-012": {
+   "fig": [
+    "ev-emergency-lights"
+   ],
+   "explain_fig": [
+    "ev-roundabout"
+   ]
+  },
+  "rules-roundabouts-013": {
+   "explain_fig": [
+    "ev-roundabout"
+   ]
+  },
+  "rules-roundabouts-015": {
+   "explain_fig": [
+    "fig-roundabout-right"
+   ]
+  },
+  "rules-roundabouts-018": {
+   "explain_fig": [
+    "fig-parking-15m"
+   ]
+  },
+  "rules-roundabouts-019": {
+   "explain_fig": [
+    "fig-roundabout-priority"
+   ]
+  },
+  "rules-roundabouts-020": {
+   "explain_fig": [
+    "fig-turn-pedestrians"
+   ]
+  },
+  "rules-priority-002": {
+   "explain_fig": [
+    "fig-unmarked-left"
+   ]
+  },
+  "rules-priority-004": {
+   "fig": [
+    "p-stop"
+   ],
+   "explain_fig": [
+    "mk-stop-line"
+   ]
+  },
+  "rules-priority-005": {
+   "fig": [
+    "p-give-way"
+   ],
+   "explain_fig": [
+    "mk-give-way-line"
+   ]
+  },
+  "rules-priority-006": {
+   "fig": [
+    "w-t-junction"
+   ]
+  },
+  "rules-priority-007": {
+   "explain_fig": [
+    "fig-turn-left"
+   ]
+  },
+  "rules-priority-009": {
+   "explain_fig": [
+    "fig-uturn"
+   ]
+  },
+  "rules-priority-013": {
+   "fig": [
+    "tl-green"
+   ],
+   "explain_fig": [
+    "fig-turn-left"
+   ]
+  },
+  "rules-priority-015": {
+   "explain_fig": [
+    "fig-turn-left"
+   ]
+  },
+  "rules-priority-017": {
+   "fig": [
+    "p-stop",
+    "p-give-way"
+   ],
+   "explain_fig": [
+    "mk-stop-line",
+    "mk-give-way-line"
+   ]
+  },
+  "rules-priority-020": {
+   "fig": [
+    "tl-green"
+   ]
+  },
+  "rules-lanes-002": {
+   "explain_fig": [
+    "fig-keep-right"
+   ]
+  },
+  "rules-lanes-003": {
+   "explain_fig": [
+    "fig-keep-right"
+   ]
+  },
+  "rules-lanes-004": {
+   "explain_fig": [
+    "fig-keep-right"
+   ]
+  },
+  "rules-lanes-005": {
+   "explain_fig": [
+    "fig-lane-change"
+   ]
+  },
+  "rules-lanes-006": {
+   "explain_fig": [
+    "fig-blind-spots"
+   ]
+  },
+  "rules-lanes-007": {
+   "fig": [
+    "mk-solid-lane"
+   ]
+  },
+  "rules-lanes-009": {
+   "explain_fig": [
+    "fig-overtake-left",
+    "fig-keep-right"
+   ]
+  },
+  "rules-lanes-010": {
+   "fig": [
+    "mk-bus-lane"
+   ]
+  },
+  "rules-lanes-012": {
+   "explain_fig": [
+    "fig-missed-exit"
+   ]
+  },
+  "rules-lanes-015": {
+   "explain_fig": [
+    "fig-keep-right"
+   ]
+  },
+  "rules-lanes-017": {
+   "explain_fig": [
+    "fig-keep-right"
+   ]
+  },
+  "rules-emergency-vehicles-001": {
+   "fig": [
+    "ev-emergency-lights"
+   ]
+  },
+  "rules-emergency-vehicles-002": {
+   "explain_fig": [
+    "ev-emergency-lights"
+   ]
+  },
+  "rules-emergency-vehicles-003": {
+   "explain_fig": [
+    "ev-highway-move-right"
+   ]
+  },
+  "rules-emergency-vehicles-004": {
+   "fig": [
+    "ev-emergency-lights"
+   ],
+   "explain_fig": [
+    "ev-internal-road"
+   ]
+  },
+  "rules-emergency-vehicles-005": {
+   "fig": [
+    "tl-red",
+    "ev-emergency-lights"
+   ]
+  },
+  "rules-emergency-vehicles-006": {
+   "fig": [
+    "tl-green",
+    "ev-emergency-lights"
+   ],
+   "explain_fig": [
+    "ev-at-junction"
+   ]
+  },
+  "rules-emergency-vehicles-008": {
+   "explain_fig": [
+    "mk-hard-shoulder"
+   ]
+  },
+  "rules-emergency-vehicles-009": {
+   "fig": [
+    "ev-emergency-lights"
+   ]
+  },
+  "rules-emergency-vehicles-014": {
+   "fig": [
+    "ev-emergency-lights"
+   ]
+  },
+  "rules-overtaking-001": {
+   "explain_fig": [
+    "fig-overtake-left"
+   ]
+  },
+  "rules-overtaking-007": {
+   "explain_fig": [
+    "fig-bike-gap"
+   ]
+  },
+  "rules-overtaking-008": {
+   "explain_fig": [
+    "mk-solid-center"
+   ]
+  },
+  "rules-overtaking-009": {
+   "explain_fig": [
+    "mk-solid-center"
+   ]
+  },
+  "rules-overtaking-010": {
+   "explain_fig": [
+    "fig-overtake-left"
+   ]
+  },
+  "rules-overtaking-012": {
+   "explain_fig": [
+    "fig-overtake-left"
+   ]
+  },
+  "rules-overtaking-013": {
+   "explain_fig": [
+    "mk-hard-shoulder"
+   ]
+  },
+  "rules-overtaking-014": {
+   "explain_fig": [
+    "ev-school-bus-dual"
+   ]
+  },
+  "rules-speed-001": {
+   "fig": [
+    "r-speed-80"
+   ]
+  },
+  "rules-speed-003": {
+   "fig": [
+    "m-min-speed-60"
+   ]
+  },
+  "rules-speed-004": {
+   "fig": [
+    "r-speed-40"
+   ]
+  },
+  "rules-speed-005": {
+   "explain_fig": [
+    "fig-stopping-distance"
+   ]
+  },
+  "rules-speed-006": {
+   "explain_fig": [
+    "r-speed-40",
+    "r-speed-60",
+    "r-speed-80"
+   ]
+  },
+  "rules-speed-007": {
+   "explain_fig": [
+    "r-speed-100",
+    "r-speed-120"
+   ]
+  },
+  "rules-speed-008": {
+   "fig": [
+    "r-speed-100"
+   ]
+  },
+  "rules-speed-009": {
+   "explain_fig": [
+    "m-min-speed-60"
+   ]
+  },
+  "rules-speed-010": {
+   "fig": [
+    "r-speed-100"
+   ]
+  },
+  "rules-speed-014": {
+   "fig": [
+    "r-speed-40"
+   ]
+  },
+  "rules-distance-001": {
+   "explain_fig": [
+    "fig-two-second"
+   ]
+  },
+  "rules-distance-002": {
+   "explain_fig": [
+    "fig-two-second"
+   ]
+  },
+  "rules-distance-003": {
+   "explain_fig": [
+    "fig-two-second"
+   ]
+  },
+  "rules-distance-005": {
+   "explain_fig": [
+    "fig-fog-lights"
+   ]
+  },
+  "rules-distance-006": {
+   "explain_fig": [
+    "fig-stopping-distance"
+   ]
+  },
+  "rules-distance-008": {
+   "explain_fig": [
+    "fig-truck-blind"
+   ]
+  },
+  "rules-distance-009": {
+   "explain_fig": [
+    "fig-stopping-distance",
+    "fig-tyre-tread"
+   ]
+  },
+  "rules-distance-010": {
+   "explain_fig": [
+    "fig-two-second"
+   ]
+  },
+  "rules-distance-011": {
+   "explain_fig": [
+    "fig-keep-right"
+   ]
+  },
+  "rules-distance-014": {
+   "explain_fig": [
+    "fig-stopping-distance"
+   ]
+  },
+  "rules-turning-002": {
+   "explain_fig": [
+    "fig-turn-right"
+   ]
+  },
+  "rules-turning-003": {
+   "explain_fig": [
+    "fig-turn-left"
+   ]
+  },
+  "rules-turning-005": {
+   "explain_fig": [
+    "r-no-u-turn"
+   ]
+  },
+  "rules-turning-006": {
+   "explain_fig": [
+    "fig-uturn"
+   ]
+  },
+  "rules-turning-007": {
+   "fig": [
+    "tl-green-arrow"
+   ]
+  },
+  "rules-turning-008": {
+   "explain_fig": [
+    "fig-turn-pedestrians"
+   ]
+  },
+  "rules-turning-009": {
+   "explain_fig": [
+    "fig-blind-spots"
+   ]
+  },
+  "rules-turning-011": {
+   "explain_fig": [
+    "fig-missed-exit"
+   ]
+  },
+  "rules-turning-012": {
+   "explain_fig": [
+    "fig-blind-spots"
+   ]
+  },
+  "rules-turning-013": {
+   "fig": [
+    "tl-green"
+   ]
+  },
+  "rules-turning-014": {
+   "explain_fig": [
+    "fig-turn-left"
+   ]
+  },
+  "rules-highway-001": {
+   "explain_fig": [
+    "fig-missed-exit"
+   ]
+  },
+  "rules-highway-002": {
+   "explain_fig": [
+    "fig-highway-merge"
+   ]
+  },
+  "rules-highway-003": {
+   "explain_fig": [
+    "fig-highway-exit"
+   ]
+  },
+  "rules-highway-004": {
+   "explain_fig": [
+    "mk-hard-shoulder",
+    "fig-breakdown"
+   ]
+  },
+  "rules-highway-005": {
+   "fig": [
+    "mk-chevron"
+   ],
+   "explain_fig": [
+    "fig-highway-exit"
+   ]
+  },
+  "rules-highway-006": {
+   "explain_fig": [
+    "fig-keep-right"
+   ]
+  },
+  "rules-highway-007": {
+   "explain_fig": [
+    "fig-highway-merge"
+   ]
+  },
+  "rules-highway-008": {
+   "fig": [
+    "m-min-speed-60"
+   ]
+  },
+  "rules-highway-009": {
+   "explain_fig": [
+    "mk-arrow-merge"
+   ]
+  },
+  "rules-highway-010": {
+   "explain_fig": [
+    "fig-highway-merge"
+   ]
+  },
+  "rules-highway-011": {
+   "explain_fig": [
+    "fig-missed-exit"
+   ]
+  },
+  "rules-highway-012": {
+   "explain_fig": [
+    "mk-hard-shoulder"
+   ]
+  },
+  "rules-highway-013": {
+   "explain_fig": [
+    "g-exit-countdown",
+    "fig-missed-exit"
+   ]
+  },
+  "rules-pedestrians-001": {
+   "fig": [
+    "mk-zebra"
+   ]
+  },
+  "rules-pedestrians-003": {
+   "fig": [
+    "mk-zebra"
+   ]
+  },
+  "rules-pedestrians-007": {
+   "fig": [
+    "tl-green"
+   ]
+  },
+  "rules-pedestrians-012": {
+   "explain_fig": [
+    "mk-zebra"
+   ]
+  },
+  "rules-pedestrians-014": {
+   "fig": [
+    "mk-bus-stop"
+   ]
+  },
+  "rules-school-bus-001": {
+   "explain_fig": [
+    "ev-school-bus-single"
+   ]
+  },
+  "rules-school-bus-002": {
+   "explain_fig": [
+    "ev-school-bus-single"
+   ]
+  },
+  "rules-school-bus-003": {
+   "explain_fig": [
+    "ev-school-bus-single"
+   ]
+  },
+  "rules-school-bus-004": {
+   "explain_fig": [
+    "ev-school-bus-dual"
+   ]
+  },
+  "rules-school-bus-008": {
+   "explain_fig": [
+    "ev-school-bus-dual"
+   ]
+  },
+  "rules-school-bus-009": {
+   "explain_fig": [
+    "ev-school-bus-single",
+    "p-stop"
+   ]
+  },
+  "rules-vulnerable-001": {
+   "explain_fig": [
+    "fig-blind-spots"
+   ]
+  },
+  "rules-vulnerable-002": {
+   "explain_fig": [
+    "fig-blind-spots"
+   ]
+  },
+  "rules-vulnerable-003": {
+   "explain_fig": [
+    "fig-truck-blind"
+   ]
+  },
+  "rules-vulnerable-004": {
+   "explain_fig": [
+    "fig-truck-blind"
+   ]
+  },
+  "rules-vulnerable-005": {
+   "explain_fig": [
+    "fig-truck-blind"
+   ]
+  },
+  "rules-vulnerable-006": {
+   "explain_fig": [
+    "w-camels"
+   ]
+  },
+  "rules-vulnerable-007": {
+   "explain_fig": [
+    "fig-bike-gap"
+   ]
+  },
+  "rules-vulnerable-008": {
+   "explain_fig": [
+    "fig-blind-spots"
+   ]
+  },
+  "rules-vulnerable-009": {
+   "fig": [
+    "w-camels"
+   ]
+  },
+  "rules-vulnerable-011": {
+   "explain_fig": [
+    "fig-truck-blind"
+   ]
+  },
+  "rules-vulnerable-014": {
+   "explain_fig": [
+    "fig-bike-gap"
+   ]
+  },
+  "rules-parking-002": {
+   "fig": [
+    "i-parking-pod",
+    "mk-disabled-bay"
+   ]
+  },
+  "rules-parking-004": {
+   "explain_fig": [
+    "fig-parking-15m"
+   ]
+  },
+  "rules-parking-008": {
+   "explain_fig": [
+    "fig-lane-change"
+   ]
+  },
+  "rules-parking-009": {
+   "explain_fig": [
+    "fig-gear-selector"
+   ]
+  },
+  "rules-parking-011": {
+   "fig": [
+    "mk-bus-stop"
+   ]
+  },
+  "rules-parking-014": {
+   "explain_fig": [
+    "fig-breakdown"
+   ]
+  },
+  "rules-parking-015": {
+   "explain_fig": [
+    "fig-parking-15m"
+   ]
+  },
+  "rules-lights-horn-002": {
+   "explain_fig": [
+    "fig-beam-high"
+   ]
+  },
+  "rules-lights-horn-003": {
+   "fig": [
+    "fig-beam-high"
+   ],
+   "explain_fig": [
+    "fig-beam-low"
+   ]
+  },
+  "rules-lights-horn-004": {
+   "explain_fig": [
+    "fig-breakdown",
+    "ev-hazard-lights"
+   ]
+  },
+  "rules-lights-horn-005": {
+   "explain_fig": [
+    "fig-fog-lights"
+   ]
+  },
+  "rules-lights-horn-006": {
+   "explain_fig": [
+    "fig-fog-lights"
+   ]
+  },
+  "rules-lights-horn-008": {
+   "explain_fig": [
+    "r-no-horn"
+   ]
+  },
+  "rules-lights-horn-011": {
+   "explain_fig": [
+    "fig-beam-low"
+   ]
+  },
+  "rules-lights-horn-012": {
+   "explain_fig": [
+    "fig-breakdown"
+   ]
+  },
+  "rules-lights-horn-015": {
+   "fig": [
+    "fig-beam-high"
+   ],
+   "explain_fig": [
+    "fig-beam-low"
+   ]
+  }
+ },
+ "cards": {
+  "rules-card-001": {
+   "fig": [
+    "fig-roundabout-flow",
+    "m-roundabout"
+   ]
+  },
+  "rules-card-002": {
+   "fig": [
+    "fig-roundabout-priority"
+   ]
+  },
+  "rules-card-003": {
+   "fig": [
+    "fig-roundabout-right"
+   ]
+  },
+  "rules-card-005": {
+   "fig": [
+    "fig-roundabout-left"
+   ]
+  },
+  "rules-card-007": {
+   "fig": [
+    "ev-roundabout"
+   ]
+  },
+  "rules-card-009": {
+   "fig": [
+    "fig-unmarked-left"
+   ]
+  },
+  "rules-card-010": {
+   "fig": [
+    "p-stop",
+    "p-give-way"
+   ]
+  },
+  "rules-card-011": {
+   "fig": [
+    "fig-turn-left",
+    "fig-uturn"
+   ]
+  },
+  "rules-card-015": {
+   "fig": [
+    "fig-keep-right"
+   ]
+  },
+  "rules-card-016": {
+   "fig": [
+    "fig-keep-right"
+   ]
+  },
+  "rules-card-017": {
+   "fig": [
+    "fig-lane-change",
+    "fig-blind-spots"
+   ]
+  },
+  "rules-card-018": {
+   "fig": [
+    "mk-solid-center",
+    "mk-solid-lane"
+   ]
+  },
+  "rules-card-020": {
+   "fig": [
+    "mk-bus-lane",
+    "i-bus-lane-start"
+   ]
+  },
+  "rules-card-021": {
+   "fig": [
+    "ev-emergency-lights"
+   ]
+  },
+  "rules-card-022": {
+   "fig": [
+    "ev-highway-move-right",
+    "ev-internal-road"
+   ]
+  },
+  "rules-card-023": {
+   "fig": [
+    "ev-at-junction"
+   ]
+  },
+  "rules-card-024": {
+   "fig": [
+    "ev-roundabout"
+   ]
+  },
+  "rules-card-026": {
+   "fig": [
+    "mk-hard-shoulder"
+   ]
+  },
+  "rules-card-027": {
+   "fig": [
+    "fig-overtake-left"
+   ]
+  },
+  "rules-card-029": {
+   "fig": [
+    "r-no-overtaking",
+    "mk-solid-center"
+   ]
+  },
+  "rules-card-031": {
+   "fig": [
+    "fig-bike-gap"
+   ]
+  },
+  "rules-card-032": {
+   "fig": [
+    "mk-hard-shoulder",
+    "ev-school-bus-dual"
+   ]
+  },
+  "rules-card-033": {
+   "fig": [
+    "r-speed-80"
+   ]
+  },
+  "rules-card-034": {
+   "fig": [
+    "r-speed-40",
+    "r-speed-80",
+    "r-speed-100",
+    "r-speed-120"
+   ]
+  },
+  "rules-card-035": {
+   "fig": [
+    "w-pedestrian-crossing",
+    "w-children",
+    "w-bend-right",
+    "w-camels"
+   ]
+  },
+  "rules-card-036": {
+   "fig": [
+    "m-min-speed-60"
+   ]
+  },
+  "rules-card-038": {
+   "fig": [
+    "fig-two-second"
+   ]
+  },
+  "rules-card-039": {
+   "fig": [
+    "fig-two-second"
+   ]
+  },
+  "rules-card-041": {
+   "fig": [
+    "fig-stopping-distance"
+   ]
+  },
+  "rules-card-042": {
+   "fig": [
+    "fig-tyre-tread"
+   ]
+  },
+  "rules-card-043": {
+   "fig": [
+    "fig-truck-blind"
+   ]
+  },
+  "rules-card-045": {
+   "fig": [
+    "fig-turn-right",
+    "fig-turn-pedestrians"
+   ]
+  },
+  "rules-card-046": {
+   "fig": [
+    "fig-turn-left"
+   ]
+  },
+  "rules-card-047": {
+   "fig": [
+    "fig-uturn",
+    "r-no-u-turn"
+   ]
+  },
+  "rules-card-048": {
+   "fig": [
+    "fig-turn-pedestrians"
+   ]
+  },
+  "rules-card-050": {
+   "fig": [
+    "fig-missed-exit"
+   ]
+  },
+  "rules-card-051": {
+   "fig": [
+    "fig-highway-merge"
+   ]
+  },
+  "rules-card-052": {
+   "fig": [
+    "fig-highway-exit",
+    "mk-chevron"
+   ]
+  },
+  "rules-card-053": {
+   "fig": [
+    "mk-hard-shoulder",
+    "fig-breakdown"
+   ]
+  },
+  "rules-card-054": {
+   "fig": [
+    "fig-keep-right",
+    "m-min-speed-60"
+   ]
+  },
+  "rules-card-055": {
+   "fig": [
+    "mk-zebra",
+    "w-pedestrian-crossing"
+   ]
+  },
+  "rules-card-057": {
+   "fig": [
+    "w-children"
+   ]
+  },
+  "rules-card-060": {
+   "fig": [
+    "ev-school-bus-single"
+   ]
+  },
+  "rules-card-061": {
+   "fig": [
+    "ev-school-bus-single"
+   ]
+  },
+  "rules-card-062": {
+   "fig": [
+    "ev-school-bus-single",
+    "ev-school-bus-dual"
+   ]
+  },
+  "rules-card-064": {
+   "fig": [
+    "ev-school-bus-dual"
+   ]
+  },
+  "rules-card-066": {
+   "fig": [
+    "fig-blind-spots"
+   ]
+  },
+  "rules-card-067": {
+   "fig": [
+    "fig-bike-gap"
+   ]
+  },
+  "rules-card-068": {
+   "fig": [
+    "fig-truck-blind"
+   ]
+  },
+  "rules-card-069": {
+   "fig": [
+    "w-camels"
+   ]
+  },
+  "rules-card-070": {
+   "fig": [
+    "fig-gear-selector"
+   ]
+  },
+  "rules-card-072": {
+   "fig": [
+    "fig-parking-15m",
+    "mk-bus-stop"
+   ]
+  },
+  "rules-card-073": {
+   "fig": [
+    "mk-disabled-bay",
+    "i-parking-pod"
+   ]
+  },
+  "rules-card-075": {
+   "fig": [
+    "fig-lane-change"
+   ]
+  },
+  "rules-card-077": {
+   "fig": [
+    "fig-beam-low",
+    "fig-beam-high"
+   ]
+  },
+  "rules-card-078": {
+   "fig": [
+    "ev-hazard-lights",
+    "fig-fog-lights"
+   ]
+  },
+  "rules-card-079": {
+   "fig": [
+    "fig-fog-lights"
+   ]
+  },
+  "rules-card-081": {
+   "fig": [
+    "r-no-horn"
+   ]
+  }
+ }
+}

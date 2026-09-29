@@ -2,523 +2,2752 @@
  "module": "markings",
  "updated": "2026-09-29",
  "sources": {
-  "S1": {"title": "Light Motor Vehicle Handbook: A Guide to Safe Driving (3rd edition)", "url": "https://russiadubai.com/upload/iblock/ac6/ac6fa71db851d0137a784bd80278acff.pdf", "publisher": "Roads and Transport Authority (RTA) Dubai, Licensing Agency (copy hosted by a third party)", "date": "2012-01"},
-  "S2": {"title": "Ministerial Resolution No. 130 of 1997: Executive Regulations of the Federal Traffic Law (as amended)", "url": "https://uaelegislation.gov.ae/ar/legislations/1020", "publisher": "UAE Legislation portal / Ministry of Interior", "date": "1997-03-31"},
-  "S3": {"title": "Federal Decree-Law No. 14 of 2024 on Traffic Regulation", "url": "https://uaelegislation.gov.ae/ar/legislations/2598", "publisher": "UAE Legislation portal", "date": "2024-09 (in force 2025-03-29)"},
-  "S4": {"title": "إشارات أفراد المرور اليدوية.. لغة صامتة للتخاطب مع السائقين", "url": "https://www.adpolice.gov.ae/ar-AE/Media-Center/News/2021/06/30/Traffic-police-hand-signals-is-a-voiceless-language", "publisher": "Abu Dhabi Police", "date": "2009-09-03"},
-  "S5": {"title": "6 حركات مرورية صامتة للتخاطب مع السائقين", "url": "https://www.emaratalyoum.com/local-section/2009-09-05-1.156794", "publisher": "Emarat Al Youm", "date": "2009-09-05"},
-  "S6": {"title": "Guidance Chart: Road Signs, Road Markings and Traffic Signals (English)", "url": "https://edi-uae.com/public/uploads/downloads/20191126120000English-Signal-Chart.pdf", "publisher": "Emirates Driving Institute (Dubai)", "date": "2019-11"},
-  "S7": {"title": "Signal Chart (English)", "url": "https://edi-uae.com/public/uploads/downloads/20260303120751Signal-Chart-English.pdf", "publisher": "Emirates Driving Institute (Dubai)", "date": "2026-01"},
-  "S8": {"title": "Guidance Chart (English)", "url": "https://www.gmdc.ae/docs/students/Guidance_ChartENG.pdf", "publisher": "Galadari Motor Driving Centre (Dubai)", "date": "undated"},
-  "S9": {"title": "Giving Way to Emergency Vehicles", "url": "https://edi-uae.com/public/uploads/downloads/20200304135234Giving-way-to-emergency-vehicles-Dubai-Police.pdf", "publisher": "Dubai Police (distributed by Emirates Driving Institute)", "date": "2020-03"},
-  "S11": {"title": "RTA Handbook: Light Motor Vehicle (8th edition, English)", "url": "https://www.drivedubai.ae/public/uploads/downloads/20210128140116RTA-Handbook-Light-Motor-Vechicle-English.pdf", "publisher": "Roads and Transport Authority (RTA) Dubai (copy hosted by Dubai Driving Center)", "date": "2021-01"},
-  "S12": {"title": "Flashing traffic lights being tested in Dubai", "url": "https://gulfnews.com/uae/transport/flashing-traffic-lights-being-tested-in-dubai-1.190689", "publisher": "Gulf News", "date": "2007-07-22"},
-  "S13": {"title": "Flashing green signal does the job", "url": "https://www.thenationalnews.com/uae/transport/flashing-green-signal-does-the-job-1.548296", "publisher": "The National", "date": "2009-05-27"},
-  "S14": {"title": "UAE traffic light guide: Avoid fines and stay safe at intersections", "url": "https://gulfnews.com/living-in-uae/transport/uae-traffic-light-guide-avoid-fines-and-stay-safe-at-intersections-1.1720612632422", "publisher": "Gulf News (citing MOI 999 magazine)", "date": "2024-07-10"},
-  "S15": {"title": "Dubai traffic light rule: Move closer to the white line to trigger green signal", "url": "https://gulfnews.com/living-in-uae/transport/traffic-light-confusion-in-dubai-this-simple-move-could-trigger-the-green-signal-1.500126810", "publisher": "Gulf News (citing RTA)", "date": "2025-05-14"},
-  "S16": {"title": "Dangers of entering yellow box junction explained in Dubai campaign", "url": "https://www.thenationalnews.com/uae/transport/dangers-of-entering-yellow-box-junction-explained-in-dubai-campaign-1.141300", "publisher": "The National (Dubai Police campaign)", "date": "2016-04-10"},
-  "S17": {"title": "Abu Dhabi Police warn drivers against stopping, parking in yellow box at intersections", "url": "https://www.khaleejtimes.com/uae/transport/abu-dhabi-police-warning-stopping-parking-yellow-box-intersections", "publisher": "Khaleej Times", "date": "2026-06-08"},
-  "S18": {"title": "Bus Lane", "url": "https://www.rta.ae/links/promotions/en/bus-lane.html", "publisher": "Roads and Transport Authority (RTA) Dubai", "date": "undated"},
-  "S19": {"title": "Dh600 fine for motorists who misuse this dedicated bus lane in Bur Dubai from Sunday", "url": "https://gulfnews.com/uae/transport/dh600-fine-for-motorists-who-misuse-this-dedicated-bus-lane-in-bur-dubai-from-sunday-1.76977966", "publisher": "Gulf News", "date": "2021-02"},
-  "S20": {"title": "Ambulance behind you in the UAE? How to give way and avoid a Dh3,000 fine", "url": "https://www.emirates247.com/uae-guide/ambulance-behind-you-in-the-uae-how-to-give-way-and-avoid-a-dh3000-fine/5032", "publisher": "Emirates 24|7", "date": "2026-08-29"},
-  "S23": {"title": "Abu Dhabi Manual on Uniform Traffic Control Devices TR-511 (2nd edition)", "url": "https://jawdah.qcc.abudhabi.ae/en/Registration/QCCServices/Services/STD/ISGL/ISGL-LIST/TR-511.pdf", "publisher": "Abu Dhabi Department of Transport / Abu Dhabi Quality and Conformity Council", "date": "2020-09"},
-  "S24": {"title": "How to Pass the RTA Car Theory Test in Dubai", "url": "https://www.excellencedriving.com/en/blogs/how-to-pass-the-rta-car-theory-test-in-dubai", "publisher": "Excellence Driving (Dubai)", "date": "2026-09-08"},
-  "S25": {"title": "Road Safety Awareness During Weather Changes (poster)", "url": "https://edi-uae.com/public/uploads/downloads/20251217102236RTA-Road-Safety-Awareness-Poster-During-Weather-Changes.pdf", "publisher": "RTA Dubai (distributed by Emirates Driving Institute)", "date": "2025-12"},
-  "S26": {"title": "Vienna Convention on Road Signs and Signals (lane control signals section)", "url": "https://en.wikipedia.org/wiki/Vienna_Convention_on_Road_Signs_and_Signals", "publisher": "Wikipedia (summary of the 1968 convention)", "date": "2026-09"},
-  "S27": {"title": "Dubai Police Traffic Fines (Complete List)", "url": "https://www.edarabia.com/dubai-police-traffic-fines/", "publisher": "Edarabia (secondary list)", "date": "2026-09-01"},
-  "S28": {"title": "Flashing green signals confusing motorists", "url": "https://www.thenationalnews.com/uae/transport/flashing-green-signals-confusing-motorists-1.493607", "publisher": "The National", "date": "2009-05-26"}
+  "S1": {
+   "title": "Light Motor Vehicle Handbook: A Guide to Safe Driving (3rd edition)",
+   "url": "https://russiadubai.com/upload/iblock/ac6/ac6fa71db851d0137a784bd80278acff.pdf",
+   "publisher": "Roads and Transport Authority (RTA) Dubai, Licensing Agency (copy hosted by a third party)",
+   "date": "2012-01"
+  },
+  "S2": {
+   "title": "Ministerial Resolution No. 130 of 1997: Executive Regulations of the Federal Traffic Law (as amended)",
+   "url": "https://uaelegislation.gov.ae/ar/legislations/1020",
+   "publisher": "UAE Legislation portal / Ministry of Interior",
+   "date": "1997-03-31"
+  },
+  "S3": {
+   "title": "Federal Decree-Law No. 14 of 2024 on Traffic Regulation",
+   "url": "https://uaelegislation.gov.ae/ar/legislations/2598",
+   "publisher": "UAE Legislation portal",
+   "date": "2024-09 (in force 2025-03-29)"
+  },
+  "S4": {
+   "title": "إشارات أفراد المرور اليدوية.. لغة صامتة للتخاطب مع السائقين",
+   "url": "https://www.adpolice.gov.ae/ar-AE/Media-Center/News/2021/06/30/Traffic-police-hand-signals-is-a-voiceless-language",
+   "publisher": "Abu Dhabi Police",
+   "date": "2009-09-03"
+  },
+  "S5": {
+   "title": "6 حركات مرورية صامتة للتخاطب مع السائقين",
+   "url": "https://www.emaratalyoum.com/local-section/2009-09-05-1.156794",
+   "publisher": "Emarat Al Youm",
+   "date": "2009-09-05"
+  },
+  "S6": {
+   "title": "Guidance Chart: Road Signs, Road Markings and Traffic Signals (English)",
+   "url": "https://edi-uae.com/public/uploads/downloads/20191126120000English-Signal-Chart.pdf",
+   "publisher": "Emirates Driving Institute (Dubai)",
+   "date": "2019-11"
+  },
+  "S7": {
+   "title": "Signal Chart (English)",
+   "url": "https://edi-uae.com/public/uploads/downloads/20260303120751Signal-Chart-English.pdf",
+   "publisher": "Emirates Driving Institute (Dubai)",
+   "date": "2026-01"
+  },
+  "S8": {
+   "title": "Guidance Chart (English)",
+   "url": "https://www.gmdc.ae/docs/students/Guidance_ChartENG.pdf",
+   "publisher": "Galadari Motor Driving Centre (Dubai)",
+   "date": "undated"
+  },
+  "S9": {
+   "title": "Giving Way to Emergency Vehicles",
+   "url": "https://edi-uae.com/public/uploads/downloads/20200304135234Giving-way-to-emergency-vehicles-Dubai-Police.pdf",
+   "publisher": "Dubai Police (distributed by Emirates Driving Institute)",
+   "date": "2020-03"
+  },
+  "S11": {
+   "title": "RTA Handbook: Light Motor Vehicle (8th edition, English)",
+   "url": "https://www.drivedubai.ae/public/uploads/downloads/20210128140116RTA-Handbook-Light-Motor-Vechicle-English.pdf",
+   "publisher": "Roads and Transport Authority (RTA) Dubai (copy hosted by Dubai Driving Center)",
+   "date": "2021-01"
+  },
+  "S12": {
+   "title": "Flashing traffic lights being tested in Dubai",
+   "url": "https://gulfnews.com/uae/transport/flashing-traffic-lights-being-tested-in-dubai-1.190689",
+   "publisher": "Gulf News",
+   "date": "2007-07-22"
+  },
+  "S13": {
+   "title": "Flashing green signal does the job",
+   "url": "https://www.thenationalnews.com/uae/transport/flashing-green-signal-does-the-job-1.548296",
+   "publisher": "The National",
+   "date": "2009-05-27"
+  },
+  "S14": {
+   "title": "UAE traffic light guide: Avoid fines and stay safe at intersections",
+   "url": "https://gulfnews.com/living-in-uae/transport/uae-traffic-light-guide-avoid-fines-and-stay-safe-at-intersections-1.1720612632422",
+   "publisher": "Gulf News (citing MOI 999 magazine)",
+   "date": "2024-07-10"
+  },
+  "S15": {
+   "title": "Dubai traffic light rule: Move closer to the white line to trigger green signal",
+   "url": "https://gulfnews.com/living-in-uae/transport/traffic-light-confusion-in-dubai-this-simple-move-could-trigger-the-green-signal-1.500126810",
+   "publisher": "Gulf News (citing RTA)",
+   "date": "2025-05-14"
+  },
+  "S16": {
+   "title": "Dangers of entering yellow box junction explained in Dubai campaign",
+   "url": "https://www.thenationalnews.com/uae/transport/dangers-of-entering-yellow-box-junction-explained-in-dubai-campaign-1.141300",
+   "publisher": "The National (Dubai Police campaign)",
+   "date": "2016-04-10"
+  },
+  "S17": {
+   "title": "Abu Dhabi Police warn drivers against stopping, parking in yellow box at intersections",
+   "url": "https://www.khaleejtimes.com/uae/transport/abu-dhabi-police-warning-stopping-parking-yellow-box-intersections",
+   "publisher": "Khaleej Times",
+   "date": "2026-06-08"
+  },
+  "S18": {
+   "title": "Bus Lane",
+   "url": "https://www.rta.ae/links/promotions/en/bus-lane.html",
+   "publisher": "Roads and Transport Authority (RTA) Dubai",
+   "date": "undated"
+  },
+  "S19": {
+   "title": "Dh600 fine for motorists who misuse this dedicated bus lane in Bur Dubai from Sunday",
+   "url": "https://gulfnews.com/uae/transport/dh600-fine-for-motorists-who-misuse-this-dedicated-bus-lane-in-bur-dubai-from-sunday-1.76977966",
+   "publisher": "Gulf News",
+   "date": "2021-02"
+  },
+  "S20": {
+   "title": "Ambulance behind you in the UAE? How to give way and avoid a Dh3,000 fine",
+   "url": "https://www.emirates247.com/uae-guide/ambulance-behind-you-in-the-uae-how-to-give-way-and-avoid-a-dh3000-fine/5032",
+   "publisher": "Emirates 24|7",
+   "date": "2026-08-29"
+  },
+  "S23": {
+   "title": "Abu Dhabi Manual on Uniform Traffic Control Devices TR-511 (2nd edition)",
+   "url": "https://jawdah.qcc.abudhabi.ae/en/Registration/QCCServices/Services/STD/ISGL/ISGL-LIST/TR-511.pdf",
+   "publisher": "Abu Dhabi Department of Transport / Abu Dhabi Quality and Conformity Council",
+   "date": "2020-09"
+  },
+  "S24": {
+   "title": "How to Pass the RTA Car Theory Test in Dubai",
+   "url": "https://www.excellencedriving.com/en/blogs/how-to-pass-the-rta-car-theory-test-in-dubai",
+   "publisher": "Excellence Driving (Dubai)",
+   "date": "2026-09-08"
+  },
+  "S25": {
+   "title": "Road Safety Awareness During Weather Changes (poster)",
+   "url": "https://edi-uae.com/public/uploads/downloads/20251217102236RTA-Road-Safety-Awareness-Poster-During-Weather-Changes.pdf",
+   "publisher": "RTA Dubai (distributed by Emirates Driving Institute)",
+   "date": "2025-12"
+  },
+  "S26": {
+   "title": "Vienna Convention on Road Signs and Signals (lane control signals section)",
+   "url": "https://en.wikipedia.org/wiki/Vienna_Convention_on_Road_Signs_and_Signals",
+   "publisher": "Wikipedia (summary of the 1968 convention)",
+   "date": "2026-09"
+  },
+  "S27": {
+   "title": "Dubai Police Traffic Fines (Complete List)",
+   "url": "https://www.edarabia.com/dubai-police-traffic-fines/",
+   "publisher": "Edarabia (secondary list)",
+   "date": "2026-09-01"
+  },
+  "S28": {
+   "title": "Flashing green signals confusing motorists",
+   "url": "https://www.thenationalnews.com/uae/transport/flashing-green-signals-confusing-motorists-1.493607",
+   "publisher": "The National",
+   "date": "2009-05-26"
+  }
  },
  "cards": [
-  {"id": "markings-card-001", "topic": "markings", "level": 1, "title": "المتقطع والمتصل",
+  {
+   "id": "markings-card-001",
+   "topic": "markings",
+   "level": 1,
+   "title": "المتقطع والمتصل",
    "body": "الخط المتقطع يسمح لك بعبوره عندما يكون ذلك آمنا\nالخط المتصل ممنوع عبوره أو السير فوقه\nالعبرة بشكل الخط قبل لونه",
-   "key": "متقطع: مسموح بأمان، متصل: ممنوع", "src": ["S1", "S2"], "confidence": "high"},
-  {"id": "markings-card-002", "topic": "markings", "level": 2, "title": "الأبيض والأصفر",
+   "key": "متقطع: مسموح بأمان، متصل: ممنوع",
+   "src": [
+    "S1",
+    "S2"
+   ],
+   "confidence": "high",
+   "fig": [
+    "mk-broken-lane",
+    "mk-solid-lane"
+   ]
+  },
+  {
+   "id": "markings-card-002",
+   "topic": "markings",
+   "level": 2,
+   "title": "الأبيض والأصفر",
    "body": "في دليل هيئة الطرق بدبي: الخط الأبيض يفصل مسارات نفس الاتجاه، والخط الأصفر في منتصف الطريق غير المقسوم يفصل اتجاهين متعاكسين\nدليل أبوظبي 2020 يستعمل خط منتصف أبيض، لذلك ركز دائما على شكل الخط",
-   "key": "", "src": ["S1", "S23"], "confidence": "high"},
-  {"id": "markings-card-003", "topic": "markings", "level": 3, "title": "خطان في المنتصف",
+   "key": "",
+   "src": [
+    "S1",
+    "S23"
+   ],
+   "confidence": "high",
+   "fig": [
+    "mk-broken-lane",
+    "mk-broken-center"
+   ]
+  },
+  {
+   "id": "markings-card-003",
+   "topic": "markings",
+   "level": 3,
+   "title": "خطان في المنتصف",
    "body": "إذا كان الخط الأقرب إلى مسارك متقطعا فمسموح لك التجاوز بأمان، وإذا كان متصلا فممنوع\nالخطان المتصلان ممنوع عبورهما من الجهتين",
-   "key": "الخط القريب منك هو الذي يحكمك", "src": ["S1"], "confidence": "high"},
-  {"id": "markings-card-004", "topic": "markings", "level": 2, "title": "اختر مسارك مبكرا",
+   "key": "الخط القريب منك هو الذي يحكمك",
+   "src": [
+    "S1"
+   ],
+   "confidence": "high",
+   "fig": [
+    "mk-solid-broken",
+    "mk-double-solid"
+   ]
+  },
+  {
+   "id": "markings-card-004",
+   "topic": "markings",
+   "level": 2,
+   "title": "اختر مسارك مبكرا",
    "body": "قبل التقاطعات وممرات المشاة تصبح الخطوط بين المسارات متصلة، وتغيير المسار فوقها ممنوع\nالأسهم الأرضية إلزامية: إذا دخلت مسار السهم فعليك اتباعه",
-   "key": "", "src": ["S1", "S2"], "confidence": "high"},
-  {"id": "markings-card-005", "topic": "markings", "level": 1, "title": "خط التوقف وخط إفساح الطريق",
+   "key": "",
+   "src": [
+    "S1",
+    "S2"
+   ],
+   "confidence": "high",
+   "fig": [
+    "mk-solid-lane"
+   ]
+  },
+  {
+   "id": "markings-card-005",
+   "topic": "markings",
+   "level": 1,
+   "title": "خط التوقف وخط إفساح الطريق",
    "body": "خط التوقف أبيض متصل: عند لوحة قف تقف قبله كل مرة، وعند الإشارة تقف قبله إذا كانت حمراء\nخط إفساح الطريق أبيض متقطع: تقف قبله فقط إذا كان هناك من له الأولوية",
-   "key": "", "src": ["S1", "S6"], "confidence": "high"},
-  {"id": "markings-card-006", "topic": "markings", "level": 1, "title": "ممر المشاة",
+   "key": "",
+   "src": [
+    "S1",
+    "S6"
+   ],
+   "confidence": "high",
+   "fig": [
+    "mk-stop-line",
+    "mk-give-way-line"
+   ]
+  },
+  {
+   "id": "markings-card-006",
+   "topic": "markings",
+   "level": 1,
+   "title": "ممر المشاة",
    "body": "خفف السرعة عند الاقتراب من الممر، وتوقف حتى يعبر المشاة\nممنوع الوقوف فوق ممر المشاة حتى في الزحام",
-   "key": "", "src": ["S3", "S2"], "confidence": "high"},
-  {"id": "markings-card-007", "topic": "markings", "level": 2, "title": "الصندوق الأصفر",
+   "key": "",
+   "src": [
+    "S3",
+    "S2"
+   ],
+   "confidence": "high",
+   "fig": [
+    "mk-zebra"
+   ]
+  },
+  {
+   "id": "markings-card-007",
+   "topic": "markings",
+   "level": 2,
+   "title": "الصندوق الأصفر",
    "body": "مربع بخطوط صفراء متقاطعة وسط التقاطع\nلا تدخله حتى لو كانت إشارتك خضراء إلا إذا كان مخرجك بعده خاليا",
-   "key": "500 درهم", "src": ["S1", "S16", "S17"], "confidence": "high"},
-  {"id": "markings-card-008", "topic": "markings", "level": 3, "title": "المناطق المخططة والشيفرون",
+   "key": "500 درهم",
+   "src": [
+    "S1",
+    "S16",
+    "S17"
+   ],
+   "confidence": "high",
+   "fig": [
+    "mk-yellow-box"
+   ]
+  },
+  {
+   "id": "markings-card-008",
+   "topic": "markings",
+   "level": 3,
+   "title": "المناطق المخططة والشيفرون",
    "body": "المساحات المرسومة بخطوط مائلة أو بشكل V تفصل حركة السير وتحمي الجزر والمخارج\nليست للسير ولا للوقوف، وإذا فاتك المخرج فأكمل إلى المخرج التالي",
-   "key": "", "src": ["S6", "S23"], "confidence": "high"},
-  {"id": "markings-card-009", "topic": "markings", "level": 2, "title": "مسار الحافلات الأحمر في دبي",
+   "key": "",
+   "src": [
+    "S6",
+    "S23"
+   ],
+   "confidence": "high",
+   "fig": [
+    "mk-hatched",
+    "mk-chevron",
+    "fig-missed-exit"
+   ]
+  },
+  {
+   "id": "markings-card-009",
+   "topic": "markings",
+   "level": 2,
+   "title": "مسار الحافلات الأحمر في دبي",
    "body": "في بعض شوارع دبي مسار ملون بالأحمر للحافلات وسيارات الأجرة ومركبات الطوارئ\nالمركبات الخاصة ممنوعة منه والكاميرات تراقبه",
-   "key": "600 درهم", "src": ["S18", "S19"], "confidence": "medium"},
-  {"id": "markings-card-010", "topic": "markings", "level": 1, "title": "أشرطة الاهتزاز وعلامة المطب",
+   "key": "600 درهم",
+   "src": [
+    "S18",
+    "S19"
+   ],
+   "confidence": "medium",
+   "fig": [
+    "mk-bus-lane"
+   ]
+  },
+  {
+   "id": "markings-card-010",
+   "topic": "markings",
+   "level": 1,
+   "title": "أشرطة الاهتزاز وعلامة المطب",
    "body": "أشرطة الاهتزاز تنبهك بالصوت والاهتزاز أنك تقترب من خطر مثل دوار أو ممر مشاة\nالخطوط الصفراء المتقطعة بعرض الطريق كله تحذرك من مطب صناعي",
-   "key": "", "src": ["S1"], "confidence": "high"},
-  {"id": "markings-card-011", "topic": "markings", "level": 2, "title": "كتف الطريق",
+   "key": "",
+   "src": [
+    "S1"
+   ],
+   "confidence": "high",
+   "fig": [
+    "mk-rumble-strips",
+    "mk-speed-hump"
+   ]
+  },
+  {
+   "id": "markings-card-011",
+   "topic": "markings",
+   "level": 2,
+   "title": "كتف الطريق",
    "body": "المساحة بعد خط الحافة مخصصة لمركبات الطوارئ وللحالات الطارئة\nلا تسر عليه ولا تتجاوز منه حتى لو كان الطريق مزدحما",
-   "key": "", "src": ["S9", "S20"], "confidence": "high"},
-  {"id": "markings-card-012", "topic": "markings", "level": 3, "title": "أبق المدخل خاليا",
+   "key": "",
+   "src": [
+    "S9",
+    "S20"
+   ],
+   "confidence": "high",
+   "fig": [
+    "mk-hard-shoulder",
+    "mk-edge-line"
+   ]
+  },
+  {
+   "id": "markings-card-012",
+   "topic": "markings",
+   "level": 3,
+   "title": "أبق المدخل خاليا",
    "body": "الخطوط الصفراء أمام مدخل تعني لا تقف أمامه حتى لو توقف السير\nاللائحة تمنع الوقوف أمام مداخل ومخارج المنازل والمواقف ومحطات الوقود",
-   "key": "", "src": ["S6", "S2"], "confidence": "high"},
-  {"id": "markings-card-013", "topic": "lights", "level": 1, "title": "ألوان الإشارة",
+   "key": "",
+   "src": [
+    "S6",
+    "S2"
+   ],
+   "confidence": "high",
+   "fig": [
+    "mk-keep-clear"
+   ]
+  },
+  {
+   "id": "markings-card-013",
+   "topic": "lights",
+   "level": 1,
+   "title": "ألوان الإشارة",
    "body": "الأحمر: قف قبل خط التوقف\nالأصفر: الإشارة ستتحول إلى الأحمر، فتوقف إذا كان التوقف آمنا\nالأخضر: مسموح السير إذا كان التقاطع خاليا",
-   "key": "", "src": ["S1", "S2"], "confidence": "high"},
-  {"id": "markings-card-014", "topic": "lights", "level": 2, "title": "الأخضر الوامض",
+   "key": "",
+   "src": [
+    "S1",
+    "S2"
+   ],
+   "confidence": "high",
+   "fig": [
+    "tl-red",
+    "tl-amber",
+    "tl-green"
+   ]
+  },
+  {
+   "id": "markings-card-014",
+   "topic": "lights",
+   "level": 2,
+   "title": "الأخضر الوامض",
    "body": "في تقاطعات كثيرة في دبي وأبوظبي يومض الأخضر قبل الأصفر\nمعناه أن الأخضر سينتهي، فإذا كنت بعيدا استعد للتوقف",
-   "key": "", "src": ["S12", "S13"], "confidence": "medium"},
-  {"id": "markings-card-015", "topic": "lights", "level": 3, "title": "نقطة اللاعودة",
+   "key": "",
+   "src": [
+    "S12",
+    "S13"
+   ],
+   "confidence": "medium",
+   "fig": [
+    "tl-flashing-green"
+   ]
+  },
+  {
+   "id": "markings-card-015",
+   "topic": "lights",
+   "level": 3,
+   "title": "نقطة اللاعودة",
    "body": "هي النقطة التي لا تستطيع بعدها التوقف بأمان قبل الخط\nإذا ظهر الأصفر قبلها فتوقف، وإذا ظهر بعدها فأكمل بحذر",
-   "key": "لا تسرع لتلحق الأصفر", "src": ["S1", "S2"], "confidence": "high"},
-  {"id": "markings-card-016", "topic": "lights", "level": 2, "title": "الأخضر لا يعني انطلق دائما",
+   "key": "لا تسرع لتلحق الأصفر",
+   "src": [
+    "S1",
+    "S2"
+   ],
+   "confidence": "high",
+   "fig": [
+    "tl-amber"
+   ]
+  },
+  {
+   "id": "markings-card-016",
+   "topic": "lights",
+   "level": 2,
+   "title": "الأخضر لا يعني انطلق دائما",
    "body": "قبل الانطلاق تأكد أن التقاطع خال وأن مخرجك مفتوح\nإذا سمعت صفارة مركبة طوارئ فلا تدخل التقاطع حتى لو كانت إشارتك خضراء",
-   "key": "", "src": ["S1", "S11", "S9"], "confidence": "high"},
-  {"id": "markings-card-017", "topic": "lights", "level": 4, "title": "الأصفر الوامض",
+   "key": "",
+   "src": [
+    "S1",
+    "S11",
+    "S9"
+   ],
+   "confidence": "high",
+   "fig": [
+    "tl-green",
+    "ev-at-junction"
+   ]
+  },
+  {
+   "id": "markings-card-017",
+   "topic": "lights",
+   "level": 4,
+   "title": "الأصفر الوامض",
    "body": "الأصفر الوامض في الإشارة: تقدم بحذر إذا كان الطريق خاليا، وقد يعني أن الإشارة معطلة\nالأصفر الوامض الثابت على عمود عند تقاطع أو دوار: أفسح الطريق والأولوية للقادم من اليسار",
-   "key": "", "src": ["S2", "S14"], "confidence": "high"},
-  {"id": "markings-card-018", "topic": "lights", "level": 2, "title": "الأسهم الضوئية",
+   "key": "",
+   "src": [
+    "S2",
+    "S14"
+   ],
+   "confidence": "high",
+   "fig": [
+    "tl-flashing-amber",
+    "tl-flashing-amber-fixed"
+   ]
+  },
+  {
+   "id": "markings-card-018",
+   "topic": "lights",
+   "level": 2,
+   "title": "الأسهم الضوئية",
    "body": "السهم الأخضر يسمح بالسير في اتجاهه فقط\nالسهم الأحمر يمنع اتجاهه فقط، فإذا كنت في مسار الانعطاف فانتظر سهمك ولو كان الأخضر مضاء للمستقيم",
-   "key": "", "src": ["S2", "S26"], "confidence": "medium"},
-  {"id": "markings-card-019", "topic": "lights", "level": 2, "title": "إشارات المشاة",
+   "key": "",
+   "src": [
+    "S2",
+    "S26"
+   ],
+   "confidence": "medium",
+   "fig": [
+    "tl-green-arrow",
+    "tl-red-arrow"
+   ]
+  },
+  {
+   "id": "markings-card-019",
+   "topic": "lights",
+   "level": 2,
+   "title": "إشارات المشاة",
    "body": "الأخضر: مسموح للمشاة العبور\nالأخضر الوامض: لا يبدأ أحد العبور ومن بدأ يكمل\nالأحمر: ممنوع العبور\nعند الانعطاف أعط الأولوية للمشاة الذين بدؤوا العبور",
-   "key": "", "src": ["S2"], "confidence": "high"},
-  {"id": "markings-card-020", "topic": "lights", "level": 5, "title": "قطع الإشارة الحمراء",
+   "key": "",
+   "src": [
+    "S2"
+   ],
+   "confidence": "high",
+   "fig": [
+    "pl-green",
+    "pl-flashing-green",
+    "pl-red"
+   ]
+  },
+  {
+   "id": "markings-card-020",
+   "topic": "lights",
+   "level": 5,
+   "title": "قطع الإشارة الحمراء",
    "body": "مخالفة جسيمة: 1000 درهم و12 نقطة سوداء وحجز المركبة 30 يوما\nفي دبي رسوم الإفراج عن المركبة المحجوزة 50000 درهم",
-   "key": "12 نقطة سوداء", "src": ["S14", "S27"], "confidence": "high"},
-  {"id": "markings-card-021", "topic": "lights", "level": 2, "title": "اقترب من خط التوقف",
+   "key": "12 نقطة سوداء",
+   "src": [
+    "S14",
+    "S27"
+   ],
+   "confidence": "high",
+   "fig": [
+    "tl-red"
+   ]
+  },
+  {
+   "id": "markings-card-021",
+   "topic": "lights",
+   "level": 2,
+   "title": "اقترب من خط التوقف",
    "body": "حساسات الإشارة في دبي قريبة من خط التوقف\nعند الأحمر اقترب من الخط دون أن تتجاوزه، فهذا يساعد الإشارة على اكتشاف مركبتك",
-   "key": "", "src": ["S15"], "confidence": "medium"},
-  {"id": "markings-card-022", "topic": "lights", "level": 3, "title": "لوحات المسارات الإلكترونية",
+   "key": "",
+   "src": [
+    "S15"
+   ],
+   "confidence": "medium",
+   "fig": [
+    "tl-red"
+   ]
+  },
+  {
+   "id": "markings-card-022",
+   "topic": "lights",
+   "level": 3,
+   "title": "لوحات المسارات الإلكترونية",
    "body": "X أحمر فوق المسار: المسار مغلق، فانتقل منه مبكرا\nسهم أخضر للأسفل: المسار مفتوح\nرقم السرعة على اللوحة الإلكترونية هو الحد الذي تلتزم به الآن",
-   "key": "", "src": ["S23", "S26", "S1"], "confidence": "medium"},
-  {"id": "markings-card-023", "topic": "police", "level": 1, "title": "رجل المرور أولا",
+   "key": "",
+   "src": [
+    "S23",
+    "S26",
+    "S1"
+   ],
+   "confidence": "medium",
+   "fig": [
+    "ls-red-x",
+    "ls-green-arrow",
+    "ls-variable-speed"
+   ]
+  },
+  {
+   "id": "markings-card-023",
+   "topic": "police",
+   "level": 1,
+   "title": "رجل المرور أولا",
    "body": "تعليمات رجل المرور وإشاراته مقدمة على الإشارات الضوئية وعلامات الطرق والخطوط\nإذا أوقفك والإشارة خضراء فقف، وإذا أشار لك بالمرور والإشارة حمراء فتقدم بحذر",
-   "key": "رجل المرور قبل الإشارة", "src": ["S2", "S4", "S3"], "confidence": "high"},
-  {"id": "markings-card-024", "topic": "police", "level": 2, "title": "إشارات الإيقاف باليد",
+   "key": "رجل المرور قبل الإشارة",
+   "src": [
+    "S2",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high",
+   "fig": [
+    "po-stop-front",
+    "po-proceed"
+   ]
+  },
+  {
+   "id": "markings-card-024",
+   "topic": "police",
+   "level": 2,
+   "title": "إشارات الإيقاف باليد",
    "body": "ذراع مرفوعة وكف نحوك: قف (للقادمين من الأمام)\nذراع يمنى ممدودة أفقيا وأنت خلفه: قف (للقادمين من الخلف)\nذراع أو ذراعان أفقيا: تقف المركبات القادمة من أمامه ومن خلفه",
-   "key": "", "src": ["S4", "S5"], "confidence": "high"},
-  {"id": "markings-card-025", "topic": "police", "level": 2, "title": "إشارة التقدم",
+   "key": "",
+   "src": [
+    "S4",
+    "S5"
+   ],
+   "confidence": "high",
+   "fig": [
+    "po-stop-front",
+    "po-stop-behind",
+    "po-stop-crossing"
+   ]
+  },
+  {
+   "id": "markings-card-025",
+   "topic": "police",
+   "level": 2,
+   "title": "إشارة التقدم",
    "body": "حركة نصف دائرية بالذراع من أعلى إلى أسفل: مسموح لك المرور في الاتجاه الذي يشير إليه دوران الذراع",
-   "key": "", "src": ["S4", "S5"], "confidence": "high"},
-  {"id": "markings-card-026", "topic": "police", "level": 3, "title": "إشارات الليل بالمصباح الأحمر",
+   "key": "",
+   "src": [
+    "S4",
+    "S5"
+   ],
+   "confidence": "high",
+   "fig": [
+    "po-proceed"
+   ]
+  },
+  {
+   "id": "markings-card-026",
+   "topic": "police",
+   "level": 3,
+   "title": "إشارات الليل بالمصباح الأحمر",
    "body": "المصباح الأحمر يتحرك ذهابا وإيابا نحوك: قف\nالمصباح الأحمر يرسم نصف دائرة: تقدم في اتجاه حركته",
-   "key": "", "src": ["S4", "S5"], "confidence": "high"}
+   "key": "",
+   "src": [
+    "S4",
+    "S5"
+   ],
+   "confidence": "high",
+   "fig": [
+    "po-lamp-stop",
+    "po-lamp-proceed"
+   ]
+  }
  ],
  "questions": [
-  {"id": "markings-markings-001", "topic": "markings", "level": 1, "exam": ["dubai", "sharjah"],
+  {
+   "id": "markings-markings-001",
+   "topic": "markings",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "ماذا يعني الخط الأبيض المتقطع بين مسارين في نفس الاتجاه؟",
-   "options": ["ممنوع تغيير المسار نهائيا", "المسار مخصص للحافلات", "مسموح تغيير المسار بعد التأكد من الأمان", "يجب التوقف عند نهاية الخط"], "answer": 2,
+   "options": [
+    "ممنوع تغيير المسار نهائيا",
+    "المسار مخصص للحافلات",
+    "مسموح تغيير المسار بعد التأكد من الأمان",
+    "يجب التوقف عند نهاية الخط"
+   ],
+   "answer": 2,
    "explain": "الخط الأبيض المتقطع يفصل مسارات نفس الاتجاه، ويمكنك الانتقال عبره بعد النظر في المرايا وتشغيل الإشارة",
-   "tip": "المتقطع باب مفتوح، بس افتحه بهدوء", "src": ["S1", "S2"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-002", "topic": "markings", "level": 1, "exam": ["dubai", "sharjah"],
+   "tip": "المتقطع باب مفتوح، بس افتحه بهدوء",
+   "src": [
+    "S1",
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "explain_fig": [
+    "mk-broken-lane"
+   ]
+  },
+  {
+   "id": "markings-markings-002",
+   "topic": "markings",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "ماذا يعني الخط المتصل في منتصف طريق باتجاهين؟",
-   "options": ["ممنوع عبوره للتجاوز أو الانعطاف", "مسموح التجاوز إذا كان الطريق خاليا", "مسموح عبوره ليلا فقط", "بداية مسار جديد"], "answer": 0,
+   "options": [
+    "ممنوع عبوره للتجاوز أو الانعطاف",
+    "مسموح التجاوز إذا كان الطريق خاليا",
+    "مسموح عبوره ليلا فقط",
+    "بداية مسار جديد"
+   ],
+   "answer": 0,
    "explain": "الخط المتصل بين اتجاهين ممنوع السير عليه أو عبوره، فلا تجاوز فوقه ولا انعطاف",
-   "src": ["S1", "S2"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-003", "topic": "markings", "level": 2, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S1",
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "explain_fig": [
+    "mk-solid-center"
+   ]
+  },
+  {
+   "id": "markings-markings-003",
+   "topic": "markings",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "في منتصف الطريق خط أصفر متقطع، متى يمكنك عبوره لتتجاوز؟",
-   "options": ["في أي وقت لأنه متقطع", "إذا أطلقت البوق قبل التجاوز", "لا يجوز عبوره أبدا", "عندما ترى الاتجاه المقابل خاليا لمسافة كافية ويكون التجاوز آمنا"], "answer": 3,
+   "options": [
+    "في أي وقت لأنه متقطع",
+    "إذا أطلقت البوق قبل التجاوز",
+    "لا يجوز عبوره أبدا",
+    "عندما ترى الاتجاه المقابل خاليا لمسافة كافية ويكون التجاوز آمنا"
+   ],
+   "answer": 3,
    "explain": "الخط المتقطع في المنتصف يسمح بالعبور، لكن فقط عندما يكون الطريق أمامك خاليا وآمنا",
-   "src": ["S1"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-004", "topic": "markings", "level": 2, "exam": ["dubai"],
+   "src": [
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "mk-broken-center"
+   ]
+  },
+  {
+   "id": "markings-markings-004",
+   "topic": "markings",
+   "level": 2,
+   "exam": [
+    "dubai"
+   ],
    "q": "حسب دليل هيئة الطرق في دبي، ماذا يفصل الخط الأصفر في منتصف طريق غير مقسوم؟",
-   "options": ["مسارين في نفس الاتجاه", "اتجاهين متعاكسين", "مسار الحافلات عن باقي المسارات", "كتف الطريق عن المسار"], "answer": 1,
+   "options": [
+    "مسارين في نفس الاتجاه",
+    "اتجاهين متعاكسين",
+    "مسار الحافلات عن باقي المسارات",
+    "كتف الطريق عن المسار"
+   ],
+   "answer": 1,
    "explain": "في دليل هيئة الطرق: الخطوط البيضاء المتقطعة بين مسارات نفس الاتجاه، والخط الأصفر في منتصف الطريق غير المقسوم يفصل الاتجاهين",
-   "src": ["S1", "S23"], "confidence": "high",
-   "notes": "دليل أبوظبي 2020 يعرف خط المنتصف بالأبيض، لذلك جعلنا السؤال خاصا بدبي"},
-  {"id": "markings-markings-005", "topic": "markings", "level": 2, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S1",
+    "S23"
+   ],
+   "confidence": "high",
+   "notes": "دليل أبوظبي 2020 يعرف خط المنتصف بالأبيض، لذلك جعلنا السؤال خاصا بدبي",
+   "explain_fig": [
+    "mk-broken-center"
+   ]
+  },
+  {
+   "id": "markings-markings-005",
+   "topic": "markings",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "ماذا يعني خطان أصفران متصلان في منتصف الطريق؟",
-   "options": ["مسموح العبور للانعطاف يسارا فقط", "منطقة وقوف مؤقت", "ممنوع عبورهما من الاتجاهين", "مسموح العبور إذا لم تأت سيارة"], "answer": 2,
+   "options": [
+    "مسموح العبور للانعطاف يسارا فقط",
+    "منطقة وقوف مؤقت",
+    "ممنوع عبورهما من الاتجاهين",
+    "مسموح العبور إذا لم تأت سيارة"
+   ],
+   "answer": 2,
    "explain": "الخطان المتصلان فاصل ممنوع عبوره نهائيا، لا للتجاوز ولا للانعطاف",
-   "src": ["S1"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-006", "topic": "markings", "level": 3, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "mk-double-solid"
+   ]
+  },
+  {
+   "id": "markings-markings-006",
+   "topic": "markings",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "في منتصف الطريق خطان متجاوران: المتقطع في جهتك والمتصل في الجهة المقابلة، ما الصحيح؟",
-   "options": ["مسموح لك التجاوز عند الأمان ثم العودة إلى مسارك", "ممنوع عليك التجاوز", "مسموح للاتجاه المقابل فقط", "ممنوع على الجميع"], "answer": 0,
+   "options": [
+    "مسموح لك التجاوز عند الأمان ثم العودة إلى مسارك",
+    "ممنوع عليك التجاوز",
+    "مسموح للاتجاه المقابل فقط",
+    "ممنوع على الجميع"
+   ],
+   "answer": 0,
    "explain": "الخط الأقرب إليك هو الذي يحكمك: المتقطع في جهتك يسمح لك بالتجاوز الآمن",
-   "tip": "شوف الخط اللي جنبك، هو اللي بيحكي معك", "src": ["S1"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-007", "topic": "markings", "level": 3, "exam": ["dubai", "sharjah"],
+   "tip": "شوف الخط اللي جنبك، هو اللي بيحكي معك",
+   "src": [
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "explain_fig": [
+    "mk-solid-broken"
+   ]
+  },
+  {
+   "id": "markings-markings-007",
+   "topic": "markings",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "في منتصف الطريق خطان متجاوران: المتصل في جهتك والمتقطع في الجهة المقابلة، وأمامك شاحنة بطيئة، ماذا تفعل؟",
-   "options": ["تتجاوزها لأن أحد الخطين متقطع", "تتجاوزها من الكتف الأيمن", "تبقى خلفها حتى يصبح الخط الذي في جهتك متقطعا", "تطلق البوق حتى تبتعد"], "answer": 2,
+   "options": [
+    "تتجاوزها لأن أحد الخطين متقطع",
+    "تتجاوزها من الكتف الأيمن",
+    "تبقى خلفها حتى يصبح الخط الذي في جهتك متقطعا",
+    "تطلق البوق حتى تبتعد"
+   ],
+   "answer": 2,
    "explain": "عندما يكون الخط المتصل في جهتك فالتجاوز ممنوع عليك، فانتظر حتى يسمح لك الخط",
-   "src": ["S1"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-008", "topic": "markings", "level": 2, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "markings-markings-008",
+   "topic": "markings",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "لماذا تتحول الخطوط بين المسارات إلى خطوط متصلة قبل التقاطع؟",
-   "options": ["لتسمح بتغيير المسار بسرعة", "لتمنع تغيير المسار قرب التقاطع وممر المشاة", "لتدل على مسار للحافلات", "لتحدد مكان الوقوف"], "answer": 1,
+   "options": [
+    "لتسمح بتغيير المسار بسرعة",
+    "لتمنع تغيير المسار قرب التقاطع وممر المشاة",
+    "لتدل على مسار للحافلات",
+    "لتحدد مكان الوقوف"
+   ],
+   "answer": 1,
    "explain": "دليل هيئة الطرق يضع هذه الخطوط حيث تغيير المسار ممنوع، مثل الاقتراب من تقاطع أو ممر مشاة",
-   "src": ["S1"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-009", "topic": "markings", "level": 3, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "mk-solid-lane"
+   ]
+  },
+  {
+   "id": "markings-markings-009",
+   "topic": "markings",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "اقتربت من التقاطع واكتشفت أنك في مسار عليه سهم إلى اليسار وأنت تريد السير مستقيما، والخط بين المسارات متصل، ماذا تفعل؟",
-   "options": ["تنتقل إلى المسار المستقيم فورا", "تسير مستقيما لأن الإشارة خضراء", "تتوقف في مسارك حتى يسمح لك أحد بالدخول", "تنعطف يسارا كما يلزمك السهم ثم تبحث عن طريق آمن للعودة"], "answer": 3,
+   "options": [
+    "تنتقل إلى المسار المستقيم فورا",
+    "تسير مستقيما لأن الإشارة خضراء",
+    "تتوقف في مسارك حتى يسمح لك أحد بالدخول",
+    "تنعطف يسارا كما يلزمك السهم ثم تبحث عن طريق آمن للعودة"
+   ],
+   "answer": 3,
    "explain": "السهم إلزامي والخط المتصل يمنع تغيير المسار، لذلك تكمل في اتجاه السهم ثم تعدل طريقك بأمان",
-   "tip": "غلطة المسار بتتصلح بلفة، مش بقطع خط", "src": ["S1", "S2"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-010", "topic": "markings", "level": 1, "exam": ["dubai", "sharjah"],
+   "tip": "غلطة المسار بتتصلح بلفة، مش بقطع خط",
+   "src": [
+    "S1",
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "mk-arrow-left",
+    "mk-solid-lane"
+   ]
+  },
+  {
+   "id": "markings-markings-010",
+   "topic": "markings",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "ماذا يعني السهم المرسوم داخل المسار؟",
-   "options": ["اقتراح يمكنك تجاهله", "الاتجاه الذي يجب أن تسلكه المركبات في هذا المسار", "اتجاه سير المشاة", "مكان وقوف سيارات الأجرة"], "answer": 1,
+   "options": [
+    "اقتراح يمكنك تجاهله",
+    "الاتجاه الذي يجب أن تسلكه المركبات في هذا المسار",
+    "اتجاه سير المشاة",
+    "مكان وقوف سيارات الأجرة"
+   ],
+   "answer": 1,
    "explain": "دليل هيئة الطرق: الأسهم في وسط المسار تبين الاتجاه الذي يجب أن تسير فيه مركبات هذا المسار",
-   "src": ["S1", "S6"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-011", "topic": "markings", "level": 2, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S1",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "mk-arrow-straight"
+   ]
+  },
+  {
+   "id": "markings-markings-011",
+   "topic": "markings",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "أنت في مسار عليه سهم إلى الأمام واليمين، ما الاتجاهات المسموحة لك؟",
-   "options": ["الأمام فقط", "اليمين فقط", "الأمام أو اليمين", "اليسار أو الاستدارة"], "answer": 2,
+   "options": [
+    "الأمام فقط",
+    "اليمين فقط",
+    "الأمام أو اليمين",
+    "اليسار أو الاستدارة"
+   ],
+   "answer": 2,
    "explain": "السهم المزدوج يسمح بالاتجاهين المرسومين فقط: الأمام أو اليمين",
-   "src": ["S1", "S6"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-012", "topic": "markings", "level": 1, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S1",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "mk-arrow-straight-right"
+   ]
+  },
+  {
+   "id": "markings-markings-012",
+   "topic": "markings",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "ما هو خط التوقف؟",
-   "options": ["خط أبيض متصل بعرض المسار عند لوحة قف أو الإشارة الضوئية", "خط أبيض متقطع بعرض الطريق", "خط أصفر على طول الرصيف", "خطوط مائلة وسط التقاطع"], "answer": 0,
+   "options": [
+    "خط أبيض متصل بعرض المسار عند لوحة قف أو الإشارة الضوئية",
+    "خط أبيض متقطع بعرض الطريق",
+    "خط أصفر على طول الرصيف",
+    "خطوط مائلة وسط التقاطع"
+   ],
+   "answer": 0,
    "explain": "خط التوقف أبيض متصل بعرض المسار، وتراه عند لوحة قف وعند الإشارات الضوئية",
-   "src": ["S1", "S6"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-013", "topic": "markings", "level": 2, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S1",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "opt_figs": [
+    "mk-stop-line",
+    "mk-give-way-line",
+    null,
+    "mk-yellow-box"
+   ],
+   "explain_fig": [
+    "mk-stop-line"
+   ]
+  },
+  {
+   "id": "markings-markings-013",
+   "topic": "markings",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "وصلت إلى لوحة قف وخط التوقف والطريق خال تماما، ماذا تفعل؟",
-   "options": ["تخفف السرعة وتكمل دون توقف", "تتوقف بعد الخط لترى أفضل", "تطلق البوق وتكمل", "تتوقف توقفا كاملا قبل الخط ثم تنطلق بعد التأكد"], "answer": 3,
+   "options": [
+    "تخفف السرعة وتكمل دون توقف",
+    "تتوقف بعد الخط لترى أفضل",
+    "تطلق البوق وتكمل",
+    "تتوقف توقفا كاملا قبل الخط ثم تنطلق بعد التأكد"
+   ],
+   "answer": 3,
    "explain": "عند لوحة قف يلزمك التوقف الكامل قبل الخط كل مرة، حتى لو كان الطريق خاليا",
-   "src": ["S1"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-014", "topic": "markings", "level": 2, "exam": ["dubai"],
+   "src": [
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "p-stop",
+    "mk-stop-line"
+   ]
+  },
+  {
+   "id": "markings-markings-014",
+   "topic": "markings",
+   "level": 2,
+   "exam": [
+    "dubai"
+   ],
    "q": "كيف يبدو خط إفساح الطريق حسب دليل هيئة الطرق في دبي؟",
-   "options": ["خط أبيض متصل عريض", "خطان أصفران متصلان", "خط أبيض متقطع بعرض المسار", "صف من الأسهم الصفراء"], "answer": 2,
+   "options": [
+    "خط أبيض متصل عريض",
+    "خطان أصفران متصلان",
+    "خط أبيض متقطع بعرض المسار",
+    "صف من الأسهم الصفراء"
+   ],
+   "answer": 2,
    "explain": "دليل هيئة الطرق: مع لوحة أفسح الطريق تجد خطا أبيض متقطعا بعرض المسار",
-   "src": ["S1", "S23"], "confidence": "high",
-   "notes": "دليل أبوظبي 2020 يرسمه صفا من المثلثات البيضاء"},
-  {"id": "markings-markings-015", "topic": "markings", "level": 3, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S1",
+    "S23"
+   ],
+   "confidence": "high",
+   "notes": "دليل أبوظبي 2020 يرسمه صفا من المثلثات البيضاء",
+   "explain_fig": [
+    "mk-give-way-line"
+   ]
+  },
+  {
+   "id": "markings-markings-015",
+   "topic": "markings",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "ما الفرق بين خط التوقف عند لوحة قف وخط إفساح الطريق؟",
-   "options": ["لا فرق بينهما", "عند لوحة قف تقف كل مرة، وعند خط إفساح الطريق تقف فقط إذا كان هناك من له الأولوية", "عند خط إفساح الطريق تقف كل مرة، وعند لوحة قف تقف عند الزحام فقط", "الخطان للمشاة فقط"], "answer": 1,
+   "options": [
+    "لا فرق بينهما",
+    "عند لوحة قف تقف كل مرة، وعند خط إفساح الطريق تقف فقط إذا كان هناك من له الأولوية",
+    "عند خط إفساح الطريق تقف كل مرة، وعند لوحة قف تقف عند الزحام فقط",
+    "الخطان للمشاة فقط"
+   ],
+   "answer": 1,
    "explain": "لوحة قف توجب التوقف الكامل كل مرة، أما إفساح الطريق فيعني أن تعطي الأولوية لغيرك وتكمل إذا كان الطريق خاليا",
-   "src": ["S1"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-016", "topic": "markings", "level": 1, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "mk-stop-line",
+    "mk-give-way-line"
+   ]
+  },
+  {
+   "id": "markings-markings-016",
+   "topic": "markings",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "ماذا يعني ممر المشاة المرسوم بخطوط بيضاء عريضة بعرض الطريق؟",
-   "options": ["مكان عبور المشاة ولهم الأولوية عليه", "منطقة وقوف قصير", "بداية مسار للدراجات", "مكان مسموح فيه التجاوز"], "answer": 0,
+   "options": [
+    "مكان عبور المشاة ولهم الأولوية عليه",
+    "منطقة وقوف قصير",
+    "بداية مسار للدراجات",
+    "مكان مسموح فيه التجاوز"
+   ],
+   "answer": 0,
    "explain": "ممر المشاة مكان مخصص لعبور المشاة، وعليك أن تعطيهم الأولوية",
-   "src": ["S1", "S3"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-017", "topic": "markings", "level": 2, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S1",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "mk-zebra"
+   ]
+  },
+  {
+   "id": "markings-markings-017",
+   "topic": "markings",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "شخص يعبر ممر مشاة بلا إشارة ضوئية وأنت تقترب، ماذا تفعل؟",
-   "options": ["تكمل إذا كان في الجهة الأخرى من الطريق", "تطلق البوق لينتبه", "تسرع لتعبر قبله", "تخفف السرعة وتتوقف حتى يعبر"], "answer": 3,
+   "options": [
+    "تكمل إذا كان في الجهة الأخرى من الطريق",
+    "تطلق البوق لينتبه",
+    "تسرع لتعبر قبله",
+    "تخفف السرعة وتتوقف حتى يعبر"
+   ],
+   "answer": 3,
    "explain": "القانون يلزمك بتخفيف السرعة عند ممر المشاة والتوقف حتى يعبر المشاة",
-   "src": ["S3", "S2"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-018", "topic": "markings", "level": 3, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S3",
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "mk-zebra"
+   ]
+  },
+  {
+   "id": "markings-markings-018",
+   "topic": "markings",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "السير متوقف وأمامك ممر مشاة، والمركبات أمامك واقفة بعده مباشرة، أين تقف؟",
-   "options": ["فوق الممر لأن السير متوقف", "قبل الممر وتتركه خاليا للمشاة", "على نصف الممر", "داخل الممر ثم تتراجع"], "answer": 1,
+   "options": [
+    "فوق الممر لأن السير متوقف",
+    "قبل الممر وتتركه خاليا للمشاة",
+    "على نصف الممر",
+    "داخل الممر ثم تتراجع"
+   ],
+   "answer": 1,
    "explain": "اللائحة تمنع الوقوف على ممرات المشاة، فقف قبل الممر واتركه مفتوحا",
-   "src": ["S2"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-019", "topic": "markings", "level": 2, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "mk-zebra"
+   ]
+  },
+  {
+   "id": "markings-markings-019",
+   "topic": "markings",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "ماذا يعني الصندوق الأصفر المرسوم بخطوط متقاطعة وسط التقاطع؟",
-   "options": ["منطقة انتظار للمركبات المنعطفة", "مسموح الوقوف فيه عند الزحام", "منطقة لعبور المشاة", "ممنوع دخوله إلا إذا كان مخرجك بعده خاليا"], "answer": 3,
+   "options": [
+    "منطقة انتظار للمركبات المنعطفة",
+    "مسموح الوقوف فيه عند الزحام",
+    "منطقة لعبور المشاة",
+    "ممنوع دخوله إلا إذا كان مخرجك بعده خاليا"
+   ],
+   "answer": 3,
    "explain": "الصندوق الأصفر يمنعك من الوقوف داخل التقاطع، فلا تدخله إلا إذا كان مخرجك مفتوحا",
-   "src": ["S1", "S16"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-020", "topic": "markings", "level": 3, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S1",
+    "S16"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "explain_fig": [
+    "mk-yellow-box"
+   ]
+  },
+  {
+   "id": "markings-markings-020",
+   "topic": "markings",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "إشارتك خضراء لكن الطريق بعد التقاطع مزدحم ولا يوجد مكان لمركبتك، ماذا تفعل؟",
-   "options": ["تنتظر قبل خط التوقف حتى يتوفر مكان بعد التقاطع", "تدخل التقاطع لأن الإشارة خضراء", "تدخل وتقف داخل الصندوق الأصفر", "تنعطف يمينا فجأة دون إشارة"], "answer": 0,
+   "options": [
+    "تنتظر قبل خط التوقف حتى يتوفر مكان بعد التقاطع",
+    "تدخل التقاطع لأن الإشارة خضراء",
+    "تدخل وتقف داخل الصندوق الأصفر",
+    "تنعطف يمينا فجأة دون إشارة"
+   ],
+   "answer": 0,
    "explain": "الأخضر لا يعطيك حق إغلاق التقاطع، فإذا دخلت وعلقت داخله أغلقت الطريق على الاتجاهات الأخرى",
-   "tip": "قبل ما تدخل، اسأل حالك: في مكان لسيارتي بعد التقاطع؟", "src": ["S1", "S16"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-021", "topic": "markings", "level": 5, "exam": ["dubai", "sharjah"],
+   "tip": "قبل ما تدخل، اسأل حالك: في مكان لسيارتي بعد التقاطع؟",
+   "src": [
+    "S1",
+    "S16"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "tl-green"
+   ],
+   "explain_fig": [
+    "mk-yellow-box"
+   ]
+  },
+  {
+   "id": "markings-markings-021",
+   "topic": "markings",
+   "level": 5,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "كم غرامة الوقوف داخل الصندوق الأصفر عند التقاطع؟",
-   "options": ["200 درهم", "1000 درهم", "500 درهم", "3000 درهم"], "answer": 2,
+   "options": [
+    "200 درهم",
+    "1000 درهم",
+    "500 درهم",
+    "3000 درهم"
+   ],
+   "answer": 2,
    "explain": "شرطة دبي وشرطة أبوظبي تذكران غرامة 500 درهم للوقوف في الصندوق الأصفر",
-   "src": ["S16", "S17"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-022", "topic": "markings", "level": 3, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S16",
+    "S17"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "mk-yellow-box"
+   ]
+  },
+  {
+   "id": "markings-markings-022",
+   "topic": "markings",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "لماذا ممنوع الوقوف داخل الصندوق الأصفر؟",
-   "options": ["لأنه مخصص لسيارات الأجرة", "لأنه منطقة تحميل وتنزيل", "لأنه ممر للمشاة", "لأن الوقوف فيه يغلق التقاطع على الاتجاهات الأخرى ويسبب الحوادث"], "answer": 3,
+   "options": [
+    "لأنه مخصص لسيارات الأجرة",
+    "لأنه منطقة تحميل وتنزيل",
+    "لأنه ممر للمشاة",
+    "لأن الوقوف فيه يغلق التقاطع على الاتجاهات الأخرى ويسبب الحوادث"
+   ],
+   "answer": 3,
    "explain": "المركبة العالقة في الصندوق تمنع الاتجاهات الأخرى من المرور عند تغير الإشارة، وشرطة دبي تحذر أن هذا يسبب الحوادث",
-   "src": ["S16", "S1"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-023", "topic": "markings", "level": 2, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S16",
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "explain_fig": [
+    "mk-yellow-box"
+   ]
+  },
+  {
+   "id": "markings-markings-023",
+   "topic": "markings",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "ماذا تعني المساحة المرسومة بخطوط مائلة داخل إطار أبيض بين المسارات؟",
-   "options": ["مسار إضافي عند الزحام", "منطقة تفصل حركة السير، فتجنب السير أو الوقوف فوقها", "منطقة وقوف مجانية", "مسار للدراجات النارية"], "answer": 1,
+   "options": [
+    "مسار إضافي عند الزحام",
+    "منطقة تفصل حركة السير، فتجنب السير أو الوقوف فوقها",
+    "منطقة وقوف مجانية",
+    "مسار للدراجات النارية"
+   ],
+   "answer": 1,
    "explain": "هذه المناطق تفصل حركة السير وتحمي الجزر ومسارات الانعطاف، ولوحات المعاهد تطلب تجنب القيادة فوقها",
-   "src": ["S6", "S23"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-024", "topic": "markings", "level": 4, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S6",
+    "S23"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "mk-hatched"
+   ]
+  },
+  {
+   "id": "markings-markings-024",
+   "topic": "markings",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "فاتك المخرج على الطريق السريع ووصلت إلى منطقة الشيفرون بين الطريق والمخرج، ماذا تفعل؟",
-   "options": ["تعبر الشيفرون بسرعة لتلحق المخرج", "تتوقف على الشيفرون وتنتظر فرصة", "تكمل في الطريق وتأخذ المخرج التالي", "ترجع للخلف على كتف الطريق"], "answer": 2,
+   "options": [
+    "تعبر الشيفرون بسرعة لتلحق المخرج",
+    "تتوقف على الشيفرون وتنتظر فرصة",
+    "تكمل في الطريق وتأخذ المخرج التالي",
+    "ترجع للخلف على كتف الطريق"
+   ],
+   "answer": 2,
    "explain": "منطقة الشيفرون ليست للسير، والعبور منها في آخر لحظة خطر، فالحل أن تكمل إلى المخرج التالي",
-   "tip": "المخرج اللي فاتك ما بيستاهل حادث", "src": ["S23", "S6"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-025", "topic": "markings", "level": 2, "exam": ["dubai"],
+   "tip": "المخرج اللي فاتك ما بيستاهل حادث",
+   "src": [
+    "S23",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "mk-chevron"
+   ],
+   "explain_fig": [
+    "fig-missed-exit"
+   ]
+  },
+  {
+   "id": "markings-markings-025",
+   "topic": "markings",
+   "level": 2,
+   "exam": [
+    "dubai"
+   ],
    "q": "ما لون مسار الحافلات المخصص في بعض شوارع دبي؟",
-   "options": ["أخضر", "أزرق", "أحمر", "أصفر"], "answer": 2,
+   "options": [
+    "أخضر",
+    "أزرق",
+    "أحمر",
+    "أصفر"
+   ],
+   "answer": 2,
    "explain": "هيئة الطرق تلون مسارات الحافلات المخصصة بالأحمر، مثل مسار شارع خالد بن الوليد",
-   "src": ["S19"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-026", "topic": "markings", "level": 3, "exam": ["dubai"],
+   "src": [
+    "S19"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "explain_fig": [
+    "mk-bus-lane"
+   ]
+  },
+  {
+   "id": "markings-markings-026",
+   "topic": "markings",
+   "level": 3,
+   "exam": [
+    "dubai"
+   ],
    "q": "من المسموح له استعمال مسارات الحافلات المخصصة في دبي؟",
-   "options": ["الحافلات وسيارات الأجرة والشرطة والدفاع المدني والإسعاف", "كل المركبات في أوقات الذروة", "الشاحنات فقط", "المركبات الخاصة إذا كان المسار فارغا"], "answer": 0,
+   "options": [
+    "الحافلات وسيارات الأجرة والشرطة والدفاع المدني والإسعاف",
+    "كل المركبات في أوقات الذروة",
+    "الشاحنات فقط",
+    "المركبات الخاصة إذا كان المسار فارغا"
+   ],
+   "answer": 0,
    "explain": "هيئة الطرق: هذه المسارات للحافلات وسيارات الأجرة والشرطة والدفاع المدني والإسعاف فقط",
-   "src": ["S18"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-027", "topic": "markings", "level": 5, "exam": ["dubai"],
+   "src": [
+    "S18"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "explain_fig": [
+    "mk-bus-lane",
+    "i-bus-lane-start"
+   ]
+  },
+  {
+   "id": "markings-markings-027",
+   "topic": "markings",
+   "level": 5,
+   "exam": [
+    "dubai"
+   ],
    "q": "كم غرامة استعمال مسار الحافلات المخصص في دبي حسب هيئة الطرق؟",
-   "options": ["300 درهم", "600 درهم", "1000 درهم", "2000 درهم"], "answer": 1,
+   "options": [
+    "300 درهم",
+    "600 درهم",
+    "1000 درهم",
+    "2000 درهم"
+   ],
+   "answer": 1,
    "explain": "هيئة الطرق تعلن غرامة 600 درهم لمن يستعمل مسارات الحافلات المخصصة، والكاميرات تراقبها",
-   "src": ["S18", "S19", "S27"], "confidence": "medium",
-   "notes": "قائمة المخالفات الاتحادية تذكر 400 درهم لمخالفة السير في مسارات الحافلات وسيارات الأجرة، واعتمدنا رقم هيئة الطرق لأنه خاص بمسارات دبي"},
-  {"id": "markings-markings-028", "topic": "markings", "level": 1, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S18",
+    "S19",
+    "S27"
+   ],
+   "confidence": "medium",
+   "notes": "قائمة المخالفات الاتحادية تذكر 400 درهم لمخالفة السير في مسارات الحافلات وسيارات الأجرة، واعتمدنا رقم هيئة الطرق لأنه خاص بمسارات دبي",
+   "fig": [
+    "mk-bus-lane"
+   ]
+  },
+  {
+   "id": "markings-markings-028",
+   "topic": "markings",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "ما فائدة أشرطة الاهتزاز البارزة بعرض الطريق؟",
-   "options": ["تنبيهك بالصوت والاهتزاز أنك تقترب من خطر مثل دوار أو ممر مشاة", "تزيين الطريق", "تحديد مكان الوقوف", "تحديد بداية مسار الحافلات"], "answer": 0,
+   "options": [
+    "تنبيهك بالصوت والاهتزاز أنك تقترب من خطر مثل دوار أو ممر مشاة",
+    "تزيين الطريق",
+    "تحديد مكان الوقوف",
+    "تحديد بداية مسار الحافلات"
+   ],
+   "answer": 0,
    "explain": "أشرطة الاهتزاز تنبهك بالصوت والاهتزاز قبل خطر مثل دوار أو ممر مشاة، فخفف سرعتك",
-   "src": ["S1"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-029", "topic": "markings", "level": 2, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "explain_fig": [
+    "mk-rumble-strips"
+   ]
+  },
+  {
+   "id": "markings-markings-029",
+   "topic": "markings",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "رأيت خطوطا صفراء متقطعة بعرض الطريق كله حتى الكتف، ماذا تعني؟",
-   "options": ["ممر للمشاة", "نهاية الطريق السريع", "منطقة ممنوع الوقوف فيها", "يوجد مطب صناعي، فخفف السرعة"], "answer": 3,
+   "options": [
+    "ممر للمشاة",
+    "نهاية الطريق السريع",
+    "منطقة ممنوع الوقوف فيها",
+    "يوجد مطب صناعي، فخفف السرعة"
+   ],
+   "answer": 3,
    "explain": "دليل هيئة الطرق: الخطوط الصفراء المتقطعة بعرض الطريق والكتف تحذر من مطب صناعي",
-   "src": ["S1"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-030", "topic": "markings", "level": 2, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "explain_fig": [
+    "mk-speed-hump"
+   ]
+  },
+  {
+   "id": "markings-markings-030",
+   "topic": "markings",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "لمن كتف الطريق على الطرق السريعة؟",
-   "options": ["لمن يريد التجاوز عند الزحام", "لمركبات الطوارئ وللحالات الطارئة", "للمركبات البطيئة دائما", "للمتأخرين عن مواعيدهم"], "answer": 1,
+   "options": [
+    "لمن يريد التجاوز عند الزحام",
+    "لمركبات الطوارئ وللحالات الطارئة",
+    "للمركبات البطيئة دائما",
+    "للمتأخرين عن مواعيدهم"
+   ],
+   "answer": 1,
    "explain": "كتف الطريق ليس مسارا للسير، وتحتاجه مركبات الطوارئ لتصل بسرعة عند الازدحام",
-   "src": ["S9", "S20"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-031", "topic": "markings", "level": 3, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S9",
+    "S20"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "explain_fig": [
+    "mk-hard-shoulder"
+   ]
+  },
+  {
+   "id": "markings-markings-031",
+   "topic": "markings",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "الطريق السريع مزدحم وكتف الطريق فارغ، ما الصحيح؟",
-   "options": ["تسير على الكتف حتى المخرج", "تستعمل الكتف إذا شغلت أضواء التحذير", "تبقى في مسارك، فالكتف لمركبات الطوارئ والحالات الطارئة", "تستعمله لمسافة قصيرة فقط"], "answer": 2,
+   "options": [
+    "تسير على الكتف حتى المخرج",
+    "تستعمل الكتف إذا شغلت أضواء التحذير",
+    "تبقى في مسارك، فالكتف لمركبات الطوارئ والحالات الطارئة",
+    "تستعمله لمسافة قصيرة فقط"
+   ],
+   "answer": 2,
    "explain": "دليل شرطة دبي: لا تستعمل أكتاف الطريق، فمركبات الطوارئ قد تحتاجها لتصل عند الازدحام",
-   "src": ["S9", "S20"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-032", "topic": "markings", "level": 2, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S9",
+    "S20"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "explain_fig": [
+    "mk-hard-shoulder"
+   ]
+  },
+  {
+   "id": "markings-markings-032",
+   "topic": "markings",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "ماذا يعني الخط المتصل على حافة الطريق؟",
-   "options": ["مسار إضافي عند الحاجة", "حدود الجزء المخصص للسير، ولا تعبره إلا لحالة طارئة", "مكان عبور المشاة", "خط مسموح التجاوز عنده"], "answer": 1,
+   "options": [
+    "مسار إضافي عند الحاجة",
+    "حدود الجزء المخصص للسير، ولا تعبره إلا لحالة طارئة",
+    "مكان عبور المشاة",
+    "خط مسموح التجاوز عنده"
+   ],
+   "answer": 1,
    "explain": "خط الحافة يحدد نهاية الجزء المخصص للسير، وما بعده كتف الطريق وليس مسارا",
-   "src": ["S6", "S23"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-033", "topic": "markings", "level": 3, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S6",
+    "S23"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "mk-edge-line"
+   ]
+  },
+  {
+   "id": "markings-markings-033",
+   "topic": "markings",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "ماذا تعني الأسهم المائلة المرسومة داخل مسار ينتهي قريبا؟",
-   "options": ["المسار مخصص للانعطاف", "المسار للحافلات", "ممنوع الوقوف", "المسار سينتهي، فانتقل مبكرا إلى المسار الذي تشير إليه"], "answer": 3,
+   "options": [
+    "المسار مخصص للانعطاف",
+    "المسار للحافلات",
+    "ممنوع الوقوف",
+    "المسار سينتهي، فانتقل مبكرا إلى المسار الذي تشير إليه"
+   ],
+   "answer": 3,
    "explain": "هذه الأسهم تطلب منك الانتقال إلى المسار المجاور قبل نهاية مسارك، فشغل الإشارة وانتقل مبكرا",
-   "src": ["S6", "S8"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-034", "topic": "markings", "level": 3, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S6",
+    "S8"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "mk-arrow-merge"
+   ]
+  },
+  {
+   "id": "markings-markings-034",
+   "topic": "markings",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "رأيت خطوطا صفراء مرسومة أمام مدخل على جانب الطريق والسير متوقف، ماذا تفعل؟",
-   "options": ["تقف قبل المنطقة المرسومة وتترك المدخل خاليا", "تقف أمام المدخل لأن السير متوقف", "تدخل المدخل لتتفادى الزحام", "تقف على الرصيف"], "answer": 0,
+   "options": [
+    "تقف قبل المنطقة المرسومة وتترك المدخل خاليا",
+    "تقف أمام المدخل لأن السير متوقف",
+    "تدخل المدخل لتتفادى الزحام",
+    "تقف على الرصيف"
+   ],
+   "answer": 0,
    "explain": "الخط الأصفر أمام المدخل يعني أبقه خاليا، واللائحة تمنع الوقوف أمام المداخل والمخارج",
-   "src": ["S6", "S2"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-035", "topic": "markings", "level": 4, "exam": ["dubai"],
+   "src": [
+    "S6",
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "explain_fig": [
+    "mk-keep-clear"
+   ]
+  },
+  {
+   "id": "markings-markings-035",
+   "topic": "markings",
+   "level": 4,
+   "exam": [
+    "dubai"
+   ],
    "q": "طريقك يعبر سكة ترام دبي وفوق السكة صندوق أصفر بخطوط متقاطعة، ما الصحيح؟",
-   "options": ["تقف فوقه إذا تحولت الإشارة إلى الأحمر", "يمكنك الوقوف فوقه إذا لم تر الترام", "هو مخصص لوقوف سيارات الأجرة", "لا تدخله إلا إذا كان مخرجك بعده خاليا تماما"], "answer": 3,
+   "options": [
+    "تقف فوقه إذا تحولت الإشارة إلى الأحمر",
+    "يمكنك الوقوف فوقه إذا لم تر الترام",
+    "هو مخصص لوقوف سيارات الأجرة",
+    "لا تدخله إلا إذا كان مخرجك بعده خاليا تماما"
+   ],
+   "answer": 3,
    "explain": "الوقوف فوق سكة الترام خطر كبير، ولوحات المعاهد تطلب ألا تدخل حتى يخلو المخرج من كل السير بما فيه الترام",
-   "src": ["S6", "S7"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-036", "topic": "markings", "level": 4, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S6",
+    "S7"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "mk-tram-box"
+   ]
+  },
+  {
+   "id": "markings-markings-036",
+   "topic": "markings",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "ماذا تعني الخطوط المتعرجة المرسومة على جانبي المسار قبل ممر المشاة؟",
-   "options": ["نهاية منطقة المدرسة", "تحذير أنك تقترب من ممر مشاة، فخفف السرعة واستعد للتوقف", "مسموح التجاوز", "مسار للدراجات"], "answer": 1,
+   "options": [
+    "نهاية منطقة المدرسة",
+    "تحذير أنك تقترب من ممر مشاة، فخفف السرعة واستعد للتوقف",
+    "مسموح التجاوز",
+    "مسار للدراجات"
+   ],
+   "answer": 1,
    "explain": "الخطوط المتعرجة علامة تحذير تسبق ممر المشاة، ودليل أبوظبي يرسمها قبل ممرات المشاة في مناطق المدارس",
-   "src": ["S6", "S23"], "confidence": "medium",
-   "notes": "لوحات معاهد دبي تذكرها ضمن علامات التحذير دون شرح مفصل"},
-  {"id": "markings-markings-037", "topic": "markings", "level": 1, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S6",
+    "S23"
+   ],
+   "confidence": "medium",
+   "notes": "لوحات معاهد دبي تذكرها ضمن علامات التحذير دون شرح مفصل",
+   "fig": [
+    "mk-zigzag"
+   ]
+  },
+  {
+   "id": "markings-markings-037",
+   "topic": "markings",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "لمن الموقف المرسوم عليه رمز الكرسي المتحرك؟",
-   "options": ["لأي سائق لمدة 5 دقائق", "لأصحاب الهمم الذين يحملون التصريح", "لسيارات الأجرة", "للزوار فقط"], "answer": 1,
+   "options": [
+    "لأي سائق لمدة 5 دقائق",
+    "لأصحاب الهمم الذين يحملون التصريح",
+    "لسيارات الأجرة",
+    "للزوار فقط"
+   ],
+   "answer": 1,
    "explain": "هذا الموقف لأصحاب الهمم الذين يحملون التصريح، وممنوع على غيرهم الوقوف فيه ولو لدقيقة",
-   "src": ["S1"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-038", "topic": "markings", "level": 4, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "mk-disabled-bay"
+   ]
+  },
+  {
+   "id": "markings-markings-038",
+   "topic": "markings",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "في طريق خط منتصفه أبيض متقطع (كما في دليل أبوظبي)، هل يمكنك التجاوز؟",
-   "options": ["لا، التجاوز مسموح فقط عند الخط الأصفر", "نعم في أي وقت", "نعم إذا كان آمنا، فالعبرة بأن الخط متقطع", "لا، إلا للحافلات"], "answer": 2,
+   "options": [
+    "لا، التجاوز مسموح فقط عند الخط الأصفر",
+    "نعم في أي وقت",
+    "نعم إذا كان آمنا، فالعبرة بأن الخط متقطع",
+    "لا، إلا للحافلات"
+   ],
+   "answer": 2,
    "explain": "لون خط المنتصف يختلف بين الأدلة، لكن القاعدة واحدة: المتقطع يسمح بالعبور الآمن والمتصل يمنعه",
-   "src": ["S23", "S1", "S2"], "confidence": "high", "notes": ""},
-  {"id": "markings-markings-039", "topic": "markings", "level": 2, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S23",
+    "S1",
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "markings-markings-039",
+   "topic": "markings",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "ما فائدة العواكس الصغيرة المثبتة على خطوط الطريق؟",
-   "options": ["تمنع التجاوز", "تقيس سرعة المركبات", "توضح حدود المسارات ليلا وفي الضباب والمطر", "تحدد أماكن الوقوف"], "answer": 2,
+   "options": [
+    "تمنع التجاوز",
+    "تقيس سرعة المركبات",
+    "توضح حدود المسارات ليلا وفي الضباب والمطر",
+    "تحدد أماكن الوقوف"
+   ],
+   "answer": 2,
    "explain": "العواكس الأرضية تعكس ضوء مصابيحك فتظهر الخطوط بوضوح في الظلام وسوء الرؤية",
-   "src": ["S23"], "confidence": "medium", "notes": ""},
-  {"id": "markings-markings-040", "topic": "markings", "level": 3, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S23"
+   ],
+   "confidence": "medium",
+   "notes": "",
+   "explain_fig": [
+    "mk-road-studs"
+   ]
+  },
+  {
+   "id": "markings-markings-040",
+   "topic": "markings",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "على الطريق السريع تريد الخروج، ورأيت أسهما تدل على بداية مسار التباطؤ قبل المخرج، أين تخفف سرعتك؟",
-   "options": ["داخل مسار التباطؤ بعد أن تدخله", "في المسار الأيسر قبل المخرج بمسافة طويلة", "على الطريق الرئيسي بقوة قبل دخول مسار التباطؤ", "على كتف الطريق"], "answer": 0,
+   "options": [
+    "داخل مسار التباطؤ بعد أن تدخله",
+    "في المسار الأيسر قبل المخرج بمسافة طويلة",
+    "على الطريق الرئيسي بقوة قبل دخول مسار التباطؤ",
+    "على كتف الطريق"
+   ],
+   "answer": 0,
    "explain": "مسار التباطؤ موجود لتخفف سرعتك داخله دون أن تعطل السير خلفك على الطريق الرئيسي",
-   "src": ["S6", "S8"], "confidence": "medium",
-   "notes": "لوحات معاهد دبي تذكر أسهم مسار التباطؤ، وقاعدة التخفيف داخله مأخوذة من اسم المسار ووظيفته"},
-
-  {"id": "markings-lights-001", "topic": "lights", "level": 1, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S6",
+    "S8"
+   ],
+   "confidence": "medium",
+   "notes": "لوحات معاهد دبي تذكر أسهم مسار التباطؤ، وقاعدة التخفيف داخله مأخوذة من اسم المسار ووظيفته",
+   "fig": [
+    "mk-arrow-exit"
+   ]
+  },
+  {
+   "id": "markings-lights-001",
+   "topic": "lights",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "ماذا يعني الضوء الأحمر في الإشارة؟",
-   "options": ["خفف السرعة وأكمل", "أفسح الطريق ثم أكمل", "قف تماما قبل خط التوقف ولا تدخل التقاطع", "انعطف يمينا فقط"], "answer": 2,
+   "options": [
+    "خفف السرعة وأكمل",
+    "أفسح الطريق ثم أكمل",
+    "قف تماما قبل خط التوقف ولا تدخل التقاطع",
+    "انعطف يمينا فقط"
+   ],
+   "answer": 2,
    "explain": "الأحمر يعني قف قبل خط التوقف ولا تدخل التقاطع حتى يظهر الأخضر",
-   "src": ["S1", "S2"], "confidence": "high", "notes": ""},
-  {"id": "markings-lights-002", "topic": "lights", "level": 1, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S1",
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "tl-red"
+   ]
+  },
+  {
+   "id": "markings-lights-002",
+   "topic": "lights",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "ماذا يعني الضوء الأخضر؟",
-   "options": ["مسموح السير إذا كان التقاطع خاليا وآمنا", "انطلق فورا دون النظر", "مسموح للمشاة فقط", "قف واستعد"], "answer": 0,
+   "options": [
+    "مسموح السير إذا كان التقاطع خاليا وآمنا",
+    "انطلق فورا دون النظر",
+    "مسموح للمشاة فقط",
+    "قف واستعد"
+   ],
+   "answer": 0,
    "explain": "الأخضر يسمح لك بالسير مع الحذر، بعد أن تتأكد أن التقاطع خال وآمن",
-   "src": ["S1", "S2"], "confidence": "high", "notes": ""},
-  {"id": "markings-lights-003", "topic": "lights", "level": 1, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S1",
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "tl-green"
+   ]
+  },
+  {
+   "id": "markings-lights-003",
+   "topic": "lights",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "ظهر الضوء الأصفر وأنت على مسافة كافية للتوقف بأمان، ماذا تفعل؟",
-   "options": ["تسرع لتعبر قبل الأحمر", "تطلق البوق وتكمل", "تغير مسارك", "تتوقف قبل خط التوقف"], "answer": 3,
+   "options": [
+    "تسرع لتعبر قبل الأحمر",
+    "تطلق البوق وتكمل",
+    "تغير مسارك",
+    "تتوقف قبل خط التوقف"
+   ],
+   "answer": 3,
    "explain": "الأصفر يعني توقف إذا كان التوقف آمنا، ودليل هيئة الطرق يقول إنه مثل الأحمر تقريبا",
-   "tip": "الأصفر مش دعوة للسباق، هو آخر تنبيه قبل الأحمر", "src": ["S1", "S2"], "confidence": "high", "notes": ""},
-  {"id": "markings-lights-004", "topic": "lights", "level": 3, "exam": ["dubai", "sharjah"],
+   "tip": "الأصفر مش دعوة للسباق، هو آخر تنبيه قبل الأحمر",
+   "src": [
+    "S1",
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "tl-amber"
+   ]
+  },
+  {
+   "id": "markings-lights-004",
+   "topic": "lights",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "ظهر الضوء الأصفر وأنت قريب جدا من خط التوقف ولا تستطيع التوقف بأمان، ماذا تفعل؟",
-   "options": ["تكمل السير بحذر", "تضغط الفرامل بقوة مهما حدث", "تتوقف فوق ممر المشاة", "ترجع للخلف"], "answer": 0,
+   "options": [
+    "تكمل السير بحذر",
+    "تضغط الفرامل بقوة مهما حدث",
+    "تتوقف فوق ممر المشاة",
+    "ترجع للخلف"
+   ],
+   "answer": 0,
    "explain": "اللائحة تقول: إذا لم تستطع التوقف بأمان عند الأصفر فأكمل مع الحيطة والحذر، وهذا معنى نقطة اللاعودة",
-   "src": ["S2", "S1"], "confidence": "high", "notes": ""},
-  {"id": "markings-lights-005", "topic": "lights", "level": 3, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S2",
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "tl-amber"
+   ]
+  },
+  {
+   "id": "markings-lights-005",
+   "topic": "lights",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "ما المقصود بنقطة اللاعودة عند الإشارة الضوئية؟",
-   "options": ["آخر مخرج قبل الإشارة", "النقطة التي لا تستطيع بعدها التوقف بأمان قبل الخط إذا ظهر الأصفر", "المكان الذي تبدأ فيه الكاميرا بالتصوير", "بداية الصندوق الأصفر"], "answer": 1,
+   "options": [
+    "آخر مخرج قبل الإشارة",
+    "النقطة التي لا تستطيع بعدها التوقف بأمان قبل الخط إذا ظهر الأصفر",
+    "المكان الذي تبدأ فيه الكاميرا بالتصوير",
+    "بداية الصندوق الأصفر"
+   ],
+   "answer": 1,
    "explain": "دليل هيئة الطرق: توقع نقطة اللاعودة، وهي النقطة التي لن تستطيع بعدها التوقف",
-   "src": ["S1"], "confidence": "high", "notes": ""},
-  {"id": "markings-lights-006", "topic": "lights", "level": 1, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "explain_fig": [
+    "tl-amber"
+   ]
+  },
+  {
+   "id": "markings-lights-006",
+   "topic": "lights",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "أي ضوء يأتي مباشرة قبل الضوء الأحمر؟",
-   "options": ["الأخضر الوامض", "الأحمر والأصفر معا", "الأصفر", "الأخضر"], "answer": 2,
+   "options": [
+    "الأخضر الوامض",
+    "الأحمر والأصفر معا",
+    "الأصفر",
+    "الأخضر"
+   ],
+   "answer": 2,
    "explain": "الأصفر هو التحذير الأخير قبل الأحمر، فإذا رأيته استعد للتوقف",
-   "src": ["S1", "S2"], "confidence": "high", "notes": ""},
-  {"id": "markings-lights-007", "topic": "lights", "level": 2, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S1",
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "opt_figs": [
+    "tl-flashing-green",
+    null,
+    "tl-amber",
+    "tl-green"
+   ],
+   "explain_fig": [
+    "tl-amber",
+    "tl-red"
+   ]
+  },
+  {
+   "id": "markings-lights-007",
+   "topic": "lights",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "في التقاطعات التي يومض فيها الأخضر، ماذا يعني الأخضر الوامض؟",
-   "options": ["الإشارة معطلة", "مسموح للمشاة فقط", "زد سرعتك لتلحق", "الأخضر سينتهي قريبا ويأتي بعده الأصفر، فاستعد"], "answer": 3,
+   "options": [
+    "الإشارة معطلة",
+    "مسموح للمشاة فقط",
+    "زد سرعتك لتلحق",
+    "الأخضر سينتهي قريبا ويأتي بعده الأصفر، فاستعد"
+   ],
+   "answer": 3,
    "explain": "الأخضر الوامض تحذير مبكر بأن الإشارة ستتغير، فإذا كنت بعيدا استعد للتوقف",
-   "src": ["S12", "S13", "S28"], "confidence": "medium",
-   "notes": "جربته هيئة الطرق في دبي منذ 2007 ويعمل في أبوظبي منذ 2008، وكتيبات المعاهد لم تشرحه وقتها"},
-  {"id": "markings-lights-008", "topic": "lights", "level": 2, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S12",
+    "S13",
+    "S28"
+   ],
+   "confidence": "medium",
+   "notes": "جربته هيئة الطرق في دبي منذ 2007 ويعمل في أبوظبي منذ 2008، وكتيبات المعاهد لم تشرحه وقتها",
+   "fig": [
+    "tl-flashing-green"
+   ]
+  },
+  {
+   "id": "markings-lights-008",
+   "topic": "lights",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "ماذا يعني الضوء الأصفر الوامض في إشارة المرور؟",
-   "options": ["مسموح السير بحذر إذا كان الطريق خاليا", "قف تماما وانتظر الأخضر", "ممنوع الانعطاف", "الأولوية لك دائما"], "answer": 0,
+   "options": [
+    "مسموح السير بحذر إذا كان الطريق خاليا",
+    "قف تماما وانتظر الأخضر",
+    "ممنوع الانعطاف",
+    "الأولوية لك دائما"
+   ],
+   "answer": 0,
    "explain": "اللائحة: الأصفر الوامض يعني إمكان السير إذا كان الطريق خاليا مع الحيطة والحذر",
-   "src": ["S2", "S24"], "confidence": "high", "notes": ""},
-  {"id": "markings-lights-009", "topic": "lights", "level": 5, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S2",
+    "S24"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "tl-flashing-amber"
+   ]
+  },
+  {
+   "id": "markings-lights-009",
+   "topic": "lights",
+   "level": 5,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "ضوء أصفر وامض مثبت على عمود عند مدخل دوار، ماذا يعني حسب اللائحة التنفيذية؟",
-   "options": ["الأولوية لك لأنك قادم من طريق رئيسي", "قف تماما كل مرة", "الأولوية للقادم من اليمين", "أفسح الطريق، والأولوية للقادم من اليسار"], "answer": 3,
+   "options": [
+    "الأولوية لك لأنك قادم من طريق رئيسي",
+    "قف تماما كل مرة",
+    "الأولوية للقادم من اليمين",
+    "أفسح الطريق، والأولوية للقادم من اليسار"
+   ],
+   "answer": 3,
    "explain": "المادة 25 من اللائحة: الأصفر الوامض على الأعمدة الثابتة يعني إفساح الطريق وأولوية القادم من اليسار في التقاطعات والدوارات",
-   "tip": "في الدوار السيارات بتجيك من اليسار، والأصفر الوامض بيذكرك تعطيها الأولوية", "src": ["S2"], "confidence": "high", "notes": ""},
-  {"id": "markings-lights-010", "topic": "lights", "level": 2, "exam": ["dubai", "sharjah"],
+   "tip": "في الدوار السيارات بتجيك من اليسار، والأصفر الوامض بيذكرك تعطيها الأولوية",
+   "src": [
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "tl-flashing-amber-fixed"
+   ],
+   "explain_fig": [
+    "fig-roundabout-priority"
+   ]
+  },
+  {
+   "id": "markings-lights-010",
+   "topic": "lights",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "الضوء الدائري أحمر وبجانبه سهم أخضر إلى اليمين مضاء، ماذا يعني؟",
-   "options": ["ممنوع السير في كل الاتجاهات", "مسموح الانعطاف يمينا فقط بحذر", "مسموح السير مستقيما", "الإشارة معطلة"], "answer": 1,
+   "options": [
+    "ممنوع السير في كل الاتجاهات",
+    "مسموح الانعطاف يمينا فقط بحذر",
+    "مسموح السير مستقيما",
+    "الإشارة معطلة"
+   ],
+   "answer": 1,
    "explain": "السهم الأخضر يسمح بالسير في اتجاهه فقط، أما باقي الاتجاهات فيحكمها الضوء الأحمر",
-   "src": ["S2"], "confidence": "high", "notes": ""},
-  {"id": "markings-lights-011", "topic": "lights", "level": 3, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "tl-green-arrow"
+   ]
+  },
+  {
+   "id": "markings-lights-011",
+   "topic": "lights",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "أنت في مسار الانعطاف يسارا والسهم الأحمر لليسار مضاء، بينما الأخضر مضاء للمسار المستقيم، ماذا تفعل؟",
-   "options": ["تنعطف يسارا لأن هناك ضوءا أخضر", "تنتقل إلى المسار المستقيم وتكمل", "تبقى واقفا قبل خط التوقف حتى يتغير السهم", "تنعطف بحذر إذا كان الطريق خاليا"], "answer": 2,
+   "options": [
+    "تنعطف يسارا لأن هناك ضوءا أخضر",
+    "تنتقل إلى المسار المستقيم وتكمل",
+    "تبقى واقفا قبل خط التوقف حتى يتغير السهم",
+    "تنعطف بحذر إذا كان الطريق خاليا"
+   ],
+   "answer": 2,
    "explain": "السهم الأحمر يمنع اتجاهه فقط، والأخضر المضاء للمستقيم ليس لك",
-   "src": ["S26", "S4"], "confidence": "medium",
-   "notes": "لم نجد نصا إماراتيا يشرح السهم الأحمر، والمعنى من اتفاقية فيينا التي تقول شرطة أبوظبي إن إشارات الإمارات تتبعها"},
-  {"id": "markings-lights-012", "topic": "lights", "level": 3, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S26",
+    "S4"
+   ],
+   "confidence": "medium",
+   "notes": "لم نجد نصا إماراتيا يشرح السهم الأحمر، والمعنى من اتفاقية فيينا التي تقول شرطة أبوظبي إن إشارات الإمارات تتبعها",
+   "fig": [
+    "tl-red-arrow"
+   ]
+  },
+  {
+   "id": "markings-lights-012",
+   "topic": "lights",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "إشارتك خضراء وسمعت صفارة إسعاف قادم من الطريق المتقاطع، ماذا تفعل؟",
-   "options": ["تتوقف ولا تدخل التقاطع حتى يعبر الإسعاف", "تكمل لأن الإشارة خضراء", "تسرع لتعبر قبله", "تطلق البوق لينتبه"], "answer": 0,
+   "options": [
+    "تتوقف ولا تدخل التقاطع حتى يعبر الإسعاف",
+    "تكمل لأن الإشارة خضراء",
+    "تسرع لتعبر قبله",
+    "تطلق البوق لينتبه"
+   ],
+   "answer": 0,
    "explain": "دليل هيئة الطرق: عليك أن تفسح الطريق لمركبات الطوارئ وتتوقف إذا لزم حتى لو كانت إشارتك خضراء",
-   "src": ["S11", "S9"], "confidence": "high", "notes": ""},
-  {"id": "markings-lights-013", "topic": "lights", "level": 4, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S11",
+    "S9"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "tl-green",
+    "ev-emergency-lights"
+   ],
+   "explain_fig": [
+    "ev-at-junction"
+   ]
+  },
+  {
+   "id": "markings-lights-013",
+   "topic": "lights",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "أنت أول مركبة عند إشارة حمراء واقتربت سيارة إسعاف من خلفك، ما الصحيح؟",
-   "options": ["تقطع الإشارة الحمراء لتفسح لها الطريق", "تبقى مكانك وتطلق البوق", "لا تقطع الأحمر، وتتحرك قليلا يمينا أو يسارا إن أمكن دون دخول التقاطع", "ترجع للخلف"], "answer": 2,
+   "options": [
+    "تقطع الإشارة الحمراء لتفسح لها الطريق",
+    "تبقى مكانك وتطلق البوق",
+    "لا تقطع الأحمر، وتتحرك قليلا يمينا أو يسارا إن أمكن دون دخول التقاطع",
+    "ترجع للخلف"
+   ],
+   "answer": 2,
    "explain": "دليل شرطة دبي: لا تقطع الإشارة الحمراء عند اقتراب مركبة طوارئ، وافسح لها بالتحرك يمينا أو يسارا، والإسعاف يعبر بعد توقف قصير",
-   "src": ["S9"], "confidence": "high", "notes": ""},
-  {"id": "markings-lights-014", "topic": "lights", "level": 2, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S9"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "tl-red",
+    "ev-emergency-lights"
+   ]
+  },
+  {
+   "id": "markings-lights-014",
+   "topic": "lights",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "تنعطف يمينا بإشارة خضراء وهناك مشاة بدؤوا عبور الطريق الذي تدخله، ماذا تفعل؟",
-   "options": ["تكمل لأن الإشارة خضراء لك", "تطلق البوق ليسرعوا", "تمر بينهم ببطء", "تخفف وتتوقف حتى يكملوا العبور"], "answer": 3,
+   "options": [
+    "تكمل لأن الإشارة خضراء لك",
+    "تطلق البوق ليسرعوا",
+    "تمر بينهم ببطء",
+    "تخفف وتتوقف حتى يكملوا العبور"
+   ],
+   "answer": 3,
    "explain": "اللائحة تلزمك عند الانعطاف بتخفيف السرعة لتفسح للمشاة الذين بدؤوا العبور، والتوقف إذا لزم",
-   "src": ["S2"], "confidence": "high", "notes": ""},
-  {"id": "markings-lights-015", "topic": "lights", "level": 2, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "tl-green"
+   ],
+   "explain_fig": [
+    "fig-turn-pedestrians"
+   ]
+  },
+  {
+   "id": "markings-lights-015",
+   "topic": "lights",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "إشارة المشاة الخضراء تومض، ماذا تعني للمشاة؟",
-   "options": ["ابدأ العبور بسرعة", "لا تبدأ العبور، ومن بدأ يكمل", "العبور مسموح للأطفال فقط", "الإشارة معطلة"], "answer": 1,
+   "options": [
+    "ابدأ العبور بسرعة",
+    "لا تبدأ العبور، ومن بدأ يكمل",
+    "العبور مسموح للأطفال فقط",
+    "الإشارة معطلة"
+   ],
+   "answer": 1,
    "explain": "اللائحة: الأخضر المتقطع للمشاة يعني لا تبدأ العبور، ومن بدأ يكمل عبوره",
-   "src": ["S2"], "confidence": "high", "notes": ""},
-  {"id": "markings-lights-016", "topic": "lights", "level": 3, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "pl-flashing-green"
+   ]
+  },
+  {
+   "id": "markings-lights-016",
+   "topic": "lights",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "أصبحت إشارتك خضراء وما زال مشاة على الممر أمامك، ماذا تفعل؟",
-   "options": ["تنتظر حتى يخلو الممر ثم تتحرك", "تتحرك لأن الإشارة لك خضراء", "تطلق البوق", "تلتف حولهم"], "answer": 0,
+   "options": [
+    "تنتظر حتى يخلو الممر ثم تتحرك",
+    "تتحرك لأن الإشارة لك خضراء",
+    "تطلق البوق",
+    "تلتف حولهم"
+   ],
+   "answer": 0,
    "explain": "المادة 22 من اللائحة: عند الممر المنظم بإشارة لا تبدأ السير إلا بعد إخلاء الممر من المشاة",
-   "src": ["S2"], "confidence": "high", "notes": ""},
-  {"id": "markings-lights-017", "topic": "lights", "level": 5, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "tl-green"
+   ],
+   "explain_fig": [
+    "mk-signal-crossing"
+   ]
+  },
+  {
+   "id": "markings-lights-017",
+   "topic": "lights",
+   "level": 5,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "ما عقوبة قطع الإشارة الحمراء بمركبة خفيفة؟",
-   "options": ["500 درهم و4 نقاط سوداء", "1000 درهم و12 نقطة سوداء وحجز المركبة 30 يوما", "3000 درهم و6 نقاط سوداء", "200 درهم فقط"], "answer": 1,
+   "options": [
+    "500 درهم و4 نقاط سوداء",
+    "1000 درهم و12 نقطة سوداء وحجز المركبة 30 يوما",
+    "3000 درهم و6 نقاط سوداء",
+    "200 درهم فقط"
+   ],
+   "answer": 1,
    "explain": "قطع الإشارة الحمراء من أخطر المخالفات: 1000 درهم و12 نقطة سوداء وحجز المركبة 30 يوما",
-   "src": ["S14", "S27"], "confidence": "high", "notes": ""},
-  {"id": "markings-lights-018", "topic": "lights", "level": 5, "exam": ["dubai"],
+   "src": [
+    "S14",
+    "S27"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "tl-red"
+   ]
+  },
+  {
+   "id": "markings-lights-018",
+   "topic": "lights",
+   "level": 5,
+   "exam": [
+    "dubai"
+   ],
    "q": "في دبي، كم رسوم الإفراج عن مركبة محجوزة بسبب قطع الإشارة الحمراء حسب المرسوم رقم 30 لسنة 2023؟",
-   "options": ["5000 درهم", "10000 درهم", "50000 درهم", "لا توجد رسوم"], "answer": 2,
+   "options": [
+    "5000 درهم",
+    "10000 درهم",
+    "50000 درهم",
+    "لا توجد رسوم"
+   ],
+   "answer": 2,
    "explain": "مرسوم دبي رقم 30 لسنة 2023 يحدد 50000 درهم للإفراج عن المركبة المحجوزة بسبب قطع الإشارة الحمراء",
-   "src": ["S14"], "confidence": "medium",
-   "notes": "مصدرنا غلف نيوز 2024 نقلا عن المرسوم، ولم نقرأ نص المرسوم نفسه"},
-  {"id": "markings-lights-019", "topic": "lights", "level": 2, "exam": ["dubai"],
+   "src": [
+    "S14"
+   ],
+   "confidence": "medium",
+   "notes": "مصدرنا غلف نيوز 2024 نقلا عن المرسوم، ولم نقرأ نص المرسوم نفسه",
+   "fig": [
+    "tl-red"
+   ]
+  },
+  {
+   "id": "markings-lights-019",
+   "topic": "lights",
+   "level": 2,
+   "exam": [
+    "dubai"
+   ],
    "q": "تنتظر عند إشارة حمراء في دبي، أين توقف مركبتك؟",
-   "options": ["فوق خط التوقف", "قريبا من خط التوقف دون أن تتجاوزه", "على بعد 20 مترا من الخط", "داخل ممر المشاة"], "answer": 1,
+   "options": [
+    "فوق خط التوقف",
+    "قريبا من خط التوقف دون أن تتجاوزه",
+    "على بعد 20 مترا من الخط",
+    "داخل ممر المشاة"
+   ],
+   "answer": 1,
    "explain": "قف قبل الخط مباشرة، فهيئة الطرق تذكر أن حساسات الإشارة قرب خط التوقف والاقتراب منه يساعد الإشارة على اكتشاف مركبتك",
-   "src": ["S15", "S1"], "confidence": "high", "notes": ""},
-  {"id": "markings-lights-020", "topic": "lights", "level": 2, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S15",
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "tl-red"
+   ]
+  },
+  {
+   "id": "markings-lights-020",
+   "topic": "lights",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "ماذا تعني علامة X حمراء على لوحة إلكترونية فوق المسار؟",
-   "options": ["المسار مفتوح", "المسار للحافلات", "المسار مغلق، فانتقل إلى مسار مفتوح", "خفف السرعة فقط"], "answer": 2,
+   "options": [
+    "المسار مفتوح",
+    "المسار للحافلات",
+    "المسار مغلق، فانتقل إلى مسار مفتوح",
+    "خفف السرعة فقط"
+   ],
+   "answer": 2,
    "explain": "X الحمراء فوق المسار تعني أن المسار مغلق، فانتقل بإشارة وبأمان قبل مكان الإغلاق",
-   "src": ["S23", "S26"], "confidence": "medium", "notes": ""},
-  {"id": "markings-lights-021", "topic": "lights", "level": 2, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S23",
+    "S26"
+   ],
+   "confidence": "medium",
+   "notes": "",
+   "fig": [
+    "ls-red-x"
+   ]
+  },
+  {
+   "id": "markings-lights-021",
+   "topic": "lights",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "ماذا يعني السهم الأخضر المتجه للأسفل على اللوحة الإلكترونية فوق المسار؟",
-   "options": ["المسار مفتوح ويمكنك السير فيه", "المسار مغلق", "اخرج من الطريق", "المسار للطوارئ فقط"], "answer": 0,
+   "options": [
+    "المسار مفتوح ويمكنك السير فيه",
+    "المسار مغلق",
+    "اخرج من الطريق",
+    "المسار للطوارئ فقط"
+   ],
+   "answer": 0,
    "explain": "السهم الأخضر فوق المسار يعني أن المسار مفتوح، فاستمر فيه مع الالتزام بالسرعة",
-   "src": ["S23", "S26"], "confidence": "medium", "notes": ""},
-  {"id": "markings-lights-022", "topic": "lights", "level": 3, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S23",
+    "S26"
+   ],
+   "confidence": "medium",
+   "notes": "",
+   "fig": [
+    "ls-green-arrow"
+   ]
+  },
+  {
+   "id": "markings-lights-022",
+   "topic": "lights",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "لوحة إلكترونية فوق المسارات تعرض حد سرعة 80 كم/ساعة وحد الطريق المعتاد 120 كم/ساعة، ما الصحيح؟",
-   "options": ["تلتزم بحد 120 كم/ساعة لأنه الحد الأصلي", "الرقم للشاحنات فقط", "الرقم للتوعية وليس ملزما", "تلتزم بالرقم المعروض الآن"], "answer": 3,
+   "options": [
+    "تلتزم بحد 120 كم/ساعة لأنه الحد الأصلي",
+    "الرقم للشاحنات فقط",
+    "الرقم للتوعية وليس ملزما",
+    "تلتزم بالرقم المعروض الآن"
+   ],
+   "answer": 3,
    "explain": "لوحات السرعة الإلكترونية تعدل الحد حسب الطقس والازدحام والحوادث، والرقم المعروض هو الحد الآن",
-   "src": ["S23"], "confidence": "medium", "notes": ""},
-  {"id": "markings-lights-023", "topic": "lights", "level": 3, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S23"
+   ],
+   "confidence": "medium",
+   "notes": "",
+   "fig": [
+    "ls-variable-speed",
+    "r-speed-120"
+   ]
+  },
+  {
+   "id": "markings-lights-023",
+   "topic": "lights",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "رأيت ضوءا أصفر وامضا على مركبة أعمال متوقفة في مسارك، ماذا تفعل؟",
-   "options": ["تكمل بنفس السرعة", "تتوقف خلفها وتطلق البوق", "تخفف السرعة وتبتعد عنها وتغير مسارك بأمان", "تتجاوزها من الكتف"], "answer": 2,
+   "options": [
+    "تكمل بنفس السرعة",
+    "تتوقف خلفها وتطلق البوق",
+    "تخفف السرعة وتبتعد عنها وتغير مسارك بأمان",
+    "تتجاوزها من الكتف"
+   ],
+   "answer": 2,
    "explain": "شرطة أبوظبي: الأضواء الصفراء المتقطعة تحذر من معدات في الطريق حتى لا تصطدم بها ولتخفف سرعتك",
-   "src": ["S4"], "confidence": "high", "notes": ""},
-  {"id": "markings-lights-024", "topic": "lights", "level": 2, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "explain_fig": [
+    "ev-service-amber"
+   ]
+  },
+  {
+   "id": "markings-lights-024",
+   "topic": "lights",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "متى تشغل أضواء التحذير (الفلاشر)؟",
-   "options": ["أثناء القيادة في المطر", "عند التوقف الاضطراري أو في حالة طارئة", "طوال السير البطيء في الزحام", "عند الوقوف في مكان ممنوع"], "answer": 1,
+   "options": [
+    "أثناء القيادة في المطر",
+    "عند التوقف الاضطراري أو في حالة طارئة",
+    "طوال السير البطيء في الزحام",
+    "عند الوقوف في مكان ممنوع"
+   ],
+   "answer": 1,
    "explain": "هيئة الطرق: لا تشغل أضواء التحذير أثناء السير لأنها تربك السائقين، واستعملها فقط عند التوقف أو في حالة طارئة",
-   "src": ["S25"], "confidence": "high", "notes": ""},
-  {"id": "markings-lights-025", "topic": "lights", "level": 4, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S25"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "explain_fig": [
+    "ev-hazard-lights",
+    "fig-breakdown"
+   ]
+  },
+  {
+   "id": "markings-lights-025",
+   "topic": "lights",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "إشارة المرور في تقاطع تومض أصفر في كل الاتجاهات، ماذا تفعل؟",
-   "options": ["تتقدم بحذر وتعطي الأولوية لمن يستحقها، فالإشارة قد تكون معطلة", "الأولوية لك فتتقدم بسرعة", "تقف وتنتظر حتى تعود الإشارة للعمل", "تنعطف يمينا فقط"], "answer": 0,
+   "options": [
+    "تتقدم بحذر وتعطي الأولوية لمن يستحقها، فالإشارة قد تكون معطلة",
+    "الأولوية لك فتتقدم بسرعة",
+    "تقف وتنتظر حتى تعود الإشارة للعمل",
+    "تنعطف يمينا فقط"
+   ],
+   "answer": 0,
    "explain": "الأصفر الوامض يسمح بالسير بحذر إذا كان الطريق خاليا، وقد يعني أن الإشارة معطلة، فطبق قواعد الأولوية",
-   "src": ["S2", "S14"], "confidence": "high", "notes": ""},
-
-  {"id": "markings-police-001", "topic": "police", "level": 1, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S2",
+    "S14"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "tl-flashing-amber"
+   ]
+  },
+  {
+   "id": "markings-police-001",
+   "topic": "police",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "رجل المرور يعطيك إشارة تخالف الإشارة الضوئية، من تتبع؟",
-   "options": ["الإشارة الضوئية", "العلامات الأرضية", "رجل المرور", "السيارة التي أمامك"], "answer": 2,
+   "options": [
+    "الإشارة الضوئية",
+    "العلامات الأرضية",
+    "رجل المرور",
+    "السيارة التي أمامك"
+   ],
+   "answer": 2,
    "explain": "تعليمات رجل المرور وإشاراته مقدمة على الإشارات الضوئية وعلامات الطرق",
-   "tip": "الشرطي بيغلب الإشارة دايما", "src": ["S2", "S4"], "confidence": "high", "notes": ""},
-  {"id": "markings-police-002", "topic": "police", "level": 2, "exam": ["dubai", "sharjah"],
+   "tip": "الشرطي بيغلب الإشارة دايما",
+   "src": [
+    "S2",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "markings-police-002",
+   "topic": "police",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "الإشارة الضوئية حمراء ورجل المرور يشير لك بالتقدم، ماذا تفعل؟",
-   "options": ["تتقدم بحذر حسب إشارة رجل المرور", "تنتظر الأخضر", "تطلق البوق", "تعود للخلف"], "answer": 0,
+   "options": [
+    "تتقدم بحذر حسب إشارة رجل المرور",
+    "تنتظر الأخضر",
+    "تطلق البوق",
+    "تعود للخلف"
+   ],
+   "answer": 0,
    "explain": "شرطة أبوظبي: عندما ينظم رجل المرور السير فتعليماته لها الأولوية حتى لو كانت الإشارة الضوئية تعمل",
-   "src": ["S2", "S4"], "confidence": "high", "notes": ""},
-  {"id": "markings-police-003", "topic": "police", "level": 2, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S2",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "tl-red",
+    "po-proceed"
+   ]
+  },
+  {
+   "id": "markings-police-003",
+   "topic": "police",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "الإشارة خضراء لكن رجل المرور يرفع يده وكفه نحوك، ماذا تفعل؟",
-   "options": ["تكمل لأن الإشارة خضراء", "تخفف وتكمل", "تنعطف يمينا", "تقف"], "answer": 3,
+   "options": [
+    "تكمل لأن الإشارة خضراء",
+    "تخفف وتكمل",
+    "تنعطف يمينا",
+    "تقف"
+   ],
+   "answer": 3,
    "explain": "الكف المرفوعة نحوك تعني قف، وأوامر رجل المرور مقدمة على الضوء الأخضر",
-   "src": ["S2", "S4"], "confidence": "high", "notes": ""},
-  {"id": "markings-police-004", "topic": "police", "level": 3, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S2",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "tl-green",
+    "po-stop-front"
+   ]
+  },
+  {
+   "id": "markings-police-004",
+   "topic": "police",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "ما الترتيب الصحيح عند وجود رجل مرور وإشارة ضوئية وعلامات أرضية في نفس التقاطع؟",
-   "options": ["العلامات الأرضية أولا ثم الإشارة ثم رجل المرور", "رجل المرور أولا، ثم الإشارة الضوئية والعلامات", "الإشارة الضوئية أولا دائما", "المركبة الأكبر أولا"], "answer": 1,
+   "options": [
+    "العلامات الأرضية أولا ثم الإشارة ثم رجل المرور",
+    "رجل المرور أولا، ثم الإشارة الضوئية والعلامات",
+    "الإشارة الضوئية أولا دائما",
+    "المركبة الأكبر أولا"
+   ],
+   "answer": 1,
    "explain": "المادة 28 من اللائحة: تعليمات رجال الشرطة والمرور مقدمة على قواعد السير والإشارات الضوئية وعلامات الطرق والخطوط",
-   "src": ["S2"], "confidence": "high", "notes": ""},
-  {"id": "markings-police-005", "topic": "police", "level": 2, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "markings-police-005",
+   "topic": "police",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "رجل المرور أمامك يرفع ذراعه اليسرى إلى أعلى وكفه متجهة نحوك، ماذا تعني؟",
-   "options": ["تقدم", "انعطف يسارا", "قف", "خفف السرعة فقط"], "answer": 2,
+   "options": [
+    "تقدم",
+    "انعطف يسارا",
+    "قف",
+    "خفف السرعة فقط"
+   ],
+   "answer": 2,
    "explain": "الذراع المرفوعة والكف نحو القادمين من الأمام تعني إيقاف السير القادم من أمامه",
-   "src": ["S4", "S5"], "confidence": "high", "notes": ""},
-  {"id": "markings-police-006", "topic": "police", "level": 3, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S4",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "po-stop-front"
+   ]
+  },
+  {
+   "id": "markings-police-006",
+   "topic": "police",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "رجل المرور يمد ذراعيه أفقيا على مستوى الكتفين وأنت تقترب من أمامه، ماذا تفعل؟",
-   "options": ["تقف لأن اتجاهك يتقاطع مع خط ذراعيه", "تتقدم لأن ذراعيه لا تشيران إليك", "تنعطف يمينا", "تتجاوزه من اليسار"], "answer": 0,
+   "options": [
+    "تقف لأن اتجاهك يتقاطع مع خط ذراعيه",
+    "تتقدم لأن ذراعيه لا تشيران إليك",
+    "تنعطف يمينا",
+    "تتجاوزه من اليسار"
+   ],
+   "answer": 0,
    "explain": "الذراع أو الذراعان الممدودتان أفقيا توقفان السير القادم من أي اتجاه يتقاطع مع خط الذراعين، أي من أمامه ومن خلفه",
-   "src": ["S4", "S5"], "confidence": "high", "notes": ""},
-  {"id": "markings-police-007", "topic": "police", "level": 4, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S4",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "po-stop-crossing"
+   ]
+  },
+  {
+   "id": "markings-police-007",
+   "topic": "police",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "رجل المرور يقف وظهره نحوك وذراعه اليمنى ممدودة أفقيا على مستوى الكتف، ماذا تعني لك؟",
-   "options": ["تقدم", "انعطف يمينا", "خفف وتجاوزه", "قف، فهذه إشارة إيقاف القادمين من خلفه"], "answer": 3,
+   "options": [
+    "تقدم",
+    "انعطف يمينا",
+    "خفف وتجاوزه",
+    "قف، فهذه إشارة إيقاف القادمين من خلفه"
+   ],
+   "answer": 3,
    "explain": "شرطة أبوظبي: مد الذراع الأيمن أفقيا والكف للأمام يوقف السير القادم من الخلف، أي الذي يرى ظهر الكف",
-   "src": ["S4", "S5"], "confidence": "high", "notes": ""},
-  {"id": "markings-police-008", "topic": "police", "level": 3, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S4",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "po-stop-behind"
+   ]
+  },
+  {
+   "id": "markings-police-008",
+   "topic": "police",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "رجل المرور يحرك ذراعه بحركة نصف دائرية من أعلى إلى أسفل نحو اتجاه معين، ماذا تعني؟",
-   "options": ["قف", "مسموح المرور في الاتجاه الذي يشير إليه دوران ذراعه", "ارجع للخلف", "اركن جانبا"], "answer": 1,
+   "options": [
+    "قف",
+    "مسموح المرور في الاتجاه الذي يشير إليه دوران ذراعه",
+    "ارجع للخلف",
+    "اركن جانبا"
+   ],
+   "answer": 1,
    "explain": "الحركة نصف الدائرية بالذراع تسمح للمركبات بالمرور في الاتجاه الذي يشير إليه دوران الذراع",
-   "src": ["S4", "S5"], "confidence": "high", "notes": ""},
-  {"id": "markings-police-009", "topic": "police", "level": 4, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S4",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "po-proceed"
+   ]
+  },
+  {
+   "id": "markings-police-009",
+   "topic": "police",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "ليلا، رجل المرور يحرك مصباحا أحمر ذهابا وإيابا نحوك، ماذا تفعل؟",
-   "options": ["تتقدم ببطء", "تشغل الضوء العالي", "تقف", "تنعطف يمينا"], "answer": 2,
+   "options": [
+    "تتقدم ببطء",
+    "تشغل الضوء العالي",
+    "تقف",
+    "تنعطف يمينا"
+   ],
+   "answer": 2,
    "explain": "تحريك المصباح الأحمر بحركة ترددية يعني إيقاف من يوجه رجل المرور الضوء نحوهم",
-   "src": ["S4", "S5"], "confidence": "high", "notes": ""},
-  {"id": "markings-police-010", "topic": "police", "level": 4, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S4",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "po-lamp-stop"
+   ]
+  },
+  {
+   "id": "markings-police-010",
+   "topic": "police",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "ليلا، رجل المرور يحرك المصباح الأحمر بحركة نصف دائرية، ماذا تعني؟",
-   "options": ["قف فورا", "الطريق مغلق", "خفف السرعة وقف على اليمين", "مسموح السير في اتجاه حركة الضوء"], "answer": 3,
+   "options": [
+    "قف فورا",
+    "الطريق مغلق",
+    "خفف السرعة وقف على اليمين",
+    "مسموح السير في اتجاه حركة الضوء"
+   ],
+   "answer": 3,
    "explain": "حركة المصباح الأحمر نصف الدائرية تعني السماح بالسير في اتجاه حركته، أما الحركة الترددية فتعني قف",
-   "tip": "الأحمر بإيد الشرطي مش دايما قف، شوف كيف بيتحرك", "src": ["S4", "S5"], "confidence": "high", "notes": ""},
-  {"id": "markings-police-011", "topic": "police", "level": 5, "exam": ["dubai", "sharjah"],
+   "tip": "الأحمر بإيد الشرطي مش دايما قف، شوف كيف بيتحرك",
+   "src": [
+    "S4",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "po-lamp-proceed"
+   ]
+  },
+  {
+   "id": "markings-police-011",
+   "topic": "police",
+   "level": 5,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "أوقفك رجل المرور بإشارة يده ثم أنزل ذراعه، ماذا تفعل؟",
-   "options": ["تبقى واقفا حتى يعطيك إشارة المرور", "تنطلق فورا لأنه أنزل ذراعه", "تنطلق إذا كانت الإشارة الضوئية خضراء", "تطلق البوق لتسأله"], "answer": 0,
+   "options": [
+    "تبقى واقفا حتى يعطيك إشارة المرور",
+    "تنطلق فورا لأنه أنزل ذراعه",
+    "تنطلق إذا كانت الإشارة الضوئية خضراء",
+    "تطلق البوق لتسأله"
+   ],
+   "answer": 0,
    "explain": "شرطة أبوظبي: يجوز لرجل المرور خفض ذراعه بعد التأكد من وقوف المركبات، وإشارة السماح بالمرور هي الحركة نصف الدائرية",
-   "src": ["S4"], "confidence": "medium",
-   "notes": "المصدر يذكر جواز خفض الذراع، واستنتجنا أن خفضها ليس إشارة مرور لأن للمرور إشارة خاصة"},
-  {"id": "markings-police-012", "topic": "police", "level": 2, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S4"
+   ],
+   "confidence": "medium",
+   "notes": "المصدر يذكر جواز خفض الذراع، واستنتجنا أن خفضها ليس إشارة مرور لأن للمرور إشارة خاصة",
+   "explain_fig": [
+    "po-proceed"
+   ]
+  },
+  {
+   "id": "markings-police-012",
+   "topic": "police",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "هل أوامر رجل المرور مقدمة على الخطوط والعلامات الأرضية؟",
-   "options": ["لا، العلامات الأرضية أولا", "فقط في الليل", "نعم، أوامره مقدمة على الإشارات الضوئية وعلامات الطرق والخطوط", "فقط على الطرق السريعة"], "answer": 2,
+   "options": [
+    "لا، العلامات الأرضية أولا",
+    "فقط في الليل",
+    "نعم، أوامره مقدمة على الإشارات الضوئية وعلامات الطرق والخطوط",
+    "فقط على الطرق السريعة"
+   ],
+   "answer": 2,
    "explain": "المادة 28 من اللائحة تجعل تعليمات رجال المرور مقدمة على الإشارات الضوئية وعلامات الطرق وخطوط تنظيم السير",
-   "src": ["S2"], "confidence": "high", "notes": ""},
-  {"id": "markings-police-013", "topic": "police", "level": 3, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "markings-police-013",
+   "topic": "police",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "رجل المرور يشير لك بعبور خط متصل لتتجاوز حادثا يغلق مسارك، ماذا تفعل؟",
-   "options": ["ترفض لأن الخط متصل", "تنتظر حتى تنتهي فرق الطوارئ من عملها", "تعود للخلف", "تتبع إشارته وتعبر بحذر"], "answer": 3,
+   "options": [
+    "ترفض لأن الخط متصل",
+    "تنتظر حتى تنتهي فرق الطوارئ من عملها",
+    "تعود للخلف",
+    "تتبع إشارته وتعبر بحذر"
+   ],
+   "answer": 3,
    "explain": "المادة 28 من اللائحة: تعليمات رجال الشرطة والمرور مقدمة على قواعد السير وخطوط تنظيم السير",
-   "src": ["S2"], "confidence": "high", "notes": ""},
-  {"id": "markings-police-014", "topic": "police", "level": 2, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "markings-police-014",
+   "topic": "police",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "رجل المرور يرفع ذراعه ليوقفك عند تقاطع، أين تقف؟",
-   "options": ["قبل خط التوقف أو قبل مكانه في التقاطع", "بجانب رجل المرور تماما", "داخل التقاطع", "على ممر المشاة"], "answer": 0,
+   "options": [
+    "قبل خط التوقف أو قبل مكانه في التقاطع",
+    "بجانب رجل المرور تماما",
+    "داخل التقاطع",
+    "على ممر المشاة"
+   ],
+   "answer": 0,
    "explain": "قف في مكانك الطبيعي قبل خط التوقف أو قبل منطقة التقاطع، ولا تقف على ممر المشاة",
-   "src": ["S4", "S1", "S2"], "confidence": "high", "notes": ""},
-  {"id": "markings-police-015", "topic": "police", "level": 3, "exam": ["dubai", "sharjah"],
+   "src": [
+    "S4",
+    "S1",
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": "",
+   "fig": [
+    "po-stop-front"
+   ]
+  },
+  {
+   "id": "markings-police-015",
+   "topic": "police",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
    "q": "في طريق مزدحم، رجل المرور يشير بحركة نصف دائرية نحو المخرج على يمينك، ماذا تفعل؟",
-   "options": ["تكمل مستقيما لأن هذا طريقك", "تتوقف وتسأله", "تتجه نحو المخرج كما أشار", "ترجع للخلف"], "answer": 2,
+   "options": [
+    "تكمل مستقيما لأن هذا طريقك",
+    "تتوقف وتسأله",
+    "تتجه نحو المخرج كما أشار",
+    "ترجع للخلف"
+   ],
+   "answer": 2,
    "explain": "الحركة نصف الدائرية توجه المركبات إلى الاتجاه الذي يشير إليه، وأوامره مقدمة على خطتك",
-   "src": ["S4", "S2"], "confidence": "high", "notes": ""}
+   "src": [
+    "S4",
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": ""
+  }
  ]
 }

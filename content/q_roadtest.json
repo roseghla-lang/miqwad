@@ -215,7 +215,10 @@
     "S3",
     "S15"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-seat-belt"
+   ]
   },
   {
    "id": "roadtest-card-003",
@@ -305,8 +308,8 @@
    "id": "roadtest-card-008",
    "topic": "yard",
    "level": 4,
-   "title": "مسافات التوقف",
-   "body": "يجب أن تتوقف خلال 3 أمتار عند 20 كم/ساعة، و6 أمتار عند 30 كم/ساعة، و11 مترا عند 40 كم/ساعة",
+   "title": "مسافة الفرملة في الساحة",
+   "body": "من لحظة الضغط على الفرامل يجب أن تتوقف خلال 3 أمتار عند 20 كم/ساعة، و6 أمتار عند 30 كم/ساعة، و11 مترا عند 40 كم/ساعة",
    "key": "3 / 6 / 11 متر",
    "exam": [
     "dubai",
@@ -537,7 +540,11 @@
     "S22",
     "S29"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "fig-lane-change",
+    "fig-blind-spots"
+   ]
   },
   {
    "id": "roadtest-card-023",
@@ -552,7 +559,13 @@
     "S5",
     "S20"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "tl-red",
+    "p-stop",
+    "r-no-entry",
+    "mk-yellow-box"
+   ]
   },
   {
    "id": "roadtest-card-024",
@@ -677,7 +690,10 @@
     "S3",
     "S15"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "explain_fig": [
+    "fig-seat-belt"
+   ]
   },
   {
    "id": "roadtest-yard-003",
@@ -1146,7 +1162,7 @@
     "dubai",
     "sharjah"
    ],
-   "q": "في تمرين الفرملة المفاجئة بسرعة 30 كم/ساعة، ضمن أي مسافة يجب أن تتوقف؟",
+   "q": "في تمرين الفرملة المفاجئة بسرعة 30 كم/ساعة، ضمن أي مسافة يجب أن تتوقف من لحظة الضغط على الفرامل؟",
    "options": [
     "15 مترا",
     "11 مترا",
@@ -1154,7 +1170,7 @@
     "6 أمتار"
    ],
    "answer": 3,
-   "explain": "المسافات المطلوبة: 3 أمتار عند 20 كم/ساعة، و6 أمتار عند 30، و11 مترا عند 40",
+   "explain": "المسافات المطلوبة من لحظة الضغط على الفرامل: 3 أمتار عند 20 كم/ساعة، و6 أمتار عند 30، و11 مترا عند 40",
    "tip": "3 و6 و11: كل ما زادت السرعة بتزيد المسافة أكثر",
    "src": [
     "S13",
@@ -1236,7 +1252,7 @@
     "dubai",
     "sharjah"
    ],
-   "q": "في تمرين الفرملة المفاجئة بسرعة 40 كم/ساعة، ما أقصى مسافة مقبولة حتى تتوقف؟",
+   "q": "في تمرين الفرملة المفاجئة بسرعة 40 كم/ساعة، ما أقصى مسافة مقبولة حتى تتوقف من لحظة الضغط على الفرامل؟",
    "options": [
     "20 مترا",
     "8 أمتار",
@@ -1244,7 +1260,7 @@
     "6 أمتار"
    ],
    "answer": 2,
-   "explain": "عند 40 كم/ساعة يجب أن تتوقف خلال 11 مترا، وإلا ترسب في التمرين",
+   "explain": "عند 40 كم/ساعة يجب أن تتوقف خلال 11 مترا من لحظة الضغط على الفرامل، وإلا ترسب في التمرين",
    "src": [
     "S13",
     "S26"
@@ -1296,7 +1312,10 @@
     "S5",
     "S30"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "explain_fig": [
+    "fig-seat-belt"
+   ]
   },
   {
    "id": "roadtest-roadtest-002",
@@ -1342,7 +1361,10 @@
     "S22",
     "S29"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "explain_fig": [
+    "fig-lane-change"
+   ]
   },
   {
    "id": "roadtest-roadtest-004",
@@ -1410,7 +1432,10 @@
     "S3",
     "S29"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "explain_fig": [
+    "fig-blind-spots"
+   ]
   },
   {
    "id": "roadtest-roadtest-007",
@@ -1432,7 +1457,10 @@
    "src": [
     "S3"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "explain_fig": [
+    "fig-blind-spots"
+   ]
   },
   {
    "id": "roadtest-roadtest-008",
@@ -1454,7 +1482,11 @@
    "src": [
     "S3"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "explain_fig": [
+    "fig-blind-spots",
+    "fig-lane-change"
+   ]
   },
   {
    "id": "roadtest-roadtest-009",
@@ -1477,7 +1509,13 @@
     "S5",
     "S29"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "p-stop"
+   ],
+   "explain_fig": [
+    "mk-stop-line"
+   ]
   },
   {
    "id": "roadtest-roadtest-010",
@@ -1500,7 +1538,10 @@
     "S5",
     "S29"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "explain_fig": [
+    "fig-roundabout-priority"
+   ]
   },
   {
    "id": "roadtest-roadtest-011",
@@ -1522,7 +1563,11 @@
    "src": [
     "S29"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "explain_fig": [
+    "fig-roundabout-flow",
+    "m-roundabout"
+   ]
   },
   {
    "id": "roadtest-roadtest-012",
@@ -1544,7 +1589,10 @@
    "src": [
     "S3"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "mk-zebra"
+   ]
   },
   {
    "id": "roadtest-roadtest-013",
@@ -1722,7 +1770,10 @@
     "S3",
     "S37"
    ],
-   "confidence": "medium"
+   "confidence": "medium",
+   "explain_fig": [
+    "fig-gear-selector"
+   ]
   },
   {
    "id": "roadtest-roadtest-021",
@@ -1767,7 +1818,11 @@
    "src": [
     "S29"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "explain_fig": [
+    "fig-roundabout-right",
+    "fig-roundabout-left"
+   ]
   },
   {
    "id": "roadtest-roadtest-023",
@@ -1789,7 +1844,10 @@
    "src": [
     "S29"
    ],
-   "confidence": "medium"
+   "confidence": "medium",
+   "explain_fig": [
+    "fig-roundabout-left"
+   ]
   },
   {
    "id": "roadtest-roadtest-024",
@@ -1811,7 +1869,10 @@
    "src": [
     "S29"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "tl-amber"
+   ]
   },
   {
    "id": "roadtest-roadtest-025",
@@ -1834,7 +1895,10 @@
     "S5",
     "S20"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "explain_fig": [
+    "mk-yellow-box"
+   ]
   },
   {
    "id": "roadtest-roadtest-026",
@@ -1965,7 +2029,10 @@
    "src": [
     "S29"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "explain_fig": [
+    "fig-two-second"
+   ]
   },
   {
    "id": "roadtest-roadtest-032",
@@ -2051,7 +2118,10 @@
    "src": [
     "S5"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "explain_fig": [
+    "fig-roundabout-priority"
+   ]
   },
   {
    "id": "roadtest-roadtest-036",
@@ -2094,7 +2164,13 @@
    "src": [
     "S5"
    ],
-   "confidence": "medium"
+   "confidence": "medium",
+   "fig": [
+    "tl-green"
+   ],
+   "explain_fig": [
+    "fig-turn-left"
+   ]
   },
   {
    "id": "roadtest-roadtest-038",
@@ -2118,7 +2194,14 @@
     "S20",
     "S21"
    ],
-   "confidence": "high"
+   "confidence": "high",
+   "fig": [
+    "g-exit-countdown"
+   ],
+   "explain_fig": [
+    "fig-lane-change",
+    "fig-highway-exit"
+   ]
   },
   {
    "id": "roadtest-roadtest-039",
@@ -2162,7 +2245,10 @@
    "src": [
     "S29"
    ],
-   "confidence": "medium"
+   "confidence": "medium",
+   "explain_fig": [
+    "fig-roundabout-right"
+   ]
   },
   {
    "id": "roadtest-roadtest-041",
@@ -2248,7 +2334,10 @@
     "S20",
     "S21"
    ],
-   "confidence": "medium"
+   "confidence": "medium",
+   "explain_fig": [
+    "fig-missed-exit"
+   ]
   }
  ]
 }

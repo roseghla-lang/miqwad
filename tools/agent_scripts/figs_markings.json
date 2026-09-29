@@ -1,0 +1,563 @@
+{
+ "questions": {
+  "markings-markings-001": {
+   "explain_fig": [
+    "mk-broken-lane"
+   ]
+  },
+  "markings-markings-002": {
+   "explain_fig": [
+    "mk-solid-center"
+   ]
+  },
+  "markings-markings-003": {
+   "fig": [
+    "mk-broken-center"
+   ]
+  },
+  "markings-markings-004": {
+   "explain_fig": [
+    "mk-broken-center"
+   ]
+  },
+  "markings-markings-005": {
+   "fig": [
+    "mk-double-solid"
+   ]
+  },
+  "markings-markings-006": {
+   "explain_fig": [
+    "mk-solid-broken"
+   ]
+  },
+  "markings-markings-008": {
+   "fig": [
+    "mk-solid-lane"
+   ]
+  },
+  "markings-markings-009": {
+   "fig": [
+    "mk-arrow-left",
+    "mk-solid-lane"
+   ]
+  },
+  "markings-markings-010": {
+   "fig": [
+    "mk-arrow-straight"
+   ]
+  },
+  "markings-markings-011": {
+   "fig": [
+    "mk-arrow-straight-right"
+   ]
+  },
+  "markings-markings-012": {
+   "opt_figs": [
+    "mk-stop-line",
+    "mk-give-way-line",
+    null,
+    "mk-yellow-box"
+   ],
+   "explain_fig": [
+    "mk-stop-line"
+   ]
+  },
+  "markings-markings-013": {
+   "fig": [
+    "p-stop",
+    "mk-stop-line"
+   ]
+  },
+  "markings-markings-014": {
+   "explain_fig": [
+    "mk-give-way-line"
+   ]
+  },
+  "markings-markings-015": {
+   "fig": [
+    "mk-stop-line",
+    "mk-give-way-line"
+   ]
+  },
+  "markings-markings-016": {
+   "fig": [
+    "mk-zebra"
+   ]
+  },
+  "markings-markings-017": {
+   "fig": [
+    "mk-zebra"
+   ]
+  },
+  "markings-markings-018": {
+   "fig": [
+    "mk-zebra"
+   ]
+  },
+  "markings-markings-019": {
+   "explain_fig": [
+    "mk-yellow-box"
+   ]
+  },
+  "markings-markings-020": {
+   "fig": [
+    "tl-green"
+   ],
+   "explain_fig": [
+    "mk-yellow-box"
+   ]
+  },
+  "markings-markings-021": {
+   "fig": [
+    "mk-yellow-box"
+   ]
+  },
+  "markings-markings-022": {
+   "explain_fig": [
+    "mk-yellow-box"
+   ]
+  },
+  "markings-markings-023": {
+   "fig": [
+    "mk-hatched"
+   ]
+  },
+  "markings-markings-024": {
+   "fig": [
+    "mk-chevron"
+   ],
+   "explain_fig": [
+    "fig-missed-exit"
+   ]
+  },
+  "markings-markings-025": {
+   "explain_fig": [
+    "mk-bus-lane"
+   ]
+  },
+  "markings-markings-026": {
+   "explain_fig": [
+    "mk-bus-lane",
+    "i-bus-lane-start"
+   ]
+  },
+  "markings-markings-027": {
+   "fig": [
+    "mk-bus-lane"
+   ]
+  },
+  "markings-markings-028": {
+   "explain_fig": [
+    "mk-rumble-strips"
+   ]
+  },
+  "markings-markings-029": {
+   "explain_fig": [
+    "mk-speed-hump"
+   ]
+  },
+  "markings-markings-030": {
+   "explain_fig": [
+    "mk-hard-shoulder"
+   ]
+  },
+  "markings-markings-031": {
+   "explain_fig": [
+    "mk-hard-shoulder"
+   ]
+  },
+  "markings-markings-032": {
+   "fig": [
+    "mk-edge-line"
+   ]
+  },
+  "markings-markings-033": {
+   "fig": [
+    "mk-arrow-merge"
+   ]
+  },
+  "markings-markings-034": {
+   "explain_fig": [
+    "mk-keep-clear"
+   ]
+  },
+  "markings-markings-035": {
+   "fig": [
+    "mk-tram-box"
+   ]
+  },
+  "markings-markings-036": {
+   "fig": [
+    "mk-zigzag"
+   ]
+  },
+  "markings-markings-037": {
+   "fig": [
+    "mk-disabled-bay"
+   ]
+  },
+  "markings-markings-039": {
+   "explain_fig": [
+    "mk-road-studs"
+   ]
+  },
+  "markings-markings-040": {
+   "fig": [
+    "mk-arrow-exit"
+   ]
+  },
+  "markings-lights-001": {
+   "fig": [
+    "tl-red"
+   ]
+  },
+  "markings-lights-002": {
+   "fig": [
+    "tl-green"
+   ]
+  },
+  "markings-lights-003": {
+   "fig": [
+    "tl-amber"
+   ]
+  },
+  "markings-lights-004": {
+   "fig": [
+    "tl-amber"
+   ]
+  },
+  "markings-lights-005": {
+   "explain_fig": [
+    "tl-amber"
+   ]
+  },
+  "markings-lights-006": {
+   "opt_figs": [
+    "tl-flashing-green",
+    null,
+    "tl-amber",
+    "tl-green"
+   ],
+   "explain_fig": [
+    "tl-amber",
+    "tl-red"
+   ]
+  },
+  "markings-lights-007": {
+   "fig": [
+    "tl-flashing-green"
+   ]
+  },
+  "markings-lights-008": {
+   "fig": [
+    "tl-flashing-amber"
+   ]
+  },
+  "markings-lights-009": {
+   "fig": [
+    "tl-flashing-amber-fixed"
+   ],
+   "explain_fig": [
+    "fig-roundabout-priority"
+   ]
+  },
+  "markings-lights-010": {
+   "fig": [
+    "tl-green-arrow"
+   ]
+  },
+  "markings-lights-011": {
+   "fig": [
+    "tl-red-arrow"
+   ]
+  },
+  "markings-lights-012": {
+   "fig": [
+    "tl-green",
+    "ev-emergency-lights"
+   ],
+   "explain_fig": [
+    "ev-at-junction"
+   ]
+  },
+  "markings-lights-013": {
+   "fig": [
+    "tl-red",
+    "ev-emergency-lights"
+   ]
+  },
+  "markings-lights-014": {
+   "fig": [
+    "tl-green"
+   ],
+   "explain_fig": [
+    "fig-turn-pedestrians"
+   ]
+  },
+  "markings-lights-015": {
+   "fig": [
+    "pl-flashing-green"
+   ]
+  },
+  "markings-lights-016": {
+   "fig": [
+    "tl-green"
+   ],
+   "explain_fig": [
+    "mk-signal-crossing"
+   ]
+  },
+  "markings-lights-017": {
+   "fig": [
+    "tl-red"
+   ]
+  },
+  "markings-lights-018": {
+   "fig": [
+    "tl-red"
+   ]
+  },
+  "markings-lights-019": {
+   "fig": [
+    "tl-red"
+   ]
+  },
+  "markings-lights-020": {
+   "fig": [
+    "ls-red-x"
+   ]
+  },
+  "markings-lights-021": {
+   "fig": [
+    "ls-green-arrow"
+   ]
+  },
+  "markings-lights-022": {
+   "fig": [
+    "ls-variable-speed",
+    "r-speed-120"
+   ]
+  },
+  "markings-lights-023": {
+   "explain_fig": [
+    "ev-service-amber"
+   ]
+  },
+  "markings-lights-024": {
+   "explain_fig": [
+    "ev-hazard-lights",
+    "fig-breakdown"
+   ]
+  },
+  "markings-lights-025": {
+   "fig": [
+    "tl-flashing-amber"
+   ]
+  },
+  "markings-police-002": {
+   "fig": [
+    "tl-red",
+    "po-proceed"
+   ]
+  },
+  "markings-police-003": {
+   "fig": [
+    "tl-green",
+    "po-stop-front"
+   ]
+  },
+  "markings-police-005": {
+   "fig": [
+    "po-stop-front"
+   ]
+  },
+  "markings-police-006": {
+   "fig": [
+    "po-stop-crossing"
+   ]
+  },
+  "markings-police-007": {
+   "fig": [
+    "po-stop-behind"
+   ]
+  },
+  "markings-police-008": {
+   "fig": [
+    "po-proceed"
+   ]
+  },
+  "markings-police-009": {
+   "fig": [
+    "po-lamp-stop"
+   ]
+  },
+  "markings-police-010": {
+   "fig": [
+    "po-lamp-proceed"
+   ]
+  },
+  "markings-police-011": {
+   "explain_fig": [
+    "po-proceed"
+   ]
+  },
+  "markings-police-014": {
+   "fig": [
+    "po-stop-front"
+   ]
+  }
+ },
+ "cards": {
+  "markings-card-001": {
+   "fig": [
+    "mk-broken-lane",
+    "mk-solid-lane"
+   ]
+  },
+  "markings-card-002": {
+   "fig": [
+    "mk-broken-lane",
+    "mk-broken-center"
+   ]
+  },
+  "markings-card-003": {
+   "fig": [
+    "mk-solid-broken",
+    "mk-double-solid"
+   ]
+  },
+  "markings-card-004": {
+   "fig": [
+    "mk-solid-lane"
+   ]
+  },
+  "markings-card-005": {
+   "fig": [
+    "mk-stop-line",
+    "mk-give-way-line"
+   ]
+  },
+  "markings-card-006": {
+   "fig": [
+    "mk-zebra"
+   ]
+  },
+  "markings-card-007": {
+   "fig": [
+    "mk-yellow-box"
+   ]
+  },
+  "markings-card-008": {
+   "fig": [
+    "mk-hatched",
+    "mk-chevron",
+    "fig-missed-exit"
+   ]
+  },
+  "markings-card-009": {
+   "fig": [
+    "mk-bus-lane"
+   ]
+  },
+  "markings-card-010": {
+   "fig": [
+    "mk-rumble-strips",
+    "mk-speed-hump"
+   ]
+  },
+  "markings-card-011": {
+   "fig": [
+    "mk-hard-shoulder",
+    "mk-edge-line"
+   ]
+  },
+  "markings-card-012": {
+   "fig": [
+    "mk-keep-clear"
+   ]
+  },
+  "markings-card-013": {
+   "fig": [
+    "tl-red",
+    "tl-amber",
+    "tl-green"
+   ]
+  },
+  "markings-card-014": {
+   "fig": [
+    "tl-flashing-green"
+   ]
+  },
+  "markings-card-015": {
+   "fig": [
+    "tl-amber"
+   ]
+  },
+  "markings-card-016": {
+   "fig": [
+    "tl-green",
+    "ev-at-junction"
+   ]
+  },
+  "markings-card-017": {
+   "fig": [
+    "tl-flashing-amber",
+    "tl-flashing-amber-fixed"
+   ]
+  },
+  "markings-card-018": {
+   "fig": [
+    "tl-green-arrow",
+    "tl-red-arrow"
+   ]
+  },
+  "markings-card-019": {
+   "fig": [
+    "pl-green",
+    "pl-flashing-green",
+    "pl-red"
+   ]
+  },
+  "markings-card-020": {
+   "fig": [
+    "tl-red"
+   ]
+  },
+  "markings-card-021": {
+   "fig": [
+    "tl-red"
+   ]
+  },
+  "markings-card-022": {
+   "fig": [
+    "ls-red-x",
+    "ls-green-arrow",
+    "ls-variable-speed"
+   ]
+  },
+  "markings-card-023": {
+   "fig": [
+    "po-stop-front",
+    "po-proceed"
+   ]
+  },
+  "markings-card-024": {
+   "fig": [
+    "po-stop-front",
+    "po-stop-behind",
+    "po-stop-crossing"
+   ]
+  },
+  "markings-card-025": {
+   "fig": [
+    "po-proceed"
+   ]
+  },
+  "markings-card-026": {
+   "fig": [
+    "po-lamp-stop",
+    "po-lamp-proceed"
+   ]
+  }
+ }
+}
