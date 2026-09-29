@@ -1,0 +1,388 @@
+{
+  "note": "Worked examples for docs/scenes.md (scene DSL demos). The rules they show are standard UAE rules, but this file was written without a fresh source check: content agents must add src ids and verify before copying any of these into content/scenarios_*.json.",
+  "updated": "2026-09-29",
+  "scenarios": [
+    {
+      "id": "ex-rb-01",
+      "topic": "roundabouts",
+      "level": 2,
+      "exam": ["dubai", "sharjah"],
+      "type": "choice",
+      "scene": {
+        "template": "roundabout",
+        "params": { "arms": 4, "lanes": 1, "ring": 1, "island": "palms" },
+        "labels": "solution",
+        "actors": [
+          { "id": "me", "type": "me", "pos": { "arm": "S", "lane": 1, "at": "stopline" } },
+          { "id": "red", "type": "car", "color": "red", "pos": { "ring": "outer", "before": "S", "deg": 55 }, "label": "داخل الدوار" },
+          { "id": "blue", "type": "car", "color": "blue", "pos": { "arm": "E", "lane": 1, "at": 9 } }
+        ],
+        "solution": [
+          { "t": 0, "actor": "me", "brake": true },
+          { "t": 0, "actor": "red", "route": "ring->E", "kmh": 28 },
+          { "t": 2.9, "actor": "me", "brake": false },
+          { "t": 3.0, "actor": "me", "route": "S1->N", "kmh": 34, "ease": "in" }
+        ],
+        "arrows": [
+          { "actor": "red", "route": "ring->E", "style": "other" },
+          { "actor": "me", "route": "S1->N", "style": "me" }
+        ]
+      },
+      "q": "أنت عند مدخل الدوار وتريد المتابعة إلى المخرج الثاني، وسيارة حمراء تسير داخل الدوار قادمة من يسارك، من يمر أولا؟",
+      "options": [
+        "أنت، لأن المخرج الذي تريده أمامك مباشرة",
+        "السيارة الحمراء، لأنها داخل الدوار",
+        "السيارة الزرقاء، لأنها على يمينك",
+        "من يصل أولا إلى خط الدخول"
+      ],
+      "answer": 1,
+      "explain": "عند الدخول إلى الدوار أعط الأولوية للمركبات التي تسير داخله، وهي تأتي من جهة اليسار\nادخل فقط عندما تجد فجوة آمنة",
+      "tip": "الدوار عندنا عكس عقارب الساعة، فالخطر دايما جاي من شمالك",
+      "src": [],
+      "confidence": "medium"
+    },
+    {
+      "id": "ex-rb-02",
+      "topic": "roundabouts",
+      "level": 3,
+      "exam": ["dubai", "sharjah"],
+      "type": "choice",
+      "scene": {
+        "template": "roundabout",
+        "params": { "arms": 4, "lanes": 2, "ring": 2 },
+        "actors": [
+          { "id": "me", "type": "me", "pos": { "arm": "S", "lane": 1, "at": 13 } },
+          { "id": "c1", "type": "car", "color": "silver", "pos": { "arm": "W", "lane": 1, "at": 3 } },
+          { "id": "c2", "type": "car", "color": "white", "pos": { "arm": "N", "lane": 2, "at": 14 } }
+        ],
+        "solution": [
+          { "t": 0, "actor": "me", "lane_change": "left", "dist": 9, "dur": 1.8 },
+          { "t": 1.8, "actor": "me", "route": "S2->W", "kmh": 24 }
+        ],
+        "arrows": [
+          { "from": { "arm": "S", "lane": 2, "at": 4 }, "route": "S2->W", "style": "ok" }
+        ],
+        "callouts": [
+          { "text": "المسار الأيسر للمخرج الثالث", "at": { "arm": "S", "lane": 2, "at": 14 }, "when": "solution", "style": "ok" }
+        ]
+      },
+      "q": "تريد الخروج من المخرج الثالث (الانعطاف يسارا) في دوار بمسارين، ما التصرف الصحيح؟",
+      "options": [
+        "أبقى في المسار الأيمن وأشغل إشارة اليمين من البداية",
+        "أدخل من أي مسار وأدور في الحلقة الخارجية دون إشارة",
+        "أنتقل إلى المسار الأيسر وأشغل إشارة اليسار، وبعد تجاوز المخرج الذي قبل مخرجي أشغل إشارة اليمين",
+        "أنتقل إلى المسار الأيسر ثم أقطع الحلقة الخارجية فجأة عند المخرج"
+      ],
+      "answer": 2,
+      "explain": "للمخرج الثالث أو للرجوع استخدم المسار الأيسر مع إشارة اليسار، وابق في المسار الداخلي\nبعد تجاوز المخرج الذي قبل مخرجك شغل إشارة اليمين واخرج بأمان",
+      "src": [],
+      "confidence": "medium"
+    },
+    {
+      "id": "ex-tl-01",
+      "topic": "lights",
+      "level": 3,
+      "exam": ["dubai", "sharjah"],
+      "type": "choice",
+      "scene": {
+        "template": "crossroads",
+        "params": {
+          "lanes": 2,
+          "divided": true,
+          "control": "lights",
+          "lights": { "S": { "main": "red", "right": "green" }, "N": "red", "E": "green", "W": "red" }
+        },
+        "actors": [
+          { "id": "me", "type": "me", "pos": { "arm": "S", "lane": 1, "at": "stopline" }, "signal": "right" },
+          { "id": "c1", "type": "car", "color": "silver", "pos": { "arm": "S", "lane": 2, "at": "stopline" } },
+          { "id": "c2", "type": "car", "color": "blue", "pos": { "arm": "E", "lane": 2, "at": 16 } },
+          { "id": "c3", "type": "car", "color": "white", "pos": { "arm": "N", "lane": 1, "at": "stopline" } }
+        ],
+        "solution": [
+          { "t": 0, "actor": "c2", "route": "E2->W", "kmh": 36 },
+          { "t": 0.4, "actor": "me", "route": "S1->E", "kmh": 22, "ease": "in" }
+        ],
+        "arrows": [
+          { "actor": "me", "route": "S1->E", "style": "ok" }
+        ]
+      },
+      "q": "الضوء الرئيسي أحمر والسهم الأخضر لليمين مضاء، وأنت في المسار الأيمن وتريد الانعطاف يمينا، ماذا تفعل؟",
+      "options": [
+        "أنعطف يمينا بحذر لأن السهم الأخضر يسمح بذلك، مع الانتباه للمشاة",
+        "أنتظر حتى يصبح الضوء الرئيسي أخضر",
+        "أتابع إلى الأمام لأن أحد الأضواء أخضر",
+        "أنعطف يمينا بسرعة قبل أن ينطفئ السهم"
+      ],
+      "answer": 0,
+      "explain": "السهم الأخضر يسمح لك بالتحرك في اتجاهه فقط حتى لو كان الضوء الرئيسي أحمر\nتحرك بحذر وأعط الأولوية لأي مشاة ما زالوا يعبرون",
+      "src": [],
+      "confidence": "medium"
+    },
+    {
+      "id": "ex-jn-01",
+      "topic": "priority",
+      "level": 3,
+      "exam": ["dubai", "sharjah"],
+      "type": "choice",
+      "scene": {
+        "template": "crossroads",
+        "params": { "lanes": 1, "control": "none", "markings": "none" },
+        "labels": "solution",
+        "actors": [
+          { "id": "me", "type": "me", "pos": { "arm": "S", "lane": 1, "at": 1 } },
+          { "id": "blue", "type": "car", "color": "blue", "pos": { "arm": "E", "lane": 1, "at": 2 }, "label": "قادمة من يمينك" }
+        ],
+        "solution": [
+          { "t": 0, "actor": "me", "brake": true },
+          { "t": 0, "actor": "blue", "route": "E1->W", "kmh": 24, "ease": "in" },
+          { "t": 3.2, "actor": "me", "brake": false },
+          { "t": 3.3, "actor": "me", "route": "S1->N", "kmh": 24, "ease": "in" }
+        ],
+        "arrows": [
+          { "actor": "blue", "route": "E1->W", "style": "other" }
+        ]
+      },
+      "q": "تقاطع ليس فيه إشارات ولا علامات، وسيارة زرقاء تصل من يمينك في الوقت نفسه، من يمر أولا؟",
+      "options": [
+        "أنت، لأنك تسير مستقيما",
+        "من يطلق المنبه أولا",
+        "الأسرع منكما",
+        "السيارة الزرقاء، لأنها قادمة من يمينك"
+      ],
+      "answer": 3,
+      "explain": "في التقاطع الذي لا تنظمه إشارات أو علامات أعط الأولوية للمركبة القادمة من يمينك\nخفف السرعة قبل التقاطع واستعد للتوقف",
+      "src": [],
+      "confidence": "medium"
+    },
+    {
+      "id": "ex-jn-02",
+      "topic": "priority",
+      "level": 2,
+      "exam": ["dubai", "sharjah"],
+      "type": "choice",
+      "scene": {
+        "template": "tjunction",
+        "params": { "side": "S", "lanes": 1, "control": "stop" },
+        "actors": [
+          { "id": "me", "type": "me", "pos": { "arm": "S", "lane": 1, "at": "stopline" }, "signal": "left" },
+          { "id": "white", "type": "car", "color": "white", "pos": { "arm": "W", "lane": 1, "at": 5 } },
+          { "id": "truck", "type": "truck", "color": "orange", "pos": { "arm": "E", "lane": 1, "at": 9 } }
+        ],
+        "solution": [
+          { "t": 0, "actor": "white", "route": "W1->E", "kmh": 34 },
+          { "t": 0.3, "actor": "truck", "route": "E1->W", "kmh": 32 },
+          { "t": 4.6, "actor": "me", "route": "S1->W", "kmh": 20, "ease": "in" }
+        ],
+        "arrows": [
+          { "actor": "me", "route": "S1->W", "style": "me" }
+        ]
+      },
+      "q": "وصلت إلى إشارة قف عند تقاطع على شكل T وتريد الانعطاف يسارا، ما التصرف الصحيح؟",
+      "options": [
+        "أخفف السرعة وأدخل إذا بدا الطريق خاليا دون أن أتوقف",
+        "أتوقف تماما عند خط التوقف، وأعطي الأولوية للمركبات من الاتجاهين، ثم أنعطف عندما يخلو الطريق",
+        "أتوقف فقط إذا رأيت سيارة قادمة من اليمين",
+        "أطلق المنبه وأدخل قبل الشاحنة"
+      ],
+      "answer": 1,
+      "explain": "إشارة قف تعني التوقف الكامل عند الخط حتى لو كان الطريق خاليا\nبعد التوقف أعط الأولوية لكل المركبات على الطريق الرئيسي من الاتجاهين",
+      "src": [],
+      "confidence": "medium"
+    },
+    {
+      "id": "ex-em-01",
+      "topic": "emergency-vehicles",
+      "level": 2,
+      "exam": ["dubai", "sharjah"],
+      "type": "choice",
+      "scene": {
+        "template": "road",
+        "params": { "lanes": 3, "divided": true, "median": { "width": 4, "palms": true }, "len": 70 },
+        "labels": "solution",
+        "actors": [
+          { "id": "me", "type": "me", "pos": { "dir": "up", "lane": 2, "y": 30 } },
+          { "id": "amb", "type": "ambulance", "pos": { "dir": "up", "lane": 2, "y": 6 }, "label": "سيارة إسعاف" },
+          { "id": "c1", "type": "car", "color": "red", "pos": { "dir": "up", "lane": 3, "y": 42 } },
+          { "id": "c2", "type": "car", "color": "silver", "pos": { "dir": "down", "lane": 2, "y": 50 } }
+        ],
+        "solution": [
+          { "t": 0, "actor": "me", "lane_change": "right", "dist": 16, "dur": 2.4 },
+          { "t": 2.4, "actor": "me", "drive": 7, "dur": 2.2, "ease": "out" },
+          { "t": 0, "actor": "c1", "drive": 12, "dur": 3, "ease": "out" },
+          { "t": 0, "actor": "c2", "drive": 70, "dur": 4 },
+          { "t": 1.3, "actor": "amb", "drive": 90, "dur": 3.8, "ease": "in" }
+        ],
+        "arrows": [
+          { "actor": "me", "track": "solution", "style": "ok" },
+          { "actor": "amb", "track": "solution", "style": "warn" }
+        ]
+      },
+      "q": "تسمع صفارة سيارة إسعاف وترى أضواءها خلفك في المسار الأوسط، ماذا تفعل؟",
+      "options": [
+        "أبقى في مساري وأزيد السرعة لأبتعد عنها",
+        "أتوقف فجأة في مكاني",
+        "أشغل إشارة اليمين وأنتقل بأمان إلى المسار الأيمن وأخفف السرعة لأفسح لها الطريق",
+        "أنتقل بسرعة إلى المسار الأيسر وأتبعها بعد مرورها"
+      ],
+      "answer": 2,
+      "explain": "أفسح الطريق لمركبات الطوارئ: انظر في المرايا وشغل الإشارة وانتقل بهدوء إلى اليمين عندما يكون ذلك آمنا\nلا تتوقف فجأة ولا تتبعها بعد مرورها",
+      "src": [],
+      "confidence": "medium"
+    },
+    {
+      "id": "ex-sb-01",
+      "topic": "school-bus",
+      "level": 3,
+      "exam": ["dubai", "sharjah"],
+      "type": "choice",
+      "scene": {
+        "template": "road",
+        "params": { "lanes": 1, "center": "broken", "len": 50 },
+        "labels": "solution",
+        "actors": [
+          { "id": "bus", "type": "school-bus", "pos": { "dir": "up", "lane": 1, "y": 30 }, "stop_arm": true, "label": "حافلة مدرسية متوقفة" },
+          { "id": "me", "type": "me", "pos": { "dir": "up", "lane": 1, "y": 5 } },
+          { "id": "c1", "type": "car", "color": "blue", "pos": { "dir": "down", "lane": 1, "y": 47.5 } },
+          { "id": "kid", "type": "pedestrian", "variant": "child", "color": "red", "pos": { "side": "east", "y": 31 } }
+        ],
+        "solution": [
+          { "t": 0, "actor": "me", "stop_at": { "behind": "bus", "gap": 6 }, "dur": 2.6 },
+          { "t": 0, "actor": "c1", "stop_at": { "y": 43 }, "dur": 2.4 },
+          { "t": 0.3, "actor": "kid", "to": { "side": "east", "y": 23 }, "dur": 3.2 },
+          { "t": 4.0, "actor": "bus", "stop_arm": false },
+          { "t": 4.7, "actor": "bus", "drive": 45, "dur": 4.5, "ease": "in" },
+          { "t": 5.4, "actor": "me", "drive": 60, "dur": 5.5, "ease": "in" },
+          { "t": 5.0, "actor": "c1", "drive": 70, "dur": 5, "ease": "in" }
+        ],
+        "callouts": [
+          { "text": "5 أمتار على الأقل", "at": { "x": -4.5, "y": 21.5 }, "when": "solution", "style": "warn" }
+        ]
+      },
+      "q": "حافلة مدرسية متوقفة مدت ذراع قف وأضواؤها الحمراء تومض، والطريق غير مقسم، ما الذي يجب على السائقين فعله؟",
+      "options": [
+        "يتوقف السائقون في الاتجاهين على بعد 5 أمتار على الأقل حتى تنطوي الذراع",
+        "يتوقف السائقون خلف الحافلة فقط، ويتابع القادمون من الاتجاه المعاكس",
+        "يتجاوز السائقون الحافلة ببطء مع استخدام المنبه",
+        "يكفي تخفيف السرعة لأن الأطفال على الرصيف"
+      ],
+      "answer": 0,
+      "explain": "عندما تمد الحافلة المدرسية ذراع قف وتومض أضواؤها الحمراء توقف على بعد 5 أمتار على الأقل\nعلى الطريق غير المقسم يتوقف القادمون من الاتجاه المعاكس أيضا حتى تنطوي الذراع",
+      "src": [],
+      "confidence": "medium"
+    },
+    {
+      "id": "ex-pd-01",
+      "topic": "pedestrians",
+      "level": 1,
+      "exam": ["dubai", "sharjah"],
+      "type": "choice",
+      "scene": {
+        "template": "road",
+        "params": { "lanes": 1, "zebra": { "y": 32 }, "center": "solid", "len": 48 },
+        "actors": [
+          { "id": "me", "type": "me", "pos": { "dir": "up", "lane": 1, "y": 8 } },
+          { "id": "ped", "type": "pedestrian", "pos": { "crossing": "zebra", "side": "east" }, "label": "ينتظر العبور" }
+        ],
+        "solution": [
+          { "t": 0, "actor": "me", "stop_at": "crossing", "dur": 2.6 },
+          { "t": 1.2, "actor": "ped", "cross": "zebra", "dur": 5 },
+          { "t": 6.1, "actor": "me", "drive": 60, "dur": 4.5, "ease": "in" }
+        ]
+      },
+      "q": "مشاة يقف عند طرف ممر المشاة ويستعد للعبور، ماذا تفعل؟",
+      "options": [
+        "أطلق المنبه ليبتعد وأتابع",
+        "أتابع لأنه لم يبدأ العبور بعد",
+        "أتجاوزه من الجهة الأخرى للطريق",
+        "أخفف السرعة وأتوقف قبل الممر وأنتظر حتى يعبر"
+      ],
+      "answer": 3,
+      "explain": "للمشاة الأولوية عند ممر المشاة\nخفف السرعة وتوقف قبل الخطوط وانتظر حتى يصل إلى الرصيف المقابل",
+      "src": [],
+      "confidence": "medium"
+    },
+    {
+      "id": "ex-hw-01",
+      "topic": "highway",
+      "level": 3,
+      "exam": ["dubai", "sharjah"],
+      "type": "choice",
+      "scene": {
+        "template": "highway-merge",
+        "params": { "lanes": 3 },
+        "actors": [
+          { "id": "me", "type": "me", "pos": { "lane": "ramp", "y": 8 } },
+          { "id": "truck", "type": "truck", "color": "white", "pos": { "lane": 1, "y": 14 } },
+          { "id": "c1", "type": "car", "color": "blue", "pos": { "lane": 2, "y": 30 } }
+        ],
+        "solution": [
+          { "t": 0, "actor": "truck", "drive": 100, "dur": 5.6 },
+          { "t": 0, "actor": "c1", "drive": 100, "dur": 5.2 },
+          { "t": 0, "actor": "me", "route": "merge", "merge_at": 62, "dur": 7, "ease": "in" }
+        ],
+        "arrows": [
+          { "actor": "me", "route": "merge", "merge_at": 62, "until": "merge", "style": "ok" }
+        ]
+      },
+      "q": "أنت على منحدر الدخول إلى طريق سريع، وشاحنة تقترب في المسار الأيمن، ما الطريقة الصحيحة للاندماج؟",
+      "options": [
+        "أتوقف في بداية مسار التسارع حتى يخلو الطريق تماما",
+        "أدخل مباشرة إلى المسار الأوسط",
+        "أستخدم مسار التسارع لأقترب من سرعة المرور، وأشغل إشارة اليسار، وأندمج خلف الشاحنة في فجوة آمنة",
+        "أسرع لأدخل أمام الشاحنة مهما كانت المسافة"
+      ],
+      "answer": 2,
+      "explain": "مسار التسارع موجود لترفع سرعتك إلى سرعة المرور، وعليك إعطاء الأولوية للمركبات على الطريق السريع\nشغل إشارة اليسار واندمج في فجوة آمنة",
+      "src": [],
+      "confidence": "medium"
+    },
+    {
+      "id": "ex-hz-01",
+      "topic": "hazard",
+      "level": 4,
+      "exam": ["dubai", "sharjah"],
+      "type": "tap",
+      "scene": {
+        "template": "road",
+        "params": { "lanes": 1, "center": "broken", "parked": { "up": [19, 25.5, 36, 42.5] }, "len": 44 },
+        "actors": [
+          { "id": "me", "type": "me", "pos": { "dir": "up", "lane": 1, "y": 2 } },
+          { "id": "ball", "type": "ball", "color": "orange", "pos": { "dir": "up", "lane": "parking", "y": 30.8 } },
+          { "id": "kid", "type": "pedestrian", "variant": "child", "pos": { "side": "east", "y": 30.8 }, "label": "طفل يلحق بالكرة" },
+          { "id": "oncoming", "type": "car", "color": "silver", "pos": { "dir": "down", "lane": 1, "y": 58 } }
+        ],
+        "intro": {
+          "len": 4,
+          "events": [
+            { "t": 0, "actor": "me", "drive": 20, "dur": 4 },
+            { "t": 0, "actor": "oncoming", "drive": 28, "dur": 4 },
+            { "t": 2.1, "actor": "ball", "to": { "dir": "up", "lane": 1, "y": 31.4 }, "dur": 1.5 },
+            { "t": 2.8, "actor": "kid", "to": { "dir": "up", "lane": "parking", "y": 30.8 }, "dur": 1.2 }
+          ]
+        },
+        "solution": [
+          { "t": 0, "actor": "me", "brake": true },
+          { "t": 0, "actor": "me", "drive": 3.5, "dur": 1.2, "ease": "out" },
+          { "t": 0, "actor": "oncoming", "drive": 40, "dur": 4.2 },
+          { "t": 0.4, "actor": "kid", "to": { "dir": "up", "lane": 1, "y": 30.9 }, "dur": 1.3 },
+          { "t": 2.0, "actor": "ball", "visible": false },
+          { "t": 2.3, "actor": "kid", "to": { "side": "east", "y": 31 }, "dur": 1.6 },
+          { "t": 4.4, "actor": "me", "brake": false },
+          { "t": 4.6, "actor": "me", "drive": 40, "dur": 4.5, "ease": "in" }
+        ]
+      },
+      "hotspots": [
+        { "id": "kid", "actor": "kid" },
+        { "id": "ball", "actor": "ball" },
+        { "id": "oncoming", "actor": "oncoming" },
+        { "id": "parked", "at": { "dir": "up", "lane": "parking", "y": 42.5 }, "r": 3 }
+      ],
+      "q": "أين الخطر الذي يجب أن تستعد له الآن؟ انقر عليه",
+      "answer": ["kid", "ball"],
+      "explain": "كرة تدخل الطريق من بين السيارات المتوقفة، وغالبا يركض طفل خلفها\nخفف السرعة فورا واستعد للتوقف قبل أن يظهر أمامك",
+      "tip": "شفت كرة؟ استنى الولد وراها",
+      "src": [],
+      "confidence": "medium"
+    }
+  ]
+}

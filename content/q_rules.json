@@ -1,0 +1,6360 @@
+{
+ "module": "rules",
+ "updated": "2026-09-29",
+ "sources": {
+  "S1": {
+   "title": "مرسوم بقانون اتحادي رقم 14 لسنة 2024 بشأن تنظيم السير والمرور (النص العربي)",
+   "url": "https://uaelegislation.gov.ae/ar/legislations/2598/download",
+   "publisher": "UAE Legislation portal",
+   "date": "2024-09 (in force 2025-03-29)"
+  },
+  "S2": {
+   "title": "Federal Decree-Law No. 14 of 2024 On Traffic Regulation (English text)",
+   "url": "https://uaelegislation.gov.ae/en/legislations/2598/download",
+   "publisher": "UAE Legislation portal",
+   "date": "2024-09"
+  },
+  "S3": {
+   "title": "Ministerial Resolution No. 130 of 1997, Executive Regulation of the Federal Traffic Law (English)",
+   "url": "https://uaelegislation.gov.ae/en/legislations/1020/download",
+   "publisher": "UAE Legislation portal",
+   "date": "1997, listed in force, updated 2023-05"
+  },
+  "S4": {
+   "title": "القرار الوزاري رقم 130 لسنة 1997 باللائحة التنفيذية لقانون السير والمرور (النص العربي)",
+   "url": "https://uaelegislation.gov.ae/ar/legislations/1020/download",
+   "publisher": "UAE Legislation portal",
+   "date": "1997, updated 2023-05"
+  },
+  "S5": {
+   "title": "Light Motor Vehicle Handbook, A Guide to Safe Driving, 7th edition",
+   "url": "https://edi-uae.com/public/uploads/downloads/20190724133013RTA_Handbook_-_Light_Motor_Vehicle_(LMV)_-_English.pdf",
+   "publisher": "RTA Licensing Agency (hosted by Emirates Driving Institute)",
+   "date": "2016-01"
+  },
+  "S6": {
+   "title": "كتيب المركبات الآلية الخفيفة، دليل للقيادة الآمنة، الطبعة 3",
+   "url": "https://www.rta.ae/wpsv5/eservices/PDF_Catalog/Light_Motor_Handbook_AR.pdf",
+   "publisher": "RTA Licensing Agency",
+   "date": "2012-01"
+  },
+  "S7": {
+   "title": "كتيب المركبات الآلية الخفيفة، الطبعة 8",
+   "url": "https://www.drivedubai.ae/public/uploads/downloads/20210301161905RTA-Handbook-Light-Motor-Vechicle-Arabic.pdf",
+   "publisher": "RTA Licensing Agency (hosted by Dubai Driving Center)",
+   "date": "2021-03"
+  },
+  "S8": {
+   "title": "New UAE traffic law: When should you give way, and when do you have the right of way?",
+   "url": "https://gulfnews.com/living-in-uae/transport/new-uae-traffic-law-when-should-you-give-way-and-when-do-you-have-the-right-of-way-1.1730289189795",
+   "publisher": "Gulf News",
+   "date": "2024-10-31"
+  },
+  "S9": {
+   "title": "Dubai: 5 rules to follow when driving in the fast lane",
+   "url": "https://gulfnews.com/living-in-uae/transport/dubai-5-rules-to-follow-when-driving-in-the-fast-lane-2-1.1720015446210",
+   "publisher": "Gulf News (Dubai Police, RTA)",
+   "date": "2024-07-03"
+  },
+  "S10": {
+   "title": "Dubai Police warn: Slow driving in fast lanes as dangerous as speeding",
+   "url": "https://gulfnews.com/uae/transport/dubai-police-warn-slow-driving-in-fast-lanes-as-dangerous-as-speeding-dh400-fine-imposed-1.500256599",
+   "publisher": "Gulf News (Dubai Police)",
+   "date": "2025-09-04"
+  },
+  "S11": {
+   "title": "Think you're following UAE lane rules? The driving mistakes that could get you fined",
+   "url": "https://gulfnews.com/living-in-uae/transport/think-youre-following-uae-lane-rules-the-driving-mistakes-that-could-get-you-fined-1.500124462",
+   "publisher": "Gulf News (RTA, Sharjah Police)",
+   "date": "2025-05-12"
+  },
+  "S12": {
+   "title": "Dubai Police: Let emergency vehicles go, every second matters",
+   "url": "https://gulfnews.com/uae/dubai-police-let-emergency-vehicles-go-every-second-matters-1.66847995",
+   "publisher": "Gulf News (Dubai Police)",
+   "date": "2019-10-02"
+  },
+  "S13": {
+   "title": "شرطة دبي تفسح الطريق أمام مركبات الطوارئ بـ«الأمل»",
+   "url": "https://www.emaratalyoum.com/local-section/other/2019-10-03-1.1258016",
+   "publisher": "Emarat Al Youm (Dubai Police)",
+   "date": "2019-10-03"
+  },
+  "S14": {
+   "title": "«لا تتردد.. افسح الطريق فورا» حملة مشتركة لمركبات الطوارئ والإسعاف",
+   "url": "https://abudhabipolice.gov.ae/Media-Center/News/2025/05/29052025001",
+   "publisher": "Abu Dhabi Police",
+   "date": "2025-05-29"
+  },
+  "S15": {
+   "title": "Dh3,000 fine, 30 days impoundment: Sharjah warns against blocking emergency vehicles",
+   "url": "https://www.khaleejtimes.com/uae/emergencies/dh3000-fine-impoundment-blocking-emergency-vehicles",
+   "publisher": "Khaleej Times (Sharjah Police)",
+   "date": "2025-05-03"
+  },
+  "S16": {
+   "title": "UAE: Give way to emergency vehicles or face Dh3,000 traffic fine",
+   "url": "https://gulfnews.com/living-in-uae/transport/uae-give-way-to-emergency-vehicles-or-face-dh3000-traffic-fine-1.500247516",
+   "publisher": "Gulf News (Abu Dhabi Police)",
+   "date": "2025-08-27"
+  },
+  "S17": {
+   "title": "طرق دبي تؤكد تعليمات ذراع التوقف للحافلات المدرسية",
+   "url": "https://www.emaratalyoum.com/local-section/education/2026-04-21-1.2038053",
+   "publisher": "Emarat Al Youm (RTA)",
+   "date": "2026-04-21"
+  },
+  "S18": {
+   "title": "Dubai School Bus Stop Arm Rules: what drivers must know",
+   "url": "https://gulfnews.com/uae/transport/school-bus-stop-arm-rules-in-dubai-what-drivers-must-know-1.500514122",
+   "publisher": "Gulf News (RTA)",
+   "date": "2026-04-21"
+  },
+  "S19": {
+   "title": "Abu Dhabi Police urge motorists to follow rules around school buses",
+   "url": "https://www.thenationalnews.com/news/uae/2026/08/31/uae-school-bus-rules-drivers-parents-students-staff/",
+   "publisher": "The National (Abu Dhabi Police)",
+   "date": "2026-08-31"
+  },
+  "S20": {
+   "title": "Dh1,000 fine in UAE: Police issue warning against violating school bus stop sign rules",
+   "url": "https://www.khaleejtimes.com/uae/transport/dh1000-fine-in-uae-police-issue-warning-against-violating-school-bus-stop-sign-rules",
+   "publisher": "Khaleej Times (Abu Dhabi Police)",
+   "date": "2023-04-06"
+  },
+  "S21": {
+   "title": "Tailgating in Dubai: rules explained",
+   "url": "https://gulfnews.com/living-in-uae/transport/dubai-tailgating-fine-rules-1.500083210",
+   "publisher": "Gulf News",
+   "date": "2026-09-20"
+  },
+  "S22": {
+   "title": "Don't use hazard lights and double safety distance during fog, Abu Dhabi Police advises",
+   "url": "https://gulfnews.com/uae/dont-use-hazard-lights-and-double-safety-distance-during-fog-abu-dhabi-police-advises-1.82879145",
+   "publisher": "Gulf News (Abu Dhabi Police)",
+   "date": "2021-10-18"
+  },
+  "S23": {
+   "title": "UAE: Driving with hazard lights on during fog? You could get fined; here's why",
+   "url": "https://www.khaleejtimes.com/uae/weather/driving-fog-hazard-lights-tips",
+   "publisher": "Khaleej Times",
+   "date": "2025-11-20"
+  },
+  "S24": {
+   "title": "UAE: Dh1,000 parking fine for these 5 violations",
+   "url": "https://gulfnews.com/living-in-uae/transport/uae-dh1000-parking-fine-for-these-5-violations-1.1690295373406",
+   "publisher": "Gulf News",
+   "date": "2023-07-25"
+  },
+  "S25": {
+   "title": "Roundabout Driving Rules in UAE: 2 and 3 lane roundabout guide",
+   "url": "https://www.excellencedriving.com/en/blogs/roundabout-rules-uae",
+   "publisher": "Excellence Driving (RTA-licensed institute, Dubai)",
+   "date": "2025-12-09"
+  },
+  "S26": {
+   "title": "UAE back to school: When must drivers stop for pedestrians?",
+   "url": "https://www.emirates247.com/uae-guide/uae-back-to-school-when-must-drivers-stop-for-pedestrians-rules-fines-explained/5011",
+   "publisher": "Emirates 24/7",
+   "date": "2026-08-28"
+  },
+  "S27": {
+   "title": "UAE: Stricter fines, potential jail time for crossing the road from non-designated areas",
+   "url": "https://gulfnews.com/living-in-uae/transport/uae-stricter-fines-potential-jail-time-for-crossing-the-road-from-non-designated-areas-1.1730381813582",
+   "publisher": "Gulf News",
+   "date": "2024-10-31"
+  },
+  "S28": {
+   "title": "Ambulance behind you in the UAE? How to give way",
+   "url": "https://www.emirates247.com/uae-guide/ambulance-behind-you-in-the-uae-how-to-give-way-and-avoid-a-dh3000-fine/5032",
+   "publisher": "Emirates 24/7 (Abu Dhabi Police campaign)",
+   "date": "2026-08-29"
+  }
+ },
+ "cards": [
+  {
+   "id": "rules-card-001",
+   "topic": "roundabouts",
+   "level": 1,
+   "title": "اتجاه الدوران في الدوار",
+   "body": "السير في الإمارات على اليمين، لذلك تدخل الدوار بالانعطاف يمينا وتدور عكس عقارب الساعة، والجزيرة الوسطى تبقى على يسارك دائما",
+   "key": "عكس عقارب الساعة",
+   "src": [
+    "S1",
+    "S6"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-002",
+   "topic": "roundabouts",
+   "level": 1,
+   "title": "من له الأولوية في الدوار؟",
+   "body": "المركبات التي تدور داخل الدوار لها الأولوية، وهي تأتيك من يسارك، خفف وانظر يسارا وادخل عندما تجد فجوة آمنة",
+   "key": "الأولوية للقادم من اليسار",
+   "src": [
+    "S1",
+    "S2",
+    "S6"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-003",
+   "topic": "roundabouts",
+   "level": 2,
+   "title": "المخرج الأول: الانعطاف يمينا",
+   "body": "اقترب في المسار الأيمن، وأعط إشارة اليمين من بداية الاقتراب، وابق في المسار الأيمن حتى تخرج",
+   "key": "المسار الأيمن وإشارة اليمين",
+   "src": [
+    "S6",
+    "S25"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-004",
+   "topic": "roundabouts",
+   "level": 3,
+   "title": "الاستمرار إلى الأمام",
+   "body": "اختر قبل الدخول المسار الذي يوصلك إلى مخرجك حسب الأسهم (في الدوار ذي الثلاثة مسارات غالبا الأوسط)، ولا تعط إشارة عند الدخول، ثم أعط إشارة اليمين بعد أن تتجاوز المخرج الذي يسبق مخرجك",
+   "key": "إشارة اليمين بعد المخرج السابق",
+   "src": [
+    "S6",
+    "S25"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "rules-card-005",
+   "topic": "roundabouts",
+   "level": 3,
+   "title": "الانعطاف يسارا والالتفاف",
+   "body": "للمخرج الثالث (يسارا) أو للعودة من الطريق نفسه: المسار الأيسر، وتبقى فيه، ثم تعطي إشارة اليمين بعد أن تتجاوز المخرج الذي يسبق مخرجك",
+   "key": "المسار الأيسر",
+   "src": [
+    "S6",
+    "S25"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "rules-card-006",
+   "topic": "roundabouts",
+   "level": 2,
+   "title": "ممنوعات داخل الدوار",
+   "body": "ممنوع تغيير المسار داخل الدوار، وممنوع التجاوز فيه، وممنوع الوقوف على بعد يقل عن 15 مترا منه",
+   "key": "15 مترا",
+   "src": [
+    "S3",
+    "S4",
+    "S25"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-007",
+   "topic": "roundabouts",
+   "level": 4,
+   "title": "طوارئ أو شاحنة عند الدوار",
+   "body": "إذا اقتربت مركبة طوارئ فلا تدخل الدوار، وإذا كنت داخله فاخرج من أقرب مخرج، والشاحنات الطويلة قد تشغل أكثر من مسار فلا تسر بجانبها",
+   "src": [
+    "S12",
+    "S14",
+    "S5"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-008",
+   "topic": "priority",
+   "level": 1,
+   "title": "الطريق الرئيسي أولا",
+   "body": "عند التقاء طريق رئيسي بطريق فرعي بلا لوحات ولا إشارات، الأولوية للمركبات القادمة من الطريق الرئيسي",
+   "key": "الرئيسي قبل الفرعي",
+   "src": [
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-009",
+   "topic": "priority",
+   "level": 3,
+   "title": "طرق متساوية بلا لوحات",
+   "body": "إذا تساوت الطرق في المرتبة ولا توجد لوحات ولا إشارات، فالأولوية للقادم من الجهة اليسرى: تنتظر المركبة التي تأتي من يسارك، والمركبة التي على يمينك تنتظرك",
+   "key": "الأولوية للقادم من اليسار",
+   "src": [
+    "S1",
+    "S2",
+    "S3",
+    "S8"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-010",
+   "topic": "priority",
+   "level": 1,
+   "title": "«قف» و«أفسح الطريق»",
+   "body": "عند «قف» تتوقف تماما عند الخط ثم تعطي الأولوية للجميع، وعند «أفسح الطريق» تخفف وتتوقف إذا لزم وتعطي الأولوية",
+   "src": [
+    "S6"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-011",
+   "topic": "priority",
+   "level": 2,
+   "title": "الانعطاف يسارا والالتفاف",
+   "body": "من ينعطف يسارا يترك المركبات القادمة من الاتجاه المقابل تمر أولا، ومن يلتف للخلف يعطي الأولوية لكل المركبات والمشاة",
+   "src": [
+    "S3",
+    "S6"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-012",
+   "topic": "priority",
+   "level": 2,
+   "title": "الخروج من موقف أو طريق خاص",
+   "body": "عند الدخول إلى الطريق من موقف أو محطة وقود أو طريق خاص تعطي الأولوية لكل المركبات على الطريق، وتدخل فقط عندما يكون ذلك آمنا",
+   "src": [
+    "S6",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-013",
+   "topic": "priority",
+   "level": 3,
+   "title": "الأولوية ليست عنادا",
+   "body": "حتى لو كانت الأولوية لك، اللائحة تطلب منك ألا تتمسك بها وأن تتوقف إذا كان ذلك يمنع ارتباكا أو حادثا",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-014",
+   "topic": "priority",
+   "level": 4,
+   "title": "مركبات لها أولوية بحكم القانون",
+   "body": "الترتيب في المادة 6: المواكب الرسمية، ثم الدفاع المدني أثناء الواجب، ثم الإسعاف أثناء مهامه، ثم القوافل العسكرية، ثم الشرطة عند استخدام أصوات وأضواء التحذير، ثم مركبات الخدمات الضرورية",
+   "src": [
+    "S1",
+    "S2"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-015",
+   "topic": "lanes",
+   "level": 1,
+   "title": "الزم اليمين",
+   "body": "السير في الإمارات على الجانب الأيمن، والمركبات البطيئة تلتزم أقصى المسار الأيمن",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-016",
+   "topic": "lanes",
+   "level": 1,
+   "title": "المسار الأيسر للتجاوز",
+   "body": "استخدم المسار الأيمن عادة، والمسار الأيسر للتجاوز فقط ثم عد إلى اليمين، وأفسح الطريق للمركبة الأسرع خلفك حتى لو كنت ضمن السرعة المحددة",
+   "src": [
+    "S5",
+    "S9",
+    "S10"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-017",
+   "topic": "lanes",
+   "level": 2,
+   "title": "تغيير المسار بأمان",
+   "body": "مرآة، ثم إشارة في وقت كاف، ثم التفاتة رأس إلى النقطة العمياء، ثم انتقال هادئ، والإشارة لا تعطيك حق الانتقال إذا لم يكن آمنا",
+   "key": "مرآة، إشارة، التفاتة",
+   "src": [
+    "S5",
+    "S6",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-018",
+   "topic": "lanes",
+   "level": 2,
+   "title": "الخط المتصل",
+   "body": "الخط المتصل يمنع العبور والتجاوز إلا في حالة طارئة، ابق على يمينه",
+   "src": [
+    "S6",
+    "S11"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-019",
+   "topic": "lanes",
+   "level": 3,
+   "title": "البطء في المسار السريع",
+   "body": "القيادة ببطء في المسار السريع خطيرة مثل السرعة الزائدة، لأنها تجبر الآخرين على الفرملة أو تغيير المسار فجأة",
+   "src": [
+    "S5",
+    "S10"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-020",
+   "topic": "lanes",
+   "level": 3,
+   "title": "مسارات الحافلات في دبي",
+   "body": "المسارات المطلية بالأحمر مخصصة للحافلات وسيارات الأجرة ومركبات الطوارئ، وليست للسيارات الخاصة",
+   "src": [
+    "S6"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "rules-card-021",
+   "topic": "emergency-vehicles",
+   "level": 1,
+   "title": "افسح الطريق فورا",
+   "body": "عند سماع الصفارة أو رؤية الأضواء الوامضة الحمراء والزرقاء: التزم الجانب الأيمن وخفف السرعة وتوقف إذا لزم",
+   "src": [
+    "S3",
+    "S5"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-022",
+   "topic": "emergency-vehicles",
+   "level": 2,
+   "title": "طريق سريع أو طريق داخلي",
+   "body": "على الطرق السريعة تسير مركبات الطوارئ في المسار الأيسر فتنتقل أنت يمينا، وفي الطرق الداخلية تتحرك المركبات يمينا أو يسارا لتفتح ممرا في الوسط",
+   "src": [
+    "S12",
+    "S14"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-023",
+   "topic": "emergency-vehicles",
+   "level": 3,
+   "title": "عند الإشارة الحمراء والتقاطع",
+   "body": "أفسح المجال دون أن تقطع الإشارة الحمراء، وإذا كانت إشارتك خضراء ومركبة طوارئ تعبر التقاطع فتوقف واتركها تمر",
+   "src": [
+    "S12",
+    "S15",
+    "S14"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-024",
+   "topic": "emergency-vehicles",
+   "level": 3,
+   "title": "عند الدوار",
+   "body": "لا تدخل الدوار إذا اقتربت منه مركبة طوارئ، وإذا كنت داخله فتابع واخرج من أقرب مخرج",
+   "src": [
+    "S12",
+    "S14"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-025",
+   "topic": "emergency-vehicles",
+   "level": 2,
+   "title": "لا تلحق بها",
+   "body": "ممنوع السير خلف مركبة الطوارئ للاستفادة من الطريق المفتوح، وشرطة دبي تخالف هذا السلوك",
+   "src": [
+    "S12",
+    "S13"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-026",
+   "topic": "emergency-vehicles",
+   "level": 4,
+   "title": "كتف الطريق ليس لك",
+   "body": "عند الازدحام قد تستخدم مركبة الطوارئ كتف الطريق، فلا تنتقل إليه، وفي الطريق بمسار واحد لكل اتجاه تحرك إلى أقصى اليمين دون الخروج إلى الكتف",
+   "src": [
+    "S14",
+    "S16",
+    "S28"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-027",
+   "topic": "overtaking",
+   "level": 1,
+   "title": "التجاوز من اليسار",
+   "body": "التجاوز في الإمارات من اليسار فقط، والاستثناء الوحيد: مركبة أعطت إشارة يسار وتحركت لتنعطف يسارا، فتمر من يمينها إذا كانت المساحة كافية",
+   "key": "من اليسار",
+   "src": [
+    "S3",
+    "S4"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-028",
+   "topic": "overtaking",
+   "level": 2,
+   "title": "قبل أن تتجاوز",
+   "body": "تأكد أن الطريق أمامك واضح، ولا خطر من الاتجاه المقابل، ولا أحد خلفك بدأ يتجاوزك، وأعط الإشارة، واترك مسافة كافية قبل العودة",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-029",
+   "topic": "overtaking",
+   "level": 2,
+   "title": "أماكن ممنوع فيها التجاوز",
+   "body": "المنعطفات، قمم المرتفعات والمنحدرات، الطرق الزلقة، قرب ممرات المشاة، التقاطعات والدوارات والميادين، عند الازدحام أو ضعف الرؤية، وحيث توجد لوحة منع أو خط متصل",
+   "src": [
+    "S3",
+    "S4",
+    "S11"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-030",
+   "topic": "overtaking",
+   "level": 2,
+   "title": "عندما يتجاوزك أحد",
+   "body": "خفف سرعتك قليلا والتزم يمين مسارك، ولا تزد سرعتك لتمنعه",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-031",
+   "topic": "overtaking",
+   "level": 3,
+   "title": "الدراجات الهوائية والنارية",
+   "body": "تجاوزها فقط إذا استطعت الانتقال يسارا بأمان تاركا مترا واحدا على الأقل",
+   "key": "متر واحد على الأقل",
+   "src": [
+    "S5",
+    "S6"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-032",
+   "topic": "overtaking",
+   "level": 4,
+   "title": "تجاوز ممنوع دائما",
+   "body": "لا تتجاوز من كتف الطريق، ولا تتجاوز حافلة مدرسية متوقفة وذراعها مفتوح، وتجنب التجاوز في الضباب",
+   "src": [
+    "S11",
+    "S19",
+    "S22"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-033",
+   "topic": "speed",
+   "level": 1,
+   "title": "رقم اللوحة حد أقصى",
+   "body": "الرقم على لوحة السرعة هو أقصى سرعة في الظروف الجيدة، وعليك أن تخفف حسب الطريق والطقس والرؤية وحالة المركبة",
+   "src": [
+    "S5",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-034",
+   "topic": "speed",
+   "level": 2,
+   "title": "السرعات المعتادة",
+   "body": "حسب دليل هيئة الطرق: 40 أو 60 أو 80 كم/ساعة داخل المدن، و100 أو 120 كم/ساعة على الطرق السريعة، والمرجع دائما اللوحة المنصوبة",
+   "key": "المدن 40 إلى 80، السريعة 100 إلى 120",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-035",
+   "topic": "speed",
+   "level": 2,
+   "title": "أماكن تخفف فيها وجوبا",
+   "body": "الأحياء السكنية، المنعطفات، التقاطعات، ممرات المشاة، مداخل المدارس والمستشفيات، عند الاقتراب من الحيوانات، وعند ضعف الرؤية",
+   "src": [
+    "S3",
+    "S1"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-036",
+   "topic": "speed",
+   "level": 3,
+   "title": "الحد الأدنى للسرعة",
+   "body": "بعض الطرق عليها لوحة حد أدنى للسرعة، وممنوع أن تسير أبطأ منها في الظروف العادية، والبطء في المسار السريع خطر",
+   "src": [
+    "S3",
+    "S6",
+    "S5"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-037",
+   "topic": "speed",
+   "level": 4,
+   "title": "السرعة ومسافة التوقف",
+   "body": "حسب دليل هيئة الطرق تحتاج حوالي 33 مترا لتتوقف من 60 كم/ساعة، وحوالي 130 مترا من 120 كم/ساعة، أي أن ضعف السرعة يعني تقريبا 4 أضعاف المسافة",
+   "key": "60 كم/ساعة: 33 مترا، 120 كم/ساعة: 130 مترا",
+   "src": [
+    "S5",
+    "S6"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-038",
+   "topic": "distance",
+   "level": 1,
+   "title": "قاعدة الثانيتين",
+   "body": "اترك ثانيتين على الأقل خلف المركبة التي أمامك في الظروف الجيدة",
+   "key": "ثانيتان على الأقل",
+   "src": [
+    "S5",
+    "S21"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-039",
+   "topic": "distance",
+   "level": 2,
+   "title": "كيف تقيس المسافة",
+   "body": "اختر علامة ثابتة مثل عمود أو لوحة، وعد الثواني من لحظة مرور المركبة التي أمامك بها حتى تصل أنت إليها",
+   "src": [
+    "S5",
+    "S21"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-040",
+   "topic": "distance",
+   "level": 2,
+   "title": "متى تزيد المسافة",
+   "body": "في المطر اجعلها 4 ثوان، وفي الضباب ضاعفها، وزدها كذلك على الطرق غير المعبدة وعند ضعف الرؤية",
+   "key": "المطر: 4 ثوان",
+   "src": [
+    "S6",
+    "S7",
+    "S22",
+    "S5"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-041",
+   "topic": "distance",
+   "level": 3,
+   "title": "مم تتكون مسافة التوقف؟",
+   "body": "مسافة التوقف تتكون من مسافة رد الفعل (من رؤية الخطر حتى الضغط على المكابح) ومسافة الكبح (من الضغط حتى توقف المركبة)",
+   "src": [
+    "S5",
+    "S6"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-042",
+   "topic": "distance",
+   "level": 3,
+   "title": "ما يطيل مسافة التوقف",
+   "body": "السرعة العالية، والطريق المبتل أو الزلق، والإطارات الممسوحة (عمق نقشة أقل من 1.5 ملم)، والتعب",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-043",
+   "topic": "distance",
+   "level": 4,
+   "title": "خلف الشاحنات",
+   "body": "الشاحنات والحافلات تحتاج مسافة أطول لتتوقف، وخلفها مباشرة منطقة عمياء، وإذا لم تر وجه السائق في مرآته فهو لا يراك",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-044",
+   "topic": "turning",
+   "level": 1,
+   "title": "الإشارة في وقت كاف",
+   "body": "أعلن نيتك بالإشارة قبل الانعطاف أو تغيير المسار في وقت كاف، فالإشارة إعلام وليست أولوية",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-045",
+   "topic": "turning",
+   "level": 2,
+   "title": "الانعطاف يمينا",
+   "body": "اقترب قدر الإمكان من الحافة اليمنى للطريق، وخفف السرعة، وانتبه للمشاة والدراجات",
+   "src": [
+    "S3",
+    "S6"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-046",
+   "topic": "turning",
+   "level": 2,
+   "title": "الانعطاف يسارا",
+   "body": "في طريق باتجاهين اقترب من منتصف الطريق، وفي طريق باتجاه واحد من أقصى اليسار، واترك المركبات المقابلة تمر أولا، ثم انعطف قريبا من يسار منتصف التقاطع",
+   "src": [
+    "S3",
+    "S6"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-047",
+   "topic": "turning",
+   "level": 3,
+   "title": "الالتفاف للخلف",
+   "body": "من المسار الأيسر أو المسار المخصص للالتفاف، وممنوع عند الخط المتصل أو لوحة منع الالتفاف، وتعطي الأولوية لكل المركبات والمشاة",
+   "src": [
+    "S6",
+    "S3"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "rules-card-048",
+   "topic": "turning",
+   "level": 3,
+   "title": "المشاة عند الانعطاف",
+   "body": "عندما تنعطف إلى شارع آخر خفف سرعتك، وتوقف حتى يعبر المشاة الذين بدؤوا العبور",
+   "src": [
+    "S3",
+    "S1"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-049",
+   "topic": "turning",
+   "level": 4,
+   "title": "المركبات الطويلة",
+   "body": "الشاحنة أو الحافلة تحتاج مساحة أكبر للانعطاف وقد تشغل أكثر من مسار، فلا تدخل بجانبها عند انعطافها",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-050",
+   "topic": "highway",
+   "level": 1,
+   "title": "فاتك المخرج؟",
+   "body": "لا ترجع للخلف ولا تتوقف، تابع إلى المخرج التالي",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-051",
+   "topic": "highway",
+   "level": 2,
+   "title": "الدخول إلى الطريق السريع",
+   "body": "استخدم مسار الدخول لتزيد سرعتك مبكرا حتى تقارب سرعة الطريق، ثم اندمج في فجوة آمنة، فالأولوية للمركبات على الطريق الرئيسي",
+   "src": [
+    "S5",
+    "S1",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-052",
+   "topic": "highway",
+   "level": 2,
+   "title": "الخروج من الطريق السريع",
+   "body": "أعط الإشارة مبكرا، وادخل مسار الخروج من بدايته، وخفف سرعتك داخله، ولا تعبر الخطوط المائلة",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-053",
+   "topic": "highway",
+   "level": 1,
+   "title": "كتف الطريق",
+   "body": "كتف الطريق للمركبات المعطلة وخدمات الطوارئ فقط، وممنوع السير أو التجاوز عليه",
+   "src": [
+    "S11",
+    "S14"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-054",
+   "topic": "highway",
+   "level": 3,
+   "title": "المسارات على الطريق السريع",
+   "body": "سر في المسارات اليمنى واستخدم الأيسر للتجاوز، والتزم بلوحة الحد الأدنى للسرعة إن وجدت",
+   "src": [
+    "S5",
+    "S9",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-055",
+   "topic": "pedestrians",
+   "level": 1,
+   "title": "ممر المشاة",
+   "body": "خفف عند ممر المشاة، وتوقف حتى يكمل المشاة الذين بدؤوا العبور، ولا تقف فوق الممر",
+   "src": [
+    "S1",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-056",
+   "topic": "pedestrians",
+   "level": 2,
+   "title": "الأطفال وكبار السن",
+   "body": "الأطفال صغار ويصعب رؤيتهم وتصرفاتهم مفاجئة، وكبار السن أبطأ وقد لا يرون جيدا، فأعطهم وقتا ومساحة",
+   "src": [
+    "S5",
+    "S6"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-057",
+   "topic": "pedestrians",
+   "level": 2,
+   "title": "قرب المدارس والمستشفيات",
+   "body": "القانون يلزمك بتخفيف السرعة عند مداخل ومخارج المؤسسات التعليمية والصحية",
+   "src": [
+    "S1",
+    "S2"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-058",
+   "topic": "pedestrians",
+   "level": 3,
+   "title": "طرق تزيد سرعتها على 80",
+   "body": "القانون يمنع المشاة من عبور الطرق التي تزيد سرعتها المقررة على 80 كم/ساعة من غير الأماكن المخصصة، لكن انتباهك كسائق يبقى واجبا",
+   "key": "أكثر من 80 كم/ساعة",
+   "src": [
+    "S1",
+    "S27"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-059",
+   "topic": "pedestrians",
+   "level": 4,
+   "title": "لا تتجاوز قرب الممر",
+   "body": "ممنوع التجاوز قرب ممرات المشاة، فالمركبة المتوقفة أو البطيئة قد تخفي مشاة يعبرون أمامها",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-060",
+   "topic": "school-bus",
+   "level": 1,
+   "title": "ذراع «قف»",
+   "body": "عندما تفتح الحافلة المدرسية ذراع «قف» وتومض أضواؤها، توقف تماما",
+   "src": [
+    "S17",
+    "S18"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-061",
+   "topic": "school-bus",
+   "level": 2,
+   "title": "5 أمتار على الأقل",
+   "body": "توقف على بعد 5 أمتار على الأقل من الحافلة المدرسية التي فتحت ذراع «قف»",
+   "key": "5 أمتار",
+   "src": [
+    "S17",
+    "S18",
+    "S20"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-062",
+   "topic": "school-bus",
+   "level": 3,
+   "title": "أي اتجاه يتوقف؟",
+   "body": "في الطريق غير المقسم تتوقف المركبات في الاتجاهين، وفي الطريق المقسم بفاصل تتوقف المركبات التي خلف الحافلة فقط",
+   "src": [
+    "S17",
+    "S18",
+    "S19"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-063",
+   "topic": "school-bus",
+   "level": 3,
+   "title": "متى تتحرك؟",
+   "body": "بعد أن يعبر كل الطلاب إلى منطقة آمنة، ويغلق الذراع، وتنطفئ الأضواء الوامضة",
+   "src": [
+    "S17",
+    "S18"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-064",
+   "topic": "school-bus",
+   "level": 4,
+   "title": "لا تتجاوزها أبدا",
+   "body": "لا تتجاوز حافلة مدرسية متوقفة لإنزال الطلاب أو صعودهم حتى لو بدا المسار الآخر فارغا",
+   "src": [
+    "S19",
+    "S5"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-065",
+   "topic": "vulnerable",
+   "level": 1,
+   "title": "الأكثر عرضة للخطر",
+   "body": "المشاة وراكبو الدراجات الهوائية والنارية والأطفال وكبار السن لا يحميهم هيكل مركبة، فانتبه لهم أكثر",
+   "src": [
+    "S5",
+    "S6"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-066",
+   "topic": "vulnerable",
+   "level": 2,
+   "title": "الدراجات صغيرة",
+   "body": "الدراجات الهوائية والنارية صغيرة ويصعب رؤيتها، فانظر في المرايا والتفت إلى النقطة العمياء قبل تغيير المسار أو الانعطاف",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-067",
+   "topic": "vulnerable",
+   "level": 2,
+   "title": "متر واحد عند التجاوز",
+   "body": "عند تجاوز دراجة هوائية أو نارية اترك مترا واحدا على الأقل، وإذا لم تكن المساحة كافية فانتظر خلفها",
+   "key": "متر واحد",
+   "src": [
+    "S5",
+    "S6"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-068",
+   "topic": "vulnerable",
+   "level": 3,
+   "title": "مناطق الشاحنة العمياء",
+   "body": "أمامها مباشرة، وخلفها لمسافة طويلة، وعلى جانبيها، وإذا لم تر وجه السائق في مرآته فهو لا يراك",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-069",
+   "topic": "vulnerable",
+   "level": 3,
+   "title": "الحيوانات على الطريق",
+   "body": "خفف سرعتك عند الاقتراب من الحيوانات أو المرور بها، ومنها الجمال قرب الطرق الخارجية",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-070",
+   "topic": "parking",
+   "level": 1,
+   "title": "كيف تقف",
+   "body": "قف بهدوء قرب الحافة اليمنى للطريق وموازيا لها، وفي السيارة الأوتوماتيكية ضع الذراع على وضع الوقوف P",
+   "src": [
+    "S3",
+    "S5"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-071",
+   "topic": "parking",
+   "level": 2,
+   "title": "ممنوع الوقوف هنا",
+   "body": "على ممرات المشاة والأرصفة، على الجسور وفي الأنفاق، حيث تحجب الإشارات أو اللوحات، أمام مداخل البيوت والمواقف ومحطات الوقود والمستشفيات ومراكز الإسعاف والإطفاء والشرطة",
+   "src": [
+    "S3",
+    "S4"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-072",
+   "topic": "parking",
+   "level": 3,
+   "title": "قاعدة 15 مترا",
+   "body": "ممنوع الوقوف على بعد يقل عن 15 مترا من التقاطعات والميادين والدوارات، وممنوع الوقوف أمام محطات النقل العام",
+   "key": "15 مترا",
+   "src": [
+    "S3",
+    "S4"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-073",
+   "topic": "parking",
+   "level": 2,
+   "title": "مواقف لها أصحاب",
+   "body": "مواقف أصحاب الهمم لحاملي التصريح فقط، وممنوع الوقوف أمام صنبور إطفاء الحريق",
+   "src": [
+    "S24"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "rules-card-074",
+   "topic": "parking",
+   "level": 2,
+   "title": "لا تحبس أحدا",
+   "body": "ممنوع الوقوف المزدوج أو الوقوف في مكان يعرقل خروج مركبة متوقفة، وممنوع الوقوف العشوائي الذي يعطل السير",
+   "src": [
+    "S3",
+    "S1"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-075",
+   "topic": "parking",
+   "level": 3,
+   "title": "الخروج من الموقف",
+   "body": "مرآة، ثم إشارة، ثم التفاتة رأس، ثم انتظر حتى يخلو الطريق، فالمركبات التي على الطريق لها الأولوية",
+   "src": [
+    "S6",
+    "S3",
+    "S5"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-076",
+   "topic": "lights-horn",
+   "level": 1,
+   "title": "متى تشغل الأضواء",
+   "body": "من غروب الشمس إلى شروقها، وفي النهار عندما تكون الرؤية غير كافية",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-077",
+   "topic": "lights-horn",
+   "level": 2,
+   "title": "المنخفضة والعالية",
+   "body": "الأضواء المنخفضة في المدن والمناطق المأهولة، والعالية فقط على الطرق الخارجية غير المضاءة، وتحول إلى المنخفضة عند اقتراب مركبة من الأمام",
+   "src": [
+    "S3",
+    "S5"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-078",
+   "topic": "lights-horn",
+   "level": 2,
+   "title": "أضواء التحذير (الفلاشر)",
+   "body": "أضواء التحذير للطوارئ فقط مثل التعطل أو التوقف الاضطراري، وليست للقيادة في المطر أو الضباب",
+   "key": "للطوارئ فقط",
+   "src": [
+    "S22",
+    "S23"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-079",
+   "topic": "lights-horn",
+   "level": 3,
+   "title": "الأضواء في الضباب",
+   "body": "استخدم الأضواء المنخفضة لا العالية، وضاعف مسافة الأمان، وتجنب التجاوز",
+   "src": [
+    "S22"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-080",
+   "topic": "lights-horn",
+   "level": 2,
+   "title": "المنبه للتنبيه فقط",
+   "body": "استخدم المنبه (الزمور) لتفادي خطر فقط، لا بشكل متكرر أو مزعج، ولا والمركبة واقفة",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "rules-card-081",
+   "topic": "lights-horn",
+   "level": 3,
+   "title": "أماكن وأوقات ممنوع فيها المنبه",
+   "body": "قرب المستشفيات والمدارس ودور العبادة، وفي المناطق السكنية من منتصف الليل حتى 6 صباحا",
+   "key": "منتصف الليل إلى 6 صباحا",
+   "src": [
+    "S3",
+    "S4",
+    "S6"
+   ],
+   "confidence": "high"
+  }
+ ],
+ "questions": [
+  {
+   "id": "rules-roundabouts-001",
+   "topic": "roundabouts",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "عند دخولك إلى دوار في الإمارات، لمن تعطي الأولوية؟",
+   "options": [
+    "للمركبة الأكبر حجما، سواء كانت داخل الدوار أو خارجه",
+    "للمركبات التي تدور داخل الدوار وتأتيك من يسارك",
+    "لا أحد، الأولوية لمن يصل إلى خط المدخل أولا",
+    "للمركبات التي تنتظر الدخول من المدخل الذي على يمينك"
+   ],
+   "answer": 1,
+   "explain": "القانون يعطي الأولوية في الدوار للقادم من الجهة اليسرى، أي للمركبات التي تدور داخله، انتظر فجوة آمنة ثم ادخل",
+   "tip": "قبل الدوار: عينك عاليسار",
+   "src": [
+    "S1",
+    "S2",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-roundabouts-002",
+   "topic": "roundabouts",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "إذا نظرت إلى دوار في الإمارات من الأعلى، في أي اتجاه تدور المركبات؟",
+   "options": [
+    "حسب المخرج الذي يريده السائق، يمينا أو يسارا",
+    "عكس اتجاه عقارب الساعة، والجزيرة الوسطى على يسار السائق",
+    "مع اتجاه عقارب الساعة، والجزيرة الوسطى على يمين السائق",
+    "في الاتجاهين، والسائق يختار حسب الازدحام"
+   ],
+   "answer": 1,
+   "explain": "السير في الإمارات على اليمين، لذلك تدخل الدوار بالانعطاف يمينا وتدور عكس عقارب الساعة والجزيرة على يسارك",
+   "tip": "الدوران مع عقارب الساعة نظام بريطانيا، مو نظامنا",
+   "src": [
+    "S1",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-roundabouts-003",
+   "topic": "roundabouts",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تقترب من دوار وتريد الخروج من المخرج الأول (الانعطاف يمينا)، أي مسار تستخدم؟",
+   "options": [
+    "المسار الأيسر، ثم تنتقل يمينا داخل الدوار",
+    "أي مسار فارغ، مع إشارة اليسار قبل الخروج",
+    "المسار الأوسط، مع إشارة اليمين عند الخروج",
+    "المسار الأيمن، مع إشارة اليمين من بداية الاقتراب"
+   ],
+   "answer": 3,
+   "explain": "للمخرج الأول اقترب في المسار الأيمن وأعط إشارة اليمين مبكرا، وابق في المسار الأيمن حتى تخرج",
+   "src": [
+    "S6",
+    "S25"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-roundabouts-004",
+   "topic": "roundabouts",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "عند الخروج من الدوار، أي إشارة تعطي؟",
+   "options": [
+    "لا تحتاج أي إشارة",
+    "أضواء التحذير (الفلاشر)",
+    "إشارة اليمين",
+    "إشارة اليسار"
+   ],
+   "answer": 2,
+   "explain": "مخارج الدوار في الإمارات تكون على يمينك، لذلك تعطي إشارة اليمين قبل مخرجك",
+   "tip": "انتبه: مواقع كثيرة بتنقل قواعد بريطانيا وبيعطوا إشارة يسار، عنا العكس",
+   "src": [
+    "S6",
+    "S25"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-roundabouts-005",
+   "topic": "roundabouts",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أنت تقترب من دوار بمسارين وتريد الخروج من المخرج الثالث (الانعطاف يسارا)، أي مسار تستخدم؟",
+   "options": [
+    "المسار الأيسر",
+    "أي مسار، ثم تغيره داخل الدوار عند الحاجة",
+    "المسار الأيمن مع إشارة اليسار",
+    "المسار الأيمن"
+   ],
+   "answer": 0,
+   "explain": "للانعطاف يسارا في الدوار اقترب في المسار الأيسر وابق فيه، ثم أعط إشارة اليمين بعد أن تتجاوز المخرج الثاني",
+   "src": [
+    "S6",
+    "S25"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-roundabouts-006",
+   "topic": "roundabouts",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أنت في الدوار وتريد الخروج من المخرج الثالث، متى تعطي إشارة اليمين؟",
+   "options": [
+    "بعد أن تتجاوز المخرج الثاني",
+    "بعد أن تخرج من الدوار وتدخل الشارع الجديد",
+    "لا تعطي إشارة لأنك في المسار الأيسر أصلا",
+    "من لحظة دخولك الدوار حتى تخرج منه"
+   ],
+   "answer": 0,
+   "explain": "أعط إشارة اليمين بعد أن تتجاوز المخرج الذي يسبق مخرجك، حتى يفهم السائقون أنك ستخرج",
+   "src": [
+    "S6",
+    "S25"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-roundabouts-007",
+   "topic": "roundabouts",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تريد الالتفاف والعودة من الطريق نفسه عبر دوار بثلاثة مسارات، أي مسار تستخدم؟",
+   "options": [
+    "المسار الأيمن",
+    "المسار الأوسط",
+    "تبدأ بالأيمن ثم تنتقل إلى الأيسر داخل الدوار",
+    "المسار الأيسر"
+   ],
+   "answer": 3,
+   "explain": "الالتفاف في الدوار يكون من المسار الأيسر، وقبل مخرجك تعطي إشارة اليمين وتخرج بهدوء",
+   "src": [
+    "S25"
+   ],
+   "confidence": "medium",
+   "notes": "المصدر معهد قيادة معتمد، ودليل هيئة الطرق لا يذكر الالتفاف في الدوار صراحة"
+  },
+  {
+   "id": "rules-roundabouts-008",
+   "topic": "roundabouts",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في دوار بثلاثة مسارات تريد الاستمرار إلى الأمام (المخرج الثاني)، أي مسار هو الأنسب عادة؟",
+   "options": [
+    "المسار الأوسط",
+    "المسار الأيسر",
+    "كتف الطريق ثم تندمج",
+    "تدخل من أي مسار ثم تنتقل داخل الدوار"
+   ],
+   "answer": 0,
+   "explain": "في الدوار ذي الثلاثة مسارات يكون الأوسط عادة للاستمرار، والأيسر للانعطاف يسارا والالتفاف، واتبع دائما الأسهم المرسومة",
+   "src": [
+    "S25",
+    "S6"
+   ],
+   "confidence": "medium",
+   "notes": "معهد إكسلنس يسمح أيضا بالمسار الأيمن للاستمرار، لذلك لم نضعه بين الخيارات"
+  },
+  {
+   "id": "rules-roundabouts-009",
+   "topic": "roundabouts",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "هل مسموح أن تغير مسارك وأنت داخل الدوار؟",
+   "options": [
+    "لا، إلا إذا كان الدوار فارغا تماما",
+    "نعم، للوصول إلى المسار الأيمن قبل مخرجك",
+    "لا، تختار المسار قبل الدخول وتبقى فيه",
+    "نعم، بشرط إعطاء الإشارة قبل الانتقال"
+   ],
+   "answer": 2,
+   "explain": "تغيير المسار داخل الدوار يسبب حوادث جانبية، والقرار يكون قبل الدخول",
+   "tip": "اختار مسارك قبل ما تفوت، وجوا الدوار خليك مكانك",
+   "src": [
+    "S25",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-roundabouts-010",
+   "topic": "roundabouts",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "هل مسموح التجاوز داخل الدوار؟",
+   "options": [
+    "لا، التجاوز ممنوع في الدوارات",
+    "نعم، من اليسار فقط كأي طريق",
+    "نعم، من اليمين إذا كان المسار فارغا",
+    "لا، إلا إذا كانت المركبة التي أمامك بطيئة جدا"
+   ],
+   "answer": 0,
+   "explain": "اللائحة تمنع التجاوز في الدوارات والتقاطعات والميادين، لأن الحركة فيها معقدة والمسارات متقاطعة",
+   "src": [
+    "S3",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-roundabouts-011",
+   "topic": "roundabouts",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ماذا تفعل عند الاقتراب من الدوار؟",
+   "options": [
+    "تستخدم المنبه لتنبيه من في الدوار ثم تدخل",
+    "تخفف السرعة وتختار مسارك وتنظر إلى يسارك",
+    "تنظر إلى يمينك فقط لأن الخطر يأتي منه",
+    "تزيد السرعة لتدخل قبل المركبات التي في الدوار"
+   ],
+   "answer": 1,
+   "explain": "خفف سرعتك واختر المسار المناسب لمخرجك قبل الدخول، وراقب المركبات القادمة من يسارك",
+   "src": [
+    "S6",
+    "S25"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-roundabouts-012",
+   "topic": "roundabouts",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تقترب من دوار وسمعت صفارة سيارة إسعاف تقترب منه أيضا، ماذا تفعل؟",
+   "options": [
+    "تدخل ثم تتوقف داخل الدوار لتفسح لها",
+    "تسير خلفها مباشرة لتعبر الدوار معها",
+    "تدخل الدوار بسرعة قبل أن تصل إليه",
+    "تبقى خارج الدوار وتفسح لها الطريق بهدوء"
+   ],
+   "answer": 3,
+   "explain": "عند اقتراب مركبة طوارئ من الدوار لا تدخله، وإذا كنت داخله فتابع واخرج من أقرب مخرج",
+   "src": [
+    "S12",
+    "S14"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-roundabouts-013",
+   "topic": "roundabouts",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أنت داخل الدوار وظهرت خلفك مركبة دفاع مدني بصفارتها وأضوائها، ما التصرف الصحيح؟",
+   "options": [
+    "تعود للخلف قليلا لتفتح لها مساحة",
+    "تتوقف في مكانك داخل الدوار حتى تمر",
+    "تتابع بهدوء وتخرج من أقرب مخرج",
+    "تنتقل فجأة إلى المسار الأيسر لتفسح لها"
+   ],
+   "answer": 2,
+   "explain": "داخل الدوار لا تتوقف ولا تغير مسارك فجأة، تابع واخرج من أقرب مخرج وافسح لها الطريق نحو اليمين",
+   "src": [
+    "S12",
+    "S14",
+    "S28"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-roundabouts-014",
+   "topic": "roundabouts",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في دوار بمسارين أردت المخرج الأول، لكنك دخلت خطأ في المسار الأيسر، ما الأسلم؟",
+   "options": [
+    "تتوقف داخل الدوار وتنتظر حتى يفسح لك أحد",
+    "تكمل في مسارك وتخرج من مخرج مناسب له، ثم تعود",
+    "ترجع للخلف قليلا ثم تنتقل إلى المسار الأيمن",
+    "تقطع المسار الأيمن بسرعة لتلحق بالمخرج الأول"
+   ],
+   "answer": 1,
+   "explain": "لا تغير مسارك فجأة داخل الدوار، والخطأ في المخرج تعالجه بإكمال الدوران والخروج بأمان ثم العودة",
+   "tip": "ضيعت المخرج؟ ولا يهمك، كمل ولف وارجع",
+   "src": [
+    "S25",
+    "S3"
+   ],
+   "confidence": "medium",
+   "notes": "الإجراء مستنتج من قاعدة منع تغيير المسار داخل الدوار وقاعدة الرجوع للخلف عند الضرورة فقط"
+  },
+  {
+   "id": "rules-roundabouts-015",
+   "topic": "roundabouts",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أنت في المسار الأيمن لدوار وتريد المخرج الأول، متى تشغل إشارة اليمين؟",
+   "options": [
+    "عند الاقتراب وقبل الدخول، وتبقيها حتى تخرج",
+    "تعطي إشارة اليسار أولا ثم اليمين عند الخروج",
+    "بعد أن تدخل الدوار، ثم تطفئها قبل الخروج",
+    "لا تحتاج إشارة لأن المخرج الأول قريب"
+   ],
+   "answer": 0,
+   "explain": "دليل هيئة الطرق: أعط إشارة الانعطاف نحو اليمين عند اقترابك، وتحقق من حركة السير على يسارك",
+   "src": [
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-roundabouts-016",
+   "topic": "roundabouts",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "على مدخل الدوار أسهم مرسومة على الأرض تحدد مسارات تختلف عما تعلمته، ماذا تتبع؟",
+   "options": [
+    "الأسهم والعلامات المرسومة على الطريق",
+    "القاعدة العامة التي تعلمتها، وتتجاهل الأسهم",
+    "المسار الذي تسلكه المركبة التي أمامك",
+    "المسار الأقل ازدحاما في تلك اللحظة"
+   ],
+   "answer": 0,
+   "explain": "الأسهم على مدخل الدوار تحدد استخدام كل مسار، وهي المرجع عند وجودها",
+   "src": [
+    "S6",
+    "S25"
+   ],
+   "confidence": "medium",
+   "notes": ""
+  },
+  {
+   "id": "rules-roundabouts-017",
+   "topic": "roundabouts",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "شاحنة طويلة تدخل الدوار بجانبك وتأخذ جزءا من مسارك، ما التصرف الآمن؟",
+   "options": [
+    "تسرع لتسبقها قبل أن تضيق عليك المسار",
+    "تبقى خلفها وتعطيها مساحة ولا تسير بجانبها",
+    "تضغط المنبه حتى تعود إلى مسارها",
+    "تتجاوزها من يمينها لأن المسار الأيمن فارغ"
+   ],
+   "answer": 1,
+   "explain": "المركبات الطويلة تحتاج مساحة أكبر للانعطاف وقد تشغل أكثر من مسار، والتجاوز داخل الدوار ممنوع",
+   "src": [
+    "S5",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-roundabouts-018",
+   "topic": "roundabouts",
+   "level": 5,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "حسب اللائحة التنفيذية لقانون السير، ممنوع الوقوف (الانتظار) على بعد يقل عن كم مترا من الدوار؟",
+   "options": [
+    "5 أمتار",
+    "15 مترا",
+    "50 مترا",
+    "10 أمتار"
+   ],
+   "answer": 1,
+   "explain": "اللائحة تمنع الوقوف على بعد يقل عن 15 مترا من التقاطعات والميادين والدوارات",
+   "src": [
+    "S3",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-roundabouts-019",
+   "topic": "roundabouts",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "من له الأولوية: مركبة تدور داخل الدوار أم مركبة تريد الدخول إليه؟",
+   "options": [
+    "المركبة التي تدور داخل الدوار",
+    "المركبة الأكبر حجما منهما",
+    "المركبة القادمة من جهة اليمين",
+    "المركبة التي تريد الدخول إلى الدوار"
+   ],
+   "answer": 0,
+   "explain": "من يدور داخل الدوار يأتي من يسار الداخل، والأولوية له حسب القانون",
+   "src": [
+    "S1",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-roundabouts-020",
+   "topic": "roundabouts",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "خرجت من الدوار إلى شارع فيه مشاة يعبرون أمامك، ماذا تفعل؟",
+   "options": [
+    "تخفف وتتوقف حتى يكمل المشاة العبور",
+    "تمر بينهم ببطء لأنك ما زلت في منعطف",
+    "تكمل لأن الخارج من الدوار له الأولوية",
+    "تستخدم المنبه ليسرعوا في العبور"
+   ],
+   "answer": 0,
+   "explain": "عند تغيير الاتجاه إلى طريق آخر تخفف السرعة وتتوقف حتى يعبر المشاة الذين بدؤوا العبور",
+   "src": [
+    "S3",
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-priority-001",
+   "topic": "priority",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "عند تقاطع طريق رئيسي مع طريق فرعي بلا لوحات ولا إشارات، من له الأولوية؟",
+   "options": [
+    "المركبة التي تعطي الإشارة قبل الأخرى",
+    "المركبات القادمة من الطريق الفرعي",
+    "المركبات القادمة من الطريق الرئيسي",
+    "المركبة الأسرع بين المركبتين"
+   ],
+   "answer": 2,
+   "explain": "القانون يعطي الأولوية عند الملتقيات للمركبات القادمة من الطريق الرئيسي",
+   "src": [
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-priority-002",
+   "topic": "priority",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تقاطع بين طريقين متساويين في الأهمية بلا لوحات ولا إشارات ضوئية، وصلت في الوقت نفسه مع مركبة قادمة من يسارك، من يمر أولا؟",
+   "options": [
+    "أنت، لأنك على يمينها",
+    "الأسرع منكما لأنه يصل أولا",
+    "المركبة القادمة من يسارك",
+    "من يطلق المنبه أولا ليعلن مروره"
+   ],
+   "answer": 2,
+   "explain": "القانون الإماراتي واضح: إذا تساوت الطرق فالأولوية للقادم من الجهة اليسرى",
+   "tip": "بدول تانية الأولوية لليمين، عنا الأولوية لليسار",
+   "src": [
+    "S1",
+    "S2",
+    "S3",
+    "S6",
+    "S8"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-priority-003",
+   "topic": "priority",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في تقاطع بين طريقين متساويين بلا لوحات، ظهرت مركبة من يمينك في الوقت نفسه، ما الصحيح؟",
+   "options": [
+    "الأولوية لها، لأن من على اليمين يمر أولا",
+    "تتوقف دائما وتنتظر حتى تبتعد كل المركبات",
+    "الأولوية لمن يضغط المنبه أولا ويتقدم",
+    "لك الأولوية، لكن تتقدم بحذر وتستعد للتوقف"
+   ],
+   "answer": 3,
+   "explain": "القادم من اليسار له الأولوية، فالمركبة التي على يمينك تنتظرك، ومع ذلك اللائحة تطلب ألا تتمسك بأولويتك إذا كان ذلك يسبب حادثا",
+   "src": [
+    "S1",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-priority-004",
+   "topic": "priority",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "عند لوحة «قف» على تقاطع، ماذا يجب عليك؟",
+   "options": [
+    "تخفف فقط، وتتوقف إذا رأيت مركبة قادمة",
+    "تتوقف في الليل فقط لأن الرؤية أضعف",
+    "تتوقف فقط إذا جاءت مركبة من اليمين",
+    "تتوقف تماما عند الخط، ثم تعطي الأولوية للجميع"
+   ],
+   "answer": 3,
+   "explain": "لوحة «قف» تعني توقفا تاما عند الخط في كل مرة، ثم تتحرك بعد أن تعطي الأولوية لكل المركبات والمشاة",
+   "src": [
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-priority-005",
+   "topic": "priority",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ماذا تعني لوحة «أفسح الطريق» (المثلث المقلوب) عند التقاطع؟",
+   "options": [
+    "ممنوع الدخول إلى هذا الطريق من هذه الجهة",
+    "تخفف، وتتوقف إذا لزم، وتعطي الأولوية للطريق الآخر",
+    "يجب التوقف التام دائما حتى لو كان الطريق خاليا",
+    "لك الأولوية على المركبات في الطريق الآخر"
+   ],
+   "answer": 1,
+   "explain": "عند «أفسح الطريق» لا يلزمك التوقف إذا كان الطريق خاليا، لكن تعطي الأولوية للمركبات والمشاة",
+   "src": [
+    "S6",
+    "S11"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-priority-006",
+   "topic": "priority",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أنت على طريق فرعي ينتهي عند طريق رئيسي (تقاطع على شكل حرف T)، ماذا تفعل؟",
+   "options": [
+    "لك الأولوية لأنك وصلت إلى التقاطع أولا",
+    "تعطي الأولوية لمن على الطريق الرئيسي من الاتجاهين",
+    "تعطي الأولوية فقط لمن يأتي من جهة يمينك",
+    "تدخل مباشرة إذا أعطيت الإشارة مبكرا"
+   ],
+   "answer": 1,
+   "explain": "في التقاطع على شكل T يعطي القادم من الطريق المنتهي الأولوية للمركبات العابرة على الطريق الآخر",
+   "src": [
+    "S6",
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-priority-007",
+   "topic": "priority",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تريد الانعطاف يسارا عند تقاطع، ومركبة قادمة من الاتجاه المقابل تسير إلى الأمام، ما الصحيح؟",
+   "options": [
+    "تنعطف بسرعة قبل أن تصل إلى التقاطع",
+    "تنتظر حتى تمر المركبة المقابلة ثم تنعطف",
+    "المركبة المقابلة تتوقف لك لأنك تنعطف",
+    "تنعطف قبلها لأنك أعطيت الإشارة أولا"
+   ],
+   "answer": 1,
+   "explain": "من ينعطف يسارا يترك المركبات القادمة من الاتجاه المقابل تمر أولا",
+   "src": [
+    "S3",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-priority-008",
+   "topic": "priority",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تخرج من موقف سيارات أو من طريق خاص إلى الطريق العام، من له الأولوية؟",
+   "options": [
+    "المركبة الأصغر حجما لأنها أسرع حركة",
+    "من يصل إلى نقطة الالتقاء قبل الآخر",
+    "أنت، لأنك أعطيت الإشارة قبل الخروج",
+    "كل المركبات التي تسير على الطريق العام"
+   ],
+   "answer": 3,
+   "explain": "عند دخولك مجرى السير من موقف أو طريق خاص تعطي الأولوية لكل المركبات، وتدخل فقط عندما يكون ذلك آمنا",
+   "src": [
+    "S6",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-priority-009",
+   "topic": "priority",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تريد الالتفاف للخلف في مكان مسموح فيه، ما الذي عليك؟",
+   "options": [
+    "لك الأولوية لأنك في المسار المخصص للالتفاف",
+    "تلتف بسرعة قبل أن تصل المركبات القادمة",
+    "تعطي الأولوية لكل المركبات والمشاة قبل أن تلتف",
+    "تستخدم المنبه لتنبيه الآخرين ثم تلتف"
+   ],
+   "answer": 2,
+   "explain": "من يلتف للخلف يعطي الأولوية لأي مركبة أو مشاة على الطريق",
+   "src": [
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-priority-010",
+   "topic": "priority",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "لديك الأولوية في تقاطع، لكن سائقا آخر دخل أمامك خطأ، ماذا تفعل؟",
+   "options": [
+    "تخفف أو تتوقف لتتجنب الحادث",
+    "تستمر لأن الأولوية لك بحكم القانون",
+    "تستخدم المنبه وتستمر دون أن تخفف",
+    "تسرع لتمنعه من إكمال دخوله أمامك"
+   ],
+   "answer": 0,
+   "explain": "اللائحة تطلب من صاحب الأولوية ألا يتمسك بها، وأن يتوقف إذا كان ذلك يمنع ارتباكا أو حادثا",
+   "tip": "الحق معك، بس الحق ما بيصلحلك السيارة",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-priority-011",
+   "topic": "priority",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أي هذه المركبات لها أولوية المرور بحكم القانون؟",
+   "options": [
+    "حافلة سياحية تحمل عددا كبيرا من الركاب",
+    "مركبة شرطة تستخدم أصوات وأضواء التحذير",
+    "شاحنة نقل ثقيلة لأنها صعبة التوقف",
+    "سيارة أجرة تحمل ركابا مستعجلين"
+   ],
+   "answer": 1,
+   "explain": "القانون يعطي الأولوية لمركبات محددة، منها مركبات الشرطة عند استخدامها أصوات وأضواء التحذير",
+   "src": [
+    "S1",
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-priority-012",
+   "topic": "priority",
+   "level": 5,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "حسب المادة 6 من قانون السير الجديد، أي مركبات تأتي أولا في ترتيب أولوية المرور؟",
+   "options": [
+    "مركبات النقل الثقيل",
+    "المواكب الرسمية",
+    "الحافلات المدرسية",
+    "مركبات الشرطة"
+   ],
+   "answer": 1,
+   "explain": "الترتيب: المواكب الرسمية، ثم الدفاع المدني أثناء الواجب، ثم الإسعاف أثناء مهامه، ثم القوافل العسكرية، ثم الشرطة عند استخدام التحذير، ثم مركبات الخدمات الضرورية",
+   "src": [
+    "S1",
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-priority-013",
+   "topic": "priority",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "الإشارة الضوئية خضراء (دائرة وليست سهما) وتريد الانعطاف يسارا، ما الصحيح؟",
+   "options": [
+    "تنعطف قبل أن تتحرك المركبات المقابلة",
+    "تنعطف فورا لأن الأخضر يعطيك أولوية كاملة",
+    "تنتظر حتى يصبح الضوء أحمر ثم تنعطف",
+    "تنعطف بعد أن يمر المقابلون ويعبر المشاة"
+   ],
+   "answer": 3,
+   "explain": "الضوء الأخضر يسمح لك بالحركة، لكن عند الانعطاف يسارا تترك المقابل يمر أولا وتعطي المشاة حقهم",
+   "src": [
+    "S3",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-priority-014",
+   "topic": "priority",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "عند تقاطع تنظمه إشارات ضوئية تعمل، ما الذي يحدد من يمر؟",
+   "options": [
+    "قاعدة القادم من اليسار",
+    "الإشارات الضوئية",
+    "من يصل إلى التقاطع أولا",
+    "حجم المركبة"
+   ],
+   "answer": 1,
+   "explain": "عندما تعمل الإشارات الضوئية فهي التي تنظم الحركة، أما قاعدة اليسار فللتقاطعات غير المنظمة بين طرق متساوية",
+   "src": [
+    "S6",
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-priority-015",
+   "topic": "priority",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تقاطع بلا لوحات ولا إشارات: أنت على الطريق الرئيسي وتريد الانعطاف يسارا إلى طريق فرعي، ومركبة قادمة من الاتجاه المقابل تسير إلى الأمام، من يمر أولا؟",
+   "options": [
+    "من يصل إلى وسط التقاطع أولا",
+    "أنت، لأنك على الطريق الرئيسي",
+    "أنت، لأن المركبة المقابلة على يمينك",
+    "المركبة المقابلة، لأنك تنعطف يسارا"
+   ],
+   "answer": 3,
+   "explain": "الطريق الرئيسي يعطيك أولوية على القادمين من الفرعي، لكن عند الانعطاف يسارا تترك المركبات المقابلة تمر أولا",
+   "src": [
+    "S3",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-priority-016",
+   "topic": "priority",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أنت على طريق فرعي وتريد الدخول إلى طريق رئيسي بلا لوحات، ومركبة على الرئيسي قادمة من يمينك، من يمر أولا؟",
+   "options": [
+    "أنت، لأنك وصلت إلى التقاطع أولا",
+    "المركبة التي على الطريق الرئيسي",
+    "أنت، لأن المركبة قادمة من يمينك",
+    "من يعطي إشارة الانعطاف أولا"
+   ],
+   "answer": 1,
+   "explain": "قاعدة القادم من اليسار تطبق فقط إذا تساوت الطرق، أما الطريق الرئيسي فله الأولوية على الفرعي",
+   "tip": "رئيسي وفرعي؟ الرئيسي أول، وبس لما تتساوى الطرق بتصير القصة يسار",
+   "src": [
+    "S1",
+    "S2",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-priority-017",
+   "topic": "priority",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما الفرق بين لوحة «قف» ولوحة «أفسح الطريق»؟",
+   "options": [
+    "لا فرق بينهما، كلتاهما تعني التوقف التام",
+    "«قف» للشاحنات فقط و«أفسح الطريق» للسيارات",
+    "«قف» تلزمك بالتوقف التام دائما، و«أفسح الطريق» فقط إذا لزم",
+    "«أفسح الطريق» تلزمك بالتوقف التام دائما و«قف» لا"
+   ],
+   "answer": 2,
+   "explain": "كلتاهما تلزمك بإعطاء الأولوية، لكن «قف» تضيف التوقف التام عند الخط حتى لو كان الطريق خاليا",
+   "src": [
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-priority-018",
+   "topic": "priority",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تريد الخروج من محطة وقود إلى الطريق، ماذا تفعل؟",
+   "options": [
+    "تتقدم ببطء إلى منتصف المسار حتى يفسحوا لك",
+    "تستخدم المنبه لتنبيه المركبات ثم تدخل",
+    "تدخل مباشرة لأن مخرج المحطة مخرج رسمي",
+    "تعطي الإشارة وتنتظر فجوة آمنة ثم تدخل"
+   ],
+   "answer": 3,
+   "explain": "الداخل إلى الطريق من محطة أو موقف يعطي الأولوية لكل المركبات، ولا يدخل إلا إذا كان ذلك آمنا دون أن يجبر أحدا على الفرملة",
+   "src": [
+    "S6",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-priority-019",
+   "topic": "priority",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما معنى أولوية المرور؟",
+   "options": [
+    "حق مركبة أو مشاة في المرور أولا",
+    "حق من يستخدم المنبه أولا عند التقاطع",
+    "حق السائق الأكبر سنا أو الأقدم رخصة",
+    "حق السائق الأسرع في التقدم على غيره"
+   ],
+   "answer": 0,
+   "explain": "أولوية المرور تحدد من يمر أولا ومن ينتظر، وتحددها اللوحات والإشارات والقانون",
+   "src": [
+    "S1",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-priority-020",
+   "topic": "priority",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "عند تقاطع بإشارات ضوئية، الضوء أخضر لك وتريد السير إلى الأمام، لكن مشاة ما زالوا يعبرون أمامك، ماذا تفعل؟",
+   "options": [
+    "تتحرك لأن الضوء أخضر لك وليس لهم",
+    "تمر خلفهم بسرعة قبل أن يتغير الضوء",
+    "تستخدم المنبه لإبعادهم عن طريقك",
+    "تنتظر حتى يكمل المشاة العبور ثم تتحرك"
+   ],
+   "answer": 3,
+   "explain": "الضوء الأخضر لا يلغي حق المشاة الذين بدؤوا العبور، انتظر حتى يكملوا",
+   "src": [
+    "S1",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-lanes-001",
+   "topic": "lanes",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "على أي جانب من الطريق تسير المركبات في الإمارات؟",
+   "options": [
+    "الجانب الأيمن",
+    "حسب الازدحام",
+    "الجانب الأيسر",
+    "منتصف الطريق"
+   ],
+   "answer": 0,
+   "explain": "السير في الإمارات على الجانب الأيمن، واللائحة تطلب الالتزام بأقصى اليمين",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-lanes-002",
+   "topic": "lanes",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في طريق متعدد المسارات، ما استخدام المسار الأيسر (السريع)؟",
+   "options": [
+    "للسير الدائم لمن يريد الوصول أسرع",
+    "للتجاوز فقط، ثم تعود إلى اليمين",
+    "للتوقف المؤقت عند التعب أو العطل",
+    "للمركبات الثقيلة لأنها تحتاج مساحة"
+   ],
+   "answer": 1,
+   "explain": "دليل هيئة الطرق: استخدم المسار البطيء ولا تستخدم المسار السريع إلا عند التجاوز",
+   "src": [
+    "S5",
+    "S6",
+    "S9"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-lanes-003",
+   "topic": "lanes",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تسير بسرعة أقل من المركبات حولك على طريق متعدد المسارات، أي مسار تستخدم؟",
+   "options": [
+    "المسار الأوسط دائما",
+    "كتف الطريق",
+    "المسار الأيسر",
+    "المسار الأيمن"
+   ],
+   "answer": 3,
+   "explain": "اللائحة تلزم المركبات البطيئة بأقصى المسار الأيمن",
+   "src": [
+    "S3",
+    "S10"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-lanes-004",
+   "topic": "lanes",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تسير في المسار الأيسر ضمن السرعة المحددة، واقتربت منك مركبة أسرع من الخلف، ماذا تفعل؟",
+   "options": [
+    "تنتقل يمينا بأمان وتفسح لها الطريق",
+    "تبقى في مسارك لأنك ضمن السرعة المحددة",
+    "تخفف فجأة لتنبهها إلى أن تبتعد",
+    "تزيد سرعتك فوق الحد لتبتعد عنها"
+   ],
+   "answer": 0,
+   "explain": "شرطة دبي تطلب إفساح الطريق للمركبة الأسرع حتى لو كنت ضمن السرعة المحددة، فالمسار الأيسر للتجاوز",
+   "src": [
+    "S9",
+    "S10"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-lanes-005",
+   "topic": "lanes",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما الترتيب الصحيح لتغيير المسار؟",
+   "options": [
+    "الإشارة، ثم الانتقال فورا، ثم النظر في المرايا",
+    "المرايا، ثم الإشارة، ثم التفاتة الرأس، ثم الانتقال",
+    "الانتقال أولا، ثم الإشارة، ثم النظر في المرايا",
+    "المرآة الداخلية فقط، ثم الإشارة، ثم الانتقال"
+   ],
+   "answer": 1,
+   "explain": "المرايا تعطيك الصورة، والإشارة تخبر الآخرين، والتفاتة الرأس تكشف النقطة العمياء قبل الحركة",
+   "tip": "مراية، غماز، لفة راس، وبعدين روح",
+   "src": [
+    "S5",
+    "S6",
+    "S11"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-lanes-006",
+   "topic": "lanes",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما النقطة العمياء؟",
+   "options": [
+    "منطقة على الطريق ممنوع الوقوف فيها",
+    "المسافة بين مركبتك والمركبة التي أمامك",
+    "المنطقة أمام المركبة مباشرة في الليل",
+    "منطقة حول المركبة لا تظهر في المرايا"
+   ],
+   "answer": 3,
+   "explain": "المرايا لا تغطي كل ما حولك، لذلك تلتفت برأسك قبل تغيير المسار أو الاندماج أو الخروج من الموقف",
+   "src": [
+    "S5",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-lanes-007",
+   "topic": "lanes",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "هل مسموح عبور خط أبيض متصل لتغيير المسار؟",
+   "options": [
+    "لا، الخط المتصل يمنع العبور",
+    "نعم، إذا أعطيت الإشارة قبل العبور",
+    "نعم، إذا كان المسار المجاور فارغا",
+    "لا، إلا في الليل عندما تكون الحركة خفيفة"
+   ],
+   "answer": 0,
+   "explain": "الخط المتصل يعني ابق في مسارك، وممنوع عبوره أو التجاوز من فوقه إلا في حالة طارئة",
+   "src": [
+    "S11",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-lanes-008",
+   "topic": "lanes",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "لماذا القيادة ببطء في المسار السريع خطيرة؟",
+   "options": [
+    "ليست خطيرة، فالسرعة المنخفضة آمنة دائما",
+    "لأنها تربك كاميرات المراقبة على الطريق فقط",
+    "لأنها تزيد استهلاك الوقود وتلوث الهواء فقط",
+    "لأنها تجبر الآخرين على الفرملة أو تغيير المسار فجأة"
+   ],
+   "answer": 3,
+   "explain": "دليل هيئة الطرق يعتبر البطء في المسار السريع خطيرا مثل السرعة الزائدة",
+   "src": [
+    "S5",
+    "S10"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-lanes-009",
+   "topic": "lanes",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أنهيت تجاوز مركبة وأنت في المسار الأيسر، ماذا تفعل بعد ذلك؟",
+   "options": [
+    "تعود فورا أمام المركبة التي تجاوزتها",
+    "تبقى في المسار الأيسر حتى نهاية الطريق",
+    "تنتقل إلى كتف الطريق لتفسح المسار",
+    "تعود إلى المسار الأيمن عندما يكون آمنا"
+   ],
+   "answer": 3,
+   "explain": "بعد التجاوز تعود إلى اليمين بأمان ومع الإشارة، فالمسار الأيسر ليس للسير الدائم",
+   "src": [
+    "S9",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-lanes-010",
+   "topic": "lanes",
+   "level": 3,
+   "exam": [
+    "dubai"
+   ],
+   "q": "في دبي رأيت مسارا مطليا باللون الأحمر ومخصصا للحافلات، هل تستخدمه بسيارتك الخاصة؟",
+   "options": [
+    "لا، إلا إذا كنت متأخرا عن موعد مهم",
+    "نعم، إذا كان الطريق مزدحما جدا",
+    "نعم، للتجاوز السريع ثم تعود لمسارك",
+    "لا، هو للحافلات وسيارات الأجرة والطوارئ"
+   ],
+   "answer": 3,
+   "explain": "مسارات الحافلات في دبي مخصصة للنقل العام ومركبات الطوارئ، وليست للسيارات الخاصة",
+   "src": [
+    "S6"
+   ],
+   "confidence": "medium",
+   "notes": "المعلومة من دليل هيئة الطرق (طبعة 2012)، راجع اللوحات لأن بعض المسارات لها أوقات تشغيل"
+  },
+  {
+   "id": "rules-lanes-011",
+   "topic": "lanes",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أثناء الازدحام، هل الأفضل التنقل المتكرر بين المسارات للوصول أسرع؟",
+   "options": [
+    "لا، تلتزم بمسارك وتغيره عند الحاجة فقط",
+    "نعم، بشرط أن تعطي الإشارة في كل مرة",
+    "لا، إلا في المسارات الوسطى لأنها أوسع",
+    "نعم، التنقل بين المسارات يقلل الازدحام"
+   ],
+   "answer": 0,
+   "explain": "اللائحة تطلب أن تسير في مسارك، ولا تغيره إلا إذا تأكدت أن التغيير لا يسبب خطرا",
+   "src": [
+    "S3",
+    "S10"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-lanes-012",
+   "topic": "lanes",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تريد الخروج عبر مخرج على اليمين وأنت في المسار الأيسر لطريق متعدد المسارات، ما الصحيح؟",
+   "options": [
+    "تتجاوز المخرج ثم ترجع إليه بالخلف بحذر",
+    "تقطع كل المسارات دفعة واحدة عند المخرج",
+    "تنتقل مسارا بعد مسار مبكرا، مع الإشارة والمرايا",
+    "تتوقف في المسار الأيسر حتى تفرغ المسارات"
+   ],
+   "answer": 2,
+   "explain": "خطط مبكرا وانتقل مسارا بعد مسار، وإذا فاتك المخرج فلا ترجع للخلف بل تابع إلى المخرج التالي",
+   "src": [
+    "S5",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-lanes-013",
+   "topic": "lanes",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في الضباب، ما التصرف الصحيح بخصوص المسار؟",
+   "options": [
+    "تنتقل إلى المسار الأيسر لأن الرؤية فيه أوضح",
+    "تلتزم بمسارك وتتجنب التجاوز وتغيير المسار",
+    "تسير على الخط بين مسارين لترى أفضل",
+    "تغير المسار كثيرا لتبتعد عن المركبات"
+   ],
+   "answer": 1,
+   "explain": "شرطة أبوظبي تنصح في الضباب بالالتزام بالمسار وتجنب التجاوز ومضاعفة مسافة الأمان",
+   "src": [
+    "S22",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-lanes-014",
+   "topic": "lanes",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "لماذا تعطي الإشارة قبل تغيير المسار؟",
+   "options": [
+    "ليست مهمة إذا كان الطريق يبدو فارغا",
+    "لتنبيه المشاة على الرصيف فقط",
+    "لتخبر السائقين حولك بما تنوي فعله",
+    "لأن الإشارة تعطيك الأولوية تلقائيا"
+   ],
+   "answer": 2,
+   "explain": "اللائحة تطلب إظهار نيتك بوضوح وفي وقت كاف قبل تغيير مسارك",
+   "src": [
+    "S3",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-lanes-015",
+   "topic": "lanes",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "على طريق سريع بأربعة مسارات، شاحنة ثقيلة تسير ببطء، أي مسار يناسبها؟",
+   "options": [
+    "المسار الأيمن، فالبطيء يلتزم أقصى اليمين",
+    "أي مسار يريده سائقها ما دام ضمن السرعة",
+    "المسار الأيسر، لتبتعد عن مداخل ومخارج الطريق",
+    "كتف الطريق، لأنها أبطأ من باقي المركبات"
+   ],
+   "answer": 0,
+   "explain": "القاعدة واحدة للجميع: الأبطأ في أقصى اليمين، والأيسر للتجاوز",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-lanes-016",
+   "topic": "lanes",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "بعد أن تعطي إشارة تغيير المسار، هل يعطيك ذلك الحق في الانتقال فورا؟",
+   "options": [
+    "نعم، إذا مرت 3 ثوان على تشغيل الإشارة",
+    "لا، إلا إذا كنت على طريق سريع",
+    "نعم، وعلى الآخرين إفساح المجال لك",
+    "لا، تنتقل فقط عندما يكون الانتقال آمنا"
+   ],
+   "answer": 3,
+   "explain": "الإشارة تخبر الآخرين بنيتك لكنها لا تجبرهم على شيء، والانتقال يكون عندما يكون آمنا",
+   "tip": "الغماز إعلام، مش إذن",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-lanes-017",
+   "topic": "lanes",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في أي مسار تسير عادة إذا كانت حركة المرور خفيفة؟",
+   "options": [
+    "المسار الأوسط دائما",
+    "المسار الأيسر",
+    "كتف الطريق",
+    "المسار الأيمن"
+   ],
+   "answer": 3,
+   "explain": "هيئة الطرق تنصح بالبقاء في أقصى اليمين عندما تكون الحركة خفيفة، واستخدام الأيسر للتجاوز",
+   "src": [
+    "S11",
+    "S6",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-emergency-vehicles-001",
+   "topic": "emergency-vehicles",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "سمعت صفارة سيارة إسعاف أو رأيت أضواءها الوامضة خلفك، ماذا تفعل؟",
+   "options": [
+    "تسرع أمامها حتى تبتعد عن طريقها",
+    "تتجاهلها إذا كانت إشارتك الضوئية خضراء",
+    "تتوقف فورا في مسارك مهما كان مكانك",
+    "تلتزم الجانب الأيمن وتخفف، وتتوقف إذا لزم"
+   ],
+   "answer": 3,
+   "explain": "اللائحة تطلب إفساح الطريق لمركبات الطوارئ فورا بالتزام الجانب الأيمن مع تخفيف السرعة أو التوقف",
+   "src": [
+    "S3",
+    "S5",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-emergency-vehicles-002",
+   "topic": "emergency-vehicles",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "متى تعرف أن مركبة الطوارئ في مهمة وعليك إفساح الطريق لها؟",
+   "options": [
+    "عندما يكون لونها أبيض وعليها شعار",
+    "عندما تعطي إشارة اليمين أو اليسار",
+    "عندما تسير بسرعة أعلى من باقي المركبات",
+    "عندما تشغل الصفارة أو الأضواء الوامضة"
+   ],
+   "answer": 3,
+   "explain": "دليل هيئة الطرق: أفسح الطريق فورا لمركبة الطوارئ التي تشغل الصفارة أو الأضواء الوامضة الحمراء والزرقاء",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-emergency-vehicles-003",
+   "topic": "emergency-vehicles",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "على طريق سريع، أي مسار تستخدمه مركبات الطوارئ عادة؟",
+   "options": [
+    "كتف الطريق الأيمن فقط في كل الأحوال",
+    "المسار الأيسر، فتتحرك أنت إلى اليمين",
+    "المسار الأوسط دائما، فتبتعد عنه",
+    "المسار الأيمن، فتتحرك أنت إلى اليسار"
+   ],
+   "answer": 1,
+   "explain": "شرطة دبي: على الطرق السريعة تحرك إلى اليمين لأن مركبات الطوارئ تستخدم المسار الأيسر",
+   "src": [
+    "S12",
+    "S14"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-emergency-vehicles-004",
+   "topic": "emergency-vehicles",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في طريق داخلي بلا كتف، وصلت خلفك سيارة إسعاف والمسارات مزدحمة، ماذا تفعل؟",
+   "options": [
+    "تتحرك يمينا أو يسارا لتفتح لها ممرا في الوسط",
+    "تتقدم عبر الإشارة الحمراء لتفتح لها الطريق",
+    "تبقى في مكانك حتى تتجاوزك من فوق الرصيف",
+    "تتوقف وتنزل من السيارة لتوجه السائقين"
+   ],
+   "answer": 0,
+   "explain": "في الطرق الداخلية تتحرك المركبات يمينا ويسارا حسب مسارها فتمر مركبة الطوارئ بينها",
+   "src": [
+    "S12",
+    "S14",
+    "S16"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-emergency-vehicles-005",
+   "topic": "emergency-vehicles",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أنت متوقف عند إشارة حمراء وجاءت سيارة إسعاف بصفارتها خلفك، ما التصرف الصحيح؟",
+   "options": [
+    "تستخدم المنبه لتتحرك السيارات التي أمامك",
+    "تقطع الإشارة الحمراء فورا وتدخل التقاطع",
+    "تفسح لها المجال دون أن تقطع الإشارة الحمراء",
+    "تعود للخلف قليلا لتفتح لها الطريق"
+   ],
+   "answer": 2,
+   "explain": "شرطة دبي توجه بإفساح الطريق دون تجاوز الإشارة الحمراء، ومركبة الطوارئ تعبر التقاطع بحذر",
+   "tip": "افسح قد ما فيك، بس لا تفوت عالأحمر",
+   "src": [
+    "S12",
+    "S15",
+    "S13"
+   ],
+   "confidence": "high",
+   "notes": "شرطة الشارقة: يمكن التقدم بحذر إلى منطقة ممر المشاة دون تجاوز الإشارة الحمراء، وشرطة دبي أعلنت في 2019 إعفاء من اضطر لتجاوز الأحمر لإفساح الطريق بعد مراجعة التصوير"
+  },
+  {
+   "id": "rules-emergency-vehicles-006",
+   "topic": "emergency-vehicles",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "الإشارة خضراء لك، وسمعت صفارة مركبة طوارئ تقترب من شارع جانبي نحو التقاطع، ماذا تفعل؟",
+   "options": [
+    "تتوقف ولا تدخل التقاطع حتى تعبر",
+    "تسرع لتعبر التقاطع قبل وصولها",
+    "تدخل التقاطع لأن الإشارة خضراء لك",
+    "تستخدم المنبه لتنبيهها إلى أن الأخضر لك"
+   ],
+   "answer": 0,
+   "explain": "مركبات الطوارئ قد تعبر الإشارة الحمراء بحذر، لذلك توقف واتركها تمر حتى لو كانت إشارتك خضراء",
+   "src": [
+    "S14",
+    "S28"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-emergency-vehicles-007",
+   "topic": "emergency-vehicles",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "هل مسموح أن تسير خلف سيارة الإسعاف مباشرة للاستفادة من الطريق المفتوح؟",
+   "options": [
+    "لا، إلا على الطرق السريعة الواسعة",
+    "نعم، هذا يوصلك أسرع وبأمان",
+    "لا، ممنوع تتبع مركبات الطوارئ",
+    "نعم، إذا تركت مسافة مترين بينكما"
+   ],
+   "answer": 2,
+   "explain": "تتبع مركبة الطوارئ خطر عليك وعليها، وشرطة دبي اعتبرت الانطلاق خلفها سلوكا مخالفا",
+   "src": [
+    "S12",
+    "S13",
+    "S16"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-emergency-vehicles-008",
+   "topic": "emergency-vehicles",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أثناء الازدحام على طريق سريع، أين قد تسير مركبة الطوارئ؟",
+   "options": [
+    "على كتف الطريق إن وجد، لذلك لا تستخدمه أنت",
+    "لا تتحرك أبدا أثناء الازدحام حتى يخف",
+    "في المسار الأيمن دائما، لذلك تنتقل يسارا",
+    "عكس اتجاه السير في الجهة المقابلة"
+   ],
+   "answer": 0,
+   "explain": "شرطة أبوظبي: عند الازدحام تستخدم مركبات الطوارئ كتف الطريق، فلا تسر عليه أبدا",
+   "src": [
+    "S14",
+    "S16"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-emergency-vehicles-009",
+   "topic": "emergency-vehicles",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في طريق بمسار واحد لكل اتجاه، اقتربت منك سيارة إسعاف من الخلف، ماذا تفعل؟",
+   "options": [
+    "تنتقل إلى مسار الاتجاه المعاكس لتفسح لها",
+    "تتحرك إلى أقصى اليمين دون الخروج إلى الكتف",
+    "تسرع حتى تصل إلى أقرب تقاطع ثم تنعطف",
+    "تتوقف في منتصف الطريق حتى تتجاوزك"
+   ],
+   "answer": 1,
+   "explain": "في الطريق بمسار واحد لكل اتجاه يتحرك الجميع يمينا ويخففون أو يتوقفون، فتمر مركبة الطوارئ في الوسط",
+   "src": [
+    "S14",
+    "S28",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-emergency-vehicles-010",
+   "topic": "emergency-vehicles",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "بعد أن تمر مركبة الطوارئ بجانبك، ماذا تفعل؟",
+   "options": [
+    "تلحق بها فورا لأن الطريق أمامها فارغ",
+    "تنظر في المرايا وتعود إلى مسارك بهدوء",
+    "تعود بسرعة إلى مسارك دون النظر في المرايا",
+    "تنتقل إلى المسار الأيسر لتسير خلفها"
+   ],
+   "answer": 1,
+   "explain": "قد تكون خلفها مركبة طوارئ أخرى، فانظر في المرايا وعد بهدوء، وممنوع تتبعها",
+   "src": [
+    "S12",
+    "S13"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-emergency-vehicles-011",
+   "topic": "emergency-vehicles",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تسير في المسار الأوسط لطريق سريع، وجاءت مركبة شرطة بصفارة وأضواء خلفك، والمسار الأيمن بجانبك مشغول، ما الأسلم؟",
+   "options": [
+    "تنتقل إلى المسار الأيسر أمامها لتفسح الأوسط",
+    "تفرمل بقوة في مكانك لتتجاوزك من أي جهة",
+    "تنتقل يمينا فورا حتى لو لامست المركبة بجانبك",
+    "تخفف وتنتقل يمينا بإشارة عندما يصبح ذلك آمنا"
+   ],
+   "answer": 3,
+   "explain": "إفساح الطريق واجب فوري، لكن بحركة آمنة ومحسوبة، فالانتقال المفاجئ قد يسبب حادثا",
+   "src": [
+    "S14",
+    "S12",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-emergency-vehicles-012",
+   "topic": "emergency-vehicles",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "متى تكون لمركبة الشرطة أولوية المرور حسب القانون؟",
+   "options": [
+    "في الليل فقط عندما تقل الرؤية",
+    "على الطرق السريعة فقط دون غيرها",
+    "عندما تستخدم أصوات وأضواء التحذير",
+    "في كل الأوقات حتى لو كانت متوقفة"
+   ],
+   "answer": 2,
+   "explain": "المادة 6 من القانون تعطي الأولوية لمركبات الشرطة عند استعمالها أصوات وأضواء التحذير",
+   "src": [
+    "S1",
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-emergency-vehicles-013",
+   "topic": "emergency-vehicles",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "لماذا يجب أن تفسح الطريق لمركبات الطوارئ بسرعة؟",
+   "options": [
+    "لا يجب إلا إذا كانت خلفك مباشرة",
+    "لأنها أكبر حجما من السيارات الأخرى",
+    "لتتجنب الغرامة فقط، فلا خطر آخر",
+    "لأن كل ثانية قد تنقذ حياة إنسان"
+   ],
+   "answer": 3,
+   "explain": "مركبات الإسعاف والإطفاء والشرطة في سباق مع الوقت، وتأخيرها قد يكلف حياة",
+   "tip": "صوت الصفارة يعني في حدا ناطر هالسيارة",
+   "src": [
+    "S12",
+    "S14"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-emergency-vehicles-014",
+   "topic": "emergency-vehicles",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "على طريق باتجاهين بلا فاصل، ظهرت سيارة إسعاف بصفارتها من الاتجاه المقابل، ماذا تفعل؟",
+   "options": [
+    "تتحرك إلى اليمين وتخفف لتمر في الوسط",
+    "تتوقف في منتصف الطريق حتى تمر",
+    "لا تفعل شيئا لأنها في الاتجاه الآخر",
+    "تتحرك إلى اليسار نحو منتصف الطريق"
+   ],
+   "answer": 0,
+   "explain": "شرطة أبوظبي: في الطريق باتجاهين يتحرك سائقو الاتجاه المقابل أيضا إلى اليمين لتمر مركبة الطوارئ في الوسط",
+   "src": [
+    "S14",
+    "S28"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-emergency-vehicles-015",
+   "topic": "emergency-vehicles",
+   "level": 5,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "حسب ترتيب أولوية المرور في قانون السير الجديد، أي عبارة صحيحة؟",
+   "options": [
+    "مركبات الدفاع المدني أثناء الواجب تأتي قبل مركبات الشرطة",
+    "المركبات العسكرية تأتي قبل سيارات الإسعاف",
+    "مركبات الخدمات الضرورية تأتي قبل الدفاع المدني",
+    "مركبات الشرطة تأتي قبل المواكب الرسمية"
+   ],
+   "answer": 0,
+   "explain": "الترتيب: المواكب الرسمية، الدفاع المدني، الإسعاف، القوافل العسكرية، الشرطة، ثم الخدمات الضرورية",
+   "src": [
+    "S1",
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-emergency-vehicles-016",
+   "topic": "emergency-vehicles",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تسمع صفارة ولا ترى مصدرها، ما التصرف الأسلم؟",
+   "options": [
+    "تزيد السرعة لتبتعد عن مصدر الصوت",
+    "تتوقف فورا في منتصف التقاطع",
+    "تخفف وتنظر حولك لتحدد مكانها وتستعد",
+    "تتجاهلها حتى تراها بعينك بوضوح"
+   ],
+   "answer": 2,
+   "explain": "كن منتبها للصفارات، انظر في المرايا وحولك لتحدد اتجاه المركبة، ثم افسح لها الطريق بأمان",
+   "src": [
+    "S16",
+    "S5"
+   ],
+   "confidence": "medium",
+   "notes": ""
+  },
+  {
+   "id": "rules-emergency-vehicles-017",
+   "topic": "emergency-vehicles",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "هل تفسح الطريق لمركبة طوارئ تشغل الأضواء الوامضة فقط دون صفارة؟",
+   "options": [
+    "لا، إلا إذا أشار لك شرطي بيده",
+    "لا، فقط عندما تسمع الصفارة",
+    "نعم، الأضواء الوامضة وحدها تكفي",
+    "نعم، لكن فقط إذا كانت خلفك مباشرة"
+   ],
+   "answer": 2,
+   "explain": "دليل هيئة الطرق: أفسح الطريق لمركبة الطوارئ التي تشغل الصفارة أو الأضواء الوامضة الحمراء والزرقاء",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-overtaking-001",
+   "topic": "overtaking",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "من أي جهة يكون التجاوز في الإمارات؟",
+   "options": [
+    "من كتف الطريق",
+    "من اليمين",
+    "من أي جهة فارغة",
+    "من اليسار"
+   ],
+   "answer": 3,
+   "explain": "اللائحة تنص على أن يكون تجاوز المركبة من جانبها الأيسر",
+   "src": [
+    "S3",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-overtaking-002",
+   "topic": "overtaking",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "متى مسموح لك تجاوز مركبة من جهتها اليمنى؟",
+   "options": [
+    "إذا أعطت إشارة يسار وتحركت لتنعطف يسارا، والمساحة كافية",
+    "إذا كانت تسير ببطء في المسار الأيسر ولا تفسح لك",
+    "إذا كان كتف الطريق الأيمن فارغا وعريضا",
+    "في أي وقت على الطريق السريع بشرط الإشارة"
+   ],
+   "answer": 0,
+   "explain": "هذا هو الاستثناء الوحيد في اللائحة: مركبة تنعطف يسارا بعد الإشارة، والمساحة تسمح بالمرور دون خطر",
+   "tip": "من اليمين؟ بس إذا اللي قدامك عم يلف يسار",
+   "src": [
+    "S3",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-overtaking-003",
+   "topic": "overtaking",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أين ممنوع التجاوز؟",
+   "options": [
+    "في المنعطفات وعند قمم المرتفعات وقرب ممرات المشاة",
+    "على الطرق المستقيمة الواضحة ذات الرؤية الجيدة",
+    "بعد التقاطعات بمسافة بعيدة على الطرق الخارجية",
+    "في كل الطرق متعددة المسارات دون استثناء"
+   ],
+   "answer": 0,
+   "explain": "اللائحة تمنع التجاوز في المنعطفات والمرتفعات والمنحدرات وقرب ممرات المشاة وفي التقاطعات والدوارات",
+   "src": [
+    "S3",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-overtaking-004",
+   "topic": "overtaking",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "مركبة تحاول تجاوزك، ماذا تفعل؟",
+   "options": [
+    "تخفف قليلا وتلتزم يمين مسارك",
+    "تضغط المنبه باستمرار لتتراجع",
+    "تزيد سرعتك لتمنعها من التجاوز",
+    "تنتقل يسارا لتغلق الطريق عليها"
+   ],
+   "answer": 0,
+   "explain": "اللائحة تطلب من السائق الذي تتجاوزه مركبة أن يخفف سرعته ويلتزم أقصى اليمين",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-overtaking-005",
+   "topic": "overtaking",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "قبل أن تبدأ التجاوز، أي هذه الشروط ضروري؟",
+   "options": [
+    "أن تكون في منعطف لترى المركبات المقابلة",
+    "أن تكون المركبة التي أمامك شاحنة بطيئة",
+    "أن ترى الطريق بوضوح، ولا أحد خلفك بدأ يتجاوزك",
+    "أن يكون الوقت نهارا، فالتجاوز ليلا ممنوع"
+   ],
+   "answer": 2,
+   "explain": "اللائحة تشترط رؤية واضحة وعدم وجود خطر من الاتجاه المقابل وعدم وجود مركبة بدأت تتجاوزك، ومسافة كافية للعودة",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-overtaking-006",
+   "topic": "overtaking",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "هل يجوز التجاوز داخل التقاطعات؟",
+   "options": [
+    "نعم، إذا كان الضوء أخضر لك",
+    "لا، إلا إذا كانت المركبة أمامك بطيئة",
+    "نعم، من اليمين فقط إذا كان فارغا",
+    "لا، التجاوز ممنوع في التقاطعات"
+   ],
+   "answer": 3,
+   "explain": "في التقاطع تتقاطع حركة المركبات والمشاة، لذلك اللائحة تمنع التجاوز في التقاطعات والدوارات والميادين",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-overtaking-007",
+   "topic": "overtaking",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تريد تجاوز دراجة هوائية على طريق داخلي، ما أقل مسافة جانبية تتركها حسب دليل هيئة الطرق؟",
+   "options": [
+    "لا يلزم ترك مسافة إذا كانت سرعتك منخفضة",
+    "متر واحد على الأقل",
+    "نصف متر فقط",
+    "20 سنتيمترا تكفي"
+   ],
+   "answer": 1,
+   "explain": "تجاوز الدراجات الهوائية والنارية فقط إذا استطعت الانتقال يسارا بأمان تاركا مترا واحدا على الأقل",
+   "src": [
+    "S5",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-overtaking-008",
+   "topic": "overtaking",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "هل مسموح التجاوز عبر خط متصل في منتصف الطريق؟",
+   "options": [
+    "لا، الخط المتصل يمنع التجاوز",
+    "لا، إلا في النهار عندما تكون الرؤية جيدة",
+    "نعم، إذا كانت المركبة التي أمامك بطيئة جدا",
+    "نعم، إذا أعطيت الإشارة مبكرا"
+   ],
+   "answer": 0,
+   "explain": "الخط المتصل خط منع تجاوز، ولا تعبره إلا في حالة طارئة",
+   "src": [
+    "S11",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-overtaking-009",
+   "topic": "overtaking",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تسير خلف شاحنة بطيئة على طريق بمسار واحد لكل اتجاه، والطريق أمامك يدخل منعطفا، ما التصرف الصحيح؟",
+   "options": [
+    "تنتظر خلفها حتى مقطع مستقيم واضح",
+    "تتجاوزها من يمينها لأن المنعطف لليسار",
+    "تقترب منها كثيرا لتضغط عليها لتسرع",
+    "تتجاوزها بسرعة قبل أن تصل إلى المنعطف"
+   ],
+   "answer": 0,
+   "explain": "التجاوز ممنوع في المنعطفات وعند ضعف الرؤية، والصبر خلف الشاحنة بمسافة آمنة أسلم",
+   "src": [
+    "S3",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-overtaking-010",
+   "topic": "overtaking",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "على طريق سريع بثلاثة مسارات، مركبة بطيئة في المسار الأيسر لا تفسح لك، هل تتجاوزها من اليمين؟",
+   "options": [
+    "نعم، إذا أعطيت الإشارة قبل الانتقال",
+    "نعم، التجاوز من اليمين مسموح على الطرق السريعة",
+    "لا، لكن تتجاوزها من كتف الطريق الأيمن",
+    "لا، تحافظ على المسافة وتنتظر"
+   ],
+   "answer": 3,
+   "explain": "القاعدة في الإمارات التجاوز من اليسار، وشرطة دبي تحذر من التجاوز من اليمين",
+   "src": [
+    "S3",
+    "S10"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-overtaking-011",
+   "topic": "overtaking",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في الضباب الكثيف، ما الموقف الصحيح من التجاوز؟",
+   "options": [
+    "تتجاوز بشرط تشغيل أضواء التحذير",
+    "تتجاوز بسرعة لتخرج من منطقة الضباب",
+    "تتجنب التجاوز لأن الرؤية غير كافية",
+    "تتجاوز من اليمين لأنه أكثر أمانا في الضباب"
+   ],
+   "answer": 2,
+   "explain": "اللائحة تمنع التجاوز عندما لا تكفي الرؤية، والشرطة تنصح بتجنبه في الضباب",
+   "src": [
+    "S3",
+    "S22",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-overtaking-012",
+   "topic": "overtaking",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أثناء التجاوز، متى تعود أمام المركبة التي تجاوزتها؟",
+   "options": [
+    "فور أن تتجاوز مقدمة سيارتك مقدمتها",
+    "بعد أن تبتعد عنها مسافة كافية، مع الإشارة",
+    "لا تعود أبدا، وتبقى في المسار الأيسر",
+    "تعود أمامها ثم تفرمل قليلا لتنبهها"
+   ],
+   "answer": 1,
+   "explain": "اللائحة تطلب ترك مسافة كافية قبل إكمال التجاوز والعودة إلى المسار، حتى لا تجبرها على الفرملة",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-overtaking-013",
+   "topic": "overtaking",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "هل مسموح التجاوز باستخدام كتف الطريق؟",
+   "options": [
+    "نعم، عند الازدحام الشديد فقط",
+    "لا، كتف الطريق للمعطلين والطوارئ فقط",
+    "لا، إلا إذا كان الكتف عريضا وفارغا",
+    "نعم، في الليل عندما يكون الطريق فارغا"
+   ],
+   "answer": 1,
+   "explain": "شرطة الشارقة تؤكد أن كتف الطريق للمركبات المعطلة وخدمات الطوارئ فقط، والتجاوز منه ممنوع",
+   "src": [
+    "S11",
+    "S14"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-overtaking-014",
+   "topic": "overtaking",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "حافلة مدرسية متوقفة وذراع «قف» مفتوح، والمسار الأيسر بجانبها فارغ، هل تتجاوزها؟",
+   "options": [
+    "لا، إلا إذا لم يظهر أي طفل حولها",
+    "نعم، ببطء شديد من المسار الأيسر",
+    "لا، تتوقف على بعد 5 أمتار على الأقل",
+    "نعم، بعد أن تنبه الطلاب بالمنبه"
+   ],
+   "answer": 2,
+   "explain": "لا تتجاوز حافلة مدرسية متوقفة وذراعها مفتوح حتى لو بدا المسار الآخر فارغا",
+   "src": [
+    "S17",
+    "S18",
+    "S19"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-overtaking-015",
+   "topic": "overtaking",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما أول ما تتأكد منه قبل التجاوز؟",
+   "options": [
+    "أن الطريق أمامك واضح وخال بمسافة كافية",
+    "أن الإشارة الضوئية القادمة خضراء",
+    "أن المسار الأيمن فارغ في حال احتجت إليه",
+    "أن المركبة التي أمامك أبطأ منك بكثير"
+   ],
+   "answer": 0,
+   "explain": "بدون رؤية واضحة وطريق خال أمامك لا تبدأ التجاوز أبدا",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-speed-001",
+   "topic": "speed",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ماذا تعني السرعة المكتوبة على لوحة تحديد السرعة؟",
+   "options": [
+    "أقل سرعة مسموحة على هذا الطريق",
+    "أقصى سرعة في الظروف الجيدة",
+    "السرعة المطلوبة منك في كل الأوقات",
+    "سرعة الشاحنات فقط، والسيارات أسرع"
+   ],
+   "answer": 1,
+   "explain": "دليل هيئة الطرق: لا تتجاوز السرعة القصوى المبينة على اللوحة، مع مراعاة حالة الطريق والطقس والمركبة",
+   "src": [
+    "S5",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-speed-002",
+   "topic": "speed",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أين تخفف سرعتك وجوبا؟",
+   "options": [
+    "قرب المدارس والمستشفيات وممرات المشاة",
+    "عند رؤية كاميرا مراقبة فقط",
+    "على الطرق السريعة الفارغة في الليل",
+    "بعد الخروج من الأحياء السكنية مباشرة"
+   ],
+   "answer": 0,
+   "explain": "القانون واللائحة يطلبان تخفيف السرعة عند المدارس والمستشفيات وممرات المشاة والتقاطعات والمنعطفات",
+   "src": [
+    "S3",
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-speed-003",
+   "topic": "speed",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "على بعض الطرق لوحة حد أدنى للسرعة، ماذا تعني؟",
+   "options": [
+    "ممنوع أن تسير أبطأ منها في الظروف العادية",
+    "هذه السرعة للشاحنات والحافلات فقط",
+    "هي نصيحة فقط، ولا تلزمك بشيء",
+    "هذه أقصى سرعة مسموحة على الطريق"
+   ],
+   "answer": 0,
+   "explain": "اللائحة تمنع القيادة بسرعة أقل من الحد الأدنى المقرر للطريق",
+   "src": [
+    "S3",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-speed-004",
+   "topic": "speed",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تسير في حي سكني ولوحة السرعة 40 كم/ساعة، وأطفال يلعبون قرب الطريق، ما السرعة المناسبة؟",
+   "options": [
+    "60 كم/ساعة لأن الطريق فارغ من المركبات",
+    "40 كم/ساعة بالضبط لأنها المسموحة",
+    "أي سرعة بشرط أن تستخدم المنبه",
+    "أقل من 40 كم/ساعة مع الاستعداد للتوقف"
+   ],
+   "answer": 3,
+   "explain": "الرقم على اللوحة حد أقصى، وقرب الأطفال تخفف أكثر لأن تصرفاتهم مفاجئة",
+   "src": [
+    "S3",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-speed-005",
+   "topic": "speed",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "لماذا تزيد السرعة العالية خطر الحوادث؟",
+   "options": [
+    "لأن مسافة التوقف تطول ووقت التصرف يقل",
+    "لأنها تزيد ضجيج المحرك فقط",
+    "لأنها تستهلك الإطارات بسرعة فقط",
+    "السرعة لا تؤثر إذا كانت المكابح جيدة"
+   ],
+   "answer": 0,
+   "explain": "كلما زادت السرعة احتجت وقتا ومسافة أطول لتتوقف، وقلت فرصتك لتفادي الخطر",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-speed-006",
+   "topic": "speed",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "حسب دليل هيئة الطرق، ما الحدود المعتادة للسرعة على الطرق داخل المدن؟",
+   "options": [
+    "لا توجد حدود داخل المدن أصلا",
+    "40 أو 60 أو 80 كم/ساعة حسب الطريق",
+    "20 كم/ساعة على كل طرق المدن",
+    "120 كم/ساعة على كل طرق المدن"
+   ],
+   "answer": 1,
+   "explain": "الحد يختلف حسب نوع الطريق، والمرجع دائما هو اللوحة المنصوبة",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": "الأرقام من دليل هيئة الطرق (طبعة 2016)، والحد الفعلي هو المكتوب على اللوحة"
+  },
+  {
+   "id": "rules-speed-007",
+   "topic": "speed",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "حسب دليل هيئة الطرق، ما الحدود المعتادة للسرعة على الطرق السريعة؟",
+   "options": [
+    "100 أو 120 كم/ساعة حسب الطريق",
+    "لا يوجد حد على الطرق السريعة",
+    "200 كم/ساعة على كل الطرق السريعة",
+    "60 كم/ساعة فقط على كل الطرق السريعة"
+   ],
+   "answer": 0,
+   "explain": "الطرق السريعة لها حدود أعلى من المدن، لكن اللوحة المنصوبة هي التي تحدد الحد",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": "بعض الطرق في الإمارات لها حدود مختلفة، التزم باللوحة"
+  },
+  {
+   "id": "rules-speed-008",
+   "topic": "speed",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "المطر ينزل والرؤية أقل، والطريق حده 100 كم/ساعة، ما الصحيح؟",
+   "options": [
+    "تلتزم بسرعة 100 كم/ساعة لأنها المسموحة",
+    "تخفف حسب الظروف ولو أقل بكثير من 100",
+    "تزيد السرعة لتخرج من منطقة المطر",
+    "تشغل أضواء التحذير وتحافظ على 100"
+   ],
+   "answer": 1,
+   "explain": "القانون يطلب تخفيف السرعة إذا كانت الرؤية غير واضحة، والحد الأقصى للظروف الجيدة فقط",
+   "src": [
+    "S1",
+    "S5",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-speed-009",
+   "topic": "speed",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "هل القيادة البطيئة جدا مخالفة؟",
+   "options": [
+    "نعم، لكن فقط إذا كانت أقل من 10 كم/ساعة",
+    "لا، المهم فقط ألا تتجاوز الحد الأقصى",
+    "لا، البطء آمن دائما والقانون لا يعاقب عليه",
+    "نعم، إذا كانت أقل من الحد الأدنى أو عرقلت السير"
+   ],
+   "answer": 3,
+   "explain": "اللائحة تمنع السير بأقل من الحد الأدنى، وشرطة دبي تعتبر البطء في المسار السريع خطيرا",
+   "src": [
+    "S3",
+    "S10",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-speed-010",
+   "topic": "speed",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تقترب من منعطف حاد على طريق خارجي حده 100 كم/ساعة، ما الصحيح؟",
+   "options": [
+    "تتجاوز المركبة التي أمامك قبل المنعطف",
+    "تحافظ على 100 كم/ساعة لأنها مسموحة",
+    "تخفف السرعة عند الاقتراب من المنعطف",
+    "تزيد السرعة داخل المنعطف لتثبت السيارة"
+   ],
+   "answer": 2,
+   "explain": "اللائحة تطلب تخفيف السرعة في المنعطفات، فالحد الأقصى لا يعني أن كل مقطع آمن بهذه السرعة",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-speed-011",
+   "topic": "speed",
+   "level": 5,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "حسب جدول دليل هيئة الطرق، إذا ضاعفت سرعتك من 60 إلى 120 كم/ساعة، كم تصبح مسافة التوقف تقريبا؟",
+   "options": [
+    "10 أضعاف (من 33 إلى 330 مترا)",
+    "حوالي 4 أضعاف (من 33 إلى 130 مترا)",
+    "الضعف فقط (من 33 إلى 66 مترا)",
+    "المسافة نفسها تقريبا إذا كانت المكابح جيدة"
+   ],
+   "answer": 1,
+   "explain": "الدليل يعطي 33 مترا عند 60 كم/ساعة و130 مترا عند 120 كم/ساعة في ظروف جيدة",
+   "src": [
+    "S5",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-speed-012",
+   "topic": "speed",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما الذي يحدد السرعة الآمنة إلى جانب لوحة السرعة؟",
+   "options": [
+    "قوة محرك السيارة وجودة مكابحها فقط",
+    "مدة الرحلة والوقت المتبقي للوصول",
+    "الطريق والطقس والرؤية والحركة وحالة المركبة",
+    "سرعة المركبات من حولك فقط"
+   ],
+   "answer": 2,
+   "explain": "اللائحة تطلب أن تناسب سرعتك حالة الطريق والرؤية والطقس والمركبة وكل الظروف المحيطة",
+   "src": [
+    "S5",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-speed-013",
+   "topic": "speed",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "قرب مدخل مدرسة، ماذا يطلب منك القانون؟",
+   "options": [
+    "استخدام المنبه لتنبيه الطلاب مسبقا",
+    "زيادة السرعة لتتفادى ازدحام المدارس",
+    "تخفيف السرعة عند المداخل والمخارج",
+    "التوقف التام حتى لو لم يكن هناك أحد"
+   ],
+   "answer": 2,
+   "explain": "المادة 5 من القانون تلزم السائق بتخفيف السرعة عند مداخل ومخارج المؤسسات التعليمية والصحية",
+   "src": [
+    "S1",
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-speed-014",
+   "topic": "speed",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في حي سكني حده 40 كم/ساعة، رأيت كرة تتدحرج إلى الطريق من بين السيارات المتوقفة، ماذا تتوقع وماذا تفعل؟",
+   "options": [
+    "الكرة ستعيقك، فتنتقل إلى الاتجاه المعاكس",
+    "قد يركض طفل خلفها، فتخفف وتستعد للتوقف",
+    "لا شيء مهم، فتكمل بالسرعة نفسها",
+    "الكرة لا تضر، فتستخدم المنبه وتكمل"
+   ],
+   "answer": 1,
+   "explain": "الأطفال يتصرفون فجأة ويصعب رؤيتهم بين السيارات، والكرة إشارة إلى أن طفلا قد يتبعها",
+   "src": [
+    "S5",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-distance-001",
+   "topic": "distance",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "لماذا تترك مسافة بينك وبين المركبة التي أمامك؟",
+   "options": [
+    "لتستطيع قراءة لوحة أرقامها بوضوح",
+    "لتوفر الوقود بالقيادة الهادئة فقط",
+    "لتستطيع التوقف بأمان إذا فرملت فجأة",
+    "المسافة غير مهمة إذا كانت سرعتك منخفضة"
+   ],
+   "answer": 2,
+   "explain": "اللائحة تطلب ترك مسافة كافية تمكنك من التوقف إذا خففت المركبة التي أمامك سرعتها فجأة",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-distance-002",
+   "topic": "distance",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما أقل مسافة زمنية ينصح بها دليل هيئة الطرق خلف المركبة التي أمامك في الظروف الجيدة؟",
+   "options": [
+    "نصف ثانية تكفي",
+    "لا توجد قاعدة محددة",
+    "ثانية واحدة فقط",
+    "ثانيتان على الأقل"
+   ],
+   "answer": 3,
+   "explain": "في الظروف الجيدة ابق ثانيتين على الأقل خلف المركبة التي أمامك، وزدها في الظروف الصعبة",
+   "tip": "تنتين بالعادي، أربعة بالمطر",
+   "src": [
+    "S5",
+    "S21"
+   ],
+   "confidence": "high",
+   "notes": "بعض مواقع التوعية تنصح بثلاث ثوان، والمعتمد هنا دليل هيئة الطرق"
+  },
+  {
+   "id": "rules-distance-003",
+   "topic": "distance",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "كيف تقيس قاعدة الثانيتين؟",
+   "options": [
+    "تعد من مرور المركبة بعلامة ثابتة حتى تصل أنت إليها",
+    "تعد ثانيتين بعد أن تفرمل المركبة التي أمامك",
+    "تنظر إلى عداد السرعة وتقسمه على اثنين",
+    "تقدر بالعين مسافة طولها سيارتان تقريبا"
+   ],
+   "answer": 0,
+   "explain": "اختر عمودا أو لوحة، فإذا وصلت إليها قبل أن تعد ثانيتين من مرور المركبة التي أمامك بها فأنت قريب جدا",
+   "src": [
+    "S5",
+    "S21"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-distance-004",
+   "topic": "distance",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في المطر، كم ثانية ينصح دليل هيئة الطرق أن تترك خلف المركبة التي أمامك؟",
+   "options": [
+    "ثانيتان كالعادة",
+    "لا تغيير لأن المكابح تعمل جيدا",
+    "ثانية واحدة",
+    "4 ثوان"
+   ],
+   "answer": 3,
+   "explain": "في المطر تطول مسافة التوقف، لذلك يطلب الدليل 4 ثوان بدل ثانيتين",
+   "src": [
+    "S6",
+    "S7"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-distance-005",
+   "topic": "distance",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في الضباب، ماذا تفعل بمسافة الأمان؟",
+   "options": [
+    "تحافظ عليها كما هي في الظروف العادية",
+    "تسير خلف المركبة مباشرة لتتبع أضواءها",
+    "تضاعفها وتخفف السرعة",
+    "تقربها لترى أضواء المركبة التي أمامك"
+   ],
+   "answer": 2,
+   "explain": "شرطة أبوظبي تنصح في الضباب بمضاعفة مسافة الأمان واستخدام الأضواء المنخفضة",
+   "src": [
+    "S22",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-distance-006",
+   "topic": "distance",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "مسافة التوقف الكلية تتكون من ماذا؟",
+   "options": [
+    "طول المركبة مضروبا في سرعتها",
+    "مسافة الكبح فقط بعد الضغط على الفرامل",
+    "المسافة بين العجلات الأمامية والخلفية",
+    "مسافة رد الفعل ومسافة الكبح"
+   ],
+   "answer": 3,
+   "explain": "من لحظة رؤية الخطر تقطع السيارة مسافة قبل أن تضغط المكابح (رد الفعل)، ثم مسافة أخرى حتى تتوقف (الكبح)",
+   "src": [
+    "S5",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-distance-007",
+   "topic": "distance",
+   "level": 5,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "حسب دليل هيئة الطرق، كم مترا تقريبا تحتاج السيارة لتتوقف كليا من سرعة 100 كم/ساعة في ظروف جيدة؟",
+   "options": [
+    "300 متر",
+    "40 مترا",
+    "20 مترا",
+    "87 مترا"
+   ],
+   "answer": 3,
+   "explain": "جدول الدليل: 33 مترا عند 60 كم/ساعة، و87 مترا عند 100 كم/ساعة، و130 مترا عند 120 كم/ساعة",
+   "src": [
+    "S5",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-distance-008",
+   "topic": "distance",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تسير خلف شاحنة كبيرة، لماذا تزيد المسافة بينك وبينها؟",
+   "options": [
+    "لأن خلفها منطقة عمياء لا يراك فيها سائقها",
+    "لتتجنب رائحة العادم والغبار فقط",
+    "لتستطيع تجاوزها من اليمين بسهولة",
+    "لا داعي لذلك لأن الشاحنات بطيئة دائما"
+   ],
+   "answer": 0,
+   "explain": "دليل هيئة الطرق: خلف الشاحنة لمسافة طويلة منطقة عمياء، وإذا لم تر وجه سائقها في مرآتها فهو لا يراك",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-distance-009",
+   "topic": "distance",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أي هذه العوامل يطيل مسافة التوقف؟",
+   "options": [
+    "الطقس الصافي والطريق الجاف الجديد",
+    "الطريق المبتل والإطارات الممسوحة والتعب",
+    "تركيب إطارات جديدة ذات نقشة عميقة",
+    "القيادة في النهار بدلا من الليل"
+   ],
+   "answer": 1,
+   "explain": "كل ما يؤخر رد فعلك أو يقلل تماسك الإطارات يطيل المسافة التي تحتاجها لتتوقف، وكذلك السرعة العالية",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-distance-010",
+   "topic": "distance",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما المقصود بالالتصاق بالمركبة التي أمامك؟",
+   "options": [
+    "الوقوف بجانبها في الموقف",
+    "السير بمحاذاتها في مسار مختلف",
+    "القيادة قريبا جدا خلفها",
+    "تجاوزها من اليسار ثم العودة أمامها"
+   ],
+   "answer": 2,
+   "explain": "الالتصاق يعني أنك دون مسافة أمان كافية، فلن تستطيع التوقف في الوقت المناسب إذا فرملت المركبة التي أمامك",
+   "src": [
+    "S21",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-distance-011",
+   "topic": "distance",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "مركبة خلفك تلتصق بك على طريق سريع وأنت في المسار الأيسر، ما الأسلم؟",
+   "options": [
+    "تفرمل فجأة لتعاقبها على الالتصاق",
+    "تنتقل يمينا بأمان وتتركها تمر",
+    "تبقى في مسارك وتبطئ تدريجيا لتضايقها",
+    "تزيد سرعتك فوق الحد لتبتعد عنها"
+   ],
+   "answer": 1,
+   "explain": "المسار الأيسر للتجاوز، وإفساح الطريق للأسرع يمنع الخطر، والفرملة المفاجئة قد تسبب اصطداما",
+   "src": [
+    "S9",
+    "S10"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-distance-012",
+   "topic": "distance",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "على طريق غير معبد (ترابي)، ماذا تفعل بمسافة الأمان؟",
+   "options": [
+    "تبقيها ثانيتين كالعادة",
+    "تقللها لأن السرعة أقل",
+    "تزيدها عن ثانيتين",
+    "لا تحتاج مسافة على الطرق الترابية"
+   ],
+   "answer": 2,
+   "explain": "دليل هيئة الطرق: تحتاج أكثر من ثانيتين عندما تكون الرؤية ضعيفة أو الطريق مبتلا أو زلقا أو غير معبد",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-distance-013",
+   "topic": "distance",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تقود في المطر، والمركبة أمامك مرت بعلامة ثابتة، فعددت ثانيتين فقط حتى وصلت أنت إليها، ما الصحيح؟",
+   "options": [
+    "المسافة ممتازة لأنها ثانيتان كاملتان",
+    "المسافة قليلة، فتخفف حتى تصبح 4 ثوان",
+    "تقترب أكثر لترى أضواءها في المطر",
+    "تتجاوزها فورا لتبتعد عن رذاذ إطاراتها"
+   ],
+   "answer": 1,
+   "explain": "الثانيتان للظروف الجيدة فقط، وفي المطر يطلب الدليل 4 ثوان",
+   "src": [
+    "S6",
+    "S7",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-distance-014",
+   "topic": "distance",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما خطر الاقتراب الشديد من المركبة التي أمامك؟",
+   "options": [
+    "لا خطر إذا كنت منتبها للطريق جيدا",
+    "يزيد استهلاك الوقود فقط لا أكثر",
+    "لن تستطيع التوقف في الوقت المناسب إذا فرملت",
+    "يضايق السائق الذي أمامك فقط"
+   ],
+   "answer": 2,
+   "explain": "الانتباه وحده لا يكفي، فأنت تحتاج وقتا لرد الفعل ومسافة للكبح، وإلا اصطدمت بها من الخلف",
+   "src": [
+    "S3",
+    "S21"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-distance-015",
+   "topic": "distance",
+   "level": 5,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "حسب دليل هيئة الطرق، كم مترا تقريبا تحتاج لتتوقف من سرعة 120 كم/ساعة في ظروف جيدة؟",
+   "options": [
+    "60 مترا",
+    "130 مترا",
+    "250 مترا",
+    "33 مترا"
+   ],
+   "answer": 1,
+   "explain": "عند 120 كم/ساعة تحتاج حوالي 130 مترا لتتوقف كليا في ظروف جيدة، وأكثر في المطر",
+   "src": [
+    "S5",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-turning-001",
+   "topic": "turning",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "متى تعطي إشارة الانعطاف؟",
+   "options": [
+    "أثناء الانعطاف فقط",
+    "بعد أن تنتهي من الانعطاف",
+    "قبل الانعطاف بوقت كاف",
+    "فقط إذا كانت هناك مركبات خلفك"
+   ],
+   "answer": 2,
+   "explain": "اللائحة تطلب إظهار نيتك بوضوح وفي وقت كاف قبل تغيير الاتجاه أو المسار",
+   "src": [
+    "S3",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-turning-002",
+   "topic": "turning",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تريد الانعطاف يمينا في تقاطع، أين تضع مركبتك قبل الانعطاف؟",
+   "options": [
+    "أقرب ما يمكن إلى الجهة اليمنى",
+    "في المسار الأيسر لتنعطف بزاوية واسعة",
+    "على كتف الطريق الأيمن",
+    "في منتصف الطريق لترى الجهتين"
+   ],
+   "answer": 0,
+   "explain": "للانعطاف يمينا تقترب قدر الإمكان من الحافة اليمنى للطريق وتلتزم يمين مسارك",
+   "src": [
+    "S3",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-turning-003",
+   "topic": "turning",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تريد الانعطاف يسارا من طريق باتجاهين، أين تضع مركبتك؟",
+   "options": [
+    "على الجهة اليمنى من الطريق",
+    "في مسار الاتجاه المعاكس قبل التقاطع",
+    "على كتف الطريق حتى يخلو الطريق",
+    "قرب منتصف الطريق، يمين الخط الأوسط"
+   ],
+   "answer": 3,
+   "explain": "في الطريق باتجاهين تقترب من منتصف الطريق مع الإشارة، دون أن تدخل مسار الاتجاه المعاكس",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-turning-004",
+   "topic": "turning",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تريد الانعطاف يسارا من طريق باتجاه واحد (كل المسارات في اتجاهك)، أين تضع مركبتك؟",
+   "options": [
+    "في المسار الأوسط",
+    "في أي مسار ما دام فارغا",
+    "في أقصى اليمين",
+    "في أقصى اليسار"
+   ],
+   "answer": 3,
+   "explain": "اللائحة: في الطريق ذي الاتجاه الواحد تقترب من أقصى اليسار عندما تريد الانعطاف يسارا",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-turning-005",
+   "topic": "turning",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أين ممنوع الالتفاف للخلف؟",
+   "options": [
+    "عند خط متصل أو لوحة تمنع الالتفاف",
+    "في أي تقاطع فيه إشارات ضوئية",
+    "في الليل فقط لقلة الرؤية",
+    "في كل الطرق ذات الاتجاهين"
+   ],
+   "answer": 0,
+   "explain": "دليل هيئة الطرق: لا تلتف على خط متصل أو عند وجود لوحة تمنع الالتفاف",
+   "src": [
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-turning-006",
+   "topic": "turning",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تريد الالتفاف للخلف عند تقاطع، من أي مسار تبدأ؟",
+   "options": [
+    "من المسار الأيمن لأنه أوسع للدوران",
+    "من المسار الأيسر أو مسار الالتفاف",
+    "من كتف الطريق حتى لا تعطل أحدا",
+    "من المسار الأوسط لتترك مساحة للجانبين"
+   ],
+   "answer": 1,
+   "explain": "الالتفاف للخلف انعطاف كامل نحو اليسار، فتبدأ من أقصى اليسار أو من المسار المخصص له",
+   "src": [
+    "S3",
+    "S6"
+   ],
+   "confidence": "medium",
+   "notes": "مستنتج من قاعدة الانعطاف يسارا في اللائحة، ولم نجد نصا صريحا عن مسار الالتفاف"
+  },
+  {
+   "id": "rules-turning-007",
+   "topic": "turning",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في الإشارة الضوئية سهم أخضر نحو اليمين، ماذا يعني؟",
+   "options": [
+    "ممنوع الانعطاف يمينا حتى يتغير السهم",
+    "تستطيع الانعطاف يمينا إذا كان آمنا",
+    "يجب أن تسير إلى الأمام فقط",
+    "يجب أن تتوقف وتنتظر الضوء الأخضر الكامل"
+   ],
+   "answer": 1,
+   "explain": "السهم الأخضر يسمح بالحركة في اتجاهه، بشرط أن يكون الطريق آمنا",
+   "src": [
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-turning-008",
+   "topic": "turning",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تنعطف يمينا إلى شارع جانبي ومشاة يعبرون ذلك الشارع، ماذا تفعل؟",
+   "options": [
+    "تنعطف ببطء وتمر بينهم بحذر",
+    "تمر أمامهم لأنك بدأت الانعطاف أولا",
+    "تخفف وتتوقف حتى يكمل المشاة العبور",
+    "تستخدم المنبه ليبتعدوا عن طريقك"
+   ],
+   "answer": 2,
+   "explain": "اللائحة: عند تغيير الاتجاه لدخول طريق آخر تخفف السرعة وتتوقف حتى يعبر المشاة الذين بدؤوا العبور",
+   "src": [
+    "S3",
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-turning-009",
+   "topic": "turning",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "قبل الانعطاف يمينا في شارع داخلي، دراجة نارية للتوصيل تسير على يمينك، ما التصرف الصحيح؟",
+   "options": [
+    "تستخدم المنبه لتتوقف ثم تنعطف",
+    "تنعطف بسرعة أمامها لأنك أعطيت الإشارة",
+    "تنعطف ببطء لتجبرها على التوقف خلفك",
+    "تتأكد منها بالمرآة والتفاتة الرأس وتتركها تمر"
+   ],
+   "answer": 3,
+   "explain": "الدراجات صغيرة ويصعب رؤيتها، والإشارة لا تعطيك حق قطع طريقها",
+   "src": [
+    "S5",
+    "S3"
+   ],
+   "confidence": "medium",
+   "notes": ""
+  },
+  {
+   "id": "rules-turning-010",
+   "topic": "turning",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "شاحنة طويلة أمامك تعطي إشارة يمين، لكنها تتحرك قليلا إلى اليسار أولا، لماذا؟",
+   "options": [
+    "لأن سائقها أخطأ ويريد الانعطاف يسارا",
+    "لأنها تحتاج مساحة أكبر للانعطاف",
+    "لأنها ستتوقف على الجهة اليسرى",
+    "لتسمح لك بتجاوزها من يمينها"
+   ],
+   "answer": 1,
+   "explain": "دليل هيئة الطرق: الشاحنة أو الحافلة تحتاج مساحة أكبر للانعطاف وقد تأخذ أكثر من مسار، فلا تدخل بجانبها",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-turning-011",
+   "topic": "turning",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "هل مسموح الرجوع للخلف على الطريق؟",
+   "options": [
+    "عند الضرورة فقط، ودون عرقلة أو خطر",
+    "لا، ممنوع تماما حتى في مواقف السيارات",
+    "نعم، في أي وقت إذا كنت بطيئا",
+    "نعم، على الطريق السريع إذا فاتك المخرج"
+   ],
+   "answer": 0,
+   "explain": "اللائحة تسمح بالرجوع للخلف عند الضرورة فقط مع الإشارة المناسبة، ودليل هيئة الطرق يمنع الرجوع إذا فاتك مخرج على الطريق السريع",
+   "src": [
+    "S3",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-turning-012",
+   "topic": "turning",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "لماذا تعطي الإشارة قبل الانعطاف حتى لو ظننت أن الطريق خال؟",
+   "options": [
+    "لأن هناك من قد لا تراه في النقطة العمياء",
+    "لأنها تسجل انعطافك في الكاميرات",
+    "لا داعي لها إذا كان الطريق خاليا",
+    "لأنها تعطيك الأولوية على الآخرين"
+   ],
+   "answer": 0,
+   "explain": "الإشارة تحمي الآخرين الذين ربما لم ترهم، مثل الدراجات والمشاة، واللائحة تطلبها في كل تغيير اتجاه",
+   "src": [
+    "S3",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-turning-013",
+   "topic": "turning",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تريد الالتفاف للخلف عند إشارة ضوئية خضراء، ومشاة يعبرون الطريق الذي ستدخله، ماذا تفعل؟",
+   "options": [
+    "تستخدم المنبه ليسرعوا في العبور",
+    "تلتف لأن الضوء أخضر لك",
+    "تنتظر حتى يعبر المشاة، ثم تلتف",
+    "تلتف بسرعة قبل أن يصلوا إلى منتصفه"
+   ],
+   "answer": 2,
+   "explain": "من يلتف للخلف يعطي الأولوية لكل المركبات والمشاة، حتى عند الضوء الأخضر",
+   "src": [
+    "S6",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-turning-014",
+   "topic": "turning",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "عند الانعطاف يسارا في تقاطع، كيف تسير داخل التقاطع؟",
+   "options": [
+    "تتوقف في منتصف التقاطع ثم تنعطف",
+    "تنعطف واسعا من أقصى اليمين",
+    "تقطع الزاوية من أقصى اليسار مبكرا",
+    "قريبا من يسار منتصف التقاطع"
+   ],
+   "answer": 3,
+   "explain": "دليل هيئة الطرق: عندما يكون الطريق خاليا انعطف قريبا من يسار وسط التقاطع، لتدخل الطريق الجديد في المسار الصحيح",
+   "src": [
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-turning-015",
+   "topic": "turning",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "عند الانعطاف يمينا، ماذا تفعل بسرعتك؟",
+   "options": [
+    "تخففها قبل الانعطاف",
+    "تبقيها كما هي ما دامت ضمن الحد",
+    "تزيدها لتنهي الانعطاف بسرعة",
+    "تفرمل بقوة داخل المنعطف"
+   ],
+   "answer": 0,
+   "explain": "اللائحة تطلب تخفيف السرعة عند تغيير الاتجاه لدخول طريق آخر، حماية للمشاة ولثبات المركبة",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-highway-001",
+   "topic": "highway",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "فاتك المخرج الذي تريده على طريق سريع، ماذا تفعل؟",
+   "options": [
+    "ترجع للخلف على كتف الطريق إلى المخرج",
+    "تكمل السير وتخرج من المخرج التالي",
+    "تتوقف وتنتظر حتى يخلو الطريق ثم ترجع",
+    "تعبر الخطوط المائلة لتلحق بالمخرج"
+   ],
+   "answer": 1,
+   "explain": "دليل هيئة الطرق: إذا فاتك المخرج لا ترجع للخلف أبدا، تابع وخذ المخرج التالي",
+   "tip": "فاتك المخرج؟ المخرج الجاي صاحبك",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-highway-002",
+   "topic": "highway",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "عند الدخول إلى طريق سريع من مسار الدخول (التسارع)، ماذا تفعل؟",
+   "options": [
+    "تدخل ببطء شديد ليتوقف الآخرون لك",
+    "تزيد سرعتك لتقارب سرعة الطريق ثم تندمج",
+    "تدخل مباشرة إلى المسار الأيسر السريع",
+    "تتوقف في بداية مسار الدخول دائما"
+   ],
+   "answer": 1,
+   "explain": "ابدأ التسارع مبكرا على مسار الدخول لتصل إلى سرعة قريبة من سرعة المركبات، واندمج في فجوة آمنة دون إرباك",
+   "src": [
+    "S5",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-highway-003",
+   "topic": "highway",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "عند الخروج من طريق سريع، ماذا تفعل؟",
+   "options": [
+    "تخفف بقوة في المسار الرئيسي قبل المخرج",
+    "تخرج دون إشارة لأن الجميع يعرف المخرج",
+    "تدخل مسار الخروج من نهايته عبر الخطوط",
+    "تعطي الإشارة وتدخل مسار الخروج من بدايته"
+   ],
+   "answer": 3,
+   "explain": "دليل هيئة الطرق: أعط الإشارة، وادخل مسار الخروج مبكرا من بدايته، وخفف سرعتك وأنت داخله",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-highway-004",
+   "topic": "highway",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "متى تستخدم كتف الطريق السريع؟",
+   "options": [
+    "للتوقف قليلا والتصوير أو الاتصال",
+    "للسير ببطء عندما تشعر بالتعب",
+    "عند التعطل أو في حالة طارئة فقط",
+    "للتجاوز عندما يكون الازدحام شديدا"
+   ],
+   "answer": 2,
+   "explain": "كتف الطريق للمركبات المعطلة وخدمات الطوارئ، والسير أو التجاوز عليه ممنوع",
+   "src": [
+    "S11",
+    "S14",
+    "S16"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-highway-005",
+   "topic": "highway",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "هل مسموح عبور الخطوط المائلة (المنطقة المخططة) بين الطريق السريع ومسار الخروج؟",
+   "options": [
+    "لا، إلا في الليل عندما يكون الطريق فارغا",
+    "نعم، إذا كنت متأخرا على المخرج",
+    "لا، تدخل مسار الخروج من بدايته",
+    "نعم، إذا أعطيت الإشارة قبل العبور"
+   ],
+   "answer": 2,
+   "explain": "الدخول المتأخر عبر الخطوط المائلة يربك الحركة وقد يسبب حادثا",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-highway-006",
+   "topic": "highway",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "على طريق سريع، أين تسير عادة؟",
+   "options": [
+    "في المسار الأيسر دائما لأنه أسرع",
+    "على كتف الطريق الأيمن إذا كنت بطيئا",
+    "في المسارات اليمنى، والأيسر للتجاوز",
+    "على الخط بين مسارين لترى أمامك"
+   ],
+   "answer": 2,
+   "explain": "الطريق السريع ليس استثناء: الزم اليمين واستخدم الأيسر للتجاوز ثم عد",
+   "src": [
+    "S5",
+    "S9",
+    "S10"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-highway-007",
+   "topic": "highway",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أنت على مسار الدخول إلى طريق سريع، والمركبات على الطريق لا تترك فجوة، ما التصرف الصحيح؟",
+   "options": [
+    "تعدل سرعتك وتنتظر فجوة آمنة",
+    "تتوقف ثم ترجع للخلف إلى الطريق الجانبي",
+    "تدخل بالقوة لأن لك حق الاندماج",
+    "تستخدم كتف الطريق لتتجاوزهم ثم تدخل"
+   ],
+   "answer": 0,
+   "explain": "الطريق الرئيسي له الأولوية، ولا تدخل مجرى السير إلا إذا كان ذلك لا يعرض أحدا للخطر",
+   "src": [
+    "S1",
+    "S3",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-highway-008",
+   "topic": "highway",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "على الطريق السريع رأيت لوحة حد أدنى للسرعة 60 كم/ساعة، ماذا تعني؟",
+   "options": [
+    "أقصى سرعة مسموحة 60 كم/ساعة",
+    "السرعة المقترحة للشاحنات فقط",
+    "ممنوع أن تسير أبطأ من 60 كم/ساعة",
+    "بداية منطقة سكنية بعد مسافة قصيرة"
+   ],
+   "answer": 2,
+   "explain": "لوحة الحد الأدنى تمنع البطء الذي يعرقل الحركة ويسبب حوادث على الطرق السريعة في الظروف العادية",
+   "src": [
+    "S3",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-highway-009",
+   "topic": "highway",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "على طريق سريع، المسار الذي أنت فيه ينتهي بعد مسافة، ماذا تفعل؟",
+   "options": [
+    "تتوقف في نهاية المسار حتى يفسح لك أحد",
+    "تسرع حتى نهاية المسار ثم تدخل بالقوة",
+    "تنتقل إلى كتف الطريق وتكمل عليه",
+    "تنتقل إلى المسار المجاور مبكرا عند فجوة آمنة"
+   ],
+   "answer": 3,
+   "explain": "تغيير المسار يكون مبكرا وبأمان: مرايا وإشارة والتفاتة رأس، دون أن تجبر أحدا على الفرملة",
+   "src": [
+    "S3",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-highway-010",
+   "topic": "highway",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "لماذا تبدأ التسارع مبكرا على مسار الدخول إلى الطريق السريع؟",
+   "options": [
+    "لتدخل المسار الأيسر مباشرة دون توقف",
+    "لا داعي للتسارع لأن الآخرين يفسحون لك",
+    "لتندمج بسرعة قريبة من سرعة الطريق دون عرقلة",
+    "لتسبق المركبات التي على الطريق السريع"
+   ],
+   "answer": 2,
+   "explain": "الاندماج بسرعة منخفضة جدا يجبر المركبات على الفرملة ويسبب حوادث من الخلف",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-highway-011",
+   "topic": "highway",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "دخلت طريقا سريعا بالخطأ في اتجاه لا تريده، ما الصحيح؟",
+   "options": [
+    "ترجع للخلف على كتف الطريق بحذر",
+    "تلتف فورا عبر فتحة في الفاصل الأوسط",
+    "تكمل إلى أقرب مخرج ثم تعود من طريق آخر",
+    "تتوقف على الكتف حتى يخف السير ثم ترجع"
+   ],
+   "answer": 2,
+   "explain": "على الطريق السريع لا ترجع للخلف ولا تلتف، تابع إلى المخرج التالي",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-highway-012",
+   "topic": "highway",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "هل مسموح التوقف على كتف الطريق السريع لإجراء مكالمة؟",
+   "options": [
+    "نعم، إذا شغلت أضواء التحذير",
+    "نعم، لمدة لا تزيد على دقيقتين",
+    "لا، الكتف للطوارئ فقط",
+    "لا، إلا في الليل حين تقل الحركة"
+   ],
+   "answer": 2,
+   "explain": "كتف الطريق للطوارئ، والمكالمة تكون بعد الخروج والوقوف في مكان آمن، والوقوف العشوائي الذي يعطل السير ممنوع",
+   "src": [
+    "S11",
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-highway-013",
+   "topic": "highway",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "كيف تستعد لمخرج على طريق سريع لا تعرفه جيدا؟",
+   "options": [
+    "تقطع المسارات في آخر لحظة عند المخرج",
+    "تخفف فجأة أمام المخرج حتى تقرر",
+    "تتوقف على كتف الطريق لتقرأ الخريطة",
+    "تقرأ اللوحات مبكرا وتنتقل إلى المسار المناسب"
+   ],
+   "answer": 3,
+   "explain": "القرار المبكر يمنع الحركات المفاجئة، وإذا فاتك المخرج فالمخرج التالي هو الحل",
+   "src": [
+    "S5"
+   ],
+   "confidence": "medium",
+   "notes": ""
+  },
+  {
+   "id": "rules-highway-014",
+   "topic": "highway",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "على طريق سريع، ازدحام مفاجئ أمامك والمركبات تتوقف، ما الأسلم؟",
+   "options": [
+    "تنتقل إلى كتف الطريق لتتجاوز الازدحام",
+    "تغير المسار باستمرار لتجد الأسرع",
+    "تخفف تدريجيا وتحافظ على مسافة كافية",
+    "تفرمل بقوة في آخر لحظة قبل المركبات"
+   ],
+   "answer": 2,
+   "explain": "المسافة الكافية تعطيك وقتا للتوقف، وانتبه لما خلفك في المرآة، وكتف الطريق للطوارئ فقط",
+   "src": [
+    "S3",
+    "S11"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-pedestrians-001",
+   "topic": "pedestrians",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "مشاة بدؤوا العبور على ممر المشاة أمامك، ماذا يلزمك القانون؟",
+   "options": [
+    "تخفف وتتوقف حتى يكملوا العبور",
+    "تستخدم المنبه لينتظروا حتى تمر",
+    "تمر ببطء أمامهم لأنهم سيتوقفون",
+    "تمر إذا كانوا ما زالوا في الجهة الأخرى"
+   ],
+   "answer": 0,
+   "explain": "المادة 5 من القانون: تخفيف السرعة عند ممر المشاة، والتوقف حتى يعبر المشاة الذين بدؤوا في عبور الطريق",
+   "src": [
+    "S1",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-pedestrians-002",
+   "topic": "pedestrians",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تقترب من ممر مشاة ولا ترى أحدا عليه بعد، ماذا تفعل؟",
+   "options": [
+    "لا تغير شيئا لأن الممر فارغ",
+    "تزيد السرعة لتعبر قبل وصول أحد",
+    "تخفف سرعتك وتستعد للتوقف",
+    "تتوقف دقيقة كاملة في كل مرة"
+   ],
+   "answer": 2,
+   "explain": "القانون يطلب تخفيف السرعة عند ممر المشاة، فقد يظهر أحد فجأة",
+   "src": [
+    "S1",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-pedestrians-003",
+   "topic": "pedestrians",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "هل مسموح الوقوف (الانتظار) فوق ممر المشاة؟",
+   "options": [
+    "نعم، لدقائق قليلة إذا بقيت في السيارة",
+    "لا، ممنوع الوقوف على ممر المشاة",
+    "لا، إلا في الليل عندما لا يوجد مشاة",
+    "نعم، إذا شغلت أضواء التحذير"
+   ],
+   "answer": 1,
+   "explain": "اللائحة تمنع الوقوف في الأماكن المخصصة لعبور المشاة وعلى الأرصفة",
+   "src": [
+    "S3",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-pedestrians-004",
+   "topic": "pedestrians",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "لماذا يحتاج الأطفال قرب الطريق انتباها خاصا؟",
+   "options": [
+    "لأنهم صغار ويتصرفون فجأة دون توقع",
+    "لا يحتاجون انتباها أكثر من غيرهم",
+    "لأنهم يعرفون قواعد المرور أفضل من الكبار",
+    "لأنهم يعبرون ببطء شديد دائما"
+   ],
+   "answer": 0,
+   "explain": "دليل هيئة الطرق: الأطفال صغار الحجم ويصعب رؤيتهم، وكثيرا ما يقومون بأشياء غير متوقعة",
+   "src": [
+    "S5",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-pedestrians-005",
+   "topic": "pedestrians",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "رجل كبير في السن يعبر أمامك، ما الذي تتوقعه؟",
+   "options": [
+    "أن يتوقف فجأة في منتصف الطريق لتمر",
+    "أن يسرع في العبور كلما رآك",
+    "أن يعبر فقط عندما تكون إشارتك حمراء",
+    "أن يتحرك ببطء وقد لا يراك جيدا"
+   ],
+   "answer": 3,
+   "explain": "كبار السن أبطأ حركة وقد لا يرون بوضوح، فأعطهم وقتا كافيا وتعامل معهم بصبر",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-pedestrians-006",
+   "topic": "pedestrians",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "هل مسموح للمشاة عبور طريق تزيد السرعة المقررة عليه على 80 كم/ساعة؟",
+   "options": [
+    "نعم، إذا لم تكن هناك مركبات قريبة",
+    "لا، إلا من الأماكن المخصصة مثل الجسور",
+    "لا، إلا إذا ركضوا بسرعة",
+    "نعم، في الليل عندما يقل السير"
+   ],
+   "answer": 1,
+   "explain": "المادة 7 من القانون تمنع المشاة من عبور الطرق التي تزيد سرعتها المقررة على 80 كم/ساعة، لكن هذا لا يلغي انتباهك كسائق",
+   "src": [
+    "S1",
+    "S27"
+   ],
+   "confidence": "high",
+   "notes": "نص القانون: تزيد على 80، وبعض الصحف كتبت 80 فأكثر"
+  },
+  {
+   "id": "rules-pedestrians-007",
+   "topic": "pedestrians",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تنعطف يسارا عند إشارة خضراء، ومشاة يعبرون الشارع الذي ستدخله، من له الأولوية؟",
+   "options": [
+    "أنت، إذا أعطيت إشارة الانعطاف",
+    "من يصل إلى الممر أولا",
+    "أنت، لأن إشارتك خضراء",
+    "المشاة، فتنتظر حتى يعبروا"
+   ],
+   "answer": 3,
+   "explain": "عند تغيير الاتجاه لدخول طريق آخر تتوقف حتى يعبر المشاة الذين بدؤوا العبور",
+   "src": [
+    "S3",
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-pedestrians-008",
+   "topic": "pedestrians",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "لماذا ممنوع التجاوز قرب ممرات المشاة؟",
+   "options": [
+    "لأن الكاميرات هناك تصور كل تجاوز",
+    "لأن المركبة قد تخفي عنك مشاة يعبرون",
+    "لأن الطريق عند الممر ضيق دائما",
+    "ليس ممنوعا إذا كانت سرعتك منخفضة"
+   ],
+   "answer": 1,
+   "explain": "اللائحة تمنع التجاوز قرب ممرات المشاة، فالمركبة المتوقفة أو البطيئة قد تكون تنتظر مشاة لا تراهم",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-pedestrians-009",
+   "topic": "pedestrians",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في المناطق السكنية والتجارية المزدحمة بالمشاة، ماذا عليك؟",
+   "options": [
+    "تستخدم المنبه باستمرار لتنبيه المشاة",
+    "تسير بأقصى سرعة مسموحة لتخرج بسرعة",
+    "تخفف وتنتبه للمشاة على الطريق وخارجه",
+    "تسير قرب الرصيف لتبتعد عن المركبات"
+   ],
+   "answer": 2,
+   "explain": "اللائحة تطلب تخفيف السرعة عند المرور بالمناطق السكنية وأماكن تجمع المشاة",
+   "src": [
+    "S3",
+    "S26"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-pedestrians-010",
+   "topic": "pedestrians",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "مركبة متوقفة أمام ممر مشاة في المسار المجاور لك، ولا ترى ما أمامها، ماذا تفعل؟",
+   "options": [
+    "تتجاوزها بسرعة قبل أن تتحرك",
+    "تخفف وتستعد للتوقف، فقد يعبر مشاة",
+    "تستخدم المنبه لتتحرك من مكانها",
+    "تكمل لأن مسارك مفتوح وليس مسارها"
+   ],
+   "answer": 1,
+   "explain": "المركبة المتوقفة قد تخفي مشاة يعبرون، والتجاوز قرب ممرات المشاة ممنوع",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-pedestrians-011",
+   "topic": "pedestrians",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تخرج بالخلف من موقف في منطقة سكنية وأطفال يلعبون قريبا، ما التصرف الصحيح؟",
+   "options": [
+    "تستخدم المنبه ثم ترجع دون أن تنظر",
+    "تعتمد على الكاميرا الخلفية وحدها",
+    "تتأكد حول المركبة وترجع ببطء شديد",
+    "ترجع بسرعة لتنتهي قبل أن يقتربوا"
+   ],
+   "answer": 2,
+   "explain": "الأطفال صغار ويصعب رؤيتهم، فانظر بنفسك في المرايا وحولك طوال الرجوع للخلف",
+   "src": [
+    "S5",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-pedestrians-012",
+   "topic": "pedestrians",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أين يعبر المشاة الطريق بأمان عادة؟",
+   "options": [
+    "من ممرات المشاة والجسور والأنفاق",
+    "من بين المركبات المتوقفة على الجانب",
+    "من أي مكان في الطريق إذا كان فارغا",
+    "من داخل الدوارات لأنها أبطأ"
+   ],
+   "answer": 0,
+   "explain": "اللائحة تطلب من المشاة استخدام أقرب ممر مخصص والتزام الإشارات",
+   "src": [
+    "S3",
+    "S27"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-pedestrians-013",
+   "topic": "pedestrians",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "رأيت شخصا يعبر أمامك من مكان غير مخصص للعبور، هل تستمر لأن الخطأ خطؤه؟",
+   "options": [
+    "نعم، الأولوية لك دائما في هذه الحالة",
+    "لا، تخفف وتتوقف إذا لزم",
+    "نعم، بعد أن تنبهه بالمنبه",
+    "لا، إلا إذا كانت سرعتك ضمن الحد"
+   ],
+   "answer": 1,
+   "explain": "خطأ الآخرين لا يبرر الحادث، واللائحة تطلب ألا تتمسك بأولويتك إذا كان ذلك يسبب إصابة",
+   "src": [
+    "S3",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-pedestrians-014",
+   "topic": "pedestrians",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "حافلة ركاب متوقفة في محطتها على يمينك، ما الذي تتوقعه؟",
+   "options": [
+    "لا شيء يستحق الانتباه ما دامت متوقفة",
+    "أنها ستبقى متوقفة طويلا فتسرع بجانبها",
+    "أن الركاب يعبرون فقط عند الإشارة الضوئية",
+    "أن ينزل ركاب ويعبروا من أمامها فجأة"
+   ],
+   "answer": 3,
+   "explain": "الركاب النازلون قد يعبرون من أمام الحافلة ولا تراهم إلا متأخرا، فخفف وانتبه",
+   "src": [
+    "S5"
+   ],
+   "confidence": "medium",
+   "notes": ""
+  },
+  {
+   "id": "rules-school-bus-001",
+   "topic": "school-bus",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "حافلة مدرسية توقفت وفتحت ذراع «قف» وأضواءها الوامضة، ماذا تفعل؟",
+   "options": [
+    "تخفف فقط وتكمل بحذر بجانبها",
+    "تتجاوزها ببطء من المسار الآخر",
+    "تتوقف تماما على بعد 5 أمتار على الأقل",
+    "تستخدم المنبه لتنبيه الطلاب ثم تمر"
+   ],
+   "answer": 2,
+   "explain": "ذراع «قف» يعني توقفا تاما، وعلى بعد لا يقل عن 5 أمتار من الحافلة",
+   "tip": "خمس أمتار ما بتضر حدا، والولد أغلى من الوقت",
+   "src": [
+    "S17",
+    "S18",
+    "S19"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-school-bus-002",
+   "topic": "school-bus",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما أقل مسافة تتوقف عندها من حافلة مدرسية فتحت ذراع «قف»؟",
+   "options": [
+    "15 مترا",
+    "5 أمتار",
+    "متر واحد",
+    "50 مترا"
+   ],
+   "answer": 1,
+   "explain": "هيئة الطرق والشرطة: التوقف على بعد 5 أمتار على الأقل من الحافلة",
+   "src": [
+    "S17",
+    "S18",
+    "S20"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-school-bus-003",
+   "topic": "school-bus",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "طريق باتجاهين بلا فاصل وسطي، وحافلة مدرسية في الاتجاه المقابل فتحت ذراع «قف»، ماذا تفعل؟",
+   "options": [
+    "تتوقف فقط إذا رأيت أطفالا يعبرون",
+    "تكمل لأنها في الاتجاه الآخر من الطريق",
+    "تخفف فقط وتمر بجانبها بحذر",
+    "تتوقف أنت أيضا، فالاتجاهان يتوقفان"
+   ],
+   "answer": 3,
+   "explain": "في الطريق غير المقسم قد يعبر الطلاب إلى الجهة الأخرى، لذلك تتوقف المركبات في الاتجاهين",
+   "src": [
+    "S17",
+    "S18",
+    "S19"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-school-bus-004",
+   "topic": "school-bus",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "طريق مقسم بفاصل (حاجز أو جزيرة)، وحافلة مدرسية في الاتجاه المقابل فتحت ذراع «قف»، ما الصحيح؟",
+   "options": [
+    "تعبر الفاصل لتقف خلف الحافلة",
+    "تتوقف، فكل المركبات في الاتجاهين تتوقف دائما",
+    "تتوقف وتطفئ المحرك حتى تتحرك الحافلة",
+    "تكمل بحذر، فالتوقف لمن خلفها فقط"
+   ],
+   "answer": 3,
+   "explain": "هيئة الطرق: في الطرق المقسمة تتوقف المركبات التي خلف الحافلة في اتجاهها فقط",
+   "src": [
+    "S17",
+    "S18"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-school-bus-005",
+   "topic": "school-bus",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "متى تتحرك بعد توقفك لحافلة مدرسية؟",
+   "options": [
+    "عندما يعبر أول طالب إلى الرصيف",
+    "بعد 10 ثوان من توقفك خلفها",
+    "عندما تنطفئ الأضواء حتى لو بقي الذراع مفتوحا",
+    "بعد عبور الطلاب وإغلاق الذراع وانطفاء الأضواء"
+   ],
+   "answer": 3,
+   "explain": "ابق متوقفا حتى تتحقق الشروط الثلاثة: الطلاب في منطقة آمنة، والذراع مغلق، والأضواء مطفأة",
+   "src": [
+    "S17",
+    "S18"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-school-bus-006",
+   "topic": "school-bus",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "لماذا تنتبه جيدا عند رؤية حافلة مدرسية؟",
+   "options": [
+    "لأن الطلاب قد يعبرون الطريق فجأة",
+    "لأنها لا تستخدم إشارات الانعطاف",
+    "لأنها تسير أسرع من المركبات الأخرى",
+    "لأنها تتوقف فقط في المحطات الرسمية"
+   ],
+   "answer": 0,
+   "explain": "دليل هيئة الطرق: قد ببطء وكن مستعدا للتوقف قرب الحافلات المدرسية",
+   "src": [
+    "S5",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-school-bus-007",
+   "topic": "school-bus",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "حافلة مدرسية أمامك تخفف سرعتها وبدأت أضواؤها تومض قبل أن تفتح ذراع «قف»، ماذا تفعل؟",
+   "options": [
+    "تخفف وتستعد للتوقف ولا تتجاوزها",
+    "تستخدم المنبه لتنبيه سائقها أنك خلفه",
+    "تكمل بالسرعة نفسها حتى تتوقف فعلا",
+    "تسرع لتتجاوزها قبل أن تفتح الذراع"
+   ],
+   "answer": 0,
+   "explain": "الأضواء الوامضة تعني أن الحافلة ستتوقف للطلاب، فاستعد للتوقف ولا تسابقها",
+   "src": [
+    "S6",
+    "S19"
+   ],
+   "confidence": "medium",
+   "notes": ""
+  },
+  {
+   "id": "rules-school-bus-008",
+   "topic": "school-bus",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أنت في المسار الأيسر لطريق بمسارين في الاتجاه نفسه، وحافلة مدرسية في المسار الأيمن فتحت ذراع «قف»، ماذا تفعل؟",
+   "options": [
+    "تكمل لأنك في مسار مختلف عن مسارها",
+    "تتجاوزها بسرعة من اليسار قبل نزول الطلاب",
+    "تتوقف أنت أيضا، فالتوقف لكل من خلفها",
+    "تخفف فقط وتمر بجانبها بحذر"
+   ],
+   "answer": 2,
+   "explain": "المرور بجانب الحافلة المتوقفة يعني تجاوزها، وهذا ممنوع حتى لو بدا المسار فارغا",
+   "src": [
+    "S18",
+    "S19"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-school-bus-009",
+   "topic": "school-bus",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "هل ذراع «قف» في الحافلة المدرسية ملزم مثل لوحة «قف» على الطريق؟",
+   "options": [
+    "لا، إلا في أوقات الدوام المدرسي",
+    "لا، هو تحذير فقط للسائقين",
+    "نعم، لكن للمركبات الثقيلة فقط",
+    "نعم، يلزمك بالتوقف التام"
+   ],
+   "answer": 3,
+   "explain": "فتح ذراع «قف» أمر بالتوقف التام، ومخالفته مخالفة مرورية",
+   "src": [
+    "S17",
+    "S18",
+    "S20"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-school-bus-010",
+   "topic": "school-bus",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "توقفت خلف حافلة مدرسية، والطلاب عبروا، لكن الذراع ما زال مفتوحا والأضواء تومض، هل تتحرك؟",
+   "options": [
+    "نعم، لأن الطلاب عبروا كلهم",
+    "لا، إلا إذا انتقلت إلى المسار الآخر",
+    "نعم، بعد أن تنبه السائق بالمنبه",
+    "لا، تنتظر إغلاق الذراع وانطفاء الأضواء"
+   ],
+   "answer": 3,
+   "explain": "الحركة مسموحة فقط بعد أن يعبر الطلاب ويغلق الذراع وتنطفئ الأضواء",
+   "src": [
+    "S17",
+    "S18"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-school-bus-011",
+   "topic": "school-bus",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "قرب المدارس في أوقات الدخول والخروج، ماذا تفعل؟",
+   "options": [
+    "تتوقف في منتصف الطريق لإنزال الأطفال",
+    "تستخدم المنبه لتفريق الطلاب عن الطريق",
+    "تزيد السرعة لتتجنب ازدحام المدارس",
+    "تخفف السرعة وتنتبه للطلاب والحافلات"
+   ],
+   "answer": 3,
+   "explain": "القانون يلزمك بتخفيف السرعة عند مداخل ومخارج المؤسسات التعليمية",
+   "src": [
+    "S1",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-school-bus-012",
+   "topic": "school-bus",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما خطر تجاوز حافلة مدرسية متوقفة لإنزال الطلاب؟",
+   "options": [
+    "قد يخرج طالب من أمامها فجأة ولا تراه",
+    "لا خطر إذا كان المسار الآخر فارغا",
+    "الخطر في الليل فقط عندما تقل الرؤية",
+    "الخطر على الحافلة فقط وليس على الطلاب"
+   ],
+   "answer": 0,
+   "explain": "الحافلة الكبيرة تحجب رؤية الطلاب العابرين من أمامها، لذلك التجاوز ممنوع",
+   "src": [
+    "S19",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-vulnerable-001",
+   "topic": "vulnerable",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "لماذا يصعب رؤية الدراجات الهوائية والنارية؟",
+   "options": [
+    "لأنها صغيرة وقد تختفي في النقطة العمياء",
+    "ليس صعبا لأنها بطيئة ويسهل رؤيتها",
+    "لأنها تسير على الرصيف دائما",
+    "لأنها لا تستخدم الأضواء أبدا"
+   ],
+   "answer": 0,
+   "explain": "دليل هيئة الطرق: الدراجات صغيرة ويصعب رؤيتها، فانظر جيدا قبل أي حركة",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-vulnerable-002",
+   "topic": "vulnerable",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "قبل الانتقال إلى مسار آخر، كيف تتأكد من عدم وجود دراجة نارية بجانبك؟",
+   "options": [
+    "تنظر في المرآة الداخلية فقط",
+    "تعطي الإشارة وتنتقل مباشرة",
+    "تعتمد على صوت محركها فقط",
+    "تنظر في المرايا ثم تلتفت برأسك"
+   ],
+   "answer": 3,
+   "explain": "الدراجة النارية قد تكون في النقطة العمياء، والتفاتة الرأس تكشفها",
+   "src": [
+    "S5",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-vulnerable-003",
+   "topic": "vulnerable",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "إذا لم تستطع رؤية وجه سائق الشاحنة في مرآتها، ماذا يعني ذلك؟",
+   "options": [
+    "أن المرآة معطلة",
+    "أن الشاحنة ستتوقف",
+    "أنه يراك جيدا",
+    "أنه على الأرجح لا يراك"
+   ],
+   "answer": 3,
+   "explain": "دليل هيئة الطرق: إذا لم تر سائق الشاحنة في مرآتها فهو لا يراك",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-vulnerable-004",
+   "topic": "vulnerable",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أين تقع المناطق العمياء الكبيرة حول الشاحنة؟",
+   "options": [
+    "أمامها فقط لأن السائق مرتفع",
+    "فوقها فقط لأنها عالية",
+    "أمامها مباشرة، وخلفها، وعلى جانبيها",
+    "لا توجد للشاحنات الحديثة مناطق عمياء"
+   ],
+   "answer": 2,
+   "explain": "الشاحنة عالية وطويلة، فلا يرى سائقها ما أمامها مباشرة ولا ما خلفها لمسافة طويلة ولا جزءا من جانبيها",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": "الدليل الإنجليزي يذكر جهة الباب الأيسر للشاحنة، ويبدو منقولا من دول القيادة على اليسار، لذلك صغنا الإجابة بشكل عام"
+  },
+  {
+   "id": "rules-vulnerable-005",
+   "topic": "vulnerable",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "شاحنة تنعطف يمينا عند تقاطع، لماذا لا تقف على يمينها؟",
+   "options": [
+    "لا مشكلة في الوقوف على يمينها",
+    "لأن الوقوف قرب الشاحنات ممنوع دائما",
+    "لأنها ستتوقف فجأة قبل الانعطاف",
+    "لأنها تحتاج مساحة أوسع وقد لا يراك سائقها"
+   ],
+   "answer": 3,
+   "explain": "المركبات الطويلة تحتاج مساحة أكبر للانعطاف وقد تشغل أكثر من مسار، ومناطقها العمياء كبيرة",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-vulnerable-006",
+   "topic": "vulnerable",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ترى جمالا قرب الطريق على طريق خارجي، ماذا تفعل؟",
+   "options": [
+    "تزيد السرعة لتمر قبل أن تعبر",
+    "تكمل بالسرعة نفسها لأن الطريق لك",
+    "تخفف السرعة وتستعد للتوقف",
+    "تتجاوز المركبة التي أمامك بسرعة"
+   ],
+   "answer": 2,
+   "explain": "اللائحة تطلب تخفيف السرعة عند الاقتراب من الحيوانات أو المرور بها",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-vulnerable-007",
+   "topic": "vulnerable",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "دراجة هوائية أمامك في طريق ضيق، ولا توجد مساحة تترك فيها مترا عند التجاوز، ماذا تفعل؟",
+   "options": [
+    "تتجاوزها من يمينها لأن اليسار ضيق",
+    "تتجاوزها قريبا منها بسرعة",
+    "تبقى خلفها حتى تجد مساحة كافية",
+    "تستخدم المنبه لتخرج من الطريق"
+   ],
+   "answer": 2,
+   "explain": "التجاوز مسموح فقط إذا استطعت ترك متر واحد على الأقل، وإلا فانتظر خلفها بمسافة آمنة",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-vulnerable-008",
+   "topic": "vulnerable",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "دراجة نارية للتوصيل تسير بين المسارات أثناء الازدحام، وأنت تريد تغيير مسارك، ماذا تفعل؟",
+   "options": [
+    "تغير مسارك فجأة لتمنعها من المرور",
+    "تعتمد على إشارة الانعطاف وحدها",
+    "تتأكد من المرايا والنقطة العمياء وتنتقل ببطء",
+    "لا تنظر، فعلى راكب الدراجة أن ينتبه لك"
+   ],
+   "answer": 2,
+   "explain": "الدراجات النارية صغيرة وتظهر فجأة، وتغيير المسار مسموح فقط بعد التأكد أنه لا يسبب خطرا",
+   "src": [
+    "S5",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-vulnerable-009",
+   "topic": "vulnerable",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ليلا على طريق خارجي عليه لوحة تحذير من الجمال، ما الصحيح؟",
+   "options": [
+    "تخفف السرعة وتراقب جانبي الطريق",
+    "تطفئ الأضواء الأمامية لترى أفضل",
+    "تحافظ على السرعة لأن اللوحة للنهار فقط",
+    "تسير على كتف الطريق لتبتعد عنها"
+   ],
+   "answer": 0,
+   "explain": "الحيوانات قد تعبر فجأة وتصعب رؤيتها ليلا، واللائحة تطلب تخفيف السرعة عند الاقتراب منها",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-vulnerable-010",
+   "topic": "vulnerable",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "لماذا تحتاج الشاحنات والحافلات مسافة أطول لتتوقف؟",
+   "options": [
+    "لأن مكابحها أضعف دائما",
+    "لأن سائقيها أقل خبرة",
+    "لأنها أكبر وأطول وأثقل",
+    "لا تحتاج مسافة أطول من السيارات"
+   ],
+   "answer": 2,
+   "explain": "دليل هيئة الطرق: الشاحنات والحافلات أكبر وأطول وأثقل وتحتاج مسافة أطول للتوقف",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-vulnerable-011",
+   "topic": "vulnerable",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تسير بجانب شاحنة طويلة على طريق سريع لفترة طويلة، ما المشكلة؟",
+   "options": [
+    "لا مشكلة ما دمت ضمن السرعة",
+    "قد تكون في منطقتها العمياء",
+    "المشكلة في الليل فقط",
+    "المشكلة فقط إذا كانت تحمل وقودا"
+   ],
+   "answer": 1,
+   "explain": "البقاء بمحاذاة الشاحنة يضعك في منطقة لا يراها سائقها، فإما أن تتجاوزها بأمان أو تبقى خلفها",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-vulnerable-012",
+   "topic": "vulnerable",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "من هم مستخدمو الطريق الأكثر عرضة للخطر؟",
+   "options": [
+    "ركاب الحافلات والقطارات فقط",
+    "سائقو السيارات الرياضية السريعة",
+    "المشاة وراكبو الدراجات والأطفال وكبار السن",
+    "سائقو الشاحنات لأنهم يقودون مركبات كبيرة"
+   ],
+   "answer": 2,
+   "explain": "هؤلاء لا يحميهم هيكل مركبة، فأي اصطدام بهم خطير جدا",
+   "src": [
+    "S5",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-vulnerable-013",
+   "topic": "vulnerable",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "بعد أن تجاوزت راكب دراجة هوائية، متى تعود إلى اليمين؟",
+   "options": [
+    "بعد أن تبتعد عنه مسافة كافية",
+    "قبل أن تكمل تجاوزه لتختصر",
+    "مباشرة أمام عجلته الأمامية",
+    "لا تعود إلى اليمين أبدا بعدها"
+   ],
+   "answer": 0,
+   "explain": "العودة المبكرة تقطع طريق الدراجة، واللائحة تطلب مسافة كافية قبل إكمال التجاوز",
+   "src": [
+    "S3",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-vulnerable-014",
+   "topic": "vulnerable",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أمامك دراجة هوائية وأنت تقترب من منعطف، وخلفك مركبات، ما الصحيح؟",
+   "options": [
+    "تستخدم المنبه حتى تتوقف لك",
+    "تنتظر خلفها حتى نهاية المنعطف",
+    "تتجاوزها في المنعطف لتفسح لمن خلفك",
+    "تتجاوزها من يمينها لأن المنعطف لليسار"
+   ],
+   "answer": 1,
+   "explain": "التجاوز ممنوع في المنعطفات، وبعد المنعطف تتجاوزها بمسافة متر على الأقل عندما تكون الرؤية واضحة",
+   "src": [
+    "S3",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-parking-001",
+   "topic": "parking",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "كيف تقف عادة على جانب الطريق؟",
+   "options": [
+    "قرب الحافة اليمنى للطريق وموازيا لها",
+    "على الحافة اليسرى عكس اتجاه السير",
+    "بزاوية فوق الرصيف لتترك الطريق",
+    "في منتصف المسار مع أضواء التحذير"
+   ],
+   "answer": 0,
+   "explain": "اللائحة: التوقف يكون تدريجيا وأقرب ما يمكن إلى الطرف الأيمن للطريق وموازيا له",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-parking-002",
+   "topic": "parking",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "هل مسموح الوقوف في موقف مخصص لأصحاب الهمم دون تصريح؟",
+   "options": [
+    "نعم، في الليل عندما يكون فارغا",
+    "لا، إلا إذا كانت المواقف الأخرى مشغولة",
+    "نعم، لدقائق قليلة فقط",
+    "لا، هو لحاملي التصريح فقط"
+   ],
+   "answer": 3,
+   "explain": "الوقوف فيها دون تصريح مخالفة، لأنها مخصصة لمن يحتاجها فعلا",
+   "src": [
+    "S24"
+   ],
+   "confidence": "medium",
+   "notes": ""
+  },
+  {
+   "id": "rules-parking-003",
+   "topic": "parking",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "هل مسموح الوقوف أمام صنبور إطفاء الحريق؟",
+   "options": [
+    "لا، إلا لمدة 5 دقائق فقط",
+    "نعم، إذا بقيت داخل السيارة",
+    "لا، ممنوع الوقوف أمامه",
+    "نعم، في الليل عندما يقل الخطر"
+   ],
+   "answer": 2,
+   "explain": "صنبور الإطفاء لازم يبقى متاحا في أي لحظة، والوقوف أمامه مخالفة",
+   "src": [
+    "S24"
+   ],
+   "confidence": "medium",
+   "notes": ""
+  },
+  {
+   "id": "rules-parking-004",
+   "topic": "parking",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "وجدت مكانا للوقوف على بعد 8 أمتار من تقاطع، هل تقف فيه؟",
+   "options": [
+    "نعم، إذا لم تغلق التقاطع",
+    "نعم، لأن المسافة أكثر من 5 أمتار",
+    "لا، أقل مسافة 15 مترا من التقاطع",
+    "لا، إلا إذا بقيت داخل السيارة"
+   ],
+   "answer": 2,
+   "explain": "اللائحة تمنع الوقوف على بعد يقل عن 15 مترا من التقاطعات والميادين والدوارات",
+   "src": [
+    "S3",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-parking-005",
+   "topic": "parking",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أي هذه الأماكن ممنوع الوقوف فيه؟",
+   "options": [
+    "في موقف مركز تجاري",
+    "على الجسور وفي الأنفاق",
+    "على جانب شارع سكني بلا لوحات منع",
+    "في المواقف المخططة المدفوعة"
+   ],
+   "answer": 1,
+   "explain": "اللائحة تمنع الوقوف على الجسور والممرات العلوية وفي الأنفاق",
+   "src": [
+    "S3",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-parking-006",
+   "topic": "parking",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "هل مسموح الوقوف أمام مدخل بيت أو مدخل موقف سيارات؟",
+   "options": [
+    "لا، ممنوع أمام المداخل والمخارج",
+    "نعم، في الليل فقط",
+    "لا، إلا إذا تركت رقم هاتفك",
+    "نعم، إذا كنت ستعود بسرعة"
+   ],
+   "answer": 0,
+   "explain": "اللائحة تمنع الوقوف أمام مداخل ومخارج البيوت ومواقف المركبات ومحطات الوقود والمستشفيات ومراكز الإطفاء والشرطة",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-parking-007",
+   "topic": "parking",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "وقفت بجانب سيارة متوقفة بشكل صحيح (وقوف مزدوج) وأغلقت طريق خروجها، هل هذا مسموح؟",
+   "options": [
+    "نعم، لمدة قصيرة لا تزيد على دقائق",
+    "نعم، إذا شغلت أضواء التحذير",
+    "لا، ممنوع أن تعرقل مركبة متوقفة",
+    "لا، إلا إذا بقي المحرك يعمل"
+   ],
+   "answer": 2,
+   "explain": "اللائحة تمنع الوقوف الذي يعرقل حركة مركبة متوقفة، والقانون يمنع الوقوف العشوائي",
+   "src": [
+    "S3",
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-parking-008",
+   "topic": "parking",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ماذا تفعل قبل الخروج من موقف على جانب الطريق؟",
+   "options": [
+    "مرآة وإشارة والتفاتة رأس، ثم تنتظر خلو الطريق",
+    "تخرج ببطء دون إشارة لأنك بطيء",
+    "تستخدم المنبه ثم تخرج مباشرة",
+    "تعطي الإشارة وتخرج فورا لأن الآخرين سيتوقفون"
+   ],
+   "answer": 0,
+   "explain": "عند الدخول إلى مجرى السير من وضع الوقوف تعطي الأولوية لكل المركبات",
+   "src": [
+    "S6",
+    "S3",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-parking-009",
+   "topic": "parking",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في السيارة الأوتوماتيكية، على أي وضع تضع ذراع ناقل الحركة عند الوقوف وإيقاف المحرك؟",
+   "options": [
+    "وضع الرجوع R",
+    "وضع الوقوف P",
+    "وضع المحايد N",
+    "وضع القيادة D"
+   ],
+   "answer": 1,
+   "explain": "قبل إيقاف المحرك والنزول ضع الذراع على وضع الوقوف P حتى لا تتحرك السيارة",
+   "src": [
+    "S5"
+   ],
+   "confidence": "medium",
+   "notes": ""
+  },
+  {
+   "id": "rules-parking-010",
+   "topic": "parking",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "هل مسموح الوقوف في مكان يحجب إشارة ضوئية أو لوحة مرورية عن السائقين؟",
+   "options": [
+    "نعم، في الليل فقط",
+    "لا، ممنوع الوقوف في مكان يحجبها",
+    "لا، إلا إذا كنت داخل السيارة",
+    "نعم، إذا كانت المدة قصيرة"
+   ],
+   "answer": 1,
+   "explain": "المركبة التي تحجب الإشارة قد تسبب حادثا لسائق لم يرها",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-parking-011",
+   "topic": "parking",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "هل مسموح الوقوف أمام محطة حافلات النقل العام؟",
+   "options": [
+    "لا، ممنوع الوقوف أمامها",
+    "لا، إلا إذا شغلت أضواء التحذير",
+    "نعم، إذا لم تكن هناك حافلة",
+    "نعم، في الليل فقط"
+   ],
+   "answer": 0,
+   "explain": "الوقوف أمام المحطة يمنع الحافلة من الوقوف بأمان ويعرض الركاب للخطر",
+   "src": [
+    "S3",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-parking-012",
+   "topic": "parking",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تريد التوقف لحظة لإنزال صديق على طريق مزدحم، ما الصحيح؟",
+   "options": [
+    "تتوقف على ممر المشاة لأنه قريب",
+    "تتوقف في المسار لثوان مع أضواء التحذير",
+    "تتوقف في المسار الأيسر لأنه أسرع",
+    "تتوقف في مكان مسموح وآمن قرب اليمين"
+   ],
+   "answer": 3,
+   "explain": "إنزال الركاب يكون في مكان مسموح فيه الوقوف وبحذر، والقانون يمنع الوقوف العشوائي الذي يعطل السير",
+   "src": [
+    "S3",
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-parking-013",
+   "topic": "parking",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "هل مسموح الوقوف فوق الرصيف؟",
+   "options": [
+    "نعم، في الليل فقط",
+    "لا، الرصيف للمشاة",
+    "نعم، إذا كانت عجلتان فقط فوقه",
+    "لا، إلا إذا لم يكن هناك مشاة"
+   ],
+   "answer": 1,
+   "explain": "اللائحة تمنع الوقوف على الأرصفة والأماكن المخصصة للمشاة",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-parking-014",
+   "topic": "parking",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "توقفت سيارتك ليلا على طريق غير مضاء بسبب عطل، كيف تنبه الآخرين إليها؟",
+   "options": [
+    "بالأضواء المناسبة أو بمثلث التحذير العاكس",
+    "تستخدم المنبه كل دقيقة حتى يأتي أحد",
+    "تترك الأضواء العالية باتجاه القادمين",
+    "لا تفعل شيئا لأنها متوقفة على الجانب"
+   ],
+   "answer": 0,
+   "explain": "اللائحة تطلب التنبيه إلى المركبة المتوقفة ليلا بالأضواء أو بالمثلث العاكس",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-parking-015",
+   "topic": "parking",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "لماذا ممنوع الوقوف قرب التقاطعات والدوارات؟",
+   "options": [
+    "ليس ممنوعا إذا كان المكان فارغا",
+    "لأن الوقوف هناك مدفوع ويحتاج إلى تصريح خاص",
+    "لأن الأرض قرب التقاطعات غير مستوية عادة",
+    "لأن المركبات المتوقفة تحجب الرؤية وتعرقل الانعطاف"
+   ],
+   "answer": 3,
+   "explain": "اللائحة تمنع الوقوف على بعد يقل عن 15 مترا منها، لأن المركبة المتوقفة تخفي المركبات والمشاة",
+   "src": [
+    "S3",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-lights-horn-001",
+   "topic": "lights-horn",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "متى يجب تشغيل الأضواء الأمامية؟",
+   "options": [
+    "لا يلزم إذا كانت الشوارع مضاءة جيدا",
+    "في الليل داخل المدن فقط، لا خارجها",
+    "من الغروب إلى الشروق، وعند ضعف الرؤية نهارا",
+    "عند المطر الشديد فقط في أي وقت"
+   ],
+   "answer": 2,
+   "explain": "اللائحة تطلب تشغيل الأضواء ليلا من الغروب إلى الشروق، ونهارا عندما لا تكفي الرؤية",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-lights-horn-002",
+   "topic": "lights-horn",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "متى مسموح استخدام الأضواء العالية؟",
+   "options": [
+    "عند مقابلة مركبة لتنبيهها بشكل مستمر",
+    "على الطرق الخارجية غير المضاءة، دون مركبة مقابلة",
+    "في الضباب لأنها تخترقه أفضل",
+    "داخل المدن دائما لترى المشاة والمركبات جيدا"
+   ],
+   "answer": 1,
+   "explain": "الأضواء العالية للطرق غير المضاءة فقط، ولا تستخدمها عندما تأتي مركبة من الاتجاه المقابل",
+   "src": [
+    "S3",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-lights-horn-003",
+   "topic": "lights-horn",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "مركبة قادمة من الاتجاه المقابل وأنت تستخدم الأضواء العالية، ماذا تفعل؟",
+   "options": [
+    "تشغل أضواء التحذير لتنبيهه",
+    "تحول إلى الأضواء المنخفضة",
+    "تبقي العالية لترى الطريق أفضل",
+    "تطفئ كل الأضواء حتى تمر"
+   ],
+   "answer": 1,
+   "explain": "الأضواء العالية تبهر السائق المقابل وقد تسبب حادثا",
+   "src": [
+    "S5",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-lights-horn-004",
+   "topic": "lights-horn",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "متى تستخدم أضواء التحذير (الفلاشر)؟",
+   "options": [
+    "عند الوقوف المزدوج لدقائق قليلة",
+    "أثناء القيادة في الضباب الكثيف",
+    "أثناء القيادة في المطر الغزير",
+    "عند تعطل المركبة أو توقفها الاضطراري"
+   ],
+   "answer": 3,
+   "explain": "أضواء التحذير للطوارئ فقط، مثل التعطل أو التوقف الاضطراري على الطريق",
+   "src": [
+    "S22",
+    "S23"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-lights-horn-005",
+   "topic": "lights-horn",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "هل تشغل أضواء التحذير أثناء القيادة في الضباب؟",
+   "options": [
+    "نعم، لتراك المركبات التي خلفك",
+    "لا، تستخدم الأضواء المنخفضة",
+    "نعم، مع الأضواء العالية معا",
+    "لا، إلا إذا كنت في المسار الأيسر"
+   ],
+   "answer": 1,
+   "explain": "الشرطة تحذر من تشغيلها أثناء السير في الضباب أو المطر، فهي للطوارئ فقط",
+   "src": [
+    "S22",
+    "S23"
+   ],
+   "confidence": "high",
+   "notes": "الشرطة تحذر من استخدامها أثناء السير، وبعض المصادر تعتبره مخالفة"
+  },
+  {
+   "id": "rules-lights-horn-006",
+   "topic": "lights-horn",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في الضباب، أي أضواء تستخدم للرؤية؟",
+   "options": [
+    "أضواء التحذير فقط",
+    "الأضواء المنخفضة",
+    "بدون أضواء لتجنب الانعكاس",
+    "الأضواء العالية"
+   ],
+   "answer": 1,
+   "explain": "شرطة أبوظبي تنصح في الضباب باستخدام الأضواء المنخفضة وليس العالية، ومضاعفة مسافة الأمان",
+   "src": [
+    "S22",
+    "S23"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-lights-horn-007",
+   "topic": "lights-horn",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما الغرض الأساسي من المنبه (الزمور)؟",
+   "options": [
+    "تنبيه الآخرين لتفادي خطر",
+    "التعبير عن الغضب",
+    "التحية",
+    "استعجال السيارة التي أمامك عند الإشارة"
+   ],
+   "answer": 0,
+   "explain": "المنبه جهاز تنبيه للخطر، واللائحة تمنع استخدامه بشكل مزعج أو دون حاجة",
+   "src": [
+    "S3",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-lights-horn-008",
+   "topic": "lights-horn",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أين ممنوع استخدام المنبه؟",
+   "options": [
+    "عند خطر مفاجئ يحتاج إلى تنبيه",
+    "على الطرق السريعة عند التجاوز",
+    "على الطرق الخارجية بين المدن",
+    "قرب المستشفيات والمدارس ودور العبادة"
+   ],
+   "answer": 3,
+   "explain": "اللائحة تمنع استخدام أجهزة التنبيه قرب المستشفيات والمدارس ودور العبادة",
+   "src": [
+    "S3",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-lights-horn-009",
+   "topic": "lights-horn",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في منطقة سكنية، في أي وقت ممنوع استخدام المنبه حسب اللائحة؟",
+   "options": [
+    "لا يوجد وقت ممنوع",
+    "من منتصف الليل حتى 6 صباحا",
+    "من 6 صباحا حتى الظهر",
+    "من العصر حتى المغرب"
+   ],
+   "answer": 1,
+   "explain": "اللائحة تمنع استخدام المنبه في المناطق السكنية من منتصف الليل حتى السادسة صباحا",
+   "src": [
+    "S3",
+    "S4",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-lights-horn-010",
+   "topic": "lights-horn",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "هل مسموح استخدام المنبه بشكل متكرر ومزعج؟",
+   "options": [
+    "نعم، في الأعراس والمناسبات فقط",
+    "نعم، إذا كانت السيارة التي أمامك بطيئة",
+    "لا، ممنوع الاستخدام المتكرر أو المزعج",
+    "لا، إلا عند الازدحام الشديد"
+   ],
+   "answer": 2,
+   "explain": "اللائحة تمنع استخدام أجهزة التنبيه بشكل متكرر أو بطريقة تسبب إزعاجا",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-lights-horn-011",
+   "topic": "lights-horn",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "داخل مدينة شوارعها مضاءة ليلا، أي أضواء تستخدم؟",
+   "options": [
+    "الأضواء العالية",
+    "بدون أضواء لأن الشارع مضاء",
+    "الأضواء المنخفضة",
+    "أضواء الوقوف الجانبية فقط"
+   ],
+   "answer": 2,
+   "explain": "اللائحة: الأضواء المنخفضة في المناطق المأهولة، والعالية فقط على الطرق الخارجية غير المضاءة",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-lights-horn-012",
+   "topic": "lights-horn",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تعطلت سيارتك فجأة في المسار الأيمن لطريق سريع، ما أول ما تشغله من الأضواء؟",
+   "options": [
+    "إشارة اليسار",
+    "أضواء الضباب الخلفية فقط",
+    "أضواء التحذير (الفلاشر)",
+    "الأضواء العالية"
+   ],
+   "answer": 2,
+   "explain": "هذه هي حالة أضواء التحذير: مركبة معطلة أو متوقفة اضطراريا على الطريق",
+   "src": [
+    "S23",
+    "S22"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-lights-horn-013",
+   "topic": "lights-horn",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "هل مسموح استخدام المنبه والمركبة واقفة في الموقف؟",
+   "options": [
+    "لا، اللائحة تمنعه والمركبة واقفة",
+    "نعم، لاستدعاء شخص من البيت",
+    "لا، إلا في الليل عندما يكون الشارع هادئا",
+    "نعم، إذا كان لمدة قصيرة"
+   ],
+   "answer": 0,
+   "explain": "استدعاء الناس بالمنبه من الموقف إزعاج تمنعه اللائحة",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-lights-horn-014",
+   "topic": "lights-horn",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "لماذا تشغل الأضواء الأمامية نهارا في الغبار الكثيف أو المطر؟",
+   "options": [
+    "لترى الطريق ولتراك المركبات الأخرى",
+    "لتنبيه أجهزة الرادار إلى وجودك",
+    "لتزيين السيارة وإظهار شكلها",
+    "لأنها تزيد سرعة المساحات"
+   ],
+   "answer": 0,
+   "explain": "اللائحة تطلب تشغيل الأضواء نهارا عندما لا تكون الرؤية كافية",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "rules-lights-horn-015",
+   "topic": "lights-horn",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ليلا على طريق خارجي غير مضاء تستخدم الأضواء العالية، واقتربت من منعطف تظهر خلفه أضواء مركبة قادمة، ماذا تفعل؟",
+   "options": [
+    "تومض بالعالية باستمرار لتنبهه",
+    "تحول إلى المنخفضة قبل أن تواجهك المركبة",
+    "تبقي العالية حتى تمر المركبة بجانبك",
+    "تطفئ الأضواء كلها لثوان"
+   ],
+   "answer": 1,
+   "explain": "لا تستخدم الأضواء العالية عندما تأتي مركبة من الاتجاه المقابل، حتى لا تبهر سائقها",
+   "src": [
+    "S5",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  }
+ ]
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="color-scheme" content="dark">
+<title>مقود: محاكي الساحة</title>
+<link rel="stylesheet" href="../src/fonts.css">
+<style>
+  :root { --bg:#0A0E15; --panel:#101724; --line:#1E2A3C; --ink:#EAE6DB; --muted:#97A1B4; --gold:#D9B978; }
+  html, body { margin:0; height:100%; background:var(--bg); color:var(--ink); font-family:'Readex Pro',Alexandria,system-ui,sans-serif; }
+  body { display:flex; flex-direction:column; height:100dvh; }
+  .bar { display:flex; flex-wrap:wrap; gap:8px; align-items:center; padding:8px 10px; background:var(--panel); border-bottom:1px solid var(--line); font-size:13px; }
+  .bar b { font-family:Alexandria,sans-serif; color:var(--gold); }
+  .bar select, .bar button { font:inherit; color:var(--ink); background:#0D131E; border:1px solid var(--line); border-radius:9px; padding:5px 9px; }
+  .bar .log { color:var(--muted); margin-inline-start:auto; font-size:12px; max-width:40ch; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+  #yard { flex:1 1 auto; min-height:0; position:relative; }
+  body.bare .bar { display:none; }
+</style>
+</head>
+<body>
+<div class="bar">
+  <b>محاكي الساحة</b>
+  <select id="ex" aria-label="التمرين"></select>
+  <select id="mode" aria-label="الوضع"><option value="learn">تعلم</option><option value="test">اختبار</option></select>
+  <button id="go" type="button">ابدأ</button>
+  <button id="demo" type="button">الروبوت</button>
+  <button id="remount" type="button">فك وتركيب</button>
+  <span class="log" id="log"></span>
+</div>
+<div id="yard"></div>
+<script src="../src/yard.js"></script>
+<script>
+(function () {
+  var qs = new URLSearchParams(location.search);
+  if (qs.get('bare')) document.body.classList.add('bare');
+  var sel = document.getElementById('ex'), mode = document.getElementById('mode'), log = document.getElementById('log');
+  Yard.exercises.forEach(function (e) {
+    var o = document.createElement('option'); o.value = e.id; o.textContent = e.level + ' · ' + e.name; sel.appendChild(o);
+  });
+  sel.value = qs.get('ex') || 'parallel';
+  mode.value = qs.get('mode') === 'test' ? 'test' : 'learn';
+  window.results = []; window.events = [];
+  function mountYard() {
+    if (window.ctl) window.ctl.destroy();
+    var opts = {
+      exercise: sel.value, mode: mode.value,
+      onFinish: function (r) { window.results.push(r); log.textContent = (r.passed ? 'نجح ' : 'ما نجح ') + r.score + ' · ' + r.exercise; },
+      onEvent: function (e) { if (e.type !== 'step') window.events.push(e.type); }
+    };
+    if (qs.get('touch')) opts.touch = qs.get('touch') === '1';
+    if (qs.get('seed')) opts.seed = +qs.get('seed');
+    if (qs.get('camera')) opts.camera = qs.get('camera');
+    if (qs.get('sound')) opts.sound = qs.get('sound') === '1';
+    window.ctl = Yard.mount(document.getElementById('yard'), opts);
+  }
+  document.getElementById('go').onclick = mountYard;
+  sel.onchange = mode.onchange = mountYard;
+  document.getElementById('demo').onclick = function () { if (window.ctl) window.ctl.demo(); };
+  document.getElementById('remount').onclick = function () { window.ctl.destroy(); window.ctl = null; setTimeout(mountYard, 50); };
+  mountYard();
+})();
+</script>
+</body>
+</html>

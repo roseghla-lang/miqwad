@@ -1,0 +1,5162 @@
+{
+  "module": "safety",
+  "updated": "2026-09-29",
+  "sources": {
+    "S1": {
+      "title": "Light Motor Vehicle Handbook: A Guide to Safe Driving (8th edition)",
+      "url": "https://www.drivedubai.ae/public/uploads/downloads/20240612110831RTA-Handbook-Light-Motor-Vechicle-English.pdf",
+      "publisher": "RTA Dubai Licensing Agency (hosted by Drive Dubai)",
+      "date": "2024-06"
+    },
+    "S2": {
+      "title": "Driving Safely in Dubai (First Edition)",
+      "url": "https://licensing.rta.ae/handbook/DrivingSafelyInDubaiEN.pdf",
+      "publisher": "RTA Dubai Licensing Agency",
+      "date": "undated (accessed 2026-09)"
+    },
+    "S3": {
+      "title": "Federal Decree-Law No. 14 of 2024 on Traffic Regulation (Article 5 driver duties)",
+      "url": "https://uaelegislation.gov.ae/en/legislations/2598/download",
+      "publisher": "UAE Legislation portal",
+      "date": "2024-09"
+    },
+    "S4": {
+      "title": "شرطة أبوظبي تحذر من الاستخدام الخاطئ للإشارات الرباعية بالمركبات أثناء الضباب",
+      "url": "https://www.adpolice.gov.ae/ar-AE/Media-Center/News/2021/07/01/News_25618",
+      "publisher": "Abu Dhabi Police",
+      "date": "2018-11"
+    },
+    "S5": {
+      "title": "UAE: Driving with hazard lights on during fog? You could get fined; here's why",
+      "url": "https://www.khaleejtimes.com/uae/weather/driving-fog-hazard-lights-tips",
+      "publisher": "Khaleej Times",
+      "date": "2025-11"
+    },
+    "S6": {
+      "title": "How to drive safely in UAE fog: tips for motorists in reduced visibility",
+      "url": "https://www.thenationalnews.com/lifestyle/motoring/2026/02/11/how-to-drive-safely-in-uae-fog-tips-for-motorists-in-reduced-visibility/",
+      "publisher": "The National",
+      "date": "2026-02"
+    },
+    "S7": {
+      "title": "Abu Dhabi fog alert: speed limit reduced on major roads, police issue safety tips",
+      "url": "https://gulfnews.com/uae/abu-dhabi/abu-dhabi-fog-alert-speed-limit-reduced-on-major-roads-police-issue-safety-tips-1.500689257",
+      "publisher": "Gulf News",
+      "date": "2026-09"
+    },
+    "S8": {
+      "title": "شرطة دبي تحدد 8 إرشادات للقيادة خلال الضباب",
+      "url": "https://www.emaratalyoum.com/local-section/other/2026-02-26-1.2019337",
+      "publisher": "الإمارات اليوم",
+      "date": "2026-02"
+    },
+    "S9": {
+      "title": "4 مسببات رئيسة لحوادث الضباب على الطرق (وزارة الداخلية وشرطة أبوظبي)",
+      "url": "https://www.emaratalyoum.com/local-section/other/2024-10-31-1.1893559",
+      "publisher": "الإمارات اليوم",
+      "date": "2024-10"
+    },
+    "S10": {
+      "title": "UAE low visibility on the road: follow these safety rules for driving in fog, sandstorms",
+      "url": "https://gulfnews.com/uae/transport/uae-low-visibility-on-the-road-follow-these-safety-rules-for-driving-in-fog-sandstorms-1.86313361",
+      "publisher": "Gulf News",
+      "date": "2022-03"
+    },
+    "S11": {
+      "title": "Tips for driving in UAE rains: stay safe on wet roads",
+      "url": "https://gulfnews.com/living-in-uae/transport/know-when-to-use-your-hazard-lights-check-wipers-brakes-and-lights-9-tips-to-remember-when-driving-in-the-rain-1.1604839271383",
+      "publisher": "Gulf News",
+      "date": "2025-12"
+    },
+    "S12": {
+      "title": "UAE rain and fog: weather-related traffic fines every motorist must know",
+      "url": "https://gulfnews.com/living-in-uae/transport/uae-fog-alert-5-weather-related-traffic-fines-every-motorist-must-know-1.500305005",
+      "publisher": "Gulf News",
+      "date": "2026-03"
+    },
+    "S13": {
+      "title": "How to drive safely as UAE hit by heavy rain and thunderstorms",
+      "url": "https://www.thenationalnews.com/uae/2023/11/17/rain-thunderstom-uae-drive/",
+      "publisher": "The National",
+      "date": "2023-11"
+    },
+    "S14": {
+      "title": "شرطة الشارقة تكثف انتشار دورياتها لضمان سلامة الطرق أثناء الأمطار",
+      "url": "https://sharjah24.ae/en/Articles/2026/03/23/AL053",
+      "publisher": "الشارقة 24",
+      "date": "2026-03"
+    },
+    "S15": {
+      "title": "نصائح إذاعية للسائقين بالقيادة الآمنة أثناء التقلبات الجوية",
+      "url": "https://www.adpolice.gov.ae/ar-AE/Media-Center/News/2021/06/29/Drivers-Are-Advised-Through-Radio-to-Drive-Safely-During-Bad-Weather-",
+      "publisher": "Abu Dhabi Police",
+      "date": "2012-03"
+    },
+    "S16": {
+      "title": "5 سنوات العمر الافتراضي لإطارات السيارات في الدولة (هيئة الإمارات للمواصفات والمقاييس)",
+      "url": "https://www.emaratalyoum.com/local-section/other/2013-06-12-1.582854",
+      "publisher": "الإمارات اليوم",
+      "date": "2013-06"
+    },
+    "S17": {
+      "title": "Death in minutes: don't leave children in car, check tyres; RTA's tips for safe summer drive",
+      "url": "https://www.khaleejtimes.com/uae/transport/dubai-safe-summer-drive-tips",
+      "publisher": "Khaleej Times",
+      "date": "2025-07"
+    },
+    "S18": {
+      "title": "Tyre safety in the UAE: how you can stay safe during the summer",
+      "url": "https://gulfnews.com/living-in-uae/transport/tyre-safety-in-the-uae-how-you-can-stay-safe-during-the-summer-1.1622990545151",
+      "publisher": "Gulf News",
+      "date": "2023-08"
+    },
+    "S19": {
+      "title": "كم يبلغ العمر الافتراضي للإطارات؟",
+      "url": "https://middle-east.michelin.com/ar/auto/advice/change-tyres/how-long-do-tyres-last",
+      "publisher": "Michelin Middle East",
+      "date": "undated (accessed 2026-09)"
+    },
+    "S20": {
+      "title": "Dubai Police issue safety tips to handle tyre burst while driving",
+      "url": "https://www.khaleejtimes.com/uae/transport/dubai-police-issue-safety-tips-guidelines-to-handle-tyre-burst-while-driving",
+      "publisher": "Khaleej Times",
+      "date": "2024-07"
+    },
+    "S21": {
+      "title": "UAE: What to do if your car's cruise control fails? Dubai Police issue advisory",
+      "url": "https://www.khaleejtimes.com/uae/uae-what-to-do-if-your-cars-cruise-control-fails-dubai-police-issue-advisory",
+      "publisher": "Khaleej Times",
+      "date": "2024-07"
+    },
+    "S22": {
+      "title": "Dubai Police rescue driver after cruise control failure on Emirates Road",
+      "url": "https://www.thenationalnews.com/news/uae/2025/10/20/dubai-police-rescue-driver-after-cruise-control-failure-on-emirates-road/",
+      "publisher": "The National",
+      "date": "2025-10"
+    },
+    "S23": {
+      "title": "الأمور الواجب اتباعها عند تعطل فرامل السيارة بشكل مفاجئ",
+      "url": "https://www.dubizzle.com/blog/cars/car-brake-failure/",
+      "publisher": "dubizzle (UAE)",
+      "date": "2022-04"
+    },
+    "S24": {
+      "title": "What to do if your brakes fail in an automatic or manual car or EV",
+      "url": "https://www.racv.com.au/royalauto/transport/cars/what-to-do-if-your-brakes-fail.html",
+      "publisher": "RACV",
+      "date": "2026-09"
+    },
+    "S25": {
+      "title": "Antilock Brakes and How They Work",
+      "url": "https://www.aarp.org/auto/driver-safety/antilock-brakes-know-how-they-work/",
+      "publisher": "AARP",
+      "date": "2013-09"
+    },
+    "S26": {
+      "title": "Anti-Lock Brake Systems (Tailgate Talk)",
+      "url": "https://www.oregon.gov/odot/Programs/T2/TailgateTalks/AntiLockBrakes.PDF",
+      "publisher": "Oregon Department of Transportation",
+      "date": "undated (accessed 2026-09)"
+    },
+    "S27": {
+      "title": "6 إجراءات يجب اتخاذها عند تعطل المركبة على الطريق (شرطة أبوظبي)",
+      "url": "https://www.emaratalyoum.com/local-section/accidents/2024-04-03-1.1840797",
+      "publisher": "الإمارات اليوم",
+      "date": "2024-04"
+    },
+    "S28": {
+      "title": "UAE: 8 safety tips to follow when vehicle breaks down in the middle of the road",
+      "url": "https://www.khaleejtimes.com/life-and-living/uae-8-safety-tips-to-follow-when-vehicle-breaks-down-in-the-middle-of-the-road",
+      "publisher": "Khaleej Times",
+      "date": "2024-04"
+    },
+    "S29": {
+      "title": "Vehicle Break Down: What to do?",
+      "url": "https://www.roadsafetyuae.com/vehicle-break-down/",
+      "publisher": "RoadSafetyUAE",
+      "date": "undated (accessed 2026-09)"
+    },
+    "S30": {
+      "title": "Vehicle Fire",
+      "url": "https://www.roadsafetyuae.com/vehicle-fire/",
+      "publisher": "RoadSafetyUAE",
+      "date": "2022-06"
+    },
+    "S31": {
+      "title": "What you should do in the event of a vehicle fire",
+      "url": "https://www.thenationalnews.com/uae/transport/what-you-should-do-in-the-event-of-a-vehicle-fire-1.211501",
+      "publisher": "The National",
+      "date": "2021-06"
+    },
+    "S32": {
+      "title": "UAE: 10 tips on how to prevent car fire caused by summer heat; police issue advisory (Abu Dhabi Police)",
+      "url": "https://www.khaleejtimes.com/uae/uae-10-tips-on-how-to-prevent-car-fire-caused-by-summer-heat-police-issue-advisory",
+      "publisher": "Khaleej Times",
+      "date": "2023-07"
+    },
+    "S33": {
+      "title": "Safe Summer campaign launched to tackle rising vehicle fire risks in UAE",
+      "url": "https://gulfnews.com/uae/emergencies/safe-summer-campaign-launched-to-tackle-rising-vehicle-fire-risks-in-uae-1.500195578",
+      "publisher": "Gulf News",
+      "date": "2025-07"
+    },
+    "S34": {
+      "title": "New warning sign must for all vehicles (RTA: warning triangle required for registration)",
+      "url": "https://gulfnews.com/amp/story/uae%2Ftransport%2Fnew-warning-sign-must-for-all-vehicles-1.505934",
+      "publisher": "Gulf News",
+      "date": "2009-09"
+    },
+    "S35": {
+      "title": "Pre-Drive Vehicle Check",
+      "url": "http://www.roadsafetyuae.com/pre-drive-vehicle-check/",
+      "publisher": "RoadSafetyUAE",
+      "date": "undated (accessed 2026-09)"
+    },
+    "S36": {
+      "title": "Hard Shoulder for Emergencies Only",
+      "url": "http://www.roadsafetyuae.com/hard-shoulder-for-emergencies-only/",
+      "publisher": "RoadSafetyUAE",
+      "date": "undated (accessed 2026-09)"
+    },
+    "S37": {
+      "title": "The Complete Guide to Car Dashboard Warning Lights and Their Meanings",
+      "url": "https://www.jeep-dubaiuae.com/en/news/understanding-car-dashboard-warning-lights-a-complete-guide/",
+      "publisher": "Jeep UAE",
+      "date": "undated (accessed 2026-09)"
+    },
+    "S38": {
+      "title": "Car Warning Dashboard Lights Explained",
+      "url": "https://www.kbb.com/car-advice/car-warning-dashboard-lights-explained",
+      "publisher": "Kelley Blue Book",
+      "date": "2025-04"
+    },
+    "S39": {
+      "title": "Automatic transmission",
+      "url": "https://en.wikipedia.org/wiki/Automatic_transmission",
+      "publisher": "Wikipedia",
+      "date": "accessed 2026-09"
+    },
+    "S40": {
+      "title": "Head restraint",
+      "url": "https://en.wikipedia.org/wiki/Head_restraint",
+      "publisher": "Wikipedia (citing IIHS)",
+      "date": "accessed 2026-09"
+    },
+    "S41": {
+      "title": "Air Bags",
+      "url": "https://www.nhtsa.gov/vehicle-safety/air-bags",
+      "publisher": "NHTSA (US)",
+      "date": "accessed 2026-09"
+    },
+    "S42": {
+      "title": "Blind spot (vehicle)",
+      "url": "https://en.wikipedia.org/wiki/Blind_spot_(vehicle)",
+      "publisher": "Wikipedia",
+      "date": "accessed 2026-09"
+    },
+    "S43": {
+      "title": "Car overheating: what to do",
+      "url": "https://www.rac.co.uk/drive/advice/car-maintenance/car-overheating/",
+      "publisher": "RAC",
+      "date": "2026-02"
+    },
+    "S44": {
+      "title": "Radiator (engine cooling)",
+      "url": "https://en.wikipedia.org/wiki/Radiator_(engine_cooling)",
+      "publisher": "Wikipedia",
+      "date": "accessed 2026-09"
+    },
+    "S45": {
+      "title": "Turn Around Don't Drown",
+      "url": "https://www.weather.gov/safety/flood-turn-around-dont-drown",
+      "publisher": "US National Weather Service",
+      "date": "accessed 2026-09"
+    },
+    "S46": {
+      "title": "Floods",
+      "url": "https://www.ready.gov/floods",
+      "publisher": "Ready.gov (FEMA)",
+      "date": "accessed 2026-09"
+    },
+    "S47": {
+      "title": "Dh5,000 fine for leaving children unattended in car, Abu Dhabi Police warn in safety drive",
+      "url": "https://gulfnews.com/uae/dh5000-fine-for-leaving-children-unattended-in-car-abu-dhabi-police-warn-in-safety-drive-1.89988087",
+      "publisher": "Gulf News",
+      "date": "2022-08"
+    },
+    "S48": {
+      "title": "Rising heat in UAE: parents warned against leaving children alone in vehicles",
+      "url": "https://www.khaleejtimes.com/uae/summer-heat-police-warn-leaving-children-inside-car",
+      "publisher": "Khaleej Times",
+      "date": "2025-05"
+    },
+    "S49": {
+      "title": "Ecodriving",
+      "url": "https://en.wikipedia.org/wiki/Ecodriving",
+      "publisher": "Wikipedia",
+      "date": "accessed 2026-09"
+    },
+    "S50": {
+      "title": "Police issue fog warning after 21-car pile-up in Sharjah",
+      "url": "https://www.thenationalnews.com/uae/transport/police-issue-fog-warning-after-21-car-pile-up-in-sharjah-1.1081032",
+      "publisher": "The National",
+      "date": "2020-09"
+    },
+    "S51": {
+      "title": "Understeer and oversteer",
+      "url": "https://en.wikipedia.org/wiki/Understeer_and_oversteer",
+      "publisher": "Wikipedia",
+      "date": "accessed 2026-09"
+    },
+    "S52": {
+      "title": "Dh500 fine and black points for driving with hazard lights on during fog in UAE (Abu Dhabi Police)",
+      "url": "https://gulfnews.com/uae/transport/dh500-fine-and-black-points-for-driving-with-hazard-lights-on-during-fog-in-uae-1.2146717",
+      "publisher": "Gulf News",
+      "date": "2018-11"
+    },
+    "S53": {
+      "title": "Abu Dhabi: Dh500 fine, four black points for driving with tyres past their expiry date",
+      "url": "https://gulfnews.com/uae/abu-dhabi-dh500-fine-four-black-points-for-driving-with-tyres-past-their-expiry-date-1.89275067",
+      "publisher": "Gulf News",
+      "date": "2022-07"
+    },
+    "S54": {
+      "title": "Essential Guide to Car Dashboard Symbols and Warning Lights",
+      "url": "https://www.pitstoparabia.com/en/news/car-dashboard-symbols",
+      "publisher": "Pitstop Arabia (UAE car service)",
+      "date": "undated (accessed 2026-09)"
+    },
+    "S55": {
+      "title": "Skid (automobile)",
+      "url": "https://en.wikipedia.org/wiki/Skid_(automobile)",
+      "publisher": "Wikipedia",
+      "date": "accessed 2026-09"
+    },
+    "S56": {
+      "title": "Basics of Driving, 4th edition (driving handbook)",
+      "url": "https://www.sdi.ae/public/uploads/downloads/20211205122542Driving-Handbook-English.pdf",
+      "publisher": "Sharjah Driving Institute",
+      "date": "2021"
+    },
+    "S57": {
+      "title": "Tips For New Drivers",
+      "url": "https://www.sdi.ae/public/uploads/downloads/20260414084444Tips-For-New-Drivers.pdf",
+      "publisher": "Sharjah Driving Institute",
+      "date": "2026-04"
+    }
+  },
+  "cards": [
+    {
+      "id": "safety-card-001",
+      "topic": "weather",
+      "level": 1,
+      "title": "الضباب: الأضواء الصحيحة",
+      "body": "استخدم الأضواء المنخفضة، وأضف أضواء الضباب إذا كانت في سيارتك\nلا تستخدم الأضواء العالية، لأنها تنعكس على قطرات الضباب وتقلل رؤيتك",
+      "key": "منخفضة، لا عالية",
+      "src": [
+        "S1",
+        "S9",
+        "S10",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-002",
+      "topic": "weather",
+      "level": 1,
+      "title": "الفلاشر للوقوف فقط",
+      "body": "الإشارات الرباعية للتوقف الاضطراري والحوادث والخطر الطارئ فقط\nتشغيلها وأنت تسير في الضباب أو المطر يربك من خلفك لأنه لا يرى إشارة انعطافك، وهي مخالفة",
+      "key": "500 درهم و4 نقاط سوداء",
+      "src": [
+        "S4",
+        "S5",
+        "S6",
+        "S11"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-003",
+      "topic": "weather",
+      "level": 2,
+      "title": "سرعة ومسافة الضباب",
+      "body": "خفف تدريجيا حتى تستطيع التوقف ضمن المسافة التي تراها\nزد مسافة الأمان كثيرا، مثلا من 3 ثوان إلى 5 ثوان على الأقل\nلا تفرمل فجأة ولا تتوقف في وسط الطريق",
+      "key": "5 ثوان على الأقل",
+      "src": [
+        "S1",
+        "S6",
+        "S10",
+        "S13"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-004",
+      "topic": "weather",
+      "level": 2,
+      "title": "لا تجاوز في الضباب",
+      "body": "أهم أسباب حوادث الضباب: السرعة، وقلة المسافة، والتجاوز الخاطئ، وعدم مراعاة ضعف الرؤية\nابق في مسارك، واستعن بخطوط الطريق وحافته اليمنى لتبقى في مكانك",
+      "src": [
+        "S9",
+        "S7",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-005",
+      "topic": "weather",
+      "level": 3,
+      "title": "ضباب كثيف جدا؟ اخرج من الطريق",
+      "body": "إذا صارت الرؤية شبه معدومة، اخرج من الطريق كليا إلى مكان آمن بعيد عن السيارات مثل محطة وقود\nبعد التوقف فقط شغل الفلاشر، ولا تتوقف في مسارك",
+      "src": [
+        "S1",
+        "S4",
+        "S6",
+        "S11"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-006",
+      "topic": "weather",
+      "level": 3,
+      "title": "السرعة المتغيرة وقت الضباب",
+      "body": "في أبوظبي تخفض الشرطة السرعة إلى 80 كم/ساعة على طرق رئيسية كثيرة وقت الضباب، وتظهر السرعة الجديدة على اللوحات الإلكترونية\nالتزم بالسرعة المعروضة، وتابع تحذيرات الأرصاد قبل الخروج صباحا",
+      "key": "80 كم/ساعة",
+      "src": [
+        "S7",
+        "S9",
+        "S8"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-007",
+      "topic": "weather",
+      "level": 1,
+      "title": "أول مطر أخطر مطر",
+      "body": "أول مطر بعد جفاف طويل يرفع الزيت والغبار على سطح الطريق فيصير زلقا جدا\nخفف السرعة، وتجنب الفرملة القوية، وضاعف المسافة على الأقل، وشغل الأضواء المنخفضة إذا ضعفت الرؤية",
+      "src": [
+        "S1",
+        "S2",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-008",
+      "topic": "weather",
+      "level": 3,
+      "title": "الانزلاق المائي",
+      "body": "يحدث عندما تسير الإطارات فوق طبقة ماء، فيصير المقود خفيفا وقد تتمايل مؤخرة السيارة\nالوقاية: سرعة أقل من 80 كم/ساعة في المطر، وإطارات بنقشة جيدة، ومسافة 4 ثوان على الأقل\nإذا حدث: أمسك المقود بثبات، ولا تفرمل ولا تسرع، وارفع قدمك عن البنزين تدريجيا",
+      "key": "أقل من 80 كم/ساعة",
+      "src": [
+        "S1",
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-009",
+      "topic": "weather",
+      "level": 3,
+      "title": "الماء المتجمع والماء الجاري",
+      "body": "تجنب العبور في الماء قدر الإمكان\nلا تعبر بسيارة صالون إذا كان الماء فوق نصف ارتفاع الإطار\nلا تعبر ماء جاريا أبدا حتى لو كان قليلا، فقوته قد تجرف السيارة\nإذا لم تر خطوط الطريق تحت الماء فابحث عن طريق آخر",
+      "key": "نصف ارتفاع الإطار",
+      "src": [
+        "S1",
+        "S13",
+        "S45"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-010",
+      "topic": "weather",
+      "level": 4,
+      "title": "الأودية وقت السيول",
+      "body": "ابتعد عن الأودية ومجاري السيول وقت الأمطار، فهي تمتلئ بسرعة\nدخول الوادي وهو يجري بالسيول مخالفة عقوبتها 2000 درهم و23 نقطة سوداء وحجز المركبة 60 يوما، والتجمع قرب الأودية والسدود 1000 درهم و6 نقاط",
+      "key": "2000 درهم و23 نقطة",
+      "src": [
+        "S12",
+        "S14",
+        "S3"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-card-011",
+      "topic": "weather",
+      "level": 2,
+      "title": "الغبار والرياح القوية",
+      "body": "خفف السرعة، وشغل الأضواء المنخفضة، وزد المسافة، وأغلق النوافذ\nلا تشغل الفلاشر إلا بعد التوقف الكامل خارج الطريق\nلا تركن تحت الأشجار أو اللوحات الإعلانية أو قرب مواقع البناء",
+      "src": [
+        "S15",
+        "S10",
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-012",
+      "topic": "weather",
+      "level": 2,
+      "title": "الحر الشديد والسيارة",
+      "body": "الطريق الحار يزيد خطر انفجار الإطار، خصوصا إذا كان قديما أو ناقص الهواء\nافحص ضغط الإطارات وعمرها، وسائل التبريد والزيت والمكيف والفرامل، واركن في الظل\nلا تترك داخل السيارة ولاعة أو عطرا أو معقم يدين أو بنك طاقة أو بخاخات مضغوطة\nالسراب على الطريق الحار قد يبدو مثل بركة ماء، فلا تنخدع به",
+      "src": [
+        "S17",
+        "S32",
+        "S33",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-013",
+      "topic": "weather",
+      "level": 1,
+      "title": "الطفل لا يبقى وحده في السيارة",
+      "body": "حرارة السيارة المغلقة ترتفع إلى مستوى قاتل خلال دقائق، والمكيف لا يكفي لحمايته\nقانون حقوق الطفل (وديمة) يعاقب على ذلك بالغرامة أو الحبس\nتأكد من المقعد الخلفي قبل أن تقفل السيارة",
+      "key": "ولا دقيقة",
+      "src": [
+        "S17",
+        "S47",
+        "S48"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-014",
+      "topic": "weather",
+      "level": 1,
+      "title": "وهج الشمس",
+      "body": "عند الشروق والغروب يصعب رؤية الطريق إذا كانت الشمس أمامك\nخفف السرعة، واستخدم واقي الشمس والنظارة الشمسية، وحافظ على نظافة الزجاج",
+      "src": [
+        "S1",
+        "S2",
+        "S17"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-015",
+      "topic": "night",
+      "level": 1,
+      "title": "الأضواء من الغروب إلى الشروق",
+      "body": "لازم تشغل الأضواء الأمامية والخلفية من غروب الشمس إلى شروقها، وفي النهار أيضا إذا ضعفت الرؤية",
+      "src": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-016",
+      "topic": "night",
+      "level": 2,
+      "title": "متى الأضواء العالية؟",
+      "body": "على الطرق غير المضاءة فقط وعند الحاجة\nحول إلى المنخفضة فورا إذا ظهرت سيارة قادمة (دليل معهد الشارقة: ضمن 200 متر) أو اقتربت من سيارة أمامك",
+      "key": "200 متر",
+      "src": [
+        "S1",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-017",
+      "topic": "night",
+      "level": 2,
+      "title": "إذا أبهرتك الأضواء",
+      "body": "لا تنظر إلى الضوء القادم\nانظر إلى الجهة اليمنى من الطريق، وقد نحو يمين مسارك، وخفف السرعة، وتوقف إذا لم تعد ترى\nوللإبهار من الخلف استخدم الوضع الليلي في المرآة الداخلية",
+      "src": [
+        "S1",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-018",
+      "topic": "night",
+      "level": 1,
+      "title": "توقف ضمن ما تراه",
+      "body": "اختر سرعة تسمح لك بالتوقف ضمن المسافة التي تنيرها أضواؤك\nالمشاة بملابس داكنة والدراجات بلا أضواء يظهرون متأخرين جدا",
+      "src": [
+        "S1",
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-019",
+      "topic": "night",
+      "level": 3,
+      "title": "الحيوانات على الطرق الخارجية",
+      "body": "قرب المزارع والمناطق الصحراوية قد تعبر الجمال والحيوانات فجأة\nالقانون يلزمك بتخفيف السرعة عند مصادفة الحيوانات أو عند أماكن عبورها",
+      "src": [
+        "S3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-020",
+      "topic": "night",
+      "level": 2,
+      "title": "صعوبة التقدير ليلا",
+      "body": "خطر الحوادث ليلا أعلى، وتقدير سرعة ومسافة السيارات الأخرى أصعب\nنظف الزجاج والمرايا والمصابيح، وافحص الضوء العالي والمنخفض قبل الرحلة",
+      "src": [
+        "S1",
+        "S56",
+        "S17"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-021",
+      "topic": "hazard",
+      "level": 1,
+      "title": "ما هو الخطر؟",
+      "body": "الخطر هو أي شيء، متحرك أو ثابت، قد يجبرك على تغيير اتجاهك أو موقعك أو سرعتك",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-022",
+      "topic": "hazard",
+      "level": 1,
+      "title": "خمس عادات تكشف الخطر",
+      "body": "انظر بعيدا وعلى الجانبين وفي المرايا\nتوقع خطوة الآخرين التالية وأخطاءهم\nخفف وغط الفرامل بقدمك\nاعرف حالتك الجسدية والنفسية\nابق هادئا",
+      "src": [
+        "S1",
+        "S57"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-023",
+      "topic": "hazard",
+      "level": 2,
+      "title": "سؤال: ماذا لو؟",
+      "body": "اسأل نفسك باستمرار: ماذا لو خرج طفل؟ ماذا لو توقف التاكسي؟ ماذا لو فتح باب؟\nالجواب غالبا: ارفع قدمك عن البنزين، وغط الفرامل، وزد المسافة",
+      "src": [
+        "S1",
+        "S57"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-card-024",
+      "topic": "hazard",
+      "level": 2,
+      "title": "الأطفال وكبار السن",
+      "body": "الأطفال صغار ويصعب رؤيتهم وتصرفاتهم مفاجئة، وكبار السن أبطأ وقد لا يرونك\nالقانون يلزمك بالتخفيف قرب المدارس والأماكن المزدحمة",
+      "src": [
+        "S1",
+        "S3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-025",
+      "topic": "hazard",
+      "level": 2,
+      "title": "الحافلات والركاب",
+      "body": "خفف أو توقف عند الحاجة لتسمح للحافلات المدرسية والعامة بالتوقف لصعود الركاب ونزولهم\nتوقع عبور ركاب من أمام الحافلة، وتوقع خروج الحافلة من المحطة",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-026",
+      "topic": "hazard",
+      "level": 2,
+      "title": "الدراجات النارية والهوائية",
+      "body": "صغيرة ويصعب رؤيتها، ويحق لها استخدام المسار كاملا\nافحص المرايا والنقطة العمياء قبل أي انعطاف أو تغيير مسار، واترك مترا على الأقل عند تجاوزها",
+      "key": "متر على الأقل",
+      "src": [
+        "S1",
+        "S2",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-027",
+      "topic": "hazard",
+      "level": 3,
+      "title": "الشاحنات والحافلات الطويلة",
+      "body": "إذا لم تر السائق في مرآته فهو لا يراك، ولا تسر بجانب الشاحنة مدة طويلة\nنقاطها العمياء أمامها مباشرة، وخلفها لمسافة طويلة، وعلى جانبيها\nتحتاج أكثر من مسار لتنعطف، فلا تدخل من يمينها وهي تشير يمينا، واترك 1.5 متر عند تجاوزها",
+      "key": "1.5 متر",
+      "src": [
+        "S1",
+        "S2",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-028",
+      "topic": "hazard",
+      "level": 3,
+      "title": "سائق منشغل أمامك",
+      "body": "علاماته: يتمايل في مساره، ويسرع ويبطئ بلا سبب، ولا يحافظ على المسافة\nلا تبق بجانبه، وزد المسافة خلفه",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-029",
+      "topic": "hazard",
+      "level": 4,
+      "title": "التوقف المفاجئ على الطريق السريع",
+      "body": "راقب أضواء الفرامل بعيدا أمامك، وارفع قدمك مبكرا، وخفف بالتدريج\nعلى 100 كم/ساعة قد تحتاج السيارة حتى 87 مترا لتتوقف، وعلى 120 كم/ساعة حتى 130 مترا",
+      "key": "87 مترا على 100 كم/ساعة",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-030",
+      "topic": "hazard",
+      "level": 3,
+      "title": "المواقف والمداخل",
+      "body": "الضوء الأبيض الخلفي يعني أن السيارة ستتراجع\nالسيارة الخارجة من مدخل بين الأسوار قد لا تراك\nخفف وكن مستعدا للتوقف، واستخدم المرايا والالتفات عند الرجوع",
+      "src": [
+        "S1",
+        "S39"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-031",
+      "topic": "hazard",
+      "level": 3,
+      "title": "سيارة متوقفة على الكتف",
+      "body": "توقع وجود أشخاص حولها أو عودتها المفاجئة إلى الطريق\nخفف وابتعد عنها إن أمكن، ولا تبطئ للفرجة أو التصوير",
+      "src": [
+        "S29",
+        "S36"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-card-032",
+      "topic": "emergency",
+      "level": 1,
+      "title": "أرقام الطوارئ",
+      "body": "الشرطة: 999\nالدفاع المدني (الإطفاء): 997",
+      "key": "999 و997",
+      "src": [
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-033",
+      "topic": "emergency",
+      "level": 1,
+      "title": "انفجار الإطار",
+      "body": "أمسك المقود بثبات\nارفع قدمك عن البنزين تدريجيا\nفرمل بلطف حتى لا تنحرف\nانظر يمينا ثم اتجه إلى جانب الطريق وشغل الفلاشر",
+      "src": [
+        "S20"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-034",
+      "topic": "emergency",
+      "level": 2,
+      "title": "تعطل على طريق سريع",
+      "body": "شغل الفلاشر، واخرج إلى أبعد مكان آمن (أقرب مخرج، أو الكتف الأيمن عند الضرورة فقط)\nضع الغيار على P وشد فرامل اليد\nانزلوا من الجهة اليمنى وابتعدوا خلف الحاجز\nضع مثلث التحذير واتصل بـ 999",
+      "src": [
+        "S2",
+        "S27",
+        "S28",
+        "S29"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-035",
+      "topic": "emergency",
+      "level": 3,
+      "title": "مثلث التحذير",
+      "body": "دليل القيادة الآمنة من هيئة الطرق في دبي: ضعه على بعد 50 مترا خلف السيارة في اتجاه السيارات القادمة\nدليل معهد الشارقة للسياقة يذكر مسافة أبعد (حوالي 100 متر)، وعلى الطرق السريعة المسافة الأبعد أأمن\nالمثلث شرط لتسجيل المركبة في دبي منذ 2009",
+      "key": "50 مترا (دبي)",
+      "src": [
+        "S2",
+        "S56",
+        "S34"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-036",
+      "topic": "emergency",
+      "level": 2,
+      "title": "مثبت سرعة معطل أو بنزين عالق",
+      "body": "اهدأ واربط الحزام، وشغل الفلاشر واتصل بـ 999\nانقل الغيار إلى N واضغط الفرامل بقوة وثبات\nاستخدم فرامل اليد تدريجيا وأنت تمسك المقود جيدا",
+      "src": [
+        "S21",
+        "S22"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-037",
+      "topic": "emergency",
+      "level": 3,
+      "title": "الفرامل لا تستجيب",
+      "body": "اضغط دواسة الفرامل وارفعها بسرعة عدة مرات (ضخ الفرامل)\nارفع قدمك عن البنزين، وانقل لغيار منخفض إن أمكن\nاستخدم فرامل اليد تدريجيا، وشغل الفلاشر والبوق\nلا تطفئ المحرك قبل أن تتوقف",
+      "src": [
+        "S23",
+        "S24"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-card-038",
+      "topic": "emergency",
+      "level": 2,
+      "title": "فرملة طارئة مع ABS",
+      "body": "اضغط بقوة واستمر بالضغط، ولا تضخ الدواسة\nالاهتزاز والصوت طبيعيان\nوجه المقود لتتفادى الخطر وأنت تفرمل",
+      "src": [
+        "S25",
+        "S26",
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-039",
+      "topic": "emergency",
+      "level": 4,
+      "title": "الانزلاق",
+      "body": "ارفع قدمك عن البنزين، وتجنب الفرملة القوية\nوجه المقود بهدوء نحو المكان الذي تريد أن تذهب إليه السيارة\nبدون ABS: إذا انغلقت العجلات خفف الضغط لحظة ثم فرمل من جديد",
+      "src": [
+        "S51",
+        "S55",
+        "S26"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-card-040",
+      "topic": "emergency",
+      "level": 2,
+      "title": "حريق السيارة",
+      "body": "توقف بأمان وأطفئ المحرك\nأخرج الجميع وابتعدوا 30 مترا على الأقل\nلا تفتح غطاء المحرك، واتصل بـ 997 أو 999\nالطفاية فقط للنار الصغيرة، ولا تعد لأخذ أغراضك",
+      "key": "30 مترا",
+      "src": [
+        "S2",
+        "S30",
+        "S31"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-041",
+      "topic": "emergency",
+      "level": 2,
+      "title": "حرارة المحرك مرتفعة",
+      "body": "اخرج من الطريق وتوقف في مكان آمن وشغل الفلاشر، وانتظر حتى تنخفض الحرارة\nلا تفتح غطاء الرادياتير وهو ساخن، فالبخار والماء المغلي يحرقان\nبعد أن يبرد المحرك افحص مستوى سائل التبريد",
+      "src": [
+        "S43",
+        "S44",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-042",
+      "topic": "emergency",
+      "level": 2,
+      "title": "معدات السلامة في السيارة",
+      "body": "مثلث تحذير عاكس، وطفاية حريق صغيرة داخل المقصورة، وحقيبة إسعافات أولية\nافحصها من وقت لآخر، وتأكد من صلاحية الطفاية",
+      "src": [
+        "S34",
+        "S33",
+        "S35"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-card-043",
+      "topic": "emergency",
+      "level": 3,
+      "title": "محاصر في تيار ماء",
+      "body": "ابق داخل السيارة واتصل بـ 999\nإذا ارتفع الماء داخلها اصعد إلى سقفها\nلا تمش في الماء الجاري، فقد يسقطك حتى لو كان قليل العمق",
+      "src": [
+        "S46",
+        "S45"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-card-044",
+      "topic": "emergency",
+      "level": 1,
+      "title": "كتف الطريق للطوارئ فقط",
+      "body": "لا تستخدم الكتف للوقوف أو للرد على الهاتف أو للتصوير أو للرجوع إلى مخرج فاتك\nكثير من الحوادث سببها سيارات مسرعة تصطدم بسيارات واقفة على الكتف",
+      "src": [
+        "S36",
+        "S27"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-045",
+      "topic": "vehicle",
+      "level": 1,
+      "title": "الفحص الأسبوعي",
+      "body": "الإطارات (الضغط والنقشة)، والأضواء العالية والمنخفضة، وأضواء الفرامل والرجوع، والإشارات والفلاشر\nمستوى السوائل والمحرك بارد، والزجاج والمساحات، والمرايا، والبوق، وأحزمة الأمان",
+      "src": [
+        "S1",
+        "S2",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-046",
+      "topic": "vehicle",
+      "level": 2,
+      "title": "الإطار: ضغط ونقشة",
+      "body": "افحص الضغط والإطارات باردة، حسب الملصق على باب السائق\nحسب هيئة الطرق أقل عمق آمن للنقشة 1.5 ملم، ودليل معهد الشارقة ينصح بالتغيير قبل ذلك بكثير، فلا تنتظر الحد الأدنى\nافحص الجوانب من التشققات والانتفاخات",
+      "key": "1.5 ملم حد أدنى",
+      "src": [
+        "S1",
+        "S56",
+        "S37",
+        "S53"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-047",
+      "topic": "vehicle",
+      "level": 2,
+      "title": "عمر الإطار",
+      "body": "في الإمارات لا تستخدم إطارا عمره أكثر من 5 سنوات من تاريخ الصنع\nالتاريخ أربعة أرقام: أول رقمين الأسبوع وآخر رقمين السنة، مثلا 2324 يعني الأسبوع 23 من سنة 2024",
+      "key": "5 سنوات",
+      "src": [
+        "S16",
+        "S17",
+        "S19"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-048",
+      "topic": "vehicle",
+      "level": 3,
+      "title": "الحرارة وضغط الإطار",
+      "body": "يرتفع ضغط الإطار نحو 0.1 بار مع كل 10 درجات مئوية\nالإطار القديم أو الناقص الهواء أو المحمل زيادة أكثر عرضة للانفجار في الصيف",
+      "key": "0.1 بار لكل 10 درجات",
+      "src": [
+        "S18",
+        "S20"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-card-049",
+      "topic": "vehicle",
+      "level": 1,
+      "title": "ألوان أضواء لوحة العدادات",
+      "body": "الأحمر: خطر، توقف بأمان أو اطلب المساعدة\nالكهرماني (أصفر أو برتقالي): افحص قريبا\nالأخضر والأزرق: نظام يعمل\nعند التشغيل تضيء لثوان ثم تنطفئ، وهذا طبيعي",
+      "src": [
+        "S37",
+        "S38",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-050",
+      "topic": "vehicle",
+      "level": 3,
+      "title": "أضواء لا تحتمل التأجيل",
+      "body": "ضغط الزيت، وحرارة المحرك، والفرامل، والبطارية: توقف بأمان وافحص\nفحص المحرك: الثابت يعني افحص قريبا، والوامض يعني توقف\nABS والوسادة الهوائية وضغط الإطارات: افحص في أقرب وقت",
+      "src": [
+        "S37",
+        "S38"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-051",
+      "topic": "vehicle",
+      "level": 1,
+      "title": "غيارات السيارة الأوتوماتيكية",
+      "body": "P: ركن بعد التوقف الكامل\nR: رجوع بعد التوقف\nN: محايد\nD: قيادة إلى الأمام\n2 أو 1 (أو L): غيار منخفض يفيد في النزول الطويل من المنحدرات\nاستخدم قدمك اليمنى فقط للبنزين والفرامل",
+      "src": [
+        "S39",
+        "S56",
+        "S21"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-052",
+      "topic": "vehicle",
+      "level": 2,
+      "title": "قبل أن تتحرك",
+      "body": "اضبط المقعد ثم مسند الرأس ثم المرايا\nاربط الحزام\nاضغط الفرامل ثم انقل الغيار من P",
+      "src": [
+        "S56",
+        "S57",
+        "S39",
+        "S40"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-card-053",
+      "topic": "vehicle",
+      "level": 2,
+      "title": "المقعد والحزام ومسند الرأس",
+      "body": "اجلس بحيث تبقى ركبتك منثنية قليلا عند ضغط الدواسة إلى آخرها، وذراعاك منثنيتين قليلا على المقود\nالحزام على الحوض والكتف بعيدا عن الرقبة، مشدود وغير ملتو\nمسند الرأس خلف رأسك وقريب منه ليحمي رقبتك في الاصطدام من الخلف",
+      "src": [
+        "S56",
+        "S1",
+        "S40",
+        "S41"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-054",
+      "topic": "vehicle",
+      "level": 3,
+      "title": "الأنظمة المساعدة تساعدك فقط",
+      "body": "مثبت السرعة المتكيف ليس نظاما لمنع الاصطدام، فأبق يديك على المقود وعينيك على الطريق\nABS يمنع انغلاق العجلات، لكنه قد يطيل مسافة التوقف على الحصى",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-055",
+      "topic": "vehicle",
+      "level": 3,
+      "title": "السيارة الكهربائية",
+      "body": "التسارع فوري وقوي، فاضغط الدواسة بلطف\nلا تتركها طويلا تحت الشمس القوية، ولا تشحنها وهي ساخنة بعد الاستخدام مباشرة، واستخدم الشاحن الأصلي",
+      "src": [
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-056",
+      "topic": "vehicle",
+      "level": 2,
+      "title": "رخصة الأوتوماتيك",
+      "body": "إذا نجحت في الاختبار على سيارة أوتوماتيكية، فرخصتك لقيادة الأوتوماتيك فقط\nلقيادة سيارة يدوية (عادي) تحتاج اختبارا آخر",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-057",
+      "topic": "driver",
+      "level": 1,
+      "title": "القيادة الوقائية",
+      "body": "التركيز: ركز في القيادة 100% من الوقت\nالملاحظة: أمامك وجانبيك وخلفك\nالتوقع: اكتشف الخطر مبكرا\nالتواصل: أعلن نيتك بالإشارات والأضواء والبوق",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-058",
+      "topic": "driver",
+      "level": 1,
+      "title": "الهاتف",
+      "body": "دليل هيئة الطرق: مستخدم الهاتف أكثر عرضة للحادث 4 مرات، والسماعة لا تجعلك آمنا\nدليل معهد الشارقة: خطر الحادث المميت أعلى 9 مرات\nاستخدمه وأنت مركون فقط، واضبط الخرائط قبل التحرك، والمخالفة 800 درهم و4 نقاط سوداء",
+      "key": "ركن أولا",
+      "src": [
+        "S1",
+        "S56",
+        "S12"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-059",
+      "topic": "driver",
+      "level": 1,
+      "title": "التعب",
+      "body": "علاماته: تثاؤب متكرر، وانحراف عن المسار، وثقل الجفون، وسرعة متذبذبة، وأحلام يقظة، ونسيان آخر كيلومترات\nإذا بدأ التعب فلا حل إلا أن تتوقف في مكان آمن وترتاح أو تنام قليلا",
+      "src": [
+        "S1",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-060",
+      "topic": "driver",
+      "level": 2,
+      "title": "الرحلات الطويلة ورمضان",
+      "body": "نم جيدا قبل الرحلة، وخذ استراحة كل ساعتين على الأقل، وتقاسم القيادة إن أمكن\nاخرج مبكرا حتى لا تستعجل، مثلا قبل موعد الإفطار في رمضان",
+      "key": "استراحة كل ساعتين",
+      "src": [
+        "S1",
+        "S56",
+        "S2"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-card-061",
+      "topic": "driver",
+      "level": 2,
+      "title": "الغضب على الطريق",
+      "body": "حافظ على هدوئك واترك مسافة\nإذا أخطأت فاعترف بخطئك، وعامل الآخرين كما تحب أن يعاملوك\nإذا لاحقك سائق عدواني ابتعد عنه واتصل بالشرطة",
+      "src": [
+        "S1",
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-062",
+      "topic": "driver",
+      "level": 2,
+      "title": "الملتصق من الخلف",
+      "body": "الالتصاق بالسيارة الأمامية خطير جدا\nإذا التصق بك أحد فلا تفرمل فجأة ولا تسرع، حافظ على هدوئك وأفسح له الطريق عندما يكون ذلك آمنا",
+      "src": [
+        "S1",
+        "S2"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-card-063",
+      "topic": "driver",
+      "level": 2,
+      "title": "الأدوية والكحول والمخدرات",
+      "body": "بعض الأدوية تسبب النعاس، فاسأل الطبيب أو الصيدلي قبل القيادة\nممنوع أن تقود تحت تأثير الكحول أو المخدرات",
+      "src": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-064",
+      "topic": "driver",
+      "level": 3,
+      "title": "النقطة العمياء",
+      "body": "قبل الرجوع أو تغيير المسار أو الاندماج أو الخروج من الموقف: المرآة ثم التفاتة سريعة\nحرك رأسك فقط لا كتفيك، ولا تبعد عينك عن الأمام أكثر من ثانية\nلا تلتفت إذا كانت السيارات أمامك تفرمل",
+      "src": [
+        "S1",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-065",
+      "topic": "driver",
+      "level": 3,
+      "title": "قيادة موفرة وآمنة",
+      "body": "تسارع وفرملة بهدوء، وتوقع الإشارات مبكرا، وسرعة ثابتة\nضغط إطارات صحيح، وأزل الوزن الزائد وحامل السقف غير المستخدم\nلا تترك المحرك يعمل بلا داع",
+      "src": [
+        "S49",
+        "S2",
+        "S35",
+        "S57"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-card-066",
+      "topic": "driver",
+      "level": 4,
+      "title": "كيلومترات قليلة وخطر كبير",
+      "body": "حسب هيئة الطرق: 65 كم/ساعة في منطقة حدها 60 تضاعف خطر الحادث الخطير، و70 كم/ساعة تجعله أكثر من 4 أضعاف",
+      "key": "5 كم/ساعة زيادة = ضعف الخطر",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    }
+  ],
+  "questions": [
+    {
+      "id": "safety-weather-001",
+      "topic": "weather",
+      "level": 1,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "أثناء القيادة في الضباب، أي أضواء تستخدم؟",
+      "options": [
+        "لا شيء إذا كان الوقت نهارا والشمس ساطعة",
+        "الإشارات الرباعية (الفلاشر) طوال الطريق",
+        "الأضواء العالية لأنها تنير مسافة أبعد",
+        "الأضواء المنخفضة، وأضواء الضباب إن وجدت"
+      ],
+      "answer": 3,
+      "explain": "الضوء العالي ينعكس على قطرات الماء في الضباب ويقلل رؤيتك، لذلك استخدم الأضواء المنخفضة ومعها أضواء الضباب",
+      "tip": "بالضباب: الواطي مش العالي",
+      "src": [
+        "S1",
+        "S9",
+        "S10",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-weather-002",
+      "topic": "weather",
+      "level": 1,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "هل مسموح تشغيل الإشارات الرباعية (الفلاشر) وأنت تسير في الضباب؟",
+      "options": [
+        "نعم، على الطرق السريعة فقط",
+        "نعم، هي إلزامية في كل ضباب",
+        "لا، هي للتوقف الاضطراري أو الخطر الطارئ فقط",
+        "نعم، إذا كانت سرعتك أقل من 80 كم/ساعة والرؤية ضعيفة"
+      ],
+      "answer": 2,
+      "explain": "الفلاشر أثناء السير يربك السائق خلفك لأنه لا يرى إشارة انعطافك ولا يعرف إن كنت متوقفا، وهي مخالفة غرامتها 500 درهم و4 نقاط سوداء",
+      "tip": "الفلاشر للوقوف مش للمشي",
+      "src": [
+        "S4",
+        "S5",
+        "S6",
+        "S52"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-weather-003",
+      "topic": "weather",
+      "level": 1,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "بدأ المطر لأول مرة بعد أشهر من الجفاف، كيف يكون الطريق في الدقائق الأولى؟",
+      "options": [
+        "أكثر تماسكا من المعتاد لأن الغبار ينغسل عن الأسفلت",
+        "زلقا في الليل فقط",
+        "لا يتغير شيء حتى يغزر المطر",
+        "زلقا جدا لأن الزيت والغبار يطفوان على سطحه"
+      ],
+      "answer": 3,
+      "explain": "أول مطر بعد جفاف طويل يرفع الزيت والأتربة على سطح الطريق، فخفف سرعتك وتجنب الفرملة القوية",
+      "tip": "أول شتوة أزلق شتوة",
+      "src": [
+        "S1",
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-weather-004",
+      "topic": "weather",
+      "level": 1,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "ما أهم تصرف عند القيادة تحت المطر؟",
+      "options": [
+        "أخفف السرعة وأزيد المسافة عن السيارة التي أمامي",
+        "أزيد السرعة لأخرج من منطقة المطر بسرعة",
+        "أقترب من السيارة الأمامية لأرى أضواءها الخلفية بوضوح",
+        "أشغل الفلاشر وأكمل بنفس السرعة"
+      ],
+      "answer": 0,
+      "explain": "الطريق المبلل يطيل مسافة التوقف ويقلل الرؤية، ومعهد الشارقة للسياقة ينصح بمضاعفة المسافة على الأقل",
+      "src": [
+        "S1",
+        "S2",
+        "S14",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-weather-005",
+      "topic": "weather",
+      "level": 1,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "تقود باتجاه الشمس وقت الغروب والوهج قوي، ما التصرف الصحيح؟",
+      "options": [
+        "أزيد السرعة لأتجاوز فترة الوهج بسرعة",
+        "أشغل الأضواء العالية لأعادل وهج الشمس أمامي",
+        "أخفف السرعة وأستخدم واقي الشمس والنظارة",
+        "أغمض عيني لحظات متقطعة حتى يخف الوهج"
+      ],
+      "answer": 2,
+      "explain": "وقت الشروق والغروب يصعب رؤية الطريق، فخفف السرعة وانتبه للأخطار حولك واستخدم واقي الشمس والنظارة",
+      "src": [
+        "S1",
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-weather-006",
+      "topic": "weather",
+      "level": 1,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "هل مسموح ترك طفل وحده في السيارة المتوقفة لدقائق قليلة إذا كان المكيف يعمل؟",
+      "options": [
+        "لا، أبدا، فحرارتها قد تصبح قاتلة خلال دقائق",
+        "نعم، إذا كانت السيارة في الظل ولمدة قصيرة",
+        "نعم، إذا كان المكيف يعمل والأبواب مقفلة",
+        "نعم، إذا تركت النوافذ مفتوحة قليلا للتهوية"
+      ],
+      "answer": 0,
+      "explain": "هيئة الطرق تحذر أن المكيف لا يكفي لحماية الطفل، وقانون حقوق الطفل (وديمة) يعاقب على تركه وحده بالغرامة أو الحبس",
+      "tip": "ولا دقيقة، خذه معك",
+      "src": [
+        "S17",
+        "S47",
+        "S48"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-weather-007",
+      "topic": "weather",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "لماذا لا تستخدم الأضواء العالية في الضباب؟",
+      "options": [
+        "لأنها تفرغ البطارية بسرعة",
+        "لأنها تنعكس على قطرات الضباب فتضعف رؤيتك",
+        "لأنها تطفئ أضواء الضباب الأمامية تلقائيا في معظم السيارات",
+        "لأنها ترفع حرارة المحرك"
+      ],
+      "answer": 1,
+      "explain": "الضباب قطرات ماء معلقة، والضوء العالي يرتد عنها مثل جدار أبيض أمامك، أما الأضواء المنخفضة وأضواء الضباب فأفضل للرؤية",
+      "src": [
+        "S1",
+        "S9",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-weather-008",
+      "topic": "weather",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "في الضباب، كيف تتعامل مع المسافة بينك وبين السيارة التي أمامك؟",
+      "options": [
+        "أزيدها كثيرا لأني أحتاج مسافة أطول للتوقف",
+        "أقترب منها قليلا لأتبع أضواءها الخلفية وأبقى في المسار",
+        "أبقيها كما هي في الجو العادي",
+        "أتجاوزها حتى لا أحتاج لمتابعتها"
+      ],
+      "answer": 0,
+      "explain": "في الضباب ترى الخطر متأخرا فتتأخر فرملتك، لذلك زد المسافة كثيرا، مثلا من 3 ثوان إلى 5 ثوان على الأقل",
+      "tip": "لحاق الضو الخلفي بالضباب فخ",
+      "src": [
+        "S1",
+        "S10",
+        "S13",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-weather-009",
+      "topic": "weather",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "في مطر غزير نهارا أصبحت الرؤية ضعيفة، ماذا تفعل بأضواء السيارة؟",
+      "options": [
+        "أبقيها مطفأة لأن الوقت نهار",
+        "أشغل الأضواء العالية طوال الوقت",
+        "أشغل الفلاشر وأكمل السير",
+        "أشغل الأضواء الأمامية المنخفضة"
+      ],
+      "answer": 3,
+      "explain": "لازم تشغل الأضواء في النهار إذا ضعفت الرؤية حتى ترى ويراك الآخرون، أما الفلاشر فللتوقف فقط",
+      "src": [
+        "S1",
+        "S13",
+        "S11",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-weather-010",
+      "topic": "weather",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "في أي حالة من هذه الحالات يصح تشغيل الإشارات الرباعية (الفلاشر)؟",
+      "options": [
+        "أثناء السير تحت مطر غزير",
+        "أثناء السير في ضباب كثيف",
+        "عند الوقوف في مكان ممنوع لدقيقة واحدة لشراء غرض من محل",
+        "بعد توقفي اضطراريا على كتف الطريق الأيمن بسبب عطل"
+      ],
+      "answer": 3,
+      "explain": "الفلاشر يعني أن سيارتك متوقفة أو أن هناك خطرا طارئا، وتشغيله أثناء السير في الضباب أو المطر مخالفة، ولا يجعل الوقوف الممنوع مسموحا",
+      "src": [
+        "S4",
+        "S11",
+        "S2",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-weather-011",
+      "topic": "weather",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "الرياح غطت أجزاء من الطريق بالرمل، ما الخطر الأكبر؟",
+      "options": [
+        "لا خطر إذا كانت الإطارات جديدة",
+        "تعطل الإشارات الضوئية عند التقاطعات",
+        "قلة تماسك الإطارات وصعوبة رؤية حافة الطريق",
+        "زيادة تماسك الإطارات بسبب خشونة حبات الرمل على الأسفلت"
+      ],
+      "answer": 2,
+      "explain": "الرمل على الأسفلت يقلل التماسك ويخفي حافة الطريق، والغبار من السيارات المقابلة قد يخفي أخطارا، فخفف وزد المسافة",
+      "src": [
+        "S1",
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-weather-012",
+      "topic": "weather",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "لماذا يزيد خطر انفجار الإطارات في الصيف؟",
+      "options": [
+        "الحرارة ترفع ضغطها، والإطار القديم أو الناقص الهواء أضعف",
+        "الحرارة لا تؤثر، والانفجار سببه السرعة العالية فقط",
+        "لأن الأسفلت الساخن يزيد التماسك فيضغط على الإطار",
+        "لأن الإطارات الجديدة تتمدد في الحر أكثر بكثير من القديمة"
+      ],
+      "answer": 0,
+      "explain": "في حر الإمارات يزيد انفجار الإطار المهترئ أو القديم أو الناقص الهواء أو المحمل زيادة، فافحص الضغط والعمر والحالة قبل الرحلة",
+      "src": [
+        "S17",
+        "S18",
+        "S20",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-weather-013",
+      "topic": "weather",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "بدأ الزجاج الأمامي يتغبش من الداخل أثناء المطر، ما التصرف الصحيح؟",
+      "options": [
+        "أطفئ الأضواء الأمامية لتقل الانعكاسات",
+        "أشغل الفلاشر وأكمل حتى يتوقف المطر",
+        "أمسح الزجاج بيدي وأنا أقود لأرى بسرعة",
+        "أشغل مزيل الضباب والتكييف على الزجاج"
+      ],
+      "answer": 3,
+      "explain": "استخدم مزيل الضباب والتكييف والمساحات لتبقى الرؤية واضحة، فالزجاج المتغبش يخفي عنك الأخطار",
+      "src": [
+        "S1",
+        "S8",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-weather-014",
+      "topic": "weather",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "مع أمطار غزيرة في المناطق الجبلية بالشارقة، ماذا تنصح شرطة الشارقة بخصوص الأودية؟",
+      "options": [
+        "الوقوف على أطرافها حتى يهدأ المطر ثم العبور ببطء",
+        "عبورها بسيارات الدفع الرباعي فقط وببطء",
+        "زيارتها لتصوير السيول من مكان قريب وآمن",
+        "الابتعاد عنها لأن الماء يرتفع فيها ويجري بسرعة"
+      ],
+      "answer": 3,
+      "explain": "الأودية ومجاري السيول تمتلئ بسرعة وتجرف السيارات، والتجمع قربها أو دخولها وقت السيول مخالفة عقوبتها كبيرة",
+      "src": [
+        "S14",
+        "S12"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-weather-015",
+      "topic": "weather",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "ما المقصود بالانزلاق المائي؟",
+      "options": [
+        "انزلاق السيارة على الرمل الناعم في الطرق الصحراوية",
+        "أن تسير الإطارات فوق طبقة ماء فتفقد تماسكها",
+        "دخول الماء إلى المحرك من فتحة العادم",
+        "رجوع السيارة للخلف على منحدر مبلل بالماء"
+      ],
+      "answer": 1,
+      "explain": "عندما يكثر الماء أو تزيد السرعة، يركب الإطار فوق الماء مثل الزلاجة، فيصير المقود خفيفا وقد تتمايل مؤخرة السيارة",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-weather-016",
+      "topic": "weather",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "أثناء المطر أحسست فجأة أن المقود صار خفيفا ولا يستجيب، ماذا تفعل؟",
+      "options": [
+        "أزيد السرعة لأعبر منطقة الماء بسرعة",
+        "أمسك المقود بثبات وأرفع قدمي عن البنزين تدريجيا",
+        "أدير المقود بقوة يمينا ويسارا لأستعيد التماسك",
+        "أضغط الفرامل بقوة فورا حتى تتوقف السيارة"
+      ],
+      "answer": 1,
+      "explain": "هذا انزلاق مائي: لا تفرمل ولا تسرع، خفف تدريجيا حتى تعود الإطارات للتماسك، وبعدها فرمل بلطف",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-weather-017",
+      "topic": "weather",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "هبت عاصفة غبار على طريق خارجي وصارت الرؤية ضعيفة جدا، ما التصرف الأسلم؟",
+      "options": [
+        "أخفف، وإذا انعدمت الرؤية أخرج من الطريق ثم أشغل الفلاشر",
+        "أتوقف في مساري فورا وأشغل الفلاشر حتى تنتهي العاصفة تماما",
+        "أكمل بسرعتي نفسها مع تشغيل الفلاشر طوال الطريق",
+        "ألحق السيارة التي أمامي عن قرب لأهتدي بأضوائها"
+      ],
+      "answer": 0,
+      "explain": "في الغبار خفف وشغل الأضواء وزد المسافة، ولا تشغل الفلاشر إلا بعد التوقف الكامل خارج الطريق",
+      "src": [
+        "S15",
+        "S10",
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-weather-018",
+      "topic": "weather",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "مع رياح قوية مثيرة للغبار، أين تتجنب إيقاف سيارتك؟",
+      "options": [
+        "تحت الأشجار واللوحات الإعلانية وقرب مواقع البناء",
+        "في موقف مغطى داخل مبنى",
+        "في مرآب المنزل",
+        "في ساحة مفتوحة وواسعة بعيدة عن الأشجار والمباني العالية"
+      ],
+      "answer": 0,
+      "explain": "الرياح القوية قد تسقط الأغصان واللوحات ومواد البناء على السيارة، لذلك تنصح شرطة أبوظبي بالابتعاد عنها",
+      "src": [
+        "S15"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-weather-019",
+      "topic": "weather",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "في عاصفة رملية، ماذا تفعل بنوافذ السيارة؟",
+      "options": [
+        "أفتح نافذة السائق فقط لتحسين الرؤية",
+        "أطفئ التكييف لأنه يسحب الغبار دائما",
+        "أغلق النوافذ وأشغل التكييف",
+        "أفتح النوافذ لأسمع السيارات حولي"
+      ],
+      "answer": 2,
+      "explain": "إغلاق النوافذ يمنع دخول الغبار، والتكييف يساعد على بقاء الزجاج واضحا",
+      "src": [
+        "S10"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-weather-020",
+      "topic": "weather",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "تقود في ضباب على طريق رئيسي في أبوظبي، وظهرت على اللوحات الإلكترونية سرعة 80 كم/ساعة بدل 120، ماذا تفعل؟",
+      "options": [
+        "ألتزم بالسرعة المعروضة على اللوحة الإلكترونية",
+        "أسير بسرعة 120 كم/ساعة لأنه طريق سريع",
+        "ألتزم بالسرعة المكتوبة على اللوحات الثابتة لأنها الأصل",
+        "أتجاهلها إذا كانت الرؤية أمامي جيدة"
+      ],
+      "answer": 0,
+      "explain": "شرطة أبوظبي تخفض السرعة إلى 80 كم/ساعة على طرق كثيرة وقت الضباب، والسرعة المعروضة إلكترونيا هي الملزمة وقتها",
+      "src": [
+        "S7",
+        "S9"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-weather-021",
+      "topic": "weather",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "لماذا تشغيل الفلاشر أثناء السير في الضباب خطر على السائقين خلفك؟",
+      "options": [
+        "لأنه يفرغ بطارية السيارة بسرعة في الجو البارد",
+        "لأنهم لا يرون إشارات انعطافك ولا يعرفون إن كنت متوقفا",
+        "لأنه يلغي عمل أضواء الفرامل في معظم السيارات",
+        "لأنه يطفئ الأضواء الأمامية تلقائيا في بعض السيارات الحديثة"
+      ],
+      "answer": 1,
+      "explain": "مع الفلاشر يومض الضوءان معا فلا يظهر اتجاه انعطافك، وقد يظن من خلفك أنك متوقف فيتصرف بشكل خاطئ",
+      "src": [
+        "S5",
+        "S6",
+        "S4"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-weather-022",
+      "topic": "weather",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "لماذا تنصح الشرطة بعدم التجاوز وتغيير المسار في الضباب؟",
+      "options": [
+        "لأن أضواء الضباب تتعطل إذا غيرت المسار كثيرا",
+        "لأن تقدير سرعة ومسافة السيارات صعب جدا مع قلة الرؤية",
+        "لأن الإطارات تفقد جزءا من الهواء في الضباب",
+        "لأن التجاوز ممنوع في كل الطرق الخارجية مهما كان الجو"
+      ],
+      "answer": 1,
+      "explain": "التجاوز الخاطئ وقلة المسافة والسرعة من أهم أسباب حوادث الضباب، فابق في مسارك",
+      "src": [
+        "S9",
+        "S7",
+        "S6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-weather-023",
+      "topic": "weather",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "في مطر غزير على طريق سريع أصبحت الرؤية خطيرة جدا، أين الأفضل أن تتوقف؟",
+      "options": [
+        "في المسار الأيمن مع تشغيل الفلاشر",
+        "تحت جسر في وسط الطريق حتى يخف المطر",
+        "في مكان آمن خارج الطريق مثل محطة وقود",
+        "على الكتف الأيسر بجانب الحاجز الأوسط"
+      ],
+      "answer": 2,
+      "explain": "الوقوف على الطريق السريع نفسه خطر، فاخرج إلى مكان آمن بعيد عن حركة السير حتى يتحسن الجو",
+      "src": [
+        "S11",
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-weather-024",
+      "topic": "weather",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "خطوط الطريق مغطاة بالماء ولا تعرف عمقه، ما القرار الأسلم؟",
+      "options": [
+        "أعبر وأنا أشغل الفلاشر",
+        "لا أعبر، وأبحث عن طريق آخر",
+        "أعبر خلف سيارة صغيرة لأعرف العمق",
+        "أعبر بسرعة قبل أن يرتفع الماء"
+      ],
+      "answer": 1,
+      "explain": "إذا لم تر علامات الطريق فلا تعرف العمق ولا حالة الأسفلت تحته، والماء القليل قد يفقدك السيطرة أو يطفئ المحرك",
+      "src": [
+        "S13",
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-weather-025",
+      "topic": "weather",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "في الضباب، ما الدليل الأسلم لتبقى في مسارك؟",
+      "options": [
+        "صوت السيارات المجاورة",
+        "الأضواء الخلفية لسيارة ألتصق بها",
+        "خطوط الطريق وحافته اليمنى",
+        "ضوء سيارتي العالي"
+      ],
+      "answer": 2,
+      "explain": "معهد الشارقة للسياقة ينصح باستخدام حافة الطريق اليمنى أو الرصيف دليلا في الضباب، والالتصاق بالسيارة الأمامية يلغي مسافة الأمان",
+      "src": [
+        "S56",
+        "S6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-weather-026",
+      "topic": "weather",
+      "level": 4,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "بعد أمطار غزيرة، رأيت ماء يجري بسرعة عبر الطريق وعمقه يبدو قليلا، ما التصرف الصحيح؟",
+      "options": [
+        "أعبر إذا كان الماء تحت نصف ارتفاع الإطار",
+        "لا أعبر، فالماء الجاري قد يجرف السيارة ولو كان قليلا",
+        "أعبر خلف سيارة دفع رباعي مباشرة لأنها تفتح لي الطريق في الماء",
+        "أعبر بسرعة عالية حتى لا يتوقف المحرك في الماء"
+      ],
+      "answer": 1,
+      "explain": "دليل هيئة الطرق: لا تعبر ماء جاريا حتى لو كان عند نصف الإطار أو أقل، فقوة التيار قد تجرف السيارة، ارجع وابحث عن طريق آخر",
+      "src": [
+        "S1",
+        "S45",
+        "S46"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-weather-027",
+      "topic": "weather",
+      "level": 4,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "حسب دليل هيئة الطرق، متى لا تعبر بسيارة صالون ماء ساكنا متجمعا على الطريق؟",
+      "options": [
+        "إذا غطى الماء الإطار كاملا فقط",
+        "إذا كان لون الماء عكرا فقط",
+        "إذا كان الماء أعلى من نصف ارتفاع الإطار",
+        "إذا وصل الماء إلى غطاء المحرك فقط، وما دونه لا مشكلة"
+      ],
+      "answer": 2,
+      "explain": "فوق نصف الإطار قد يدخل الماء إلى العادم أو المحرك فتتوقف السيارة، والأفضل دائما تجنب العبور في الماء",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high",
+      "notes": "بعض النصائح الصحفية تسمح بالعبور حتى مستوى المصد، واعتمدنا قاعدة هيئة الطرق (نصف الإطار) لأنها المصدر الرسمي"
+    },
+    {
+      "id": "safety-weather-028",
+      "topic": "weather",
+      "level": 4,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "تقود صباحا بسرعة 100 كم/ساعة ودخلت فجأة منطقة ضباب كثيف، ما التصرف الأسلم؟",
+      "options": [
+        "أشغل الأضواء العالية وأحافظ على سرعتي حتى أخرج بسرعة من منطقة الضباب",
+        "أفرمل بقوة فورا وأشغل الفلاشر لينتبه من خلفي",
+        "أخفف تدريجيا دون فرملة مفاجئة، وأشغل المنخفضة وأضواء الضباب",
+        "أغير المسار بسرعة بحثا عن مسار فيه رؤية أفضل"
+      ],
+      "answer": 2,
+      "explain": "الفرملة المفاجئة في الضباب قد تسبب تصادما متسلسلا لأن من خلفك يراك متأخرا، فخفف بالتدريج وزد المسافة وابق في مسارك",
+      "src": [
+        "S1",
+        "S8",
+        "S9",
+        "S50"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-weather-029",
+      "topic": "weather",
+      "level": 4,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "صار الضباب كثيفا جدا ولم تعد ترى تقريبا، أين تتوقف؟",
+      "options": [
+        "أخرج من الطريق كليا إلى مكان آمن، ثم أشغل الفلاشر",
+        "أتوقف على الكتف الأيسر قرب الحاجز الأوسط",
+        "أتوقف في مساري وأشغل الفلاشر حتى ينقشع الضباب وأرى الطريق",
+        "أبقى خلف أي سيارة أمامي وأتوقف عندما تتوقف"
+      ],
+      "answer": 0,
+      "explain": "التوقف في وسط الطريق قد يجعلك أول حلقة في تصادم متسلسل، فاخرج من الطريق تماما، وبعد التوقف فقط شغل الفلاشر",
+      "src": [
+        "S1",
+        "S4",
+        "S6",
+        "S50"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-weather-030",
+      "topic": "weather",
+      "level": 4,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "لماذا لا تستخدم مثبت السرعة (كروز كنترول) تحت المطر؟",
+      "options": [
+        "لأن المطر يطفئ المحرك إذا كان المثبت يعمل",
+        "لأنه قد يسرع السيارة فجأة بعد انزلاق فتفقد السيطرة",
+        "لأنه ممنوع قانونيا في كل الأوقات وعلى كل الطرق في الإمارات",
+        "لأنه يزيد استهلاك الوقود فقط ولا خطر منه"
+      ],
+      "answer": 1,
+      "explain": "في الطريق المبلل تحتاج تحكما كاملا بقدمك، ومثبت السرعة لا يعرف أن الطريق زلق",
+      "src": [
+        "S13"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-weather-031",
+      "topic": "weather",
+      "level": 5,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "حسب دليل هيئة الطرق، إلى أي سرعة تخفض سرعتك في المطر لتقلل خطر الانزلاق المائي كثيرا؟",
+      "options": [
+        "أقل من 140 كم/ساعة",
+        "أقل من 120 كم/ساعة",
+        "أقل من 100 كم/ساعة",
+        "أقل من 80 كم/ساعة"
+      ],
+      "answer": 3,
+      "explain": "فوق 80 كم/ساعة يزيد خطر الانزلاق المائي كثيرا، وابق خلف السيارة الأمامية 4 ثوان على الأقل",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-weather-032",
+      "topic": "weather",
+      "level": 5,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "عند ضعف الرؤية بسبب الضباب أو المطر، إلى كم ثانية على الأقل ينصح خبراء السلامة وشرطة دبي بزيادة مسافة الأمان؟",
+      "options": [
+        "ثانية واحدة",
+        "ثانيتين",
+        "3 ثوان",
+        "5 ثوان"
+      ],
+      "answer": 3,
+      "explain": "المسافة المعتادة 3 ثوان تقريبا، ومع ضعف الرؤية زدها إلى 5 ثوان على الأقل",
+      "src": [
+        "S13",
+        "S10"
+      ],
+      "confidence": "medium",
+      "notes": "دليل هيئة الطرق للمركبات الخفيفة يذكر ثانيتين كحد أدنى في الظروف الجيدة، ودليل القيادة الآمنة يذكر 3 ثوان، والرقم 5 منشور في صحيفتين نقلا عن شرطة دبي وخبراء السلامة"
+    },
+    {
+      "id": "safety-night-001",
+      "topic": "night",
+      "level": 1,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "متى لازم تشغل الأضواء الأمامية والخلفية لسيارتك؟",
+      "options": [
+        "عند المطر فقط، أما الغبار والضباب فلا",
+        "بعد منتصف الليل فقط لأن الطرق تكون مظلمة",
+        "على الطرق غير المضاءة فقط، أما الطرق المضاءة فلا",
+        "من الغروب إلى الشروق، ونهارا إذا ضعفت الرؤية"
+      ],
+      "answer": 3,
+      "explain": "القانون يلزمك بإنارة سيارتك من الغروب إلى الشروق، وكذلك نهارا عند ضعف الرؤية مثل الضباب والغبار",
+      "src": [
+        "S1",
+        "S2",
+        "S3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-night-002",
+      "topic": "night",
+      "level": 1,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "لماذا القيادة ليلا أخطر من النهار؟",
+      "options": [
+        "لأن الإطارات تفقد تماسكها مع برودة الليل",
+        "لأن حدود السرعة ترتفع ليلا على معظم الطرق الخارجية",
+        "لأن رؤية المشاة وتقدير المسافات والسرعات أصعب",
+        "لأن الإشارات الضوئية تتوقف عن العمل ليلا"
+      ],
+      "answer": 2,
+      "explain": "في الليل يصعب رؤية المشاة بملابس داكنة والدراجات، ويصعب تقدير سرعة ومسافة السيارات الأخرى",
+      "src": [
+        "S1",
+        "S2",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-night-003",
+      "topic": "night",
+      "level": 1,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "قبل رحلة ليلية، ماذا تتأكد أولا؟",
+      "options": [
+        "أن المكيف على أقصى برودة طوال الطريق",
+        "أن الراديو يعمل لأبقى مستيقظا طوال الطريق",
+        "أن النوافذ مفتوحة لأسمع أصوات الطريق",
+        "أن الأضواء الأمامية والخلفية تعمل ونظيفة"
+      ],
+      "answer": 3,
+      "explain": "دليل هيئة الطرق يطلب فحص الضوء العالي والمنخفض والأضواء الخلفية بانتظام، والزجاج والمصابيح النظيفة تحسن الرؤية ليلا",
+      "src": [
+        "S1",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-night-004",
+      "topic": "night",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "متى تستخدم الأضواء العالية؟",
+      "options": [
+        "في الشوارع المضاءة داخل المدينة لرؤية المشاة",
+        "على الطرق غير المضاءة إذا لم تكن هناك سيارة قريبة",
+        "في الضباب الكثيف لأنها تنير مسافة أبعد أمامك",
+        "عند اقتراب سيارة من الاتجاه المقابل لتنبيه سائقها"
+      ],
+      "answer": 1,
+      "explain": "الضوء العالي يبهر عيون الآخرين، فاستخدمه فقط على الطرق غير المضاءة، وحول للمنخفض عند ظهور سيارة قادمة أو عند الاقتراب من سيارة أمامك",
+      "src": [
+        "S1",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-night-005",
+      "topic": "night",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "تستخدم الأضواء العالية على طريق غير مضاء وظهرت سيارة قادمة من الاتجاه المقابل، ماذا تفعل؟",
+      "options": [
+        "أطفئ كل الأضواء لحظة المرور",
+        "أحول فورا إلى الأضواء المنخفضة",
+        "أبقي العالية حتى يحول سائقها أولا",
+        "أومض بالعالية عدة مرات لتنبيهه"
+      ],
+      "answer": 1,
+      "explain": "القاعدة: لا تستخدم الأضواء العالية عندما تأتي سيارة من الاتجاه المقابل، لأنها تبهر سائقها وقد يفقد السيطرة",
+      "src": [
+        "S1",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-night-006",
+      "topic": "night",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "تسير ليلا على طريق غير مضاء خلف سيارة أخرى، أي أضواء تستخدم؟",
+      "options": [
+        "الأضواء المنخفضة حتى لا أبهر سائقها",
+        "أضواء الضباب الخلفية لأنها أوضح",
+        "العالية لأرى الطريق أبعد منه",
+        "الفلاشر حتى ينتبه لي السائق الذي أمامي"
+      ],
+      "answer": 0,
+      "explain": "حتى عند الاقتراب من سيارة من الخلف لازم تحول للأضواء المنخفضة، لأن العالية تبهر السائق في مراياه",
+      "src": [
+        "S1",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-night-007",
+      "topic": "night",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "لماذا المشاة بملابس داكنة خطر خاص في الليل؟",
+      "options": [
+        "لأنهم يعبرون من ممرات المشاة فقط في الليل",
+        "لأنهم يمشون بسرعة أكبر ليلا",
+        "لأن أضواء السيارة تجعلهم يتوقفون",
+        "لأنك قد لا تراهم إلا وهم قريبون جدا"
+      ],
+      "answer": 3,
+      "explain": "الملابس الداكنة تجعل المشاة شبه مخفيين في الظلام، فخفف السرعة قرب الأحياء والمحلات وممرات المشاة",
+      "src": [
+        "S1",
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-night-008",
+      "topic": "night",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "ما فائدة الوضع الليلي في المرآة الداخلية؟",
+      "options": [
+        "إطفاء أضواء سيارتك الخلفية مؤقتا",
+        "تكبير صورة السيارات التي خلفك ليلا لتراها أوضح",
+        "تخفيف إبهار أضواء السيارات التي خلفك",
+        "تشغيل كاميرا الرجوع عند الركن ليلا"
+      ],
+      "answer": 2,
+      "explain": "كثير من السيارات فيها مرآة داخلية بوضع ليلي يقلل الوهج القادم من أضواء من خلفك",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-night-009",
+      "topic": "night",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "تقود ليلا على طريق سريع مضاء بأعمدة الإنارة، هل تحتاج الأضواء العالية؟",
+      "options": [
+        "نعم، إذا كانت سرعتك فوق 100 كم/ساعة",
+        "لا، العالية للطرق غير المضاءة فقط وعند الحاجة",
+        "نعم، لتنبيه السيارات التي أمامك بوجودك",
+        "نعم، دائما على الطرق السريعة مهما كانت الإنارة"
+      ],
+      "answer": 1,
+      "explain": "على الطرق المضاءة تكفي الأضواء المنخفضة، والعالية هناك تبهر الآخرين دون فائدة",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-night-010",
+      "topic": "night",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "أبهرتك أضواء عالية من سيارة قادمة، أين توجه نظرك؟",
+      "options": [
+        "إلى اليسار نحو السيارة القادمة لأراقبها",
+        "أغمض عيني لحظة قصيرة حتى تمر السيارة",
+        "مباشرة إلى الأضواء لأقدر مسافة السيارة القادمة",
+        "إلى الجهة اليمنى من الطريق، مع تخفيف السرعة"
+      ],
+      "answer": 3,
+      "explain": "دليل هيئة الطرق ومعهد الشارقة: انظر إلى الجانب الأيمن من الطريق وقد نحو يمين مسارك وخفف، وإذا لم تعد ترى فتوقف",
+      "tip": "الضو قدامك؟ عينك عاليمين",
+      "src": [
+        "S1",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-night-011",
+      "topic": "night",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "ما القاعدة الصحيحة لاختيار سرعتك ليلا؟",
+      "options": [
+        "أن تسرع قليلا لتقلل وقت القيادة في الظلام",
+        "أن تلتزم بالحد الأقصى المكتوب فقط دون تفكير",
+        "أن تتوقف ضمن المسافة التي تراها في ضوء مصابيحك",
+        "أن تسير بسرعة النهار نفسها ما دام الطريق فارغا"
+      ],
+      "answer": 2,
+      "explain": "إذا كانت سرعتك أكبر من مدى رؤيتك فلن تتوقف في الوقت المناسب إذا ظهر شيء فجأة",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-night-012",
+      "topic": "night",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "تقود ليلا على طريق خارجي ورأيت لوحة تحذير من عبور الجمال، ما التصرف الصحيح؟",
+      "options": [
+        "أعتمد على البوق المتواصل ليبعد الجمال عن الطريق قبل وصولي",
+        "أزيد السرعة لأخرج من منطقة الجمال بسرعة",
+        "أخفف وأستعد للتوقف، وأستخدم العالية إن لم تأت سيارة",
+        "أسير على كتف الطريق الأيمن لأبتعد عن وسط الطريق"
+      ],
+      "answer": 2,
+      "explain": "القانون يلزمك بتخفيف السرعة عند وجود حيوانات أو أماكن عبورها، والجمل قد يظهر فجأة في الظلام",
+      "src": [
+        "S3",
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-night-013",
+      "topic": "night",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "أي عبارة صحيحة عن القيادة ليلا؟",
+      "options": [
+        "تقدير سرعة ومسافة السيارات الأخرى أصعب منه في النهار",
+        "مسافة التوقف أقصر ليلا لأن الجو أبرد",
+        "الأضواء العالية مسموحة داخل المدن المضاءة إذا كانت الشوارع فارغة",
+        "خطر الحوادث ليلا أقل لأن الطرق أفرغ"
+      ],
+      "answer": 0,
+      "explain": "دليل هيئة الطرق يذكر أن خطر الحوادث أعلى ليلا، وأن تقدير السرعة والمسافة أصعب",
+      "src": [
+        "S1",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-night-014",
+      "topic": "night",
+      "level": 4,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "ليلا على طريق جانبي، رأيت متأخرا راكب دراجة هوائية بلا أضواء على يمين مسارك، ما التصرف الصحيح؟",
+      "options": [
+        "أتجاوزه بسرعة دون تغيير موقعي في المسار",
+        "أقترب منه قليلا لأضيء له الطريق بأضوائي",
+        "أطلق البوق باستمرار وأكمل بسرعتي حتى يبتعد عن طريقي فورا",
+        "أخفف ولا أتجاوزه إلا إذا تركت مترا على الأقل بيننا"
+      ],
+      "answer": 3,
+      "explain": "الدراجات صعبة الرؤية ليلا خصوصا بلا أضواء، ودليل هيئة الطرق يطلب ترك متر على الأقل عند تجاوز الدراجة",
+      "src": [
+        "S1",
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-night-015",
+      "topic": "night",
+      "level": 4,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "سائق خلفك ليلا يبهرك بأضوائه العالية في المرآة، ما التصرف الأسلم؟",
+      "options": [
+        "أحول المرآة للوضع الليلي وأفسح له الطريق بأمان",
+        "أسرع كثيرا لأبتعد عنه وعن أضوائه المزعجة",
+        "أضغط الفرامل فجأة لأنبهه إلى أنه قريب جدا ويبهرني",
+        "أتوقف في مساري فورا حتى يتجاوزني ويبتعد"
+      ],
+      "answer": 0,
+      "explain": "لا ترد بتصرف خطر، خفف الإبهار بالمرآة الليلية واتركه يمر بأمان",
+      "src": [
+        "S1",
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-night-016",
+      "topic": "night",
+      "level": 4,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "ليلا على طريق سريع قرب منطقة سكنية، رأيت شخصا يقف على الحاجز الأوسط وينظر إلى مسارك، ما التصرف الأسلم؟",
+      "options": [
+        "أتوقع عبوره فجأة، فأرفع قدمي عن البنزين وأغطي الفرامل",
+        "أكمل بسرعتي لأن الطريق السريع ليس للمشاة أصلا ولا حق له في العبور",
+        "أسرع قليلا لأمر قبل أن يقرر العبور أمامي",
+        "أشغل الأضواء العالية في وجهه ليبقى مكانه"
+      ],
+      "answer": 0,
+      "explain": "حتى لو كان عبوره مخالفا، عليك أن تتوقع الخطر وتتفاداه، والمشاة يصعب رؤيتهم ليلا",
+      "src": [
+        "S1",
+        "S3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-night-017",
+      "topic": "night",
+      "level": 5,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "حسب دليل معهد الشارقة للسياقة، متى لازم تحول من الأضواء العالية إلى المنخفضة أمام سيارة قادمة؟",
+      "options": [
+        "لا يلزم ذلك على الطرق الخارجية",
+        "عندما تقترب السيارة القادمة إلى 200 متر أو أقل",
+        "فقط عندما تصبح السيارة القادمة بجانبك",
+        "عندما تصبح السيارة القادمة ضمن 20 مترا فقط"
+      ],
+      "answer": 1,
+      "explain": "الضوء العالي يبهر السائق القادم من مسافة بعيدة، ودليل هيئة الطرق يطلب التحويل بمجرد ظهور السيارة",
+      "src": [
+        "S56",
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-hazard-001",
+      "topic": "hazard",
+      "level": 1,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "ما المقصود بالخطر في القيادة حسب دليل هيئة الطرق؟",
+      "options": [
+        "أي سيارة أسرع منك تقترب من الخلف أو من الجانب وتريد أن تتجاوزك",
+        "أي شيء متحرك أو ثابت قد يجبرك على تغيير سرعتك أو اتجاهك",
+        "الحوادث التي وقعت فعلا على الطريق فقط",
+        "الإشارات الضوئية الحمراء ولوحات التحذير فقط"
+      ],
+      "answer": 1,
+      "explain": "الخطر ليس الحادث نفسه، بل أي شيء قد يجبرك على التصرف، ولهذا تكتشفه مبكرا وتستعد له",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-hazard-002",
+      "topic": "hazard",
+      "level": 1,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "ما معنى أن تغطي دواسة الفرامل عند رؤية خطر محتمل؟",
+      "options": [
+        "أضغط الفرامل بقوة فورا حتى لو لم يحدث شيء",
+        "أرفع قدمي عن البنزين وأضعها فوق الفرامل دون ضغط",
+        "أشد فرامل اليد قليلا استعدادا للتوقف",
+        "أضع قدمي اليسرى على الفرامل واليمنى على البنزين"
+      ],
+      "answer": 1,
+      "explain": "دليل هيئة الطرق: خفف وغط الفرامل، فهذا يقلل زمن رد الفعل دون أن تفرمل بلا داع",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-hazard-003",
+      "topic": "hazard",
+      "level": 1,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "أنت تسير في شارع سكني وترى كرة تتدحرج إلى الطريق من بين سيارتين متوقفتين، ما الخطر المتوقع وما التصرف الصحيح؟",
+      "options": [
+        "أطلق البوق وأكمل لأن الطفل سيتوقف",
+        "أنحرف بقوة إلى المسار المقابل دون أن أنظر",
+        "قد يركض طفل خلف الكرة، فأخفف السرعة فورا وأستعد للتوقف",
+        "الكرة صغيرة ولا تضر السيارة، فأكمل بسرعتي نفسها دون أن أتوقف"
+      ],
+      "answer": 2,
+      "explain": "الكرة إشارة إلى أطفال قريبين، والأطفال صغار يصعب رؤيتهم بين السيارات وتصرفاتهم مفاجئة",
+      "tip": "ورا كل طابة في ولد",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-hazard-004",
+      "topic": "hazard",
+      "level": 1,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "تقترب صباحا من مدرسة والطلاب يصلون، ما التصرف الصحيح؟",
+      "options": [
+        "أسرع لأمر قبل ازدحام السيارات",
+        "أطلق البوق لينتبه الطلاب",
+        "أحافظ على سرعتي ما دامت الإشارة خضراء والطريق فارغا أمامي",
+        "أخفف السرعة وأنتبه للأطفال على الأرصفة وممرات المشاة"
+      ],
+      "answer": 3,
+      "explain": "القانون يلزم السائق بتخفيف السرعة عند المدارس، والأطفال قد يعبرون فجأة",
+      "src": [
+        "S3",
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-hazard-005",
+      "topic": "hazard",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "تمر بجانب صف سيارات متوقفة قرب مدرسة وقت الانصراف، ما الخطر الأكبر؟",
+      "options": [
+        "طفل يخرج فجأة من بين السيارات، فأخفف وأراقب الفراغات",
+        "الخطر الوحيد أن يتأخر الطلاب عن الحافلات",
+        "الخطر فقط من الحافلات المدرسية التي تتوقف فجأة لتنزل الطلاب",
+        "لا خطر إذا كانت الإشارة القادمة خضراء لي"
+      ],
+      "answer": 0,
+      "explain": "الأطفال الصغار قد لا تراهم خلف السيارات المتوقفة، والقانون يلزمك بالتخفيف قرب المدارس",
+      "src": [
+        "S1",
+        "S3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-hazard-006",
+      "topic": "hazard",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "حافلة عامة متوقفة في محطتها على يمينك وينزل منها ركاب، ما الخطر المتوقع؟",
+      "options": [
+        "لا خطر لأن الحافلة متوقفة في مكانها المخصص",
+        "الخطر الوحيد أن تتأخر الحافلة عن موعدها",
+        "راكب يعبر فجأة من أمام الحافلة، فأخفف وأستعد للتوقف",
+        "الحافلة ستبقى متوقفة، فأتجاوزها بسرعة قبل أن تتحرك"
+      ],
+      "answer": 2,
+      "explain": "الركاب النازلون قد يعبرون من أمام الحافلة حيث لا تراهم، ودليل هيئة الطرق يطلب التخفيف أو التوقف عند الحاجة عند توقف الحافلات للركاب",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-hazard-007",
+      "topic": "hazard",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "تسير خلف سيارة أجرة (تاكسي) ورأيت شخصا على الرصيف يلوح بيده، ما الخطر المتوقع؟",
+      "options": [
+        "قد يتوقف التاكسي فجأة، فأزيد المسافة وأستعد للفرملة",
+        "التاكسي سيسرع ليصل إلى الراكب، فأقترب منه",
+        "أتجاوزه من اليمين فورا قبل أن يتوقف",
+        "لا شيء، التاكسي لا يتوقف إلا في المواقف المخصصة لسيارات الأجرة"
+      ],
+      "answer": 0,
+      "explain": "اقرأ حركة من حولك وتوقع خطوتهم التالية، والتلويح لسيارة أجرة يعني غالبا توقفا مفاجئا",
+      "src": [
+        "S1",
+        "S57"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-hazard-008",
+      "topic": "hazard",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "في شارع مزدحم بالمحلات، ترى رجلا يقف على حافة الرصيف بعيدا عن ممر المشاة وينظر إلى الجهة الأخرى، ما التصرف الصحيح؟",
+      "options": [
+        "أطلق البوق بقوة ليبقى مكانه على الرصيف",
+        "أسرع لأمر أمامه قبل أن يقرر العبور",
+        "أتوقع أن يعبر فجأة، فأخفف وأغطي الفرامل",
+        "أكمل بسرعتي لأنه ليس على ممر المشاة"
+      ],
+      "answer": 2,
+      "explain": "حتى لو كان عبوره خطأ، عليك أن تتوقع الخطر وتتفاداه، والقانون يلزمك بالتخفيف في الأماكن المزدحمة",
+      "src": [
+        "S1",
+        "S3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-hazard-009",
+      "topic": "hazard",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "في موقف مركز تجاري، أضاءت الأضواء البيضاء الخلفية لسيارة متوقفة أمامك، ماذا يعني ذلك؟",
+      "options": [
+        "السيارة معطلة وسائقها يطلب المساعدة",
+        "سائقها وضع غيار الرجوع وقد يتراجع",
+        "سائقها يطلب منك أن تتجاوزه بسرعة",
+        "سائقها يطفئ السيارة ويستعد للنزول"
+      ],
+      "answer": 1,
+      "explain": "الضوء الأبيض الخلفي هو ضوء الرجوع، وسائق السيارة المتراجعة قد لا يراك، فتوقف وأعطه مساحة",
+      "src": [
+        "S39",
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-hazard-010",
+      "topic": "hazard",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "رجل مسن يعبر ببطء على ممر المشاة، وصارت الإشارة خضراء لك، ما الصحيح؟",
+      "options": [
+        "أطلق البوق ليستعجل",
+        "أتحرك لأن الإشارة صارت خضراء لي",
+        "أنتظر حتى يكمل العبور بأمان",
+        "أمر ببطء من خلفه"
+      ],
+      "answer": 2,
+      "explain": "كبار السن أبطأ حركة وقد لا يرون جيدا، ولازم تنتظر المشاة على الممر حتى يكملوا العبور",
+      "src": [
+        "S1",
+        "S3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-hazard-011",
+      "topic": "hazard",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "في موقف سيارات مزدحم، يمشي طفل صغير مع أهله بين السيارات، ما التصرف الصحيح؟",
+      "options": [
+        "أتجاوزهم بسرعة قبل أن يعبروا",
+        "أسير ببطء شديد وأتوقع أن يركض الطفل فجأة",
+        "أطلق البوق ليبتعد الأهل",
+        "أسير بسرعتي المعتادة لأن الموقف ليس طريقا"
+      ],
+      "answer": 1,
+      "explain": "الأطفال صغار ويختفون بين السيارات، وتصرفاتهم لا يمكن توقعها",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-hazard-012",
+      "topic": "hazard",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "أطفال يلعبون كرة القدم في ساحة ترابية بجانب الطريق دون سور، ما التصرف الصحيح؟",
+      "options": [
+        "أخفف وأستعد للتوقف لأن طفلا أو الكرة قد يدخل الطريق",
+        "أطلق البوق ليبتعدوا عن حافة الطريق ثم أكمل بسرعتي المعتادة",
+        "أنتقل إلى المسار المقابل وأسرع لأبتعد عنهم",
+        "أحافظ على سرعتي لأنهم يلعبون خارج الطريق"
+      ],
+      "answer": 0,
+      "explain": "الأطفال منشغلون باللعب ولا ينتبهون للسيارات، فتوقع دخولهم المفاجئ",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-hazard-013",
+      "topic": "hazard",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "حافلة متوقفة في محطتها أمامك شغلت إشارة اليسار لتعود إلى مسارك، ما التصرف الأسلم؟",
+      "options": [
+        "أتوقع خروجها، فأخفف وأترك لها مجالا إذا كان آمنا",
+        "أتجاوزها من الجهة اليمنى لأتفادى انتظارها",
+        "أطلق البوق لأمنعها من الخروج قبل مروري",
+        "أسرع لأسبقها قبل أن تخرج إلى مساري وتبطئ حركة السير كلها"
+      ],
+      "answer": 0,
+      "explain": "القيادة الوقائية تعني توقع حركة الآخرين والتعاون معهم، والحافلة الكبيرة تحتاج مساحة لتندمج",
+      "src": [
+        "S1",
+        "S56"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-hazard-014",
+      "topic": "hazard",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "تستعد للانتقال إلى المسار الأيمن في ازدحام، وقد رأيت قبل قليل دراجة توصيل تتنقل بين السيارات، ما الأهم قبل التحرك؟",
+      "options": [
+        "أطلق البوق لأنبه الدراجة ثم أنتقل دون أن ألتفت",
+        "أشغل الإشارة وأتحرك فورا لأن الدراجة ستنتبه",
+        "أنظر في المرآة ثم ألتفت لفحص النقطة العمياء",
+        "أعتمد على المرآة الداخلية فقط لأنها تكشف كل شيء"
+      ],
+      "answer": 2,
+      "explain": "الدراجات النارية صغيرة ويصعب رؤيتها، والالتفات السريع يكشف ما لا تظهره المرايا",
+      "src": [
+        "S1",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-hazard-015",
+      "topic": "hazard",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "تسير في شارع سكني ورأيت مقدمة سيارة تخرج ببطء من مدخل منزل بين الأسوار، ما التصرف الأسلم؟",
+      "options": [
+        "أخفف وأستعد للتوقف لأن سائقها قد لا يراني",
+        "أطلق البوق وأكمل بسرعتي لأن الأولوية لي",
+        "أنحرف فورا إلى المسار المقابل لأبتعد عنها",
+        "أسرع لأمر قبل أن تخرج السيارة إلى الشارع"
+      ],
+      "answer": 0,
+      "explain": "الأسوار تحجب رؤية السائق الخارج، والقيادة الوقائية تعني الاستعداد لأخطاء الآخرين",
+      "src": [
+        "S1",
+        "S57"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-hazard-016",
+      "topic": "hazard",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "تسير بجانب شاحنة كبيرة ولا ترى وجه سائقها في مرآتها الجانبية، ماذا يعني ذلك؟",
+      "options": [
+        "سائقها يراني بوضوح عبر الكاميرات والمرايا",
+        "سائقها غالبا لا يراني، فلا أبقى بجانبها",
+        "علي أن أقترب منها لأحتمي من الرياح",
+        "أنا في أمان لأن الشاحنة أعلى من سيارتي"
+      ],
+      "answer": 1,
+      "explain": "إذا لم تر السائق في مرآة الشاحنة فهو لا يراك، فتقدم أو تأخر بأمان ولا تبق في نقاطها العمياء أمامها وخلفها وبجانبها",
+      "src": [
+        "S1",
+        "S56"
+      ],
+      "confidence": "high",
+      "notes": "دليل هيئة الطرق يذكر نقطة عمياء بجانب الباب الأيسر للشاحنة، ويبدو النص منقولا من دليل دولة تقود على اليسار، لذلك لم نحدد جهة الجانب"
+    },
+    {
+      "id": "safety-hazard-017",
+      "topic": "hazard",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "على طريق خارجي قرب مزارع، رأيت جملين يرعيان قرب حافة الطريق، ما التصرف الأسلم؟",
+      "options": [
+        "أطلق البوق باستمرار وأكمل بسرعتي",
+        "أتجاوز السيارة التي أمامي بسرعة لأبتعد عن الجملين قبل أن يتحركا",
+        "أسرع لأعبر قبل أن يتحركا",
+        "أخفف السرعة وأستعد للتوقف لأنهما قد يعبران فجأة"
+      ],
+      "answer": 3,
+      "explain": "القانون يلزمك بتخفيف السرعة عند مصادفة الحيوانات أو عبورها، وتصرف الحيوان لا يمكن توقعه",
+      "src": [
+        "S3"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-hazard-018",
+      "topic": "hazard",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "اقتربت من منطقة أعمال طرق فيها عمال ومعدات والمسارات تضيق، ما التصرف الصحيح؟",
+      "options": [
+        "ألتزم بالسرعة الأصلية للطريق لأنها مكتوبة",
+        "أخفف وأتبع الإشارات المؤقتة وأنتبه للعمال",
+        "أخفف قليلا لأصور الأعمال والمعدات بهاتفي",
+        "أتجاوز السيارات قبل نقطة التضييق مباشرة"
+      ],
+      "answer": 1,
+      "explain": "القانون يطلب التخفيف إذا كان الطريق مغلقا أو مضيقا، والعمال قد يتحركون فجأة قرب المسار",
+      "src": [
+        "S3",
+        "S1"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-hazard-019",
+      "topic": "hazard",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "تسير في المسار الأيمن على طريق سريع وأمامك مدخل تندمج منه سيارات، ما التصرف الوقائي؟",
+      "options": [
+        "أطلق البوق حتى تنتظر السيارات القادمة من المدخل لأن الأولوية لي",
+        "أسرع لأغلق الفراغ حتى لا تدخل سيارة أمامي",
+        "أتوقف تماما في المسار الأيمن حتى يدخلوا",
+        "أراقب المندمجين وأعدل سرعتي أو أنتقل يسارا إذا كان آمنا"
+      ],
+      "answer": 3,
+      "explain": "القيادة التعاونية تقلل الحوادث: توقع دخول السيارات وأعطها فرصة بدل التسابق معها",
+      "src": [
+        "S1"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-hazard-020",
+      "topic": "hazard",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "على طريق سريع رأيت أضواء فرامل عدة سيارات تضيء بعيدا أمامك، ما التصرف الأسلم؟",
+      "options": [
+        "أحافظ على سرعتي لأن الازدحام ما زال بعيدا",
+        "أرفع قدمي عن البنزين مبكرا وأخفف بالتدريج",
+        "أغير المسار فورا دون أن أنظر في المرآة",
+        "أنتظر حتى تفرمل السيارة التي أمامي مباشرة"
+      ],
+      "answer": 1,
+      "explain": "النظر بعيدا يعطيك وقتا أطول، والتخفيف المبكر المتدرج ينبه من خلفك ويمنع التصادم المتسلسل",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-hazard-021",
+      "topic": "hazard",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "أمامك راكب دراجة هوائية على يمين المسار، وبعده بقليل سيارة متوقفة على الجانب، ما الخطر المتوقع؟",
+      "options": [
+        "أطلق البوق ليصعد على الرصيف ويفسح لي",
+        "لا خطر لأنه يسير على يمين المسار بعيدا عني",
+        "أتجاوزه بسرعة وبدون تغيير مساري قبل أن يصل إلى السيارة المتوقفة",
+        "قد ينحرف يسارا ليتجاوز السيارة، فأخفف وأترك له مسافة"
+      ],
+      "answer": 3,
+      "explain": "راكب الدراجة سيحتاج للخروج من مكانه ليتجاوز العائق، فتوقع ذلك واترك له مترا على الأقل",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-hazard-022",
+      "topic": "hazard",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "أمامك على طريق سريع شاحنة صغيرة تحمل أغراضا غير مربوطة جيدا وتتحرك، ما التصرف الأسلم؟",
+      "options": [
+        "أقترب منها لأنبه سائقها بالبوق والأضواء",
+        "أصورها بهاتفي لأبلغ عنها وأنا أقود",
+        "أبقى خلفها مباشرة لأحتمي من الرياح",
+        "أزيد المسافة كثيرا أو أتجاوزها بأمان"
+      ],
+      "answer": 3,
+      "explain": "الحمولة غير المربوطة قد تسقط، والأجسام الساقطة على الطريق السريع خطر كبير، والمسافة الكافية تعطيك وقتا لتتفاداها",
+      "src": [
+        "S1"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-hazard-023",
+      "topic": "hazard",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "سيارة متوقفة على الكتف الأيمن وتشغل الفلاشر، ماذا تتوقع؟",
+      "options": [
+        "لا شيء لأنها متوقفة تماما، فأكمل بسرعتي نفسها قريبا منها",
+        "قد يكون أشخاص حولها، فأخفف وأبتعد عنها إن أمكن",
+        "أتوقف خلفها على الكتف لأعرف ما حدث",
+        "أخفف كثيرا لأصورها وأنا أمر بجانبها"
+      ],
+      "answer": 1,
+      "explain": "صاحب السيارة المعطلة أو ركابها قد يكونون على الكتف، وقد تعود السيارة للطريق فجأة، والفضول والتصوير يسببان حوادث إضافية",
+      "src": [
+        "S29",
+        "S36"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-hazard-024",
+      "topic": "hazard",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "إشارتك خضراء، لكنك ترى طفلا على دراجة صغيرة يقترب بسرعة من ممر المشاة أمامك، ما التصرف الصحيح؟",
+      "options": [
+        "أطلق البوق وأسرع لأمر من الممر قبله",
+        "أكمل لأن الإشارة خضراء لي والأولوية لي",
+        "أغير المسار فجأة دون أن أنظر في المرآة",
+        "أخفف وأغطي الفرامل لأنه قد لا يتوقف"
+      ],
+      "answer": 3,
+      "explain": "الأطفال قد لا يقدرون الخطر ويتصرفون فجأة، والإشارة الخضراء لا تلغي واجبك في تفادي الحادث",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-hazard-025",
+      "topic": "hazard",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "تريد الخروج للخلف من موقف بين سيارتين كبيرتين تحجبان رؤيتك، ما الصحيح؟",
+      "options": [
+        "أرجع ببطء شديد وأراقب المرايا وألتفت حولي",
+        "أعتمد على صوت الحساس فقط دون أن أنظر",
+        "أرجع بسرعة لأخرج من الموقف قبل أن يمر أحد",
+        "أطلق البوق مرة ثم أرجع دون توقف حتى أخرج"
+      ],
+      "answer": 0,
+      "explain": "عند الرجوع استخدم المرايا والالتفات معا وتوقف فورا إذا ظهر أحد، لأن المشاة والأطفال قد يكونون في مكان لا تغطيه المرايا",
+      "src": [
+        "S1",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-hazard-026",
+      "topic": "hazard",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "تنعطف يمينا عند إشارة خضراء، وهناك مشاة يعبرون الشارع الذي تدخله، ما الصحيح؟",
+      "options": [
+        "أمر بينهم ببطء",
+        "أكمل الانعطاف ببطء لأن الإشارة خضراء لي أنا أيضا",
+        "أطلق البوق ليستعجلوا",
+        "أعطي المشاة الأولوية وأنتظر حتى يعبروا"
+      ],
+      "answer": 3,
+      "explain": "دليل القيادة الآمنة من هيئة الطرق: لازم تفسح للمشاة الذين يعبرون الشارع الذي تنعطف إليه",
+      "src": [
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-hazard-027",
+      "topic": "hazard",
+      "level": 4,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "شاحنة طويلة أمامك شغلت إشارة اليمين وابتعدت قليلا نحو اليسار قبل التقاطع، ما التصرف الصحيح؟",
+      "options": [
+        "أبقى خلفها ولا أدخل من يمينها حتى تكمل الانعطاف",
+        "أتجاوزها من اليمين وأنعطف قبلها",
+        "أدخل من يمينها بسرعة لأن المسار الأيمن صار فارغا أمامي",
+        "أطلق البوق لتعود إلى مسارها"
+      ],
+      "answer": 0,
+      "explain": "الشاحنة الطويلة تحتاج أكثر من مسار لتنعطف، ودليل هيئة الطرق يحذرك من تجاوزها من الداخل وهي تشير يمينا",
+      "src": [
+        "S1",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-hazard-028",
+      "topic": "hazard",
+      "level": 4,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "السيارة التي أمامك تتمايل داخل مسارها وتسرع وتبطئ بلا سبب، ما الاحتمال الأكبر وما التصرف؟",
+      "options": [
+        "السيارة معطلة، فأتوقف خلفها في المسار",
+        "سائقها غالبا منشغل أو متعب، فأزيد المسافة",
+        "سائقها يختبر الفرامل، فأتجاوزه من اليمين فورا",
+        "أنبهه بالأضواء العالية والبوق باستمرار"
+      ],
+      "answer": 1,
+      "explain": "دليل هيئة الطرق: مستخدم الهاتف يتمايل بين المسارات ويسرع ويبطئ بلا سبب ولا يحافظ على المسافة، فزد المسافة ولا تبق بجانبه",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-hazard-029",
+      "topic": "hazard",
+      "level": 4,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "تمر بجانب سيارات متوقفة ورأيت شخصا جالسا في مقعد السائق في إحداها، ما الخطر المحتمل؟",
+      "options": [
+        "لا خطر لأن السيارة متوقفة ومحركها مطفأ",
+        "أطلق البوق ليبقى داخل سيارته حتى أمر",
+        "أقترب منها أكثر لأترك مساحة للسيارات المقابلة",
+        "قد يفتح بابه أو يتحرك، فأترك مسافة جانبية"
+      ],
+      "answer": 3,
+      "explain": "من يجلس في سيارة متوقفة قد ينزل أو ينطلق دون أن ينظر، والمسافة الجانبية تعطيك وقتا للتصرف",
+      "src": [
+        "S1",
+        "S57"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-hazard-030",
+      "topic": "hazard",
+      "level": 4,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "في ازدحام متقطع على طريق سريع، السيارات أمامك تتوقف فجأة وسيارة خلفك مسرعة، ما الأسلم؟",
+      "options": [
+        "أترك مسافة أكبر وأخفف مبكرا وبالتدريج",
+        "أفرمل بقوة في آخر لحظة لأن الفرامل قوية",
+        "أنتقل يمينا بسرعة دون إشارة لأتفادى الخطر",
+        "ألتصق بالسيارة الأمامية حتى لا يدخل أحد أمامي"
+      ],
+      "answer": 0,
+      "explain": "المسافة الأمامية الكافية تسمح لك بالتخفيف التدريجي فيرى من خلفك أضواء فراملك مبكرا، وهذا يحميك من الاصطدام من الأمام ومن الخلف",
+      "src": [
+        "S1",
+        "S57"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-hazard-031",
+      "topic": "hazard",
+      "level": 4,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "تريد الانعطاف يمينا إلى شارع جانبي، ورأيت في المرآة دراجة نارية تقترب من يمينك، ما الصحيح؟",
+      "options": [
+        "أطلق البوق وأنعطف لأن الدراجة ستتوقف لي",
+        "أسرع لأنعطف قبل وصول الدراجة إلى التقاطع",
+        "أنتظر حتى تمر الدراجة، ثم أفحص وأنعطف",
+        "أنعطف فورا لأني شغلت الإشارة قبلها"
+      ],
+      "answer": 2,
+      "explain": "الدراجة النارية تقترب بسرعة ويصعب رؤيتها، فتأكد بالمرآة والالتفات قبل الانعطاف",
+      "src": [
+        "S1",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-hazard-032",
+      "topic": "hazard",
+      "level": 4,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "تتجاوز شاحنة كبيرة على طريق سريع مع رياح جانبية قوية، ماذا تتوقع؟",
+      "options": [
+        "الشاحنة ستتوقف فجأة دائما عند الرياح",
+        "علي أن أقترب منها لأنها تحميني من الرياح",
+        "اهتزاز السيارة، فأمسك المقود بثبات وأترك مسافة جانبية",
+        "لا تأثير للهواء على السيارة، فأبقى بجانبها وقتا طويلا بأمان"
+      ],
+      "answer": 2,
+      "explain": "الرياح الجانبية وحركة الشاحنات الكبيرة قد تهز السيارة، فاترك 1.5 متر على الأقل عند التجاوز ولا تبق بجانبها طويلا",
+      "src": [
+        "S1",
+        "S2",
+        "S56"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-hazard-033",
+      "topic": "hazard",
+      "level": 4,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "سيارة أمامك تسير ببطء شديد وتشغل إشارة يمين ثم يسار، وسائقها ينظر إلى المباني، ما التصرف الأسلم؟",
+      "options": [
+        "أتوقع توقفها أو انعطافها فجأة، فأبقى بعيدا عنها",
+        "ألتصق بها وأطلق البوق حتى يسرع سائقها",
+        "أتجاوزها من اليمين فورا لأتخلص منها",
+        "أضيء لها الأضواء العالية باستمرار حتى تفسح لي الطريق"
+      ],
+      "answer": 0,
+      "explain": "السائق التائه يتصرف بشكل غير متوقع، والمسافة تمنحك وقتا للتصرف، ولا تتجاوزه إلا عندما يكون ذلك آمنا",
+      "src": [
+        "S1",
+        "S57"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-hazard-034",
+      "topic": "hazard",
+      "level": 4,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "ما أفضل سؤال تسأله لنفسك باستمرار لتكتشف الأخطار مبكرا؟",
+      "options": [
+        "هل أستطيع التجاوز الآن مهما كانت الظروف حولي؟",
+        "هل سيارتي أسرع من السيارة المجاورة؟",
+        "ماذا لو تحرك هذا الشخص أو هذه السيارة فجأة؟",
+        "كم بقي على وصولي؟"
+      ],
+      "answer": 2,
+      "explain": "التوقع من مهارات القيادة الوقائية: اقرأ حركة الآخرين وتوقع خطوتهم التالية قبل أن تحدث",
+      "src": [
+        "S1",
+        "S57"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-hazard-035",
+      "topic": "hazard",
+      "level": 4,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "تسير في المسار الأيسر وتقترب من ممر مشاة، والسيارة في المسار الأيمن توقفت فجأة قبل الممر دون سبب تراه، ما التصرف الصحيح؟",
+      "options": [
+        "أكمل بسرعتي لأن مساري فارغ والإشارة ليست حمراء",
+        "أطلق البوق لأعرف لماذا توقفت ثم أكمل بسرعتي",
+        "أتجاوزها بسرعة قبل أن تتحرك مرة أخرى وتغلق الطريق أمامي",
+        "أخفف وأستعد للتوقف، فقد يكون أمامها شخص يعبر لا أراه"
+      ],
+      "answer": 3,
+      "explain": "السيارة المتوقفة قد تخفي ماشيا يعبر أمامها، والقانون يلزمك بالتوقف للمشاة على ممر المشاة",
+      "src": [
+        "S3",
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-hazard-036",
+      "topic": "hazard",
+      "level": 4,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "على طريق سريع، شغلت السيارة التي أمامك الفلاشر فجأة وبدأت تخفف، ماذا تتوقع؟",
+      "options": [
+        "أن سائقها يريد التجاوز، فأبقى خلفه قريبا وأنتظر",
+        "خطرا أو ازدحاما أمامه، فأخفف بالتدريج وأزيد المسافة",
+        "أن الفلاشر مجرد تحية، فأحافظ على سرعتي كما هي تماما",
+        "أن سيارته معطلة، فأتجاوزه بسرعة من الجهة اليمنى قبل أن يقف"
+      ],
+      "answer": 1,
+      "explain": "السائقون يشغلون الفلاشر للتنبيه إلى خطر طارئ، وعلى الطريق السريع يعني غالبا توقفا مفاجئا أو حادثا أمامه، فخفف مبكرا وراقب المرايا",
+      "src": [
+        "S4",
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-hazard-037",
+      "topic": "hazard",
+      "level": 5,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "حسب دليل هيئة الطرق، ما المسافة التي قد تحتاجها سيارة عادية لتتوقف من سرعة 100 كم/ساعة في ظروف عادية؟",
+      "options": [
+        "حوالي 20 مترا",
+        "حوالي 40 مترا",
+        "حوالي 87 مترا",
+        "حوالي 300 متر"
+      ],
+      "answer": 2,
+      "explain": "دليل هيئة الطرق: نحو 33 مترا على 60 كم/ساعة، و87 مترا على 100، و130 مترا على 120، فالخطر المفاجئ يحتاج مسافة كبيرة",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-emergency-001",
+      "topic": "emergency",
+      "level": 1,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "ما رقم الطوارئ للشرطة في الإمارات؟",
+      "options": [
+        "901",
+        "999",
+        "998",
+        "997"
+      ],
+      "answer": 1,
+      "explain": "999 للشرطة في الطوارئ، و997 للدفاع المدني (الإطفاء)",
+      "src": [
+        "S2",
+        "S27",
+        "S28"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-emergency-002",
+      "topic": "emergency",
+      "level": 1,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "ما وظيفة الإشارات الرباعية (الفلاشر)؟",
+      "options": [
+        "جعل الوقوف في المكان الممنوع مسموحا لدقائق",
+        "بديل عن إشارة الانعطاف عند تغيير المسار بسرعة في الزحام",
+        "إضاءة إضافية للسير في الضباب والغبار",
+        "تنبيه الآخرين أنك متوقف اضطراريا أو أن هناك خطرا"
+      ],
+      "answer": 3,
+      "explain": "الفلاشر للتوقف الاضطراري والحوادث والخطر الطارئ فقط، وليس للسير ولا للوقوف الممنوع",
+      "src": [
+        "S4",
+        "S2",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-emergency-003",
+      "topic": "emergency",
+      "level": 1,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "انفجر أحد إطارات سيارتك وأنت تسير، ما أول تصرف؟",
+      "options": [
+        "أضغط الفرامل بأقصى قوة لأوقف السيارة فورا قبل أن تنحرف",
+        "أدير المقود بسرعة نحو كتف الطريق الأيمن",
+        "أمسك المقود بثبات وأرفع قدمي عن البنزين تدريجيا",
+        "أطفئ المحرك فورا حتى تتوقف السيارة بسرعة"
+      ],
+      "answer": 2,
+      "explain": "شرطة دبي: أمسك المقود بثبات، وارفع قدمك عن البنزين تدريجيا، ثم فرمل بلطف حتى لا تنحرف السيارة",
+      "tip": "مسكة قوية، رجل خفيفة، فرامل ناعمة",
+      "src": [
+        "S20"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-emergency-004",
+      "topic": "emergency",
+      "level": 1,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "تعطلت سيارتك فجأة وأنت على طريق سريع، ما أول ما تفعله؟",
+      "options": [
+        "أشغل الفلاشر وأحاول الخروج إلى مكان آمن",
+        "أتوقف في مساري فورا وأنزل لأفحص المحرك",
+        "أرجع للخلف على الكتف إلى أقرب مخرج",
+        "أبقى داخل السيارة في مساري وأنتظر الشرطة"
+      ],
+      "answer": 0,
+      "explain": "نبه الآخرين بالفلاشر وابتعد عن حركة السير قدر الإمكان إلى مخرج أو مكان آمن، والكتف الأيمن عند الضرورة فقط",
+      "src": [
+        "S2",
+        "S27",
+        "S28",
+        "S29"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-emergency-005",
+      "topic": "emergency",
+      "level": 1,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "ما فائدة مثلث التحذير العاكس؟",
+      "options": [
+        "يمنع سرقة السيارة المتوقفة على الطريق",
+        "ينبه السائقين القادمين إلى سيارتك المتوقفة",
+        "يجعل الوقوف في أي مكان مسموحا قانونيا حتى تصل المساعدة",
+        "يستدعي الشرطة تلقائيا إلى مكان العطل"
+      ],
+      "answer": 1,
+      "explain": "المثلث يعطي السائقين القادمين وقتا للتخفيف وتغيير المسار قبل الوصول إلى سيارتك",
+      "src": [
+        "S2",
+        "S34",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-emergency-006",
+      "topic": "emergency",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "بعد أن أوقفت سيارتك المعطلة على كتف طريق سريع، أين تنتظر أنت والركاب؟",
+      "options": [
+        "خلف السيارة مباشرة بينها وبين السيارات القادمة",
+        "داخل السيارة مع ربط الأحزمة وإغلاق الأبواب",
+        "خارج السيارة بعيدا عن السيارات، والأفضل خلف الحاجز",
+        "بجانب باب السائق لأراقب الطريق وأطلب المساعدة"
+      ],
+      "answer": 2,
+      "explain": "هيئة الطرق وشرطة أبوظبي: لا تبق داخل السيارة المعطلة على الطرق السريعة، وقف بعيدا عن الطريق خلف الحاجز إن وجد",
+      "src": [
+        "S2",
+        "S27",
+        "S28",
+        "S29"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-emergency-007",
+      "topic": "emergency",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "توقفت سيارتك المعطلة على الكتف الأيمن، من أي جهة ينزل الركاب؟",
+      "options": [
+        "لا ينزلون أبدا حتى تصل المساعدة",
+        "من أي باب ما دامت الفلاشر تعمل",
+        "من الأبواب اليسرى القريبة من السيارات لأنها أسرع",
+        "من الأبواب اليمنى البعيدة عن حركة السير"
+      ],
+      "answer": 3,
+      "explain": "النزول من الجهة البعيدة عن السيارات المسرعة يحمي الركاب من الدهس",
+      "src": [
+        "S29",
+        "S28"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-emergency-008",
+      "topic": "emergency",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "بعد انفجار الإطار وتخفيف السرعة بأمان، أين تتوقف؟",
+      "options": [
+        "أتوقف فورا في مساري وأشغل الفلاشر",
+        "أنظر يمينا ثم أتجه بهدوء إلى جانب الطريق",
+        "أنحرف يسارا نحو الحاجز الأوسط لأنه أقرب",
+        "أكمل على الإطار المنفجر حتى أقرب ورشة"
+      ],
+      "answer": 1,
+      "explain": "شرطة دبي: تأكد أن الطريق على يمينك خال، ثم اتجه إلى جانب الطريق وشغل إشارات الطوارئ",
+      "src": [
+        "S20"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-emergency-009",
+      "topic": "emergency",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "خرج دخان ورائحة احتراق من مقدمة السيارة أثناء السير، ما التصرف الصحيح؟",
+      "options": [
+        "أكمل السير بسرعة حتى يطفئ الهواء النار",
+        "أتوقف وأطفئ المحرك وأخرج الجميع ثم أتصل بالدفاع المدني",
+        "أفتح غطاء المحرك بسرعة لأرى مصدر الدخان",
+        "أصب الماء على المحرك فورا لأبرده وأطفئ النار قبل أن تنتشر"
+      ],
+      "answer": 1,
+      "explain": "الهواء يزيد النار وفتح الغطاء يدخل هواء أكثر، فأخرج الجميع وابتعد 30 مترا على الأقل واتصل بـ 997 أو 999",
+      "src": [
+        "S2",
+        "S30",
+        "S31"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-emergency-010",
+      "topic": "emergency",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "اشتعلت النار في سيارتك، بأي جهة تتصل؟",
+      "options": [
+        "الدفاع المدني 997 أو الشرطة 999",
+        "ورشة التصليح لتأتي وتطفئها",
+        "هيئة الطرق فقط",
+        "شركة التأمين أولا قبل الابتعاد"
+      ],
+      "answer": 0,
+      "explain": "في الحريق ابتعد أولا ثم اتصل بالدفاع المدني 997 أو الشرطة 999",
+      "src": [
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-emergency-011",
+      "topic": "emergency",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "أي مجموعة من هذه الأغراض مفيد أن تبقى في سيارتك دائما؟",
+      "options": [
+        "أسطوانة غاز صغيرة وموقد للرحلات والطوارئ",
+        "ولاعة وعطر وبخاخات مضغوطة للاستخدام اليومي",
+        "مثلث تحذير وطفاية حريق وحقيبة إسعافات أولية",
+        "جالون بنزين احتياطي داخل المقصورة للطوارئ"
+      ],
+      "answer": 2,
+      "explain": "المثلث والطفاية والإسعافات الأولية معدات سلامة، أما الولاعات والعطور والبخاخات والغاز فخطر اشتعال في حر الصيف",
+      "src": [
+        "S34",
+        "S33",
+        "S35",
+        "S32"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-emergency-012",
+      "topic": "emergency",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "متى مسموح التوقف على كتف الطريق السريع؟",
+      "options": [
+        "عند العطل أو الحالة الطارئة فقط",
+        "للرد على مكالمة هاتفية مهمة أو عاجلة",
+        "لتصوير المطر أو الضباب",
+        "للرجوع إلى مخرج فاتك"
+      ],
+      "answer": 0,
+      "explain": "كتف الطريق للأعطال والطوارئ فقط، وحوادث كثيرة تحصل عندما تصطدم سيارات مسرعة بسيارات واقفة على الكتف",
+      "src": [
+        "S36",
+        "S27"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-emergency-013",
+      "topic": "emergency",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "لماذا لا تفتح غطاء المحرك إذا شككت أن تحته حريقا؟",
+      "options": [
+        "لأن المحرك سيتوقف عن العمل نهائيا",
+        "لأن دخول الهواء فجأة قد يجعل النار أكبر",
+        "لأن الغطاء يحتاج مفتاحا خاصا من الوكالة",
+        "لأن فتحه يفرغ البطارية ويعطل الإنذار"
+      ],
+      "answer": 1,
+      "explain": "الأكسجين يغذي النار، وفتح الغطاء قد يسبب اندفاع اللهب نحوك",
+      "src": [
+        "S30",
+        "S31"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-emergency-014",
+      "topic": "emergency",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "متى تستخدم طفاية الحريق بنفسك في حريق سيارة؟",
+      "options": [
+        "دائما مهما كان حجم النار لأحمي السيارة",
+        "فقط إذا كانت النار صغيرة وأعرف استخدامها",
+        "وأنا جالس داخل السيارة لأبقى بأمان",
+        "بعد فتح غطاء المحرك بالكامل لتصل البودرة"
+      ],
+      "answer": 1,
+      "explain": "النار الكبيرة قد تسبب انفجارا وأدخنة سامة، فإن لم تكن صغيرة ابتعد واتصل بالدفاع المدني، ولا تعد للسيارة لأخذ أغراضك",
+      "src": [
+        "S30",
+        "S31"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-emergency-015",
+      "topic": "emergency",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "تعطل مثبت السرعة ولا تستطيع تخفيف سرعة سيارتك الأوتوماتيكية، ما الصحيح؟",
+      "options": [
+        "أنقل الغيار إلى R لأعكس الحركة وأوقف السيارة",
+        "أفتح الباب وأقفز من السيارة قبل أن تسرع أكثر",
+        "أنقل الغيار إلى P فورا وأنا أسير لأن ذلك يوقف العجلات مباشرة",
+        "أشغل الفلاشر وأتصل بـ 999، وأضع الغيار على N وأفرمل بثبات"
+      ],
+      "answer": 3,
+      "explain": "شرطة دبي: اهدأ واربط الحزام، شغل الفلاشر واتصل بـ 999، ضع الغيار على N وفرمل بقوة وثبات، واستخدم فرامل اليد تدريجيا مع إمساك المقود",
+      "src": [
+        "S21",
+        "S22"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-emergency-016",
+      "topic": "emergency",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "سيارتك فيها نظام ABS، وفي موقف طارئ ضغطت الفرامل بقوة فشعرت باهتزاز في الدواسة وصوت طقطقة، ماذا تفعل؟",
+      "options": [
+        "أستمر بالضغط بقوة وثبات وأوجه المقود",
+        "أشد فرامل اليد بقوة معها لأوقف السيارة",
+        "أرفع قدمي فورا لأن الفرامل تعطلت",
+        "أضغط الدواسة وأرفعها بسرعة (أضخها)"
+      ],
+      "answer": 0,
+      "explain": "الاهتزاز والصوت يعنيان أن نظام ABS يعمل، فلا تضخ الفرامل، اضغط بثبات ووجه السيارة بعيدا عن الخطر",
+      "tip": "مع ABS: دعسة ثابتة وسوق",
+      "src": [
+        "S25",
+        "S26",
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-emergency-017",
+      "topic": "emergency",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "ضغطت الفرامل فلم تستجب السيارة، ما التصرف الصحيح؟",
+      "options": [
+        "أضخ دواسة الفرامل بسرعة وأستخدم فرامل اليد تدريجيا",
+        "أطفئ المحرك فورا وأنا مسرع لأن ذلك يوقف السيارة بسرعة أكبر",
+        "أشد فرامل اليد بقوة دفعة واحدة حتى تقف",
+        "أنقل الغيار إلى P وأنا أسير لتقف السيارة"
+      ],
+      "answer": 0,
+      "explain": "ضخ الدواسة قد يعيد ضغط الفرامل، وفرامل اليد التدريجية تبطئ دون انزلاق، وارفع قدمك عن البنزين وشغل الفلاشر والبوق، ولا تطفئ المحرك قبل التوقف لأن المقود يصير ثقيلا",
+      "src": [
+        "S23",
+        "S24"
+      ],
+      "confidence": "medium",
+      "notes": "المصادر هنا موقع سيارات إماراتي ونادي سيارات، وليست جهة رسمية إماراتية"
+    },
+    {
+      "id": "safety-emergency-018",
+      "topic": "emergency",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "ارتفع مؤشر حرارة المحرك إلى المنطقة الحمراء وأنت تسير، ما التصرف الصحيح؟",
+      "options": [
+        "أشغل المكيف على أقصى برودة وأكمل رحلتي",
+        "أكمل بسرعة عالية حتى يبرده الهواء القوي",
+        "أتوقف بأمان حتى يبرد، ولا أفتح غطاء الرادياتير ساخنا",
+        "أفتح غطاء الرادياتير فورا وأضيف ماء باردا ليبرد المحرك بسرعة"
+      ],
+      "answer": 2,
+      "explain": "الاستمرار مع حرارة عالية قد يتلف المحرك، وسائل التبريد الساخن تحت ضغط وقد يندفع ويحرقك، وبعد أن يبرد افحص مستوى سائل التبريد",
+      "src": [
+        "S43",
+        "S44",
+        "S56",
+        "S37"
+      ],
+      "confidence": "high",
+      "notes": "المصادر تختلف في إطفاء المحرك فورا أو تركه يعمل قليلا حتى يبرد، لذلك لم نجعل الإطفاء جزءا من الإجابة"
+    },
+    {
+      "id": "safety-emergency-019",
+      "topic": "emergency",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "لماذا لا تفتح غطاء الرادياتير والمحرك ساخن؟",
+      "options": [
+        "لأن الماء البارد يدخل وحده إلى المحرك ويتلفه بسرعة",
+        "لأن الغطاء ينكسر بسهولة وهو ساخن",
+        "لأن فتحه يفرغ البطارية ويطفئ المروحة",
+        "لأن السائل تحت ضغط وقد يندفع بخار وماء مغلي"
+      ],
+      "answer": 3,
+      "explain": "انتظر حتى يبرد المحرك تماما (نحو 30 دقيقة) قبل فتح أي غطاء في نظام التبريد",
+      "src": [
+        "S43",
+        "S44",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-emergency-020",
+      "topic": "emergency",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "لماذا لا تضغط الفرامل بقوة لحظة انفجار الإطار؟",
+      "options": [
+        "لأن الفرملة القوية قد تجعل السيارة تنحرف",
+        "لأن القانون يمنع الفرملة على الطرق السريعة",
+        "لأن الفرامل تتعطل دائما عند انفجار الإطار",
+        "لأن الفرملة تفرغ الهواء من باقي الإطارات"
+      ],
+      "answer": 0,
+      "explain": "الإطار المنفجر يسحب السيارة إلى جهته، والفرملة القوية تزيد ذلك، فخفف تدريجيا مع إمساك المقود",
+      "src": [
+        "S20"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-emergency-021",
+      "topic": "emergency",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "لماذا تحذر الشرطة من ترك الولاعات والعطور ومعقمات اليدين وبنوك الطاقة داخل السيارة في الصيف؟",
+      "options": [
+        "لأنها تزيد استهلاك الوقود بسبب وزنها",
+        "لأنها تعطل المكيف إذا بقيت في السيارة",
+        "لأن حرارة السيارة المتوقفة قد تشعلها أو تفجرها",
+        "لأنها تسبب رائحة مزعجة فقط داخل السيارة المغلقة في الحر"
+      ],
+      "answer": 2,
+      "explain": "حرارة المقصورة في الصيف مرتفعة جدا، وهذه الأغراض من أسباب حرائق السيارات، فخذها معك",
+      "src": [
+        "S32",
+        "S33"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-emergency-022",
+      "topic": "emergency",
+      "level": 4,
+      "exam": [
+        "dubai"
+      ],
+      "q": "حسب دليل القيادة الآمنة من هيئة الطرق في دبي، على أي بعد تضع مثلث التحذير خلف سيارتك المعطلة؟",
+      "options": [
+        "خلف السيارة مباشرة",
+        "10 أمتار",
+        "50 مترا",
+        "500 متر"
+      ],
+      "answer": 2,
+      "explain": "ضع المثلث على بعد 50 مترا في الاتجاه الذي تأتي منه السيارات، ليرى السائقون الخطر مبكرا",
+      "src": [
+        "S2"
+      ],
+      "confidence": "high",
+      "notes": "دليل معهد الشارقة للسياقة يذكر حوالي 100 متر، وموقع RoadSafetyUAE يذكر 100 متر على الأقل على الطرق السريعة، وهذا السؤال مبني على رقم هيئة الطرق"
+    },
+    {
+      "id": "safety-emergency-023",
+      "topic": "emergency",
+      "level": 4,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "تعطلت سيارتك في المسار الأيسر لطريق سريع ولا تستطيع تحريكها، ما الأسلم؟",
+      "options": [
+        "أنزل لأصلح العطل في مكانه بسرعة، ثم أكمل طريقي قبل أن يزدحم",
+        "أحاول دفع السيارة وحدي عبر المسارات إلى الكتف",
+        "أقف أمام السيارة لأشير للسيارات القادمة بيدي",
+        "أشغل الفلاشر، وأخرج مع الركاب بحذر خلف الحاجز وأتصل بـ 999"
+      ],
+      "answer": 3,
+      "explain": "لا تقف في الطريق ولا تصلح العطل في المسار، ابتعد عن حركة السير واطلب المساعدة من 999",
+      "src": [
+        "S27",
+        "S28",
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-emergency-024",
+      "topic": "emergency",
+      "level": 4,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "علقت سيارتك في تيار ماء سريع بعد أمطار غزيرة، ما التصرف الأسلم حسب إرشادات السلامة؟",
+      "options": [
+        "أحاول تشغيل المحرك والتسارع بقوة للخروج",
+        "أبقى داخلها وأتصل بـ 999، وإذا دخل الماء أصعد إلى سقفها",
+        "أفتح كل الأبواب حتى يمر الماء من داخلها ولا يدفع السيارة معه",
+        "أنزل وأمشي في الماء إلى الطرف الآخر بسرعة"
+      ],
+      "answer": 1,
+      "explain": "الماء الجاري قد يسقطك إذا مشيت فيه حتى لو كان قليل العمق، فابق في السيارة واطلب المساعدة",
+      "src": [
+        "S46",
+        "S45"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-emergency-025",
+      "topic": "emergency",
+      "level": 4,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "بدأ دخان يخرج من سيارة كهربائية تقودها، ما الصحيح حسب هيئة الطرق؟",
+      "options": [
+        "أفتح غطاء البطارية لأفصلها عن السيارة",
+        "أبقى داخلها حتى يصل الدفاع المدني ويطفئها",
+        "أتوقف وأخرج الجميع وأبتعد، ثم أتصل بـ 997 أو 999",
+        "أطفئها بالماء بنفسي فورا قبل أن تكبر النار وتصل للبطارية"
+      ],
+      "answer": 2,
+      "explain": "حريق بطارية السيارة الكهربائية خطر جدا، فلا تلمس مكونات البطارية، وابتعد نحو 30 مترا، وضع المثلث على بعد 50 مترا، واترك الإطفاء للمختصين",
+      "src": [
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-emergency-026",
+      "topic": "emergency",
+      "level": 4,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "سيارة قديمة بلا ABS، ضغطت الفرامل بقوة فانغلقت العجلات وصارت السيارة تنزلق ولا تستجيب للمقود، ماذا تفعل؟",
+      "options": [
+        "أشد فرامل اليد بقوة مع الفرامل العادية",
+        "أخفف الضغط على الفرامل لحظة ثم أضغط من جديد",
+        "أدير المقود بقوة إلى أقصى حد لأغير الاتجاه",
+        "أزيد الضغط على الفرامل وأثبته حتى تقف"
+      ],
+      "answer": 1,
+      "explain": "العجلة المنغلقة لا توجه السيارة، وتخفيف الضغط لحظة يعيد لها الدوران والتوجيه (فرملة متقطعة)",
+      "src": [
+        "S26",
+        "S55"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-emergency-027",
+      "topic": "emergency",
+      "level": 4,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "أين الأفضل أن تضع طفاية الحريق في سيارتك؟",
+      "options": [
+        "داخل المقصورة في مكان سهل الوصول",
+        "في حجرة المحرك قرب مكان الحريق المتوقع",
+        "لا حاجة لها في السيارات الحديثة",
+        "في صندوق السيارة تحت الأغراض"
+      ],
+      "answer": 0,
+      "explain": "الطفاية تفيد فقط إذا وصلت إليها بسرعة، مثلا تحت المقعد الأمامي، وحملة الصيف الآمن تنصح بطفاية صغيرة من نوع البودرة متعددة الاستخدام",
+      "src": [
+        "S33"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-emergency-028",
+      "topic": "emergency",
+      "level": 5,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "على طريق زلق بدأت مؤخرة سيارتك تنزلق نحو اليمين، كيف تتصرف؟",
+      "options": [
+        "أضغط البنزين بقوة لأخرج من الانزلاق بسرعة",
+        "أدير المقود بقوة نحو اليسار عكس جهة الانزلاق لأعيد السيارة",
+        "أضغط الفرامل بقوة وأثبت المقود مستقيما",
+        "أرفع قدمي عن البنزين وأوجه المقود بهدوء نحو اليمين"
+      ],
+      "answer": 3,
+      "explain": "عند انزلاق المؤخرة وجه المقود بلطف في جهة الانزلاق نفسها (نحو المكان الذي تريد الذهاب إليه) وتجنب الحركات العنيفة",
+      "tip": "المؤخرة راحت يمين؟ المقود يمين بهدوء",
+      "src": [
+        "S51",
+        "S25"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-emergency-029",
+      "topic": "emergency",
+      "level": 5,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "إذا اشتعلت سيارتك، إلى أي مسافة تبتعد عنها على الأقل حسب إرشادات السلامة؟",
+      "options": [
+        "مترين",
+        "5 أمتار",
+        "10 أمتار",
+        "30 مترا"
+      ],
+      "answer": 3,
+      "explain": "ابتعد 30 مترا على الأقل مع كل الركاب، وانتبه لحركة السير وأنت تبتعد",
+      "src": [
+        "S2",
+        "S30"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-vehicle-001",
+      "topic": "vehicle",
+      "level": 1,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "متى تفحص ضغط هواء الإطارات لتحصل على قراءة صحيحة؟",
+      "options": [
+        "والإطارات باردة، قبل القيادة",
+        "بعد وقوف السيارة ساعات تحت الشمس",
+        "بعد قيادة طويلة مباشرة والإطار ساخن",
+        "فقط عندما أسمع صوتا غريبا من الإطار"
+      ],
+      "answer": 0,
+      "explain": "دليل هيئة الطرق: افحص الإطارات وهي باردة، لأن الحرارة ترفع الضغط فتعطيك قراءة غير دقيقة",
+      "src": [
+        "S1",
+        "S18"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-vehicle-002",
+      "topic": "vehicle",
+      "level": 1,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "أي مجموعة من هذه تفحصها أسبوعيا حسب دليل هيئة الطرق؟",
+      "options": [
+        "برمجة كمبيوتر السيارة في الوكالة كل أسبوع",
+        "تغيير زيت المحرك وفلتر الهواء كل أسبوع مهما كانت المسافة",
+        "تغيير البطارية كل أسبوع خلال أشهر الصيف",
+        "ضغط الإطارات ونقشتها والأضواء والمساحات والسوائل"
+      ],
+      "answer": 3,
+      "explain": "لا تقد سيارة إلا وهي بحالة فنية جيدة، وافحص أسبوعيا الإطارات والأضواء والإشارات والسوائل والزجاج والمساحات والمرايا والبوق والأحزمة",
+      "src": [
+        "S1",
+        "S2",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-vehicle-003",
+      "topic": "vehicle",
+      "level": 1,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "ماذا يعني غالبا ضوء التحذير الأحمر في لوحة العدادات؟",
+      "options": [
+        "تذكير بموعد صيانة عادية بعد شهر تقريبا",
+        "مشكلة خطيرة تحتاج التوقف بأمان أو المساعدة",
+        "لا شيء يذكر ما دامت السيارة تسير بشكل طبيعي",
+        "معلومة فقط أن أحد الأنظمة يعمل الآن"
+      ],
+      "answer": 1,
+      "explain": "الأحمر خطر، والكهرماني (الأصفر أو البرتقالي) افحص قريبا، والأخضر أو الأزرق نظام يعمل",
+      "tip": "أحمر يعني وقف، أصفر يعني انتبه",
+      "src": [
+        "S37",
+        "S38"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-vehicle-004",
+      "topic": "vehicle",
+      "level": 1,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "في السيارة الأوتوماتيكية، متى تضع ذراع الغيار على P؟",
+      "options": [
+        "بعد التوقف الكامل للركن أو قبل النزول",
+        "عند نزول منحدر طويل لتخفيف السرعة",
+        "عند الرجوع للخلف ببطء في المواقف الضيقة",
+        "أثناء السير البطيء في الزحام لتوفير الوقود"
+      ],
+      "answer": 0,
+      "explain": "P يقفل ناقل الحركة ليمنع تحرك السيارة، فلا تضعه إلا والسيارة متوقفة تماما، ومعه فرامل اليد",
+      "src": [
+        "S39",
+        "S56",
+        "S29"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-vehicle-005",
+      "topic": "vehicle",
+      "level": 1,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "ما وظيفة الغيار D في السيارة الأوتوماتيكية؟",
+      "options": [
+        "فصل الحركة عن العجلات (محايد)",
+        "ركن السيارة وقفلها",
+        "القيادة العادية إلى الأمام",
+        "الرجوع إلى الخلف"
+      ],
+      "answer": 2,
+      "explain": "P للركن، وR للرجوع، وN محايد، وD للقيادة إلى الأمام",
+      "tip": "D يعني قدام",
+      "src": [
+        "S39",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-vehicle-006",
+      "topic": "vehicle",
+      "level": 1,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "في السيارة الأوتوماتيكية، بأي قدم تضغط دواستي البنزين والفرامل؟",
+      "options": [
+        "اليسرى للبنزين واليمنى للفرامل",
+        "اليسرى للفرامل واليمنى للبنزين",
+        "بأي قدم حسب الراحة",
+        "بالقدم اليمنى فقط"
+      ],
+      "answer": 3,
+      "explain": "معهد الشارقة للسياقة: في السيارة الأوتوماتيكية استخدم قدمك اليمنى فقط، لأن استخدام القدمين قد يسبب ضغط الدواستين معا في موقف مفاجئ",
+      "tip": "اليسار ترتاح، اليمين تشتغل",
+      "src": [
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-vehicle-007",
+      "topic": "vehicle",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "أضاء في لوحة العدادات ضوء تحذير كهرماني (أصفر أو برتقالي)، ماذا يعني غالبا؟",
+      "options": [
+        "خلل يحتاج فحصا قريبا، ولا يتطلب عادة التوقف فورا",
+        "نظام يعمل بشكل طبيعي ولا داعي لشيء",
+        "انتهى الوقود تماما",
+        "يعني توقف فورا وأطفئ المحرك في مكانك مهما كان الطريق"
+      ],
+      "answer": 0,
+      "explain": "الضوء الكهرماني تنبيه: لا تتجاهله ورتب فحص السيارة قريبا",
+      "src": [
+        "S37",
+        "S38"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-vehicle-008",
+      "topic": "vehicle",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "عند تشغيل السيارة أضاءت أضواء التحذير لثوان ثم انطفأت، ما معنى ذلك؟",
+      "options": [
+        "هذا طبيعي، والمشكلة إذا بقي أحدها مضيئا",
+        "البطارية على وشك التلف ولازم تغييرها",
+        "خلل خطير في كل أنظمة السيارة يحتاج ورشة",
+        "لازم أطفئ السيارة وأعيد تشغيلها مرتين"
+      ],
+      "answer": 0,
+      "explain": "معهد الشارقة للسياقة: أضواء التحذير تضيء عند التشغيل وتنطفئ خلال ثوان، وفي الوضع الطبيعي تبقى كلها مطفأة",
+      "src": [
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-vehicle-009",
+      "topic": "vehicle",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "أضاء ضوء ضغط الزيت الأحمر (شكل إبريق زيت) أثناء القيادة، ما الصحيح؟",
+      "options": [
+        "أكمل وأفحصه في الأسبوع القادم",
+        "أتوقف بأمان وأطفئ المحرك بسرعة",
+        "أطفئ المكيف فقط وأكمل رحلتي",
+        "أزيد السرعة ليرتفع ضغط الزيت"
+      ],
+      "answer": 1,
+      "explain": "ضغط الزيت المنخفض يعني أن أجزاء المحرك لا تتزيت جيدا، والاستمرار قد يدمر المحرك",
+      "src": [
+        "S38",
+        "S54"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-vehicle-010",
+      "topic": "vehicle",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "أضاء ضوء ضغط الإطارات (شكل حدوة بداخلها علامة تعجب)، ماذا تفعل؟",
+      "options": [
+        "أفحص الضغط بمقياس وأعدله حسب ملصق باب السائق",
+        "أتجاهله إذا بدا الإطار طبيعيا",
+        "أنفخ الإطارات حتى أعلى رقم مكتوب على جانب الإطار",
+        "أنقص الهواء من كل الإطارات"
+      ],
+      "answer": 0,
+      "explain": "الضوء يعني غالبا أن إطارا أو أكثر ناقص الهواء، والضغط الصحيح موجود على ملصق باب السائق أو في دليل السيارة",
+      "src": [
+        "S37",
+        "S38"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-vehicle-011",
+      "topic": "vehicle",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "بقي ضوء الوسادة الهوائية مضيئا بعد تشغيل السيارة، ماذا يعني؟",
+      "options": [
+        "الوسائد الهوائية جاهزة وتعمل بشكل ممتاز الآن",
+        "حزام الراكب الأمامي غير مربوط فقط",
+        "قد لا تعمل الوسائد في حادث، فأفحصها قريبا",
+        "مقعد الراكب الأمامي فارغ ولا مشكلة"
+      ],
+      "answer": 2,
+      "explain": "ضوء الوسادة الهوائية يعني خللا في نظامها، والوسائد تحمي فقط إذا كانت سليمة ومع حزام الأمان",
+      "src": [
+        "S37",
+        "S38",
+        "S41"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-vehicle-012",
+      "topic": "vehicle",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "ما الوضع الصحيح لحزام الأمان؟",
+      "options": [
+        "خلف الظهر مع قفله فقط لإسكات صوت التنبيه",
+        "على الحوض والصدر والكتف بعيدا عن الرقبة، ومشدودا",
+        "الجزء العلوي تحت الإبط لراحة أكثر في الرحلات الطويلة",
+        "الجزء السفلي على البطن ومرتخيا قليلا للراحة"
+      ],
+      "answer": 1,
+      "explain": "دليل هيئة الطرق: الحزام يمر على عظام الحوض والصدر والكتف، ولا يلمس الرقبة، وحزام واحد لشخص واحد",
+      "src": [
+        "S1",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-vehicle-013",
+      "topic": "vehicle",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "ما الهدف الأساسي من مسند الرأس في المقعد؟",
+      "options": [
+        "تقليل إصابات الرقبة عند الاصطدام من الخلف",
+        "الراحة في الرحلات الطويلة فقط دون أي دور للسلامة",
+        "تحسين الرؤية في المرآة الخلفية داخل السيارة",
+        "تثبيت المقعد في مكانه عند الفرملة"
+      ],
+      "answer": 0,
+      "explain": "في الاصطدام من الخلف يندفع الرأس للخلف، والمسند المضبوط جيدا يقلل إصابة الرقبة",
+      "src": [
+        "S40",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-vehicle-014",
+      "topic": "vehicle",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "كيف تضبط مقعد السائق بشكل صحيح؟",
+      "options": [
+        "بعيدا جدا حتى تكون ذراعاي مشدودتين تماما",
+        "بحيث تنثني ركبتاي وذراعاي قليلا ويستند ظهري",
+        "أقرب ما يمكن من المقود حتى أرى الطريق أفضل",
+        "مائلا للخلف كثيرا لأرتاح في الطرق الطويلة"
+      ],
+      "answer": 1,
+      "explain": "عند ضغط الدواسة إلى آخرها تبقى ركبتك منثنية قليلا، وذراعاك منثنيتين قليلا على المقود، وظهرك مستند، مع مسافة نحو 25 سم على الأقل عن الوسادة الهوائية",
+      "src": [
+        "S56",
+        "S41"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-vehicle-015",
+      "topic": "vehicle",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "في معظم السيارات الأوتوماتيكية، ماذا تفعل قبل تحريك ذراع الغيار من P؟",
+      "options": [
+        "أضغط دواسة الفرامل",
+        "أرفع فرامل اليد أكثر",
+        "أضغط دواسة البنزين",
+        "أطفئ المحرك"
+      ],
+      "answer": 0,
+      "explain": "أغلب السيارات لا تسمح بتحريك الغيار من P إلا مع الضغط على الفرامل، حتى لا تتحرك السيارة فجأة",
+      "src": [
+        "S39",
+        "S56"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-vehicle-016",
+      "topic": "vehicle",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "ركنت سيارتك الأوتوماتيكية على منحدر، ما الصحيح؟",
+      "options": [
+        "أضعها على N فقط",
+        "أضعها على R بدون فرامل اليد لأنها أقوى من P",
+        "أضع الغيار على P وأشد فرامل اليد",
+        "أضعها على D وأطفئ المحرك"
+      ],
+      "answer": 2,
+      "explain": "P مع فرامل اليد يمنعان تحرك السيارة، والاعتماد على غيار واحد فقط أضعف",
+      "src": [
+        "S29",
+        "S39",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-vehicle-017",
+      "topic": "vehicle",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "ما أقصى عمر مسموح للإطار في الإمارات من تاريخ صنعه؟",
+      "options": [
+        "10 سنوات",
+        "5 سنوات",
+        "سنتان",
+        "لا حد ما دامت النقشة جيدة"
+      ],
+      "answer": 1,
+      "explain": "في الإمارات لا تستخدم إطارا عمره أكثر من 5 سنوات من تاريخ الصنع حتى لو بدا جيدا، والقيادة بإطار منتهي الصلاحية تعرضك للمخالفة",
+      "src": [
+        "S16",
+        "S17",
+        "S18"
+      ],
+      "confidence": "high",
+      "notes": "بعض الشركات العالمية تذكر عمرا أطول مع الفحص الدوري، والمعتمد في الإمارات 5 سنوات"
+    },
+    {
+      "id": "safety-vehicle-018",
+      "topic": "vehicle",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "أضاء ضوء البطارية الأحمر أثناء القيادة، ماذا يعني غالبا؟",
+      "options": [
+        "خلل في نظام الشحن وقد تتوقف السيارة قريبا",
+        "البطارية مشحونة بالكامل ولا داعي للقلق أبدا",
+        "أحد الأبواب أو غطاء الصندوق غير مغلق",
+        "حان موعد تغيير زيت المحرك قريبا"
+      ],
+      "answer": 0,
+      "explain": "المولد لا يشحن البطارية كما يجب، فاتجه بأمان لأقرب مكان للفحص ولا تبدأ رحلة طويلة",
+      "src": [
+        "S38",
+        "S54",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-vehicle-019",
+      "topic": "vehicle",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "ماذا يعني ضوء حرارة المحرك الأحمر (شكل ميزان حرارة فوق خطوط ماء)؟",
+      "options": [
+        "المكيف يعمل بأقصى قوة",
+        "الإطارات ساخنة من حرارة الطريق",
+        "المحرك يسخن أكثر من اللازم",
+        "حرارة المقصورة مرتفعة"
+      ],
+      "answer": 2,
+      "explain": "توقف في مكان آمن واتركه يبرد، ولا تفتح غطاء الرادياتير وهو ساخن",
+      "src": [
+        "S37",
+        "S38",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-vehicle-020",
+      "topic": "vehicle",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "أضاء ضوء الفرامل الأحمر (دائرة بداخلها علامة تعجب) أثناء السير، ما أول ما تتأكد منه؟",
+      "options": [
+        "أن حزامي وحزام الراكب مربوطان جيدا",
+        "أن الأضواء العالية مطفأة، لأن هذا الضوء يعني أنها تعمل",
+        "أن فرامل اليد محررة، وإن بقي أوقف السيارة وأفحصها",
+        "أن خزان الوقود فيه وقود كاف للرحلة"
+      ],
+      "answer": 2,
+      "explain": "هذا الضوء قد يعني فرامل يد مرفوعة أو نقصا في سائل الفرامل أو خللا فيها، والفرامل لا تحتمل التأجيل",
+      "src": [
+        "S37",
+        "S38",
+        "S56"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-vehicle-021",
+      "topic": "vehicle",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "أضاء ضوء ABS الكهرماني وبقي مضيئا، ماذا يعني؟",
+      "options": [
+        "نظام ABS يعمل الآن بقوة أكبر من المعتاد",
+        "نظام ABS لا يعمل، والفرامل العادية تعمل غالبا",
+        "انتهى سائل غسيل الزجاج الأمامي والخلفي",
+        "الفرامل كلها معطلة تماما ولازم أتوقف فورا في مكاني"
+      ],
+      "answer": 1,
+      "explain": "بدون ABS قد تنغلق العجلات في الفرملة القوية، فكن حذرا وزد مسافتك، وافحص النظام قريبا",
+      "src": [
+        "S38",
+        "S37"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-vehicle-022",
+      "topic": "vehicle",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "تنزل منحدرا جبليا طويلا وشديدا (مثل طريق جبل جيس)، أي غيار أنسب في السيارة الأوتوماتيكية؟",
+      "options": [
+        "P عند السرعات المنخفضة في المنحدر",
+        "غيار منخفض (2 أو 1 أو L) لأستفيد من فرملة المحرك",
+        "D مع الضغط على الفرامل طوال النزول",
+        "N لأوفر الوقود وأترك السيارة تنزل بحرية مع الفرامل عند الحاجة"
+      ],
+      "answer": 1,
+      "explain": "الغيار المنخفض يبطئ السيارة بالمحرك فتقل حاجتك للفرامل، أما N فيلغي فرملة المحرك، وP للوقوف فقط",
+      "src": [
+        "S39",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-vehicle-023",
+      "topic": "vehicle",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "كيف تضبط مسند الرأس بشكل صحيح؟",
+      "options": [
+        "لا يهم ارتفاعه ما دام موجودا في المقعد",
+        "بعيدا عن الرأس قدر الإمكان حتى لا يضايقك",
+        "في أدنى وضع خلف الرقبة للراحة",
+        "خلف رأسك لا خلف رقبتك، وقريبا منه"
+      ],
+      "answer": 3,
+      "explain": "المسند المنخفض أو البعيد لا يحمي الرقبة في الاصطدام الخلفي، والأفضل أن يكون منتصفه تقريبا بمستوى عينيك وأذنيك",
+      "src": [
+        "S40",
+        "S56"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-vehicle-024",
+      "topic": "vehicle",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "تقود سيارة كهربائية لأول مرة، ما أهم نصيحة من هيئة الطرق عند الانطلاق؟",
+      "options": [
+        "أستخدم فرامل اليد مع التسارع للتحكم",
+        "أضغط بقوة لأن السيارات الكهربائية بطيئة",
+        "أنطلق دائما في الوضع الرياضي لأنه أكثر أمانا",
+        "أضغط دواسة التسارع بلطف لأن التسارع فوري"
+      ],
+      "answer": 3,
+      "explain": "محرك السيارة الكهربائية يعطي قوته فورا، والضغط القوي في الزحام أو المواقف قد يسبب اصطداما",
+      "src": [
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-vehicle-025",
+      "topic": "vehicle",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "لاحظت انتفاخا (فقاعة) على جانب أحد الإطارات، ما الصحيح؟",
+      "options": [
+        "أنقله إلى الخلف وأكمل",
+        "أغير الإطار لأنه معرض للانفجار",
+        "أكمل عادي إذا كان الضغط صحيحا",
+        "أنقص الهواء قليلا من الإطار"
+      ],
+      "answer": 1,
+      "explain": "شرطة أبوظبي تطلب فحص الإطارات من التشققات والانتفاخات، خصوصا في الصيف",
+      "src": [
+        "S53"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-vehicle-026",
+      "topic": "vehicle",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "كيف تضبط المرآة الجانبية بشكل جيد قبل القيادة؟",
+      "options": [
+        "موجهة للأعلى قليلا لتتجنب إبهار أضواء من خلفك",
+        "بحيث ترى نصف سيارتك لتعرف موقعها بدقة",
+        "موجهة للأسفل لترى الإطار والرصيف دائما",
+        "ترى طرف سيارتك وأكبر جزء من المسار المجاور"
+      ],
+      "answer": 3,
+      "explain": "كلما قل ما تراه من سيارتك زاد ما تراه من المسار المجاور، ومع ذلك تبقى نقطة عمياء تحتاج التفاتة",
+      "src": [
+        "S42",
+        "S56"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-vehicle-027",
+      "topic": "vehicle",
+      "level": 4,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "ضوء فحص المحرك يومض بشكل متقطع أثناء القيادة، ما الصحيح؟",
+      "options": [
+        "أزيد السرعة قليلا لينظف المحرك نفسه",
+        "أطفئ المكيف فقط وأكمل رحلتي كالمعتاد حتى أصل",
+        "أتجاهله لأن لونه كهرماني وليس أحمر",
+        "أتوقف بأمان في أقرب فرصة وأطلب المساعدة"
+      ],
+      "answer": 3,
+      "explain": "ضوء فحص المحرك الثابت يعني افحص قريبا، أما الوامض فيعني توقف بأمان واطلب المساعدة",
+      "src": [
+        "S37",
+        "S38"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-vehicle-028",
+      "topic": "vehicle",
+      "level": 4,
+      "exam": [
+        "dubai"
+      ],
+      "q": "حسب دليل هيئة الطرق، ما أقل عمق آمن لنقشة الإطار؟",
+      "options": [
+        "لا يوجد حد أدنى",
+        "0.5 ملم",
+        "1.5 ملم",
+        "8 ملم"
+      ],
+      "answer": 2,
+      "explain": "دليل هيئة الطرق: الإطار الآمن فيه 1.5 ملم على الأقل من النقشة، والنقشة تصرف الماء وتمنع الانزلاق المائي",
+      "src": [
+        "S1",
+        "S2"
+      ],
+      "confidence": "high",
+      "notes": "دليل معهد الشارقة للسياقة ينصح بتغيير الإطار إذا قلت النقشة عن 6 ملم، ومصادر عالمية تذكر 1.6 ملم، وهذا السؤال مبني على رقم هيئة الطرق"
+    },
+    {
+      "id": "safety-vehicle-029",
+      "topic": "vehicle",
+      "level": 4,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "على جانب الإطار رقم من أربع خانات هو 2324، ماذا يعني؟",
+      "options": [
+        "تنتهي صلاحية الإطار في الأسبوع 23 من سنة 2024",
+        "صنع الإطار في اليوم 23 من سنة 2024",
+        "صنع الإطار سنة 2023 وهذا رقم الدفعة 24",
+        "صنع الإطار في الأسبوع 23 من سنة 2024"
+      ],
+      "answer": 3,
+      "explain": "آخر أربعة أرقام في رمز DOT: أول رقمين الأسبوع وآخر رقمين السنة، ومن هذا التاريخ تحسب عمر الإطار (5 سنوات في الإمارات)",
+      "src": [
+        "S19",
+        "S16"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-vehicle-030",
+      "topic": "vehicle",
+      "level": 4,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "سيارتك فيها مثبت سرعة متكيف يحافظ على المسافة تلقائيا، ما الصحيح؟",
+      "options": [
+        "يسمح لي باستخدام الهاتف بأمان لأنه يتحكم بالمسافة",
+        "مناسب جدا في المطر الغزير لأنه أدق من قدمي",
+        "نظام مساعد فقط، فأبقي يدي على المقود وانتباهي كاملا",
+        "يوقف السيارة في كل الحالات الطارئة دون تدخلي"
+      ],
+      "answer": 2,
+      "explain": "دليل هيئة الطرق: أنظمة المساعدة لا تغني عن انتباه السائق، والمثبت غير مناسب على الطرق المبللة",
+      "src": [
+        "S1",
+        "S13"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-vehicle-031",
+      "topic": "vehicle",
+      "level": 5,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "أنهيت رحلة طويلة بسيارتك الكهربائية، متى الأفضل شحنها حسب نصائح هيئة الطرق لتقليل خطر الحريق؟",
+      "options": [
+        "بعد ركنها تحت الشمس القوية لساعات",
+        "فورا وهي ساخنة لأن الشحن أسرع وقتها",
+        "بعد أن تبرد البطارية، وليس مباشرة",
+        "بأي شاحن سريع متوفر ولو لم يكن أصليا"
+      ],
+      "answer": 2,
+      "explain": "هيئة الطرق تنصح بترك البطارية تبرد قبل الشحن (لا تشحنها خلال ساعة تقريبا من الاستخدام)، واستخدام الشاحن الأصلي، وتقليل الشحن السريع، وعدم ترك السيارة طويلا تحت الشمس القوية",
+      "src": [
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-driver-001",
+      "topic": "driver",
+      "level": 1,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "ما الطريقة الآمنة لاستخدام الهاتف أثناء رحلتك؟",
+      "options": [
+        "أستخدمه إذا كانت سرعتي منخفضة في الزحام",
+        "أمسكه بيد وأقود باليد الأخرى بحذر",
+        "أستخدمه فقط بعد أن أركن في مكان آمن",
+        "أكتب الرسائل عند الإشارة الحمراء فقط"
+      ],
+      "answer": 2,
+      "explain": "اجعلها عادة أن تستخدم الهاتف وأنت مركون فقط، واستخدامه أثناء القيادة مخالفة غرامتها 800 درهم و4 نقاط سوداء",
+      "src": [
+        "S1",
+        "S56",
+        "S12"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-driver-002",
+      "topic": "driver",
+      "level": 1,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "بدأت تشعر بالنعاس أثناء القيادة، ما التصرف الصحيح؟",
+      "options": [
+        "أشرب قهوة وأكمل دون توقف حتى أصل",
+        "أفتح النافذة وأرفع صوت الراديو وأكمل حتى أصل",
+        "أتوقف في مكان آمن وأرتاح أو أنام قليلا",
+        "أسرع قليلا لأصل قبل أن يغلبني النوم"
+      ],
+      "answer": 2,
+      "explain": "إذا بدأ التعب فلا حل إلا التوقف والراحة أو النوم القصير، والقيادة وأنت متعب قد تفقدك السيطرة",
+      "tip": "النعسان يوقف، مش يفتح الشباك",
+      "src": [
+        "S1",
+        "S56",
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-driver-003",
+      "topic": "driver",
+      "level": 1,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "متى تضبط وجهتك في تطبيق الخرائط؟",
+      "options": [
+        "قبل أن أتحرك أو بعد أن أتوقف بأمان",
+        "أثناء الانعطاف لأعرف أين أتجه بعدها",
+        "بسرعة عند الإشارة الحمراء قبل أن تخضر",
+        "أثناء السير على الطريق السريع لأنه مستقيم"
+      ],
+      "answer": 0,
+      "explain": "النظر إلى الشاشة ولو ثوان قليلة يعني أنك تقطع مسافة كبيرة دون أن ترى الطريق، فخطط لمسارك قبل الانطلاق",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-driver-004",
+      "topic": "driver",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "وصف لك الطبيب دواء جديدا وتخشى أن يسبب النعاس، ماذا تفعل قبل أن تقود؟",
+      "options": [
+        "أسأل الطبيب أو الصيدلي هل الدواء آمن مع القيادة",
+        "أشرب مشروب طاقة معه ثم أقود لأبقى منتبها",
+        "أقود بشكل عادي لأن الطبيب لا يصف دواء يؤثر على القيادة",
+        "أضاعف الجرعة مرة واحدة لينتهي مفعوله أسرع"
+      ],
+      "answer": 0,
+      "explain": "بعض الأدوية تضعف قدرتك على القيادة بأمان، ودليل هيئة الطرق ينصح بسؤال الطبيب أو الصيدلي",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-driver-005",
+      "topic": "driver",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "أي من هذه علامة على التعب أثناء القيادة؟",
+      "options": [
+        "ترى اللوحات من مسافة بعيدة",
+        "تراقب المرايا بانتظام وتنتبه للإشارات واللوحات مبكرا",
+        "لا تتذكر آخر كيلومترات قطعتها وتنحرف عن مسارك",
+        "تحافظ على سرعة ثابتة بسهولة"
+      ],
+      "answer": 2,
+      "explain": "من علامات التعب: التثاؤب المتكرر، والانحراف عن المسار، وثقل الجفون، وتذبذب السرعة، وأحلام اليقظة",
+      "src": [
+        "S1",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-driver-006",
+      "topic": "driver",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "تخطط لرحلة طويلة من دبي إلى الفجيرة، ما الاستعداد الصحيح؟",
+      "options": [
+        "أنطلق مباشرة بعد يوم عمل طويل لأوفر الوقت وأصل مبكرا",
+        "أنام جيدا قبلها، وأخطط لاستراحات، وأتقاسم القيادة",
+        "أقود بسرعة عالية لأختصر الوقت والتعب",
+        "أعتمد على مشروبات الطاقة لأكمل دون توقف"
+      ],
+      "answer": 1,
+      "explain": "للرحلات الطويلة: نوم كاف قبل الرحلة، واستراحات منتظمة، وتقاسم القيادة، والتخطيط المسبق",
+      "src": [
+        "S1",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-driver-007",
+      "topic": "driver",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "سائق آخر أخطأ أمامك وأغضبك، ما التصرف الصحيح؟",
+      "options": [
+        "أضيء له الأضواء العالية باستمرار",
+        "أحافظ على هدوئي وأترك مسافة وأنسى الموقف",
+        "أوقفه وأنزل لأناقشه",
+        "ألحقه وألتصق به قليلا حتى يعرف أنه أخطأ في حقي"
+      ],
+      "answer": 1,
+      "explain": "الغضب يجعلك تخطئ، ودليل هيئة الطرق ينصح بالهدوء وترك المسافة والتعاون مع الآخرين",
+      "src": [
+        "S1",
+        "S2",
+        "S57"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-driver-008",
+      "topic": "driver",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "أثناء مطر غزير طلب منك صديقك أن تصور المطر بهاتفك وأنت تقود، ما الصحيح؟",
+      "options": [
+        "أصور بسرعة لأن السيارات تسير ببطء في المطر",
+        "أصور باليد اليسرى وأمسك المقود باليمنى",
+        "أرفض، فالتصوير أثناء القيادة تشتيت ومخالفة",
+        "أصور عند الإشارة الحمراء فقط لأني متوقف"
+      ],
+      "answer": 2,
+      "explain": "الشرطة تخالف على استخدام الهاتف للتصوير أثناء القيادة (800 درهم و4 نقاط)، والجو السيئ يحتاج انتباها كاملا",
+      "src": [
+        "S12",
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-driver-009",
+      "topic": "driver",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "أنت جائع وتريد أن تأكل وجبة أثناء القيادة، ما التصرف الأسلم؟",
+      "options": [
+        "أتوقف في مكان آمن وآكل ثم أكمل",
+        "آكل وأنا أقود ببطء",
+        "آكل عند كل إشارة حمراء وأكمل وأنا ممسك بالطعام",
+        "أقود بركبتي وآكل بيدي"
+      ],
+      "answer": 0,
+      "explain": "أي شيء يشغل يديك أو نظرك عن الطريق يشتتك، مثل تغيير الراديو أو الهاتف أو الأكل",
+      "src": [
+        "S1"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-driver-010",
+      "topic": "driver",
+      "level": 2,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "ماذا يحدث عندما يكون ضغط الإطارات أقل من المطلوب؟",
+      "options": [
+        "لا يتغير شيء ما دام الإطار غير مثقوب",
+        "يقل استهلاك الوقود لأن الإطار أنعم",
+        "يتحسن ثبات السيارة ويزيد تماسكها مع الطريق في كل الظروف",
+        "يزيد استهلاك الوقود وتآكل الإطار وخطر انفجاره"
+      ],
+      "answer": 3,
+      "explain": "الإطار الناقص الهواء يقاوم الحركة أكثر ويسخن أكثر، فافحص الضغط بانتظام والإطارات باردة",
+      "src": [
+        "S35",
+        "S49",
+        "S20"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-driver-011",
+      "topic": "driver",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "في رمضان قبل أذان المغرب بقليل، تشعر بالتعب والعطش وتخشى أن تتأخر على الإفطار، ما التصرف الصحيح؟",
+      "options": [
+        "أخرج مبكرا، وإن تأخرت لا أسرع، وإذا نعست أتوقف بأمان",
+        "أقترب من السيارات أمامي وأومض بالأضواء حتى تفسح لي الطريق",
+        "أسرع وأتجاوز السيارات لألحق موعد الإفطار",
+        "أستخدم كتف الطريق لأتجاوز الازدحام بسرعة"
+      ],
+      "answer": 0,
+      "explain": "التعب والاستعجال قبل الإفطار خطر على الطريق، وهيئة الطرق تنصح بالتخطيط للرحلة مع وقت إضافي والقيادة بهدوء",
+      "src": [
+        "S1",
+        "S2",
+        "S56"
+      ],
+      "confidence": "medium",
+      "notes": "سياق رمضان هنا تطبيق لإرشادات التعب والتخطيط في دليلي هيئة الطرق ومعهد الشارقة"
+    },
+    {
+      "id": "safety-driver-012",
+      "topic": "driver",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "سائق عدواني يلاحقك ويحاول استفزازك، ما الأسلم؟",
+      "options": [
+        "أسابقه حتى يمل ويتوقف عن ملاحقتي",
+        "أبتعد عنه ولا أرد، وإن استمر أتصل بالشرطة",
+        "أرد عليه بإشارات يدي حتى يعرف خطأه",
+        "أتوقف فجأة أمامه لأجبره على التراجع والابتعاد عني"
+      ],
+      "answer": 1,
+      "explain": "هيئة الطرق: إذا كان سائق آخر عدوانيا فابتعد عنه واتصل بالشرطة عند الحاجة، ولا ترتكب تصرفا خطرا",
+      "src": [
+        "S2"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-driver-013",
+      "topic": "driver",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "سيارة ملتصقة بك من الخلف على طريق سريع وأنت في المسار الأوسط بالسرعة المسموحة، ما التصرف الأسلم؟",
+      "options": [
+        "أسرع فوق الحد المسموح قليلا حتى أبتعد عنه وعن خطره",
+        "أبقى في مساري وأخفف كثيرا لأضايقه",
+        "أضغط الفرامل فجأة لأنبهه إلى خطئه",
+        "أبقى هادئا وأنتقل يمينا عندما يكون آمنا ليمر"
+      ],
+      "answer": 3,
+      "explain": "الالتصاق خطير، ورد الفعل الغاضب يزيد الخطر، فالأسلم أن تفسح له بهدوء",
+      "src": [
+        "S1",
+        "S2"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "id": "safety-driver-014",
+      "topic": "driver",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "ما المهارات الأربع للقيادة الوقائية حسب دليل هيئة الطرق؟",
+      "options": [
+        "التركيز، والملاحظة، والتوقع، والتواصل",
+        "السرعة، والجرأة، والاستعجال، والبوق",
+        "التجاوز، والفرملة القوية، والإنارة العالية، والتسارع",
+        "الحفظ، والتخمين، والمجاملة، والانتظار"
+      ],
+      "answer": 0,
+      "explain": "ركز 100% من الوقت، ولاحظ ما أمامك وجانبيك وخلفك، وتوقع الأخطار مبكرا، وأعلن نيتك بالإشارات",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-driver-015",
+      "topic": "driver",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "لماذا تنظر بعيدا إلى الأمام وليس فقط إلى السيارة التي أمامك مباشرة؟",
+      "options": [
+        "لأن النظر إلى المرايا غير مهم",
+        "لأزيد سرعتي دون خطر",
+        "لأقترب أكثر من السيارة الأمامية وأحافظ على سرعة ثابتة",
+        "لأكتشف الأخطار مبكرا وأخطط تصرفي بهدوء"
+      ],
+      "answer": 3,
+      "explain": "دليل هيئة الطرق: حرك عينيك باستمرار، وانظر بعيدا وعلى الجانبين وفي المرايا",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-driver-016",
+      "topic": "driver",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "قبل تغيير المسار، ما الطريقة الصحيحة لفحص النقطة العمياء؟",
+      "options": [
+        "أعتمد على المرآة الداخلية فقط لأنها أوسع من الجانبية",
+        "ألتفت بجسمي كله لعدة ثوان حتى أتأكد",
+        "ألتفت برأسي فقط نظرة سريعة ثم أعيد نظري للأمام",
+        "أفتح النافذة وأخرج رأسي لأرى أوضح"
+      ],
+      "answer": 2,
+      "explain": "حرك رأسك لا كتفيك، ولا تبعد عينك عن الطريق أمامك أكثر من ثانية، ولا تحرك المقود وأنت تلتفت",
+      "src": [
+        "S1",
+        "S56"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-driver-017",
+      "topic": "driver",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "أي عادة تقلل استهلاك الوقود وتزيد الأمان معا؟",
+      "options": [
+        "القيادة بإطارات ناقصة الهواء لتنعيم الحركة",
+        "التسارع والفرملة بهدوء مع توقع حركة السير",
+        "التسارع القوي ثم الفرملة المفاجئة للوصول أسرع",
+        "ترك المحرك يعمل طويلا أثناء الانتظار"
+      ],
+      "answer": 1,
+      "explain": "القيادة الهادئة والتوقع المبكر يقللان الفرملة والتسارع، فيوفران الوقود ويقللان الحوادث",
+      "src": [
+        "S49",
+        "S2",
+        "S57"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-driver-018",
+      "topic": "driver",
+      "level": 3,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "مررت بيوم سيئ وأنت متوتر جدا، ماذا تفعل قبل القيادة؟",
+      "options": [
+        "أهدأ أولا، وأؤجل القيادة إن احتجت",
+        "أعتمد على خبرتي ولا أهتم بحالتي",
+        "أقود بسرعة لأفرغ غضبي على الطريق",
+        "أرفع صوت الموسيقى وأكثر من التجاوز"
+      ],
+      "answer": 0,
+      "explain": "هيئة الطرق تنصح أن تنتبه لمشاعرك قبل القيادة، فالغضب والتوتر يدفعانك لتصرفات خطرة",
+      "src": [
+        "S2",
+        "S57"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-driver-019",
+      "topic": "driver",
+      "level": 4,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "هل استخدام سماعة (هاندز فري) يجعل المكالمة أثناء القيادة آمنة تماما؟",
+      "options": [
+        "نعم، الخطر فقط في حمل الهاتف باليد",
+        "نعم، على الطرق السريعة المستقيمة فقط",
+        "نعم، إذا كانت المكالمة قصيرة وهادئة",
+        "لا، فالمكالمة نفسها تشغل تركيز السائق"
+      ],
+      "answer": 3,
+      "explain": "دليل هيئة الطرق: سماعات اليد الحرة لا تجعل السائق أكثر أمانا، ومعهد الشارقة ينصح بتجنب حتى السماعة إن أمكن",
+      "src": [
+        "S1",
+        "S56",
+        "S57"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-driver-020",
+      "topic": "driver",
+      "level": 4,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "متى لا تلتفت لفحص النقطة العمياء رغم أنك تريد تغيير المسار؟",
+      "options": [
+        "عندما يكون الجو مشمسا والرؤية جيدة",
+        "على الطرق السريعة بسبب السرعة",
+        "عندما تكون إشارة الانعطاف مشغلة",
+        "عندما تكون السيارات أمامك تفرمل"
+      ],
+      "answer": 3,
+      "explain": "دليل هيئة الطرق: توقيت الالتفات مهم، ولا تلتفت والسيارات أمامك تفرمل لأنك قد تصطدم بها",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-driver-021",
+      "topic": "driver",
+      "level": 4,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "إذا أخطأت أنت أمام سائق آخر، ما التصرف الذي يخفف التوتر حسب دليل هيئة الطرق؟",
+      "options": [
+        "أتوقف في الطريق وأنزل لأشرح له ما حدث بالتفصيل",
+        "أظهر أنني انتبهت لخطئي، مثلا برفع يدي",
+        "ألومه بالبوق لأنه كان قريبا مني",
+        "أتجاهله تماما وأسرع لأبتعد عنه"
+      ],
+      "answer": 1,
+      "explain": "الاعتراف بالخطأ يطفئ الغضب، وهذا من نصائح هيئة الطرق لتجنب الغضب على الطريق",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-driver-022",
+      "topic": "driver",
+      "level": 4,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "في رحلة طويلة، كل كم تأخذ استراحة على الأقل حسب دليل معهد الشارقة للسياقة؟",
+      "options": [
+        "كل 5 ساعات تقريبا",
+        "كل 8 ساعات تقريبا",
+        "عند الوصول فقط إذا لم أتعب",
+        "كل ساعتين على الأقل"
+      ],
+      "answer": 3,
+      "explain": "خذ استراحة منتظمة كل ساعتين على الأقل للراحة والأكل، وتوقف فورا إذا ظهرت علامات النعاس",
+      "src": [
+        "S56",
+        "S1"
+      ],
+      "confidence": "high"
+    },
+    {
+      "id": "safety-driver-023",
+      "topic": "driver",
+      "level": 5,
+      "exam": [
+        "dubai"
+      ],
+      "q": "حسب دليل هيئة الطرق، كم مرة يزيد احتمال تعرض السائق لحادث عندما يستخدم الهاتف أثناء القيادة؟",
+      "options": [
+        "مرتين",
+        "4 مرات",
+        "15 مرة",
+        "30 مرة"
+      ],
+      "answer": 1,
+      "explain": "دليل هيئة الطرق: مستخدمو الهاتف أكثر عرضة للاصطدام 4 مرات، والسماعة لا تجعلهم أكثر أمانا",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high",
+      "notes": "دليل معهد الشارقة للسياقة يذكر أن خطر الحادث المميت أعلى 9 مرات، وهذا رقم مختلف لمقياس مختلف"
+    },
+    {
+      "id": "safety-driver-024",
+      "topic": "driver",
+      "level": 5,
+      "exam": [
+        "sharjah"
+      ],
+      "q": "حسب دليل معهد الشارقة للسياقة، كم مرة يزيد خطر التورط في حادث مميت بسبب استخدام الهاتف أثناء القيادة؟",
+      "options": [
+        "مرتين",
+        "5 مرات",
+        "9 مرات",
+        "20 مرة"
+      ],
+      "answer": 2,
+      "explain": "دليل معهد الشارقة: خطر الحادث المميت بسبب الهاتف أعلى 9 مرات، وحتى السماعة قد تضعف التركيز",
+      "src": [
+        "S56"
+      ],
+      "confidence": "high",
+      "notes": "دليل هيئة الطرق في دبي يذكر أن احتمال الاصطدام أعلى 4 مرات، وهذا رقم مختلف لمقياس مختلف"
+    },
+    {
+      "id": "safety-driver-025",
+      "topic": "driver",
+      "level": 5,
+      "exam": [
+        "dubai",
+        "sharjah"
+      ],
+      "q": "حسب دليل هيئة الطرق، القيادة بسرعة 65 كم/ساعة في منطقة حدها 60 كم/ساعة، كيف تغير خطر وقوع حادث خطير؟",
+      "options": [
+        "تجعله الضعف تقريبا",
+        "تقلله قليلا",
+        "لا تغيره تقريبا",
+        "تجعله 10 أضعاف تقريبا"
+      ],
+      "answer": 0,
+      "explain": "5 كم/ساعة فقط فوق الحد تضاعف الخطر، و70 في منطقة 60 تجعله أكثر من 4 أضعاف",
+      "src": [
+        "S1"
+      ],
+      "confidence": "high"
+    }
+  ]
+}

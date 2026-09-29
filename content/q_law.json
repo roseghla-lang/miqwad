@@ -1,0 +1,3801 @@
+{
+ "module": "law",
+ "updated": "2026-09-29",
+ "sources": {
+  "S1": {
+   "title": "مرسوم بقانون اتحادي رقم 14 لسنة 2024 بشأن تنظيم السير والمرور (النص العربي الرسمي)",
+   "url": "https://uaelegislation.gov.ae/ar/legislations/2598/download",
+   "publisher": "بوابة تشريعات الإمارات، وزارة العدل",
+   "date": "2024-09"
+  },
+  "S2": {
+   "title": "Federal Decree-Law No. 14 of 2024 on Traffic Regulation (official English translation)",
+   "url": "https://uaelegislation.gov.ae/en/legislations/2598/download",
+   "publisher": "UAE Legislation portal",
+   "date": "2024-09"
+  },
+  "S3": {
+   "title": "قرار وزاري رقم 178 لسنة 2017 بشأن قواعد وإجراءات الضبط المروري (نظام النقاط المرورية)",
+   "url": "https://uaelegislation.gov.ae/ar/legislations/2541/download",
+   "publisher": "بوابة تشريعات الإمارات، وزارة الداخلية",
+   "date": "2017-03 (آخر تحديث للصفحة 2023-05)"
+  },
+  "S4": {
+   "title": "جدول المخالفات والغرامات والنقاط المرورية (جدول القرار الوزاري 178 لسنة 2017)",
+   "url": "https://assets.u.ae/api/public/content/3138d81400914782861e184bd0222536?v=4f9e606e",
+   "publisher": "بوابة حكومة الإمارات u.ae",
+   "date": "2017 (منشور على u.ae، بدون تاريخ)"
+  },
+  "S5": {
+   "title": "اللائحة التنفيذية لقانون السير والمرور الاتحادي (قرار وزاري 130 لسنة 1997 وتعديلاته)، المواد 12 و31 مكرر و64",
+   "url": "https://uaelegislation.gov.ae/ar/legislations/1020/download",
+   "publisher": "بوابة تشريعات الإمارات، وزارة الداخلية",
+   "date": "1997 مع التعديلات"
+  },
+  "S6": {
+   "title": "8 مخالفات خطرة عقوبتها الحبس في قانون المرور الجديد",
+   "url": "https://www.emaratalyoum.com/local-section/other/2024-10-28-1.1892803",
+   "publisher": "الإمارات اليوم",
+   "date": "2024-10-28"
+  },
+  "S7": {
+   "title": "UAE Traffic Law changes: Eight key fines and rules drivers must know",
+   "url": "https://gulfnews.com/living-in-uae/transport/new-uae-traffic-law-starts-tomorrow-eight-key-fines-and-rules-drivers-must-know-1.500075348",
+   "publisher": "Gulf News",
+   "date": "2025-03-28"
+  },
+  "S8": {
+   "title": "«الداخلية»: تطبيق قانون المرور الجديد السبت المقبل واللائحة التنفيذية خلال 6 أشهر",
+   "url": "https://www.emaratalyoum.com/local-section/accidents/2025-03-25-1.1931397",
+   "publisher": "الإمارات اليوم",
+   "date": "2025-03-25"
+  },
+  "S9": {
+   "title": "المطالبة بإصدار لائحة قانون تنظيم السير والمرور (لجنة في المجلس الوطني الاتحادي: اللائحة التنفيذية لم تصدر)",
+   "url": "https://www.alkhaleej.ae/2026-09-16/%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%AF%D8%A7%D8%B1/%D8%A7%D9%84%D9%85%D8%B7%D8%A7%D9%84%D8%A8%D8%A9-%D8%A8%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1-%D9%84%D8%A7%D8%A6%D8%AD%D8%A9-%D9%82%D8%A7%D9%86%D9%88%D9%86-%D8%AA%D9%86%D8%B8%D9%8A%D9%85-%D8%A7%D9%84%D8%B3%D9%8A%D8%B1-%D9%88%D8%A7%D9%84%D9%85%D8%B1%D9%88%D8%B1",
+   "publisher": "الخليج",
+   "date": "2026-09-16"
+  },
+  "S10": {
+   "title": "قانون المرور الجديد.. 4 شروط لإصدار رخصة القيادة في الإمارات",
+   "url": "https://www.alkhaleej.ae/2025-03-26/%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7%D8%AA-4-%D8%B4%D8%B1%D9%88%D8%B7-%D9%84%D8%A5%D8%B5%D8%AF%D8%A7%D8%B1-%D8%B1%D8%AE%D8%B5%D8%A9-%D8%A7%D9%84%D9%82%D9%8A%D8%A7%D8%AF%D8%A9-%D9%81%D9%8A-%D9%82%D8%A7%D9%86%D9%88%D9%86-%D8%A7%D9%84%D9%85%D8%B1%D9%88%D8%B1-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF-5841226/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D9%85%D9%86-%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7%D8%AA",
+   "publisher": "الخليج",
+   "date": "2025-03-26"
+  },
+  "S11": {
+   "title": "اليوم.. قانون السير والمرور الجديد يدخل حيز التنفيذ",
+   "url": "https://www.aletihad.ae/news/%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7%D8%AA/4562866/%D8%A7%D9%84%D9%8A%D9%88%D9%85---%D9%82%D8%A7%D9%86%D9%88%D9%86-%D8%A7%D9%84%D8%B3%D9%8A%D8%B1-%D9%88%D8%A7%D9%84%D9%85%D8%B1%D9%88%D8%B1-%D8%A7%D9%84%D8%AC%D8%AF%D9%8A%D8%AF-%D9%8A%D8%AF%D8%AE%D9%84-%D8%AD%D9%8A%D8%B2-%D8%A7%D9%84%D8%AA%D9%86%D9%81%D9%8A%D8%B0",
+   "publisher": "الاتحاد",
+   "date": "2025-03-29"
+  },
+  "S12": {
+   "title": "Federal traffic law (MOI announcement of Decree-Law 14/2024 provisions)",
+   "url": "https://moi.gov.ae/en/media.center/news/032425n01.aspx",
+   "publisher": "وزارة الداخلية",
+   "date": "2025-03-24"
+  },
+  "S13": {
+   "title": "Driving in the UAE: Full List of 141 Traffic Violations, Fines, Black Points and Impoundment Rules (cites Ministerial Resolution 178/2017)",
+   "url": "https://www.emirates247.com/uae-guide/driving-in-the-uae-full-list-of-141-traffic-violations-fines-black-points-and-impoundment-rules/2683",
+   "publisher": "Emirates 24|7",
+   "date": "2026-06-17"
+  },
+  "S14": {
+   "title": "UAE black points system explained: Fines, how to reduce points, and transfer rules",
+   "url": "https://www.emirates247.com/uae/uae-black-points-system-explained-fines-how-to-reduce-points-and-transfer-rules/1314",
+   "publisher": "Emirates 24|7",
+   "date": "2026-05-05"
+  },
+  "S15": {
+   "title": "«الداخلية» تحدد شرطين لمحو النقاط المرورية",
+   "url": "https://www.emaratalyoum.com/local-section/other/2021-10-08-1.1545201",
+   "publisher": "الإمارات اليوم (نقلا عن وزارة الداخلية)",
+   "date": "2021-10-08"
+  },
+  "S16": {
+   "title": "تكرار الوصول لـ 24 نقطة مرورية خلال «فترة التجربة» يلغي رخصة القيادة",
+   "url": "https://www.emaratalyoum.com/local-section/other/2025-10-28-1.1983319",
+   "publisher": "الإمارات اليوم (شرطة أبوظبي)",
+   "date": "2025-10-28"
+  },
+  "S17": {
+   "title": "Abu Dhabi: Motorists with 24 traffic points to lose probationary driving licence",
+   "url": "https://www.khaleejtimes.com/uae/abu-dhabi-24-traffic-points-lose-probationary-driving-licence-under-age-21",
+   "publisher": "Khaleej Times",
+   "date": "2025-10-28"
+  },
+  "S18": {
+   "title": "تخفيض النقاط المرورية عبر دورات تأهيلية متخصصة",
+   "url": "https://www.alkhaleej.ae/2026-04-30/%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%AF%D8%A7%D8%B1/%D8%AA%D8%AE%D9%81%D9%8A%D8%B6-%D8%A7%D9%84%D9%86%D9%82%D8%A7%D8%B7-%D8%A7%D9%84%D9%85%D8%B1%D9%88%D8%B1%D9%8A%D8%A9-%D8%B9%D8%A8%D8%B1-%D8%AF%D9%88%D8%B1%D8%A7%D8%AA-%D8%AA%D8%A3%D9%87%D9%8A%D9%84%D9%8A%D8%A9-%D9%85%D8%AA%D8%AE%D8%B5%D8%B5%D8%A9",
+   "publisher": "الخليج (شرطة أبوظبي)",
+   "date": "2026-04-30"
+  },
+  "S19": {
+   "title": "النقاط المرورية (برامج خصم النقاط)",
+   "url": "https://www.sdi.ae/ar/traffic-points",
+   "publisher": "معهد الشارقة للسياقة",
+   "date": "accessed 2026-09"
+  },
+  "S20": {
+   "title": "Dh3,000 fine, 30 days impoundment: Sharjah warns against blocking emergency vehicles",
+   "url": "https://www.khaleejtimes.com/uae/emergencies/dh3000-fine-impoundment-blocking-emergency-vehicles",
+   "publisher": "Khaleej Times (Sharjah Police)",
+   "date": "2025-05-03"
+  },
+  "S21": {
+   "title": "Dh3,000 fine: 325 UAE drivers fined for blocking emergency vehicles in 2024",
+   "url": "https://gulfnews.com/uae/transport/dh3000-fine-325-uae-drivers-fined-for-blocking-emergency-vehicles-in-2024-1.500146275",
+   "publisher": "Gulf News",
+   "date": "2025-05-30"
+  },
+  "S22": {
+   "title": "3000 درهم غرامة عدم إفساح الطريق لـ «الطوارئ»",
+   "url": "https://www.alkhaleej.ae/2026-08-14/%D8%A7%D9%84%D8%A5%D9%85%D8%A7%D8%B1%D8%A7%D8%AA/%D8%A3%D8%AE%D8%A8%D8%A7%D8%B1-%D8%A7%D9%84%D8%AF%D8%A7%D8%B1/3000-%D8%AF%D8%B1%D9%87%D9%85-%D8%BA%D8%B1%D8%A7%D9%85%D8%A9-%D8%B9%D8%AF%D9%85-%D8%A5%D9%81%D8%B3%D8%A7%D8%AD-%D8%A7%D9%84%D8%B7%D8%B1%D9%8A%D9%82-%D9%84-%D8%A7%D9%84%D8%B7%D9%88%D8%A7%D8%B1%D8%A6",
+   "publisher": "الخليج (شرطة أبوظبي)",
+   "date": "2026-08-14"
+  },
+  "S23": {
+   "title": "Up to Dh2,000 fine, vehicle impounding for breaking these new UAE traffic rules during bad weather, emergencies",
+   "url": "https://gulfnews.com/uae/up-to-dh2000-fine-vehicle-impounding-for-breaking-these-new-uae-traffic-rules-during-bad-weather-emergencies-1.1684410908948",
+   "publisher": "Gulf News",
+   "date": "2023-05-18"
+  },
+  "S24": {
+   "title": "Decree No. (30) of 2023 Amending Decree No. (29) of 2015 Concerning Impoundment of Vehicles in the Emirate of Dubai",
+   "url": "https://dlp.dubai.gov.ae/Legislation%20Reference/2023/Decree%20No.%20(30)%20of%202023%20Amending%20Decree%20No.%20(29)%20of%202015.html",
+   "publisher": "Dubai Legislation Portal",
+   "date": "2023-06"
+  },
+  "S25": {
+   "title": "شرطة دبي توضح التعديلات الجديدة على المرسوم بقانون حجز المركبات",
+   "url": "https://mediaoffice.ae/ar/news/2023/July/06-07/Dubai-Police-Launches-Awareness-Campaign-on-Amended-Traffic-Law",
+   "publisher": "المكتب الإعلامي لحكومة دبي",
+   "date": "2023-07-07"
+  },
+  "S26": {
+   "title": "Red light violation in UAE: Dh50,000 fine, 12 black points and vehicle impoundment",
+   "url": "https://gulfnews.com/living-in-uae/transport/jumping-a-red-light-up-to-dh50000-fines-black-points-and-vehicle-impoundment-in-the-uae-1.1733888467219",
+   "publisher": "Gulf News",
+   "date": "2025-07-06"
+  },
+  "S27": {
+   "title": "SEC approves regulation of traffic violation exemption percentage",
+   "url": "https://ec.shj.ae/en/news/sec-approves-regulation-of-traffic-violation-exemption-percentage/",
+   "publisher": "المجلس التنفيذي لإمارة الشارقة",
+   "date": "2025-07-08"
+  },
+  "S28": {
+   "title": "Sharjah introduces new traffic fine discount system with strict exceptions",
+   "url": "https://gulfnews.com/uae/transport/sharjah-introduces-new-traffic-fine-discount-system-with-strict-exceptions-1.500192735",
+   "publisher": "Gulf News",
+   "date": "2025-07-09"
+  },
+  "S29": {
+   "title": "شرطة الشارقة تعلن عن «إلغاء النقاط المرورية» بمناسبة عيد الاتحاد الـ54",
+   "url": "https://www.emaratalyoum.com/local-section/other/2025-11-27-1.1992058",
+   "publisher": "الإمارات اليوم",
+   "date": "2025-11-27"
+  },
+  "S30": {
+   "title": "Ajman imposes Dh500 fine for not moving cars after minor accidents",
+   "url": "https://gulfnews.com/uae/transport/dh500-fine-in-ajman-for-not-moving-cars-after-minor-crashes-1.500538137",
+   "publisher": "Gulf News (Ajman Police)",
+   "date": "2026-05-12"
+  },
+  "S31": {
+   "title": "Abu Dhabi Police urges drivers to move vehicles after minor accidents, avoid Dh1,000 fine",
+   "url": "https://gulfnews.com/uae/transport/abu-dhabi-police-urges-drivers-to-move-vehicles-after-minor-accidents-avoid-dh1000-fine-1.500116968",
+   "publisher": "Gulf News (Abu Dhabi Police)",
+   "date": "2025-05-06"
+  },
+  "S32": {
+   "title": "UAE: How to report a minor traffic accident in Sharjah (Rafid app, 80092, MOI app in other northern emirates)",
+   "url": "https://gulfnews.com/living-in-uae/transport/uae-how-to-report-a-minor-traffic-accident-in-sharjah-1.1663337291133",
+   "publisher": "Gulf News",
+   "date": "2024-05-31"
+  },
+  "S33": {
+   "title": "Had a minor car accident? How to report it in Dubai and the UAE",
+   "url": "https://www.emirates247.com/uae/had-a-minor-car-accident-how-to-report-it-in-dubai-and-the-uae/1292",
+   "publisher": "Emirates 24|7",
+   "date": "2026-05-04"
+  },
+  "S34": {
+   "title": "رقم جديد للإبلاغ عن الحوادث المرورية البسيطة في الشارقة (80092)",
+   "url": "https://www.emaratalyoum.com/local-section/accidents/2024-05-30-1.1856426",
+   "publisher": "الإمارات اليوم",
+   "date": "2024-05-30"
+  },
+  "S35": {
+   "title": "Dubai Police On The Go: 6 services you can access without visiting a police station",
+   "url": "https://www.emirates247.com/uae-guide/dubai-police-on-the-go-6-services-you-can-access-without-visiting-a-police-station/5059",
+   "publisher": "Emirates 24|7",
+   "date": "2026-08-31"
+  },
+  "S36": {
+   "title": "How to Report Accidents in Dubai: Step-by-Step Guide",
+   "url": "https://www.excellencedriving.com/en/blogs/how-to-report-accident-in-dubai",
+   "publisher": "Excellence Driving (معهد قيادة مرخص في دبي)",
+   "date": "2025-12-09"
+  },
+  "S37": {
+   "title": "Dubai Police: The quickest way to get a minor traffic accident report",
+   "url": "https://whatson.ae/2026/03/minor-accident-report-dubai-police/",
+   "publisher": "What's On Dubai",
+   "date": "2026-03-24"
+  },
+  "S38": {
+   "title": "Handling Emergencies (emergency numbers 999, 998, 997, 996)",
+   "url": "https://www.ajman.ae/en/happiness-bundle/life-ajman/handling-emergencies",
+   "publisher": "دائرة عجمان الرقمية (حكومة عجمان)",
+   "date": "accessed 2026-09"
+  },
+  "S39": {
+   "title": "Salik (road toll), citing Salik official variable pricing announcement of 2025-01-30",
+   "url": "https://en.wikipedia.org/wiki/Salik_(road_toll)",
+   "publisher": "Wikipedia",
+   "date": "accessed 2026-09"
+  },
+  "S40": {
+   "title": "Sharjah Police and Rafid launch 80092 to report minor traffic accidents",
+   "url": "https://sharjah24.ae/en/Articles/2024/05/29/SP-Rafid-launch-80092-to-report-minor-traffic-accidents",
+   "publisher": "الشارقة 24 (المكتب الإعلامي لحكومة الشارقة)",
+   "date": "2024-05-29"
+  },
+  "S41": {
+   "title": "UAE drivers warned: Up to Dh2,000 fine and 23 black points for entering flood valleys",
+   "url": "https://gulfnews.com/uae/uae-drivers-warned-up-to-dh2000-fine-and-23-black-points-for-entering-flood-valleys-1.500482059",
+   "publisher": "Gulf News",
+   "date": "2026-03-21"
+  },
+  "S42": {
+   "title": "Ambulance behind you in the UAE? How to give way and avoid a Dh3,000 fine",
+   "url": "https://www.emirates247.com/uae-guide/ambulance-behind-you-in-the-uae-how-to-give-way-and-avoid-a-dh3000-fine/5032",
+   "publisher": "Emirates 24|7",
+   "date": "2026-08-29"
+  },
+  "S44": {
+   "title": "Light Motor Vehicle Handbook: A Guide to Safe Driving, 8th ed. (pages 10, 12, 31)",
+   "url": "https://www.drivedubai.ae/public/uploads/downloads/20240612110831RTA-Handbook-Light-Motor-Vechicle-English.pdf",
+   "publisher": "هيئة الطرق والمواصلات في دبي (نسخة مستضافة لدى مركز دبي لتعليم قيادة السيارات)",
+   "date": "2024-06"
+  },
+  "S45": {
+   "title": "Basics of Driving, 4th edition (pages 96, 98, 111)",
+   "url": "https://www.sdi.ae/public/uploads/downloads/20211205122542Driving-Handbook-English.pdf",
+   "publisher": "معهد الشارقة للسياقة",
+   "date": "2021"
+  },
+  "S46": {
+   "title": "UAE: Can 17-year-olds start driving lessons yet? (Khaleej Times report reposted by Galadari)",
+   "url": "https://www.gmdc.ae/can-17-year-olds-start-driving-lessons-in-uae/",
+   "publisher": "Galadari Motor Driving Centre / Khaleej Times",
+   "date": "2025-06-30"
+  }
+ },
+ "cards": [
+  {
+   "id": "law-card-001",
+   "topic": "law",
+   "level": 1,
+   "title": "قانون السير الجديد",
+   "body": "منذ 29 مارس 2025 تطبق الإمارات المرسوم بقانون اتحادي رقم 14 لسنة 2024 بشأن تنظيم السير والمرور\nالقانون الجديد حل محل القانون القديم رقم 21 لسنة 1995، ويشمل السائقين والمشاة ومستخدمي وسائل التنقل الشخصية مثل السكوتر",
+   "key": "29 مارس 2025",
+   "src": [
+    "S1",
+    "S8",
+    "S11"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-002",
+   "topic": "law",
+   "level": 1,
+   "title": "سن الرخصة في القانون: 17 سنة",
+   "body": "القانون الجديد خفض الحد الأدنى لسن رخصة القيادة إلى 17 سنة ميلادية، مع النجاح في الفحص الطبي واختبار القيادة\nالتطبيق الفعلي ينتظر اللائحة التنفيذية، وبعض المعاهد ما زالت تطلب 17.5 سنة لبدء الدروس و18 سنة للرخصة، فاسأل معهدك",
+   "key": "17 سنة",
+   "src": [
+    "S1",
+    "S10",
+    "S46"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-003",
+   "topic": "law",
+   "level": 1,
+   "title": "التعلم بتصريح فقط",
+   "body": "القانون يمنع تعلم القيادة إلا بتصريح من سلطة الترخيص\nتتدرب مع مدرب معتمد، في مركبة التعليم المخصصة، وفي الأوقات والأماكن المحددة\nاحمل تصريح التعلم في كل حصة وأبرزه عند الطلب",
+   "src": [
+    "S1",
+    "S4",
+    "S44"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-004",
+   "topic": "law",
+   "level": 2,
+   "title": "رخصة سارية لنفس نوع المركبة",
+   "body": "ممنوع أن تقود أي مركبة بدون رخصة سارية تسمح بقيادة هذا النوع بالذات\nوصاحب السيارة ممنوع أن يسمح لشخص بدون رخصة مناسبة بقيادتها",
+   "src": [
+    "S1"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-005",
+   "topic": "law",
+   "level": 2,
+   "title": "واجبات يومية في القانون",
+   "body": "إبراز بيانات رخصة القيادة ورخصة المركبة عند طلب الشرطة\nتخفيف السرعة عند مداخل المدارس والمستشفيات وعند ممرات المشاة\nالتوقف للمشاة الذين بدؤوا العبور\nعدم الوقوف العشوائي الذي يعطل السير",
+   "src": [
+    "S1"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-006",
+   "topic": "law",
+   "level": 2,
+   "title": "المنبه والضجيج",
+   "body": "داخل المدن لا تستعمل المنبه إلا لمنع خطر أو حادث\nوالقانون يمنع قيادة مركبة تصدر ضجيجا شديدا",
+   "src": [
+    "S1",
+    "S4"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-007",
+   "topic": "law",
+   "level": 3,
+   "title": "الكحول والمخدرات: صفر",
+   "body": "القانون لا يحدد أي نسبة مسموحة من الكحول للسائق\nالقيادة تحت تأثير الكحول: حبس أو غرامة من 20,000 إلى 100,000 درهم، وإيقاف الرخصة 3 أشهر على الأقل في أول مرة\nتحت تأثير المخدرات أو المؤثرات العقلية: غرامة من 30,000 إلى 200,000 درهم وإيقاف 6 أشهر\nبعض أدوية الطبيب أو الصيدلية تؤثر على القيادة أيضا، فاسأل قبل أن تقود",
+   "key": "0 كحول",
+   "src": [
+    "S1",
+    "S6",
+    "S7",
+    "S44"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-008",
+   "topic": "law",
+   "level": 3,
+   "title": "أفعال تعد جرائم",
+   "body": "بعض الأفعال في القانون الجديد جرائم عقوبتها الحبس أو غرامات كبيرة، منها:\nالقيادة بدون رخصة أو برخصة موقوفة\nعدم الوقوف بعد حادث فيه إصابات\nالهروب من الشرطة\nالقيادة تحت تأثير الكحول أو المخدرات\nإعطاء الشرطة بيانات غير صحيحة",
+   "src": [
+    "S1",
+    "S6",
+    "S7"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-009",
+   "topic": "law",
+   "level": 3,
+   "title": "المشاة في القانون الجديد",
+   "body": "المشاة ومستخدمو السكوتر ممنوعون من الوقوف في نهر الطريق أو العبور من غير الأماكن المخصصة\nالعبور العشوائي على طريق سرعته المقررة 80 كم/ساعة أو أكثر جريمة: حبس لا يقل عن 3 أشهر أو غرامة لا تقل عن 10,000 درهم",
+   "key": "80 كم/ساعة",
+   "src": [
+    "S1",
+    "S7",
+    "S11"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-010",
+   "topic": "law",
+   "level": 4,
+   "title": "أي جدول غرامات يطبق اليوم؟",
+   "body": "القانون الجديد ترك الغرامات والنقاط لقرار يصدر لاحقا، واللائحة التنفيذية لم تصدر حتى سبتمبر 2026\nلذلك يستمر العمل بجدول المخالفات والنقاط في القرار الوزاري رقم 178 لسنة 2017 وتعديلاته، والأرقام قابلة للتغيير",
+   "src": [
+    "S1",
+    "S3",
+    "S9",
+    "S13"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-011",
+   "topic": "law",
+   "level": 3,
+   "title": "التأمين والتعديلات",
+   "body": "التأمين شرط لترخيص أي مركبة أو تجديد ترخيصها\nوالقانون يمنع أي تعديل جوهري على المركبة، مثل الهيكل أو زيادة قوة المحرك أو تغيير اللون، بدون موافقة سلطة الترخيص",
+   "src": [
+    "S1",
+    "S12"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-012",
+   "topic": "penalties",
+   "level": 1,
+   "title": "ما هي النقاط السوداء؟",
+   "body": "مع بعض المخالفات تدخل نقاط سوداء (نقاط مرورية) إلى سجل رخصتك إلى جانب الغرامة\nإذا وصلت إلى 24 نقطة خلال 12 شهرا تحجز الشرطة رخصتك",
+   "key": "24 نقطة",
+   "src": [
+    "S3",
+    "S14",
+    "S15"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-013",
+   "topic": "penalties",
+   "level": 2,
+   "title": "مدة حجز الرخصة",
+   "body": "أول مرة تصل إلى 24 نقطة: حجز الرخصة 3 أشهر\nالمرة الثانية: 6 أشهر\nالمرة الثالثة: سنة كاملة مع دورة تدريبية",
+   "key": "3 ثم 6 ثم 12 شهرا",
+   "src": [
+    "S3",
+    "S14",
+    "S15"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-014",
+   "topic": "penalties",
+   "level": 3,
+   "title": "السائق الجديد تحت التجربة",
+   "body": "صاحب الرخصة تحت التجربة إذا وصل إلى 24 نقطة: حجز الرخصة 6 أشهر من أول مرة\nوإذا تكرر ذلك: إلغاء الرخصة، ولا يستطيع التقدم لرخصة جديدة قبل سنة",
+   "key": "6 أشهر",
+   "src": [
+    "S3",
+    "S15",
+    "S16",
+    "S17"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-015",
+   "topic": "penalties",
+   "level": 3,
+   "title": "كيف تتخلص من النقاط",
+   "body": "النقاط تبقى في سجلك سنة، وإذا لم تصل إلى 24 خلالها تنتهي\nتستطيع خصم 8 نقاط بدورة تأهيلية معتمدة مرة واحدة في السنة، بشرط ألا تكون وصلت إلى 24",
+   "key": "8 نقاط",
+   "src": [
+    "S3",
+    "S15",
+    "S18",
+    "S19"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-016",
+   "topic": "penalties",
+   "level": 2,
+   "title": "حجز المركبة",
+   "body": "بعض المخالفات معها حجز المركبة مدة محددة، مثل قطع الإشارة الحمراء 30 يوما، والقيادة بتهور 60 يوما\nإذا انتهت المدة ولم تستلم سيارتك تدفع رسوما عن كل يوم إضافي",
+   "src": [
+    "S3",
+    "S4",
+    "S24"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-017",
+   "topic": "penalties",
+   "level": 3,
+   "title": "مخالفات عليها 23 نقطة",
+   "body": "هذه المخالفات تقربك من حجز الرخصة بضربة واحدة:\nالقيادة بتهور\nتجاوز السرعة بأكثر من 80 كم/ساعة\nالقيادة بدون لوحات\nالقيادة تحت تأثير الكحول\nدخول الأودية وقت السيول",
+   "key": "23 نقطة",
+   "src": [
+    "S4",
+    "S13",
+    "S23",
+    "S41"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-018",
+   "topic": "penalties",
+   "level": 3,
+   "title": "مخالفات عليها 12 نقطة",
+   "body": "قطع الإشارة الحمراء: 12 نقطة وحجز 30 يوما\nتجاوز السرعة بأكثر من 60 كم/ساعة: 12 نقطة وحجز 30 يوما\nقيادة مركبة تصدر ضجيجا: 12 نقطة\nمخالفتان منها تكفيان لحجز الرخصة",
+   "key": "12 نقطة",
+   "src": [
+    "S4",
+    "S13",
+    "S26"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-019",
+   "topic": "penalties",
+   "level": 2,
+   "title": "مخالفات يومية شائعة",
+   "body": "حسب الجدول المعمول به في 2026:\nالهاتف أثناء القيادة: 800 درهم و4 نقاط\nعدم ربط الحزام: 400 درهم و4 نقاط\nعدم ترك مسافة كافية: 400 درهم و4 نقاط\nالانحراف المفاجئ: 1000 درهم و4 نقاط",
+   "key": "4 نقاط",
+   "src": [
+    "S4",
+    "S13"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-020",
+   "topic": "penalties",
+   "level": 3,
+   "title": "السرعة الزائدة بالدرجات",
+   "body": "حسب الجدول المعمول به في 2026:\nحتى 20 كم/ساعة فوق الحد: 300 درهم\nحتى 30: 600 درهم، حتى 40: 700 درهم، حتى 50: 1000 درهم\nحتى 60: 1500 درهم و6 نقاط وحجز 15 يوما\nأكثر من 60: 2000 درهم و12 نقطة وحجز 30 يوما\nأكثر من 80: 3000 درهم و23 نقطة وحجز 60 يوما",
+   "src": [
+    "S4",
+    "S13"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-021",
+   "topic": "penalties",
+   "level": 3,
+   "title": "أعط الأولوية لمن يستحقها",
+   "body": "عدم إفساح الطريق لمركبات الطوارئ: 3000 درهم و6 نقاط وحجز 30 يوما\nعدم إعطاء أولوية للمشاة عند الممر: 500 درهم و6 نقاط\nعدم التوقف لذراع التوقف في الحافلة المدرسية: 1000 درهم و10 نقاط",
+   "src": [
+    "S4",
+    "S13",
+    "S20",
+    "S22",
+    "S42"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-022",
+   "topic": "penalties",
+   "level": 3,
+   "title": "الوثائق المنتهية",
+   "body": "رخصة قيادة منتهية أو مركبة منتهية التسجيل: 500 درهم و4 نقاط\nمركبة غير مؤمن عليها: 500 درهم و4 نقاط وحجز 7 أيام\nعدم حمل رخصة القيادة أو ملكية المركبة: 400 درهم\nجدد قبل تاريخ الانتهاء",
+   "src": [
+    "S4",
+    "S13"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-023",
+   "topic": "penalties",
+   "level": 2,
+   "title": "الأطفال والحزام",
+   "body": "كل من في السيارة يربط الحزام، والمخالفة 400 درهم و4 نقاط\nالطفل لا يجلس في المقعد الأمامي إلا إذا تجاوز 10 سنوات أو بلغ طوله 145 سم\nالطفل الذي عمره 4 سنوات فما دون يحتاج مقعد حماية مخصصا",
+   "key": "145 سم",
+   "src": [
+    "S4",
+    "S5",
+    "S13"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-024",
+   "topic": "accidents",
+   "level": 1,
+   "title": "أرقام الطوارئ",
+   "body": "الشرطة: 999\nالإسعاف: 998\nالدفاع المدني (الحريق): 997\nخفر السواحل: 996",
+   "key": "999",
+   "src": [
+    "S38"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-025",
+   "topic": "accidents",
+   "level": 1,
+   "title": "حادث بسيط بدون إصابات",
+   "body": "توقف وشغل إشارات التحذير\nصور الأضرار ومكان السيارات\nانقل السيارتين إلى أقرب مكان آمن لا يعرقل السير\nتبادل البيانات وبلغ عن الحادث بالطريقة المعتمدة في الإمارة",
+   "src": [
+    "S5",
+    "S30",
+    "S31",
+    "S36"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-026",
+   "topic": "accidents",
+   "level": 2,
+   "title": "حادث فيه إصابات",
+   "body": "توقف فورا دون أن تخلق خطرا جديدا، وأمن المكان وأطفئ محرك السيارة المتضررة\nاتصل على 999 أو 998\nلا تحرك المصاب إلا إذا كان في خطر مباشر مثل الحريق\nقدم الإسعافات الأولية فقط إذا كانت لديك المعرفة، ولا تغير آثار الحادث",
+   "src": [
+    "S1",
+    "S5",
+    "S36",
+    "S45"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-027",
+   "topic": "accidents",
+   "level": 2,
+   "title": "الإبلاغ خلال 3 ساعات",
+   "body": "القانون الجديد يلزمك بإبلاغ الشرطة أو الجهة المعتمدة عن أي حادث وقع منك أو عليك خلال 3 ساعات، إلا إذا كان عندك عذر مقبول\nاللائحة القديمة كانت تذكر 6 ساعات",
+   "key": "3 ساعات",
+   "src": [
+    "S1",
+    "S5"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-028",
+   "topic": "accidents",
+   "level": 2,
+   "title": "لا تهرب ولا تتفرج",
+   "body": "عدم الوقوف بعد حادث بسيط تسببت فيه: 500 درهم و8 نقاط وحجز 7 أيام\nعدم الوقوف بعد حادث فيه إصابات جريمة: حبس وغرامة من 50,000 إلى 100,000 درهم أو إحداهما\nالتجمهر والتفرج على الحوادث: 1000 درهم",
+   "src": [
+    "S1",
+    "S4",
+    "S13"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-029",
+   "topic": "accidents",
+   "level": 2,
+   "title": "لا تصليح بدون تقرير",
+   "body": "القانون يمنع مراكز الإصلاح من تصليح أي مركبة فيها آثار حادث بدون تصريح إصلاح من الشرطة أو الجهة المعتمدة\nخذ تقرير الحادث أولا، وشركة التأمين تطلبه أيضا",
+   "src": [
+    "S1",
+    "S36",
+    "S37"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-030",
+   "topic": "accidents",
+   "level": 3,
+   "title": "تعطل أو توقف على الطريق",
+   "body": "على الطريق السريع ادخل إلى كتف الطريق، شغل إشارات التحذير، وابتعد مع الركاب عن حركة السير\nليلا على طريق غير منار أو في رؤية ضعيفة نبه غيرك بأنوار الموضع أو المثلث العاكس\nدليل معهد الشارقة للسياقة يضع المثلث على بعد حوالي 100 متر خلف السيارة",
+   "key": "100 متر",
+   "src": [
+    "S5",
+    "S45"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "law-card-031",
+   "topic": "accidents",
+   "level": 2,
+   "title": "أين تبلغ عن الحادث البسيط؟",
+   "body": "دبي: تطبيق شرطة دبي أو محطات الوقود المشاركة في خدمة الشرطة في الطريق\nالشارقة: رافد عبر التطبيق أو الرقم 80092\nعجمان ورأس الخيمة والفجيرة وأم القيوين: تطبيق وزارة الداخلية\nإذا وجدت إصابات: 999",
+   "src": [
+    "S32",
+    "S33",
+    "S34",
+    "S35",
+    "S36"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-032",
+   "topic": "dubai-specific",
+   "level": 2,
+   "title": "سالك",
+   "body": "سالك بوابات تعرفة إلكترونية على طرق دبي بدون حواجز\nتمر من تحتها بسرعة الطريق العادية بدون توقف، والنظام يخصم الرسوم من رصيد ملصق سالك على الزجاج الأمامي، وكاميرات البوابة تقرأ اللوحة احتياطا\nمنذ 31 يناير 2025 صارت الرسوم متغيرة: أعلى في وقت الذروة ومجانية في ساعات متأخرة من الليل",
+   "key": "بدون توقف",
+   "src": [
+    "S39"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "law-card-033",
+   "topic": "dubai-specific",
+   "level": 3,
+   "title": "رسوم فك الحجز في دبي",
+   "body": "في دبي تدفع رسوما لفك حجز المركبة فوق الغرامة الاتحادية (مرسوم دبي رقم 30 لسنة 2023):\n100,000 درهم: سباقات الطرق بدون تصريح\n50,000 درهم: قطع الإشارة الحمراء، القيادة بتهور، اللوحات المزورة، صدم مركبة الشرطة عمدا\n10,000 درهم: القيادة بدون لوحات، التظليل الزائد، تعديلات تزيد السرعة أو الضجيج، الهروب من الشرطة",
+   "key": "50,000 درهم",
+   "src": [
+    "S24",
+    "S25",
+    "S26"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-034",
+   "topic": "dubai-specific",
+   "level": 4,
+   "title": "التكرار والغرامات المتراكمة في دبي",
+   "body": "إذا تكررت مخالفة توجب الحجز خلال سنة: تتضاعف مدة الحجز (حتى 90 يوما) وتتضاعف رسوم فك الحجز (حتى 200,000 درهم)\nوإذا زادت غراماتك غير المدفوعة على 6000 درهم تستطيع الشرطة حجز سيارتك حتى تدفعها",
+   "src": [
+    "S24",
+    "S25"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-035",
+   "topic": "dubai-specific",
+   "level": 2,
+   "title": "الشرطة في الطريق",
+   "body": "خدمة من شرطة دبي في محطات الوقود (ادنوك واينوك وإمارات) تعطيك تقرير حادث بسيط بدون انتظار دورية، بشرط: السيارات تسير، لا إصابات، الأضرار خفيفة، والأطراف متفقون على ما حدث\nوتشمل تقرير الحادث إذا كان الطرف الآخر مجهولا",
+   "src": [
+    "S35",
+    "S37"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-036",
+   "topic": "dubai-specific",
+   "level": 2,
+   "title": "أرقام شرطة دبي",
+   "body": "الطوارئ: 999\nغير الطارئ (استفسار أو بلاغ بسيط): 901\nوالتطبيق الذكي لشرطة دبي للإبلاغ عن الحوادث البسيطة",
+   "key": "901",
+   "src": [
+    "S33",
+    "S37",
+    "S38"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-037",
+   "topic": "sharjah-specific",
+   "level": 1,
+   "title": "رافد في الشارقة",
+   "body": "رافد تستقبل بلاغات الحوادث البسيطة في الشارقة بالتعاون مع شرطة الشارقة\nتبلغ من تطبيق رافد أو على الرقم المجاني 80092 الذي بدأ في مايو 2024\nإذا وجدت إصابات اتصل على 999",
+   "key": "80092",
+   "src": [
+    "S32",
+    "S34",
+    "S40"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-038",
+   "topic": "sharjah-specific",
+   "level": 2,
+   "title": "خصم المخالفات في الشارقة",
+   "body": "قرار المجلس التنفيذي لإمارة الشارقة (يوليو 2025):\nتدفع خلال 60 يوما: خصم 35% على الغرامة ومدة الحجز ورسومه\nتدفع بعد 60 يوما وقبل سنة: خصم 25% على الغرامة فقط\nالمخالفات الجسيمة بدون خصم",
+   "key": "35%",
+   "src": [
+    "S27",
+    "S28"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-039",
+   "topic": "sharjah-specific",
+   "level": 3,
+   "title": "مخالفات الشارقة بدون خصم",
+   "body": "الشارقة تستثني المخالفات الجسيمة من الخصم، ومن أمثلتها: قطع الإشارة الحمراء، استعمال الهاتف أثناء القيادة، السرعة المفرطة، التوقف المفاجئ على الطريق، والمخالفات التي تعرض المشاة للخطر",
+   "src": [
+    "S27",
+    "S28"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "law-card-040",
+   "topic": "sharjah-specific",
+   "level": 3,
+   "title": "دورات النقاط في الشارقة",
+   "body": "معهد الشارقة للسياقة يقدم برنامجا يخصم 8 نقاط لمن نقاطه 23 أو أقل، مرة واحدة في السنة\nوبرنامجا خاصا لمن وصل إلى الحد التراكمي وخسر رخصته",
+   "key": "8 نقاط",
+   "src": [
+    "S19"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "law-card-041",
+   "topic": "sharjah-specific",
+   "level": 2,
+   "title": "الشارقة تراقب المشاة أيضا",
+   "body": "دوريات شرطة الشارقة بزي رسمي ومدني تراقب السائقين والمشاة\nوالشرطة تستطيع تسجيل المخالفة على المشاة برقم الهوية الإماراتية إذا عبروا من غير الممر أو خالفوا إشارة المشاة",
+   "src": [
+    "S28"
+   ],
+   "confidence": "medium"
+  }
+ ],
+ "questions": [
+  {
+   "id": "law-law-001",
+   "topic": "law",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما رقم قانون السير والمرور الاتحادي المطبق حاليا في الإمارات؟",
+   "options": [
+    "مرسوم دبي رقم 30 لسنة 2023",
+    "المرسوم بقانون اتحادي رقم 14 لسنة 2024",
+    "القرار الوزاري رقم 178 لسنة 2017",
+    "القانون الاتحادي رقم 21 لسنة 1995"
+   ],
+   "answer": 1,
+   "explain": "المرسوم بقانون اتحادي رقم 14 لسنة 2024 بدأ تطبيقه في 29 مارس 2025، وألغى القانون القديم رقم 21 لسنة 1995",
+   "tip": "احفظها هيك: 14 لسنة 2024، والتطبيق من 29 مارس 2025",
+   "src": [
+    "S1",
+    "S8"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-law-002",
+   "topic": "law",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "متى بدأ تطبيق قانون السير والمرور الاتحادي الجديد؟",
+   "options": [
+    "1 يناير 2026",
+    "30 سبتمبر 2024",
+    "1 يناير 2024",
+    "29 مارس 2025"
+   ],
+   "answer": 3,
+   "explain": "صدر المرسوم بقانون في سبتمبر 2024 ونص على نفاذه بعد 180 يوما من نشره، فبدأ تطبيقه في 29 مارس 2025",
+   "src": [
+    "S1",
+    "S8",
+    "S11"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-law-003",
+   "topic": "law",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما الحد الأدنى لسن الحصول على رخصة قيادة حسب القانون الاتحادي الجديد؟",
+   "options": [
+    "21 سنة ميلادية",
+    "18 سنة ميلادية",
+    "17 سنة ميلادية",
+    "16 سنة ميلادية"
+   ],
+   "answer": 2,
+   "explain": "القانون الجديد خفض السن من 18 إلى 17 سنة، مع شرط النجاح في الفحص الطبي واختبار القيادة",
+   "src": [
+    "S1",
+    "S7",
+    "S10",
+    "S46"
+   ],
+   "confidence": "high",
+   "notes": "القانون حدد 17 سنة، لكن تقريرا بتاريخ 30 يونيو 2025 نقل أن المعاهد (ومنها معهد الشارقة للسياقة) لم تطبق ذلك بانتظار اللائحة التنفيذية، وما زالت تطلب 17.5 سنة لبدء الدروس و18 للرخصة، فتأكد من معهدك"
+  },
+  {
+   "id": "law-law-004",
+   "topic": "law",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "هل يجوز لك أن تتعلم القيادة على الطريق بدون تصريح تعلم؟",
+   "options": [
+    "لا، التعلم يحتاج تصريحا من سلطة الترخيص",
+    "نعم، إذا جلس بجانبك صديق يحمل رخصة",
+    "نعم، بعد الساعة 10 ليلا عندما يقل الزحام",
+    "نعم، في الشوارع الداخلية الهادئة فقط"
+   ],
+   "answer": 0,
+   "explain": "المادة 14 من القانون تمنع تعلم القيادة إلا بتصريح من سلطة الترخيص، والتدريب يكون مع مدرب معتمد بمركبة تعليم",
+   "src": [
+    "S1",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-law-005",
+   "topic": "law",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أثناء حصة التدريب مع المدرب، ما الوثيقة التي يجب أن تحملها؟",
+   "options": [
+    "تصريح تعلم القيادة",
+    "لا شيء ما دام المدرب معك",
+    "شهادة الاختبار النظري فقط",
+    "رخصة قيادة دولية"
+   ],
+   "answer": 0,
+   "explain": "دليل هيئة الطرق يلزم المتدرب بحمل تصريح التعلم طوال التدريب وإبرازه للمفتش عند الطلب، وعدم حمله مخالفة في جدول المخالفات",
+   "src": [
+    "S44",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-law-006",
+   "topic": "law",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "متدرب يحمل تصريح تعلم ويريد التمرن بسيارة أخيه الخاصة وأخوه بجانبه، ما الحكم؟",
+   "options": [
+    "مسموح، لأن تصريح التعلم يكفي للقيادة في أي سيارة",
+    "مسموح في الشوارع الداخلية فقط وبسرعة منخفضة",
+    "ممنوع، التدريب فقط مع مدرب معتمد وبمركبة التعليم",
+    "مسموح إذا كان الأخ يحمل رخصة منذ أكثر من 5 سنوات"
+   ],
+   "answer": 2,
+   "explain": "تصريح التعلم ليس رخصة، وجدول المخالفات يعاقب على تعليم القيادة بمركبة غير مخصصة أو بدون تصريح، وعلى استعمال مركبة التعليم خارج الأوقات والأماكن المحددة",
+   "tip": "التصريح بيمشي مع المدرب وسيارة المعهد بس",
+   "src": [
+    "S1",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-law-007",
+   "topic": "law",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "حسب القانون، من يحق له قيادة مركبة على الطريق؟",
+   "options": [
+    "من يحمل رخصة سارية تسمح بقيادة هذا النوع من المركبات",
+    "كل من يحمل أي رخصة قيادة مهما كان نوع المركبة التي يقودها",
+    "كل من يحمل تصريح تعلم ويقود وحده في أي وقت",
+    "كل من أتم 17 سنة حتى لو لم يحصل على رخصة بعد"
+   ],
+   "answer": 0,
+   "explain": "المادة 8 تمنع قيادة أي مركبة بدون رخصة سارية تخول قيادة ذات نوع المركبة، فرخصة السيارة الخفيفة لا تكفي لقيادة شاحنة مثلا",
+   "src": [
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-law-008",
+   "topic": "law",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "صديقك لا يحمل رخصة قيادة ويطلب أن يقود سيارتك مسافة قصيرة، ما التصرف الصحيح؟",
+   "options": [
+    "ترفض، لأن القانون يمنعك من تسليم سيارتك لمن لا يحمل رخصة",
+    "توافق إذا جلست بجانبه وراقبت قيادته طوال الطريق",
+    "توافق إذا كانت المسافة أقل من كيلومتر واحد داخل الحي",
+    "توافق إذا كان الطريق فارغا ولا توجد دوريات شرطة قريبة"
+   ],
+   "answer": 0,
+   "explain": "المادة 8 تمنع المسؤول عن المركبة من السماح بقيادتها لمن لا يحمل رخصة تخوله ذلك، والقيادة بدون رخصة جريمة في القانون الجديد",
+   "src": [
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-law-009",
+   "topic": "law",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما العقوبة التي يقررها القانون الجديد لمن يقود بدون رخصة لأول مرة؟",
+   "options": [
+    "حجز السيارة يوما واحدا فقط ودفع رسوم الحجز اليومية",
+    "غرامة 400 درهم فقط بدون أي نقاط سوداء أو حبس",
+    "حبس حتى 3 أشهر أو غرامة من 5000 إلى 50,000 درهم أو الاثنين",
+    "إنذار شفهي في المرة الأولى ثم غرامة 1000 درهم عند التكرار"
+   ],
+   "answer": 2,
+   "explain": "القيادة بدون رخصة جريمة في المادة 37، وعند التكرار يصير الحبس 3 أشهر على الأقل والغرامة من 20,000 إلى 100,000 درهم",
+   "src": [
+    "S1",
+    "S6",
+    "S7"
+   ],
+   "confidence": "high",
+   "notes": "حسب نص المرسوم بقانون اتحادي 14 لسنة 2024 (المادة 37)، النافذ منذ 29 مارس 2025، والمبالغ قابلة للتعديل"
+  },
+  {
+   "id": "law-law-010",
+   "topic": "law",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ماذا يحدث للمركبة إذا ثبت أن سائقها قادها بدون رخصة مرتين؟",
+   "options": [
+    "الشرطة تحجزها 24 ساعة ثم تعيدها لصاحبها",
+    "لا شيء، العقوبة على السائق وحده وليس على المركبة",
+    "الشرطة تبيعها في مزاد علني من أول مخالفة",
+    "تحجزها الشرطة حتى يقدم السائق رخصة القيادة المطلوبة"
+   ],
+   "answer": 3,
+   "explain": "المادة 32 تسمح بحجز المركبة إذا قادها السائق بدون رخصة مرتين، ويستمر الحجز حتى يحضر الرخصة المطلوبة",
+   "src": [
+    "S1",
+    "S12"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-law-011",
+   "topic": "law",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما عقوبة القيادة برخصة موقوفة في القانون الجديد؟",
+   "options": [
+    "حبس حتى 3 أشهر أو غرامة لا تقل عن 10,000 درهم أو الاثنين",
+    "لا عقوبة إذا كانت الرخصة الموقوفة في حوزته أثناء القيادة",
+    "إنذار كتابي ثم تمديد إيقاف الرخصة شهرا إضافيا فقط",
+    "غرامة 500 درهم فقط مع 4 نقاط سوداء على الرخصة"
+   ],
+   "answer": 0,
+   "explain": "الرخصة الموقوفة لا تسمح بالقيادة، والقيادة بها جريمة في المادة 36 من القانون",
+   "src": [
+    "S1",
+    "S6",
+    "S7"
+   ],
+   "confidence": "high",
+   "notes": "حسب نص المرسوم بقانون اتحادي 14 لسنة 2024 (المادة 36)، النافذ منذ 29 مارس 2025، والمبالغ قابلة للتعديل"
+  },
+  {
+   "id": "law-law-012",
+   "topic": "law",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما موقف القانون الإماراتي من شرب كمية قليلة من الكحول قبل القيادة؟",
+   "options": [
+    "ممنوع، القانون لا يحدد أي نسبة مسموحة من الكحول",
+    "مسموح إذا مرت ساعة كاملة على الشرب",
+    "مسموح إذا كانت النسبة أقل من 0.5 في الألف كما في دول كثيرة",
+    "مسموح على الطرق الخارجية خارج المدن فقط"
+   ],
+   "answer": 0,
+   "explain": "المادة 35 تعاقب كل من قاد تحت تأثير المشروبات الكحولية بدون ذكر نسبة مسموحة، فالقاعدة الآمنة: صفر كحول",
+   "tip": "لا تقيس على قوانين دول تانية، هون ولا نقطة",
+   "src": [
+    "S1",
+    "S6",
+    "S44"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-law-013",
+   "topic": "law",
+   "level": 5,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما الغرامة التي يقررها القانون الجديد للقيادة تحت تأثير الكحول؟",
+   "options": [
+    "من 30,000 إلى 200,000 درهم فقط، بدون أي حبس",
+    "من 20,000 إلى 100,000 درهم، أو الحبس، أو الاثنين",
+    "3000 درهم فقط بدون حبس ولا إيقاف للرخصة",
+    "من 5000 إلى 10,000 درهم فقط، بدون حبس في أول مرة"
+   ],
+   "answer": 1,
+   "explain": "للكحول: من 20,000 إلى 100,000 درهم، وللمخدرات والمؤثرات العقلية: من 30,000 إلى 200,000 درهم، ومع الحالتين إيقاف الرخصة",
+   "src": [
+    "S1",
+    "S6",
+    "S7"
+   ],
+   "confidence": "high",
+   "notes": "حسب نص المرسوم بقانون اتحادي 14 لسنة 2024 (المادة 35)، النافذ منذ 29 مارس 2025، والمبالغ قابلة للتعديل"
+  },
+  {
+   "id": "law-law-014",
+   "topic": "law",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أدانت المحكمة سائقا للمرة الأولى بالقيادة تحت تأثير الكحول، ما الحد الأدنى لإيقاف رخصته؟",
+   "options": [
+    "إلغاء الرخصة فورا",
+    "شهر واحد",
+    "3 أشهر",
+    "6 أشهر"
+   ],
+   "answer": 2,
+   "explain": "المحكمة توقف الرخصة 3 أشهر على الأقل في المرة الأولى، و6 أشهر على الأقل في الثانية، وتلغيها في الثالثة",
+   "src": [
+    "S1",
+    "S7"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-law-015",
+   "topic": "law",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أدانت المحكمة سائقا للمرة الأولى بالقيادة تحت تأثير المخدرات، كم مدة إيقاف رخصته على الأقل؟",
+   "options": [
+    "لا إيقاف في المرة الأولى",
+    "3 أشهر",
+    "شهر واحد",
+    "6 أشهر"
+   ],
+   "answer": 3,
+   "explain": "في المخدرات والمؤثرات العقلية: 6 أشهر في أول مرة، وسنة في الثانية، وإلغاء الرخصة في الثالثة",
+   "src": [
+    "S1",
+    "S7"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-law-016",
+   "topic": "law",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما حكم القيادة تحت تأثير مادة مخدرة أو مؤثر عقلي؟",
+   "options": [
+    "مخالفة بسيطة بغرامة صغيرة ونقاط قليلة على الرخصة",
+    "جريمة عقوبتها الحبس أو غرامة كبيرة مع إيقاف الرخصة",
+    "مسموح إذا كانت الكمية قليلة ولا تظهر عليك أي أعراض",
+    "مسموح على الطرق الخارجية البعيدة عن المدن"
+   ],
+   "answer": 1,
+   "explain": "المادة 35 تعاقب على القيادة تحت تأثير المواد المخدرة أو المؤثرات العقلية بالحبس أو غرامة لا تقل عن 30,000 درهم، مع إيقاف الرخصة",
+   "tip": "أي مادة بتلعب بوعيك يعني ما في سواقة",
+   "src": [
+    "S1",
+    "S7"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-law-017",
+   "topic": "law",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أخذت دواء من الصيدلية وتشك أنه يسبب النعاس، ما التصرف الصحيح قبل القيادة؟",
+   "options": [
+    "تشرب قهوة قوية ثم تقود لتبقى منتبها",
+    "تسأل الطبيب أو الصيدلي ولا تقود إذا كان يؤثر عليك",
+    "تقود عادي لأن الدواء قانوني ومن صيدلية مرخصة",
+    "تقود ببطء في المسار الأيمن فقط حتى تصل"
+   ],
+   "answer": 1,
+   "explain": "دليل هيئة الطرق ينبه إلى أن بعض أدوية الطبيب أو الصيدلية تمنعك من القيادة بأمان، وينصح بسؤال الطبيب أو الصيدلي",
+   "src": [
+    "S44"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-law-018",
+   "topic": "law",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في أي حالة يجوز لرجل الشرطة القبض على السائق فورا حسب القانون؟",
+   "options": [
+    "إذا كان يقود تحت تأثير الكحول أو المخدرات",
+    "إذا نسي تشغيل الإشارة الجانبية مرة واحدة",
+    "إذا تجاوز السرعة بـ 10 كم/ساعة على طريق خارجي",
+    "إذا كانت سيارته متسخة من الخارج"
+   ],
+   "answer": 0,
+   "explain": "المادة 31 تسمح بالقبض على السائق المتلبس في حالات منها: التسبب في وفاة أو إصابة، القيادة بتهور، القيادة تحت التأثير، رفض إعطاء اسمه، ومحاولة الهروب",
+   "src": [
+    "S1",
+    "S7"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-law-019",
+   "topic": "law",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "بعد حادث طلب منك الشرطي اسمك وعنوانك فأعطيته بيانات غير صحيحة، ما موقف القانون؟",
+   "options": [
+    "مخالفة بسيطة لا تدخل سجلك",
+    "لا شيء إذا اعتذرت لاحقا",
+    "تصرف مسموح إذا كان الحادث بسيطا",
+    "جريمة عقوبتها الحبس أو الغرامة"
+   ],
+   "answer": 3,
+   "explain": "المادة 41 تعاقب من يرفض إعطاء بياناته أو يعطي بيانات غير صحيحة بالحبس حتى 3 أشهر وغرامة من 10,000 إلى 20,000 درهم أو بإحداهما",
+   "src": [
+    "S1",
+    "S7"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-law-020",
+   "topic": "law",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "حسب القانون، متى يجوز لك استعمال المنبه (الزامور) داخل المدينة؟",
+   "options": [
+    "لتحية أصدقائك في الشارع",
+    "لاستعجال السيارة الواقفة أمامك عند الإشارة",
+    "فقط لمنع خطر أو حادث",
+    "في أي وقت خلال النهار"
+   ],
+   "answer": 2,
+   "explain": "المادة 5 تمنع استعمال جهاز التنبيه داخل المدن إلا لمنع الخطر أو الحوادث، واستعمال المنبه بطريقة تزعج الآخرين مخالفة",
+   "tip": "الزامور للخطر مش للسلام",
+   "src": [
+    "S1",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-law-021",
+   "topic": "law",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "طلب منك شرطي المرور إبراز رخصتك، ما الواجب عليك؟",
+   "options": [
+    "طلب إذن صاحب السيارة أولا قبل إبراز أي وثيقة",
+    "إبراز جواز السفر فقط بدل رخصة القيادة وملكية المركبة",
+    "رفض الطلب إذا كنت متأكدا أنك لم ترتكب أي مخالفة",
+    "إبراز بيانات رخصتك ورخصة المركبة وبياناتك الشخصية"
+   ],
+   "answer": 3,
+   "explain": "المادة 5 تلزم السائق بإبراز بيانات رخصة القيادة ورخصة المركبة وبياناته الشخصية عند طلب سلطة الضبط المروري",
+   "src": [
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-law-022",
+   "topic": "law",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "عند الاقتراب من مدخل مدرسة أو مستشفى، ماذا يطلب منك القانون؟",
+   "options": [
+    "زيادة السرعة لتعبر المنطقة بسرعة",
+    "التوقف الكامل دائما حتى لو كان الطريق خاليا",
+    "استعمال المنبه لتنبيه المارة",
+    "تخفيف السرعة"
+   ],
+   "answer": 3,
+   "explain": "المادة 5 تلزم السائق بتخفيف السرعة عند مداخل ومخارج المؤسسات التعليمية والصحية",
+   "src": [
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-law-023",
+   "topic": "law",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "شخص بدأ يعبر ممر المشاة وأنت تقترب منه، ماذا يطلب منك القانون؟",
+   "options": [
+    "تتجاوزه بهدوء من الجهة الأخرى للممر",
+    "تخفف السرعة وتتوقف حتى يكمل العبور",
+    "تستعمل المنبه لينتبه ويسرع في العبور",
+    "تكمل طريقك إذا كان ما زال بعيدا عن مسارك"
+   ],
+   "answer": 1,
+   "explain": "المادة 5 تلزمك بالتوقف حتى يعبر المشاة الذين بدؤوا العبور، وعدم إعطاء الأولوية للمشاة مخالفة عليها 6 نقاط سوداء",
+   "src": [
+    "S1",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-law-024",
+   "topic": "law",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تعطلت سيارتك وتريد إصلاحها بنفسك، أين يمنع القانون إيقافها لهذا الغرض؟",
+   "options": [
+    "في موقف منزلك الخاص",
+    "في موقف خاص خارج الطريق",
+    "داخل ورشة معتمدة",
+    "في الطريق أو على الرصيف"
+   ],
+   "answer": 3,
+   "explain": "المادة 7 تمنع وقوف أو وضع أي مركبة في الطريق أو على الرصيف بقصد إصلاحها، فانقلها إلى مكان مناسب أو اطلب سطحة",
+   "src": [
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-law-025",
+   "topic": "law",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما حكم وقوف المشاة ومستخدمي وسائل التنقل الشخصية (مثل السكوتر) في نهر الطريق؟",
+   "options": [
+    "مسموح لهم استعمال المسار الأيمن مثل السيارات",
+    "ممنوع، ولا يعبرون إلا من الأماكن المخصصة",
+    "مسموح لهم العبور من أي مكان إذا كان الطريق خاليا",
+    "مسموح لهم الوقوف على كتف الطريق الأيسر"
+   ],
+   "answer": 1,
+   "explain": "المادة 7 تحظر وقوف المشاة ومستخدمي وسائل التنقل الشخصية في نهر الطريق أو عبوره إلا من الأماكن المخصصة، والسائق يخفف السرعة إذا اعترضوا الطريق",
+   "src": [
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-law-026",
+   "topic": "law",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "شخص عبر طريقا سرعته المقررة 100 كم/ساعة من مكان غير مخصص للعبور ولم يقع حادث، ما العقوبة؟",
+   "options": [
+    "حبس 3 أشهر على الأقل أو غرامة 10,000 درهم على الأقل",
+    "إنذار فقط لأنه لم يقع أي حادث ولم يصب أحد",
+    "لا عقوبة على المشاة، لأن القانون يعاقب السائقين فقط",
+    "غرامة 400 درهم فقط مثل أي عبور خاطئ داخل المدينة"
+   ],
+   "answer": 0,
+   "explain": "المادة 39 تشدد العقوبة على العبور من غير الأماكن المخصصة في الطرق التي سرعتها 80 كم/ساعة أو أكثر، حتى لو لم يقع حادث",
+   "src": [
+    "S1",
+    "S7"
+   ],
+   "confidence": "high",
+   "notes": "حسب نص المرسوم بقانون اتحادي 14 لسنة 2024 (المادة 39)، النافذ منذ 29 مارس 2025، والمبالغ قابلة للتعديل"
+  },
+  {
+   "id": "law-law-027",
+   "topic": "law",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "عبر شخص الطريق من مكان غير مخصص وتسبب ذلك في حادث، ما موقف القانون من الشخص العابر؟",
+   "options": [
+    "القانون يعاقبه فقط إذا كان عمره فوق 60 سنة",
+    "لا عقوبة على المشاة إطلاقا",
+    "المسؤولية على السائق وحده دائما",
+    "القانون يعاقبه بالحبس أو الغرامة"
+   ],
+   "answer": 3,
+   "explain": "المادة 39 تعاقب من عبر من غير الأماكن المخصصة إذا ترتب على فعله حادث مروري، بالحبس أو غرامة من 5000 إلى 10,000 درهم",
+   "src": [
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-law-028",
+   "topic": "law",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أثناء الأمطار وجريان الأودية، ما التصرف الصحيح؟",
+   "options": [
+    "تدخل الوادي بحذر وببطء إذا كانت سيارتك دفع رباعي عالية",
+    "تنفذ تعليمات الشرطة وتبتعد عن الأودية ولا تدخلها بالسيارة",
+    "تتجمع مع الناس لمشاهدة السيول عن قرب وتصويرها",
+    "تعبر الوادي بسرعة قبل أن يرتفع مستوى الماء أكثر"
+   ],
+   "answer": 1,
+   "explain": "القانون يلزمك بتنفيذ تعليمات الشرطة وقت الأمطار وجريان الأودية، ودخول الأودية وقت السيول مخالفة عليها 23 نقطة سوداء وحجز المركبة",
+   "src": [
+    "S1",
+    "S23",
+    "S41"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-law-029",
+   "topic": "law",
+   "level": 5,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في أي حالة تصبح عقوبة التسبب في وفاة شخص بالمركبة أشد (حبس سنة على الأقل وغرامة لا تقل عن 100,000 درهم)؟",
+   "options": [
+    "إذا وقع الحادث في النهار والرؤية واضحة والطريق فارغ",
+    "إذا كانت السيارة مستأجرة وليست مسجلة باسم السائق الذي يقودها",
+    "إذا قطع السائق الإشارة الحمراء أو كان تحت تأثير الكحول أو المخدرات",
+    "إذا كان عمر رخصة السائق أقل من سنة واحدة وقت الحادث"
+   ],
+   "answer": 2,
+   "explain": "المادة 40 تشدد العقوبة إذا كان الحادث بسبب قطع الإشارة الحمراء، أو القيادة تحت التأثير، أو برخصة موقوفة أو ملغاة، أو القيادة في وادي أثناء السيول",
+   "src": [
+    "S1",
+    "S6",
+    "S7"
+   ],
+   "confidence": "high",
+   "notes": "حسب نص المرسوم بقانون اتحادي 14 لسنة 2024 (المادة 40)، النافذ منذ 29 مارس 2025، والمبالغ قابلة للتعديل"
+  },
+  {
+   "id": "law-law-030",
+   "topic": "law",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما الشرط الذي يضعه القانون لترخيص المركبة أو تجديد ترخيصها؟",
+   "options": [
+    "أن يكون لونها أبيض أو فضيا لتخفيف الحرارة",
+    "أن تكون مسجلة باسم مواطن أو شركة وطنية",
+    "أن يكون عمرها أقل من 5 سنوات من تاريخ الصنع",
+    "أن تكون مؤمنا عليها لدى شركة تأمين مرخصة في الدولة"
+   ],
+   "answer": 3,
+   "explain": "المادة 19 تشترط التأمين لترخيص أي مركبة أو تجديد ترخيصها، وقيادة مركبة غير مؤمن عليها مخالفة عليها غرامة ونقاط وحجز",
+   "src": [
+    "S1",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-law-031",
+   "topic": "law",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تريد رفع قوة محرك سيارتك وتغيير لونها، ماذا يطلب القانون؟",
+   "options": [
+    "لا شيء لأن السيارة ملكك",
+    "إبلاغ شركة التأمين فقط",
+    "موافقة مسبقة من سلطة الترخيص",
+    "موافقة الورشة التي تنفذ التعديل"
+   ],
+   "answer": 2,
+   "explain": "القانون يمنع التعديلات الجوهرية على المركبة (الهيكل، قوة المحرك، اللون) بدون موافقة سلطة الترخيص، وللشرطة حجز المركبة المعدلة بدون موافقة",
+   "src": [
+    "S1",
+    "S12"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-law-032",
+   "topic": "law",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "بعد 29 مارس 2025، ما مصير جدول الغرامات والنقاط السوداء الذي كان مطبقا قبل القانون الجديد؟",
+   "options": [
+    "أصبح اختياريا لكل إمارة",
+    "حل محله جدول جديد في يوم التطبيق نفسه",
+    "يستمر العمل به حتى يصدر قرار جديد يحل محله",
+    "انتهى العمل به ولا توجد غرامات حاليا"
+   ],
+   "answer": 2,
+   "explain": "المادة 49 تبقي القرارات السابقة سارية فيما لا يتعارض مع القانون، واللائحة التنفيذية لم تصدر حتى سبتمبر 2026، لذلك يطبق جدول القرار الوزاري 178 لسنة 2017 وتعديلاته",
+   "src": [
+    "S1",
+    "S9",
+    "S13"
+   ],
+   "confidence": "high",
+   "notes": "حسب تقرير الخليج بتاريخ 16 سبتمبر 2026، ومن الممكن صدور جدول جديد لاحقا"
+  },
+  {
+   "id": "law-law-033",
+   "topic": "law",
+   "level": 5,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "حسب القانون الجديد، إلى متى يجوز للمحكمة أن توقف رخصة سائق أدانته بجريمة مرورية؟",
+   "options": [
+    "حتى 3 سنوات",
+    "حتى شهر واحد فقط",
+    "مدى الحياة من أول مرة",
+    "حتى 6 أشهر فقط"
+   ],
+   "answer": 0,
+   "explain": "المادة 42 تسمح للمحكمة بإيقاف الرخصة حتى 3 سنوات ومنع تجديدها حتى سنتين إضافيتين، وحرمان من لا يملك رخصة من الحصول عليها حتى 3 سنوات",
+   "src": [
+    "S2"
+   ],
+   "confidence": "medium",
+   "notes": "من الترجمة الإنجليزية الرسمية للمادة 42، ولم نراجع النص العربي لهذه المادة"
+  },
+  {
+   "id": "law-law-034",
+   "topic": "law",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "متى يجوز لسلطة الترخيص إيقاف رخصة القيادة أو إلغاؤها حتى بدون مخالفة؟",
+   "options": [
+    "إذا سافر خارج الدولة أكثر من شهر",
+    "إذا ثبت أن السائق غير لائق صحيا للقيادة",
+    "إذا غير مكان سكنه إلى إمارة أخرى",
+    "إذا باع سيارته واشترى سيارة جديدة"
+   ],
+   "answer": 1,
+   "explain": "المادة 12 تجيز لسلطة الترخيص إيقاف الرخصة أو إلغاءها أو رفض تجديدها إذا ثبت أن حاملها غير لائق طبيا للقيادة",
+   "src": [
+    "S1",
+    "S11"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-penalties-001",
+   "topic": "penalties",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما النقاط السوداء (النقاط المرورية)؟",
+   "options": [
+    "رسوم إضافية تدفعها مع كل مخالفة عند تجديد رخصة القيادة في موعدها",
+    "علامات سوداء على الطريق تحدد الأماكن الخطرة والحوادث",
+    "نقاط تدخل سجل رخصتك مع بعض المخالفات، وإذا تراكمت تخسر رخصتك مؤقتا",
+    "نقاط مكافأة تحصل عليها إذا قدت سنة كاملة بدون أي مخالفة مرورية"
+   ],
+   "answer": 2,
+   "explain": "بعض المخالفات عليها نقاط سوداء إلى جانب الغرامة، وإذا وصلت إلى 24 نقطة خلال 12 شهرا تحجز الشرطة رخصتك",
+   "src": [
+    "S3",
+    "S14"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-penalties-002",
+   "topic": "penalties",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "كم نقطة سوداء خلال 12 شهرا تؤدي إلى حجز رخصة القيادة؟",
+   "options": [
+    "12 نقطة",
+    "18 نقطة",
+    "24 نقطة",
+    "30 نقطة"
+   ],
+   "answer": 2,
+   "explain": "الحد التراكمي 24 نقطة خلال سنة من تاريخ أول مخالفة، وعند الوصول إليه تحجز الشرطة الرخصة",
+   "tip": "24 نقطة مثل ساعات اليوم، وصلتها؟ رخصتك بتنام",
+   "src": [
+    "S3",
+    "S14",
+    "S15"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-penalties-003",
+   "topic": "penalties",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "وصل سائق إلى 24 نقطة سوداء لأول مرة، كم مدة حجز رخصته؟",
+   "options": [
+    "6 أشهر",
+    "3 أشهر",
+    "سنة كاملة",
+    "شهر واحد"
+   ],
+   "answer": 1,
+   "explain": "أول مرة: 3 أشهر، المرة الثانية: 6 أشهر، المرة الثالثة: سنة كاملة",
+   "src": [
+    "S3",
+    "S14",
+    "S15"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-penalties-004",
+   "topic": "penalties",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "وصل سائق إلى الحد التراكمي للنقاط للمرة الثانية، كم مدة حجز رخصته؟",
+   "options": [
+    "سنتان",
+    "3 أشهر",
+    "6 أشهر",
+    "سنة"
+   ],
+   "answer": 2,
+   "explain": "العقوبة تكبر مع التكرار: 3 أشهر ثم 6 أشهر ثم سنة كاملة",
+   "src": [
+    "S3",
+    "S14",
+    "S15"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-penalties-005",
+   "topic": "penalties",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "وصل سائق إلى 24 نقطة للمرة الثالثة، ما العقوبة؟",
+   "options": [
+    "حجز الرخصة 6 أشهر",
+    "إنذار كتابي فقط",
+    "حجز الرخصة 3 أشهر",
+    "حجز الرخصة سنة كاملة"
+   ],
+   "answer": 3,
+   "explain": "في المرة الثالثة تحجز الشرطة الرخصة سنة، ومع دورة تدريبية إلزامية",
+   "src": [
+    "S3",
+    "S15"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-penalties-006",
+   "topic": "penalties",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "سائق جديد رخصته تحت التجربة وصل إلى 24 نقطة لأول مرة، ما العقوبة؟",
+   "options": [
+    "حجز الرخصة 3 أشهر مثل أي سائق",
+    "حجز الرخصة 6 أشهر",
+    "إلغاء الرخصة فورا",
+    "لا شيء لأنه سائق جديد"
+   ],
+   "answer": 1,
+   "explain": "صاحب الرخصة تحت التجربة عقوبته أشد: 6 أشهر من أول مرة، بينما السائق العادي 3 أشهر",
+   "tip": "الجديد عليه عين: أول مرة 6 أشهر مش 3",
+   "src": [
+    "S3",
+    "S15",
+    "S16",
+    "S17"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-penalties-007",
+   "topic": "penalties",
+   "level": 5,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "سائق رخصته تحت التجربة وصل إلى الحد التراكمي للنقاط مرة ثانية، ماذا يحدث؟",
+   "options": [
+    "حجز الرخصة 3 أشهر فقط مثل أي سائق عادي",
+    "إلغاء الرخصة، ولا يستطيع التقدم لرخصة جديدة قبل سنة",
+    "غرامة إضافية فقط بدون حجز الرخصة أو إلغائها",
+    "حجز الرخصة 6 أشهر أخرى مع دورة تدريبية إلزامية قبل استرجاعها"
+   ],
+   "answer": 1,
+   "explain": "القرار الوزاري 178 لسنة 2017 يلغي الرخصة تحت التجربة عند تكرار الوصول إلى الحد التراكمي، ويمنع الطلب الجديد قبل سنة من الإلغاء",
+   "src": [
+    "S3",
+    "S16",
+    "S17"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-penalties-008",
+   "topic": "penalties",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "متى تنتهي النقاط السوداء من سجلك تلقائيا؟",
+   "options": [
+    "بعد مرور سنة عليها دون أن تصل إلى 24 نقطة",
+    "عند تجديد رخصة القيادة فقط مهما مر من وقت",
+    "لا تنتهي أبدا وتبقى في سجلك دائما",
+    "بعد شهر واحد من دفع الغرامة كاملة في موعدها"
+   ],
+   "answer": 0,
+   "explain": "وزارة الداخلية حددت شرطين لمحو النقاط: أن تمضي عليها سنة، وألا تصل إلى الحد التراكمي 24 نقطة",
+   "src": [
+    "S3",
+    "S14",
+    "S15"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-penalties-009",
+   "topic": "penalties",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "كم نقطة سوداء تستطيع خصمها بحضور دورة تأهيلية معتمدة؟",
+   "options": [
+    "كل النقاط مهما كان عددها",
+    "12 نقطة",
+    "4 نقاط",
+    "8 نقاط"
+   ],
+   "answer": 3,
+   "explain": "الدورة تخصم 8 نقاط، مرة واحدة في السنة، وقبل الوصول إلى 24 نقطة",
+   "src": [
+    "S3",
+    "S18",
+    "S19"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-penalties-010",
+   "topic": "penalties",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "سائق لديه 16 نقطة سوداء، كم مرة يستطيع حضور دورة خصم النقاط في السنة نفسها؟",
+   "options": [
+    "مرتين",
+    "بلا حد",
+    "مرة واحدة",
+    "لا يستطيع قبل الوصول إلى 24 نقطة"
+   ],
+   "answer": 2,
+   "explain": "ميزة خصم 8 نقاط بالدورة متاحة مرة واحدة في السنة، ولمن نقاطه أقل من 24",
+   "src": [
+    "S3",
+    "S19"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-penalties-011",
+   "topic": "penalties",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أي مخالفة من هذه عليها 23 نقطة سوداء؟",
+   "options": [
+    "عدم ربط حزام الأمان للسائق أو أحد الركاب",
+    "القيادة بطريقة تشكل خطرا على الأرواح (التهور)",
+    "عدم ترك مسافة أمان كافية خلف السيارة الأمامية",
+    "استعمال الهاتف أثناء القيادة لكتابة الرسائل"
+   ],
+   "answer": 1,
+   "explain": "القيادة بتهور عليها 23 نقطة وحجز المركبة 60 يوما، يعني أي مخالفة صغيرة بعدها توصلك إلى حجز الرخصة",
+   "src": [
+    "S4",
+    "S13"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-penalties-012",
+   "topic": "penalties",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "كم نقطة سوداء على قطع الإشارة الضوئية الحمراء؟",
+   "options": [
+    "6 نقاط",
+    "23 نقطة",
+    "4 نقاط",
+    "12 نقطة"
+   ],
+   "answer": 3,
+   "explain": "قطع الإشارة الحمراء عليه 12 نقطة وحجز المركبة 30 يوما، يعني مرتان تكفيان لحجز الرخصة",
+   "tip": "الأحمر مرتين، رخصتك راحت",
+   "src": [
+    "S4",
+    "S13",
+    "S26"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-penalties-013",
+   "topic": "penalties",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "كم نقطة سوداء على الانشغال بالهاتف أثناء القيادة؟",
+   "options": [
+    "لا نقاط، غرامة فقط",
+    "23 نقطة",
+    "12 نقطة",
+    "4 نقاط"
+   ],
+   "answer": 3,
+   "explain": "الانشغال بالهاتف عليه 4 نقاط سوداء مع الغرامة، وتكراره 6 مرات في سنة يكفي لحجز الرخصة",
+   "src": [
+    "S4",
+    "S13"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-penalties-014",
+   "topic": "penalties",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "كم نقطة سوداء على عدم التوقف عندما تفتح الحافلة المدرسية ذراع التوقف؟",
+   "options": [
+    "10 نقاط",
+    "23 نقطة",
+    "4 نقاط",
+    "نقطتان"
+   ],
+   "answer": 0,
+   "explain": "عدم التوقف لذراع التوقف في الحافلة المدرسية مخالفة عليها 10 نقاط سوداء وغرامة 1000 درهم",
+   "src": [
+    "S4",
+    "S13"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-penalties-015",
+   "topic": "penalties",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أي من هذه المخالفات عليها 6 نقاط سوداء؟",
+   "options": [
+    "عدم إعطاء المشاة أولوية العبور عند الممر",
+    "عدم حمل رخصة القيادة أثناء القيادة",
+    "عدم ربط حزام الأمان للسائق أو الركاب",
+    "تجاوز السرعة المقررة بـ 20 كم/ساعة على طريق سريع"
+   ],
+   "answer": 0,
+   "explain": "عدم إعطاء المشاة الأولوية عليه 6 نقاط، والحزام عليه 4 نقاط، أما تجاوز السرعة بـ 20 كم/ساعة وعدم حمل الرخصة فغرامة بدون نقاط",
+   "src": [
+    "S4",
+    "S13"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-penalties-016",
+   "topic": "penalties",
+   "level": 5,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تجاوز سائق السرعة المقررة بأكثر من 80 كم/ساعة، ما العقوبة؟",
+   "options": [
+    "2000 درهم و12 نقطة وحجز المركبة 30 يوما",
+    "1500 درهم و6 نقاط وحجز المركبة 15 يوما",
+    "1000 درهم فقط بدون نقاط ولا حجز",
+    "3000 درهم و23 نقطة وحجز المركبة 60 يوما"
+   ],
+   "answer": 3,
+   "explain": "هذه أعلى درجة في مخالفات السرعة، والنقاط وحدها (23) تقرب رخصتك من الحجز",
+   "src": [
+    "S4",
+    "S13"
+   ],
+   "confidence": "high",
+   "notes": "حسب الجدول المعمول به في 2026 (القرار الوزاري 178 لسنة 2017 وتعديلاته)، المصدر: جدول بوابة حكومة الإمارات، وقائمة الإمارات 24/7 بتاريخ 17 يونيو 2026، والأرقام قابلة للتعديل"
+  },
+  {
+   "id": "law-penalties-017",
+   "topic": "penalties",
+   "level": 5,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تجاوز سائق السرعة المقررة بـ 65 كم/ساعة، ما العقوبة؟",
+   "options": [
+    "600 درهم فقط بدون نقاط ولا حجز",
+    "3000 درهم و23 نقطة وحجز المركبة 60 يوما",
+    "1500 درهم و6 نقاط وحجز المركبة 15 يوما",
+    "2000 درهم و12 نقطة وحجز المركبة 30 يوما"
+   ],
+   "answer": 3,
+   "explain": "أكثر من 60 كم/ساعة فوق الحد: 2000 درهم و12 نقطة وحجز 30 يوما، وأكثر من 80: 3000 درهم و23 نقطة وحجز 60 يوما",
+   "src": [
+    "S4",
+    "S13"
+   ],
+   "confidence": "high",
+   "notes": "حسب الجدول المعمول به في 2026 (القرار الوزاري 178 لسنة 2017 وتعديلاته)، المصدر: جدول بوابة حكومة الإمارات، وقائمة الإمارات 24/7 بتاريخ 17 يونيو 2026، والأرقام قابلة للتعديل"
+  },
+  {
+   "id": "law-penalties-018",
+   "topic": "penalties",
+   "level": 5,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تجاوز سائق السرعة المقررة بـ 35 كم/ساعة، ما العقوبة حسب الجدول؟",
+   "options": [
+    "3000 درهم و23 نقطة",
+    "700 درهم بدون نقاط",
+    "300 درهم بدون نقاط",
+    "1500 درهم و6 نقاط"
+   ],
+   "answer": 1,
+   "explain": "حتى 40 كم/ساعة فوق الحد: 700 درهم، والنقاط تبدأ عندما يزيد التجاوز على 50 كم/ساعة (1500 درهم و6 نقاط)",
+   "src": [
+    "S4",
+    "S13"
+   ],
+   "confidence": "high",
+   "notes": "حسب الجدول المعمول به في 2026 (القرار الوزاري 178 لسنة 2017 وتعديلاته)، المصدر: جدول بوابة حكومة الإمارات، وقائمة الإمارات 24/7 بتاريخ 17 يونيو 2026، والأرقام قابلة للتعديل"
+  },
+  {
+   "id": "law-penalties-019",
+   "topic": "penalties",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما عقوبة قطع الإشارة الحمراء بسيارة خفيفة حسب الجدول الاتحادي؟",
+   "options": [
+    "1000 درهم و12 نقطة وحجز المركبة 30 يوما",
+    "500 درهم و4 نقاط بدون حجز المركبة",
+    "3000 درهم و23 نقطة وحجز المركبة 90 يوما",
+    "800 درهم و4 نقاط بدون حجز المركبة"
+   ],
+   "answer": 0,
+   "explain": "قطع الإشارة الحمراء: 1000 درهم و12 نقطة وحجز 30 يوما، وفي دبي رسوم فك الحجز 50,000 درهم فوق ذلك",
+   "src": [
+    "S4",
+    "S13",
+    "S26"
+   ],
+   "confidence": "high",
+   "notes": "حسب الجدول المعمول به في 2026 (القرار الوزاري 178 لسنة 2017 وتعديلاته)، المصدر: جدول بوابة حكومة الإمارات، وقائمة الإمارات 24/7 بتاريخ 17 يونيو 2026، والأرقام قابلة للتعديل"
+  },
+  {
+   "id": "law-penalties-020",
+   "topic": "penalties",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما عقوبة الانشغال بالهاتف أثناء القيادة حسب الجدول؟",
+   "options": [
+    "800 درهم و4 نقاط",
+    "400 درهم بدون نقاط",
+    "1000 درهم و12 نقطة",
+    "200 درهم وإنذار"
+   ],
+   "answer": 0,
+   "explain": "الهاتف أثناء القيادة من أكثر أسباب الحوادث، وعقوبته 800 درهم و4 نقاط سوداء",
+   "src": [
+    "S4",
+    "S13"
+   ],
+   "confidence": "high",
+   "notes": "حسب الجدول المعمول به في 2026 (القرار الوزاري 178 لسنة 2017 وتعديلاته)، المصدر: جدول بوابة حكومة الإمارات، وقائمة الإمارات 24/7 بتاريخ 17 يونيو 2026، والأرقام قابلة للتعديل"
+  },
+  {
+   "id": "law-penalties-021",
+   "topic": "penalties",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما عقوبة عدم ربط حزام الأمان حسب الجدول؟",
+   "options": [
+    "100 درهم فقط",
+    "1000 درهم وحجز 7 أيام",
+    "800 درهم و6 نقاط",
+    "400 درهم و4 نقاط"
+   ],
+   "answer": 3,
+   "explain": "عدم ربط الحزام للسائق أو الركاب مخالفة غرامتها 400 درهم مع 4 نقاط سوداء",
+   "src": [
+    "S4",
+    "S13"
+   ],
+   "confidence": "high",
+   "notes": "حسب الجدول المعمول به في 2026 (القرار الوزاري 178 لسنة 2017 وتعديلاته)، المصدر: جدول بوابة حكومة الإمارات، وقائمة الإمارات 24/7 بتاريخ 17 يونيو 2026، والأرقام قابلة للتعديل"
+  },
+  {
+   "id": "law-penalties-022",
+   "topic": "penalties",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "من المسؤول عن ربط حزام الأمان لكل من في السيارة، في الأمام والخلف؟",
+   "options": [
+    "الحزام إلزامي في المقاعد الأمامية فقط",
+    "السائق، والحزام إلزامي لكل الركاب",
+    "الحزام غير مطلوب داخل المدينة",
+    "كل راكب مسؤول عن نفسه ولا علاقة للسائق"
+   ],
+   "answer": 1,
+   "explain": "جدول المخالفات يعاقب على عدم ربط الحزام للسائق أو الركاب، والمخالفة تقع على سائق المركبة",
+   "src": [
+    "S4",
+    "S13"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-penalties-023",
+   "topic": "penalties",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "طفل عمره 7 سنوات وطوله 120 سم، أين يجلس في السيارة؟",
+   "options": [
+    "في أي مقعد إذا كانت الرحلة قصيرة",
+    "في المقعد الأمامي مع ربط الحزام",
+    "في المقعد الخلفي",
+    "في حضن أحد الركاب في الأمام"
+   ],
+   "answer": 2,
+   "explain": "القانون يسمح بجلوس الطفل في المقعد الأمامي فقط إذا تجاوز 10 سنوات أو بلغ طوله 145 سم، ومخالفة ذلك غرامتها 400 درهم",
+   "src": [
+    "S5",
+    "S4",
+    "S13"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-penalties-024",
+   "topic": "penalties",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "معك طفل عمره 3 سنوات، كيف تنقله بالسيارة بشكل قانوني؟",
+   "options": [
+    "بدون مقعد خاص إذا كانت الرحلة داخل المدينة",
+    "في حضن أمه في المقعد الأمامي",
+    "في مقعد حماية مخصص للأطفال يناسب وزنه وطوله",
+    "بحزام الأمان العادي في المقعد الأمامي"
+   ],
+   "answer": 2,
+   "explain": "السائق ملزم بتوفير مقعد حماية للأطفال من عمر 4 سنوات فما دون، وعدم توفيره مخالفة غرامتها 400 درهم",
+   "src": [
+    "S5",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-penalties-025",
+   "topic": "penalties",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما عقوبة عدم ترك مسافة أمان كافية بينك وبين السيارة التي أمامك؟",
+   "options": [
+    "100 درهم فقط",
+    "1000 درهم و6 نقاط",
+    "3000 درهم و12 نقطة",
+    "400 درهم و4 نقاط"
+   ],
+   "answer": 3,
+   "explain": "الالتصاق بالسيارة الأمامية سبب رئيسي للحوادث المتسلسلة، وعقوبته 400 درهم و4 نقاط سوداء",
+   "src": [
+    "S4",
+    "S13"
+   ],
+   "confidence": "high",
+   "notes": "حسب الجدول المعمول به في 2026 (القرار الوزاري 178 لسنة 2017 وتعديلاته)، المصدر: جدول بوابة حكومة الإمارات، وقائمة الإمارات 24/7 بتاريخ 17 يونيو 2026، والأرقام قابلة للتعديل"
+  },
+  {
+   "id": "law-penalties-026",
+   "topic": "penalties",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما عقوبة الانحراف المفاجئ بالسيارة من مسار إلى آخر؟",
+   "options": [
+    "1000 درهم و4 نقاط",
+    "200 درهم فقط",
+    "400 درهم بدون نقاط",
+    "2000 درهم و23 نقطة"
+   ],
+   "answer": 0,
+   "explain": "الانحراف المفاجئ يفاجئ السائقين حولك، وعقوبته 1000 درهم و4 نقاط سوداء",
+   "src": [
+    "S4",
+    "S13"
+   ],
+   "confidence": "high",
+   "notes": "حسب الجدول المعمول به في 2026 (القرار الوزاري 178 لسنة 2017 وتعديلاته)، المصدر: جدول بوابة حكومة الإمارات، وقائمة الإمارات 24/7 بتاريخ 17 يونيو 2026، والأرقام قابلة للتعديل"
+  },
+  {
+   "id": "law-penalties-027",
+   "topic": "penalties",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "هل يجوز استعمال كتف الطريق لتجاوز الزحام؟",
+   "options": [
+    "لا، التجاوز من كتف الطريق مخالفة عليها نقاط سوداء",
+    "نعم، إذا كان الزحام شديدا والكتف فارغا تماما",
+    "نعم، على الطرق الخارجية خارج المدن فقط",
+    "نعم، إذا شغلت إشارات التحذير أثناء التجاوز"
+   ],
+   "answer": 0,
+   "explain": "كتف الطريق للتوقف الاضطراري ولمركبات الطوارئ، والتجاوز منه مخالفة غرامتها 1000 درهم و6 نقاط سوداء",
+   "src": [
+    "S4",
+    "S13",
+    "S42"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-penalties-028",
+   "topic": "penalties",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما عقوبة عدم إفساح الطريق لمركبة إسعاف أو شرطة أو دفاع مدني تستعمل إشاراتها التحذيرية؟",
+   "options": [
+    "200 درهم وإنذار شفهي بدون نقاط",
+    "500 درهم و4 نقاط بدون حجز المركبة",
+    "400 درهم بدون نقاط ولا حجز للمركبة",
+    "3000 درهم و6 نقاط وحجز المركبة 30 يوما"
+   ],
+   "answer": 3,
+   "explain": "الشرطة في الشارقة وأبوظبي تطبق 3000 درهم و6 نقاط وحجز 30 يوما، فانتقل إلى اليمين فورا عندما تسمع صفارة الطوارئ",
+   "src": [
+    "S20",
+    "S21",
+    "S22",
+    "S42"
+   ],
+   "confidence": "high",
+   "notes": "حسب الجدول المعمول به في 2026 كما أعلنته شرطة الشارقة (مايو 2025) وشرطة أبوظبي (أغسطس 2026)، أما الجدول الأصلي لسنة 2017 فكان 1000 درهم و6 نقاط بدون حجز"
+  },
+  {
+   "id": "law-penalties-029",
+   "topic": "penalties",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما عقوبة عدم إعطاء المشاة أولوية العبور في الأماكن المخصصة لهم؟",
+   "options": [
+    "500 درهم و6 نقاط",
+    "100 درهم فقط",
+    "1000 درهم و12 نقطة",
+    "400 درهم بدون نقاط"
+   ],
+   "answer": 0,
+   "explain": "ممر المشاة للمشاة أولا، وعدم إعطائهم الأولوية عقوبته 500 درهم و6 نقاط سوداء",
+   "src": [
+    "S4",
+    "S13"
+   ],
+   "confidence": "high",
+   "notes": "حسب الجدول المعمول به في 2026 (القرار الوزاري 178 لسنة 2017 وتعديلاته)، المصدر: جدول بوابة حكومة الإمارات، وقائمة الإمارات 24/7 بتاريخ 17 يونيو 2026، والأرقام قابلة للتعديل"
+  },
+  {
+   "id": "law-penalties-030",
+   "topic": "penalties",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "سيارة أسرع تقترب من خلفك في المسار الأيسر وتريد التجاوز، ماذا تفعل؟",
+   "options": [
+    "تزيد سرعتك فوق الحد المسموح حتى لا تزعجها",
+    "تنتقل إلى اليمين بأمان عند أول فرصة لتفسح لها الطريق",
+    "تضغط الفرامل قليلا لتنبهها بأن تبتعد عنك",
+    "تبقى في مسارك لأنك ملتزم بحد السرعة المقرر على الطريق"
+   ],
+   "answer": 1,
+   "explain": "المسار الأيسر للتجاوز، وعدم إفساح الطريق للمركبات القادمة من الخلف مخالفة في جدول المخالفات غرامتها 400 درهم",
+   "src": [
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-penalties-031",
+   "topic": "penalties",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما حكم القيادة بسرعة أقل من الحد الأدنى المحدد على الطريق؟",
+   "options": [
+    "مسموح في المسار الأيسر فقط",
+    "مخالفة فقط إذا تسببت في حادث",
+    "مسموح دائما لأن البطء أمان",
+    "مخالفة عليها غرامة"
+   ],
+   "answer": 3,
+   "explain": "بعض الطرق عليها حد أدنى للسرعة، والقيادة بأقل منه مخالفة غرامتها 400 درهم",
+   "src": [
+    "S4",
+    "S13"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-penalties-032",
+   "topic": "penalties",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما عقوبة قيادة مركبة منتهية التسجيل (ملكية منتهية)؟",
+   "options": [
+    "100 درهم فقط",
+    "لا مخالفة إذا كان التأمين ساريا",
+    "500 درهم و4 نقاط",
+    "3000 درهم و23 نقطة"
+   ],
+   "answer": 2,
+   "explain": "جدد تسجيل مركبتك قبل انتهائه، فالقيادة بمركبة منتهية التسجيل عليها 500 درهم و4 نقاط، ومن الممكن حجز المركبة",
+   "src": [
+    "S4",
+    "S13"
+   ],
+   "confidence": "high",
+   "notes": "حسب الجدول المعمول به في 2026 (القرار الوزاري 178 لسنة 2017 وتعديلاته)، المصدر: جدول بوابة حكومة الإمارات، وقائمة الإمارات 24/7 بتاريخ 17 يونيو 2026، والأرقام قابلة للتعديل"
+  },
+  {
+   "id": "law-penalties-033",
+   "topic": "penalties",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما عقوبة قيادة مركبة غير مؤمن عليها؟",
+   "options": [
+    "لا شيء إذا كانت رخصة القيادة سارية",
+    "100 درهم فقط بدون نقاط ولا حجز",
+    "3000 درهم و23 نقطة وحجز المركبة 90 يوما",
+    "500 درهم و4 نقاط وحجز المركبة 7 أيام"
+   ],
+   "answer": 3,
+   "explain": "التأمين إلزامي لكل مركبة، والقيادة بدونه عليها 500 درهم و4 نقاط وحجز المركبة 7 أيام",
+   "src": [
+    "S4",
+    "S13"
+   ],
+   "confidence": "high",
+   "notes": "حسب الجدول المعمول به في 2026 (القرار الوزاري 178 لسنة 2017 وتعديلاته)، المصدر: جدول بوابة حكومة الإمارات، وقائمة الإمارات 24/7 بتاريخ 17 يونيو 2026، والأرقام قابلة للتعديل"
+  },
+  {
+   "id": "law-penalties-034",
+   "topic": "penalties",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "رخصة قيادتك انتهت قبل أسبوعين ولم تجددها، ما الحكم إذا قدت؟",
+   "options": [
+    "لا مخالفة إذا كانت السيارة مسجلة باسمك",
+    "مسموح داخل الإمارة التي أصدرت الرخصة فقط",
+    "مخالفة عليها غرامة ونقاط سوداء، فجدد رخصتك فورا",
+    "مسموح خلال أول 3 أشهر بعد تاريخ الانتهاء"
+   ],
+   "answer": 2,
+   "explain": "القانون يشترط رخصة سارية، والقيادة برخصة منتهية مخالفة غرامتها 500 درهم و4 نقاط سوداء، فجدد قبل تاريخ الانتهاء",
+   "src": [
+    "S1",
+    "S4",
+    "S13"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-penalties-035",
+   "topic": "penalties",
+   "level": 5,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما عقوبة قيادة مركبة تصدر ضجيجا مزعجا (مثل تعديل العادم)؟",
+   "options": [
+    "2000 درهم و12 نقطة",
+    "500 درهم و4 نقاط",
+    "400 درهم بدون نقاط",
+    "200 درهم فقط"
+   ],
+   "answer": 0,
+   "explain": "الضجيج الشديد ممنوع في القانون، والجدول يعاقب عليه بـ 2000 درهم و12 نقطة، وفي دبي رسوم فك الحجز لتعديلات الضجيج 10,000 درهم",
+   "src": [
+    "S4",
+    "S1",
+    "S24"
+   ],
+   "confidence": "high",
+   "notes": "حسب الجدول المعمول به في 2026 (القرار الوزاري 178 لسنة 2017 وتعديلاته)، المصدر: جدول بوابة حكومة الإمارات، وقائمة الإمارات 24/7 بتاريخ 17 يونيو 2026، والأرقام قابلة للتعديل"
+  },
+  {
+   "id": "law-penalties-036",
+   "topic": "penalties",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما حكم رمي المخلفات من نافذة السيارة؟",
+   "options": [
+    "مسموح إذا كانت المخلفات صغيرة",
+    "مخالفة عليها غرامة ونقاط سوداء",
+    "مسموح خارج المدن",
+    "مخالفة فقط إذا رآك شرطي بنفسه"
+   ],
+   "answer": 1,
+   "explain": "إلقاء المخلفات من المركبة مخالفة غرامتها 1000 درهم و6 نقاط، والقانون يمنع إلقاء أي مادة على الطريق",
+   "src": [
+    "S1",
+    "S4",
+    "S13"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-penalties-037",
+   "topic": "penalties",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أشار لك شرطي المرور بالتوقف، ما التصرف الصحيح؟",
+   "options": [
+    "تكمل طريقك إذا كنت متأكدا أنك لم ترتكب مخالفة",
+    "تزيد سرعتك لتبتعد قبل أن يسجل رقمك",
+    "تتوقف بأمان على جانب الطريق وتنفذ تعليماته",
+    "تتوقف فورا في منتصف المسار الذي أنت فيه"
+   ],
+   "answer": 2,
+   "explain": "عدم اتباع إرشادات شرطي المرور مخالفة عليها 4 نقاط، والهروب من الشرطة أو التسبب في مطاردة جريمة في القانون الجديد",
+   "src": [
+    "S1",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-penalties-038",
+   "topic": "penalties",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما حكم إيقاف السيارة في منتصف الطريق بدون سبب؟",
+   "options": [
+    "مخالفة فقط على الطرق السريعة",
+    "مسموح إذا شغلت إشارات التحذير",
+    "مخالفة عليها غرامة و6 نقاط سوداء",
+    "مسموح لمدة دقيقتين"
+   ],
+   "answer": 2,
+   "explain": "الوقوف وسط الطريق بدون مبرر غرامته 1000 درهم و6 نقاط، والقانون يمنع الوقوف العشوائي الذي يعطل السير",
+   "src": [
+    "S1",
+    "S4",
+    "S13"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-penalties-039",
+   "topic": "penalties",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما عقوبة القيادة بطريقة تشكل خطرا على حياة الآخرين (التهور)؟",
+   "options": [
+    "500 درهم و4 نقاط بدون حجز المركبة",
+    "2000 درهم و23 نقطة وحجز المركبة 60 يوما",
+    "1000 درهم و6 نقاط وحجز المركبة 7 أيام",
+    "300 درهم فقط بدون نقاط ولا حجز"
+   ],
+   "answer": 1,
+   "explain": "التهور من أخطر المخالفات: 23 نقطة وحجز 60 يوما، وفي دبي رسوم فك الحجز 50,000 درهم",
+   "src": [
+    "S4",
+    "S13",
+    "S24"
+   ],
+   "confidence": "high",
+   "notes": "حسب الجدول المعمول به في 2026 (القرار الوزاري 178 لسنة 2017 وتعديلاته)، المصدر: جدول بوابة حكومة الإمارات، وقائمة الإمارات 24/7 بتاريخ 17 يونيو 2026، والأرقام قابلة للتعديل"
+  },
+  {
+   "id": "law-penalties-040",
+   "topic": "penalties",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما المقصود بحجز المركبة كعقوبة مرورية؟",
+   "options": [
+    "الشرطة تحتفظ بالمركبة مدة محددة قبل أن تسلمها لك",
+    "منع المركبة من دخول الإمارة فقط لمدة شهر كامل",
+    "ملاحظة في ملف المركبة بدون أي أثر عملي",
+    "سحب لوحات المركبة ساعة واحدة ثم إعادتها"
+   ],
+   "answer": 0,
+   "explain": "بعض المخالفات معها حجز المركبة مدة محددة، مثل قطع الإشارة الحمراء 30 يوما، وإذا انتهت المدة ولم تستلمها تدفع رسوما عن كل يوم إضافي",
+   "src": [
+    "S3",
+    "S4",
+    "S24"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-penalties-041",
+   "topic": "penalties",
+   "level": 5,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "انتهت مدة حجز سيارتك الخفيفة ولم تستلمها، كم تدفع عن كل يوم تأخير حسب الجدول الاتحادي؟",
+   "options": [
+    "50 درهما عن كل يوم بحد أقصى 3000 درهم",
+    "10 دراهم عن كل يوم بلا حد أقصى",
+    "100 درهم عن كل يوم بلا حد أقصى",
+    "لا شيء، التخزين مجاني مهما طالت المدة"
+   ],
+   "answer": 0,
+   "explain": "إذا تركت المركبة بعد انتهاء مدة الحجز تدفع 50 درهما عن كل يوم، بحد أقصى 3000 درهم للمركبة الخفيفة",
+   "src": [
+    "S3",
+    "S4",
+    "S24"
+   ],
+   "confidence": "high",
+   "notes": "حسب الجدول المعمول به في 2026 (القرار الوزاري 178 لسنة 2017 وتعديلاته)، المصدر: جدول بوابة حكومة الإمارات، وقائمة الإمارات 24/7 بتاريخ 17 يونيو 2026، والأرقام قابلة للتعديل"
+  },
+  {
+   "id": "law-penalties-042",
+   "topic": "penalties",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "هل يمكن أن يخسر سائق رخصته مؤقتا بسبب مخالفات صغيرة متكررة؟",
+   "options": [
+    "لا، حجز الرخصة فقط للمخالفات الجسيمة مثل التهور",
+    "لا، النقاط تنتهي تلقائيا بمجرد دفع قيمة الغرامة",
+    "نعم، إذا تجمعت نقاطها ووصلت إلى 24 نقطة خلال 12 شهرا",
+    "نعم، إذا تأخر في دفع أي غرامة ولو يوما واحدا"
+   ],
+   "answer": 2,
+   "explain": "مثلا 6 مخالفات هاتف (4 نقاط لكل مخالفة) تساوي 24 نقطة، والنتيجة حجز الرخصة",
+   "src": [
+    "S3",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-penalties-043",
+   "topic": "penalties",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما حكم الوقوف داخل الصندوق الأصفر المخطط عند التقاطع أثناء الزحام؟",
+   "options": [
+    "مسموح إذا كانت الإشارة خضراء حتى لو المخرج مزدحم",
+    "مخالفة، ممنوع الوقوف داخل الصندوق الأصفر",
+    "مسموح لمدة قصيرة حتى يتحرك الزحام",
+    "مسموح للسيارات الصغيرة فقط"
+   ],
+   "answer": 1,
+   "explain": "الوقوف في الصندوق الأصفر يسد التقاطع على غيرك، وهو مخالفة غرامتها 500 درهم، فلا تدخله إلا إذا كان مخرجك فارغا",
+   "src": [
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-accidents-001",
+   "topic": "accidents",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما رقم الشرطة في حالات الطوارئ في الإمارات؟",
+   "options": [
+    "999",
+    "911",
+    "998",
+    "997"
+   ],
+   "answer": 0,
+   "explain": "999 للشرطة، و998 للإسعاف، و997 للدفاع المدني",
+   "tip": "999 بوليس، وبعدها بتنزل واحد واحد: 998 إسعاف و997 إطفاء",
+   "src": [
+    "S38"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-accidents-002",
+   "topic": "accidents",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما رقم الإسعاف في الإمارات؟",
+   "options": [
+    "999",
+    "996",
+    "997",
+    "998"
+   ],
+   "answer": 3,
+   "explain": "998 رقم الإسعاف، وتستطيع أيضا الاتصال بالشرطة على 999 في أي حادث فيه إصابات",
+   "src": [
+    "S38"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-accidents-003",
+   "topic": "accidents",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "اشتعلت النار في سيارة بعد حادث، ما رقم الدفاع المدني؟",
+   "options": [
+    "998",
+    "901",
+    "997",
+    "999"
+   ],
+   "answer": 2,
+   "explain": "997 للدفاع المدني (الحريق)، أما 901 فرقم شرطة دبي لغير الطوارئ",
+   "src": [
+    "S38",
+    "S33"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-accidents-004",
+   "topic": "accidents",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "وقع حادث بسيط بدون إصابات والسيارتان تسيران، ما التصرف الصحيح بعد التوقف والتأكد من السلامة؟",
+   "options": [
+    "تترك السيارتين في مكانهما وسط الطريق حتى تصل الشرطة مهما طال الوقت",
+    "تشغل إشارات التحذير وتصور الأضرار ثم تنقل السيارتين إلى مكان آمن",
+    "تغادر المكان فورا لأن الأضرار بسيطة ولا تحتاج إبلاغا",
+    "تبقى في المسار وتتناقش مع السائق الآخر لتحديد المخطئ"
+   ],
+   "answer": 1,
+   "explain": "في الحوادث بدون إصابات تلزم اللائحة الأطراف بإيقاف مركباتهم في أقرب مكان لا يعيق المرور، والشرطة تخالف من يترك سيارته تسد الطريق",
+   "src": [
+    "S5",
+    "S30",
+    "S31",
+    "S36"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-accidents-005",
+   "topic": "accidents",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في حادث فيه مصاب ملقى على الطريق، متى يجوز تحريكه؟",
+   "options": [
+    "فورا لتنقله بسيارتك إلى أقرب مستشفى",
+    "فقط إذا كان في خطر مباشر مثل اشتعال النار",
+    "دائما لإبعاده عن الطريق وإجلاسه على الرصيف",
+    "بعد أن تعطيه ماء ليشرب ويستعيد وعيه"
+   ],
+   "answer": 1,
+   "explain": "تحريك المصاب بطريقة خاطئة قد يزيد إصابته، فاتصل على 998 أو 999 واتركه للمسعفين إلا إذا كان في خطر مباشر",
+   "src": [
+    "S36",
+    "S45"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-accidents-006",
+   "topic": "accidents",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "حسب القانون، متى تقدم الإسعافات الأولية لمصاب في حادث؟",
+   "options": [
+    "إذا كانت لديك المعرفة الطبية اللازمة",
+    "أبدا، هذا ممنوع على غير الأطباء",
+    "فقط إذا طلب منك المصاب",
+    "دائما حتى لو لم تتعلمها"
+   ],
+   "answer": 0,
+   "explain": "المادة 5 تلزم السائق بتقديم الإسعافات الأولية إذا كانت لديه المعرفة الطبية اللازمة، وإلا فاطلب الإسعاف وأمن المكان",
+   "src": [
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-accidents-007",
+   "topic": "accidents",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "حسب القانون الجديد، خلال كم ساعة عليك الإبلاغ عن حادث وقع منك أو عليك؟",
+   "options": [
+    "6 ساعات",
+    "3 أيام",
+    "24 ساعة",
+    "3 ساعات"
+   ],
+   "answer": 3,
+   "explain": "القانون الجديد يلزمك بالإبلاغ خلال مدة لا تزيد على 3 ساعات إلا لعذر مقبول، وكانت اللائحة القديمة تذكر 6 ساعات",
+   "src": [
+    "S1",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": "المادة 5 من المرسوم بقانون 14 لسنة 2024 حددت 3 ساعات، والمادة 12 من اللائحة التنفيذية القديمة كانت تحدد 6 ساعات"
+  },
+  {
+   "id": "law-accidents-008",
+   "topic": "accidents",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في حادث فيه إصابات، ما واجبك تجاه مكان الحادث؟",
+   "options": [
+    "تتوقف فورا وتؤمن السير ولا تغير الآثار الموجودة في المكان",
+    "تنقل السيارات فورا لفتح الطريق قبل وصول الشرطة",
+    "تغادر المكان لإحضار المساعدة من أقرب مدينة بنفسك",
+    "تكنس الزجاج المكسور وتنظف المكان جيدا قبل وصول الدورية"
+   ],
+   "answer": 0,
+   "explain": "في حوادث الإصابات تلزمك اللائحة بالوقوف فورا دون خلق خطر جديد، وتأمين السير، ومنع تغيير آثار الحادث، والاهتمام بالمصابين",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-accidents-009",
+   "topic": "accidents",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "لماذا تحتاج تقرير حادث أو تصريح إصلاح قبل تصليح سيارتك؟",
+   "options": [
+    "لأن الكراج يحتاجه ليعرف لون الطلاء ونوع القطع المطلوبة",
+    "لأن القانون يمنع الكراج من تصليح مركبة فيها آثار حادث بدون تصريح",
+    "التقرير اختياري ويفيد فقط في تخفيض سعر التصليح عند الكراج",
+    "لأن البلدية تطلبه عند تجديد الرخصة التجارية للكراج فقط"
+   ],
+   "answer": 1,
+   "explain": "المادة 28 تمنع أي مركز إصلاح من تصليح مركبة فيها آثار حادث بدون تصريح إصلاح، وشركة التأمين تطلب التقرير أيضا",
+   "src": [
+    "S1",
+    "S36",
+    "S37"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-accidents-010",
+   "topic": "accidents",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "صدمت سيارة واقفة في موقف وصاحبها غير موجود، ما التصرف الصحيح؟",
+   "options": [
+    "تغادر المكان لأن الضرر بسيط ولم يرك أحد من الناس",
+    "تترك رقم هاتفك على الزجاج وتكمل طريقك بدون أي إبلاغ",
+    "تنتظر بجانب السيارة يوما كاملا حتى يعود صاحبها",
+    "تبلغ الشرطة أو الجهة المعتمدة ولا تغادر بدون إبلاغ"
+   ],
+   "answer": 3,
+   "explain": "القانون يلزمك بالإبلاغ عن أي حادث وقع منك خلال 3 ساعات، وعدم الوقوف بعد التسبب في حادث مخالفة عليها غرامة ونقاط وحجز",
+   "src": [
+    "S1",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-accidents-011",
+   "topic": "accidents",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما عقوبة عدم الوقوف بعد التسبب في حادث بسيط بسيارة خفيفة؟",
+   "options": [
+    "500 درهم و8 نقاط وحجز المركبة 7 أيام",
+    "3000 درهم و23 نقطة وحجز المركبة 60 يوما",
+    "100 درهم فقط بدون نقاط ولا حجز",
+    "لا عقوبة إذا لم يصب أحد في الحادث"
+   ],
+   "answer": 0,
+   "explain": "حتى الحادث البسيط يلزمك بالوقوف والإبلاغ، والهروب منه عليه 500 درهم و8 نقاط وحجز 7 أيام",
+   "src": [
+    "S4",
+    "S13"
+   ],
+   "confidence": "high",
+   "notes": "حسب الجدول المعمول به في 2026 (القرار الوزاري 178 لسنة 2017 وتعديلاته)، المصدر: جدول بوابة حكومة الإمارات، وقائمة الإمارات 24/7 بتاريخ 17 يونيو 2026، والأرقام قابلة للتعديل"
+  },
+  {
+   "id": "law-accidents-012",
+   "topic": "accidents",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما حكم السائق الذي لا يتوقف بعد حادث نتجت عنه إصابات؟",
+   "options": [
+    "مسموح إذا كان مستعجلا لموعد مهم أو عمل",
+    "جريمة عقوبتها الحبس والغرامة الكبيرة",
+    "مخالفة بسيطة بغرامة صغيرة ونقاط قليلة",
+    "لا عقوبة إذا أبلغ الشرطة بعد أسبوع"
+   ],
+   "answer": 1,
+   "explain": "المادة 38 تعاقب من لا يتوقف دون عذر مقبول بعد حادث فيه إصابات بالحبس حتى سنة وغرامة من 50,000 إلى 100,000 درهم أو بإحداهما",
+   "src": [
+    "S1",
+    "S6",
+    "S7"
+   ],
+   "confidence": "high",
+   "notes": "النص العربي الرسمي للمادة 38 يذكر حبسا لا يزيد على سنة، وبعض التقارير المبنية على الترجمة الإنجليزية ذكرت سنتين"
+  },
+  {
+   "id": "law-accidents-013",
+   "topic": "accidents",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما حكم التوقف والتجمهر للتفرج على حادث؟",
+   "options": [
+    "مخالفة لأنه يعرقل السير ومركبات الطوارئ",
+    "مسموح إذا بقيت داخل سيارتك",
+    "مسموح للتصوير ونشر الخبر",
+    "مسموح إذا كان الحادث على الجهة الأخرى من الطريق"
+   ],
+   "answer": 0,
+   "explain": "عرقلة حركة السير بالتجمهر أثناء الحوادث مخالفة غرامتها 1000 درهم، فأكمل طريقك بهدوء",
+   "src": [
+    "S4",
+    "S13"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-accidents-014",
+   "topic": "accidents",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تعطلت سيارتك ليلا على طريق غير منار، ما التصرف الصحيح؟",
+   "options": [
+    "تبقى جالسا داخل السيارة في المسار وتنتظر وصول الدورية",
+    "تبعد السيارة عن المسار وتشغل إشارات التحذير وتضع المثلث خلفها",
+    "تطفئ كل الأنوار لتوفير البطارية حتى تصل المساعدة",
+    "تتركها في المسار وتذهب لطلب المساعدة سيرا بدون أي إشارة"
+   ],
+   "answer": 1,
+   "explain": "السائق المتوقف ليلا على طريق غير منار أو في رؤية ضعيفة يلزمه إعلان وجوده بأنوار الموضع أو المثلث العاكس، والتقصير في احتياطات السلامة عند التعطل مخالفة غرامتها 500 درهم",
+   "src": [
+    "S5",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-accidents-015",
+   "topic": "accidents",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "حسب دليل معهد الشارقة للسياقة، على أي مسافة تقريبا تضع مثلث التحذير خلف السيارة المتعطلة؟",
+   "options": [
+    "ملاصقا للسيارة",
+    "حوالي 100 متر",
+    "حوالي 5 أمتار",
+    "حوالي كيلومتر واحد"
+   ],
+   "answer": 1,
+   "explain": "المثلث ينبه القادمين من الخلف مبكرا، ودليل معهد الشارقة للسياقة يذكر حوالي 100 متر قبل السيارة المتعطلة",
+   "src": [
+    "S45"
+   ],
+   "confidence": "medium",
+   "notes": "الرقم من دليل معهد الشارقة للسياقة (2021)، ولم نجد مسافة بالأمتار في النص القانوني الاتحادي"
+  },
+  {
+   "id": "law-accidents-016",
+   "topic": "accidents",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "بعد حادث بسيط، السائق الآخر غاضب ويريد الشجار، ما التصرف الصحيح؟",
+   "options": [
+    "تبقى هادئا وتترك تحديد المسؤولية للشرطة أو الجهة المعتمدة",
+    "تغادر المكان فورا بدون إبلاغ لتتجنب المشكلة معه",
+    "تقف أمام سيارته في الطريق لتمنعه من المغادرة",
+    "ترد عليه بالمثل حتى يعترف بخطئه أمام الناس الموجودين"
+   ],
+   "answer": 0,
+   "explain": "النقاش في الطريق يعرضك للخطر ويعطل السير، والمهم توثيق الحادث والإبلاغ عنه، والجهة المختصة تحدد المسؤولية",
+   "src": [
+    "S36",
+    "S5"
+   ],
+   "confidence": "medium",
+   "notes": ""
+  },
+  {
+   "id": "law-accidents-017",
+   "topic": "accidents",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "بعد الحادث، ما البيانات التي يلزمك القانون بتقديمها؟",
+   "options": [
+    "رقم حسابك البنكي فقط",
+    "لا شيء، التأمين يتكفل بكل شيء",
+    "بياناتك الشخصية وبيانات مركبتك",
+    "صورة جواز سفرك فقط"
+   ],
+   "answer": 2,
+   "explain": "اللائحة تلزم أطراف الحادث بتقديم بياناتهم الشخصية وبيانات مركباتهم، ورفض إعطاء البيانات للشرطة جريمة في القانون الجديد",
+   "src": [
+    "S5",
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-accidents-018",
+   "topic": "accidents",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "حادث بسيط بدون إصابات لكن السيارتين لا تستطيعان الحركة، ماذا تفعل؟",
+   "options": [
+    "تحاول دفع السيارة بيدك وحدك في وسط الطريق السريع",
+    "تترك السيارة وتغادر بسيارة أجرة بدون أي إبلاغ للشرطة",
+    "تبقى مع الركاب داخل السيارة في المسار نفسه حتى تصل الشرطة",
+    "تشغل إشارات التحذير وتضع المثلث وتبتعد عن المسار ثم تبلغ الشرطة"
+   ],
+   "answer": 3,
+   "explain": "إذا لم تستطع تحريك السيارة فالأهم تنبيه القادمين وإبعاد الناس عن المسار وطلب الشرطة لتنظيم المكان",
+   "src": [
+    "S36",
+    "S45",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-accidents-019",
+   "topic": "accidents",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "لماذا تخالف الشرطة من يترك سيارته في المسار بعد حادث بسيط؟",
+   "options": [
+    "لتسهيل عمل الكراج وسيارات السحب فقط",
+    "لكي لا يرى الناس الحادث ولا يصوروه",
+    "لأن الشرطة لا تحضر إلى الحوادث البسيطة أبدا",
+    "لأن السيارات الواقفة تعرقل السير وتسبب حوادث جديدة"
+   ],
+   "answer": 3,
+   "explain": "السيارات الواقفة وسط الطريق تسبب زحاما وحوادث متتابعة، ولهذا تطلب الشرطة نقلها إلى جانب الطريق في الحوادث البسيطة",
+   "src": [
+    "S30",
+    "S31"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-accidents-020",
+   "topic": "accidents",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "متى لا تكفي الخدمة الإلكترونية وتحتاج استدعاء الشرطة إلى مكان الحادث؟",
+   "options": [
+    "عندما تكون الأضرار في الصدام الأمامي فقط",
+    "عند وجود إصابات أو إذا اختلف الأطراف على ما حدث",
+    "عندما تكون السيارتان من اللون والطراز نفسه",
+    "عندما يقع الحادث نهارا في وقت الدوام"
+   ],
+   "answer": 1,
+   "explain": "الخدمات السريعة للحوادث البسيطة فقط: لا إصابات، أضرار خفيفة، السيارات تسير، والأطراف متفقون، وفي غير ذلك اتصل بالشرطة",
+   "src": [
+    "S35",
+    "S37",
+    "S33"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-accidents-021",
+   "topic": "accidents",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "بعد وقوع حادث، أي تصرف من هذه ممنوع؟",
+   "options": [
+    "مغادرة المكان بدون توقف أو إبلاغ",
+    "تشغيل إشارات التحذير",
+    "تصوير الأضرار ومكان السيارات",
+    "الاتصال بالشرطة عند وجود إصابات"
+   ],
+   "answer": 0,
+   "explain": "ترك مكان الحادث بدون توقف أو إبلاغ مخالفة، وإذا وجدت إصابات يصبح جريمة",
+   "src": [
+    "S1",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-accidents-022",
+   "topic": "accidents",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "رأيت حادثا وقع قبل لحظات وفيه مصابون ولم يتصل أحد، ما أفضل تصرف؟",
+   "options": [
+    "تكمل طريقك لأن غيرك سيتصل بالتأكيد",
+    "تتوقف في المسار نفسه لتصور الحادث وتنشره",
+    "تتوقف في مكان آمن وتتصل على 999 وتصف المكان بدقة",
+    "تنقل المصابين بسيارتك فورا إلى أقرب مستشفى"
+   ],
+   "answer": 2,
+   "explain": "اللائحة تطلب من مستعملي الطريق تقديم كل مساعدة ممكنة لضحايا الحادث، وأهم مساعدة اتصال سريع بالطوارئ من مكان آمن",
+   "src": [
+    "S5",
+    "S38"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-accidents-023",
+   "topic": "accidents",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في أي إمارات تستخدم تطبيق وزارة الداخلية للإبلاغ عن الحادث البسيط؟",
+   "options": [
+    "الشارقة وعجمان ورأس الخيمة فقط",
+    "دبي والشارقة وعجمان وأبوظبي",
+    "كل الإمارات السبع بدون استثناء بما فيها دبي",
+    "عجمان ورأس الخيمة والفجيرة وأم القيوين"
+   ],
+   "answer": 3,
+   "explain": "دبي لها تطبيق شرطة دبي، والشارقة لها رافد، وأبوظبي لها ساعد، والإمارات الشمالية الأخرى تستخدم تطبيق وزارة الداخلية",
+   "src": [
+    "S32",
+    "S33"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-accidents-024",
+   "topic": "accidents",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "بعد حادث، ما الإجراء الذي يقلل خطر الحريق في السيارة المتضررة؟",
+   "options": [
+    "الضغط على دواسة الوقود",
+    "ترك المحرك يعمل لتشغيل المكيف",
+    "إطفاء المحرك",
+    "فتح غطاء خزان الوقود"
+   ],
+   "answer": 2,
+   "explain": "دليل معهد الشارقة للسياقة ينصح بإطفاء محرك السيارة المتضررة أو فصل البطارية لتأمين المكان",
+   "src": [
+    "S45"
+   ],
+   "confidence": "medium",
+   "notes": ""
+  },
+  {
+   "id": "law-accidents-025",
+   "topic": "accidents",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تعطلت سيارتك على طريق سريع، ما التصرف الصحيح؟",
+   "options": [
+    "تدخل إلى كتف الطريق وتشغل إشارات التحذير وتبتعد عن المسارات",
+    "تنزل لتدفع السيارة وحدك في منتصف الطريق السريع",
+    "تتوقف في المسار الأيسر وتنتظر داخل السيارة مع الركاب",
+    "تبقى في المسار الأوسط مع ربط الحزام حتى تصل المساعدة"
+   ],
+   "answer": 0,
+   "explain": "على الطريق السريع كتف الطريق مكان التوقف الاضطراري، وبعد التوقف شغل إشارات التحذير وابتعد عن المسارات، وخلف الحاجز إن وجد",
+   "src": [
+    "S45",
+    "S5"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-dubai-specific-001",
+   "topic": "dubai-specific",
+   "level": 1,
+   "exam": [
+    "dubai"
+   ],
+   "q": "في دبي، ما اسم بوابات التعرفة التي تمر تحتها على بعض الطرق وتخصم الرسوم تلقائيا؟",
+   "options": [
+    "بوابات درب",
+    "بوابات الرادار",
+    "بوابات سالك",
+    "بوابات الجمارك"
+   ],
+   "answer": 2,
+   "explain": "سالك نظام التعرفة المرورية الإلكتروني في دبي، يقرأ الملصق على الزجاج الأمامي ويخصم الرسوم تلقائيا",
+   "src": [
+    "S39"
+   ],
+   "confidence": "medium",
+   "notes": ""
+  },
+  {
+   "id": "law-dubai-specific-002",
+   "topic": "dubai-specific",
+   "level": 2,
+   "exam": [
+    "dubai"
+   ],
+   "q": "تقترب من بوابة سالك، ما التصرف الصحيح؟",
+   "options": [
+    "تتوقف تحت البوابة لثوان حتى يقرأ النظام الملصق",
+    "تغير المسار فجأة لتتجنب البوابة",
+    "تكمل بسرعتك العادية في مسارك بدون توقف",
+    "تبطئ إلى 20 كم/ساعة إجباريا"
+   ],
+   "answer": 2,
+   "explain": "سالك بدون حواجز ولا أكشاك، فتمر بسرعة الطريق الطبيعية، والتوقف أو الانحراف المفاجئ خطر ومخالفة",
+   "src": [
+    "S39",
+    "S4"
+   ],
+   "confidence": "medium",
+   "notes": ""
+  },
+  {
+   "id": "law-dubai-specific-003",
+   "topic": "dubai-specific",
+   "level": 3,
+   "exam": [
+    "dubai"
+   ],
+   "q": "ماذا يحدث إذا مررت تحت بوابة سالك والملصق غير مقروء؟",
+   "options": [
+    "السيارة تتوقف آليا تحت البوابة حتى يقرأ الملصق",
+    "البوابة تنزل حاجزا وتغلق الطريق أمامك حتى تدفع",
+    "لا شيء، العبور يصبح مجانيا في هذه الحالة تلقائيا",
+    "كاميرات البوابة تقرأ لوحة السيارة وتسجل العبور عليها"
+   ],
+   "answer": 3,
+   "explain": "سالك يستعمل كاميرات قراءة اللوحات كنظام احتياطي، فتأكد من وجود ملصق فعال ورصيد كاف",
+   "src": [
+    "S39"
+   ],
+   "confidence": "medium",
+   "notes": ""
+  },
+  {
+   "id": "law-dubai-specific-004",
+   "topic": "dubai-specific",
+   "level": 3,
+   "exam": [
+    "dubai"
+   ],
+   "q": "هل رسوم سالك ثابتة طوال اليوم؟",
+   "options": [
+    "لا، الرسوم تتغير حسب لون السيارة وحجمها",
+    "لا، مجانية طوال يوم الجمعة فقط وثابتة باقي الأيام",
+    "لا، أعلى وقت الذروة ومجانية في ساعات متأخرة من الليل",
+    "نعم، المبلغ نفسه في كل الأوقات وكل أيام الأسبوع"
+   ],
+   "answer": 2,
+   "explain": "منذ 31 يناير 2025 صارت تعرفة سالك متغيرة حسب الوقت، من مجانية في الليل المتأخر إلى أعلى سعر في أوقات الذروة",
+   "src": [
+    "S39"
+   ],
+   "confidence": "medium",
+   "notes": "الأوقات والمبالغ الدقيقة قابلة للتغيير، راجع سالك قبل الاعتماد عليها"
+  },
+  {
+   "id": "law-dubai-specific-005",
+   "topic": "dubai-specific",
+   "level": 2,
+   "exam": [
+    "dubai"
+   ],
+   "q": "في دبي، ما الطرق المعتمدة للإبلاغ عن حادث بسيط بدون إصابات؟",
+   "options": [
+    "الاتصال بشركة التأمين فقط بدون أي تقرير من الشرطة",
+    "تطبيق شرطة دبي أو محطات الوقود ضمن خدمة الشرطة في الطريق",
+    "تطبيق ساعد المعتمد للحوادث البسيطة في كل الإمارات",
+    "تطبيق رافد أو الرقم المجاني 80092 في كل الحالات"
+   ],
+   "answer": 1,
+   "explain": "في دبي تبلغ عن الحادث البسيط من تطبيق شرطة دبي أو من محطات ادنوك واينوك وإمارات، أما رافد فللشارقة وساعد لأبوظبي",
+   "src": [
+    "S33",
+    "S35",
+    "S36",
+    "S37"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-dubai-specific-006",
+   "topic": "dubai-specific",
+   "level": 3,
+   "exam": [
+    "dubai"
+   ],
+   "q": "ما شروط الحصول على تقرير حادث بسيط من خدمة الشرطة في الطريق بمحطات الوقود في دبي؟",
+   "options": [
+    "أن يكون أحد الطرفين على الأقل من سكان دبي ويحمل رخصتها",
+    "أن تكون السيارتان جديدتين ومؤمنتين تأمينا شاملا لدى شركة واحدة",
+    "أن يقع الحادث داخل محطة الوقود أو في الشارع المقابل لها",
+    "السيارات تسير، لا إصابات، الأضرار خفيفة، والأطراف متفقون على ما حدث"
+   ],
+   "answer": 3,
+   "explain": "الخدمة للحوادث البسيطة فقط، وإذا وجدت إصابات أو خلاف على ما حدث فاطلب الشرطة",
+   "src": [
+    "S35"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-dubai-specific-007",
+   "topic": "dubai-specific",
+   "level": 2,
+   "exam": [
+    "dubai"
+   ],
+   "q": "ما رقم شرطة دبي للحالات غير الطارئة؟",
+   "options": [
+    "998",
+    "901",
+    "80092",
+    "999"
+   ],
+   "answer": 1,
+   "explain": "901 لشرطة دبي في غير الطوارئ، و999 للطوارئ، و80092 رقم رافد في الشارقة",
+   "src": [
+    "S33",
+    "S37",
+    "S34"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-dubai-specific-008",
+   "topic": "dubai-specific",
+   "level": 4,
+   "exam": [
+    "dubai"
+   ],
+   "q": "في دبي حجزت الشرطة سيارة سائق قطع الإشارة الحمراء، كم رسوم فك الحجز؟",
+   "options": [
+    "50,000 درهم",
+    "100,000 درهم",
+    "5000 درهم",
+    "1000 درهم"
+   ],
+   "answer": 0,
+   "explain": "مرسوم دبي رقم 30 لسنة 2023 حدد 50,000 درهم لفك حجز المركبة في قطع الإشارة الحمراء، وهذا فوق الغرامة الاتحادية (1000 درهم و12 نقطة)",
+   "src": [
+    "S24",
+    "S25",
+    "S26"
+   ],
+   "confidence": "high",
+   "notes": "حسب مرسوم دبي رقم 30 لسنة 2023 المعمول به في 2026، المصدر: بوابة تشريعات دبي (يونيو 2023) والمكتب الإعلامي لحكومة دبي (يوليو 2023)"
+  },
+  {
+   "id": "law-dubai-specific-009",
+   "topic": "dubai-specific",
+   "level": 5,
+   "exam": [
+    "dubai"
+   ],
+   "q": "في دبي، أي مخالفة تصل رسوم فك حجز المركبة فيها إلى 100,000 درهم؟",
+   "options": [
+    "المشاركة في سباق على الطريق بدون تصريح",
+    "عدم ربط حزام الأمان للسائق والركاب",
+    "الوقوف في مكان ممنوع أمام مدخل مبنى",
+    "تجاوز السرعة المقررة بـ 20 كم/ساعة"
+   ],
+   "answer": 0,
+   "explain": "سباقات الطرق بدون تصريح أعلى فئة في مرسوم الحجز بدبي: 100,000 درهم لفك الحجز",
+   "src": [
+    "S24",
+    "S25"
+   ],
+   "confidence": "high",
+   "notes": "حسب مرسوم دبي رقم 30 لسنة 2023 المعمول به في 2026، المصدر: بوابة تشريعات دبي (يونيو 2023) والمكتب الإعلامي لحكومة دبي (يوليو 2023)"
+  },
+  {
+   "id": "law-dubai-specific-010",
+   "topic": "dubai-specific",
+   "level": 5,
+   "exam": [
+    "dubai"
+   ],
+   "q": "في دبي، ماذا يحدث إذا كرر السائق خلال سنة مخالفة توجب حجز المركبة؟",
+   "options": [
+    "تسقط العقوبة إذا دفع الغرامة مبكرا خلال أسبوع",
+    "تتضاعف مدة الحجز ورسوم فك الحجز حتى حد أقصى محدد",
+    "تبقى مدة الحجز ورسوم فك الحجز كما هي في المرة الأولى",
+    "تنخفض الرسوم لأنه عميل سابق لدى الشرطة"
+   ],
+   "answer": 1,
+   "explain": "مرسوم دبي رقم 30 لسنة 2023 يضاعف مدة الحجز ورسوم فك الحجز عند التكرار خلال سنة، بحد أقصى 90 يوما و200,000 درهم",
+   "src": [
+    "S24"
+   ],
+   "confidence": "high",
+   "notes": "حسب مرسوم دبي رقم 30 لسنة 2023 المعمول به في 2026، المصدر: بوابة تشريعات دبي (يونيو 2023) والمكتب الإعلامي لحكومة دبي (يوليو 2023)"
+  },
+  {
+   "id": "law-dubai-specific-011",
+   "topic": "dubai-specific",
+   "level": 4,
+   "exam": [
+    "dubai"
+   ],
+   "q": "في دبي، متى تستطيع الشرطة حجز المركبة بسبب الغرامات المتراكمة؟",
+   "options": [
+    "إذا زادت الغرامات غير المدفوعة على 500 درهم",
+    "إذا زادت الغرامات غير المدفوعة على 6000 درهم",
+    "إذا زادت الغرامات غير المدفوعة على 100,000 درهم",
+    "لا تحجز الشرطة المركبة بسبب الغرامات أبدا"
+   ],
+   "answer": 1,
+   "explain": "مرسوم الحجز في دبي يسمح بحجز المركبة إذا تجاوزت غراماتها 6000 درهم، ولا تستلمها إلا بعد سداد المبلغ",
+   "src": [
+    "S24",
+    "S25"
+   ],
+   "confidence": "high",
+   "notes": "حسب مرسوم دبي رقم 30 لسنة 2023 المعمول به في 2026، المصدر: بوابة تشريعات دبي (يونيو 2023) والمكتب الإعلامي لحكومة دبي (يوليو 2023)"
+  },
+  {
+   "id": "law-dubai-specific-012",
+   "topic": "dubai-specific",
+   "level": 3,
+   "exam": [
+    "dubai"
+   ],
+   "q": "في دبي وجدت سيارتك مصدومة في موقف والطرف الآخر مجهول، ماذا تطلب قبل التصليح؟",
+   "options": [
+    "لا شيء، تصلحها مباشرة في أي كراج تختاره",
+    "شهادة من البلدية بأن الموقف تابع لها",
+    "تقرير حادث مجهول الطرف من خدمات شرطة دبي",
+    "رسالة من حارس الموقف تثبت ما حدث"
+   ],
+   "answer": 2,
+   "explain": "خدمة الشرطة في الطريق في دبي تشمل تقرير الحادث المجهول الطرف، والكراج يحتاج تقريرا أو تصريح إصلاح قبل التصليح",
+   "src": [
+    "S35",
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-sharjah-specific-001",
+   "topic": "sharjah-specific",
+   "level": 1,
+   "exam": [
+    "sharjah"
+   ],
+   "q": "في الشارقة، ما الجهة التي تستقبل بلاغات الحوادث البسيطة بالتعاون مع شرطة الشارقة؟",
+   "options": [
+    "درب",
+    "ساعد",
+    "سالك",
+    "رافد"
+   ],
+   "answer": 3,
+   "explain": "رافد تستقبل بلاغات الحوادث البسيطة في الشارقة عبر تطبيقها أو الرقم 80092",
+   "src": [
+    "S32",
+    "S34",
+    "S40"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-sharjah-specific-002",
+   "topic": "sharjah-specific",
+   "level": 2,
+   "exam": [
+    "sharjah"
+   ],
+   "q": "ما الرقم المجاني للإبلاغ عن الحوادث البسيطة في الشارقة؟",
+   "options": [
+    "8004888",
+    "901",
+    "80092",
+    "997"
+   ],
+   "answer": 2,
+   "explain": "شرطة الشارقة ورافد أطلقتا الرقم 80092 في مايو 2024 لاستقبال بلاغات الحوادث البسيطة، وإذا وجدت إصابات فاتصل على 999",
+   "src": [
+    "S34",
+    "S40"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-sharjah-specific-003",
+   "topic": "sharjah-specific",
+   "level": 2,
+   "exam": [
+    "sharjah"
+   ],
+   "q": "دفعت مخالفة مرورية في الشارقة خلال 60 يوما من ارتكابها، ما نسبة الخصم؟",
+   "options": [
+    "10%",
+    "50%",
+    "لا يوجد خصم",
+    "35%"
+   ],
+   "answer": 3,
+   "explain": "حسب قرار المجلس التنفيذي في الشارقة (يوليو 2025): خصم 35% خلال 60 يوما، و25% بعد ذلك وحتى سنة",
+   "src": [
+    "S27",
+    "S28"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-sharjah-specific-004",
+   "topic": "sharjah-specific",
+   "level": 3,
+   "exam": [
+    "sharjah"
+   ],
+   "q": "في الشارقة، ماذا يشمل خصم 35% عند الدفع خلال 60 يوما؟",
+   "options": [
+    "النقاط السوداء فقط دون أي خصم على الغرامة",
+    "رسوم تجديد الرخصة وتسجيل المركبة في السنة التالية",
+    "الغرامة ومدة الحجز ورسوم الحجز والغرامات المتأخرة",
+    "الغرامة فقط، أما مدة الحجز ورسومه فتبقى كاملة"
+   ],
+   "answer": 2,
+   "explain": "خصم 35% يشمل الغرامة ومدة الحجز والرسوم، أما خصم 25% (بعد 60 يوما وحتى سنة) فعلى الغرامة فقط",
+   "src": [
+    "S27",
+    "S28"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-sharjah-specific-005",
+   "topic": "sharjah-specific",
+   "level": 3,
+   "exam": [
+    "sharjah"
+   ],
+   "q": "دفعت مخالفة في الشارقة بعد 4 أشهر من ارتكابها، ما الخصم المتاح؟",
+   "options": [
+    "50% على الغرامة",
+    "35% على الغرامة والحجز",
+    "لا خصم بعد 60 يوما",
+    "25% على قيمة الغرامة فقط"
+   ],
+   "answer": 3,
+   "explain": "بعد 60 يوما وحتى سنة من المخالفة الخصم 25% على الغرامة فقط، بشرط ألا تكون من المخالفات الجسيمة",
+   "src": [
+    "S27",
+    "S28"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-sharjah-specific-006",
+   "topic": "sharjah-specific",
+   "level": 3,
+   "exam": [
+    "sharjah"
+   ],
+   "q": "هل يشمل خصم المخالفات في الشارقة قطع الإشارة الحمراء أو استعمال الهاتف أثناء القيادة؟",
+   "options": [
+    "نعم، إذا كانت أول مخالفة لك في السنة",
+    "لا، الشارقة تستثني المخالفات الجسيمة من الخصم",
+    "نعم، كل المخالفات بلا استثناء عليها خصم 35%",
+    "نعم، إذا دفعتها في اليوم نفسه لارتكاب المخالفة"
+   ],
+   "answer": 1,
+   "explain": "قرار الشارقة يستثني المخالفات الجسيمة، ومنها قطع الإشارة الحمراء والهاتف أثناء القيادة والسرعة المفرطة والتوقف المفاجئ",
+   "src": [
+    "S27",
+    "S28"
+   ],
+   "confidence": "medium",
+   "notes": ""
+  },
+  {
+   "id": "law-sharjah-specific-007",
+   "topic": "sharjah-specific",
+   "level": 3,
+   "exam": [
+    "sharjah"
+   ],
+   "q": "في معهد الشارقة للسياقة، ما شرط دخول دورة خصم 8 نقاط سوداء؟",
+   "options": [
+    "أن تكون نقاطك 24 أو أكثر وخسرت رخصتك",
+    "ألا تزيد نقاطك على 23 نقطة، ومرة واحدة في السنة",
+    "أن تكون حصلت على الرخصة قبل 10 سنوات على الأقل",
+    "أن تدفع كل مخالفاتك بالتقسيط قبل التسجيل"
+   ],
+   "answer": 1,
+   "explain": "دورة خصم النقاط لمن لم يصل إلى الحد التراكمي بعد، أما من وصل إلى 24 نقطة فله برنامج خاص",
+   "src": [
+    "S19"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-sharjah-specific-008",
+   "topic": "sharjah-specific",
+   "level": 4,
+   "exam": [
+    "sharjah"
+   ],
+   "q": "في معهد الشارقة للسياقة، لمن البرنامج الخاص للنقاط المرورية؟",
+   "options": [
+    "لسائقي سيارات الأجرة والحافلات فقط",
+    "للسائقين الجدد قبل اختبار الطريق النهائي",
+    "لمن وصل إلى الحد التراكمي للنقاط وخسر رخصته",
+    "لمن ليس عليه أي نقاط ويريد مكافأة"
+   ],
+   "answer": 2,
+   "explain": "معهد الشارقة للسياقة يقدم برنامجا عاما يخصم 8 نقاط لمن نقاطه 23 أو أقل، وبرنامجا خاصا لمن تجاوز الحد وخسر رخصته",
+   "src": [
+    "S19"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "law-sharjah-specific-009",
+   "topic": "sharjah-specific",
+   "level": 3,
+   "exam": [
+    "sharjah"
+   ],
+   "q": "في الشارقة، من تراقب دوريات الشرطة بخصوص مخالفات العبور؟",
+   "options": [
+    "السائقين فقط، والمشاة لا تشملهم المخالفات أبدا",
+    "سائقي الشاحنات والحافلات فقط داخل المدينة",
+    "السائقين والمشاة معا، ومخالفة المشاة برقم الهوية",
+    "السياح والزوار فقط في المناطق السياحية"
+   ],
+   "answer": 2,
+   "explain": "شرطة الشارقة تنشر دوريات بزي رسمي ومدني تراقب السائقين والمشاة، والشرطة تستطيع مخالفة المشاة عبر رقم الهوية الإماراتية",
+   "src": [
+    "S28"
+   ],
+   "confidence": "medium",
+   "notes": ""
+  },
+  {
+   "id": "law-sharjah-specific-010",
+   "topic": "sharjah-specific",
+   "level": 2,
+   "exam": [
+    "sharjah"
+   ],
+   "q": "كيف تدفع مخالفات شرطة الشارقة إلكترونيا؟",
+   "options": [
+    "عبر موقع شرطة الشارقة أو تطبيق وزارة الداخلية",
+    "عبر تطبيق سالك لأنه يجمع كل مخالفات الدولة",
+    "فقط بالحضور شخصيا إلى مركز الشرطة",
+    "عبر شركة التأمين عند تجديد الوثيقة"
+   ],
+   "answer": 0,
+   "explain": "شرطة الشارقة تتيح السداد عبر موقعها الإلكتروني أو تطبيق وزارة الداخلية، وتستفيد من الخصم إذا دفعت مبكرا",
+   "src": [
+    "S29"
+   ],
+   "confidence": "medium",
+   "notes": ""
+  }
+ ]
+}

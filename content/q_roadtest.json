@@ -1,0 +1,2254 @@
+{
+ "module": "roadtest",
+ "updated": "2026-09-29",
+ "sources": {
+  "S1": {
+   "title": "Apply for Booking and Changing a Driving Test Appointment (knowledge test 40 questions, 30 to pass)",
+   "url": "https://www.rta.ae/wps/portal/rta/ae/home/rta-services/service-details?serviceId=510",
+   "publisher": "RTA Dubai",
+   "date": "2026-09-11"
+  },
+  "S3": {
+   "title": "Light Motor Vehicle Handbook: A Guide to Safe Driving, 8th edition (copy hosted by Dubai Driving Center)",
+   "url": "https://www.drivedubai.ae/public/uploads/downloads/20240612110831RTA-Handbook-Light-Motor-Vechicle-English.pdf",
+   "publisher": "RTA Licensing Agency",
+   "date": "2024-06"
+  },
+  "S4": {
+   "title": "RTA announces full automation of drivers testing at the Smart Yard",
+   "url": "https://www.rta.ae/wps/portal/rta/ae/home/news-and-media/all-news/NewsDetails/rta+-announces-full-automatio-of-drivers-testing-at-the-smart+yard",
+   "publisher": "RTA Dubai",
+   "date": "2019-06-23"
+  },
+  "S5": {
+   "title": "Drivers fail Dubai road test due to fear, says RTA",
+   "url": "https://gulfnews.com/uae/transport/drivers-fail-dubai-road-test-due-to-fear-says-rta-1.1542225",
+   "publisher": "Gulf News",
+   "date": "2018-11-08"
+  },
+  "S6": {
+   "title": "Risks recognition test part of Dubai driving course",
+   "url": "https://gulfnews.com/uae/transport/risks-recognition-test-part-of-dubai-driving-course-1.1545622",
+   "publisher": "Gulf News",
+   "date": "2018-09-15"
+  },
+  "S10": {
+   "title": "How to Pass the RTA Car Theory Test in Dubai",
+   "url": "https://www.excellencedriving.com/en/blogs/how-to-pass-the-rta-car-theory-test-in-dubai",
+   "publisher": "Excellence Driving (Dubai institute)",
+   "date": "2026-09-08"
+  },
+  "S11": {
+   "title": "Car Driving license for Light Motor Vehicle",
+   "url": "https://edi-uae.com/en/car-driving",
+   "publisher": "Emirates Driving Institute",
+   "date": "2026-09"
+  },
+  "S12": {
+   "title": "Frequently Asked Questions",
+   "url": "https://edi-uae.com/en/faq/",
+   "publisher": "Emirates Driving Institute",
+   "date": "2026-09"
+  },
+  "S13": {
+   "title": "Mistakes that cause an immediate failure during your parking test (Arabic)",
+   "url": "https://edi-uae.com/ar/driving-tips/Below-mistakes-can-cause-an-immediate-failure-during-your-Parking-Test/",
+   "publisher": "Emirates Driving Institute",
+   "date": "2019-07-23"
+  },
+  "S14": {
+   "title": "Step-by-step guidelines for the car (LMV) driving licence journey (PDF)",
+   "url": "https://edi-uae.com/public/uploads/editor-images/files/2053433534.pdf",
+   "publisher": "Emirates Driving Institute",
+   "date": "2017-09 and 2019-07"
+  },
+  "S15": {
+   "title": "RTA Smart Yard Test: All You Need to Know",
+   "url": "https://www.excellencedriving.com/en/blogs/rta-smart-yard-test",
+   "publisher": "Excellence Driving (Dubai institute)",
+   "date": "2025-10-17"
+  },
+  "S16": {
+   "title": "RTA Parking Test: All You Need to Know",
+   "url": "https://www.excellencedriving.com/en/blogs/rta-parking-test",
+   "publisher": "Excellence Driving (Dubai institute)",
+   "date": "2025-02-19"
+  },
+  "S18": {
+   "title": "Pass or fail? Smart driver testing yard in Dubai to use sensors, high-tech cameras",
+   "url": "https://gulfnews.com/amp/story/uae%2Ftransport%2Fpass-or-fail-smart-driver-testing-yard-in-dubai-to-use-sensors-high-tech-cameras-1.2193597",
+   "publisher": "Gulf News",
+   "date": "2018-11-05"
+  },
+  "S20": {
+   "title": "What are the most common reasons for failing the RTA road test in Dubai?",
+   "url": "https://gulfnews.com/living-in-uae/transport/what-are-the-most-common-reasons-for-failing-the-rta-road-test-in-dubai-1.500455876",
+   "publisher": "Gulf News",
+   "date": "2026-02-26"
+  },
+  "S21": {
+   "title": "Why UAE residents fail driving tests",
+   "url": "https://gulfnews.com/amp/story/uae%2Ftransport%2Fwhy-uae-residents-fail-driving-tests-1.62553524",
+   "publisher": "Gulf News",
+   "date": "2019-03-24"
+  },
+  "S22": {
+   "title": "Taking your UAE driving test soon? 5 most common mistakes and how to avoid them",
+   "url": "https://gulfnews.com/lifestyle/taking-your-uae-driving-test-soon-5-most-common-mistakes-and-how-to-avoid-them-1.500339753",
+   "publisher": "Gulf News",
+   "date": "2025-11-10"
+  },
+  "S25": {
+   "title": "Car Driving Courses (English and Arabic pages)",
+   "url": "https://www.sdi.ae/en/car-driving/",
+   "publisher": "Sharjah Driving Institute (Sharjah Police)",
+   "date": "2026-09"
+  },
+  "S26": {
+   "title": "Parking Test: Check items",
+   "url": "https://www.sdi.ae/en/parking-test-check-items",
+   "publisher": "Sharjah Driving Institute",
+   "date": "2026-09"
+  },
+  "S28": {
+   "title": "Prices and details of training (PDF)",
+   "url": "https://www.sdi.ae/public/uploads/downloads/20250930151559Prices-amp-details-of-training.pdf",
+   "publisher": "Sharjah Driving Institute",
+   "date": "2025-09-30"
+  },
+  "S29": {
+   "title": "Basics of Driving, 4th edition (handbook PDF)",
+   "url": "https://www.sdi.ae/public/uploads/downloads/20211205122542Driving-Handbook-English.pdf",
+   "publisher": "Sharjah Driving Institute",
+   "date": "2021"
+  },
+  "S30": {
+   "title": "Tips For New Drivers (PDF)",
+   "url": "https://www.sdi.ae/public/uploads/downloads/20260414084444Tips-For-New-Drivers.pdf",
+   "publisher": "Sharjah Driving Institute",
+   "date": "2026-04-14"
+  },
+  "S31": {
+   "title": "Sharjah Police streamlines driving licence procedure",
+   "url": "https://gulfnews.com/uae/sharjah-police-streamlines-driving-licence-procedure-1.102772183",
+   "publisher": "Gulf News",
+   "date": "2024-05-27"
+  },
+  "S32": {
+   "title": "Sharjah: Now clear your theory test online for driving license",
+   "url": "https://gulfnews.com/uae/sharjah-now-clear-your-theory-test-online-for-driving-license-1.87249809",
+   "publisher": "Gulf News",
+   "date": "2022-04-24"
+  },
+  "S33": {
+   "title": "Sharjah Police allows final driving test from applicant's whereabouts for Dh100",
+   "url": "https://gulfnews.com/uae/sharjah-police-allows-final-driving-test-from-applicants-whereabouts-for-dh100-1.78142883",
+   "publisher": "Gulf News",
+   "date": "2021-03-27"
+  },
+  "S34": {
+   "title": "Sharjah driving test at the customer's location soon (Arabic, quotes Sharjah Police)",
+   "url": "https://www.emaratalyoum.com/local-section/other/2021-02-01-1.1449600",
+   "publisher": "Emarat Al Youm",
+   "date": "2021-02-01"
+  },
+  "S36": {
+   "title": "Garage Parking Guide: Tips To Master Reverse Car Parking",
+   "url": "https://www.binyaber.com/en/blogs-news/garage-parking-guide-tips-to-master-reverse-car-parking/",
+   "publisher": "Bin Yaber Driving Institute",
+   "date": "2025-09-24"
+  },
+  "S37": {
+   "title": "How To Pass Your RTA Parking Test In First Attempt",
+   "url": "https://www.binyaber.com/en/blogs-news/how-to-pass-your-rta-parking-test-in-first-attempt/",
+   "publisher": "Bin Yaber Driving Institute",
+   "date": "2026-07-29"
+  },
+  "S38": {
+   "title": "Parallel parking made easy: step by step guide (Arabic and English)",
+   "url": "https://www.excellencedriving.com/ar/blogs/parallel-parking-step-by-step-guide",
+   "publisher": "Excellence Driving (Dubai institute)",
+   "date": "2025-07-02"
+  },
+  "S40": {
+   "title": "It takes an average of three attempts for drivers in the UAE to get a licence",
+   "url": "https://gulfnews.com/uae/transport/it-takes-an-average-of-three-attempts-for-drivers-in-the-uae-to-get-a-licence-1.62304961",
+   "publisher": "Gulf News",
+   "date": "2019-03-03"
+  },
+  "S42": {
+   "title": "RTA goes live with smart yard test",
+   "url": "https://gulfnews.com/uae/transport/rta-goes-live-with-smart-yard-test-1.1989287",
+   "publisher": "Gulf News",
+   "date": "2017-03-06"
+  }
+ },
+ "cards": [
+  {
+   "id": "roadtest-card-001",
+   "topic": "yard",
+   "level": 1,
+   "title": "خمسة تمارين في الساحة",
+   "body": "في دبي والشارقة يتكون اختبار الساحة من 5 تمارين: الموقف الموازي، وموقف الكراج بالرجوع، والموقف المائل 60 درجة، والانطلاق على المنحدر، والفرملة المفاجئة",
+   "key": "5 تمارين",
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "src": [
+    "S4",
+    "S26"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-card-002",
+   "topic": "yard",
+   "level": 1,
+   "title": "الحزام أولا",
+   "body": "اربط الحزام فور جلوسك، ففي الساحة الذكية في دبي حساس يراقب الحزام، وفحوصات ما قبل القيادة جزء من التقييم",
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "src": [
+    "S3",
+    "S15"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-card-003",
+   "topic": "yard",
+   "level": 2,
+   "title": "وقت كل موقف",
+   "body": "الموازي 5 دقائق على الأكثر، والكراج 3 دقائق، والمائل 60 درجة دقيقتان، وتجاوز الوقت ولو بثانية يعني الرسوب",
+   "key": "5 / 3 / 2 دقائق",
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "src": [
+    "S13",
+    "S16",
+    "S26"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-card-004",
+   "topic": "yard",
+   "level": 2,
+   "title": "السيارة كلها داخل الخطوط",
+   "body": "إذا خرج أي جزء من السيارة عن خطوط الموقف، حتى المرآة الجانبية، ترسب فورا",
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "src": [
+    "S13",
+    "S26"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-card-005",
+   "topic": "yard",
+   "level": 2,
+   "title": "لا رصيف ولا عمود",
+   "body": "صدم الرصيف أو العمود، أو صعود العجلة على الرصيف، أو تحريك العمود من مكانه: كلها رسوب فوري",
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "src": [
+    "S13",
+    "S26"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-card-006",
+   "topic": "yard",
+   "level": 3,
+   "title": "المنحدر: 30 سم و60 ثانية",
+   "body": "إذا رجعت السيارة 30 سم أو أكثر ترسب، وإذا انطفأت أو لم تتحرك في المحاولة الثانية ترسب، ولديك 60 ثانية فقط حتى تنطلق",
+   "key": "30 سم و60 ثانية",
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "src": [
+    "S13",
+    "S26"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-card-007",
+   "topic": "yard",
+   "level": 3,
+   "title": "الفرملة المفاجئة",
+   "body": "تسير بين 20 و40 كم/ساعة، وعند الإشارة تضغط الفرامل بقوة فورا، ويداك على المقود، ودون أن تلف، والنظر في المرآة هنا غير مطلوب",
+   "key": "20 إلى 40 كم/ساعة",
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "src": [
+    "S13",
+    "S26"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-card-008",
+   "topic": "yard",
+   "level": 4,
+   "title": "مسافات التوقف",
+   "body": "يجب أن تتوقف خلال 3 أمتار عند 20 كم/ساعة، و6 أمتار عند 30 كم/ساعة، و11 مترا عند 40 كم/ساعة",
+   "key": "3 / 6 / 11 متر",
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "src": [
+    "S13",
+    "S26"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-card-009",
+   "topic": "yard",
+   "level": 3,
+   "title": "الساحة الذكية في دبي",
+   "body": "لا يجلس فاحص بجانبك: 5 كاميرات وأكثر من 20 حساسا تقيم أداءك، والتعليمات تصلك صوتيا من شاشة في السيارة",
+   "exam": [
+    "dubai"
+   ],
+   "src": [
+    "S4",
+    "S42"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-card-010",
+   "topic": "yard",
+   "level": 4,
+   "title": "السيارة تتوقف وحدها",
+   "body": "في الساحة الذكية في دبي تتوقف السيارة تلقائيا إذا تجاوزت 35 كم/ساعة، أو إذا اقتربت من جسم أمامها وأنت تسير بسرعة 20 كم/ساعة",
+   "key": "35 كم/ساعة",
+   "exam": [
+    "dubai"
+   ],
+   "src": [
+    "S18"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "roadtest-card-011",
+   "topic": "yard",
+   "level": 4,
+   "title": "4 نقاط خصم",
+   "body": "حسب دليل هيئة الطرق، إذا جمعت 4 نقاط خصم أو أكثر في تمرين واحد ترسب فيه وتعيده، والنجاح في التمارين الخمسة شرط",
+   "key": "4 نقاط",
+   "exam": [
+    "dubai"
+   ],
+   "src": [
+    "S3",
+    "S14"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-card-012",
+   "topic": "yard",
+   "level": 3,
+   "title": "إذا رسبت في تمرين",
+   "body": "في معهد الإمارات بدبي تأخذ ساعة تدريب ثم تعيد التمرين الذي رسبت فيه فقط، وليس الاختبار كله",
+   "exam": [
+    "dubai"
+   ],
+   "src": [
+    "S14"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "roadtest-card-013",
+   "topic": "yard",
+   "level": 2,
+   "title": "الموازي: البداية",
+   "body": "توقف بجانب السيارة أو العمود أمام الموقف على بعد نصف متر إلى متر، ومؤخرتك بمستوى مؤخرته، ثم ارجع ببطء ولف المقود نحو الرصيف",
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "src": [
+    "S29",
+    "S38"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "roadtest-card-014",
+   "topic": "yard",
+   "level": 3,
+   "title": "الموازي: النهاية",
+   "body": "عندما يتجاوز صدامك الأمامي مؤخرة السيارة الأمامية لف المقود في الاتجاه المعاكس، وعندما تصبح موازيا أعد المقود إلى المنتصف، وابق على بعد 30 سم تقريبا من الرصيف",
+   "key": "30 سم",
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "src": [
+    "S29",
+    "S38"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "roadtest-card-015",
+   "topic": "yard",
+   "level": 3,
+   "title": "الكراج بالرجوع",
+   "body": "تقدم أمام الموقف على بعد متر تقريبا، وتوقف عندما تصبح مؤخرتك بمحاذاة خط الموقف، ثم ارجع ولف المقود إلى آخره نحو الموقف، وعندما تتساوى المسافة في المرآتين أعد المقود إلى المنتصف",
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "src": [
+    "S36"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "roadtest-card-016",
+   "topic": "yard",
+   "level": 2,
+   "title": "البطء هو الأمان",
+   "body": "في تمارين الرجوع تحكم بالسرعة بقدمك على الفرامل ودع السيارة الأوتوماتيك تزحف ببطء، فالسرعة الزائدة أكبر سبب للأخطاء",
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "src": [
+    "S36",
+    "S37"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "roadtest-card-017",
+   "topic": "roadtest",
+   "level": 1,
+   "title": "رحلة الرخصة في دبي",
+   "body": "فتح ملف وفحص نظر، ثم 8 محاضرات، ثم الاختبار النظري، ثم 20 ساعة تدريب للمبتدئ، ثم تقييمات في المعهد، ثم اختبار الساحة، ثم تدريب الطريق السريع، ثم اختبار الطريق، ثم الرخصة",
+   "exam": [
+    "dubai"
+   ],
+   "src": [
+    "S1",
+    "S3",
+    "S11"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-card-018",
+   "topic": "roadtest",
+   "level": 1,
+   "title": "رحلة الرخصة في الشارقة",
+   "body": "فتح ملف وفحص نظر، ثم 5 محاضرات في يوم واحد، ثم اختبار الإشارات، ثم 50 حصة تدريب، ثم اختبار الساحة، ثم اختبار التقييم، ثم الاختبار النهائي مع شرطة الشارقة",
+   "exam": [
+    "sharjah"
+   ],
+   "src": [
+    "S25"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-card-019",
+   "topic": "roadtest",
+   "level": 2,
+   "title": "النظري في دبي",
+   "body": "40 سؤالا وتحتاج 30 إجابة صحيحة، ومن ضمنها مقاطع فيديو لإدراك المخاطر، والرقم القديم 35 سؤالا لم يعد صالحا",
+   "key": "30 من 40",
+   "exam": [
+    "dubai"
+   ],
+   "src": [
+    "S1",
+    "S6",
+    "S10"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-card-020",
+   "topic": "roadtest",
+   "level": 2,
+   "title": "النظري في الشارقة",
+   "body": "25 سؤالا وتحتاج 18 إجابة صحيحة خلال 20 دقيقة، والمحاولة الأولى مجانية، ويمكنك تقديمه عن بعد بالكاميرا",
+   "key": "18 من 25",
+   "exam": [
+    "sharjah"
+   ],
+   "src": [
+    "S25",
+    "S32"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-card-021",
+   "topic": "roadtest",
+   "level": 2,
+   "title": "مدة اختبار الطريق",
+   "body": "حوالي 20 دقيقة في دبي، ولا تزيد عن 20 دقيقة في الشارقة، فكل دقيقة مهمة",
+   "key": "20 دقيقة",
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "src": [
+    "S3",
+    "S34"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-card-022",
+   "topic": "roadtest",
+   "level": 2,
+   "title": "روتين كل حركة",
+   "body": "مرآة، ثم إشارة، ثم التفاتة إلى النقطة العمياء، ثم الحركة، في كل انطلاق وانعطاف وتغيير مسار",
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "src": [
+    "S3",
+    "S22",
+    "S29"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-card-023",
+   "topic": "roadtest",
+   "level": 3,
+   "title": "الأخطاء الكبيرة في دبي",
+   "body": "عدم الوقوف عند الأحمر أو لوحة قف أو خط الوقوف، ودخول طريق ممنوع الدخول أو الوقوف في المربع الأصفر، وفقدان السيطرة، والدخول إلى طريق أو مسار أو دوار قبل التأكد من خلوه: أي واحد منها يرسبك",
+   "exam": [
+    "dubai"
+   ],
+   "src": [
+    "S5",
+    "S20"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-card-024",
+   "topic": "roadtest",
+   "level": 4,
+   "title": "12 من 16",
+   "body": "حسب هيئة الطرق (2018) في اختبار الطريق 16 بندا عاديا، مثل فحوصات ما قبل القيادة والمرايا والإشارات والسرعة والدوار والوقوف، والنجاح يحتاج أداء جيدا في 12 منها على الأقل دون أي خطأ كبير",
+   "key": "12 من 16",
+   "exam": [
+    "dubai"
+   ],
+   "src": [
+    "S5"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "roadtest-card-025",
+   "topic": "roadtest",
+   "level": 3,
+   "title": "أسباب الرسوب في الشارقة",
+   "body": "ذكرت شرطة الشارقة: الخوف والتوتر، وأخطاء تسبب حوادث، والدوران دون سيطرة على السيارة، وعدم الالتزام بإشارات المرور، وعدم الالتزام بخط السير",
+   "exam": [
+    "sharjah"
+   ],
+   "src": [
+    "S34"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "roadtest-card-026",
+   "topic": "roadtest",
+   "level": 3,
+   "title": "خطأ كبير واحد يكفي",
+   "body": "حتى لو كانت قيادتك ممتازة، خطأ كبير واحد في آخر الاختبار يرسبك، فابق مركزا حتى تتوقف السيارة",
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "src": [
+    "S3",
+    "S5"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-card-027",
+   "topic": "roadtest",
+   "level": 3,
+   "title": "بعد الرسوب في الطريق",
+   "body": "في دبي تحتاج حصصا إضافية قبل حجز اختبار جديد، ومعهد الإمارات يطلب 8 حصص (4 ساعات)، والعدد قد يختلف بين المعاهد",
+   "exam": [
+    "dubai"
+   ],
+   "src": [
+    "S14",
+    "S40"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "roadtest-card-028",
+   "topic": "roadtest",
+   "level": 2,
+   "title": "رخصة الأوتوماتيك",
+   "body": "إذا تدربت ونجحت على سيارة أوتوماتيك فرخصتك للأوتوماتيك فقط",
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "src": [
+    "S3",
+    "S25"
+   ],
+   "confidence": "high"
+  }
+ ],
+ "questions": [
+  {
+   "id": "roadtest-yard-001",
+   "topic": "yard",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "كم تمرينا في اختبار الساحة (الباركنج) لرخصة السيارة في دبي والشارقة؟",
+   "options": [
+    "3 تمارين",
+    "4 تمارين",
+    "5 تمارين",
+    "7 تمارين"
+   ],
+   "answer": 2,
+   "explain": "الاختبار فيه 5 تمارين: الموقف الموازي، وموقف الكراج بالرجوع، والموقف المائل 60 درجة، والانطلاق على المنحدر، والفرملة المفاجئة",
+   "tip": "عدهم على أصابع إيد وحدة: موازي، كراج، مائل، طلعة، فرملة",
+   "src": [
+    "S4",
+    "S26"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-yard-002",
+   "topic": "yard",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "متى تربط حزام الأمان في اختبار الساحة؟",
+   "options": [
+    "قبل الفرملة المفاجئة فقط",
+    "لا يلزم لأن السرعة منخفضة",
+    "فور جلوسك وقبل أي حركة",
+    "بعد التمرين الأول"
+   ],
+   "answer": 2,
+   "explain": "الحزام أول خطوة قبل الحركة، وفي الساحة الذكية في دبي حساس يراقبه",
+   "src": [
+    "S3",
+    "S15"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-yard-003",
+   "topic": "yard",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما هدف تمرين الفرملة المفاجئة؟",
+   "options": [
+    "التدرب على استعمال الفرامل اليدوية وقت الحاجة",
+    "التوقف بهدوء دون أن يسمع الفاحص صوت الإطارات",
+    "إيقاف السيارة بسرعة وأمان وبخط مستقيم",
+    "اختبار قوة الفرامل والإطارات في سيارة الاختبار"
+   ],
+   "answer": 2,
+   "explain": "التمرين يقيس رد فعلك وقدرتك على إيقاف السيارة فورا دون أن تفقد السيطرة",
+   "src": [
+    "S13",
+    "S15"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-yard-004",
+   "topic": "yard",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في تمرين الموقف، أي جزء من السيارة مسموح أن يخرج عن خطوط الموقف؟",
+   "options": [
+    "الصدام الخلفي إذا خرج أقل من 10 سم",
+    "المرآة الجانبية فقط لأنها لا تلمس الأرض",
+    "العجلات الأمامية فقط إذا بقيت على الخط",
+    "لا شيء، ولا حتى المرآة الجانبية"
+   ],
+   "answer": 3,
+   "explain": "خروج أي جزء من السيارة عن الخطوط، ومنه المرآة، يعني الرسوب فورا",
+   "tip": "حتى المراية لازم تكون جوا",
+   "src": [
+    "S13",
+    "S26"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-yard-005",
+   "topic": "yard",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما الحد الأقصى لوقت تمرين الموقف الموازي؟",
+   "options": [
+    "3 دقائق",
+    "5 دقائق",
+    "دقيقتان",
+    "10 دقائق"
+   ],
+   "answer": 1,
+   "explain": "الموازي 5 دقائق، والكراج 3 دقائق، والمائل 60 درجة دقيقتان، وتجاوز الوقت ولو بثانية يعني الرسوب",
+   "tip": "الوقت بينزل: موازي 5، كراج 3، مائل 2",
+   "src": [
+    "S13",
+    "S16",
+    "S26"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-yard-006",
+   "topic": "yard",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما الحد الأقصى لوقت تمرين الكراج (الموقف العمودي بالرجوع)؟",
+   "options": [
+    "5 دقائق",
+    "7 دقائق",
+    "3 دقائق",
+    "دقيقة واحدة"
+   ],
+   "answer": 2,
+   "explain": "وقت الكراج 3 دقائق، وإذا تجاوزته ترسب في هذا التمرين",
+   "src": [
+    "S13",
+    "S16",
+    "S26"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-yard-007",
+   "topic": "yard",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ماذا يحدث إذا صعدت عجلة سيارتك على الرصيف أثناء تمرين الموقف؟",
+   "options": [
+    "يخصم النظام نقطة وتكمل عادي",
+    "ترسب فورا في هذا التمرين",
+    "لا مشكلة إذا نزلت بسرعة",
+    "يعطيك النظام محاولة إضافية مجانية"
+   ],
+   "answer": 1,
+   "explain": "صعود العجلة على الرصيف أو صدم الرصيف أو العمود من أخطاء الرسوب الفوري",
+   "src": [
+    "S13",
+    "S26"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-yard-008",
+   "topic": "yard",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في الموقف الموازي، ما المسافة الجانبية المناسبة بينك وبين السيارة الأمامية عندما تتوقف قبل الرجوع؟",
+   "options": [
+    "حوالي 10 سم حتى تقترب من الموقف",
+    "3 أمتار أو أكثر حتى تأخذ راحتك",
+    "لا فرق، المهم أن تكون موازيا",
+    "من نصف متر إلى متر تقريبا"
+   ],
+   "answer": 3,
+   "explain": "هذه المسافة تعطيك مساحة للدوران دون أن تلمس السيارة أو العمود",
+   "src": [
+    "S29",
+    "S38"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "roadtest-yard-009",
+   "topic": "yard",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في نهاية الموقف الموازي، كم يجب أن تبعد عن الرصيف تقريبا؟",
+   "options": [
+    "حوالي 30 سم دون لمسه",
+    "يجب أن تلمس العجلات الرصيف",
+    "متر ونصف",
+    "المسافة غير مهمة"
+   ],
+   "answer": 0,
+   "explain": "الهدف أن تكون السيارة موازية وقريبة من الرصيف (حوالي 30 سم) دون أن تلمسه",
+   "src": [
+    "S29",
+    "S38"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "roadtest-yard-010",
+   "topic": "yard",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "كيف تتحكم بالسرعة أثناء تمارين الرجوع في سيارة أوتوماتيك؟",
+   "options": [
+    "بسحب الفرامل اليدوية ورفعها مرة بعد مرة",
+    "بضغط البنزين بقوة حتى تنتهي قبل الوقت المحدد",
+    "بقدمك على الفرامل مع ترك السيارة تزحف ببطء",
+    "بوضع ناقل الحركة على (N) وترك السيارة تنزلق"
+   ],
+   "answer": 2,
+   "explain": "السيارة الأوتوماتيك تتحرك وحدها ببطء، وأنت تتحكم بسرعتها بالفرامل",
+   "tip": "بالباركنج البطء صاحبك، المهم تخلص ضمن الوقت",
+   "src": [
+    "S36",
+    "S37"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "roadtest-yard-011",
+   "topic": "yard",
+   "level": 2,
+   "exam": [
+    "dubai"
+   ],
+   "q": "في الساحة الذكية في دبي، من يقيم أداءك؟",
+   "options": [
+    "شرطي مرور يقف عند كل تمرين",
+    "نظام آلي بالكاميرات والحساسات",
+    "مدربك في المعهد من خارج السيارة",
+    "فاحص من الهيئة يجلس بجانبك في السيارة"
+   ],
+   "answer": 1,
+   "explain": "منذ 2019 أصبح الاختبار آليا بالكامل: 5 كاميرات وأكثر من 20 حساسا دون تدخل بشري في النتيجة",
+   "src": [
+    "S4"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-yard-012",
+   "topic": "yard",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "إذا انطفأ المحرك على المنحدر ولم تستطع التحرك في المحاولة الثانية، فما النتيجة؟",
+   "options": [
+    "لا مشكلة لأن السيارة أوتوماتيك",
+    "إعادة التمرين بعد 10 دقائق",
+    "خصم نقطة واحدة فقط",
+    "رسوب فوري في هذا التمرين"
+   ],
+   "answer": 3,
+   "explain": "العجز عن الحركة في المحاولة الثانية من أخطاء الرسوب الفوري في تمرين المنحدر",
+   "src": [
+    "S13",
+    "S26"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-yard-013",
+   "topic": "yard",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما الحد الأقصى لوقت تمرين الموقف المائل 60 درجة؟",
+   "options": [
+    "دقيقتان",
+    "30 ثانية",
+    "4 دقائق",
+    "5 دقائق"
+   ],
+   "answer": 0,
+   "explain": "وقت المائل 60 درجة هو الأقصر بين التمارين: دقيقتان فقط",
+   "src": [
+    "S13",
+    "S16",
+    "S26"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-yard-014",
+   "topic": "yard",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في تمرين المنحدر، كم يجب أن ترجع السيارة إلى الخلف حتى ترسب؟",
+   "options": [
+    "30 سم أو أكثر",
+    "50 سم أو أكثر",
+    "10 سم أو أكثر",
+    "متر أو أكثر"
+   ],
+   "answer": 0,
+   "explain": "إذا رجعت السيارة 30 سم أو أكثر ترسب فورا، والأفضل ألا ترجع أبدا",
+   "tip": "30 سم تقريبا طول مسطرة المدرسة",
+   "src": [
+    "S13",
+    "S26"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-yard-015",
+   "topic": "yard",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في تمرين المنحدر، كم ثانية لديك حتى تنطلق؟",
+   "options": [
+    "90 ثانية",
+    "60 ثانية",
+    "20 ثانية",
+    "لا يوجد وقت محدد"
+   ],
+   "answer": 1,
+   "explain": "أكثر من 60 ثانية حتى تنطلق يعني الرسوب في التمرين",
+   "src": [
+    "S13",
+    "S26"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-yard-016",
+   "topic": "yard",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما الطريقة الصحيحة للفرملة المفاجئة في سيارة أوتوماتيك؟",
+   "options": [
+    "سحب الفرامل اليدوية ولف المقود إلى اليمين",
+    "رفع القدم عن البنزين وترك السيارة تتوقف وحدها",
+    "ضغط قوي فوري على الفرامل واليدان على المقود",
+    "النظر في المرآة أولا ثم الفرملة بالتدريج"
+   ],
+   "answer": 2,
+   "explain": "الفرملة المفاجئة تعني ضغطا قويا فوريا، واليدان على المقود، والمقود مستقيم",
+   "src": [
+    "S13",
+    "S26"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-yard-017",
+   "topic": "yard",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في الموقف الموازي، متى تبدأ لف المقود إلى آخره نحو الرصيف؟",
+   "options": [
+    "عندما تشعر أن العجلة الخلفية لمست الرصيف",
+    "قبل أن تصل إلى السيارة الأمامية وأنت ما زلت تتقدم",
+    "عندما تصل مؤخرة سيارتك إلى آخر الموقف",
+    "بعد التوقف بمحاذاة السيارة الأمامية ومع بداية الرجوع"
+   ],
+   "answer": 3,
+   "explain": "تبدأ من نقطة ثابتة: مؤخرتك بمحاذاة مؤخرة السيارة الأمامية، ثم ترجع ببطء وتلف نحو الرصيف",
+   "src": [
+    "S38"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "roadtest-yard-018",
+   "topic": "yard",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في الموقف الموازي، متى تلف المقود إلى الجهة المعاكسة (بعيدا عن الرصيف)؟",
+   "options": [
+    "عندما يتجاوز صدامك الأمامي مؤخرة السيارة الأمامية",
+    "بعد أن تتوقف السيارة تماما داخل الموقف",
+    "عندما ترى الرصيف في المرآة الداخلية لأول مرة",
+    "فور وضع ناقل الحركة على الرجوع (R) وقبل الحركة"
+   ],
+   "answer": 0,
+   "explain": "بعد أن تتجاوز مقدمة سيارتك السيارة الأمامية تلف في الاتجاه المعاكس حتى تستقيم السيارة",
+   "src": [
+    "S38"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "roadtest-yard-019",
+   "topic": "yard",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في تمرين الكراج أصبحت السيارة مائلة وما زال لديك وقت، ما التصرف الصحيح؟",
+   "options": [
+    "تكمل الرجوع حتى تلمس الخط الخلفي",
+    "تتوقف وتنتظر من يصحح لك",
+    "تنزل من السيارة لترى الوضع",
+    "تتقدم قليلا وتصحح ثم ترجع مرة أخرى"
+   ],
+   "answer": 3,
+   "explain": "التصحيح بالتقدم قليلا ثم الرجوع مقبول ما دمت داخل الوقت ولم تلمس الخطوط",
+   "src": [
+    "S36"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "roadtest-yard-020",
+   "topic": "yard",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في تمرين الكراج، ما المرجع الذي يساعدك على معرفة أنك في منتصف الموقف؟",
+   "options": [
+    "صوت حساسات الرجوع فقط دون النظر",
+    "تساوي المسافة من الخطين في المرآتين الجانبيتين",
+    "ظهور العمود الأمامي في منتصف الزجاج الأمامي",
+    "المرآة الداخلية فقط لأنها تريك الخلف"
+   ],
+   "answer": 1,
+   "explain": "راقب المرآتين معا: إذا تساوت المسافة من الجهتين فأنت في المنتصف",
+   "src": [
+    "S36"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "roadtest-yard-021",
+   "topic": "yard",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في تمرين المنحدر بسيارة أوتوماتيك، ما الترتيب الذي يمنع رجوع السيارة؟",
+   "options": [
+    "الفرامل، ثم تحرير اليدوية، ثم البنزين بسرعة ونعومة",
+    "ضغط البنزين إلى آخره، ثم تحرير اليدوية فجأة",
+    "وضع ناقل الحركة على (N)، ثم ضغط البنزين بقوة",
+    "تحرير اليدوية، ثم رفع القدم عن الفرامل، ثم الانتظار"
+   ],
+   "answer": 0,
+   "explain": "الفرامل تمسك السيارة حتى اللحظة الأخيرة، ثم تنتقل إلى البنزين بسرعة حتى لا ترجع",
+   "src": [
+    "S13",
+    "S37"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "roadtest-yard-022",
+   "topic": "yard",
+   "level": 3,
+   "exam": [
+    "dubai"
+   ],
+   "q": "في معهد الإمارات للسياقة بدبي، إذا رسبت في تمرين واحد من تمارين الساحة، ماذا تفعل؟",
+   "options": [
+    "تفقد تصريح التعلم وتفتح ملفا جديدا في المعهد",
+    "تأخذ ساعة تدريب ثم تعيد التمرين الذي رسبت فيه فقط",
+    "تعود إلى الاختبار النظري ثم تبدأ الساحة من جديد",
+    "تعيد التمارين الخمسة كلها بعد 20 ساعة تدريب جديدة"
+   ],
+   "answer": 1,
+   "explain": "المعهد يطلب ساعة تدريب واحدة ثم تحجز التمرين الذي رسبت فيه فقط",
+   "src": [
+    "S14"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "roadtest-yard-023",
+   "topic": "yard",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في تمرين الفرملة المفاجئة بسرعة 30 كم/ساعة، ضمن أي مسافة يجب أن تتوقف؟",
+   "options": [
+    "15 مترا",
+    "11 مترا",
+    "3 أمتار",
+    "6 أمتار"
+   ],
+   "answer": 3,
+   "explain": "المسافات المطلوبة: 3 أمتار عند 20 كم/ساعة، و6 أمتار عند 30، و11 مترا عند 40",
+   "tip": "3 و6 و11: كل ما زادت السرعة بتزيد المسافة أكثر",
+   "src": [
+    "S13",
+    "S26"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-yard-024",
+   "topic": "yard",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في الفرملة المفاجئة، أي تصرف يرسبك حتى لو توقفت ضمن المسافة؟",
+   "options": [
+    "إبقاء المقود مستقيما",
+    "رفع يد عن المقود أثناء الفرملة",
+    "عدم النظر في المرآة قبل الفرملة",
+    "الضغط على الفرامل إلى آخرها"
+   ],
+   "answer": 1,
+   "explain": "يجب أن تبقى اليدان على المقود، أما النظر في المرآة فغير مطلوب في هذا التمرين",
+   "src": [
+    "S13",
+    "S26"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-yard-025",
+   "topic": "yard",
+   "level": 4,
+   "exam": [
+    "dubai"
+   ],
+   "q": "في الساحة الذكية في دبي، ماذا يحدث إذا تجاوزت سرعة السيارة 35 كم/ساعة؟",
+   "options": [
+    "يظهر تنبيه فقط",
+    "تتوقف السيارة تلقائيا",
+    "يخصم النظام نقطة واحدة",
+    "لا يحدث شيء"
+   ],
+   "answer": 1,
+   "explain": "سيارات الساحة الذكية فيها نظام أمان يوقفها إذا تجاوزت 35 كم/ساعة",
+   "src": [
+    "S18"
+   ],
+   "confidence": "medium",
+   "notes": "المصدر خبر سنة 2018"
+  },
+  {
+   "id": "roadtest-yard-026",
+   "topic": "yard",
+   "level": 4,
+   "exam": [
+    "dubai"
+   ],
+   "q": "حسب دليل هيئة الطرق في دبي، كم نقطة خصم في تمرين واحد تعني الرسوب فيه؟",
+   "options": [
+    "6 نقاط أو أكثر",
+    "4 نقاط أو أكثر",
+    "3 نقاط",
+    "نقطتان"
+   ],
+   "answer": 1,
+   "explain": "إذا جمعت 4 نقاط خصم أو أكثر في تمرين واحد ترسب فيه وتعيده",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-yard-027",
+   "topic": "yard",
+   "level": 5,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في تمرين الفرملة المفاجئة بسرعة 40 كم/ساعة، ما أقصى مسافة مقبولة حتى تتوقف؟",
+   "options": [
+    "20 مترا",
+    "8 أمتار",
+    "11 مترا",
+    "6 أمتار"
+   ],
+   "answer": 2,
+   "explain": "عند 40 كم/ساعة يجب أن تتوقف خلال 11 مترا، وإلا ترسب في التمرين",
+   "src": [
+    "S13",
+    "S26"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-yard-028",
+   "topic": "yard",
+   "level": 5,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أي خطأ من التالية ليس من أخطاء الرسوب الفوري في قائمة اختبار المواقف؟",
+   "options": [
+    "صدم العمود في موقف الكراج أو تحريكه",
+    "عدم النظر في المرآة قبل الفرملة المفاجئة",
+    "رجوع السيارة 30 سم أو أكثر على المنحدر",
+    "تجاوز 5 دقائق في تمرين الموقف الموازي"
+   ],
+   "answer": 1,
+   "explain": "القائمة الرسمية تذكر أن النظر في المرآة غير مطلوب في الفرملة المفاجئة، أما البقية فكلها رسوب فوري",
+   "src": [
+    "S13",
+    "S26"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-001",
+   "topic": "roadtest",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما أول ما تفعله عندما تجلس في السيارة قبل اختبار الطريق؟",
+   "options": [
+    "تشغيل الراديو",
+    "تشغيل إشارة اليسار",
+    "ضبط المقعد والمرايا وربط الحزام",
+    "الانطلاق فورا لتوفير الوقت"
+   ],
+   "answer": 2,
+   "explain": "فحوصات ما قبل القيادة جزء من التقييم، وتبدأ بالمقعد والمرايا والحزام",
+   "src": [
+    "S3",
+    "S5",
+    "S30"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-002",
+   "topic": "roadtest",
+   "level": 1,
+   "exam": [
+    "dubai"
+   ],
+   "q": "قبل موعد اختبار هيئة الطرق في دبي، متى يجب أن تصل؟",
+   "options": [
+    "الوقت لا يهم",
+    "قبل الموعد بساعتين",
+    "قبل الموعد بنصف ساعة",
+    "قبل الموعد بدقائق قليلة"
+   ],
+   "answer": 2,
+   "explain": "هيئة الطرق تطلب الحضور قبل الموعد بنصف ساعة",
+   "src": [
+    "S1"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-003",
+   "topic": "roadtest",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما الترتيب الصحيح قبل تغيير المسار؟",
+   "options": [
+    "إشارة، ثم انتقال، ثم نظرة في المرآة للتأكد",
+    "مرآة، ثم انتقال، ثم إشارة إذا لزم الأمر",
+    "مرآة، ثم إشارة، ثم التفاتة، ثم الانتقال",
+    "التفاتة، ثم انتقال، ثم إشارة بعد الوصول"
+   ],
+   "answer": 2,
+   "explain": "هذا الروتين يتكرر في كل حركة جانبية، والفاحص يراقبه في كل مرة",
+   "tip": "مراية، غماز، التفاتة، بعدين تحرك",
+   "src": [
+    "S3",
+    "S22",
+    "S29"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-004",
+   "topic": "roadtest",
+   "level": 1,
+   "exam": [
+    "dubai"
+   ],
+   "q": "كم عدد أسئلة الاختبار النظري في دبي، وكم إجابة صحيحة تحتاج؟",
+   "options": [
+    "25 سؤالا و18 إجابة صحيحة",
+    "50 سؤالا و45 إجابة صحيحة",
+    "35 سؤالا و23 إجابة صحيحة",
+    "40 سؤالا و30 إجابة صحيحة"
+   ],
+   "answer": 3,
+   "explain": "صفحة هيئة الطرق الحالية: 40 سؤالا وتحتاج 30 إجابة صحيحة على الأقل",
+   "tip": "35 و23 صيغة قديمة، لا تعتمد عليها",
+   "src": [
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": "مواقع تدريب كثيرة ما زالت تذكر الصيغة القديمة (35 سؤالا و23 للنجاح)"
+  },
+  {
+   "id": "roadtest-roadtest-005",
+   "topic": "roadtest",
+   "level": 1,
+   "exam": [
+    "sharjah"
+   ],
+   "q": "كم عدد أسئلة اختبار الإشارات في الشارقة، وكم إجابة صحيحة تحتاج؟",
+   "options": [
+    "45 سؤالا و36 إجابة صحيحة",
+    "25 سؤالا و18 إجابة صحيحة",
+    "40 سؤالا و30 إجابة صحيحة",
+    "35 سؤالا و21 إجابة صحيحة"
+   ],
+   "answer": 1,
+   "explain": "معهد الشارقة لتعليم قيادة السيارات: 25 سؤالا في 20 دقيقة، وتحتاج 18 إجابة صحيحة",
+   "src": [
+    "S25"
+   ],
+   "confidence": "high",
+   "notes": "أرقام أخرى متداولة في مواقع التدريب دون مصدر رسمي"
+  },
+  {
+   "id": "roadtest-roadtest-006",
+   "topic": "roadtest",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "عند الانطلاق من جانب الطريق والرصيف على يمينك، أي إشارة تستعمل؟",
+   "options": [
+    "لا حاجة إلى إشارة",
+    "إشارة اليمين",
+    "إشارة اليسار",
+    "إشارتا الخطر معا"
+   ],
+   "answer": 2,
+   "explain": "تنطلق من الرصيف الأيمن نحو المسار على يسارك، فتشغل إشارة اليسار وتلتفت إلى النقطة العمياء اليسرى",
+   "src": [
+    "S3",
+    "S29"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-007",
+   "topic": "roadtest",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما المقصود بالنقطة العمياء؟",
+   "options": [
+    "المنطقة خلف السيارة التي تغطيها حساسات الرجوع",
+    "المنطقة أمام السيارة التي لا تضيئها الأنوار ليلا",
+    "الزاوية بين المرآة الداخلية والزجاج",
+    "منطقة بجانب السيارة وخلفها لا تظهر في المرايا"
+   ],
+   "answer": 3,
+   "explain": "المرايا لا تغطي كل شيء، لذلك تلتفت فوق كتفك قبل تغيير المسار أو الانطلاق",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-008",
+   "topic": "roadtest",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "كيف تلتفت إلى النقطة العمياء بطريقة صحيحة؟",
+   "options": [
+    "تفتح النافذة وتخرج رأسك لترى السيارات خلفك",
+    "تكتفي بالمرآة الداخلية لأنها تغطي كل الجوانب",
+    "تدير رأسك بسرعة نحو النافذة الخلفية دون تحريك المقود",
+    "تدير جسمك كله إلى الخلف 3 ثوان حتى ترى كل شيء جيدا"
+   ],
+   "answer": 2,
+   "explain": "دليل هيئة الطرق: حرك رأسك فقط، ولا تبعد عينيك عن الطريق أكثر من ثانية، ولا تنحرف بالسيارة",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-009",
+   "topic": "roadtest",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "وصلت إلى لوحة قف والطريق خال تماما، ماذا تفعل؟",
+   "options": [
+    "تتوقف توقفا كاملا عند الخط ثم تنظر وتتابع",
+    "تتوقف بعد الخط بمتر حتى ترى أفضل",
+    "تخفف كثيرا وتتابع دون توقف لأن الطريق خال",
+    "تستعمل المنبه للتنبيه ثم تتابع بحذر"
+   ],
+   "answer": 0,
+   "explain": "عدم الوقوف عند لوحة قف أو خط الوقوف من الأخطاء الكبيرة التي ترسبك فورا",
+   "src": [
+    "S5",
+    "S29"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-010",
+   "topic": "roadtest",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في الدوار في الإمارات، لمن الأولوية؟",
+   "options": [
+    "للسيارة الأكبر حجما",
+    "للسيارات داخل الدوار، وهي قادمة من يسارك",
+    "لمن يستعمل المنبه أولا",
+    "للسيارات التي تريد الدخول من يمينك"
+   ],
+   "answer": 1,
+   "explain": "السيارات داخل الدوار لها الأولوية، وهي تأتيك من اليسار لأن السير عكس عقارب الساعة",
+   "src": [
+    "S5",
+    "S29"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-011",
+   "topic": "roadtest",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في أي اتجاه تسير السيارات داخل الدوار في الإمارات؟",
+   "options": [
+    "حسب وقت اليوم",
+    "مع عقارب الساعة",
+    "حسب حجم الدوار",
+    "عكس عقارب الساعة"
+   ],
+   "answer": 3,
+   "explain": "القيادة في الإمارات على اليمين، لذلك تدور السيارات داخل الدوار عكس عقارب الساعة",
+   "src": [
+    "S29"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-012",
+   "topic": "roadtest",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "بدأ شخص بعبور ممر المشاة أمامك، ماذا تفعل؟",
+   "options": [
+    "تتوقف وتعطيه الأولوية حتى يعبر",
+    "تتابع إذا كان في آخر الممر",
+    "تلتف حوله",
+    "تستعمل المنبه ليسرع"
+   ],
+   "answer": 0,
+   "explain": "دليل هيئة الطرق: لا تعرض المشاة لأي خطر، وتوقف كلما لزم ذلك",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-013",
+   "topic": "roadtest",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "كم يستغرق اختبار الطريق تقريبا؟",
+   "options": [
+    "حوالي 20 دقيقة",
+    "ساعة كاملة",
+    "5 دقائق",
+    "ساعتان"
+   ],
+   "answer": 0,
+   "explain": "في دبي حوالي 20 دقيقة حسب دليل الهيئة، وفي الشارقة لا تزيد عن 20 دقيقة",
+   "src": [
+    "S3",
+    "S34"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-014",
+   "topic": "roadtest",
+   "level": 2,
+   "exam": [
+    "sharjah"
+   ],
+   "q": "في الشارقة، من يجري الاختبار النهائي على الطريق؟",
+   "options": [
+    "نظام آلي دون فاحص",
+    "فاحص من شرطة الشارقة",
+    "مدربك في المعهد",
+    "موظف من هيئة الطرق في دبي"
+   ],
+   "answer": 1,
+   "explain": "الاختبار النهائي في الشارقة يجريه فاحصو شرطة المرور، أما اختبار التقييم فيجريه المعهد",
+   "src": [
+    "S25",
+    "S34"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-015",
+   "topic": "roadtest",
+   "level": 2,
+   "exam": [
+    "sharjah"
+   ],
+   "q": "في الشارقة، ما الاختبار الذي يأتي مباشرة قبل الاختبار النهائي على الطريق؟",
+   "options": [
+    "اختبار الإشارات",
+    "فحص النظر",
+    "المحاضرات النظرية",
+    "اختبار التقييم في المعهد"
+   ],
+   "answer": 3,
+   "explain": "بعد الساحة يأتي اختبار التقييم، وهو يحدد إن كنت جاهزا للاختبار النهائي",
+   "src": [
+    "S25"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-016",
+   "topic": "roadtest",
+   "level": 2,
+   "exam": [
+    "dubai"
+   ],
+   "q": "في دبي، كم ساعة من المحاضرات النظرية تحتاج قبل الاختبار النظري لرخصة السيارة؟",
+   "options": [
+    "20 ساعة",
+    "لا توجد محاضرات",
+    "8 ساعات",
+    "ساعتان"
+   ],
+   "answer": 2,
+   "explain": "لرخصة السيارة 8 ساعات من المحاضرات الإلزامية قبل حجز الاختبار النظري",
+   "src": [
+    "S1",
+    "S11"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-017",
+   "topic": "roadtest",
+   "level": 2,
+   "exam": [
+    "sharjah"
+   ],
+   "q": "في معهد الشارقة لتعليم قيادة السيارات، كم حصة تدريب عملي يحتاج المبتدئ؟",
+   "options": [
+    "20 حصة مدة كل منها ساعة",
+    "10 حصص فقط",
+    "100 حصة",
+    "50 حصة مدة كل منها 40 دقيقة"
+   ],
+   "answer": 3,
+   "explain": "حسب صفحة المعهد وقائمة أسعاره لسنة 2025: 50 حصة، والحصة 40 دقيقة",
+   "src": [
+    "S25",
+    "S28"
+   ],
+   "confidence": "high",
+   "notes": "خبر لشرطة الشارقة سنة 2024 ذكر 40 حصة"
+  },
+  {
+   "id": "roadtest-roadtest-018",
+   "topic": "roadtest",
+   "level": 2,
+   "exam": [
+    "sharjah"
+   ],
+   "q": "في الشارقة، ما الخدمة التي تسمح لك بتقديم الاختبار النظري من البيت؟",
+   "options": [
+    "إرسال الإجابات بالبريد الإلكتروني إلى المعهد",
+    "المدرب يقدم الاختبار عنك بتفويض رسمي",
+    "لا توجد خدمة كهذه، فالاختبار في المعهد فقط",
+    "الاختبار عن بعد مع التحقق من الهوية بالكاميرا"
+   ],
+   "answer": 3,
+   "explain": "منذ 2022 تتيح شرطة الشارقة الاختبار النظري عن بعد، بعد أن يرسل لك المعهد الرابط",
+   "src": [
+    "S32"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-019",
+   "topic": "roadtest",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "عندما يطلب منك الفاحص التوقف بجانب الطريق في نهاية الاختبار، ما الترتيب الأصح؟",
+   "options": [
+    "إشارة يسار، ثم تخفيف، ثم التوقف في منتصف الطريق",
+    "إشارة يمين، ثم التوقف عند موقف الحافلات لأنه أقرب",
+    "فرملة فورية في مكانك، ثم إشارة الخطر، ثم النزول",
+    "مرآة، ثم إشارة يمين، ثم تخفيف، ثم التوقف بجانب الرصيف"
+   ],
+   "answer": 3,
+   "explain": "الوقوف بجانب الطريق من بنود التقييم، ويجب أن يكون آمنا وفي مكان مسموح",
+   "src": [
+    "S3",
+    "S5"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "roadtest-roadtest-020",
+   "topic": "roadtest",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "بعد أن تتوقف في نهاية الاختبار بسيارة أوتوماتيك، ماذا تفعل؟",
+   "options": [
+    "تضع ناقل الحركة على (P) وتسحب الفرامل اليدوية",
+    "تطفئ المحرك وناقل الحركة ما زال على (D)",
+    "تضع ناقل الحركة على (R) وتسحب الفرامل اليدوية",
+    "تبقي ناقل الحركة على (D) وترفع قدمك عن الفرامل"
+   ],
+   "answer": 0,
+   "explain": "وضع الوقوف مع الفرامل اليدوية يمنع حركة السيارة بعد أن ترفع قدمك",
+   "src": [
+    "S3",
+    "S37"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "roadtest-roadtest-021",
+   "topic": "roadtest",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "شعرت بالتوتر أثناء اختبار الطريق، ما الذي يساعدك؟",
+   "options": [
+    "التنفس بهدوء والتركيز على روتين المرآة والإشارة",
+    "إيقاف السيارة في أي مكان والنزول منها قليلا",
+    "سؤال الفاحص عن نتيجتك وأنت ما زلت تقود",
+    "الإسراع قليلا حتى ينتهي الاختبار بسرعة أكبر"
+   ],
+   "answer": 0,
+   "explain": "هيئة الطرق وشرطة الشارقة ذكرتا الخوف من أهم أسباب الرسوب، والروتين الثابت يخفف التوتر",
+   "src": [
+    "S5",
+    "S34"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "roadtest-roadtest-022",
+   "topic": "roadtest",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "قبل الخروج من الدوار، أي إشارة تستعمل؟",
+   "options": [
+    "إشارة اليسار",
+    "إشارتا الخطر معا",
+    "لا حاجة إلى إشارة",
+    "إشارة اليمين"
+   ],
+   "answer": 3,
+   "explain": "الخروج من الدوار يكون إلى اليمين، فشغل إشارة اليمين وانظر في المرآة اليمنى قبل الخروج",
+   "src": [
+    "S29"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-023",
+   "topic": "roadtest",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تريد الانعطاف يسارا أو الدوران للخلف من دوار متعدد المسارات دون أسهم على الأرض، أي مسار أنسب؟",
+   "options": [
+    "أي مسار",
+    "كتف الطريق",
+    "المسار الأيسر",
+    "المسار الأيمن"
+   ],
+   "answer": 2,
+   "explain": "دليل معهد الشارقة: الدوران للخلف في الدوار يتبع خطوات الانعطاف يسارا، أي من المسار الأيسر، وإذا وجدت أسهما فاتبعها",
+   "src": [
+    "S29"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "roadtest-roadtest-024",
+   "topic": "roadtest",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تحولت الإشارة الضوئية إلى الأصفر وأنت تقترب منها، ما التصرف الصحيح؟",
+   "options": [
+    "تستعمل المنبه لتنبيه الآخرين ثم تتابع بنفس السرعة",
+    "تتوقف إن أمكنك ذلك بأمان، وتتابع إن كنت قريبا جدا من الخط",
+    "تتوقف فجأة مهما كانت المسافة ولو كنت على الخط",
+    "تسرع قدر الإمكان حتى تعبر التقاطع قبل أن تصبح الإشارة حمراء"
+   ],
+   "answer": 1,
+   "explain": "الأصفر يعني استعد للتوقف، والمتابعة فقط لمن أصبح قريبا جدا من الخط",
+   "src": [
+    "S29"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-025",
+   "topic": "roadtest",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما القاعدة عند المربع الأصفر في التقاطع؟",
+   "options": [
+    "لا تدخله إلا إذا كان مخرجك خاليا، ولا تتوقف داخله",
+    "هو منطقة انتظار للحافلات وسيارات الأجرة فقط",
+    "التوقف داخله مسموح إذا كانت الإشارة خضراء",
+    "تتوقف داخله حتى تصبح الإشارة حمراء"
+   ],
+   "answer": 0,
+   "explain": "التوقف داخل المربع الأصفر يغلق التقاطع، وهو في اختبار دبي خطأ كبير يرسبك",
+   "src": [
+    "S5",
+    "S20"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-026",
+   "topic": "roadtest",
+   "level": 3,
+   "exam": [
+    "dubai"
+   ],
+   "q": "إذا كانت قيادتك ممتازة طوال الاختبار ثم ارتكبت خطأ كبيرا في آخره، فما النتيجة حسب هيئة الطرق؟",
+   "options": [
+    "تعيد الجزء الأخير فقط",
+    "ترسب",
+    "تنجح لأن معظم الاختبار ممتاز",
+    "يعطيك الفاحص تحذيرا"
+   ],
+   "answer": 1,
+   "explain": "خطأ كبير واحد يكفي للرسوب في أي لحظة، فابق مركزا حتى نهاية الاختبار",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-027",
+   "topic": "roadtest",
+   "level": 3,
+   "exam": [
+    "dubai"
+   ],
+   "q": "في دبي، متى يبدأ التدريب العملي على السيارة؟",
+   "options": [
+    "في أي وقت بعد فحص النظر مباشرة",
+    "بعد اختبار الساحة مع الهيئة",
+    "قبل المحاضرات لتتعلم القيادة أولا",
+    "بعد النجاح في الاختبار النظري"
+   ],
+   "answer": 3,
+   "explain": "المحاضرات ثم الاختبار النظري، وبعد النجاح يبدأ التدريب العملي",
+   "src": [
+    "S3",
+    "S12"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-028",
+   "topic": "roadtest",
+   "level": 3,
+   "exam": [
+    "dubai"
+   ],
+   "q": "في معهد الإمارات للسياقة بدبي، كم ساعة تدريب عملي يحتاج المبتدئ الذي لا يملك خبرة؟",
+   "options": [
+    "20 ساعة",
+    "10 ساعات",
+    "15 ساعة",
+    "40 ساعة"
+   ],
+   "answer": 0,
+   "explain": "المبتدئ 20 ساعة، ومن لديه رخصة أجنبية عمرها من 2 إلى 5 سنوات 15 ساعة، وأكثر من 5 سنوات 10 ساعات",
+   "src": [
+    "S11",
+    "S12"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-029",
+   "topic": "roadtest",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "إذا تدربت ونجحت على سيارة أوتوماتيك، فماذا تسمح لك رخصتك؟",
+   "options": [
+    "قيادة الشاحنات الخفيفة",
+    "قيادة السيارات الأوتوماتيك فقط",
+    "قيادة اليدوي فقط",
+    "قيادة الأوتوماتيك واليدوي"
+   ],
+   "answer": 1,
+   "explain": "رخصة الأوتوماتيك لا تسمح بقيادة سيارة يدوية، وتحتاج اختبارا جديدا لذلك",
+   "src": [
+    "S3",
+    "S25"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-030",
+   "topic": "roadtest",
+   "level": 3,
+   "exam": [
+    "dubai"
+   ],
+   "q": "في دبي، ماذا يحدث لملف التدريب إذا لم تقدم أي اختبار خلال 6 أشهر من آخر موعد؟",
+   "options": [
+    "يتوقف الملف",
+    "ينتقل الملف إلى الشارقة",
+    "لا يحدث شيء",
+    "تنجح تلقائيا"
+   ],
+   "answer": 0,
+   "explain": "صفحة هيئة الطرق: ملف التدريب يتوقف إذا لم تقدم أي اختبار خلال 6 أشهر",
+   "src": [
+    "S1"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-031",
+   "topic": "roadtest",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما المسافة الآمنة المناسبة بينك وبين السيارة الأمامية في طقس عادي؟",
+   "options": [
+    "لا توجد قاعدة",
+    "نصف ثانية",
+    "طول سيارة واحدة مهما كانت السرعة",
+    "ثانيتان على الأقل"
+   ],
+   "answer": 3,
+   "explain": "قاعدة الثانيتين: عندما تمر السيارة الأمامية بعلامة، تصل أنت إليها بعد ثانيتين على الأقل، وزدها في المطر والليل",
+   "src": [
+    "S29"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-032",
+   "topic": "roadtest",
+   "level": 3,
+   "exam": [
+    "sharjah"
+   ],
+   "q": "أي مما يلي من أسباب الرسوب التي ذكرتها شرطة الشارقة؟",
+   "options": [
+    "عدم الالتزام بخط السير وإشارات المرور",
+    "تشغيل المكيف أو الراديو في السيارة",
+    "القيادة باليدين الاثنتين على المقود",
+    "لبس النظارة الطبية أثناء الاختبار"
+   ],
+   "answer": 0,
+   "explain": "شرطة الشارقة ذكرت: الخوف والتوتر، وأخطاء تسبب حوادث، والدوران دون سيطرة، وعدم الالتزام بالإشارات، وعدم الالتزام بخط السير",
+   "src": [
+    "S34"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "roadtest-roadtest-033",
+   "topic": "roadtest",
+   "level": 3,
+   "exam": [
+    "dubai"
+   ],
+   "q": "في الاختبار النظري في دبي، أي قسم يختبر قدرتك على ملاحظة الخطر؟",
+   "options": [
+    "مقاطع فيديو لمواقف قيادة حقيقية",
+    "أسئلة حساب عن مسافات التوقف",
+    "قيادة قصيرة على جهاز محاكاة القيادة",
+    "مقابلة شفهية مع فاحص من الهيئة"
+   ],
+   "answer": 0,
+   "explain": "الاختبار يشمل مقاطع قصيرة لمواقف مثل المطر والطريق السريع ومناطق المدارس، وتختار فيها التصرف الأسلم",
+   "src": [
+    "S6",
+    "S10"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-034",
+   "topic": "roadtest",
+   "level": 4,
+   "exam": [
+    "dubai"
+   ],
+   "q": "في اختبار الطريق في دبي 16 بندا للتقييم العادي، في كم بند منها على الأقل تحتاج أداء جيدا؟",
+   "options": [
+    "12 بندا",
+    "10 بنود",
+    "16 بندا",
+    "8 بنود"
+   ],
+   "answer": 0,
+   "explain": "حسب هيئة الطرق (2018): النجاح يحتاج أداء جيدا في 12 بندا على الأقل من 16، بشرط ألا ترتكب أي خطأ كبير",
+   "src": [
+    "S5"
+   ],
+   "confidence": "medium",
+   "notes": "الرقم من تصريح عام 2018"
+  },
+  {
+   "id": "roadtest-roadtest-035",
+   "topic": "roadtest",
+   "level": 4,
+   "exam": [
+    "dubai"
+   ],
+   "q": "في دبي، أي من الأخطاء التالية من الأخطاء الكبيرة التي ترسبك فورا حسب هيئة الطرق؟",
+   "options": [
+    "الدخول إلى الدوار قبل التأكد من خلوه",
+    "ضبط المرايا قبل الحركة",
+    "تشغيل الإشارة قبل الانعطاف",
+    "القيادة أبطأ قليلا من الحد على طريق مزدحم"
+   ],
+   "answer": 0,
+   "explain": "هيئة الطرق ذكرت من الأخطاء الكبيرة: عدم التأكد من خلو الطريق أو المسار أو الدوار قبل التقدم",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-036",
+   "topic": "roadtest",
+   "level": 4,
+   "exam": [
+    "dubai"
+   ],
+   "q": "حسب دليل هيئة الطرق، ما التدريب المطلوب بعد تقييم الطريق وقبل الاختبار النهائي؟",
+   "options": [
+    "حصة ليلية واحدة فقط داخل المدينة",
+    "4 حصص على الأقل على طرق سرعتها 100 كم/ساعة أو أكثر",
+    "لا يوجد تدريب إضافي، تحجز الاختبار مباشرة",
+    "10 ساعات إضافية في الساحة لتمارين الركن فقط"
+   ],
+   "answer": 1,
+   "explain": "الدليل يطلب تدريبا على الطرق السريعة: 4 حصص على الأقل بعد تقييم الطريق",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-037",
+   "topic": "roadtest",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تريد الانعطاف يسارا عند تقاطع بإشارة خضراء دون سهم، وهناك سيارات قادمة من الأمام، ماذا تفعل؟",
+   "options": [
+    "تنعطف فورا لأن الإشارة الخضراء تعطيك الأولوية",
+    "تستعمل المنبه لتنبيه القادمين ثم تنعطف أمامهم",
+    "تعطي الأولوية للقادمين وتنعطف عند وجود فجوة آمنة",
+    "تكمل مستقيما ثم تدور للخلف من مكان ممنوع"
+   ],
+   "answer": 2,
+   "explain": "الانعطاف يسارا يقطع طريق السيارات القادمة من الأمام، والدخول قبل التأكد من خلو الطريق خطأ كبير",
+   "src": [
+    "S5"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "roadtest-roadtest-038",
+   "topic": "roadtest",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أنت في المسار الأيسر على طريق من 3 مسارات، ومخرجك على اليمين بعد 300 متر، ما التصرف الأصح؟",
+   "options": [
+    "تتوقف في مسارك حتى تجد فجوة كافية للانتقال",
+    "تفوت المخرج ثم تدور للخلف من مكان ممنوع",
+    "تنتقل مبكرا مسارا بعد مسار مع الروتين في كل مرة",
+    "تعبر المسارين دفعة واحدة قبل المخرج مباشرة"
+   ],
+   "answer": 2,
+   "explain": "تغيير المسار في آخر لحظة من أشهر أسباب الرسوب، فخطط لمخرجك مبكرا",
+   "src": [
+    "S3",
+    "S20",
+    "S21"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-039",
+   "topic": "roadtest",
+   "level": 4,
+   "exam": [
+    "sharjah"
+   ],
+   "q": "في الشارقة، إذا أردت أن يأتي الفاحص إلى مكانك لإجراء الاختبار النهائي، ماذا تفعل؟",
+   "options": [
+    "تطلب من مدربك في المعهد أن يختبرك بنفسه",
+    "تنقل ملفك إلى دبي لأنها توفر هذه الخدمة",
+    "هذا غير ممكن، فالاختبار في المعهد فقط",
+    "تطلب خدمة الاختبار الخارجي عند حجز الموعد"
+   ],
+   "answer": 3,
+   "explain": "شرطة الشارقة توفر خدمة يأتي فيها الفاحص إلى البيت أو العمل مقابل رسوم إضافية",
+   "src": [
+    "S31",
+    "S33"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "roadtest-roadtest-040",
+   "topic": "roadtest",
+   "level": 4,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "تريد الخروج من الدوار من المخرج الأول إلى اليمين، أين تكون قبل الدخول؟",
+   "options": [
+    "في أي مسار",
+    "في المسار الأوسط مع إشارة اليسار",
+    "في المسار الأيمن مع إشارة اليمين",
+    "في المسار الأيسر"
+   ],
+   "answer": 2,
+   "explain": "للمخرج الأول إلى اليمين خذ المسار الأيمن، وإذا وجدت أسهما على الأرض فاتبعها",
+   "src": [
+    "S29"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "roadtest-roadtest-041",
+   "topic": "roadtest",
+   "level": 4,
+   "exam": [
+    "dubai"
+   ],
+   "q": "هل يمكن أن يطلب منك الفاحص في دبي ركنا بالرجوع خلال اختبار الطريق؟",
+   "options": [
+    "لا، تمارين الركن في الساحة فقط",
+    "فقط إذا رسبت سابقا في اختبار الساحة",
+    "فقط إذا كان الاختبار في الليل",
+    "نعم، دليل الهيئة يذكر أنه قد يطلبه"
+   ],
+   "answer": 3,
+   "explain": "دليل هيئة الطرق: الفاحص قد يختبرك في الركن بالرجوع أثناء اختبار الطريق",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-042",
+   "topic": "roadtest",
+   "level": 5,
+   "exam": [
+    "dubai"
+   ],
+   "q": "حسب دليل هيئة الطرق، في أي مرحلة تدريب تتعلم الدوارات والدوران للخلف وتغيير المسار؟",
+   "options": [
+    "مرحلة التحكم بالسيارة في الساحة المغلقة",
+    "مرحلة الطرق متعددة المسارات (60 إلى 80 كم/ساعة)",
+    "بعد الحصول على الرخصة مع مدرب خاص",
+    "مرحلة الطريق السريع (100 كم/ساعة أو أكثر) فقط"
+   ],
+   "answer": 1,
+   "explain": "المرحلة الثالثة في الدليل: طرق متعددة المسارات بسرعة 60 إلى 80 كم/ساعة، وفيها الدوارات والدوران للخلف وتغيير المسار",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-043",
+   "topic": "roadtest",
+   "level": 5,
+   "exam": [
+    "dubai"
+   ],
+   "q": "حسب دليل هيئة الطرق، ما الحد الأدنى من التدريب الليلي؟",
+   "options": [
+    "لا يوجد تدريب ليلي",
+    "حصة واحدة مدتها 10 دقائق",
+    "حصتان (ساعة واحدة)",
+    "10 حصص"
+   ],
+   "answer": 2,
+   "explain": "الدليل يطلب حصتين على الأقل (ساعة) من القيادة الليلية",
+   "src": [
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "roadtest-roadtest-044",
+   "topic": "roadtest",
+   "level": 5,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "فاتك المخرج الذي تريده أثناء الاختبار على طريق سريع، ما التصرف الصحيح؟",
+   "options": [
+    "تتابع بأمان وتبحث عن طريق آخر مسموح",
+    "تتوقف على الكتف وترجع إلى الخلف",
+    "تفرمل فجأة وتنعطف",
+    "تعبر الخط الأبيض المتصل بسرعة"
+   ],
+   "answer": 0,
+   "explain": "الأمان أهم من المخرج: تابع طريقك وارجع من طريق مسموح، فالحركة المفاجئة أو المخالفة ترسبك",
+   "src": [
+    "S20",
+    "S21"
+   ],
+   "confidence": "medium"
+  }
+ ]
+}

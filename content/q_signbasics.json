@@ -1,0 +1,1093 @@
+{
+ "module": "signbasics",
+ "updated": "2026-09-29",
+ "sources": {
+  "S1": {
+   "title": "Light Motor Vehicle Handbook, A Guide to Safe Driving, 3rd edition (English), Road Signs part",
+   "url": "https://russiadubai.com/upload/iblock/ac6/ac6fa71db851d0137a784bd80278acff.pdf",
+   "publisher": "RTA Dubai, Licensing Agency (mirror copy of the official handbook)",
+   "date": "2012-01"
+  },
+  "S2": {
+   "title": "Driving Safely in Dubai, 1st edition (control, mandatory, prohibitory, warning and parking sign groups)",
+   "url": "https://licensing.rta.ae/handbook/DrivingSafelyInDubaiEN.pdf",
+   "publisher": "RTA Dubai, Licensing Agency",
+   "date": "undated"
+  },
+  "S3": {
+   "title": "Signal Charts (Arabic): regulatory, warning and guide signs",
+   "url": "https://www.drivedubai.ae/public/uploads/downloads/20260727111506Signal-Charts-Arabic.pdf",
+   "publisher": "Drive Dubai (RTA-licensed driving institute)",
+   "date": "2026-07"
+  },
+  "S4": {
+   "title": "Road Signs, Road Markings and Traffic Signals, signal chart (English)",
+   "url": "https://edi-uae.com/public/uploads/downloads/20191126120000English-Signal-Chart.pdf",
+   "publisher": "Emirates Driving Institute, Dubai",
+   "date": "2019-11"
+  },
+  "S6": {
+   "title": "Ministerial Decision No. 130 of 1997, Executive Regulations of the Federal Traffic Law (Art. 25 to 28, 33)",
+   "url": "https://uaelegislation.gov.ae/ar/legislations/1020/download",
+   "publisher": "UAE Legislation portal",
+   "date": "1997-03"
+  },
+  "S7": {
+   "title": "Federal Decree-Law No. 14 of 2024 on Traffic Regulation (Art. 1, 4, 7)",
+   "url": "https://uaelegislation.gov.ae/ar/legislations/2598/download",
+   "publisher": "UAE Legislation portal",
+   "date": "2024-09"
+  },
+  "S8": {
+   "title": "Light Motor Vehicle Handbook, 7th edition (English), tram section: tram signs and tram priority",
+   "url": "https://edi-uae.com/public/uploads/downloads/20190724133013RTA_Handbook_-_Light_Motor_Vehicle_(LMV)_-_English.pdf",
+   "publisher": "RTA Dubai, Licensing Agency (copy hosted by Emirates Driving Institute)",
+   "date": "2016-01"
+  },
+  "S9": {
+   "title": "Emirate of Abu Dhabi Work Zone Traffic Management Manual: Principles and Practice, Issue 1",
+   "url": "https://pdfcoffee.com/--6281-pdf-free.html",
+   "publisher": "Department of Transport, Abu Dhabi (copy)",
+   "date": "2014-02"
+  },
+  "S11": {
+   "title": "Route Numbering System Policy and Procedures TR-538, 1st edition (E-route emblem)",
+   "url": "https://jawdah.qcc.abudhabi.ae/en/Registration/QCCServices/Services/STD/ISGL/ISGL-LIST/TR-538.pdf",
+   "publisher": "Department of Transport, Abu Dhabi (via QCC)",
+   "date": "2018-01"
+  },
+  "S12": {
+   "title": "Road signs in the United Arab Emirates (sign list based on the Abu Dhabi MUTCD)",
+   "url": "https://en.wikipedia.org/wiki/Road_signs_in_the_United_Arab_Emirates",
+   "publisher": "Wikipedia",
+   "date": "2026-09 (accessed)"
+  },
+  "S13": {
+   "title": "Dubai RTA installs 210,000 road signs to boost safety and cut accidents (colour coding of guide signs)",
+   "url": "https://gulfnews.com/uae/transport/dubai-rta-installs-210000-road-signs-to-boost-safety-and-cut-accidents-1.500359277",
+   "publisher": "Gulf News",
+   "date": "2025-11"
+  },
+  "S14": {
+   "title": "Guide to understanding Dubai's colour-coded street signs",
+   "url": "https://www.khaleejtimes.com/uae/transport/guide-to-understanding-dubais-colour-coded-street-signs",
+   "publisher": "Khaleej Times",
+   "date": "2023-07"
+  },
+  "S15": {
+   "title": "Reading Dubai's road signs (E-route falcon emblem, D-route fort emblem)",
+   "url": "https://gulfnews.com/uae/transport/reading-dubais-road-signs-1.254255",
+   "publisher": "Gulf News",
+   "date": "2006-09"
+  },
+  "S17": {
+   "title": "Decoding RTA road signs: your guide to navigating Dubai's roadways",
+   "url": "https://focus.hidubai.com/decoding-rta-road-signs/",
+   "publisher": "HiDubai Focus",
+   "date": "2023-06"
+  },
+  "S19": {
+   "title": "UAE low visibility on the road: follow these safety rules for driving in fog and sandstorms",
+   "url": "https://gulfnews.com/uae/transport/uae-low-visibility-on-the-road-follow-these-safety-rules-for-driving-in-fog-sandstorms-1.86313361",
+   "publisher": "Gulf News",
+   "date": "2022-03"
+  },
+  "S20": {
+   "title": "كتيب المركبات الآلية الخفيفة، دليل للقيادة الآمنة، الطبعة 3 (Arabic): sign group intros p.99 and p.101, speed limits table",
+   "url": "https://pubhtml5.com/plkd/rioj/basic/51-100",
+   "publisher": "RTA Dubai, Licensing Agency (flipbook of the official PDF on rta.ae)",
+   "date": "2012-01"
+  }
+ },
+ "cards": [
+  {
+   "id": "signbasics-card-001",
+   "topic": "signs-basics",
+   "level": 1,
+   "title": "المثلث يحذرك",
+   "body": "المثلث الذي رأسه للأعلى بإطار أحمر وخلفية بيضاء إشارة تحذير، تخبرك بخطر قادم مثل منعطف أو ممر مشاة أو مطب، فخفف السرعة واستعد",
+   "key": "مثلث = انتبه",
+   "src": [
+    "S1",
+    "S4"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "signbasics-card-002",
+   "topic": "signs-basics",
+   "level": 1,
+   "title": "الدائرة الحمراء تمنعك",
+   "body": "الدائرة ذات الإطار الأحمر والخلفية البيضاء تمنعك من فعل أو تضع لك حدا لا تتجاوزه، مثل ممنوع التجاوز أو الحد الأقصى للسرعة، والخط الأحمر المائل فوق الرمز يعني أن هذا الفعل ممنوع",
+   "key": "دائرة حمراء = ممنوع",
+   "src": [
+    "S1",
+    "S4",
+    "S20"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "signbasics-card-003",
+   "topic": "signs-basics",
+   "level": 1,
+   "title": "الدائرة الزرقاء تأمرك",
+   "body": "الدائرة الزرقاء برمز أبيض إشارة إلزام: عليك أن تفعل ما تراه، مثل السير إلى الأمام فقط أو التزام اليمين أو السير في الدوار باتجاه الأسهم\nكتيب هيئة الطرق يقول إن هذه الإشارات تبين لمستعملي الطريق ما يجب عليهم فعله",
+   "key": "دائرة زرقاء = لازم",
+   "src": [
+    "S20",
+    "S1",
+    "S4"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "signbasics-card-004",
+   "topic": "signs-basics",
+   "level": 1,
+   "title": "شكلان لا يتكرران",
+   "body": "إشارة قف وحدها على شكل مثمن أحمر مكتوب عليه قف وSTOP، وإشارة أفسح الطريق وحدها مثلث رأسه للأسفل، فتعرفهما من الشكل حتى لو غطى الغبار الكتابة\nعند قف توقف كاملا دائما، وعند أفسح الطريق توقف فقط إذا كان هناك من له الأولوية",
+   "key": "مثمن = قف، مثلث مقلوب = أفسح الطريق",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "signbasics-card-005",
+   "topic": "signs-basics",
+   "level": 2,
+   "title": "علامات السير ملزمة بالقانون",
+   "body": "قانون السير الاتحادي يلزم كل مستخدمي الطريق بمراعاة علامات السير وتنفيذ أوامر رجال الضبط المروري، وممنوع على أي شخص وضع علامة على الطريق دون موافقة سلطة الترخيص أو سلطة الضبط المروري",
+   "key": "الإشارة الرسمية تلزمك",
+   "src": [
+    "S7"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "signbasics-card-006",
+   "topic": "signs-basics",
+   "level": 2,
+   "title": "المستطيل الأزرق يخبرك",
+   "body": "اللوحات المربعة والمستطيلة الزرقاء تعطيك معلومة أو تنظيما، مثل موقف السيارات أو الطريق باتجاه واحد أو بداية الطريق السريع أو تنظيم المسارات أو بوابة سالك",
+   "key": "مستطيل أزرق = معلومة",
+   "src": [
+    "S1",
+    "S4",
+    "S17"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "signbasics-card-007",
+   "topic": "signs-basics",
+   "level": 2,
+   "title": "الأزرق بإطار أحمر للوقوف",
+   "body": "القرص الأزرق بإطار أحمر خاص بالوقوف والتوقف: خط أحمر واحد يعني ممنوع الوقوف، وخطان متقاطعان يعنيان ممنوع التوقف نهائيا ولو لثوان",
+   "key": "خط = لا تركن، X = لا تقف أبدا",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "signbasics-card-008",
+   "topic": "signs-basics",
+   "level": 2,
+   "title": "الخط الأحمر على اللوحة الزرقاء يعني النهاية",
+   "body": "عندما ترى لوحة زرقاء مثل الطريق السريع أو مسار الحافلات وعليها خط أحمر مائل، فهذا يعني نهاية ما تدل عليه، وبعدها تتغير القواعد مثل حد السرعة",
+   "key": "خط أحمر على أزرق = نهاية",
+   "src": [
+    "S4",
+    "S3",
+    "S12"
+   ],
+   "confidence": "medium",
+   "notes": "لوحات النهاية مذكورة في لوحات المعاهد، وشكل الخط الأحمر مأخوذ من النظام الدولي الذي تتبعه إشارات الإمارات"
+  },
+  {
+   "id": "signbasics-card-009",
+   "topic": "signs-basics",
+   "level": 2,
+   "title": "ألوان لوحات الاتجاهات وأرقام الطرق",
+   "body": "في دبي الأزرق للطرق الاتحادية التي تربط الإمارات وأرقامها تبدأ بالحرف E داخل شعار الصقر، والأخضر لطرق ومناطق داخل دبي وأرقامها تبدأ بالحرف D داخل شعار القلعة، والبني للمعالم السياحية والتجارية، والأبيض لأسماء الشوارع والمناطق",
+   "key": "أزرق اتحادي، أخضر دبي، بني سياحي، أبيض شوارع",
+   "src": [
+    "S13",
+    "S14",
+    "S15"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "signbasics-card-010",
+   "topic": "signs-basics",
+   "level": 2,
+   "title": "اللوحة الإضافية تكمل الإشارة",
+   "body": "اللوحة البيضاء الصغيرة تحت الإشارة تحدد تفاصيلها: المسافة إلى الخطر، أو طول المنطقة، أو الأوقات التي ينطبق فيها المنع، أو نوع المركبة المقصودة، أو جهة امتداد المنع بالسهم",
+   "key": "اقرأ الإشارة ثم اللوحة التي تحتها",
+   "src": [
+    "S1",
+    "S2",
+    "S4"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "signbasics-card-011",
+   "topic": "signs-basics",
+   "level": 1,
+   "title": "رجل المرور أولا",
+   "body": "تعليمات رجل الشرطة أو المرور وإشاراته تتقدم على قواعد السير وعلى الإشارات الضوئية واللوحات وخطوط الطريق، فإذا أشار لك بالمرور والضوء أحمر فاتبع إشارته بحذر",
+   "key": "رجل المرور قبل كل شيء",
+   "src": [
+    "S6",
+    "S1"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "signbasics-card-012",
+   "topic": "signs-basics",
+   "level": 3,
+   "title": "الإشارة المؤقتة تتقدم في منطقة العمل",
+   "body": "في مناطق أعمال الطرق تجد إشارات خلفيتها صفراء غالبا مع أقماع وحواجز وأسهم وامضة، وهي ترسم المسار والسرعة مؤقتا، فالتزم بها حتى لو خالفت اللوحات أو الخطوط الدائمة",
+   "key": "في منطقة العمل: المؤقت أولا",
+   "src": [
+    "S9",
+    "S17"
+   ],
+   "confidence": "medium",
+   "notes": "بعض المصادر تذكر اللون البرتقالي، واعتمدنا الأصفر من دليل أبوظبي لإدارة المرور في مناطق العمل"
+  },
+  {
+   "id": "signbasics-card-013",
+   "topic": "signs-basics",
+   "level": 2,
+   "title": "لماذا تتجه الأسهم نحو اليسار؟",
+   "body": "السير في الإمارات على اليمين والتجاوز من اليسار، لذلك تدور أسهم الدوار عكس عقارب الساعة، ويتجه سهم الدوران للخلف إلى اليسار\nانتبه لأن صور الكتب البريطانية معكوسة الاتجاه",
+   "key": "السير على اليمين",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "signbasics-card-014",
+   "topic": "signs-basics",
+   "level": 3,
+   "title": "الأولوية في الطريق الضيق",
+   "body": "في المقطع الضيق ترى أحد شكلين: دائرة حمراء فيها سهمان تعني أن الأولوية للقادم من الأمام وعليك الانتظار، ومربع أزرق فيه سهمان يعني أن الأولوية لك",
+   "key": "أحمر = انتظر، أزرق = لك الأولوية",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "signbasics-card-015",
+   "topic": "signs-basics",
+   "level": 2,
+   "title": "الإشارات الإلكترونية ملزمة",
+   "body": "قانون السير الاتحادي الجديد يعد الإشارات الإلكترونية من علامات السير، فالسرعة أو التعليمات التي تظهر على اللوحات الإلكترونية فوق الطريق ملزمة مثل اللوحات الثابتة",
+   "key": "اللوحة الإلكترونية = إشارة",
+   "src": [
+    "S7",
+    "S19"
+   ],
+   "confidence": "high"
+  }
+ ],
+ "questions": [
+  {
+   "id": "signbasics-signs-basics-001",
+   "topic": "signs-basics",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ماذا تعني الإشارة المثلثة التي رأسها للأعلى وإطارها أحمر؟",
+   "options": [
+    "تحذير من خطر أمامك",
+    "أمر إلزامي عليك تنفيذه",
+    "معلومة عن خدمة قريبة",
+    "منع مرور نوع معين من المركبات"
+   ],
+   "answer": 0,
+   "explain": "المثلث بإطار أحمر إشارة تحذير، ينبهك إلى خطر قادم لتخفف السرعة وتستعد",
+   "tip": "المثلث بيقلك: دير بالك، في شي قدامك",
+   "src": [
+    "S1",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "signbasics-signs-basics-002",
+   "topic": "signs-basics",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "على ماذا تدل عادة الإشارة الدائرية ذات الإطار الأحمر والخلفية البيضاء؟",
+   "options": [
+    "تحذير من خطر قادم",
+    "اتجاه إجباري عليك اتباعه",
+    "منع أو تقييد",
+    "مكان مسموح للوقوف"
+   ],
+   "answer": 2,
+   "explain": "الدائرة ذات الإطار الأحمر تمنعك من فعل أو تضع لك حدا مثل الحد الأقصى للسرعة",
+   "tip": "الأحمر بالدائرة يعني لأ",
+   "src": [
+    "S1",
+    "S4",
+    "S20"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "signbasics-signs-basics-003",
+   "topic": "signs-basics",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "إشارة دائرية زرقاء فيها رمز أبيض، ماذا تعني؟",
+   "options": [
+    "ممنوع ما يظهر في الرمز",
+    "أمر إلزامي عليك تنفيذه",
+    "معلومة سياحية",
+    "تحذير من خطر قادم"
+   ],
+   "answer": 1,
+   "explain": "الدائرة الزرقاء إشارة إلزام، تبين لك ما يجب عليك فعله مثل اتجاه إجباري",
+   "tip": "الزرقا المدورة بتأمرك",
+   "src": [
+    "S20",
+    "S1",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "signbasics-signs-basics-004",
+   "topic": "signs-basics",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما الإشارة الوحيدة التي تأتي على شكل مثمن؟",
+   "options": [
+    "ممنوع الدخول",
+    "أفسح الطريق",
+    "ممنوع التوقف",
+    "قف"
+   ],
+   "answer": 3,
+   "explain": "المثمن شكل خاص بإشارة قف فقط، لتعرفها حتى لو لم تقرأ الكتابة",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "signbasics-signs-basics-005",
+   "topic": "signs-basics",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما شكل إشارة أفسح الطريق؟",
+   "options": [
+    "مثلث رأسه للأعلى",
+    "مثمن أحمر",
+    "مثلث رأسه للأسفل",
+    "دائرة حمراء فيها خط أبيض"
+   ],
+   "answer": 2,
+   "explain": "أفسح الطريق هي الإشارة الوحيدة على شكل مثلث مقلوب رأسه للأسفل",
+   "tip": "المثلث المقلوب كأنه بيقلك: هدي وخلي غيرك يمر",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "signbasics-signs-basics-006",
+   "topic": "signs-basics",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما الفرق بين إشارة قف وإشارة أفسح الطريق؟",
+   "options": [
+    "قف تلزمك بالتوقف التام دائما، وأفسح الطريق تلزمك بالتوقف فقط إذا كان هناك من له الأولوية",
+    "لا فرق بينهما في المعنى",
+    "كلاهما يلزمك بالتوقف التام دائما",
+    "أفسح الطريق تلزمك بالتوقف التام، وقف تكفي فيها تهدئة السرعة"
+   ],
+   "answer": 0,
+   "explain": "عند قف توقف كاملا عند الخط حتى لو كان الطريق فارغا، أما عند أفسح الطريق فتوقف فقط إذا اقتربت مركبة أو مشاة لهم الأولوية",
+   "src": [
+    "S1",
+    "S4",
+    "S20"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "signbasics-signs-basics-007",
+   "topic": "signs-basics",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "رجل المرور يشير لك بالتقدم بينما الإشارة الضوئية أمامك حمراء، ماذا تفعل؟",
+   "options": [
+    "تنتظر حتى يصبح الضوء أخضر",
+    "تتقدم بحذر حسب إشارة رجل المرور",
+    "تستخدم البوق لتنبيه رجل المرور",
+    "تنعطف يمينا فقط"
+   ],
+   "answer": 1,
+   "explain": "تعليمات رجل المرور وإشاراته تتقدم على الإشارات الضوئية واللوحات والخطوط، فاتبعه بحذر",
+   "tip": "الشرطي أقوى من الضو",
+   "src": [
+    "S6",
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "signbasics-signs-basics-008",
+   "topic": "signs-basics",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "أي مما يلي يتقدم على الإشارات الضوئية واللوحات وخطوط الطريق عند التعارض؟",
+   "options": [
+    "إشارات السائقين الآخرين بأيديهم",
+    "اللوحات الإرشادية الزرقاء",
+    "خطوط الطريق الأرضية",
+    "تعليمات رجل المرور وإشاراته"
+   ],
+   "answer": 3,
+   "explain": "اللائحة التنفيذية لقانون السير تعطي تعليمات رجال الشرطة والمرور الأولوية على الإشارات الضوئية والعلامات وخطوط تنظيم السير",
+   "src": [
+    "S6",
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "signbasics-signs-basics-009",
+   "topic": "signs-basics",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "لماذا تدور الأسهم في إشارة الدوار في الإمارات عكس عقارب الساعة؟",
+   "options": [
+    "لأنها إشارة مؤقتة",
+    "لأنها تعني أن الدوار مغلق",
+    "لأن الدوار مخصص للدوران للخلف فقط",
+    "لأن السير في الإمارات على اليمين"
+   ],
+   "answer": 3,
+   "explain": "في الدول التي تسير على اليمين تدور الحركة في الدوار عكس عقارب الساعة، لذلك تأتي الأسهم بهذا الاتجاه",
+   "tip": "الصور البريطانية معكوسة، لا تعتمد عليها",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "signbasics-signs-basics-010",
+   "topic": "signs-basics",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "إلى أي جهة يتجه سهم إشارة الدوران للخلف في الإمارات؟",
+   "options": [
+    "إلى اليمين لأن الدوران يكون من المسار الأيمن",
+    "إلى اليسار لأن الدوران يكون من المسار الأيسر",
+    "لا يوجد اتجاه ثابت للسهم",
+    "إلى الأمام ثم الخلف دون انحناء"
+   ],
+   "answer": 1,
+   "explain": "السير على اليمين، فالدوران للخلف يكون من أقصى اليسار، ولذلك ينعطف السهم إلى اليسار",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "signbasics-signs-basics-011",
+   "topic": "signs-basics",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "لوحة بيضاء صغيرة مكتوب عليها 200 م تحت إشارة تحذير، ماذا تعني؟",
+   "options": [
+    "الخطر يبدأ بعد نحو 200 متر من الإشارة",
+    "عليك التوقف بعد 200 متر",
+    "حد السرعة 200 كم/ساعة",
+    "ممنوع السير أكثر من 200 متر"
+   ],
+   "answer": 0,
+   "explain": "لوحة المسافة تحت إشارة التحذير تبين كم يبعد الخطر عنك، لتستعد قبل الوصول",
+   "src": [
+    "S1",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "signbasics-signs-basics-012",
+   "topic": "signs-basics",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "إشارة ممنوع الوقوف وتحتها لوحة أوقات 8:00 - 21:00، والساعة الآن 22:30، ما الحكم؟",
+   "options": [
+    "الوقوف مسموح لسيارات الأجرة فقط",
+    "المنع ينطبق طوال اليوم",
+    "هذا المنع لا ينطبق الآن ما لم توجد إشارة أو علامة أخرى تمنع",
+    "المنع يبدأ من الساعة 22:30"
+   ],
+   "answer": 2,
+   "explain": "لوحة الأوقات تحدد متى ينطبق المنع، وخارجها لا ينطبق هذا المنع، مع الالتزام بأي إشارة أو علامة أخرى في المكان",
+   "src": [
+    "S1",
+    "S2",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "signbasics-signs-basics-013",
+   "topic": "signs-basics",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "لوحة إضافية عليها رمز شاحنة تحت إشارة، على من تنطبق الإشارة؟",
+   "options": [
+    "على السيارات الخفيفة فقط",
+    "على كل المركبات دون استثناء",
+    "على الشاحنات فقط",
+    "على كل المركبات ما عدا الشاحنات"
+   ],
+   "answer": 2,
+   "explain": "رمز المركبة على اللوحة الإضافية يحدد من تخصه الإشارة، فهنا تخص الشاحنات وحدها",
+   "src": [
+    "S2",
+    "S12"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "signbasics-signs-basics-014",
+   "topic": "signs-basics",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "إشارة الزم اليمين وتحتها لوحة عليها رمز حافلة، ماذا تعني؟",
+   "options": [
+    "الحافلات فقط عليها التزام اليمين",
+    "ممنوع مرور الحافلات",
+    "موقف حافلات على اليمين",
+    "كل المركبات عليها التزام اليمين ما عدا الحافلات"
+   ],
+   "answer": 0,
+   "explain": "كتيب هيئة الطرق يعرض هذا المثال: اللوحة الإضافية تجعل الإلزام خاصا بالحافلات وحدها",
+   "src": [
+    "S2"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "signbasics-signs-basics-015",
+   "topic": "signs-basics",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في دبي، ماذا يعني اللون الأزرق في لوحات الاتجاهات؟",
+   "options": [
+    "طريق داخل إمارة دبي",
+    "معلم سياحي",
+    "اسم شارع داخل حي سكني",
+    "طريق اتحادي يربط بين الإمارات"
+   ],
+   "answer": 3,
+   "explain": "الأزرق في دبي للطرق الاتحادية التي تربط الإمارات، وأرقامها تبدأ بالحرف E",
+   "tip": "أزرق متل البحر، بياخدك لبعيد",
+   "src": [
+    "S13",
+    "S14"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "signbasics-signs-basics-016",
+   "topic": "signs-basics",
+   "level": 2,
+   "exam": [
+    "dubai"
+   ],
+   "q": "في دبي، ماذا يعني اللون الأخضر في لوحات الاتجاهات؟",
+   "options": [
+    "أعمال طرق مؤقتة",
+    "طرق ومناطق داخل إمارة دبي",
+    "طرق تربط بين الإمارات",
+    "مواقف مجانية"
+   ],
+   "answer": 1,
+   "explain": "الأخضر في دبي لطرق ومناطق داخل الإمارة، وأرقام هذه الطرق تبدأ بالحرف D",
+   "src": [
+    "S13",
+    "S14"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "signbasics-signs-basics-017",
+   "topic": "signs-basics",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "على ماذا يدل اللون البني في لوحات الطرق في دبي؟",
+   "options": [
+    "منطقة صحراوية",
+    "طريق مغلق",
+    "طريق اتحادي",
+    "معلم سياحي أو تجاري مهم"
+   ],
+   "answer": 3,
+   "explain": "اللوحات البنية تدلك على المعالم السياحية والتجارية المهمة",
+   "src": [
+    "S13",
+    "S14",
+    "S17"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "signbasics-signs-basics-018",
+   "topic": "signs-basics",
+   "level": 2,
+   "exam": [
+    "dubai"
+   ],
+   "q": "لوحة بيضاء عليها اسم شارع داخل منطقة سكنية في دبي، على ماذا يدل لونها؟",
+   "options": [
+    "معلم سياحي",
+    "أسماء الشوارع والمناطق داخل الأحياء",
+    "طريق اتحادي بين الإمارات",
+    "طريق للشاحنات فقط"
+   ],
+   "answer": 1,
+   "explain": "اللون الأبيض في دبي لأسماء الشوارع والمناطق داخل الأحياء السكنية",
+   "src": [
+    "S13",
+    "S14"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "signbasics-signs-basics-019",
+   "topic": "signs-basics",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "رقم طريق يبدأ بالحرف E داخل شعار الصقر، ماذا يعني؟",
+   "options": [
+    "مخرج طوارئ",
+    "طريق داخلي في دبي",
+    "طريق اتحادي يربط بين الإمارات",
+    "طريق للشاحنات فقط"
+   ],
+   "answer": 2,
+   "explain": "الحرف E داخل شعار الصقر يعني طريقا اتحاديا من طرق الإمارات، مثل E11",
+   "src": [
+    "S14",
+    "S15",
+    "S11"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "signbasics-signs-basics-020",
+   "topic": "signs-basics",
+   "level": 3,
+   "exam": [
+    "dubai"
+   ],
+   "q": "رقم طريق يبدأ بالحرف D داخل شعار القلعة، ماذا يعني؟",
+   "options": [
+    "طريق رئيسي داخل إمارة دبي",
+    "طريق اتحادي بين الإمارات",
+    "طريق مغلق مؤقتا",
+    "طريق صحراوي"
+   ],
+   "answer": 0,
+   "explain": "الحرف D داخل شعار القلعة يعني طريقا من طرق دبي، مثل D94 شارع جميرا",
+   "src": [
+    "S14",
+    "S15"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "signbasics-signs-basics-021",
+   "topic": "signs-basics",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما لون خلفية إشارات أعمال الطرق المؤقتة غالبا في الإمارات؟",
+   "options": [
+    "أصفر",
+    "أخضر",
+    "بني",
+    "أزرق"
+   ],
+   "answer": 0,
+   "explain": "إشارات منطقة العمل خلفيتها صفراء غالبا لتميزها عن الإشارات الدائمة",
+   "src": [
+    "S9",
+    "S17"
+   ],
+   "confidence": "medium",
+   "notes": "بعض المصادر تذكر البرتقالي، لذلك لم نضعه خيارا خاطئا"
+  },
+  {
+   "id": "signbasics-signs-basics-022",
+   "topic": "signs-basics",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في منطقة أعمال طرق، لوحة مؤقتة تحدد 60 كم/ساعة بينما اللوحة الدائمة قبلها 100 كم/ساعة، بأي سرعة تلتزم؟",
+   "options": [
+    "100 كم/ساعة لأنها اللوحة الدائمة",
+    "80 كم/ساعة كحل وسط",
+    "60 كم/ساعة كما في اللوحة المؤقتة",
+    "أي سرعة بين 60 و100 كم/ساعة"
+   ],
+   "answer": 2,
+   "explain": "في منطقة العمل تتبع الإشارات المؤقتة، لأن الجهة المختصة وضعتها لحالة الطريق الحالية ولحماية العمال",
+   "src": [
+    "S9"
+   ],
+   "confidence": "medium",
+   "notes": ""
+  },
+  {
+   "id": "signbasics-signs-basics-023",
+   "topic": "signs-basics",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "خطوط الطريق الدائمة تتجه إلى الأمام، لكن الأقماع في منطقة العمل تحول المسار إلى اليسار، ماذا تفعل؟",
+   "options": [
+    "تتوقف حتى يرفع العمال الأقماع",
+    "تتبع المسار الذي ترسمه الأقماع",
+    "تسير فوق الأقماع ببطء",
+    "تتبع الخطوط الدائمة وتتجاهل الأقماع"
+   ],
+   "answer": 1,
+   "explain": "الأقماع والإشارات المؤقتة ترسم المسار الآمن في منطقة العمل، فلا تعتمد على الخطوط الدائمة التي تخالفها",
+   "src": [
+    "S9"
+   ],
+   "confidence": "medium",
+   "notes": ""
+  },
+  {
+   "id": "signbasics-signs-basics-024",
+   "topic": "signs-basics",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما الفرق بين القرص الأزرق ذي الإطار الأحمر وعليه خط أحمر واحد، والقرص نفسه وعليه خطان متقاطعان؟",
+   "options": [
+    "لا فرق بينهما",
+    "الأول موقف مجاني، والثاني موقف مدفوع",
+    "الأول ممنوع الدخول، والثاني ممنوع التجاوز",
+    "الأول ممنوع الوقوف، والثاني ممنوع التوقف نهائيا"
+   ],
+   "answer": 3,
+   "explain": "الخط الواحد يمنع ترك المركبة واقفة، والخطان المتقاطعان يمنعان حتى التوقف القصير لإنزال راكب",
+   "tip": "خط واحد: لا تركن، X: ولا ثانية",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "signbasics-signs-basics-025",
+   "topic": "signs-basics",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "الخط الأحمر المائل فوق رمز داخل إشارة دائرية ذات إطار أحمر، ماذا يعني؟",
+   "options": [
+    "أن الإشارة مؤقتة",
+    "أن الفعل مسموح للشاحنات فقط",
+    "أن الإشارة معطلة",
+    "أن الفعل الظاهر في الرمز ممنوع"
+   ],
+   "answer": 3,
+   "explain": "الخط الأحمر المائل في إشارات المنع يؤكد أن الفعل المرسوم، مثل الانعطاف أو الدوران للخلف، ممنوع",
+   "src": [
+    "S1",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "signbasics-signs-basics-026",
+   "topic": "signs-basics",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "في مقطع ضيق، ما الفرق بين الدائرة الحمراء ذات السهمين والمربع الأزرق ذي السهمين؟",
+   "options": [
+    "كلاهما يعني طريقا باتجاه واحد",
+    "الدائرة: الأولوية للقادم، والمربع: الأولوية لك",
+    "الدائرة: الأولوية لك، والمربع: الأولوية للقادم",
+    "كلاهما يعني ممنوع التجاوز"
+   ],
+   "answer": 1,
+   "explain": "الدائرة الحمراء تقيدك فتنتظر القادم من الأمام، والمربع الأزرق يخبرك أن الأولوية لك",
+   "tip": "الأحمر بيوقفك، الأزرق بيمشيك",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "signbasics-signs-basics-027",
+   "topic": "signs-basics",
+   "level": 3,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "لوحة زرقاء لبداية الطريق السريع وعليها خط أحمر مائل، ماذا يعني الخط؟",
+   "options": [
+    "نهاية الطريق السريع",
+    "طريق سريع له الأولوية",
+    "ممنوع دخول الطريق السريع",
+    "الطريق السريع مغلق"
+   ],
+   "answer": 0,
+   "explain": "الخط الأحمر المائل على لوحة معلومات زرقاء يعني نهاية ما تدل عليه، فبعدها تتغير السرعة والقواعد",
+   "src": [
+    "S4",
+    "S3",
+    "S12"
+   ],
+   "confidence": "medium",
+   "notes": ""
+  },
+  {
+   "id": "signbasics-signs-basics-028",
+   "topic": "signs-basics",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "إشارة تسمح لك بالمرور، لكنك ترى خطرا واضحا أمامك، ماذا تفعل؟",
+   "options": [
+    "تستخدم البوق وتتابع دون تخفيف",
+    "تتابع بنفس السرعة لأن الإشارة تعطيك الحق",
+    "تتصرف بحذر وتتجنب الخطر حتى لو سمحت الإشارة",
+    "تتجاهل الخطر لأنه مسؤولية الآخرين"
+   ],
+   "answer": 2,
+   "explain": "كتيب هيئة الطرق يطلب منك اتباع الإشارات والتصرف بحذر في الوقت نفسه، فالإشارة لا تلغي واجب الانتباه",
+   "src": [
+    "S1"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "signbasics-signs-basics-029",
+   "topic": "signs-basics",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "صاحب محل وضع أمام محله لوحة ممنوع الوقوف من صنعه، ما حكم ذلك؟",
+   "options": [
+    "مسموح لأنه صاحب المكان",
+    "ممنوع دون موافقة سلطة الترخيص أو سلطة الضبط المروري",
+    "مسموح في أيام العطل فقط",
+    "مسموح إذا كانت اللوحة واضحة"
+   ],
+   "answer": 1,
+   "explain": "قانون السير الاتحادي يمنع وضع أي علامة من علامات السير على الطريق إلا بموافقة سلطة الترخيص أو سلطة الضبط المروري",
+   "src": [
+    "S7",
+    "S6"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "signbasics-signs-basics-030",
+   "topic": "signs-basics",
+   "level": 2,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "لوحة إلكترونية فوق الطريق تعرض حد سرعة مخفضا بسبب الضباب، ما حكمها؟",
+   "options": [
+    "تخص الشاحنات فقط",
+    "تنطبق فقط إذا رأيت رجل مرور",
+    "مجرد نصيحة لا تلزمك",
+    "ملزمة مثل اللوحات الثابتة"
+   ],
+   "answer": 3,
+   "explain": "القانون الاتحادي يعد الإشارات الإلكترونية من علامات السير التي عليك الالتزام بها",
+   "src": [
+    "S7",
+    "S19"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "signbasics-signs-basics-031",
+   "topic": "signs-basics",
+   "level": 2,
+   "exam": [
+    "dubai"
+   ],
+   "q": "في دبي، خط الترام يقطع الطريق أمامك والترام يقترب، من له الأولوية؟",
+   "options": [
+    "الترام",
+    "من يصل أولا",
+    "المركبة الأكبر حجما",
+    "أنت لأنك على الطريق الرئيسي"
+   ],
+   "answer": 0,
+   "explain": "هيئة الطرق تلزم كل مستخدمي الطريق بإعطاء الأولوية لحركة الترام في مساره",
+   "src": [
+    "S8"
+   ],
+   "confidence": "high",
+   "notes": ""
+  },
+  {
+   "id": "signbasics-signs-basics-032",
+   "topic": "signs-basics",
+   "level": 1,
+   "exam": [
+    "dubai",
+    "sharjah"
+   ],
+   "q": "ما الذي يميز إشارات التحذير عن إشارات المنع من حيث الشكل؟",
+   "options": [
+    "التحذير أزرق والمنع أخضر",
+    "كلاهما مربع",
+    "التحذير مثلث والمنع دائرة",
+    "التحذير دائرة والمنع مثلث"
+   ],
+   "answer": 2,
+   "explain": "التحذير مثلث بإطار أحمر، والمنع دائرة بإطار أحمر، فالشكل وحده يكفي لتعرف نوع الإشارة",
+   "src": [
+    "S1",
+    "S4"
+   ],
+   "confidence": "high",
+   "notes": ""
+  }
+ ]
+}

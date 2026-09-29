@@ -1,0 +1,4126 @@
+{
+ "updated": "2026-09-29",
+ "sources": {
+  "S1": {
+   "title": "Light Motor Vehicle Handbook, A Guide to Safe Driving, 3rd edition (English), Road Signs part",
+   "url": "https://russiadubai.com/upload/iblock/ac6/ac6fa71db851d0137a784bd80278acff.pdf",
+   "publisher": "RTA Dubai, Licensing Agency (mirror copy of the official handbook)",
+   "date": "2012-01"
+  },
+  "S2": {
+   "title": "Driving Safely in Dubai, 1st edition (control, mandatory, prohibitory, warning and parking sign groups)",
+   "url": "https://licensing.rta.ae/handbook/DrivingSafelyInDubaiEN.pdf",
+   "publisher": "RTA Dubai, Licensing Agency",
+   "date": "undated"
+  },
+  "S3": {
+   "title": "Signal Charts (Arabic): regulatory, warning and guide signs",
+   "url": "https://www.drivedubai.ae/public/uploads/downloads/20260727111506Signal-Charts-Arabic.pdf",
+   "publisher": "Drive Dubai (RTA-licensed driving institute)",
+   "date": "2026-07"
+  },
+  "S4": {
+   "title": "Road Signs, Road Markings and Traffic Signals, signal chart (English)",
+   "url": "https://edi-uae.com/public/uploads/downloads/20191126120000English-Signal-Chart.pdf",
+   "publisher": "Emirates Driving Institute, Dubai",
+   "date": "2019-11"
+  },
+  "S5": {
+   "title": "Guidance Chart: Road Signs, Road Markings and Traffic Signals (English), 2026 edition",
+   "url": "https://edi-uae.com/public/uploads/downloads/20260303120751Signal-Chart-English.pdf",
+   "publisher": "Emirates Driving Institute, Dubai",
+   "date": "2026-03"
+  },
+  "S6": {
+   "title": "Ministerial Decision No. 130 of 1997, Executive Regulations of the Federal Traffic Law (Art. 25 to 28, 33)",
+   "url": "https://uaelegislation.gov.ae/ar/legislations/1020/download",
+   "publisher": "UAE Legislation portal",
+   "date": "1997-03"
+  },
+  "S7": {
+   "title": "Federal Decree-Law No. 14 of 2024 on Traffic Regulation (Art. 1, 4, 7)",
+   "url": "https://uaelegislation.gov.ae/ar/legislations/2598/download",
+   "publisher": "UAE Legislation portal",
+   "date": "2024-09"
+  },
+  "S8": {
+   "title": "Light Motor Vehicle Handbook, 7th edition (English), tram section: tram signs and tram priority",
+   "url": "https://edi-uae.com/public/uploads/downloads/20190724133013RTA_Handbook_-_Light_Motor_Vehicle_(LMV)_-_English.pdf",
+   "publisher": "RTA Dubai, Licensing Agency (copy hosted by Emirates Driving Institute)",
+   "date": "2016-01"
+  },
+  "S9": {
+   "title": "Emirate of Abu Dhabi Work Zone Traffic Management Manual: Principles and Practice, Issue 1",
+   "url": "https://pdfcoffee.com/--6281-pdf-free.html",
+   "publisher": "Department of Transport, Abu Dhabi (copy)",
+   "date": "2014-02"
+  },
+  "S10": {
+   "title": "Abu Dhabi Manual on Uniform Traffic Control Devices TR-511, 2nd edition",
+   "url": "https://jawdah.qcc.abudhabi.ae/en/Registration/QCCServices/Services/STD/ISGL/ISGL-LIST/TR-511.pdf",
+   "publisher": "Department of Transport, Abu Dhabi (via QCC)",
+   "date": "2020-09"
+  },
+  "S11": {
+   "title": "Route Numbering System Policy and Procedures TR-538, 1st edition (E-route emblem)",
+   "url": "https://jawdah.qcc.abudhabi.ae/en/Registration/QCCServices/Services/STD/ISGL/ISGL-LIST/TR-538.pdf",
+   "publisher": "Department of Transport, Abu Dhabi (via QCC)",
+   "date": "2018-01"
+  },
+  "S12": {
+   "title": "Road signs in the United Arab Emirates (sign list based on the Abu Dhabi MUTCD)",
+   "url": "https://en.wikipedia.org/wiki/Road_signs_in_the_United_Arab_Emirates",
+   "publisher": "Wikipedia",
+   "date": "2026-09 (accessed)"
+  },
+  "S13": {
+   "title": "Dubai RTA installs 210,000 road signs to boost safety and cut accidents (colour coding of guide signs)",
+   "url": "https://gulfnews.com/uae/transport/dubai-rta-installs-210000-road-signs-to-boost-safety-and-cut-accidents-1.500359277",
+   "publisher": "Gulf News",
+   "date": "2025-11"
+  },
+  "S14": {
+   "title": "Guide to understanding Dubai's colour-coded street signs",
+   "url": "https://www.khaleejtimes.com/uae/transport/guide-to-understanding-dubais-colour-coded-street-signs",
+   "publisher": "Khaleej Times",
+   "date": "2023-07"
+  },
+  "S15": {
+   "title": "Reading Dubai's road signs (E-route falcon emblem, D-route fort emblem)",
+   "url": "https://gulfnews.com/uae/transport/reading-dubais-road-signs-1.254255",
+   "publisher": "Gulf News",
+   "date": "2006-09"
+  },
+  "S16": {
+   "title": "Speed limits in the United Arab Emirates",
+   "url": "https://en.wikipedia.org/wiki/Speed_limits_in_the_United_Arab_Emirates",
+   "publisher": "Wikipedia",
+   "date": "2026-09 (accessed)"
+  },
+  "S17": {
+   "title": "Decoding RTA road signs: your guide to navigating Dubai's roadways",
+   "url": "https://focus.hidubai.com/decoding-rta-road-signs/",
+   "publisher": "HiDubai Focus",
+   "date": "2023-06"
+  },
+  "S18": {
+   "title": "Roadways: E routes, Salik (Dubai) and Darb (Abu Dhabi) tolls",
+   "url": "https://u.ae/en/information-and-services/transportation/roadways",
+   "publisher": "UAE Government portal u.ae",
+   "date": "undated"
+  },
+  "S19": {
+   "title": "UAE low visibility on the road: follow these safety rules for driving in fog and sandstorms",
+   "url": "https://gulfnews.com/uae/transport/uae-low-visibility-on-the-road-follow-these-safety-rules-for-driving-in-fog-sandstorms-1.86313361",
+   "publisher": "Gulf News",
+   "date": "2022-03"
+  },
+  "S20": {
+   "title": "كتيب المركبات الآلية الخفيفة، دليل للقيادة الآمنة، الطبعة 3 (Arabic): sign group intros p.99 and p.101, speed limits table",
+   "url": "https://pubhtml5.com/plkd/rioj/basic/51-100",
+   "publisher": "RTA Dubai, Licensing Agency (flipbook of the official PDF on rta.ae)",
+   "date": "2012-01"
+  }
+ },
+ "categories": [
+  {
+   "key": "warning",
+   "name": "إشارات التحذير",
+   "desc": "مثلث رأسه للأعلى بإطار أحمر وخلفية بيضاء ورمز أسود، ومعناه: انتبه، أمامك خطر، خفف السرعة واستعد\nمن هذه المجموعة أيضا لوحات الأسهم الصفراء والسوداء على المنعطفات الحادة والدوارات، وعلامات الخطر عند العوائق"
+  },
+  {
+   "key": "priority",
+   "name": "إشارات الأولوية",
+   "desc": "تحدد من يمر أولا: قف مثمن أحمر لا يتكرر شكله، وأفسح الطريق مثلث رأسه للأسفل\nفي المقاطع الضيقة: الدائرة الحمراء ذات السهمين تعني أن الأولوية للقادم من الأمام، والمربع الأزرق ذو السهمين يعني أن الأولوية لك"
+  },
+  {
+   "key": "prohibitory",
+   "name": "إشارات المنع والتقييد",
+   "desc": "دائرة بإطار أحمر وخلفية بيضاء: ممنوع ما تراه في الرمز أو ممنوع تجاوز الرقم، والخط الأحمر المائل يؤكد المنع\nالقرص الأزرق بإطار أحمر خاص بالوقوف: خط أحمر واحد يعني ممنوع الوقوف، وعلامة X تعني ممنوع التوقف نهائيا\nالقرص الأحمر بخط أبيض أفقي يعني ممنوع الدخول"
+  },
+  {
+   "key": "mandatory",
+   "name": "إشارات الإلزام",
+   "desc": "دائرة زرقاء برمز أبيض: عليك أن تفعل ما يشير إليه الرمز، مثل اتجاه إجباري أو ممر مخصص أو حد أدنى للسرعة\nكتيب هيئة الطرق يقول إن هذه الإشارات تبين لمستعملي الطريق ما يجب عليهم فعله"
+  },
+  {
+   "key": "information",
+   "name": "الإشارات الإعلامية والتنظيمية",
+   "desc": "مربع أو مستطيل أزرق غالبا يعطيك معلومة أو تنظيما: موقف، طريق باتجاه واحد، بداية الطريق السريع، تنظيم المسارات، بوابة سالك\nالخط الأحمر المائل على هذه اللوحات يعني نهاية ما تدل عليه"
+  },
+  {
+   "key": "services",
+   "name": "إشارات الخدمات",
+   "desc": "لوحات صغيرة برمز أبيض على خلفية زرقاء أو بلون لوحة الاتجاه، تدلك على خدمة قريبة مثل المستشفى أو المطار"
+  },
+  {
+   "key": "guide",
+   "name": "لوحات الاتجاهات",
+   "desc": "في دبي لون اللوحة يخبرك بنوع الطريق: الأزرق للطرق الاتحادية بين الإمارات وأرقامها تبدأ بالحرف E، والأخضر لطرق ومناطق داخل دبي وأرقامها تبدأ بالحرف D، والبني للمعالم السياحية والتجارية، والأبيض لأسماء الشوارع والمناطق"
+  },
+  {
+   "key": "temporary",
+   "name": "إشارات أعمال الطرق المؤقتة",
+   "desc": "إشارات منطقة العمل خلفيتها صفراء غالبا (وقد تراها برتقالية) وترافقها الأقماع والحواجز والأسهم الوامضة\nفي منطقة العمل التزم بالإشارات المؤقتة حتى لو خالفت اللوحات أو الخطوط الدائمة"
+  },
+  {
+   "key": "supplementary",
+   "name": "اللوحات الإضافية",
+   "desc": "لوحة بيضاء صغيرة تحت الإشارة تحدد تفاصيلها: المسافة إلى الخطر، أو طول المنطقة، أو الأوقات، أو نوع المركبة المقصودة، أو جهة امتداد المنع\nاقرأ الإشارة أولا ثم اللوحة التي تحتها"
+  }
+ ],
+ "signs": [
+  {
+   "id": "p-stop",
+   "cat": "priority",
+   "name": "قف",
+   "meaning": "عليك التوقف التام عند خط الوقوف قبل دخول التقاطع، ثم منح الأولوية لكل المركبات والمشاة على الطريق الذي تدخله",
+   "action": "توقف تماما عند خط الوقوف حتى لو كان الطريق فارغا، انظر يمينا ويسارا، ثم تحرك فقط عندما يكون الدخول آمنا",
+   "level": 1,
+   "confuse": [
+    "p-give-way",
+    "w-stop-ahead",
+    "r-no-entry"
+   ],
+   "shape": "octagon",
+   "colors": "red background, white border, white text",
+   "text": "قف STOP",
+   "draw": "Regular octagon with a flat top edge, red fill and a thin white border line just inside the edge. White Arabic word قف in large bold letters in the upper half, white English word STOP in bold capitals in the lower half. No pictogram",
+   "uae_note": "الإشارة الوحيدة على شكل مثمن، وتسميها هيئة الطرق في كتيبها: الوقوف إلزامي، والتهدئة دون توقف كامل عندها مخالفة",
+   "src": [
+    "S1",
+    "S4",
+    "S3",
+    "S20"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "p-give-way",
+   "cat": "priority",
+   "name": "أفسح الطريق",
+   "meaning": "عليك منح أولوية المرور للمركبات على الطريق الذي ستدخله أو تعبره",
+   "action": "خفف السرعة واستعد للتوقف، ولا تدخل إلا إذا كان الطريق خاليا بمسافة آمنة، والتوقف ليس إلزاميا إذا كان الطريق فارغا",
+   "level": 1,
+   "confuse": [
+    "p-stop",
+    "w-give-way-ahead",
+    "p-give-way-pedestrians"
+   ],
+   "shape": "triangle-down",
+   "colors": "white background, red border",
+   "text": "",
+   "draw": "Equilateral triangle pointing DOWN (apex at the bottom), thick red border, plain white interior with no symbol and no text",
+   "uae_note": "المثلث المقلوب شكل خاص بهذه الإشارة فقط، وتكثر عند المنعطفات الحرة ومداخل الطرق الرئيسية، وعند مدخل الدوار تفسح الطريق للمركبات القادمة من يسارك داخله",
+   "src": [
+    "S1",
+    "S4",
+    "S3",
+    "S20"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "p-give-way-pedestrians",
+   "cat": "priority",
+   "name": "أفسح الطريق للمشاة",
+   "meaning": "عليك منح الأولوية للمشاة الذين يعبرون أو ينتظرون العبور في هذا المكان",
+   "action": "خفف السرعة وتوقف قبل الممر إذا كان هناك مشاة يعبرون أو ينتظرون، ولا تتحرك حتى يصلوا إلى الرصيف",
+   "level": 2,
+   "confuse": [
+    "p-give-way",
+    "w-pedestrian-crossing",
+    "m-pedestrians-only",
+    "r-no-pedestrians"
+   ],
+   "shape": "triangle-down",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "Downward-pointing triangle with thick red border and white interior; in the wide upper part a black walking pedestrian pictogram in side view",
+   "uae_note": "تكثر عند ممرات المشاة في المنعطفات الحرة ومخارج المواقف، وعدم إفساح الطريق للمشاة عند الممرات مخالفة عليها غرامة ونقاط سوداء",
+   "src": [
+    "S1",
+    "S4",
+    "S3",
+    "S20"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "p-give-way-cyclists",
+   "cat": "priority",
+   "name": "أفسح الطريق للدراجات الهوائية",
+   "meaning": "عليك منح الأولوية لراكبي الدراجات الهوائية الذين يعبرون أو يسيرون في مسارهم",
+   "action": "خفف السرعة واترك الدراجات تعبر أولا، وعند تجاوز راكب دراجة اترك مسافة جانبية لا تقل عن 1.5 متر",
+   "level": 3,
+   "confuse": [
+    "p-give-way",
+    "w-cyclists",
+    "m-cyclists-only",
+    "r-no-bicycles"
+   ],
+   "shape": "triangle-down",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "Downward-pointing triangle with thick red border and white interior; a black bicycle pictogram in side view centred in the wide upper part",
+   "uae_note": "هيئة الطرق تطلب ترك مسافة 1.5 متر على الأقل عند تجاوز راكب الدراجة",
+   "src": [
+    "S4",
+    "S2",
+    "S12"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "p-give-way-oncoming",
+   "cat": "priority",
+   "name": "الأولوية للمركبات القادمة من الاتجاه المقابل",
+   "meaning": "الطريق أمامك ضيق ولا يتسع إلا لاتجاه واحد في كل مرة، والأولوية فيه للقادمين من الجهة المقابلة",
+   "action": "توقف قبل المقطع الضيق إذا كانت هناك مركبة قادمة، ولا تدخل حتى يخرج القادمون منه",
+   "level": 4,
+   "confuse": [
+    "p-priority-over-oncoming",
+    "w-two-way-traffic",
+    "r-no-overtaking"
+   ],
+   "shape": "circle",
+   "colors": "white background, red border, one black arrow and one red arrow",
+   "text": "",
+   "draw": "White disc with red ring, no slash. Two vertical arrows side by side: on the LEFT a larger BLACK arrow pointing DOWN (oncoming traffic, which has priority); on the RIGHT a smaller RED arrow pointing UP (your direction, which must wait)",
+   "uae_note": "السهم الأحمر هو اتجاهك أنت، واللون الأحمر يعني أنك أنت من ينتظر",
+   "src": [
+    "S4",
+    "S3",
+    "S1"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "p-priority-over-oncoming",
+   "cat": "priority",
+   "name": "لك الأولوية على المركبات القادمة من الاتجاه المقابل",
+   "meaning": "في المقطع الضيق أمامك الأولوية لك، وعلى القادمين من الجهة المقابلة انتظارك",
+   "action": "تابع بحذر وبسرعة مناسبة، وكن مستعدا للتوقف إذا لم ينتظرك سائق قادم",
+   "level": 4,
+   "confuse": [
+    "p-give-way-oncoming",
+    "i-one-way",
+    "m-ahead-only"
+   ],
+   "shape": "square",
+   "colors": "blue background, white rim, one white arrow and one red arrow",
+   "text": "",
+   "draw": "Blue square with white rim. Two vertical arrows: on the RIGHT a larger WHITE arrow pointing UP (your direction, which has priority); on the LEFT a smaller RED arrow pointing DOWN (oncoming traffic, which must wait)",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S12"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-bend-right",
+   "cat": "warning",
+   "name": "منعطف إلى اليمين",
+   "meaning": "أمامك منعطف خطر يتجه إلى اليمين",
+   "action": "خفف السرعة قبل المنعطف لا داخله، والتزم بمسارك ولا تتجاوز",
+   "level": 2,
+   "confuse": [
+    "w-bend-left",
+    "w-double-bend-right",
+    "m-turn-right-ahead"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "Inside the triangle a thick black road line that starts at the bottom centre, goes straight up, then curves smoothly to the RIGHT near the top, ending in an arrowhead pointing up and to the right",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-bend-left",
+   "cat": "warning",
+   "name": "منعطف إلى اليسار",
+   "meaning": "أمامك منعطف خطر يتجه إلى اليسار",
+   "action": "خفف السرعة قبل المنعطف لا داخله، والتزم بمسارك ولا تتجاوز",
+   "level": 2,
+   "confuse": [
+    "w-bend-right",
+    "w-double-bend-left",
+    "m-turn-left-ahead"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "Mirror image of the right bend: thick black road line from the bottom centre going up, then curving smoothly to the LEFT near the top, arrowhead pointing up and to the left",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-double-bend-right",
+   "cat": "warning",
+   "name": "منعطفات متتالية أولها إلى اليمين",
+   "meaning": "أمامك منعطفان متتاليان أو أكثر، الأول إلى اليمين ثم إلى اليسار",
+   "action": "خفف السرعة قبل الوصول، ولا تتجاوز حتى نهاية المنعطفات",
+   "level": 3,
+   "confuse": [
+    "w-double-bend-left",
+    "w-bend-right",
+    "w-chevrons-right"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "Thick black S-shaped road line with an arrowhead at the top: it starts at the bottom centre, bends first to the RIGHT, then back to the LEFT, and ends pointing up",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3",
+    "S12"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-double-bend-left",
+   "cat": "warning",
+   "name": "منعطفات متتالية أولها إلى اليسار",
+   "meaning": "أمامك منعطفان متتاليان أو أكثر، الأول إلى اليسار ثم إلى اليمين",
+   "action": "خفف السرعة قبل الوصول، ولا تتجاوز حتى نهاية المنعطفات",
+   "level": 3,
+   "confuse": [
+    "w-double-bend-right",
+    "w-bend-left",
+    "w-chevrons-left"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "Mirror image of the right-first version: thick black S-shaped line from the bottom centre, bending first to the LEFT, then to the RIGHT, arrowhead at the top pointing up",
+   "uae_note": "",
+   "src": [
+    "S12",
+    "S3"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "w-crossroads",
+   "cat": "warning",
+   "name": "تقاطع طرق أمامك",
+   "meaning": "أمامك تقاطع مع طريق يعبر طريقك من الجهتين",
+   "action": "خفف السرعة واستعد للتوقف، وانتبه للمركبات القادمة من اليمين ومن اليسار",
+   "level": 2,
+   "confuse": [
+    "w-t-junction",
+    "w-side-road-right",
+    "w-staggered-junction",
+    "w-two-way-crossing"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "Bold black cross (plus sign): a vertical bar from the bottom to the top of the symbol area, crossed at mid height by a horizontal bar of the same thickness",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-t-junction",
+   "cat": "warning",
+   "name": "تقاطع على شكل T",
+   "meaning": "طريقك ينتهي أمامك عند طريق عرضي، ولا يمكنك المتابعة إلى الأمام",
+   "action": "خفف السرعة واستعد للتوقف، ثم انعطف يمينا أو يسارا بعد إفساح الطريق",
+   "level": 2,
+   "confuse": [
+    "w-crossroads",
+    "w-side-road-left",
+    "w-chevron-t-junction",
+    "w-dead-end-ahead"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "Black T shape: a thick horizontal bar across the top of the symbol area and a thick vertical bar rising from the bottom centre to meet its middle",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-side-road-right",
+   "cat": "warning",
+   "name": "طريق جانبي من اليمين",
+   "meaning": "أمامك طريق جانبي يتصل بطريقك من جهة اليمين، وقد تخرج منه مركبات",
+   "action": "خفف السرعة وانتبه للمركبات الخارجة من اليمين، واستعد للتوقف",
+   "level": 2,
+   "confuse": [
+    "w-side-road-left",
+    "w-merge-right",
+    "w-crossroads"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "Thick black vertical bar (the main road) from bottom to top; a thinner black bar branches horizontally to the RIGHT from its middle",
+   "uae_note": "",
+   "src": [
+    "S4",
+    "S3",
+    "S12"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-side-road-left",
+   "cat": "warning",
+   "name": "طريق جانبي من اليسار",
+   "meaning": "أمامك طريق جانبي يتصل بطريقك من جهة اليسار، وقد تخرج منه مركبات",
+   "action": "خفف السرعة وانتبه للمركبات الخارجة من اليسار، واستعد للتوقف",
+   "level": 2,
+   "confuse": [
+    "w-side-road-right",
+    "w-merge-left",
+    "w-t-junction"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "Thick black vertical bar (the main road) from bottom to top; a thinner black bar branches horizontally to the LEFT from its middle",
+   "uae_note": "",
+   "src": [
+    "S4",
+    "S3",
+    "S12"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-staggered-junction",
+   "cat": "warning",
+   "name": "تقاطعات متجاورة",
+   "meaning": "أمامك طريقان جانبيان قريبان من بعضهما، واحد من اليسار والآخر من اليمين وليسا متقابلين",
+   "action": "خفف السرعة وانتبه لمركبات تدخل طريقك من الجانبين في نقطتين متقاربتين",
+   "level": 3,
+   "confuse": [
+    "w-crossroads",
+    "w-side-road-right",
+    "w-side-road-left"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "Thick black vertical bar (main road); one thinner side bar branches to the LEFT in the lower third and another branches to the RIGHT in the upper third (a mirrored version with the right branch first also exists)",
+   "uae_note": "",
+   "src": [
+    "S4",
+    "S3",
+    "S12"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-merge-right",
+   "cat": "warning",
+   "name": "طريقك يندمج مع حركة المرور",
+   "meaning": "أمامك نقطة يلتقي فيها طريقك مع طريق آخر بزاوية حادة، وعليك الاندماج مع حركة المرور فيه",
+   "action": "خفف السرعة، راقب المرايا والنقطة العمياء، واندمج فقط عندما تجد فجوة آمنة",
+   "level": 3,
+   "confuse": [
+    "w-merge-left",
+    "w-side-road-right",
+    "i-lane-joining"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "Thick black vertical bar (main road) from bottom to top; a thinner black bar comes up from the lower RIGHT at a sharp angle and joins the main bar in the upper half, like a slip road merging",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "w-merge-left",
+   "cat": "warning",
+   "name": "مركبات تندمج من اليسار",
+   "meaning": "أمامك مكان تدخل فيه مركبات من طريق آخر إلى طريقك من جهة اليسار",
+   "action": "انتبه للمركبات الداخلة من اليسار، ولا تسرع لتسبقها، واترك لها مجالا إذا أمكن",
+   "level": 3,
+   "confuse": [
+    "w-merge-right",
+    "w-side-road-left",
+    "i-lane-joining"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "Thick black vertical bar (main road) from bottom to top; a thinner black bar comes up from the lower LEFT at a sharp angle and joins the main bar in the upper half",
+   "uae_note": "في بعض طرق الإمارات تدخل المركبات من اليسار، فلا تفترض أن الاندماج دائما من اليمين",
+   "src": [
+    "S4"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-roundabout-ahead",
+   "cat": "warning",
+   "name": "دوار أمامك",
+   "meaning": "أمامك دوار، وحركة السير فيه عكس عقارب الساعة",
+   "action": "خفف السرعة، اختر المسار المناسب قبل الدوار، وأفسح الطريق للمركبات داخل الدوار القادمة من يسارك",
+   "level": 1,
+   "confuse": [
+    "m-roundabout",
+    "w-traffic-signals",
+    "w-crossroads"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "Three black curved arrows arranged in a ring in the centre of the triangle, evenly spaced, all rotating ANTICLOCKWISE: the top arrow points to the left, the lower-left arrow points down and to the right, the lower-right arrow points up and to the right",
+   "uae_note": "الأسهم عكس عقارب الساعة لأن السير في الإمارات على اليمين، فلا تخلط بينها وبين الصور البريطانية ذات الأسهم مع عقارب الساعة",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-traffic-signals",
+   "cat": "warning",
+   "name": "إشارة ضوئية أمامك",
+   "meaning": "أمامك تقاطع أو ممر تنظمه إشارة ضوئية",
+   "action": "خفف السرعة واستعد للتوقف إذا تحول الضوء إلى الأصفر أو الأحمر",
+   "level": 1,
+   "confuse": [
+    "w-roundabout-ahead",
+    "w-stop-ahead",
+    "w-other-danger"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black signal housing with red, amber and green lamps",
+   "text": "",
+   "draw": "Vertical black rounded rectangle (signal head) in the centre of the triangle with three lamps: red at the top, amber (yellow) in the middle, green at the bottom",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-stop-ahead",
+   "cat": "warning",
+   "name": "إشارة قف أمامك",
+   "meaning": "أمامك إشارة قف، وعليك التوقف التام عندها",
+   "action": "خفف السرعة مبكرا واستعد للتوقف الكامل عند خط الوقوف",
+   "level": 2,
+   "confuse": [
+    "p-stop",
+    "w-give-way-ahead",
+    "w-traffic-signals"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, small red octagon with white text",
+   "text": "قف",
+   "draw": "Inside the triangle a small red octagon (miniature stop sign) with a thin white border and the white word قف in its centre",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-give-way-ahead",
+   "cat": "warning",
+   "name": "إشارة أفسح الطريق أمامك",
+   "meaning": "أمامك إشارة أفسح الطريق، وعليك منح الأولوية هناك",
+   "action": "خفف السرعة واستعد لإفساح الطريق للمركبات على الطريق الذي ستدخله",
+   "level": 2,
+   "confuse": [
+    "p-give-way",
+    "w-stop-ahead",
+    "p-give-way-pedestrians"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "Inside the triangle a small downward-pointing triangle with a red border and white interior (miniature give way sign)",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-pedestrian-crossing",
+   "cat": "warning",
+   "name": "ممر مشاة أمامك",
+   "meaning": "أمامك ممر لعبور المشاة",
+   "action": "خفف السرعة وراقب الرصيفين، وتوقف قبل الممر إذا كان هناك من يعبر أو ينتظر العبور",
+   "level": 1,
+   "confuse": [
+    "w-children",
+    "p-give-way-pedestrians",
+    "r-no-pedestrians",
+    "m-pedestrians-only"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "A black walking pedestrian in side view, striding to the left, standing on a zebra crossing drawn as 3 or 4 short horizontal black bars under the feet",
+   "uae_note": "عدم التوقف للمشاة على ممر العبور مخالفة عليها غرامة ونقاط سوداء في كل الإمارات",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-children",
+   "cat": "warning",
+   "name": "أطفال",
+   "meaning": "أمامك منطقة يكثر فيها عبور الأطفال مثل مدرسة أو حديقة أو حي سكني",
+   "action": "خفف السرعة كثيرا، وتوقع أن يخرج طفل فجأة من بين السيارات",
+   "level": 1,
+   "confuse": [
+    "w-pedestrian-crossing",
+    "m-pedestrians-only",
+    "r-no-pedestrians"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "Two black children running in side view toward the left: the taller child in front on the left, the smaller child behind on the right, holding hands",
+   "uae_note": "تكثر قرب المدارس والأحياء السكنية، وغالبا تجد معها مطبات وحد سرعة منخفضا",
+   "src": [
+    "S4",
+    "S3",
+    "S12"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-cyclists",
+   "cat": "warning",
+   "name": "عبور دراجات هوائية",
+   "meaning": "أمامك مكان يعبر فيه راكبو الدراجات الهوائية أو يستخدمون الطريق",
+   "action": "خفف السرعة وانتبه للدراجات، وعند تجاوز دراجة اترك مسافة جانبية لا تقل عن 1.5 متر",
+   "level": 2,
+   "confuse": [
+    "m-cyclists-only",
+    "r-no-bicycles",
+    "p-give-way-cyclists"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "A black bicycle in side view (no rider) centred in the triangle",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3",
+    "S2"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-camels",
+   "cat": "warning",
+   "name": "حيوانات على الطريق (جمال)",
+   "meaning": "أمامك منطقة قد تعبر فيها الجمال أو حيوانات أخرى الطريق",
+   "action": "خفف السرعة وراقب جانبي الطريق، وخصوصا في الليل وعلى الطرق الصحراوية",
+   "level": 2,
+   "confuse": [
+    "w-sand-dunes",
+    "w-children",
+    "w-other-danger"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "Black silhouette of a dromedary camel with ONE hump, walking, side view facing left, long curved neck and four thin legs",
+   "uae_note": "الجمل بسنام واحد هو رمز الحيوانات على طرق الإمارات، وتكثر الإشارة على الطرق الخارجية والصحراوية",
+   "src": [
+    "S4",
+    "S3",
+    "S12"
+   ],
+   "confidence": "high",
+   "notes": "لوحات المعاهد تسمي الإشارة حيوانات، وقائمة إشارات الإمارات تسميها عبور الجمال، فجمعنا الاسمين"
+  },
+  {
+   "id": "w-two-way-traffic",
+   "cat": "warning",
+   "name": "حركة مرور في الاتجاهين",
+   "meaning": "الطريق أمامك يصبح بمسارين متعاكسين، والمركبات القادمة تسير بجانبك دون فاصل",
+   "action": "التزم بيمين الطريق، ولا تتجاوز إلا عند الأمان التام، وانتبه للمركبات القادمة",
+   "level": 2,
+   "confuse": [
+    "w-dual-carriageway-ends",
+    "w-two-way-crossing",
+    "p-give-way-oncoming"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "Two vertical black arrows side by side: the LEFT arrow points DOWN and the RIGHT arrow points UP (right-hand traffic)",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S12"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-two-way-crossing",
+   "cat": "warning",
+   "name": "تقاطع مع طريق ذي اتجاهين",
+   "meaning": "أنت على طريق باتجاه واحد وستعبر طريقا تسير فيه المركبات في الاتجاهين",
+   "action": "خفف السرعة وانظر إلى الجهتين قبل العبور، فالمركبات تأتي من اليمين ومن اليسار",
+   "level": 4,
+   "confuse": [
+    "w-two-way-traffic",
+    "w-crossroads",
+    "i-one-way"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "Two horizontal black arrows one above the other: the TOP arrow points LEFT and the BOTTOM arrow points RIGHT (two-way traffic on the crossing road, driving on the right)",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-road-narrows-both",
+   "cat": "warning",
+   "name": "الطريق يضيق من الجهتين",
+   "meaning": "عرض الطريق أمامك يقل من الجانبين",
+   "action": "خفف السرعة وانتبه للمركبات بجانبك، واندمج بهدوء دون مزاحمة",
+   "level": 2,
+   "confuse": [
+    "w-road-narrows-right",
+    "w-road-narrows-left",
+    "w-dual-carriageway-ends"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "Two black vertical lines (road edges), wide apart at the bottom, both bending inward symmetrically in the middle and continuing closer together at the top",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-road-narrows-right",
+   "cat": "warning",
+   "name": "الطريق يضيق من اليمين",
+   "meaning": "عرض الطريق أمامك يقل من جهة اليمين",
+   "action": "خفف السرعة، وإذا كنت في المسار الأيمن فانتقل إلى اليسار عندما يكون ذلك آمنا",
+   "level": 2,
+   "confuse": [
+    "w-road-narrows-left",
+    "w-road-narrows-both",
+    "w-right-lane-ends"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "Two black vertical lines: the LEFT line is straight from bottom to top; the RIGHT line bends inward (toward the left) in the middle, so the road is narrower at the top",
+   "uae_note": "",
+   "src": [
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-road-narrows-left",
+   "cat": "warning",
+   "name": "الطريق يضيق من اليسار",
+   "meaning": "عرض الطريق أمامك يقل من جهة اليسار",
+   "action": "خفف السرعة، وإذا كنت في المسار الأيسر فانتقل إلى اليمين عندما يكون ذلك آمنا",
+   "level": 2,
+   "confuse": [
+    "w-road-narrows-right",
+    "w-road-narrows-both",
+    "w-left-lane-ends"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "Two black vertical lines: the RIGHT line is straight from bottom to top; the LEFT line bends inward (toward the right) in the middle, so the road is narrower at the top",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-dual-carriageway-ends",
+   "cat": "warning",
+   "name": "نهاية الطريق المزدوج",
+   "meaning": "الجزيرة الفاصلة بين الاتجاهين تنتهي أمامك، وستسير المركبات القادمة بجانبك مباشرة",
+   "action": "التزم بيمين الطريق وانتبه للمركبات القادمة من الأمام، ولا تتجاوز",
+   "level": 3,
+   "confuse": [
+    "w-two-way-traffic",
+    "w-road-narrows-both",
+    "w-two-way-crossing"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "At the bottom two separate thick black vertical strips (the two carriageways) with a white gap between them (the central island); higher up the gap closes and the strips join into one wide black strip that continues to the top",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-right-lane-ends",
+   "cat": "warning",
+   "name": "نهاية المسار الأيمن",
+   "meaning": "المسار الأيمن ينتهي أمامك ويندمج في المسار المجاور",
+   "action": "إذا كنت في المسار الأيمن فانتقل إلى اليسار مبكرا بعد استخدام الغماز، وإذا كنت في المسار الآخر فاترك المجال للمندمجين",
+   "level": 3,
+   "confuse": [
+    "w-left-lane-ends",
+    "w-road-narrows-right",
+    "t-lane-closed-right"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "Two black vertical edge lines with a black dashed lane line between them. The LEFT edge line is straight; the RIGHT edge line slants inward toward the middle at mid height, and the dashed lane line stops where the narrowing starts, so two lanes become one at the top",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-left-lane-ends",
+   "cat": "warning",
+   "name": "نهاية المسار الأيسر",
+   "meaning": "المسار الأيسر ينتهي أمامك ويندمج في المسار المجاور",
+   "action": "إذا كنت في المسار الأيسر فانتقل إلى اليمين مبكرا بعد استخدام الغماز، وإذا كنت في المسار الآخر فاترك المجال للمندمجين",
+   "level": 3,
+   "confuse": [
+    "w-right-lane-ends",
+    "w-road-narrows-left",
+    "t-lane-closed-left"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "Mirror of the right-lane-ends sign: RIGHT edge line straight; LEFT edge line slants inward at mid height; the dashed lane line between them stops where the narrowing starts",
+   "uae_note": "",
+   "src": [
+    "S12"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "w-u-turn-ahead",
+   "cat": "warning",
+   "name": "فتحة دوران للخلف أمامك",
+   "meaning": "أمامك فتحة مخصصة للدوران والعودة في الاتجاه المعاكس",
+   "action": "إذا أردت الدوران فانتقل مبكرا إلى المسار الأيسر وخفف السرعة، وإذا لم ترد فانتبه للمركبات التي تبطئ أمامك",
+   "level": 2,
+   "confuse": [
+    "r-no-u-turn",
+    "w-bend-left",
+    "m-turn-left-ahead"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "Black U-shaped arrow: the shaft starts at the bottom right, goes up, curves over the top to the LEFT and comes back down on the left side, arrowhead pointing DOWN on the left",
+   "uae_note": "الدوران للخلف في الإمارات يكون من المسار الأيسر لأن السير على اليمين، لذلك يتجه السهم إلى اليسار",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-speed-hump",
+   "cat": "warning",
+   "name": "مطب لتخفيف السرعة",
+   "meaning": "أمامك مطب صناعي على سطح الطريق لإجبار السائقين على تخفيف السرعة",
+   "action": "خفف السرعة كثيرا قبل المطب واعبره ببطء",
+   "level": 1,
+   "confuse": [
+    "w-uneven-road",
+    "w-steep-ascent",
+    "w-loose-chippings"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "A horizontal black base line across the lower part of the symbol area with ONE smooth black half-ellipse hump rising from its middle",
+   "uae_note": "كثيرة في الأحياء السكنية ومحيط المدارس، وغالبا تجد خطوطا مرسومة على المطب نفسه",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-uneven-road",
+   "cat": "warning",
+   "name": "طريق غير مستو",
+   "meaning": "سطح الطريق أمامك فيه تموجات أو حفر أو مطبات",
+   "action": "خفف السرعة وأمسك المقود جيدا",
+   "level": 3,
+   "confuse": [
+    "w-speed-hump",
+    "w-loose-chippings",
+    "w-slippery-road"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "A horizontal black base line with TWO smaller rounded bumps side by side in its middle (bumpy road profile)",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-slippery-road",
+   "cat": "warning",
+   "name": "طريق زلق",
+   "meaning": "سطح الطريق أمامك قد يكون زلقا، خصوصا عند المطر أو وجود رمال أو زيوت",
+   "action": "خفف السرعة وزد مسافة الأمان، وتجنب الفرملة القوية والانعطاف المفاجئ",
+   "level": 2,
+   "confuse": [
+    "w-loose-chippings",
+    "w-uneven-road",
+    "w-soft-verges"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "A black car seen from behind (rear view), slightly tilted, with two wavy S-shaped skid lines crossing each other below it",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-loose-chippings",
+   "cat": "warning",
+   "name": "حصى متطاير",
+   "meaning": "على سطح الطريق حصى صغير قد تقذفه عجلات المركبات",
+   "action": "خفف السرعة وزد المسافة عن المركبة التي أمامك لحماية الزجاج والطلاء",
+   "level": 3,
+   "confuse": [
+    "w-slippery-road",
+    "w-uneven-road",
+    "w-falling-rocks"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "A black car in side view driving to the left, with several small black dots and pebbles flying up and back from its rear wheel",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-soft-verges",
+   "cat": "warning",
+   "name": "حافة الطريق رخوة",
+   "meaning": "كتف الطريق أمامك رخو أو منخفض ولا يتحمل وزن المركبة",
+   "action": "ابق على سطح الطريق المعبد، ولا تخرج إلى الحافة إلا للضرورة وبسرعة منخفضة",
+   "level": 4,
+   "confuse": [
+    "w-slippery-road",
+    "w-quayside",
+    "w-uneven-road"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "A black car seen from behind, tilted, with its right wheels dropping onto a lower strip of black dots along the right edge of the road (the soft shoulder shown below road level)",
+   "uae_note": "",
+   "src": [
+    "S4",
+    "S3",
+    "S12"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-falling-rocks",
+   "cat": "warning",
+   "name": "احتمال تساقط صخور",
+   "meaning": "أمامك منطقة جبلية قد تسقط فيها صخور على الطريق",
+   "action": "خفف السرعة وانتبه لوجود صخور على الطريق، ولا تتوقف تحت المنحدرات",
+   "level": 3,
+   "confuse": [
+    "w-loose-chippings",
+    "w-steep-descent",
+    "w-other-danger"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "A black cliff face as a tall right-angled wedge on the RIGHT side of the symbol area, with 3 or 4 irregular black rocks of different sizes falling diagonally down to the left, the lowest one lying on the road",
+   "uae_note": "تنتشر في المناطق الجبلية مثل حتا وطرق الإمارات الشمالية",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-steep-descent",
+   "cat": "warning",
+   "name": "منحدر حاد",
+   "meaning": "أمامك نزول حاد، والرقم يبين نسبة الانحدار",
+   "action": "خفف السرعة قبل النزول، واستخدم ناقل حركة منخفضا بدل الضغط المستمر على الفرامل حتى لا تسخن الفرامل",
+   "level": 3,
+   "confuse": [
+    "w-steep-ascent",
+    "w-falling-rocks",
+    "w-speed-hump"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "10%",
+   "draw": "A black right-angled wedge filling the lower part of the symbol area whose top edge slopes DOWN from upper left to lower right; the black text 10% placed above the slope",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-steep-ascent",
+   "cat": "warning",
+   "name": "مرتفع حاد",
+   "meaning": "أمامك صعود حاد، والرقم يبين نسبة الميل",
+   "action": "حافظ على سرعة مناسبة، ولا تتجاوز قرب القمة لأن الرؤية محدودة، واترك مسافة عن المركبات الثقيلة البطيئة",
+   "level": 3,
+   "confuse": [
+    "w-steep-descent",
+    "w-speed-hump",
+    "w-uneven-road"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "10%",
+   "draw": "A black right-angled wedge filling the lower part of the symbol area whose top edge slopes UP from lower left to upper right; the black text 10% placed above the slope",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-low-flying-aircraft",
+   "cat": "warning",
+   "name": "طيران منخفض",
+   "meaning": "أمامك منطقة قريبة من مطار تمر فوقها الطائرات على ارتفاع منخفض مع ضجيج مفاجئ",
+   "action": "ركز على الطريق، ولا تنشغل بالنظر إلى الطائرات ولا تتوقف لمشاهدتها",
+   "level": 3,
+   "confuse": [
+    "s-airport",
+    "w-overhead-cable",
+    "w-crosswind"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "A black passenger jet silhouette in side view in the centre of the triangle, nose pointing to the upper left as if climbing",
+   "uae_note": "تكثر قرب مطارات دبي والشارقة",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-overhead-cable",
+   "cat": "warning",
+   "name": "أسلاك كهربائية معلقة",
+   "meaning": "أمامك أسلاك كهرباء عالية الجهد تعبر فوق الطريق",
+   "action": "إذا كانت مركبتك أو حمولتها مرتفعة فتأكد أن ارتفاعها أقل من الارتفاع المسموح، ولا تتوقف تحت الأسلاك",
+   "level": 3,
+   "confuse": [
+    "w-max-height-ahead",
+    "r-max-height",
+    "w-low-flying-aircraft"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "A black cable line across the upper part of the symbol area, sagging slightly between two short black poles at the sides, with a black zigzag lightning bolt below the cable pointing down",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-tunnel",
+   "cat": "warning",
+   "name": "نفق أمامك",
+   "meaning": "الطريق أمامك يدخل في نفق",
+   "action": "أشعل المصابيح الأمامية، واخلع النظارة الشمسية إن كنت تلبسها، والتزم بمسارك ولا تتوقف داخل النفق إلا في الطوارئ",
+   "level": 3,
+   "confuse": [
+    "i-tunnel",
+    "m-headlights-on",
+    "w-opening-bridge"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "A black tunnel entrance: a solid black mass filling the lower part of the symbol area with a white semicircular arched opening in its centre, and two short converging road lines leading into the opening",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-opening-bridge",
+   "cat": "warning",
+   "name": "جسر متحرك",
+   "meaning": "أمامك جسر يمكن أن يرتفع أو يفتح لمرور السفن",
+   "action": "خفف السرعة، وتوقف إذا أضاءت الإشارة الحمراء أو نزل الحاجز",
+   "level": 4,
+   "confuse": [
+    "w-quayside",
+    "w-tunnel",
+    "w-gate-ahead"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "Side profile of a lifting bridge: two black bridge leaves raised upward from each side forming a V-shaped opening in the middle, with two short wavy black water lines below",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-quayside",
+   "cat": "warning",
+   "name": "رصيف ميناء أو ضفة نهر",
+   "meaning": "الطريق أمامك ينتهي عند رصيف مائي أو حافة ماء دون حاجز",
+   "action": "خفف السرعة كثيرا وانتبه، خصوصا في الليل أو عند سوء الرؤية",
+   "level": 4,
+   "confuse": [
+    "w-opening-bridge",
+    "w-soft-verges",
+    "w-dead-end-ahead"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "A black car in side view facing left, tipping nose first off a straight quay edge on the left, falling toward three short wavy black water lines at the bottom",
+   "uae_note": "تظهر قرب الموانئ والخيران والقنوات المائية",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-max-height-ahead",
+   "cat": "warning",
+   "name": "حد الارتفاع أمامك",
+   "meaning": "أمامك جسر أو عائق علوي، والرقم هو أقصى ارتفاع مسموح للمركبة مع حمولتها",
+   "action": "إذا كانت مركبتك أعلى من الرقم فلا تتابع، واسلك طريقا آخر",
+   "level": 3,
+   "confuse": [
+    "r-max-height",
+    "w-overhead-cable",
+    "w-tunnel"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "4.5 م",
+   "draw": "Inside the triangle the black text 4.5 م centred, with a black arrowhead above it pointing DOWN and a black arrowhead below it pointing UP (vertical clearance symbol)",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-other-danger",
+   "cat": "warning",
+   "name": "أخطار أخرى",
+   "meaning": "أمامك خطر لا توضحه الإشارات الأخرى، وغالبا تشرحه لوحة إضافية تحتها",
+   "action": "خفف السرعة واقرأ اللوحة الإضافية إن وجدت، واستعد لأي موقف",
+   "level": 2,
+   "confuse": [
+    "w-traffic-signals",
+    "t-road-works",
+    "w-uneven-road"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "A large black exclamation mark (a vertical bar with a dot below it) centred in the triangle",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-tram-crossing",
+   "cat": "warning",
+   "name": "عبور الترام أمامك",
+   "meaning": "أمامك مكان يعبر فيه خط الترام الطريق، والترام قد يأتي من اليمين أو من اليسار",
+   "action": "خفف السرعة وانظر إلى الجهتين، ولا تدخل منطقة العبور إلا إذا كان مخرجها خاليا، والأولوية للترام",
+   "level": 3,
+   "confuse": [
+    "m-trams-only",
+    "w-traffic-signals",
+    "w-crossroads"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "A black modern tram in side view (long low body, several windows, a pantograph on the roof) centred in the triangle, running on a short black rail line",
+   "uae_note": "خاصة بدبي على مسار ترام دبي، وهيئة الطرق تلزم كل مستخدمي الطريق بإعطاء الأولوية لحركة الترام",
+   "src": [
+    "S8",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-sand-dunes",
+   "cat": "warning",
+   "name": "كثبان رملية أمامك",
+   "meaning": "أمامك منطقة قد تزحف فيها الرمال على الطريق أو تقل فيها الرؤية بسبب الرمال",
+   "action": "خفف السرعة وانتبه لتراكم الرمال على سطح الطريق، وأشعل المصابيح إذا قلت الرؤية",
+   "level": 3,
+   "confuse": [
+    "w-camels",
+    "w-slippery-road",
+    "w-crosswind"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "Two or three rounded black sand-dune humps rising from the lower right of the symbol area, a short road edge line at the lower left, and a few small black dots drifting from the dunes across the road",
+   "uae_note": "إشارة خاصة بطرق الإمارات الصحراوية ولا تجدها في كتب الإشارات الأوروبية",
+   "src": [
+    "S5",
+    "S12"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-crosswind",
+   "cat": "warning",
+   "name": "رياح جانبية أمامك",
+   "meaning": "أمامك مقطع قد تهب فيه رياح جانبية قوية تدفع المركبة",
+   "action": "خفف السرعة وأمسك المقود بقوة بكلتا يديك، وانتبه عند تجاوز المركبات الكبيرة أو الخروج من خلفها",
+   "level": 4,
+   "confuse": [
+    "w-sand-dunes",
+    "w-low-flying-aircraft",
+    "w-slippery-road"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black pole, red and white windsock",
+   "text": "",
+   "draw": "A black vertical pole on the left with a windsock attached at its top, blowing horizontally to the right; the windsock drawn in alternating red and white bands with a black outline",
+   "uae_note": "",
+   "src": [
+    "S5",
+    "S12"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-gate-ahead",
+   "cat": "warning",
+   "name": "بوابة قد تغلق الطريق أمامك",
+   "meaning": "أمامك بوابة قد تكون مغلقة وتقطع الطريق",
+   "action": "خفف السرعة واستعد للتوقف إذا كانت البوابة مغلقة",
+   "level": 4,
+   "confuse": [
+    "w-opening-bridge",
+    "w-dead-end-ahead",
+    "r-no-entry"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "A black farm-style gate centred in the triangle: two short vertical posts with three horizontal bars between them and one diagonal brace",
+   "uae_note": "",
+   "src": [
+    "S5",
+    "S12"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-dead-end-ahead",
+   "cat": "warning",
+   "name": "طريق مسدود أمامك",
+   "meaning": "الطريق أمامك مغلق من نهايته ولا يوصلك إلى طريق آخر",
+   "action": "لا تدخله إلا إذا كانت وجهتك فيه، واستعد للرجوع بأمان",
+   "level": 3,
+   "confuse": [
+    "i-dead-end",
+    "w-t-junction",
+    "w-gate-ahead"
+   ],
+   "shape": "triangle",
+   "colors": "white background, red border, black stem, red bar",
+   "text": "",
+   "draw": "Inside the triangle a thick black vertical bar rising from the bottom, capped at its top by a short thick RED horizontal bar (T shape)",
+   "uae_note": "",
+   "src": [
+    "S5",
+    "S4",
+    "S12"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-chevron-right",
+   "cat": "warning",
+   "name": "علامة اتجاه تحذيرية مفردة إلى اليمين",
+   "meaning": "الطريق ينعطف إلى اليمين بحدة عند هذه اللوحة",
+   "action": "خفف السرعة واتبع اتجاه السهم، ولا تسر مباشرة نحو اللوحة",
+   "level": 3,
+   "confuse": [
+    "w-chevron-left",
+    "w-chevrons-right",
+    "w-bend-right",
+    "m-go-this-way"
+   ],
+   "shape": "rect",
+   "colors": "yellow background, black chevron",
+   "text": "",
+   "draw": "Upright rectangle (taller than wide) with a yellow background and one thick black chevron (>) pointing to the RIGHT in the centre",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": "وجود اللوحة مؤكد في لوحات الهيئة والمعاهد، أما لونها الأصفر والأسود فمأخوذ من الطرق نفسها ولم نجد وصفا مكتوبا له"
+  },
+  {
+   "id": "w-chevron-left",
+   "cat": "warning",
+   "name": "علامة اتجاه تحذيرية مفردة إلى اليسار",
+   "meaning": "الطريق ينعطف إلى اليسار بحدة عند هذه اللوحة",
+   "action": "خفف السرعة واتبع اتجاه السهم، ولا تسر مباشرة نحو اللوحة",
+   "level": 3,
+   "confuse": [
+    "w-chevron-right",
+    "w-chevrons-left",
+    "w-bend-left",
+    "m-go-this-way"
+   ],
+   "shape": "rect",
+   "colors": "yellow background, black chevron",
+   "text": "",
+   "draw": "Upright rectangle (taller than wide) with a yellow background and one thick black chevron (<) pointing to the LEFT in the centre",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-chevrons-right",
+   "cat": "warning",
+   "name": "علامة اتجاه تحذيرية متعددة إلى اليمين",
+   "meaning": "منعطف حاد إلى اليمين أو جزيرة دوار، والأسهم ترسم لك اتجاه السير",
+   "action": "خفف السرعة واتبع اتجاه الأسهم حول المنعطف أو الجزيرة",
+   "level": 3,
+   "confuse": [
+    "w-chevrons-left",
+    "w-chevron-right",
+    "w-double-bend-right",
+    "m-roundabout"
+   ],
+   "shape": "rect",
+   "colors": "yellow background, black chevrons",
+   "text": "",
+   "draw": "Wide horizontal rectangle with a yellow background and a row of three or four black chevrons all pointing to the RIGHT",
+   "uae_note": "في الدوارات تشير الأسهم إلى اليمين لأن السير حول الجزيرة عكس عقارب الساعة",
+   "src": [
+    "S1",
+    "S4"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-chevrons-left",
+   "cat": "warning",
+   "name": "علامة اتجاه تحذيرية متعددة إلى اليسار",
+   "meaning": "منعطف حاد إلى اليسار، والأسهم ترسم لك اتجاه السير",
+   "action": "خفف السرعة واتبع اتجاه الأسهم حول المنعطف",
+   "level": 3,
+   "confuse": [
+    "w-chevrons-right",
+    "w-chevron-left",
+    "w-double-bend-left"
+   ],
+   "shape": "rect",
+   "colors": "yellow background, black chevrons",
+   "text": "",
+   "draw": "Wide horizontal rectangle with a yellow background and a row of three or four black chevrons all pointing to the LEFT",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-chevron-t-junction",
+   "cat": "warning",
+   "name": "تحويل حاد إلى اليمين أو اليسار عند تقاطع T",
+   "meaning": "الطريق ينتهي أمامك عند تقاطع على شكل T، وعليك الانعطاف يمينا أو يسارا",
+   "action": "خفف السرعة واستعد للتوقف، ثم انعطف في الاتجاه المطلوب بعد إفساح الطريق",
+   "level": 4,
+   "confuse": [
+    "w-t-junction",
+    "w-chevrons-right",
+    "m-go-this-way"
+   ],
+   "shape": "rect",
+   "colors": "yellow background, black chevrons",
+   "text": "",
+   "draw": "Wide horizontal rectangle with a yellow background: black chevrons pointing LEFT on the left half and black chevrons pointing RIGHT on the right half, back to back in the centre",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "w-hazard-marker",
+   "cat": "warning",
+   "name": "علامة الخطر",
+   "meaning": "تنبهك إلى عائق ثابت قرب الطريق مثل بداية جزيرة أو دعامة جسر أو نقطة تفرع مخرج",
+   "action": "خفف السرعة ومر من الجهة التي تنحدر نحوها الخطوط المائلة",
+   "level": 4,
+   "confuse": [
+    "w-chevron-right",
+    "w-other-danger",
+    "t-barriers"
+   ],
+   "shape": "rect",
+   "colors": "yellow and black diagonal stripes",
+   "text": "",
+   "draw": "Upright rectangle filled with alternating diagonal black and yellow stripes (about 5 of each) at 45 degrees; the stripes slope DOWN toward the side on which traffic must pass (the version for passing on the right slopes down to the right)",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "r-no-entry",
+   "cat": "prohibitory",
+   "name": "ممنوع الدخول",
+   "meaning": "ممنوع على كل المركبات دخول هذا الطريق من هذه الجهة، وغالبا لأنه طريق باتجاه واحد عكس اتجاهك",
+   "action": "لا تدخل، واختر طريقا آخر",
+   "level": 1,
+   "confuse": [
+    "r-no-parking",
+    "p-stop",
+    "i-one-way",
+    "i-dead-end"
+   ],
+   "shape": "circle",
+   "colors": "red background, white horizontal bar",
+   "text": "",
+   "draw": "Solid red disc with a thin white rim; a thick white horizontal bar across the centre, about 60 percent of the diameter wide",
+   "uae_note": "هيئة الطرق تسميها في كتيبها: يجب عليك عدم دخول هذا الشارع، والسير عكس الاتجاه من أخطر المخالفات",
+   "src": [
+    "S1",
+    "S4",
+    "S3",
+    "S20"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "r-no-left-turn",
+   "cat": "prohibitory",
+   "name": "ممنوع الانعطاف إلى اليسار",
+   "meaning": "ممنوع عليك الانعطاف إلى اليسار عند التقاطع التالي",
+   "action": "تابع مستقيما أو انعطف يمينا إذا كان ذلك مسموحا، ولا تنعطف يسارا",
+   "level": 1,
+   "confuse": [
+    "r-no-right-turn",
+    "r-no-u-turn",
+    "m-turn-left",
+    "m-turn-left-ahead"
+   ],
+   "shape": "circle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "White disc with red ring. A black arrow rising from the bottom centre then bending 90 degrees to the LEFT, arrowhead pointing left. A red diagonal slash from top left to bottom right drawn OVER the arrow",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "r-no-right-turn",
+   "cat": "prohibitory",
+   "name": "ممنوع الانعطاف إلى اليمين",
+   "meaning": "ممنوع عليك الانعطاف إلى اليمين عند التقاطع التالي",
+   "action": "تابع مستقيما أو انعطف يسارا إذا كان ذلك مسموحا، ولا تنعطف يمينا",
+   "level": 1,
+   "confuse": [
+    "r-no-left-turn",
+    "m-turn-right",
+    "m-turn-right-ahead",
+    "r-no-u-turn"
+   ],
+   "shape": "circle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "White disc with red ring. A black arrow rising from the bottom centre then bending 90 degrees to the RIGHT, arrowhead pointing right. A red diagonal slash from top left to bottom right drawn OVER the arrow",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "r-no-u-turn",
+   "cat": "prohibitory",
+   "name": "ممنوع الدوران للخلف",
+   "meaning": "ممنوع عليك الدوران للعودة في الاتجاه المعاكس في هذا المكان",
+   "action": "تابع حتى أقرب فتحة دوران مسموحة أو دوار",
+   "level": 1,
+   "confuse": [
+    "r-no-left-turn",
+    "w-u-turn-ahead",
+    "r-no-entry"
+   ],
+   "shape": "circle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "White disc with red ring. A black U-shaped arrow: the shaft rises on the right, curves over the top to the LEFT and comes down on the left with the arrowhead pointing DOWN. A red diagonal slash from top left to bottom right OVER the arrow",
+   "uae_note": "لوحات المعاهد تسميها: ممنوع الدوران إلى الاتجاه المعاكس",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "r-no-overtaking",
+   "cat": "prohibitory",
+   "name": "ممنوع التجاوز",
+   "meaning": "ممنوع عليك تجاوز المركبات الأخرى من مكان الإشارة حتى نهاية المنع",
+   "action": "ابق خلف المركبة التي أمامك في مسارك ولا تتجاوزها",
+   "level": 1,
+   "confuse": [
+    "r-no-overtaking-trucks",
+    "w-two-way-traffic",
+    "p-give-way-oncoming"
+   ],
+   "shape": "circle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "White disc with red ring and NO slash. Two cars seen from behind side by side in the centre: the LEFT car is RED and the RIGHT car is BLACK (the red one is the car that would pull out to overtake on the left)",
+   "uae_note": "التجاوز في الإمارات يكون من اليسار، ولذلك تظهر السيارة الحمراء (التي تريد التجاوز) على اليسار",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "r-no-overtaking-trucks",
+   "cat": "prohibitory",
+   "name": "ممنوع تجاوز الشاحنات",
+   "meaning": "ممنوع على الشاحنات تجاوز المركبات الأخرى في هذا المقطع",
+   "action": "إذا كنت تقود شاحنة فلا تتجاوز، وإذا كنت في سيارة فتوقع أن تبقى الشاحنات في مسارها",
+   "level": 4,
+   "confuse": [
+    "r-no-overtaking",
+    "r-no-trucks",
+    "i-lane-trucks-restricted"
+   ],
+   "shape": "circle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "White disc with red ring and NO slash. Side by side seen from behind: a RED lorry on the LEFT and a BLACK car on the RIGHT",
+   "uae_note": "",
+   "src": [
+    "S12"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "r-no-horn",
+   "cat": "prohibitory",
+   "name": "ممنوع استخدام جهاز التنبيه",
+   "meaning": "ممنوع استعمال البوق في هذه المنطقة، مثل محيط المستشفيات",
+   "action": "لا تستخدم البوق، وتعامل مع المواقف بالحذر والانتظار",
+   "level": 2,
+   "confuse": [
+    "r-no-overtaking",
+    "r-no-pedestrians",
+    "m-headlights-on"
+   ],
+   "shape": "circle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "White disc with red ring. A black horn (trumpet shape, bell opening to the right) in the centre with a red diagonal slash over it",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "r-no-pedestrians",
+   "cat": "prohibitory",
+   "name": "ممنوع مرور المشاة",
+   "meaning": "ممنوع على المشاة المشي أو العبور في هذا الطريق",
+   "action": "لا تمش على هذا الطريق، وإذا أردت العبور فاستخدم الجسر أو ممر المشاة",
+   "level": 2,
+   "confuse": [
+    "m-pedestrians-only",
+    "w-pedestrian-crossing",
+    "p-give-way-pedestrians"
+   ],
+   "shape": "circle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "White disc with red ring. A black walking pedestrian in side view in the centre with a red diagonal slash over it",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "r-no-bicycles",
+   "cat": "prohibitory",
+   "name": "ممنوع مرور الدراجات الهوائية",
+   "meaning": "ممنوع على الدراجات الهوائية استخدام هذا الطريق",
+   "action": "إذا كنت على دراجة هوائية فاستخدم طريقا آخر أو مسار الدراجات",
+   "level": 3,
+   "confuse": [
+    "m-cyclists-only",
+    "w-cyclists",
+    "r-no-motorcycles"
+   ],
+   "shape": "circle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "White disc with red ring. A black bicycle in side view with a red diagonal slash over it",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "r-no-motorcycles",
+   "cat": "prohibitory",
+   "name": "ممنوع مرور الدراجات النارية",
+   "meaning": "ممنوع على الدراجات النارية دخول هذا الطريق",
+   "action": "إذا كنت تقود دراجة نارية فاستخدم طريقا آخر",
+   "level": 3,
+   "confuse": [
+    "r-no-bicycles",
+    "r-no-delivery-motorbikes",
+    "r-no-quad-bikes"
+   ],
+   "shape": "circle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "White disc with red ring. A black motorcycle with rider in side view with a red diagonal slash over it",
+   "uae_note": "",
+   "src": [
+    "S2",
+    "S12"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "r-no-delivery-motorbikes",
+   "cat": "prohibitory",
+   "name": "ممنوع مرور دراجات التوصيل",
+   "meaning": "ممنوع على دراجات التوصيل النارية استخدام هذا الطريق أو المسار المحدد",
+   "action": "إذا كنت تقود دراجة توصيل فالتزم بالطرق والمسارات المسموحة لك",
+   "level": 4,
+   "confuse": [
+    "r-no-motorcycles",
+    "i-lane-delivery-motorbikes",
+    "r-no-bicycles"
+   ],
+   "shape": "circle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "White disc with red ring. A black motorcycle with rider in side view carrying a square delivery box behind the rider, with a red diagonal slash over it",
+   "uae_note": "إشارة جديدة في دبي ضمن تنظيم حركة دراجات التوصيل",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "r-no-trucks",
+   "cat": "prohibitory",
+   "name": "ممنوع مرور مركبات الشحن",
+   "meaning": "ممنوع على الشاحنات ومركبات نقل البضائع دخول هذا الطريق",
+   "action": "إذا كنت تقود مركبة شحن فاسلك الطريق البديل المخصص للشاحنات",
+   "level": 2,
+   "confuse": [
+    "m-trucks-only",
+    "r-no-buses",
+    "r-no-overtaking-trucks",
+    "x-trucks"
+   ],
+   "shape": "circle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "White disc with red ring. A black lorry (box truck, side view, cab on the left) with a red diagonal slash over it",
+   "uae_note": "تكثر في المدن، وأحيانا تحدد لوحة إضافية تحتها أوقات المنع مثل ساعات الذروة",
+   "src": [
+    "S1",
+    "S4",
+    "S3",
+    "S5"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "r-no-buses",
+   "cat": "prohibitory",
+   "name": "ممنوع دخول الحافلات",
+   "meaning": "ممنوع على الحافلات دخول هذا الطريق",
+   "action": "إذا كنت تقود حافلة فاستخدم طريقا آخر",
+   "level": 4,
+   "confuse": [
+    "m-buses-only",
+    "r-no-trucks",
+    "i-bus-stop"
+   ],
+   "shape": "circle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "White disc with red ring. A black bus in side view with a red diagonal slash over it",
+   "uae_note": "",
+   "src": [
+    "S2",
+    "S5"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "r-no-taxis",
+   "cat": "prohibitory",
+   "name": "ممنوع دخول سيارات الأجرة",
+   "meaning": "ممنوع على سيارات الأجرة دخول هذا الطريق أو المكان",
+   "action": "إذا كنت تقود سيارة أجرة فلا تدخل",
+   "level": 5,
+   "confuse": [
+    "m-taxis-only",
+    "i-taxi-stand",
+    "r-no-buses"
+   ],
+   "shape": "circle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "White disc with red ring. A black car in side view with a small roof taxi light, with a red diagonal slash over it",
+   "uae_note": "",
+   "src": [
+    "S2"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "r-no-hazardous",
+   "cat": "prohibitory",
+   "name": "ممنوع مرور المركبات التي تحمل مواد خطرة",
+   "meaning": "ممنوع على المركبات المحملة بمواد خطرة، مثل الوقود أو الغاز أو المواد القابلة للاشتعال، دخول هذا الطريق",
+   "action": "إذا كنت تنقل مواد خطرة فاستخدم الطريق المخصص لها",
+   "level": 4,
+   "confuse": [
+    "r-no-trucks",
+    "w-other-danger",
+    "r-no-overtaking-trucks"
+   ],
+   "shape": "circle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "White disc with red ring. A black tanker truck in side view with a small flame symbol on its tank, and a red diagonal slash over it",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "r-no-quad-bikes",
+   "cat": "prohibitory",
+   "name": "ممنوع مرور الدراجات الرباعية",
+   "meaning": "ممنوع على الدراجات الرباعية (البقي) السير على هذا الطريق",
+   "action": "لا تقد الدراجة الرباعية على الطرق العامة، واستخدم المناطق المخصصة لها",
+   "level": 5,
+   "confuse": [
+    "r-no-motorcycles",
+    "r-no-delivery-motorbikes",
+    "w-sand-dunes"
+   ],
+   "shape": "circle",
+   "colors": "white background, red border, black symbol",
+   "text": "",
+   "draw": "White disc with red ring. A black quad bike (four-wheeled ATV with rider) in side view with a red diagonal slash over it",
+   "uae_note": "تظهر قرب المناطق الصحراوية التي يكثر فيها استخدام الدراجات الرباعية",
+   "src": [
+    "S12"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "r-speed-25",
+   "cat": "prohibitory",
+   "name": "الحد الأقصى للسرعة 25 كم/ساعة",
+   "meaning": "ممنوع تجاوز سرعة 25 كم/ساعة في هذا المكان",
+   "action": "لا تتجاوز 25 كم/ساعة وانتبه للمشاة والمركبات الخارجة من المواقف",
+   "level": 3,
+   "confuse": [
+    "r-speed-40",
+    "r-speed-60",
+    "m-min-speed-60"
+   ],
+   "shape": "circle",
+   "colors": "white background, red border, black numerals",
+   "text": "25",
+   "draw": "White disc with a thick red ring; the black number 25 in large bold Western digits centred. No units, no slash",
+   "uae_note": "كتيب هيئة الطرق يحدد 25 كم/ساعة في مناطق المواقف",
+   "src": [
+    "S20",
+    "S16"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "r-speed-40",
+   "cat": "prohibitory",
+   "name": "الحد الأقصى للسرعة 40 كم/ساعة",
+   "meaning": "ممنوع تجاوز سرعة 40 كم/ساعة على هذا الطريق",
+   "action": "لا تتجاوز 40 كم/ساعة، وخفف أكثر إذا ازدحم الطريق أو قلت الرؤية",
+   "level": 1,
+   "confuse": [
+    "r-speed-60",
+    "r-speed-25",
+    "m-min-speed-60"
+   ],
+   "shape": "circle",
+   "colors": "white background, red border, black numerals",
+   "text": "40",
+   "draw": "White disc with a thick red ring; the black number 40 in large bold Western digits centred. No units, no slash",
+   "uae_note": "شائعة في الطرق الفرعية داخل الأحياء السكنية",
+   "src": [
+    "S20",
+    "S6",
+    "S16"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "r-speed-60",
+   "cat": "prohibitory",
+   "name": "الحد الأقصى للسرعة 60 كم/ساعة",
+   "meaning": "ممنوع تجاوز سرعة 60 كم/ساعة على هذا الطريق",
+   "action": "لا تتجاوز 60 كم/ساعة، وتذكر أن الرقم حد أعلى وليس سرعة مطلوبة",
+   "level": 1,
+   "confuse": [
+    "m-min-speed-60",
+    "r-speed-40",
+    "r-speed-80"
+   ],
+   "shape": "circle",
+   "colors": "white background, red border, black numerals",
+   "text": "60",
+   "draw": "White disc with a thick red ring; the black number 60 in large bold Western digits centred. No units, no slash",
+   "uae_note": "شائعة في الطرق المزدوجة داخل المدن",
+   "src": [
+    "S20",
+    "S16"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "r-speed-80",
+   "cat": "prohibitory",
+   "name": "الحد الأقصى للسرعة 80 كم/ساعة",
+   "meaning": "ممنوع تجاوز سرعة 80 كم/ساعة على هذا الطريق",
+   "action": "لا تتجاوز 80 كم/ساعة، وخفف أكثر عند المطر أو الضباب أو الزحام",
+   "level": 1,
+   "confuse": [
+    "r-speed-60",
+    "r-speed-100",
+    "r-speed-by-vehicle"
+   ],
+   "shape": "circle",
+   "colors": "white background, red border, black numerals",
+   "text": "80",
+   "draw": "White disc with a thick red ring; the black number 80 in large bold Western digits centred. No units, no slash",
+   "uae_note": "شائعة في الطرق الرئيسية داخل المدن، وهي أيضا حد الشاحنات على كثير من الطرق السريعة",
+   "src": [
+    "S1",
+    "S20",
+    "S16"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "r-speed-100",
+   "cat": "prohibitory",
+   "name": "الحد الأقصى للسرعة 100 كم/ساعة",
+   "meaning": "ممنوع تجاوز سرعة 100 كم/ساعة على هذا الطريق",
+   "action": "لا تتجاوز 100 كم/ساعة، والتزم بالمسار الأيمن إذا كنت أبطأ من غيرك",
+   "level": 2,
+   "confuse": [
+    "r-speed-80",
+    "r-speed-120",
+    "r-speed-60"
+   ],
+   "shape": "circle",
+   "colors": "white background, red border, black numerals",
+   "text": "100",
+   "draw": "White disc with a thick red ring; the black number 100 in large bold Western digits centred. No units, no slash",
+   "uae_note": "شائعة على الطرق الخارجية وبعض الطرق السريعة داخل المدن",
+   "src": [
+    "S20",
+    "S16"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "r-speed-120",
+   "cat": "prohibitory",
+   "name": "الحد الأقصى للسرعة 120 كم/ساعة",
+   "meaning": "ممنوع تجاوز سرعة 120 كم/ساعة على هذا الطريق",
+   "action": "لا تتجاوز 120 كم/ساعة، واترك المسار الأيسر للتجاوز فقط",
+   "level": 1,
+   "confuse": [
+    "r-speed-100",
+    "r-speed-140",
+    "m-min-speed-60"
+   ],
+   "shape": "circle",
+   "colors": "white background, red border, black numerals",
+   "text": "120",
+   "draw": "White disc with a thick red ring; the black number 120 in large bold Western digits centred. No units, no slash",
+   "uae_note": "أعلى حد شائع على الطرق السريعة في دبي والشارقة، وغالبا يرافقه حد أدنى 60 كم/ساعة",
+   "src": [
+    "S3",
+    "S20",
+    "S16"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "r-speed-140",
+   "cat": "prohibitory",
+   "name": "الحد الأقصى للسرعة 140 كم/ساعة",
+   "meaning": "ممنوع تجاوز سرعة 140 كم/ساعة على هذا الطريق",
+   "action": "لا تتجاوز 140 كم/ساعة، وانتبه لأن الحد يتغير عند دخول إمارة أخرى",
+   "level": 4,
+   "confuse": [
+    "r-speed-120",
+    "r-speed-100"
+   ],
+   "shape": "circle",
+   "colors": "white background, red border, black numerals",
+   "text": "140",
+   "draw": "White disc with a thick red ring; the black number 140 in large bold Western digits centred. No units, no slash",
+   "uae_note": "موجودة على بعض الطرق الخارجية في إمارة أبوظبي فقط، ولن تراها في دبي أو الشارقة",
+   "src": [
+    "S16"
+   ],
+   "confidence": "medium",
+   "notes": "المصدر الوحيد لهذا الحد موسوعة عامة، ولم نجد قائمة رسمية حديثة بالطرق التي عليها 140 كم/ساعة"
+  },
+  {
+   "id": "r-speed-by-vehicle",
+   "cat": "prohibitory",
+   "name": "حدود السرعة حسب نوع المركبة",
+   "meaning": "اللوحة تحدد سرعة قصوى مختلفة لكل نوع مركبة على نفس الطريق، مثل سرعة أعلى للسيارات الخفيفة وأقل للشاحنات والحافلات",
+   "action": "اقرأ الرقم الموضوع بجانب رمز مركبتك والتزم به",
+   "level": 4,
+   "confuse": [
+    "r-speed-120",
+    "r-speed-80",
+    "x-trucks"
+   ],
+   "shape": "rect",
+   "colors": "white background, black border, black vehicle symbols, speed roundels with red rings",
+   "text": "",
+   "draw": "Upright white rectangle with a black border divided into two rows: top row a black car silhouette on the left and a small speed-limit roundel (red ring, black 120) on the right; bottom row a black lorry silhouette and a roundel with black 80",
+   "uae_note": "كتيب هيئة الطرق يحدد على الطرق السريعة 120 كم/ساعة للمركبات الخفيفة و80 كم/ساعة للثقيلة",
+   "src": [
+    "S12",
+    "S20"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "r-no-parking",
+   "cat": "prohibitory",
+   "name": "ممنوع الوقوف",
+   "meaning": "ممنوع ركن المركبة أو تركها منتظرة في المكان الذي تحدده الإشارة",
+   "action": "لا تترك مركبتك هنا ولا تنتظر فيها أحدا، وابحث عن موقف مسموح",
+   "level": 1,
+   "confuse": [
+    "r-no-stopping",
+    "r-no-entry",
+    "i-parking"
+   ],
+   "shape": "circle",
+   "colors": "blue background, red border, red diagonal bar",
+   "text": "",
+   "draw": "Blue disc with a red ring and ONE red diagonal bar from top left to bottom right. No other symbol",
+   "uae_note": "قد تجد تحتها لوحة أوقات أو سهم يحدد مكان المنع",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high",
+   "notes": "لوحات المعاهد تذكر ممنوع الوقوف وممنوع الانتظار كبندين، ودمجناهما لأن المطلوب من السائق واحد: لا تترك مركبتك هنا"
+  },
+  {
+   "id": "r-no-stopping",
+   "cat": "prohibitory",
+   "name": "ممنوع الوقوف والتوقف",
+   "meaning": "ممنوع إيقاف المركبة في هذا المكان نهائيا ولو لثوان، حتى لإنزال راكب",
+   "action": "لا توقف مركبتك هنا لأي سبب إلا عند الضرورة القصوى أو بأمر رجل المرور",
+   "level": 2,
+   "confuse": [
+    "r-no-parking",
+    "r-no-entry",
+    "x-arrow-extent"
+   ],
+   "shape": "circle",
+   "colors": "blue background, red border, red cross",
+   "text": "",
+   "draw": "Blue disc with a red ring and a red X made of two red diagonal bars crossing in the centre",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "r-max-height",
+   "cat": "prohibitory",
+   "name": "حد الارتفاع المسموح به",
+   "meaning": "ممنوع مرور أي مركبة يزيد ارتفاعها مع حمولتها على الرقم المكتوب",
+   "action": "إذا كانت مركبتك أعلى من الرقم فلا تدخل، واسلك طريقا بديلا",
+   "level": 3,
+   "confuse": [
+    "w-max-height-ahead",
+    "r-max-width",
+    "r-max-weight"
+   ],
+   "shape": "circle",
+   "colors": "white background, red border, black symbol",
+   "text": "4.5 م",
+   "draw": "White disc with red ring. The black text 4.5 م in the centre, with a small black triangle above it pointing DOWN and a small black triangle below it pointing UP",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "r-max-width",
+   "cat": "prohibitory",
+   "name": "حد العرض المسموح به",
+   "meaning": "ممنوع مرور أي مركبة يزيد عرضها على الرقم المكتوب",
+   "action": "إذا كانت مركبتك أعرض من الرقم فلا تدخل",
+   "level": 4,
+   "confuse": [
+    "r-max-height",
+    "r-max-length",
+    "w-road-narrows-both"
+   ],
+   "shape": "circle",
+   "colors": "white background, red border, black symbol",
+   "text": "2.5 م",
+   "draw": "White disc with red ring. The black text 2.5 م in the centre, with a small black triangle on its left pointing RIGHT and a small black triangle on its right pointing LEFT",
+   "uae_note": "",
+   "src": [
+    "S4"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "r-max-length",
+   "cat": "prohibitory",
+   "name": "حد الطول المسموح به",
+   "meaning": "ممنوع مرور أي مركبة، أو مركبة مع مقطورة، يزيد طولها على الرقم المكتوب",
+   "action": "إذا كانت مركبتك أطول من الرقم فلا تدخل",
+   "level": 4,
+   "confuse": [
+    "r-max-width",
+    "r-max-weight",
+    "r-no-trucks"
+   ],
+   "shape": "circle",
+   "colors": "white background, red border, black symbol",
+   "text": "15 م",
+   "draw": "White disc with red ring. A black lorry silhouette in side view in the upper half; below it a black horizontal double-headed arrow with the black text 15 م",
+   "uae_note": "",
+   "src": [
+    "S5",
+    "S2"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "r-max-weight",
+   "cat": "prohibitory",
+   "name": "حد الوزن الإجمالي المسموح به",
+   "meaning": "ممنوع مرور أي مركبة يزيد وزنها الإجمالي مع الحمولة على الرقم المكتوب",
+   "action": "إذا كان وزن مركبتك مع حمولتها أكبر من الرقم فلا تدخل",
+   "level": 4,
+   "confuse": [
+    "r-max-axle",
+    "r-max-height",
+    "r-max-length"
+   ],
+   "shape": "circle",
+   "colors": "white background, red border, black symbol",
+   "text": "10 t",
+   "draw": "White disc with red ring. The large black number 10 in the centre followed by a smaller black letter t (tonnes)",
+   "uae_note": "",
+   "src": [
+    "S4",
+    "S2"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "r-max-axle",
+   "cat": "prohibitory",
+   "name": "حد الوزن على المحور الواحد",
+   "meaning": "ممنوع مرور أي مركبة يزيد الوزن على أي محور من محاورها على الرقم المكتوب",
+   "action": "إذا كانت حمولة محور مركبتك أكبر من الرقم فلا تدخل",
+   "level": 5,
+   "confuse": [
+    "r-max-weight",
+    "r-max-length",
+    "r-no-trucks"
+   ],
+   "shape": "circle",
+   "colors": "white background, red border, black symbol",
+   "text": "8 t",
+   "draw": "White disc with red ring. In the upper half a black truck axle seen from the side (two wheels joined by a short bar); below it the black text 8 t",
+   "uae_note": "",
+   "src": [
+    "S12"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "m-ahead-only",
+   "cat": "mandatory",
+   "name": "السير إلى الأمام فقط",
+   "meaning": "عليك المتابعة مستقيما، والانعطاف يمينا أو يسارا غير مسموح",
+   "action": "تابع مستقيما عند التقاطع",
+   "level": 1,
+   "confuse": [
+    "i-one-way",
+    "m-turn-right-ahead",
+    "p-priority-over-oncoming"
+   ],
+   "shape": "circle",
+   "colors": "blue background, white rim, white symbol",
+   "text": "",
+   "draw": "Blue disc with white rim; one thick white arrow pointing straight UP in the centre",
+   "uae_note": "كتيب هيئة الطرق يسميها: استمر في السير إلى الأمام فقط",
+   "src": [
+    "S1",
+    "S4",
+    "S3",
+    "S20"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "m-turn-right",
+   "cat": "mandatory",
+   "name": "السير باتجاه اليمين فقط",
+   "meaning": "عليك الانعطاف إلى اليمين",
+   "action": "انعطف يمينا، فالمتابعة مستقيما أو الانعطاف يسارا غير مسموحين",
+   "level": 1,
+   "confuse": [
+    "m-turn-right-ahead",
+    "m-keep-right",
+    "r-no-right-turn",
+    "m-turn-left"
+   ],
+   "shape": "circle",
+   "colors": "blue background, white rim, white symbol",
+   "text": "",
+   "draw": "Blue disc with white rim; a thick white arrow that starts at the lower left, curves in a quarter circle and points horizontally to the RIGHT",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3",
+    "S20"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "m-turn-left",
+   "cat": "mandatory",
+   "name": "السير باتجاه اليسار فقط",
+   "meaning": "عليك الانعطاف إلى اليسار",
+   "action": "انعطف يسارا، فالمتابعة مستقيما أو الانعطاف يمينا غير مسموحين",
+   "level": 1,
+   "confuse": [
+    "m-turn-left-ahead",
+    "m-keep-left",
+    "r-no-left-turn",
+    "m-turn-right"
+   ],
+   "shape": "circle",
+   "colors": "blue background, white rim, white symbol",
+   "text": "",
+   "draw": "Blue disc with white rim; a thick white arrow that starts at the lower right, curves in a quarter circle and points horizontally to the LEFT",
+   "uae_note": "",
+   "src": [
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "m-turn-right-ahead",
+   "cat": "mandatory",
+   "name": "اتجه يمينا عند أول تقاطع",
+   "meaning": "عليك الانعطاف إلى اليمين عند التقاطع القادم",
+   "action": "استعد مبكرا، ادخل المسار الأيمن وانعطف يمينا عند التقاطع التالي",
+   "level": 2,
+   "confuse": [
+    "m-turn-right",
+    "w-bend-right",
+    "m-keep-right"
+   ],
+   "shape": "circle",
+   "colors": "blue background, white rim, white symbol",
+   "text": "",
+   "draw": "Blue disc with white rim; a thick white arrow rising vertically from the bottom centre, then bending at a right angle near the top and pointing to the RIGHT",
+   "uae_note": "",
+   "src": [
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "m-turn-left-ahead",
+   "cat": "mandatory",
+   "name": "اتجه يسارا عند أول تقاطع",
+   "meaning": "عليك الانعطاف إلى اليسار عند التقاطع القادم",
+   "action": "استعد مبكرا، ادخل المسار الأيسر وانعطف يسارا عند التقاطع التالي",
+   "level": 2,
+   "confuse": [
+    "m-turn-left",
+    "w-bend-left",
+    "m-keep-left"
+   ],
+   "shape": "circle",
+   "colors": "blue background, white rim, white symbol",
+   "text": "",
+   "draw": "Blue disc with white rim; a thick white arrow rising vertically from the bottom centre, then bending at a right angle near the top and pointing to the LEFT",
+   "uae_note": "",
+   "src": [
+    "S4",
+    "S3",
+    "S12"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "m-keep-right",
+   "cat": "mandatory",
+   "name": "الزم اليمين",
+   "meaning": "عليك المرور من يمين الجزيرة أو العائق الذي أمامك",
+   "action": "مر من الجهة اليمنى للعائق ولا تمر من يساره",
+   "level": 1,
+   "confuse": [
+    "m-keep-left",
+    "m-pass-either-side",
+    "m-turn-right"
+   ],
+   "shape": "circle",
+   "colors": "blue background, white rim, white symbol",
+   "text": "",
+   "draw": "Blue disc with white rim; one thick white arrow pointing diagonally DOWN to the lower RIGHT at 45 degrees",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3",
+    "S20"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "m-keep-left",
+   "cat": "mandatory",
+   "name": "الزم اليسار",
+   "meaning": "عليك المرور من يسار الجزيرة أو العائق الذي أمامك",
+   "action": "مر من الجهة اليسرى للعائق ولا تمر من يمينه",
+   "level": 2,
+   "confuse": [
+    "m-keep-right",
+    "m-pass-either-side",
+    "m-turn-left"
+   ],
+   "shape": "circle",
+   "colors": "blue background, white rim, white symbol",
+   "text": "",
+   "draw": "Blue disc with white rim; one thick white arrow pointing diagonally DOWN to the lower LEFT at 45 degrees",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3",
+    "S20"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "m-pass-either-side",
+   "cat": "mandatory",
+   "name": "المرور مسموح من الجهتين",
+   "meaning": "مسموح لك المرور من يمين العائق أو من يساره",
+   "action": "اختر الجهة المناسبة لاتجاهك وانتبه للمركبات في الجهة الأخرى",
+   "level": 2,
+   "confuse": [
+    "m-keep-right",
+    "m-keep-left",
+    "w-road-narrows-both"
+   ],
+   "shape": "circle",
+   "colors": "blue background, white rim, white symbol",
+   "text": "",
+   "draw": "Blue disc with white rim; two white arrows that start together near the top centre and diverge downward, one pointing down-left and one pointing down-right (like an inverted V)",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3",
+    "S20"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "m-roundabout",
+   "cat": "mandatory",
+   "name": "دوار: سر باتجاه الأسهم",
+   "meaning": "أنت عند دوار، وعليك السير فيه باتجاه الأسهم أي عكس عقارب الساعة",
+   "action": "أفسح الطريق للمركبات داخل الدوار القادمة من يسارك، ثم ادخل وسر عكس عقارب الساعة",
+   "level": 1,
+   "confuse": [
+    "w-roundabout-ahead",
+    "m-keep-right",
+    "r-no-u-turn"
+   ],
+   "shape": "circle",
+   "colors": "blue background, white rim, white symbol",
+   "text": "",
+   "draw": "Blue disc with white rim; three thick white curved arrows arranged in a ring, all rotating ANTICLOCKWISE (the top arrow points left, the lower-left arrow points down and to the right, the lower-right arrow points up and to the right)",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3",
+    "S20"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "m-min-speed-60",
+   "cat": "mandatory",
+   "name": "الحد الأدنى للسرعة 60 كم/ساعة",
+   "meaning": "عليك ألا تقل سرعتك عن 60 كم/ساعة على هذا الطريق ما دامت الظروف تسمح",
+   "action": "حافظ على 60 كم/ساعة على الأقل، إلا إذا منعك الزحام أو الطقس، فالقيادة البطيئة جدا تعرقل السير",
+   "level": 2,
+   "confuse": [
+    "r-speed-60",
+    "r-speed-40",
+    "r-speed-120"
+   ],
+   "shape": "circle",
+   "colors": "blue background, white rim, white symbol",
+   "text": "60",
+   "draw": "Blue disc with white rim; the large white number 60 centred",
+   "uae_note": "تظهر على الطرق السريعة، والدائرة الزرقاء هنا تعني حدا أدنى وليس حدا أقصى",
+   "src": [
+    "S2",
+    "S4",
+    "S3",
+    "S20"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "m-buses-only",
+   "cat": "mandatory",
+   "name": "للحافلات فقط",
+   "meaning": "هذا الطريق أو المسار مخصص للحافلات فقط",
+   "action": "لا تدخل بسيارتك الخاصة",
+   "level": 3,
+   "confuse": [
+    "r-no-buses",
+    "i-bus-lane-start",
+    "i-bus-stop"
+   ],
+   "shape": "circle",
+   "colors": "blue background, white rim, white symbol",
+   "text": "",
+   "draw": "Blue disc with white rim; a white bus silhouette in side view in the centre",
+   "uae_note": "",
+   "src": [
+    "S2",
+    "S12"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "m-taxis-only",
+   "cat": "mandatory",
+   "name": "لسيارات الأجرة فقط",
+   "meaning": "هذا الطريق أو المكان مخصص لسيارات الأجرة فقط",
+   "action": "لا تدخل بسيارتك الخاصة",
+   "level": 4,
+   "confuse": [
+    "r-no-taxis",
+    "i-taxi-stand",
+    "m-buses-only"
+   ],
+   "shape": "circle",
+   "colors": "blue background, white rim, white symbol",
+   "text": "",
+   "draw": "Blue disc with white rim; a white car silhouette in side view with a small roof taxi light",
+   "uae_note": "",
+   "src": [
+    "S2",
+    "S12"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "m-trams-only",
+   "cat": "mandatory",
+   "name": "للترام فقط",
+   "meaning": "هذا الطريق أو الجزء منه مخصص للترام فقط",
+   "action": "لا تدخل بمركبتك إلى مسار الترام",
+   "level": 3,
+   "confuse": [
+    "w-tram-crossing",
+    "m-buses-only",
+    "r-no-entry"
+   ],
+   "shape": "circle",
+   "colors": "blue background, white rim, white symbol",
+   "text": "",
+   "draw": "Blue disc with white rim; a white modern tram silhouette in side view",
+   "uae_note": "خاصة بدبي، ولوحات المعاهد تسميها أحيانا القطار فقط",
+   "src": [
+    "S8",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "m-trucks-only",
+   "cat": "mandatory",
+   "name": "لمركبات البضائع فقط",
+   "meaning": "هذا الطريق أو المسار مخصص لمركبات نقل البضائع",
+   "action": "لا تدخل بسيارتك الخاصة إلا إذا سمحت لوحة أخرى",
+   "level": 4,
+   "confuse": [
+    "r-no-trucks",
+    "x-trucks",
+    "i-goods-parking"
+   ],
+   "shape": "circle",
+   "colors": "blue background, white rim, white symbol",
+   "text": "",
+   "draw": "Blue disc with white rim; a white lorry silhouette in side view",
+   "uae_note": "",
+   "src": [
+    "S2",
+    "S12"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "m-pedestrians-only",
+   "cat": "mandatory",
+   "name": "للمشاة فقط",
+   "meaning": "هذا الممر مخصص للمشاة فقط، وممنوع على المركبات",
+   "action": "لا تدخل بمركبتك",
+   "level": 2,
+   "confuse": [
+    "r-no-pedestrians",
+    "w-pedestrian-crossing",
+    "m-shared-path"
+   ],
+   "shape": "circle",
+   "colors": "blue background, white rim, white symbol",
+   "text": "",
+   "draw": "Blue disc with white rim; a white adult pedestrian holding the hand of a smaller child, both walking",
+   "uae_note": "",
+   "src": [
+    "S2",
+    "S12"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "m-cyclists-only",
+   "cat": "mandatory",
+   "name": "للدراجات الهوائية فقط",
+   "meaning": "هذا المسار مخصص للدراجات الهوائية فقط",
+   "action": "لا تدخل بمركبتك، وإذا كنت على دراجة فاستخدم هذا المسار",
+   "level": 3,
+   "confuse": [
+    "r-no-bicycles",
+    "w-cyclists",
+    "m-shared-path"
+   ],
+   "shape": "circle",
+   "colors": "blue background, white rim, white symbol",
+   "text": "",
+   "draw": "Blue disc with white rim; a white bicycle in side view",
+   "uae_note": "",
+   "src": [
+    "S2",
+    "S12",
+    "S5"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "m-shared-path",
+   "cat": "mandatory",
+   "name": "ممر مشترك للمشاة والدراجات",
+   "meaning": "هذا الممر مخصص للمشاة والدراجات الهوائية معا دون فصل بينهما",
+   "action": "لا تدخل بمركبتك، وإذا كنت على دراجة فخفف السرعة وانتبه للمشاة",
+   "level": 4,
+   "confuse": [
+    "m-segregated-path",
+    "m-cyclists-only",
+    "m-pedestrians-only"
+   ],
+   "shape": "circle",
+   "colors": "blue background, white rim, white symbol",
+   "text": "",
+   "draw": "Blue disc with white rim; a white bicycle in the upper half and white adult-and-child pedestrians in the lower half, with no dividing line",
+   "uae_note": "",
+   "src": [
+    "S2",
+    "S12"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "m-segregated-path",
+   "cat": "mandatory",
+   "name": "ممر منفصل للمشاة والدراجات",
+   "meaning": "الممر مقسوم بخط إلى جزأين: جزء للدراجات وجزء للمشاة",
+   "action": "التزم بالجزء المخصص لك حسب الرمز",
+   "level": 4,
+   "confuse": [
+    "m-shared-path",
+    "m-cyclists-only",
+    "m-pedestrians-only"
+   ],
+   "shape": "circle",
+   "colors": "blue background, white rim, white symbol",
+   "text": "",
+   "draw": "Blue disc with white rim divided by a vertical white line through the centre; a white bicycle on the LEFT half and white pedestrians on the RIGHT half",
+   "uae_note": "",
+   "src": [
+    "S2",
+    "S4"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "m-headlights-on",
+   "cat": "mandatory",
+   "name": "أشعل المصابيح الأمامية",
+   "meaning": "عليك تشغيل المصابيح الأمامية للمركبة من هذه النقطة",
+   "action": "شغل المصابيح الأمامية فورا، ولا تطفئها حتى تخرج من المنطقة مثل النفق",
+   "level": 3,
+   "confuse": [
+    "w-tunnel",
+    "i-tunnel",
+    "r-no-horn"
+   ],
+   "shape": "circle",
+   "colors": "blue background, white rim, white symbol",
+   "text": "",
+   "draw": "Blue disc with white rim; a white headlamp symbol: a rounded lamp shape on the left with 4 or 5 short horizontal white beam lines to its right",
+   "uae_note": "",
+   "src": [
+    "S2"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "m-go-this-way",
+   "cat": "mandatory",
+   "name": "يجب أن تسير بهذا الاتجاه",
+   "meaning": "عليك السير في الاتجاه الذي يشير إليه السهم",
+   "action": "انعطف أو تابع باتجاه السهم فقط",
+   "level": 3,
+   "confuse": [
+    "w-chevron-right",
+    "m-turn-right",
+    "m-keep-right"
+   ],
+   "shape": "rect",
+   "colors": "blue background, white rim, white arrow",
+   "text": "",
+   "draw": "Horizontal blue rectangle with white rim; one large thick white arrow pointing to the RIGHT (a mirrored version points to the LEFT)",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3",
+    "S20"
+   ],
+   "confidence": "high",
+   "notes": "وجود الإشارة واسمها مؤكدان في كتيب الهيئة ولوحات المعاهد، أما شكلها المستطيل فاجتهاد منا لأننا لم نر صورتها"
+  },
+  {
+   "id": "i-one-way",
+   "cat": "information",
+   "name": "طريق باتجاه واحد",
+   "meaning": "كل المركبات في هذا الطريق تسير في اتجاه السهم فقط",
+   "action": "سر باتجاه السهم فقط، ولا تدخل الطريق من نهايته",
+   "level": 2,
+   "confuse": [
+    "m-ahead-only",
+    "r-no-entry",
+    "p-priority-over-oncoming"
+   ],
+   "shape": "rect",
+   "colors": "blue background, white rim, white arrow",
+   "text": "",
+   "draw": "Upright blue rectangle with white rim; one long white arrow pointing straight UP",
+   "uae_note": "",
+   "src": [
+    "S12"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "i-dead-end",
+   "cat": "information",
+   "name": "طريق غير نافذ",
+   "meaning": "الطريق الذي أمامك مسدود ولا يخرج إلى طريق آخر",
+   "action": "ادخله فقط إذا كانت وجهتك فيه، وتوقع أنك ستحتاج إلى الرجوع",
+   "level": 2,
+   "confuse": [
+    "w-dead-end-ahead",
+    "r-no-entry",
+    "i-one-way"
+   ],
+   "shape": "square",
+   "colors": "blue background, white rim, white bar, red bar",
+   "text": "",
+   "draw": "Blue square with white rim; a thick white vertical bar rising from the bottom centre, topped by a thick RED horizontal bar (T shape)",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S12"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "i-parking",
+   "cat": "information",
+   "name": "موقف سيارات",
+   "meaning": "مكان مخصص لركن المركبات",
+   "action": "اركن داخل الخطوط المرسومة، والتزم بالرسوم أو الأوقات المكتوبة إن وجدت",
+   "level": 1,
+   "confuse": [
+    "i-paid-parking",
+    "i-parking-pod",
+    "r-no-parking"
+   ],
+   "shape": "square",
+   "colors": "blue background, white rim, white letter",
+   "text": "P",
+   "draw": "Blue square with white rim; a large white capital letter P centred",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "i-parking-pod",
+   "cat": "information",
+   "name": "مواقف أصحاب الهمم",
+   "meaning": "موقف مخصص لمركبات أصحاب الهمم التي تحمل التصريح الخاص",
+   "action": "لا تركن هنا إلا إذا كانت مركبتك تحمل تصريح أصحاب الهمم",
+   "level": 1,
+   "confuse": [
+    "i-parking",
+    "i-paid-parking",
+    "i-loading-zone"
+   ],
+   "shape": "square",
+   "colors": "blue background, white rim, white symbols",
+   "text": "P",
+   "draw": "Blue square with white rim; a white capital P on the left and a white wheelchair-user symbol on the right",
+   "uae_note": "أصحاب الهمم هو المصطلح الرسمي في الإمارات لذوي الإعاقة، والوقوف في مواقفهم دون تصريح مخالفة كبيرة عليها غرامة ونقاط سوداء",
+   "src": [
+    "S2",
+    "S5",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "i-paid-parking",
+   "cat": "information",
+   "name": "مواقف خاضعة للرسوم",
+   "meaning": "الوقوف هنا مقابل رسوم تدفعها عبر الجهاز أو التطبيق أو الرسالة النصية",
+   "action": "ادفع رسوم الوقوف فور الركن، والتزم بالمدة المدفوعة",
+   "level": 2,
+   "confuse": [
+    "i-parking",
+    "i-parking-pod",
+    "x-time"
+   ],
+   "shape": "square",
+   "colors": "blue background, white rim, white symbols",
+   "text": "P",
+   "draw": "Blue square with white rim; a white capital P on the left, a small white parking-meter pictogram on the right, and a white arrow at the bottom pointing RIGHT (meter on the right side)",
+   "uae_note": "الأوقات والرسوم تختلف حسب المنطقة والإمارة، فاقرأ اللوحة وجهاز الدفع قبل أن تبتعد عن مركبتك",
+   "src": [
+    "S1",
+    "S2",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "i-goods-parking",
+   "cat": "information",
+   "name": "مواقف مركبات البضائع",
+   "meaning": "موقف مخصص لمركبات نقل البضائع",
+   "action": "لا تركن سيارتك الخاصة هنا",
+   "level": 4,
+   "confuse": [
+    "i-loading-zone",
+    "m-trucks-only",
+    "i-parking"
+   ],
+   "shape": "square",
+   "colors": "blue background, white rim, white symbols",
+   "text": "P",
+   "draw": "Blue square with white rim; a white capital P with a small white lorry silhouette beside it",
+   "uae_note": "",
+   "src": [
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "i-loading-zone",
+   "cat": "information",
+   "name": "موقف التحميل والتنزيل",
+   "meaning": "موقف مخصص للمركبات التجارية أثناء التحميل والتنزيل في الأوقات المكتوبة على اللوحة",
+   "action": "لا تركن هنا في الأوقات المكتوبة إلا إذا كنت تحمل أو تنزل بضائع بمركبة تجارية",
+   "level": 4,
+   "confuse": [
+    "i-goods-parking",
+    "i-parking",
+    "x-time"
+   ],
+   "shape": "rect",
+   "colors": "blue background, white rim, white symbols and text",
+   "text": "P",
+   "draw": "Upright blue rectangle with white rim; a white P and a white lorry with an open rear door and a small box in the upper part; below them a white band where the permitted hours are written in black",
+   "uae_note": "",
+   "src": [
+    "S4",
+    "S3",
+    "S2"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "i-taxi-stand",
+   "cat": "information",
+   "name": "موقف سيارات الأجرة",
+   "meaning": "مكان مخصص لوقوف سيارات الأجرة وانتظار الركاب",
+   "action": "لا تركن سيارتك الخاصة هنا ولا تتوقف فيه",
+   "level": 3,
+   "confuse": [
+    "m-taxis-only",
+    "r-no-taxis",
+    "i-bus-stop"
+   ],
+   "shape": "rect",
+   "colors": "blue background, white rim, white symbols",
+   "text": "TAXI",
+   "draw": "Horizontal blue rectangle with white rim; a white car silhouette with a roof taxi light and the white word TAXI beside it",
+   "uae_note": "",
+   "src": [
+    "S4",
+    "S2",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "i-bus-stop",
+   "cat": "information",
+   "name": "موقف الحافلات",
+   "meaning": "مكان مخصص لوقوف حافلات النقل العام لإنزال الركاب وصعودهم",
+   "action": "لا تركن ولا تتوقف في موقف الحافلات، وانتبه للركاب النازلين",
+   "level": 2,
+   "confuse": [
+    "m-buses-only",
+    "i-bus-lane-start",
+    "i-taxi-stand"
+   ],
+   "shape": "rect",
+   "colors": "blue background, white rim, white symbol",
+   "text": "",
+   "draw": "Upright blue rectangle with white rim; a white bus silhouette in side view",
+   "uae_note": "",
+   "src": [
+    "S4",
+    "S2",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "i-tow-away",
+   "cat": "information",
+   "name": "منطقة سحب المركبات المخالفة",
+   "meaning": "المركبة المتوقفة هنا بشكل مخالف معرضة للسحب بالرافعة",
+   "action": "لا تركن هنا، فالجهات المختصة تسحب المركبات المخالفة",
+   "level": 3,
+   "confuse": [
+    "r-no-parking",
+    "r-no-stopping",
+    "i-parking"
+   ],
+   "shape": "rect",
+   "colors": "white background, red border, black symbols",
+   "text": "",
+   "draw": "Horizontal white rectangle with a red border; a black tow truck on the right lifting the front of a black car on the left",
+   "uae_note": "",
+   "src": [
+    "S2",
+    "S4"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "i-bicycle-parking",
+   "cat": "information",
+   "name": "موقف الدراجات الهوائية",
+   "meaning": "مكان مخصص لركن الدراجات الهوائية",
+   "action": "لا تركن سيارتك هنا، واركن الدراجة في المكان المخصص",
+   "level": 5,
+   "confuse": [
+    "i-parking",
+    "m-cyclists-only",
+    "w-cyclists"
+   ],
+   "shape": "square",
+   "colors": "blue background, white rim, white symbols",
+   "text": "P",
+   "draw": "Blue square with white rim; a white capital P with a small white bicycle below it",
+   "uae_note": "",
+   "src": [
+    "S2"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "i-freeway-start",
+   "cat": "information",
+   "name": "بداية الطريق السريع",
+   "meaning": "أنت تدخل طريقا سريعا بمداخل ومخارج محددة وسرعات عالية، وفيه حد أدنى للسرعة غالبا",
+   "action": "اندمج بسرعة مناسبة، والتزم بالحدين الأعلى والأدنى للسرعة، ولا تتوقف إلا في الطوارئ",
+   "level": 2,
+   "confuse": [
+    "i-freeway-end",
+    "g-blue-direction",
+    "m-min-speed-60"
+   ],
+   "shape": "rect",
+   "colors": "blue background, white rim, white symbol",
+   "text": "",
+   "draw": "Blue rectangle with white rim; white pictogram of a dual carriageway seen in perspective (two roadways separated by a central strip) passing under a white bridge drawn across the top",
+   "uae_note": "",
+   "src": [
+    "S3",
+    "S4",
+    "S12"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "i-freeway-end",
+   "cat": "information",
+   "name": "نهاية الطريق السريع",
+   "meaning": "ينتهي الطريق السريع هنا، وتبدأ طرق بسرعات أقل وتقاطعات",
+   "action": "خفف السرعة إلى الحد الجديد، وانتبه للتقاطعات والإشارات الضوئية القادمة",
+   "level": 2,
+   "confuse": [
+    "i-freeway-start",
+    "w-dual-carriageway-ends",
+    "r-speed-80"
+   ],
+   "shape": "rect",
+   "colors": "blue background, white rim, white symbol, red bar",
+   "text": "",
+   "draw": "Same as the freeway start sign (white dual carriageway under a bridge on a blue rectangle) with a red diagonal bar from top left to bottom right across the pictogram",
+   "uae_note": "",
+   "src": [
+    "S3",
+    "S4",
+    "S12"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "i-tunnel",
+   "cat": "information",
+   "name": "بداية النفق",
+   "meaning": "هنا يبدأ النفق",
+   "action": "أشعل المصابيح الأمامية، والتزم بمسارك وسرعتك، ولا تتوقف داخل النفق إلا في الطوارئ",
+   "level": 4,
+   "confuse": [
+    "w-tunnel",
+    "m-headlights-on",
+    "i-freeway-start"
+   ],
+   "shape": "rect",
+   "colors": "blue background, white rim, white symbol",
+   "text": "",
+   "draw": "Blue rectangle with white rim; a white tunnel portal pictogram: a white arch shape with a dark blue opening and two white road lines converging into it",
+   "uae_note": "",
+   "src": [
+    "S12"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "i-salik",
+   "cat": "information",
+   "name": "بوابة سالك",
+   "meaning": "أمامك بوابة سالك لتحصيل رسوم المرور إلكترونيا في دبي، دون حواجز أو أكشاك",
+   "action": "لا تتوقف ولا تخفف فجأة، تابع بسرعتك العادية، وتأكد أن رصيد حسابك في سالك كاف",
+   "level": 3,
+   "confuse": [
+    "g-blue-direction",
+    "i-vms",
+    "i-freeway-start"
+   ],
+   "shape": "rect",
+   "colors": "blue background, white rim, white text",
+   "text": "سالك Salik",
+   "draw": "Horizontal blue rectangle with white rim; the white word سالك on the upper line and Salik in white Latin letters below it, with a small white arrow pointing up to show the gate ahead",
+   "uae_note": "نظام سالك يخصم الرسوم تلقائيا عند مرورك تحت البوابة عبر الملصق الذكي على الزجاج، وفي أبوظبي نظام مشابه اسمه درب يتعرف على المركبة من لوحة أرقامها",
+   "src": [
+    "S4",
+    "S1",
+    "S18"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "i-bus-lane-start",
+   "cat": "information",
+   "name": "بداية مسار الحافلات وسيارات الأجرة",
+   "meaning": "يبدأ من هنا مسار مخصص للحافلات وسيارات الأجرة",
+   "action": "لا تسر بسيارتك الخاصة في هذا المسار، وانتبه للحافلات التي تتوقف فيه",
+   "level": 3,
+   "confuse": [
+    "i-bus-lane-end",
+    "m-buses-only",
+    "i-bus-stop"
+   ],
+   "shape": "rect",
+   "colors": "blue background, white rim, white symbols",
+   "text": "",
+   "draw": "Upright blue rectangle with white rim showing two or three white lane lines with upward arrows; the RIGHT lane carries small white bus and taxi pictograms",
+   "uae_note": "كتيب هيئة الطرق يمنع السيارات الخاصة من السير في مسارات الحافلات، ويصفها بخطوط صفراء متصلة على جانبيها",
+   "src": [
+    "S4",
+    "S5",
+    "S20"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "i-bus-lane-end",
+   "cat": "information",
+   "name": "نهاية مسار الحافلات وسيارات الأجرة",
+   "meaning": "ينتهي هنا المسار المخصص للحافلات وسيارات الأجرة",
+   "action": "بعد اللوحة يصبح المسار عاما، فانتبه للحافلات التي تعود إلى الحركة العادية",
+   "level": 4,
+   "confuse": [
+    "i-bus-lane-start",
+    "m-buses-only",
+    "i-freeway-end"
+   ],
+   "shape": "rect",
+   "colors": "blue background, white rim, white symbols, red bar",
+   "text": "",
+   "draw": "Same layout as the bus lane start sign with a red diagonal bar from top left to bottom right across it",
+   "uae_note": "",
+   "src": [
+    "S4",
+    "S5"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "i-lane-trucks-restricted",
+   "cat": "information",
+   "name": "ممنوع الشاحنات في المسار الأيسر",
+   "meaning": "لوحة تنظيم مسارات تمنع الشاحنات من السير في المسار الأيسر من هذا الطريق",
+   "action": "إذا كنت تقود شاحنة فالتزم بالمسارات اليمنى، وإذا كنت في سيارة فتوقع وجود الشاحنات في اليمين",
+   "level": 3,
+   "confuse": [
+    "r-no-trucks",
+    "r-no-overtaking-trucks",
+    "i-lane-delivery-motorbikes"
+   ],
+   "shape": "rect",
+   "colors": "blue background, white rim, white arrows, small prohibitory roundel",
+   "text": "",
+   "draw": "Horizontal blue rectangle with white rim showing three or four white upward lane arrows; above the LEFT-most arrow a small no-trucks roundel (white disc, red ring, black lorry, red slash)",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S5",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "i-lane-delivery-motorbikes",
+   "cat": "information",
+   "name": "ممنوع دراجات التوصيل في المسارين الأيسرين",
+   "meaning": "لوحة تنظيم مسارات تمنع دراجات التوصيل النارية من السير في المسارين الأيسرين",
+   "action": "إذا كنت تقود دراجة توصيل فالتزم بالمسارات اليمنى المسموحة",
+   "level": 4,
+   "confuse": [
+    "i-lane-trucks-restricted",
+    "r-no-delivery-motorbikes",
+    "r-no-motorcycles"
+   ],
+   "shape": "rect",
+   "colors": "blue background, white rim, white arrows, small prohibitory roundels",
+   "text": "",
+   "draw": "Horizontal blue rectangle with white rim showing five white upward lane arrows; above EACH of the two left-most arrows a small roundel (white disc, red ring, black motorbike with delivery box, red slash)",
+   "uae_note": "إشارة جديدة في دبي على الطرق متعددة المسارات",
+   "src": [
+    "S5"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "i-lane-added",
+   "cat": "information",
+   "name": "إضافة مسار",
+   "meaning": "يبدأ مسار إضافي أمامك فيزيد عدد المسارات",
+   "action": "لا حاجة للاندماج، ويمكنك استخدام المسار الجديد بعد الغماز والتأكد من المرايا",
+   "level": 4,
+   "confuse": [
+    "i-lane-joining",
+    "i-lanes-5-to-4",
+    "w-right-lane-ends"
+   ],
+   "shape": "rect",
+   "colors": "blue background, white rim, white lane arrows",
+   "text": "",
+   "draw": "Upright blue rectangle with white rim; two white upward lane arrows from the bottom, and a third white lane arrow that starts part way up on the RIGHT side, so the top shows three lanes",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "i-lane-joining",
+   "cat": "information",
+   "name": "انضمام مسار",
+   "meaning": "مسار من طريق آخر ينضم إلى طريقك من اليمين، وقد تدخل منه مركبات إلى المسار الأيمن",
+   "action": "انتبه للمركبات الداخلة من اليمين، واترك لها مجالا إذا أمكن",
+   "level": 4,
+   "confuse": [
+    "i-lane-added",
+    "w-merge-right",
+    "i-lanes-5-to-4"
+   ],
+   "shape": "rect",
+   "colors": "blue background, white rim, white lane arrows",
+   "text": "",
+   "draw": "Upright blue rectangle with white rim; white upward lane arrows for the main road and a curved white lane joining from the lower RIGHT into the right side",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "i-lanes-5-to-4",
+   "cat": "information",
+   "name": "اندماج خمسة مسارات إلى أربعة",
+   "meaning": "عدد المسارات أمامك يقل من خمسة إلى أربعة، والمسار المنتهي يندمج في المجاور",
+   "action": "إذا كنت في المسار المنتهي فاندمج مبكرا بعد الغماز، ولا تسرع لتسبق المندمجين",
+   "level": 4,
+   "confuse": [
+    "i-lane-added",
+    "w-right-lane-ends",
+    "t-lane-closed-right"
+   ],
+   "shape": "rect",
+   "colors": "blue background, white rim, white lane arrows",
+   "text": "",
+   "draw": "Upright blue rectangle with white rim; five white upward lane arrows at the bottom; the RIGHT-most arrow bends left and merges into its neighbour, so four arrows continue at the top",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "i-lane-directions",
+   "cat": "information",
+   "name": "تنظيم المسارات حسب الاتجاه",
+   "meaning": "كل سهم يبين الاتجاه المسموح لكل مسار عند التقاطع القادم",
+   "action": "اختر مسارك مبكرا حسب وجهتك، ولا تغير المسار قرب التقاطع",
+   "level": 3,
+   "confuse": [
+    "i-lane-trucks-restricted",
+    "m-ahead-only",
+    "m-turn-right-ahead"
+   ],
+   "shape": "rect",
+   "colors": "blue background, white rim, white arrows",
+   "text": "",
+   "draw": "Horizontal blue rectangle with white rim above three or four lanes: the left lane has a white arrow turning LEFT with a small U-turn hook, the middle lanes have white arrows pointing straight UP, the right lane has an arrow turning RIGHT",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S5",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "i-vms",
+   "cat": "information",
+   "name": "لوحة الرسائل المتغيرة",
+   "meaning": "لوحة إلكترونية تعرض رسائل تتغير حسب الحالة، مثل الحوادث والزحام والضباب وحدود السرعة المؤقتة",
+   "action": "اقرأ الرسالة والتزم بما تعرضه، مثل حد السرعة المخفض أثناء الضباب",
+   "level": 2,
+   "confuse": [
+    "i-salik",
+    "g-blue-direction",
+    "t-arrow-board"
+   ],
+   "shape": "rect",
+   "colors": "black background, amber or white LED text",
+   "text": "",
+   "draw": "Wide black rectangle with a dark grey frame; two lines of amber dot-matrix LED text (Arabic on top, English below) and a small speed roundel on the left",
+   "uae_note": "القانون الاتحادي يعد الإشارات الإلكترونية من علامات السير، فما تعرضه ملزم مثل اللوحات الثابتة",
+   "src": [
+    "S4",
+    "S7",
+    "S19"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "s-hospital",
+   "cat": "services",
+   "name": "مستشفى",
+   "meaning": "تدلك على اتجاه مستشفى قريب أو مدخله",
+   "action": "اتبع الاتجاه إذا احتجت إلى مستشفى، وانتبه قرب المستشفى لسيارات الإسعاف الداخلة والخارجة",
+   "level": 2,
+   "confuse": [
+    "s-airport",
+    "i-parking",
+    "r-no-horn"
+   ],
+   "shape": "square",
+   "colors": "blue background, white rim, white letter",
+   "text": "H",
+   "draw": "Blue square with white rim; a large white capital letter H centred (often shown with a distance or an arrow)",
+   "uae_note": "كتيب هيئة الطرق يعرض لوحة المستشفى ضمن اللوحات الإرشادية، وقد تسبقها لوحات مسافة",
+   "src": [
+    "S1",
+    "S4"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "s-airport",
+   "cat": "services",
+   "name": "مطار",
+   "meaning": "تدلك على الطريق المؤدي إلى المطار",
+   "action": "اتبع رمز الطائرة ولوحات الاتجاه للوصول إلى المطار",
+   "level": 2,
+   "confuse": [
+    "w-low-flying-aircraft",
+    "s-hospital",
+    "g-blue-direction"
+   ],
+   "shape": "square",
+   "colors": "white airplane on the colour of the direction sign",
+   "text": "",
+   "draw": "Small square panel in the colour of the direction sign (blue or green) with a white rim and a white airplane silhouette seen from above, nose pointing up",
+   "uae_note": "لوحات مطار دبي الدولي من الأمثلة المعروضة في لوحات معاهد دبي",
+   "src": [
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "g-e-route",
+   "cat": "guide",
+   "name": "شعار طرق الإمارات (E)",
+   "meaning": "رقم طريق اتحادي يربط بين الإمارات، مثل E11 وE311",
+   "action": "استخدم رقم الطريق مع اسم الوجهة لتعرف مسارك، فالأرقام أسهل في المتابعة من الأسماء",
+   "level": 3,
+   "confuse": [
+    "g-d-route",
+    "g-blue-direction",
+    "g-green-direction"
+   ],
+   "shape": "other",
+   "colors": "blue falcon-shaped shield, white outline, gold numerals",
+   "text": "E 11",
+   "draw": "Small emblem shaped like the outline of the UAE federal falcon emblem (a shield topped by a falcon head and spread shoulders), filled blue with a thin white outline; inside, the route number E 11 in gold (yellow) bold Latin characters",
+   "uae_note": "الطرق الاتحادية أرقامها تبدأ بالحرف E وتظهر على اللوحات الزرقاء",
+   "src": [
+    "S11",
+    "S14",
+    "S15",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "g-d-route",
+   "cat": "guide",
+   "name": "شعار طرق دبي (D)",
+   "meaning": "رقم طريق داخل إمارة دبي، مثل D94 شارع جميرا",
+   "action": "تابع رقم الطريق على اللوحات الخضراء للوصول إلى وجهتك داخل دبي",
+   "level": 3,
+   "confuse": [
+    "g-e-route",
+    "g-green-direction",
+    "g-white-street"
+   ],
+   "shape": "other",
+   "colors": "green fort-shaped emblem, white outline, white numerals",
+   "text": "D 94",
+   "draw": "Small emblem shaped like a traditional fort tower (a rectangle with a crenellated top), filled green with a thin white outline; inside, the route number D 94 in white bold Latin characters",
+   "uae_note": "",
+   "src": [
+    "S14",
+    "S15",
+    "S3",
+    "S4"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "g-blue-direction",
+   "cat": "guide",
+   "name": "لوحة اتجاهات زرقاء (طريق اتحادي)",
+   "meaning": "اللون الأزرق يدل على طريق اتحادي يربط بين الإمارات، وعليه أسماء الوجهات والأسهم",
+   "action": "اقرأ اللوحة مبكرا واختر المسار الذي فوقه سهم وجهتك",
+   "level": 2,
+   "confuse": [
+    "g-green-direction",
+    "g-brown-tourist",
+    "g-e-route"
+   ],
+   "shape": "rect",
+   "colors": "blue background, white rim, white text and arrows",
+   "text": "",
+   "draw": "Wide blue rectangle with white rim; on the left a small E-route falcon emblem (E 11); in the centre two destination lines, each with Arabic text above its English translation in white; on the right a white arrow pointing up or up-right",
+   "uae_note": "",
+   "src": [
+    "S13",
+    "S14",
+    "S17"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "g-green-direction",
+   "cat": "guide",
+   "name": "لوحة اتجاهات خضراء (طرق دبي)",
+   "meaning": "اللون الأخضر يدل على طرق ومناطق داخل إمارة دبي",
+   "action": "تابع اسم المنطقة أو رقم الطريق للوصول إلى وجهتك داخل الإمارة",
+   "level": 2,
+   "confuse": [
+    "g-blue-direction",
+    "g-white-street",
+    "g-d-route"
+   ],
+   "shape": "rect",
+   "colors": "green background, white rim, white text and arrows",
+   "text": "",
+   "draw": "Wide green rectangle with white rim; a small D-route fort emblem (D 94) on the left; destination names with Arabic above English in white; white arrows",
+   "uae_note": "هذا التقسيم بالألوان معتمد في دبي، وقد تختلف ألوان لوحات الطرق المحلية في الإمارات الأخرى",
+   "src": [
+    "S13",
+    "S14"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "g-brown-tourist",
+   "cat": "guide",
+   "name": "لوحة سياحية بنية",
+   "meaning": "اللون البني يدل على معلم سياحي أو ترفيهي أو تجاري مهم",
+   "action": "اتبعها إذا كانت وجهتك معلما سياحيا",
+   "level": 2,
+   "confuse": [
+    "g-green-direction",
+    "g-white-street",
+    "g-blue-direction"
+   ],
+   "shape": "rect",
+   "colors": "brown background, white rim, white text and symbol",
+   "text": "",
+   "draw": "Brown rectangle with white rim; a white pictogram of the attraction on the left and its name with Arabic above English in white, with a white arrow",
+   "uae_note": "",
+   "src": [
+    "S13",
+    "S14",
+    "S17"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "g-white-street",
+   "cat": "guide",
+   "name": "لوحة أسماء الشوارع والمناطق",
+   "meaning": "اللون الأبيض يدل على أسماء الشوارع والمناطق داخل الأحياء",
+   "action": "استخدمها لتحديد الشارع أو الحي داخل المناطق السكنية",
+   "level": 2,
+   "confuse": [
+    "g-green-direction",
+    "g-brown-tourist",
+    "x-distance"
+   ],
+   "shape": "rect",
+   "colors": "white background, dark border, dark text",
+   "text": "",
+   "draw": "White rectangle with a thin dark border; the street name in black or dark blue, Arabic above English, sometimes with the community name in smaller letters",
+   "uae_note": "",
+   "src": [
+    "S13",
+    "S14"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "g-exit",
+   "cat": "guide",
+   "name": "لوحة المخرج",
+   "meaning": "تدل على مخرج من الطريق السريع إلى وجهة محددة، وعليها رقم المخرج",
+   "action": "انتقل إلى مسار المخرج مبكرا واستخدم الغماز، ولا تقطع المسارات في آخر لحظة",
+   "level": 2,
+   "confuse": [
+    "g-exit-countdown",
+    "g-blue-direction",
+    "g-lane-drop"
+   ],
+   "shape": "rect",
+   "colors": "blue or green background, white rim, white text",
+   "text": "مخرج EXIT",
+   "draw": "Green (or blue) rectangle with white rim; at the top a small tab of the same colour with the white words مخرج and EXIT and a number (for example 41); main area with destination names, Arabic above English, and a white arrow pointing up-right",
+   "uae_note": "اقرأ اتجاه السهم جيدا، فليست كل التفرعات والمخارج على اليمين",
+   "src": [
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "g-exit-countdown",
+   "cat": "guide",
+   "name": "لوحات العد التنازلي قبل المخرج",
+   "meaning": "تبين المسافة المتبقية إلى المخرج: 300 ثم 200 ثم 100 متر",
+   "action": "كن في المسار الصحيح قبل اللوحة الأولى، وخفف السرعة تدريجيا عند اقترابك من المخرج",
+   "level": 3,
+   "confuse": [
+    "g-exit",
+    "x-distance",
+    "w-hazard-marker"
+   ],
+   "shape": "rect",
+   "colors": "blue or green background, white rim, white diagonal stripes",
+   "text": "",
+   "draw": "Three separate small upright rectangles in the route colour (blue or green) with white rim: the first has THREE white diagonal stripes slanting up to the right, the second TWO, the third ONE; they stand 300, 200 and 100 m before the exit",
+   "uae_note": "",
+   "src": [
+    "S4",
+    "S1"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "g-distance",
+   "cat": "guide",
+   "name": "لوحة المسافات",
+   "meaning": "تبين المسافة بالكيلومتر إلى المدن أو المناطق القادمة على هذا الطريق",
+   "action": "استخدمها لتقدير المسافة والوقت المتبقي إلى وجهتك",
+   "level": 2,
+   "confuse": [
+    "g-blue-direction",
+    "x-distance",
+    "g-exit-countdown"
+   ],
+   "shape": "rect",
+   "colors": "blue or green background, white rim, white text",
+   "text": "",
+   "draw": "Blue (federal road) or green rectangle with white rim listing two or three destinations, one per row: Arabic name, English name and the distance number followed by كم and km, aligned in a column on the right",
+   "uae_note": "",
+   "src": [
+    "S13",
+    "S14"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "g-lane-drop",
+   "cat": "guide",
+   "name": "لوحة مخرج بمسارين",
+   "meaning": "لوحة علوية تبين أن مسارا أو مسارين يخرجان من الطريق الرئيسي إلى المخرج",
+   "action": "إذا لم يكن المخرج وجهتك فابتعد مبكرا عن المسارات التي تتجه أسهمها إلى المخرج",
+   "level": 4,
+   "confuse": [
+    "g-exit",
+    "i-lane-directions",
+    "i-lanes-5-to-4"
+   ],
+   "shape": "rect",
+   "colors": "green or blue background, white rim, white text and arrows",
+   "text": "",
+   "draw": "Wide overhead green or blue board with white rim; destination text Arabic above English; below it white downward arrows, one over each lane; the arrows over the exit lanes bend to the right under the words مخرج EXIT",
+   "uae_note": "",
+   "src": [
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "t-road-works",
+   "cat": "temporary",
+   "name": "أعمال طرق أمامك",
+   "meaning": "أمامك أعمال صيانة أو إنشاء على الطريق، وقد يوجد عمال وآليات وتحويلات",
+   "action": "خفف السرعة، والتزم بالسرعة المؤقتة وبالأقماع، ولا تتجاوز داخل منطقة العمل، وانتبه للعمال",
+   "level": 2,
+   "confuse": [
+    "w-other-danger",
+    "t-flagman",
+    "w-uneven-road"
+   ],
+   "shape": "triangle",
+   "colors": "yellow background, red border, black symbol",
+   "text": "",
+   "draw": "Warning triangle with red border and YELLOW interior (temporary works colour); black pictogram of a worker digging with a shovel beside a small pile of earth",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3",
+    "S9"
+   ],
+   "confidence": "high",
+   "notes": "لون الخلفية الأصفر مأخوذ من دليل أبوظبي لإدارة المرور في مناطق العمل، وبعض المواقع تذكر البرتقالي، والمهم أن اللون المختلف يعني إشارة مؤقتة"
+  },
+  {
+   "id": "t-lane-closed-right",
+   "cat": "temporary",
+   "name": "المسار الأيمن مغلق أمامك",
+   "meaning": "المسار الأيمن مغلق بسبب أعمال أو حادث، وعلى مركباته الانتقال إلى المسار المجاور",
+   "action": "إذا كنت في المسار الأيمن فانتقل إلى اليسار مبكرا بعد الغماز، وإذا كنت في المسار الأيسر فاترك المجال للمندمجين",
+   "level": 2,
+   "confuse": [
+    "t-lane-closed-left",
+    "w-right-lane-ends",
+    "t-two-lanes-closed-right"
+   ],
+   "shape": "rect",
+   "colors": "yellow background, black border, black lanes, red closure bar",
+   "text": "",
+   "draw": "Upright yellow rectangle with black border; two black upward lane arrows for the open lanes on the left; the RIGHT lane has no arrow, its lane ends under a short thick red horizontal bar at the top, showing it is closed",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3",
+    "S9"
+   ],
+   "confidence": "high",
+   "notes": "لون الخلفية الأصفر مأخوذ من دليل أبوظبي لإدارة المرور في مناطق العمل، وبعض المواقع تذكر البرتقالي، والمهم أن اللون المختلف يعني إشارة مؤقتة"
+  },
+  {
+   "id": "t-lane-closed-left",
+   "cat": "temporary",
+   "name": "المسار الأيسر مغلق أمامك",
+   "meaning": "المسار الأيسر مغلق بسبب أعمال أو حادث، وعلى مركباته الانتقال إلى المسار المجاور",
+   "action": "إذا كنت في المسار الأيسر فانتقل إلى اليمين مبكرا بعد الغماز، وإذا كنت في المسار الأيمن فاترك المجال للمندمجين",
+   "level": 3,
+   "confuse": [
+    "t-lane-closed-right",
+    "w-left-lane-ends",
+    "t-two-lanes-closed-right"
+   ],
+   "shape": "rect",
+   "colors": "yellow background, black border, black lanes, red closure bar",
+   "text": "",
+   "draw": "Mirror of the right-lane-closed sign: upright yellow rectangle with black border; black upward lane arrows for the open lanes on the right; the LEFT lane ends under a short thick red horizontal bar",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3",
+    "S9"
+   ],
+   "confidence": "high",
+   "notes": "لون الخلفية الأصفر مأخوذ من دليل أبوظبي لإدارة المرور في مناطق العمل، وبعض المواقع تذكر البرتقالي، والمهم أن اللون المختلف يعني إشارة مؤقتة"
+  },
+  {
+   "id": "t-two-lanes-closed-right",
+   "cat": "temporary",
+   "name": "مساران على اليمين مغلقان أمامك",
+   "meaning": "المساران الأيمنان مغلقان، ويبقى المرور في المسار أو المسارات اليسرى",
+   "action": "انتقل إلى المسار المفتوح مبكرا وخفف السرعة، والتزم بخط الأقماع",
+   "level": 3,
+   "confuse": [
+    "t-lane-closed-right",
+    "t-lane-closed-left",
+    "i-lanes-5-to-4"
+   ],
+   "shape": "rect",
+   "colors": "yellow background, black border, black lanes, red closure bars",
+   "text": "",
+   "draw": "Upright yellow rectangle with black border showing three lanes: the LEFT lane with a black upward arrow; the two RIGHT lanes closed, each ending under a short thick red horizontal bar",
+   "uae_note": "",
+   "src": [
+    "S4",
+    "S3",
+    "S9"
+   ],
+   "confidence": "high",
+   "notes": "لون الخلفية الأصفر مأخوذ من دليل أبوظبي لإدارة المرور في مناطق العمل، وبعض المواقع تذكر البرتقالي، والمهم أن اللون المختلف يعني إشارة مؤقتة"
+  },
+  {
+   "id": "t-contraflow",
+   "cat": "temporary",
+   "name": "تحويل إلى الجهة المعاكسة من الطريق المزدوج",
+   "meaning": "الطريق أمامك مغلق، والمرور يتحول مؤقتا إلى الجهة الأخرى من الطريق المزدوج، وستسير المركبات القادمة بجانبك",
+   "action": "خفف السرعة واتبع الأسهم والأقماع، والتزم بيمين مسارك لأن المركبات القادمة قريبة منك",
+   "level": 4,
+   "confuse": [
+    "w-two-way-traffic",
+    "t-diversion",
+    "w-dual-carriageway-ends"
+   ],
+   "shape": "rect",
+   "colors": "yellow background, black border, black diagram, red bar",
+   "text": "",
+   "draw": "Yellow rectangle with black border; two parallel carriageways drawn as black strips with a gap between them; your (right) carriageway is blocked by a red bar, and a black arrow crosses from it over the gap into the left carriageway, then continues up beside a black downward arrow for oncoming traffic",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S4",
+    "S3",
+    "S9"
+   ],
+   "confidence": "high",
+   "notes": "لون الخلفية الأصفر مأخوذ من دليل أبوظبي لإدارة المرور في مناطق العمل، وبعض المواقع تذكر البرتقالي، والمهم أن اللون المختلف يعني إشارة مؤقتة"
+  },
+  {
+   "id": "t-diversion",
+   "cat": "temporary",
+   "name": "تحويلة",
+   "meaning": "الطريق المعتاد مغلق مؤقتا، والأسهم تدلك على الطريق البديل",
+   "action": "اتبع لوحات التحويلة حتى تعود إلى طريقك",
+   "level": 2,
+   "confuse": [
+    "t-contraflow",
+    "m-go-this-way",
+    "g-exit"
+   ],
+   "shape": "rect",
+   "colors": "yellow background, black border, black text and arrow",
+   "text": "تحويلة DIVERSION",
+   "draw": "Horizontal yellow rectangle with black border; the black Arabic word تحويلة on the upper line and DIVERSION in black capitals below it, with a thick black arrow pointing in the direction of the detour",
+   "uae_note": "",
+   "src": [
+    "S4",
+    "S1",
+    "S9"
+   ],
+   "confidence": "high",
+   "notes": "لون الخلفية الأصفر مأخوذ من دليل أبوظبي لإدارة المرور في مناطق العمل، وبعض المواقع تذكر البرتقالي، والمهم أن اللون المختلف يعني إشارة مؤقتة"
+  },
+  {
+   "id": "t-flagman",
+   "cat": "temporary",
+   "name": "عامل بعلم أمامك",
+   "meaning": "أمامك عامل ينظم السير يدويا في منطقة أعمال",
+   "action": "خفف السرعة واستعد للتوقف، والتزم بإشارة العامل",
+   "level": 3,
+   "confuse": [
+    "t-road-works",
+    "w-children",
+    "w-pedestrian-crossing"
+   ],
+   "shape": "triangle",
+   "colors": "yellow background, red border, black symbol, red flag",
+   "text": "",
+   "draw": "Warning triangle with red border and YELLOW interior; a black standing worker figure holding up a flag on a short pole, the flag drawn red",
+   "uae_note": "",
+   "src": [
+    "S12",
+    "S9"
+   ],
+   "confidence": "medium",
+   "notes": "لون الخلفية الأصفر مأخوذ من دليل أبوظبي لإدارة المرور في مناطق العمل، وبعض المواقع تذكر البرتقالي، والمهم أن اللون المختلف يعني إشارة مؤقتة"
+  },
+  {
+   "id": "t-cones",
+   "cat": "temporary",
+   "name": "أقماع المرور",
+   "meaning": "الأقماع ترسم مسارا مؤقتا أو تغلق جزءا من الطريق",
+   "action": "لا تعبر خط الأقماع ولا تسر بينها، واتبع المسار الذي ترسمه حتى لو خالف الخطوط الأرضية",
+   "level": 2,
+   "confuse": [
+    "t-barriers",
+    "t-arrow-board",
+    "w-hazard-marker"
+   ],
+   "shape": "other",
+   "colors": "orange cones with white reflective bands",
+   "text": "",
+   "draw": "A diagonal row of three orange traffic cones in perspective, each with two white reflective bands and a square black base, forming a lane taper",
+   "uae_note": "",
+   "src": [
+    "S9"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "t-barriers",
+   "cat": "temporary",
+   "name": "حواجز الأعمال المؤقتة",
+   "meaning": "حواجز بلاستيكية أو خرسانية تفصل منطقة العمل أو ترسم تحويلة",
+   "action": "ابق بعيدا عن الحواجز، والتزم بالمسار المحدد وخفف السرعة",
+   "level": 3,
+   "confuse": [
+    "t-cones",
+    "t-arrow-board",
+    "w-hazard-marker"
+   ],
+   "shape": "other",
+   "colors": "alternating red and white barrier segments",
+   "text": "",
+   "draw": "A line of interlocking plastic water-filled barriers in alternating red and white segments, each segment trapezoid-shaped in side view",
+   "uae_note": "",
+   "src": [
+    "S9"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "t-arrow-board",
+   "cat": "temporary",
+   "name": "لوحة السهم الوامض",
+   "meaning": "لوحة مضيئة على شاحنة أو مقطورة تبين أن المسار مغلق وتدلك على جهة الانتقال",
+   "action": "انتقل إلى الجهة التي يشير إليها السهم مبكرا وبهدوء",
+   "level": 3,
+   "confuse": [
+    "t-cones",
+    "i-vms",
+    "m-go-this-way"
+   ],
+   "shape": "other",
+   "colors": "black panel, amber lamps",
+   "text": "",
+   "draw": "A black rectangular panel mounted on the back of a truck; a large arrow made of amber lamp dots pointing LEFT (move to the left lane)",
+   "uae_note": "",
+   "src": [
+    "S9"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "x-distance",
+   "cat": "supplementary",
+   "name": "لوحة المسافة",
+   "meaning": "تبين المسافة بين الإشارة التي فوقها وبداية الخطر أو المكان المقصود",
+   "action": "استعد للموقف قبل الوصول إلى المسافة المكتوبة",
+   "level": 3,
+   "confuse": [
+    "x-length",
+    "g-exit-countdown",
+    "g-distance"
+   ],
+   "shape": "plate",
+   "colors": "white background, black border, black text or symbol",
+   "text": "200 م",
+   "draw": "Small horizontal white plate with a black border and rounded corners; the black text 200 م centred",
+   "uae_note": "تسميها هيئة الطرق في كتيبها الإنجليزي Qualification Plate، وتضعها تحت الإشارة لتحدد تفاصيلها",
+   "src": [
+    "S1",
+    "S4"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "x-length",
+   "cat": "supplementary",
+   "name": "لوحة طول المنطقة",
+   "meaning": "تبين طول المقطع الذي يستمر فيه الخطر أو المنع، مثلا 2 كم",
+   "action": "استمر في الحذر أو في الالتزام بالمنع طوال المسافة المكتوبة",
+   "level": 4,
+   "confuse": [
+    "x-distance",
+    "x-arrow-extent",
+    "g-distance"
+   ],
+   "shape": "plate",
+   "colors": "white background, black border, black text or symbol",
+   "text": "2 كم",
+   "draw": "Small white plate with a black border; on the left a black vertical double-headed arrow, on the right the black text 2 كم",
+   "uae_note": "",
+   "src": [
+    "S4",
+    "S12"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "x-time",
+   "cat": "supplementary",
+   "name": "لوحة الأوقات",
+   "meaning": "تبين الأوقات أو الأيام التي تنطبق فيها الإشارة التي فوقها، وخارجها لا ينطبق هذا المنع",
+   "action": "طابق الوقت الحالي مع الأوقات المكتوبة قبل أن تركن أو تدخل",
+   "level": 3,
+   "confuse": [
+    "x-arrow-extent",
+    "i-paid-parking",
+    "x-distance"
+   ],
+   "shape": "plate",
+   "colors": "white background, black border, black text or symbol",
+   "text": "8:00 - 21:00",
+   "draw": "Small white plate with a black border; the black text 8:00 - 21:00 on the first line and the days السبت - الخميس on a second line",
+   "uae_note": "",
+   "src": [
+    "S1",
+    "S2",
+    "S4"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "x-arrow-extent",
+   "cat": "supplementary",
+   "name": "لوحة سهم امتداد المنع",
+   "meaning": "السهم يبين الجهة التي يمتد إليها المنع من مكان الإشارة، والسهم ذو الرأسين يعني أن المنع قبل الإشارة وبعدها",
+   "action": "لا تقف ولا تتوقف في الجهة التي يشير إليها السهم",
+   "level": 4,
+   "confuse": [
+    "x-time",
+    "x-length",
+    "m-go-this-way"
+   ],
+   "shape": "plate",
+   "colors": "white background, black border, black text or symbol",
+   "text": "",
+   "draw": "Small white plate with a black border; a black horizontal double-headed arrow across it (single-headed versions point only left or only right)",
+   "uae_note": "",
+   "src": [
+    "S4",
+    "S3"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "x-trucks",
+   "cat": "supplementary",
+   "name": "لوحة الشاحنات",
+   "meaning": "الإشارة التي فوقها تنطبق على الشاحنات فقط",
+   "action": "إذا كنت تقود سيارة خفيفة فالإشارة لا تخصك، وإذا كنت تقود شاحنة فالتزم بها",
+   "level": 3,
+   "confuse": [
+    "x-cars",
+    "r-no-trucks",
+    "m-trucks-only"
+   ],
+   "shape": "plate",
+   "colors": "white background, black border, black text or symbol",
+   "text": "",
+   "draw": "Small white plate with a black border; a black lorry silhouette in side view",
+   "uae_note": "",
+   "src": [
+    "S12",
+    "S2"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "x-buses",
+   "cat": "supplementary",
+   "name": "لوحة الحافلات",
+   "meaning": "الإشارة التي فوقها تنطبق على الحافلات فقط، مثل إلزام الحافلات بالتزام اليمين",
+   "action": "إذا كنت تقود سيارة خاصة فالإشارة لا تخصك، وإذا كنت تقود حافلة فالتزم بها",
+   "level": 4,
+   "confuse": [
+    "x-trucks",
+    "m-buses-only",
+    "r-no-buses"
+   ],
+   "shape": "plate",
+   "colors": "white background, black border, black text or symbol",
+   "text": "",
+   "draw": "Small white plate with a black border; a black bus silhouette in side view",
+   "uae_note": "كتيب الهيئة يعرض إشارة الزم اليمين وتحتها لوحة حافلة لتلزم الحافلات وحدها",
+   "src": [
+    "S2"
+   ],
+   "confidence": "high"
+  },
+  {
+   "id": "x-cars",
+   "cat": "supplementary",
+   "name": "لوحة السيارات الخفيفة",
+   "meaning": "الإشارة التي فوقها تنطبق على السيارات الخفيفة فقط",
+   "action": "إذا كنت تقود سيارة خفيفة فالتزم بالإشارة",
+   "level": 4,
+   "confuse": [
+    "x-trucks",
+    "x-motorcycles",
+    "r-speed-by-vehicle"
+   ],
+   "shape": "plate",
+   "colors": "white background, black border, black text or symbol",
+   "text": "",
+   "draw": "Small white plate with a black border; a black car silhouette in side view",
+   "uae_note": "",
+   "src": [
+    "S12",
+    "S2"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "x-motorcycles",
+   "cat": "supplementary",
+   "name": "لوحة الدراجات النارية",
+   "meaning": "الإشارة التي فوقها تنطبق على الدراجات النارية فقط",
+   "action": "إذا كنت تقود دراجة نارية فالتزم بالإشارة",
+   "level": 5,
+   "confuse": [
+    "x-cars",
+    "x-trucks",
+    "r-no-motorcycles"
+   ],
+   "shape": "plate",
+   "colors": "white background, black border, black text or symbol",
+   "text": "",
+   "draw": "Small white plate with a black border; a black motorcycle with rider in side view",
+   "uae_note": "",
+   "src": [
+    "S12",
+    "S2"
+   ],
+   "confidence": "medium"
+  },
+  {
+   "id": "x-reduce-speed-now",
+   "cat": "supplementary",
+   "name": "لوحة خفف السرعة الآن",
+   "meaning": "تطلب منك تخفيف السرعة فورا لأن أمامك خطرا أو منطقة أبطأ",
+   "action": "ارفع قدمك عن دواسة الوقود وخفف السرعة الآن دون فرملة مفاجئة",
+   "level": 3,
+   "confuse": [
+    "x-distance",
+    "w-other-danger",
+    "t-road-works"
+   ],
+   "shape": "plate",
+   "colors": "white background, black border, black text or symbol",
+   "text": "",
+   "draw": "Horizontal white plate with a black border carrying two lines of black text: the Arabic meaning reduce speed now on the upper line and REDUCE SPEED NOW in capitals below",
+   "uae_note": "",
+   "src": [
+    "S4"
+   ],
+   "confidence": "medium"
+  }
+ ]
+}

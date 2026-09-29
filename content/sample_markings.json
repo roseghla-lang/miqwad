@@ -1,0 +1,23 @@
+{
+  "updated": "2026-09-29",
+  "sample": true,
+  "sources": {
+    "S1": {"title": "عينة تجريبية للعرض فقط: ملف العلامات الحقيقي يحل محلها تلقائيا", "url": "", "publisher": "مقود", "date": "2026-09"}
+  },
+  "categories": [
+    {"key": "line", "name": "الخطوط الطولية", "desc": "خطوط تقسم المسارات وتحدد حافة الطريق"},
+    {"key": "transverse", "name": "الخطوط العرضية", "desc": "خطوط التوقف وإعطاء الأولوية"},
+    {"key": "crossing", "name": "المعابر", "desc": "ممرات المشاة"},
+    {"key": "light", "name": "الإشارات الضوئية", "desc": "ألوان إشارة المرور ومعانيها"}
+  ],
+  "items": [
+    {"id": "mk-solid-line", "cat": "line", "name": "خط أبيض متصل", "meaning": "ممنوع عبور هذا الخط أو التجاوز من فوقه", "action": "ابق في مسارك حتى يصبح الخط متقطعا", "level": 1, "confuse": ["mk-broken-line"], "draw": "", "src": ["S1"], "confidence": "medium"},
+    {"id": "mk-broken-line", "cat": "line", "name": "خط أبيض متقطع", "meaning": "مسموح تغيير المسار أو التجاوز عند الأمان", "action": "انظر في المرايا وشغل إشارة الانعطاف قبل تغيير المسار", "level": 1, "confuse": ["mk-solid-line"], "draw": "", "src": ["S1"], "confidence": "medium"},
+    {"id": "mk-stop-line", "cat": "transverse", "name": "خط التوقف", "meaning": "المكان الذي تتوقف قبله عند إشارة قف أو الضوء الأحمر", "action": "أوقف مقدمة السيارة قبل الخط لا فوقه", "level": 1, "confuse": ["mk-give-way-line"], "draw": "", "src": ["S1"], "confidence": "medium"},
+    {"id": "mk-give-way-line", "cat": "transverse", "name": "خط إعطاء الأولوية المتقطع", "meaning": "حد الانتظار عند مدخل طريق عليك فيه إعطاء الأولوية", "action": "خفف السرعة وتوقف عند الخط إذا كان الطريق غير خال", "level": 2, "confuse": ["mk-stop-line"], "draw": "", "src": ["S1"], "confidence": "medium"},
+    {"id": "mk-zebra", "cat": "crossing", "name": "ممر المشاة (خطوط الحمار الوحشي)", "meaning": "مكان عبور المشاة، ولهم الأولوية عليه", "action": "خفف السرعة وتوقف للمشاة الذين يعبرون أو ينتظرون العبور", "level": 1, "confuse": [], "draw": "", "src": ["S1"], "confidence": "medium"},
+    {"id": "tl-red", "cat": "light", "name": "الضوء الأحمر", "meaning": "توقف خلف خط التوقف", "action": "انتظر حتى يضيء الأخضر ولا تتحرك قبله", "level": 1, "confuse": ["tl-amber"], "draw": "", "src": ["S1"], "confidence": "medium"},
+    {"id": "tl-amber", "cat": "light", "name": "الضوء الأصفر الثابت", "meaning": "استعد للتوقف، فالضوء سيتحول إلى الأحمر", "action": "توقف إذا كان التوقف آمنا، وتابع فقط إذا كنت قريبا جدا من الخط", "level": 2, "confuse": ["tl-red", "tl-green"], "draw": "", "src": ["S1"], "confidence": "medium"},
+    {"id": "tl-green", "cat": "light", "name": "الضوء الأخضر", "meaning": "مسموح المرور إذا كان الطريق خاليا", "action": "تابع بحذر وأعط الأولوية للمشاة الذين ما زالوا على الممر", "level": 1, "confuse": ["tl-amber"], "draw": "", "src": ["S1"], "confidence": "medium"}
+  ]
+}

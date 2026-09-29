@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Glyph gallery</title>
+<link rel="stylesheet" href="../src/fonts.css">
+<style>
+  :root { --bg: #c7ccd4; --card: #eef0f3; --ink: #151515; --muted: #5b6270; --blue: #1F5AA6; }
+  * { box-sizing: border-box; }
+  body { margin: 0; padding: 14px; background: var(--bg); color: var(--ink);
+    font: 12px/1.35 'Space Grotesk', system-ui, sans-serif; }
+  h1 { font: 700 18px 'Space Grotesk', sans-serif; margin: 0 0 4px; }
+  h2 { font: 700 15px 'Space Grotesk', sans-serif; margin: 18px 0 8px; }
+  .note { color: var(--muted); margin: 0 0 10px; }
+  .grid { display: flex; flex-wrap: wrap; gap: 10px; }
+  .card { background: var(--card); border-radius: 8px; padding: 8px; display: flex; flex-direction: column; gap: 6px; }
+  .row { display: flex; gap: 6px; align-items: flex-end; }
+  .name { font-weight: 700; font-size: 13px; }
+  .meta { color: var(--muted); font-size: 11px; }
+  .tile { display: block; flex: none; }
+  .tile svg { display: block; width: 100%; height: 100%; }
+  .s220 { width: 220px; height: 220px; }
+  .s90 { width: 90px; height: 90px; }
+  .s40 { width: 40px; height: 40px; }
+  .col { display: flex; flex-direction: column; gap: 6px; }
+  .pair { display: grid; grid-template-columns: 90px 90px; gap: 6px; align-content: start; }
+  .small { display: flex; gap: 8px; align-items: center; }
+  .small .meta { width: 34px; }
+  pre { background: #fff; padding: 8px; border-radius: 6px; white-space: pre-wrap; }
+  .ex { width: 428px; }
+  .ex .tile { width: 110px; height: 110px; }
+  pre.code { margin: 0; flex: 1; font: 10.5px/1.35 'Space Grotesk', monospace; padding: 6px; min-height: 110px; }
+  .review .tile { background: #fff; }
+  .review .cap { text-align: center; font-weight: 700; margin-top: 3px; }
+</style>
+</head>
+<body>
+<h1>SignKit glyphs and arrows</h1>
+<p class="note">Each card: 220 px black on white; 90 px white on blue, inside SignKit.warn, SignKit.prohib and SignKit.mand placed with SignKit.fit(base, name); bottom row: the same five at 40 px. Tools: Gallery.review({only:[...], size, mode}), Gallery.bounds(), Gallery.fitCheck(), Gallery.tuneWarn().</p>
+<div id="out"></div>
+<pre id="bounds" hidden></pre>
+<script src="../src/signs/kit.js"></script>
+<script src="../src/signs/glyphs.js"></script>
+<script>
+(function () {
+  var K = window.SignKit;
+  function item(kind, name, o) { return kind === 'arrow' ? K.arrow(name, o) : K.glyph(name, o); }
+  function vbOf(kind, name) { return (kind === 'arrow' ? K.arrows : K.glyphs)[name].vb; }
+  function plain(kind, name, bg, fill, pad) {
+    pad = pad == null ? 7 : pad;
+    return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><rect width="100" height="100" fill="' + bg + '"/>' +
+      item(kind, name, { x: pad, y: pad, w: 100 - 2 * pad, h: 100 - 2 * pad, fill: fill }) + '</svg>';
+  }
+  // placement: SignKit.fit(base, name) = the per-glyph tuned box (warn) or the base frame (prohib, mand)
+  function inWarn(kind, name) { return K.warn(item(kind, name, K.fit('warn', name))); }
+  function inProhib(kind, name) { return K.prohib(item(kind, name, K.fit('prohib', name))); }
+  function inMand(kind, name) { return K.mand(item(kind, name, K.fit('mand', name))); }
+  function tile(cls, svg, title) { return '<div class="tile ' + cls + '" title="' + (title || '') + '">' + svg + '</div>'; }
+
+  function card(kind, name) {
+    var reg = kind === 'arrow' ? K.arrows : K.glyphs, g = reg[name], vb = g.vb;
+    var ratio = (vb[0] / vb[1]).toFixed(2);
+    var h = '<div class="card"><div><span class="name">' + (kind === 'arrow' ? 'arrow: ' : '') + name + '</span> ' +
+      '<span class="meta">' + vb[0] + ' x ' + vb[1] + ' (w/h ' + ratio + ')' + (g.alias ? ' = ' + g.alias : '') + '</span></div>' +
+      '<div class="row">' + tile('s220', plain(kind, name, '#fff', K.C.black)) +
+      '<div class="pair">' +
+      tile('s90', plain(kind, name, K.C.blue, K.C.white, 9)) + tile('s90', inWarn(kind, name)) +
+      tile('s90', inProhib(kind, name)) + tile('s90', inMand(kind, name)) + '</div></div>' +
+      '<div class="small"><span class="meta">40 px</span>' + tile('s40', plain(kind, name, '#fff', K.C.black, 4)) +
+      tile('s40', plain(kind, name, K.C.blue, K.C.white, 6)) + tile('s40', inWarn(kind, name)) +
+      tile('s40', inProhib(kind, name)) + tile('s40', inMand(kind, name)) + '</div></div>';
+    return h;
+  }
+
+  function list(o) {
+    var names = [];
+    K.glyphNames().forEach(function (n) { names.push(['glyph', n]); });
+    K.arrowKinds().forEach(function (n) { names.push(['arrow', n]); });
+    if (o && o.only) names = names.filter(function (x) { return o.only.indexOf(x[1]) >= 0; });
+    return names;
+  }
+
+  // full gallery
+  function render(o) {
+    o = o || {};
+    var items = list(o), glyphs = items.filter(function (x) { return x[0] === 'glyph'; }),
+      arrows = items.filter(function (x) { return x[0] === 'arrow'; });
+    var h = '';
+    if (glyphs.length) h += '<h2>Glyphs (' + glyphs.length + ')</h2><div class="grid">' +
+      glyphs.map(function (x) { return card(x[0], x[1]); }).join('') + '</div>';
+    if (arrows.length) h += '<h2>Arrows (' + arrows.length + ')</h2><div class="grid">' +
+      arrows.map(function (x) { return card(x[0], x[1]); }).join('') + '</div>';
+    document.getElementById('out').innerHTML = h;
+  }
+
+  // close-up review: big black-on-white tiles, optional sign mode
+  function review(o) {
+    o = o || {};
+    var size = o.size || 300, mode = o.mode || 'plain';
+    var h = '<div class="grid review">' + list(o).map(function (x) {
+      var svg = mode === 'warn' ? inWarn(x[0], x[1]) : mode === 'prohib' ? inProhib(x[0], x[1]) :
+        mode === 'mand' ? inMand(x[0], x[1]) : mode === 'blue' ? plain(x[0], x[1], K.C.blue, K.C.white, 4) :
+        plain(x[0], x[1], '#fff', K.C.black, 3);
+      return '<div><div class="tile" style="width:' + size + 'px;height:' + size + 'px">' + svg + '</div><div class="cap">' +
+        x[1] + '</div></div>';
+    }).join('') + '</div>';
+    document.querySelector('h1').hidden = true;
+    document.querySelector('.note').hidden = true;
+    document.getElementById('out').innerHTML = h;
+  }
+
+  // pixel bounds of each glyph drawn alone in its own viewBox (+ margin) vs the declared viewBox
+  function bounds() {
+    var out = document.getElementById('bounds'), items = list(), res = [], done = 0, SC = 4, MG = 12;
+    out.hidden = false; out.textContent = 'measuring...';
+    items.forEach(function (x) {
+      var vb = vbOf(x[0], x[1]), W = vb[0] + 2 * MG, H = vb[1] + 2 * MG;
+      var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="' + W * SC + '" height="' + H * SC + '" viewBox="' + (-MG) + ' ' +
+        (-MG) + ' ' + W + ' ' + H + '">' + item(x[0], x[1], { x: 0, y: 0, w: vb[0], h: vb[1], fill: '#000' }) + '</svg>';
+      var img = new Image();
+      img.onload = function () {
+        var cv = document.createElement('canvas'); cv.width = W * SC; cv.height = H * SC;
+        var cx = cv.getContext('2d'); cx.drawImage(img, 0, 0);
+        var d = cx.getImageData(0, 0, cv.width, cv.height).data, x0 = 1e9, y0 = 1e9, x1 = -1, y1 = -1;
+        for (var yy = 0; yy < cv.height; yy++) for (var xx = 0; xx < cv.width; xx++) {
+          if (d[(yy * cv.width + xx) * 4 + 3] > 60) { if (xx < x0) x0 = xx; if (xx > x1) x1 = xx; if (yy < y0) y0 = yy; if (yy > y1) y1 = yy; }
+        }
+        var b = [x0 / SC - MG, y0 / SC - MG, (x1 + 1) / SC - MG, (y1 + 1) / SC - MG];
+        var over = Math.max(-b[0], -b[1], b[2] - vb[0], b[3] - vb[1]);
+        var slack = Math.max(b[0], b[1], vb[0] - b[2], vb[1] - b[3]);
+        res.push({ name: x[1], vb: vb, b: b.map(function (v) { return Math.round(v * 10) / 10; }), over: over, slack: slack });
+        if (++done === items.length) report();
+      };
+      img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+    });
+    function report() {
+      res.sort(function (a, b) { return a.name < b.name ? -1 : 1; });
+      var lines = res.map(function (r) {
+        var flag = r.over > 0.6 ? '  OVERFLOW ' + r.over.toFixed(1) : r.slack > 1.5 ? '  slack ' + r.slack.toFixed(1) : '';
+        if (flag && window.console) console.warn('bounds ' + r.name + ' vb ' + r.vb.join('x') + ' ink ' + r.b.join(',') + flag);
+        return (flag ? '! ' : '  ') + r.name + '  vb ' + r.vb.join(' x ') + '  ink ' + r.b.join(', ') + flag;
+      });
+      out.textContent = lines.join('\n');
+      document.getElementById('out').innerHTML = '';
+    }
+  }
+
+  // Placement check: each glyph drawn with SignKit.fit(base, name) in pure blue ink; any ink outside the inner
+  // area of the base (white triangle minus 1 unit, white disc r 37, blue disc r 44) is reported.
+  function fitCheck(o) {
+    o = o || {};
+    var bases = o.bases || ['warn', 'prohib', 'mand'], SC = 5, jobs = [], res = [], done = 0;
+    list(o).forEach(function (x) { bases.forEach(function (b) { jobs.push([x[0], x[1], b]); }); });
+    var out = document.getElementById('bounds');
+    out.hidden = false; out.textContent = 'checking ' + jobs.length + ' placements...';
+    function inside(b, x, y) {
+      if (b === 'warn') return y <= 77 && Math.abs(x - 50) <= (y - 24) * 0.5778 - 1.15;
+      var d = Math.sqrt((x - 50) * (x - 50) + (y - 50) * (y - 50));
+      return b === 'prohib' ? d <= 37 : d <= 44;
+    }
+    jobs.forEach(function (j) {
+      var H = j[2] === 'warn' ? 92 : 100;
+      var inner = item(j[0], j[1], K.fit(j[2], j[1], { fill: '#0000ff', color2: '#0000ff', bg: '#ffffff' }));
+      var svg = (j[2] === 'warn' ? K.warn(inner) : j[2] === 'prohib' ? K.prohib(inner) : K.mand(inner))
+        .replace('<svg ', '<svg width="' + 100 * SC + '" height="' + H * SC + '" ');
+      var img = new Image();
+      img.onload = function () {
+        var cv = document.createElement('canvas'); cv.width = 100 * SC; cv.height = H * SC;
+        var cx = cv.getContext('2d'); cx.drawImage(img, 0, 0);
+        var d = cx.getImageData(0, 0, cv.width, cv.height).data, bad = 0, worst = 0;
+        for (var yy = 0; yy < cv.height; yy++) for (var xx = 0; xx < cv.width; xx++) {
+          var i = (yy * cv.width + xx) * 4;
+          if (d[i + 2] > 200 && d[i] < 60 && d[i + 1] < 60) {
+            var ux = (xx + 0.5) / SC, uy = (yy + 0.5) / SC;
+            if (!inside(j[2], ux, uy)) {
+              bad++;
+              var dist = j[2] === 'warn' ? Math.max(uy - 77, Math.abs(ux - 50) - ((uy - 24) * 0.5778 - 1.15)) :
+                Math.sqrt((ux - 50) * (ux - 50) + (uy - 50) * (uy - 50)) - (j[2] === 'prohib' ? 37 : 44);
+              if (dist > worst) worst = dist;
+            }
+          }
+        }
+        res.push({ name: j[1], base: j[2], bad: bad, worst: worst });
+        if (++done === jobs.length) report();
+      };
+      img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+    });
+    function report() {
+      var flagged = res.filter(function (r) { return r.worst > 0.3; });
+      flagged.forEach(function (r) {
+        if (window.console) console.warn('fit ' + r.base + ' ' + r.name + ': ' + r.bad + ' px outside, up to ' + r.worst.toFixed(1) + ' units');
+      });
+      out.textContent = 'placements checked: ' + res.length + ', outside the safe area: ' + flagged.length + '\n' +
+        flagged.map(function (r) { return r.base + ' ' + r.name + ' ' + r.worst.toFixed(1); }).join('\n');
+      document.getElementById('out').innerHTML = '';
+    }
+  }
+
+  // Tuner for warning triangles: rasterise each glyph once, keep the left/right ink extremes of every row, then
+  // solve the triangle constraint |dx + u*s| <= 0.5778*(50 - v*s) - 1.155*m analytically (u = x offset from the
+  // glyph centre, v = height above the glyph bottom, glyph bottom on y = 74). Picks the largest scale over
+  // horizontal shifts dx, capped by capH / capW (capLineH for thin line symbols). Logs 'TUNE {json}'.
+  function tuneWarn(o) {
+    o = o || {};
+    var m = o.m == null ? 2 : o.m, capH = o.capH || 33, capW = o.capW || 44, capLineH = o.capLineH || 39;
+    var SC = 8, items = list(o), out = {}, done = 0;
+    items.forEach(function (x) {
+      var reg = x[0] === 'arrow' ? K.arrows : K.glyphs, g = reg[x[1]], vb = g.vb;
+      var svg = '<svg xmlns="http://www.w3.org/2000/svg" width="' + Math.ceil(vb[0] * SC) + '" height="' + Math.ceil(vb[1] * SC) +
+        '" viewBox="0 0 ' + vb[0] + ' ' + vb[1] + '">' + item(x[0], x[1], { x: 0, y: 0, w: vb[0], h: vb[1], fill: '#000', color2: '#000' }) + '</svg>';
+      var img = new Image();
+      img.onload = function () {
+        var W = Math.ceil(vb[0] * SC), H = Math.ceil(vb[1] * SC), cv = document.createElement('canvas');
+        cv.width = W; cv.height = H;
+        var cx = cv.getContext('2d'); cx.drawImage(img, 0, 0);
+        var d = cx.getImageData(0, 0, W, H).data, rows = [];
+        for (var yy = 0; yy < H; yy++) {
+          var lo = -1, hi = -1;
+          for (var xx = 0; xx < W; xx++) if (d[(yy * W + xx) * 4 + 3] > 40) { if (lo < 0) lo = xx; hi = xx; }
+          if (lo >= 0) rows.push([lo / SC - vb[0] / 2, (hi + 1) / SC - vb[0] / 2, vb[1] - yy / SC]); // uMin, uMax, v (top of row)
+        }
+        var line = x[0] === 'arrow' || x[1] === 'exclamation' || (g.tags || []).indexOf('road') >= 0;
+        var cap = Math.min((line ? capLineH : capH) / vb[1], capW / vb[0]), R = 28.89 - 1.155 * m, best = null;
+        function scaleAt(dx) {
+          var s = cap;
+          rows.forEach(function (r) {
+            var a = r[1] + 0.5778 * r[2], b = -r[0] + 0.5778 * r[2];
+            if (a > 0) s = Math.min(s, (R - dx) / a);
+            if (b > 0) s = Math.min(s, (R + dx) / b);
+          });
+          return s;
+        }
+        var sMax = 0, dxs = [];
+        for (var dx = -10; dx <= 10.001; dx += 0.25) { var sv = scaleAt(dx); dxs.push([dx, sv]); if (sv > sMax) sMax = sv; }
+        // prefer the most centred placement that keeps at least 97% of the best scale
+        dxs.forEach(function (e) {
+          if (e[1] >= 0.97 * sMax && (!best || Math.abs(e[0]) < Math.abs(best.dx))) best = { s: e[1], dx: e[0] };
+        });
+        var w = vb[0] * best.s, h = vb[1] * best.s;
+        out[x[1]] = [Math.round((50 + best.dx - w / 2) * 10) / 10, Math.round((74 - h) * 10) / 10,
+          Math.round(w * 10) / 10, Math.round(h * 10) / 10];
+        if (++done === items.length) {
+          if (window.console) console.warn('TUNE ' + JSON.stringify(out));
+          var el = document.getElementById('bounds'); el.hidden = false; el.textContent = JSON.stringify(out, null, 1);
+        }
+      };
+      img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(svg);
+    });
+  }
+
+  // composition examples (the same code is quoted in docs/glyphs.md)
+  var EXAMPLES = [
+    ['camels (warning)', "return SignKit.warn(SignKit.glyph('camel', SignKit.fit('warn', 'camel')));"],
+    ['children (warning)', "return SignKit.warn(SignKit.glyph('children', SignKit.fit('warn', 'children')));"],
+    ['bend right, arrowhead', "return SignKit.warn(SignKit.arrow('bend-right-arrow',\n  SignKit.fit('warn', 'bend-right-arrow')));"],
+    ['two-way traffic', "return SignKit.warn(SignKit.arrow('two-way', SignKit.fit('warn', 'two-way')));"],
+    ['steep descent + label', "var box = SignKit.fit('warn', 'steep-down');\nvar p = SignKit.glyphPoint('steep-down', 'label', box);\n" +
+      "return SignKit.warn(SignKit.glyph('steep-down', box) +\n  SignKit.text('10%', p[0], p[1], 8.5, {family: 'latin'}));"],
+    ['road works (orange)', "return SignKit.warn(SignKit.glyph('worker', SignKit.fit('warn', 'worker')),\n  {bg: SignKit.C.orange});"],
+    ['traffic signals', "return SignKit.warn(SignKit.glyph('traffic-light',\n  SignKit.fit('warn', 'traffic-light')));"],
+    ['slippery road', "return SignKit.warn(SignKit.glyph('slippery-car',\n  SignKit.fit('warn', 'slippery-car')));"],
+    ['no pedestrians', "return SignKit.prohib(SignKit.glyph('person-walk', SignKit.frame('prohib')),\n  {slash: true});"],
+    ['no U-turn', "return SignKit.prohib(SignKit.arrow('uturn-left', SignKit.frame('prohib')),\n  {slash: true});"],
+    ['no overtaking', "// red car on the LEFT (overtaking side in the UAE)\nreturn SignKit.prohib(\n" +
+      "  SignKit.glyph('car-rear', {x: 21, y: 36, w: 28, h: 26, fill: SignKit.C.red}) +\n" +
+      "  SignKit.glyph('car-rear', {x: 51, y: 36, w: 28, h: 26}));"],
+    ['no goods vehicles', "return SignKit.prohib(SignKit.glyph('truck-side', SignKit.frame('prohib')));"],
+    ['turn left (mandatory)', "return SignKit.mand(SignKit.arrow('turn-left', SignKit.frame('mand')));"],
+    ['roundabout (mandatory)', "return SignKit.mand(SignKit.arrow('roundabout',\n  SignKit.frame('mand', {x: 17, y: 17, w: 66, h: 66})));"],
+    ['cycle track', "return SignKit.mand(SignKit.glyph('bicycle', SignKit.frame('mand')));"],
+    ['ahead or left (fixed scale)', "// s = same line weight for a family of arrows\nreturn SignKit.mand(SignKit.arrow('straight-left',\n  {s: 0.72, cx: 50, cy: 50, fill: SignKit.C.white}));"],
+    ['ahead only (fixed scale)', "return SignKit.mand(SignKit.arrow('straight',\n  {s: 0.72, cx: 50, cy: 50, fill: SignKit.C.white}));"],
+    ['priority over oncoming', "return SignKit.rect(SignKit.arrow('two-way',\n  {x: 20, y: 17, w: 60, h: 66, fill: SignKit.C.white, color2: SignKit.C.red}));"],
+    ['pedestrian crossing (info)', "var tri = '<polygon points=\"' + SignKit.tri(50, 60, 21) + '\" fill=\"#fff\"' +\n" +
+      "  ' stroke=\"#fff\" stroke-width=\"4\" stroke-linejoin=\"round\"/>';\n" +
+      "return SignKit.rect(tri + SignKit.glyph('pedestrian-crossing',\n  {x: 31, y: 40, w: 38, h: 36, ay: 1}));"],
+    ['parking', "return SignKit.rect(SignKit.glyph('parking-p',\n  SignKit.frame('square', {x: 22, y: 14, w: 56, h: 72})));"],
+    ['first aid', "var panel = '<rect x=\"16\" y=\"16\" width=\"68\" height=\"68\" rx=\"3\" fill=\"#fff\"/>';\n" +
+      "return SignKit.rect(panel + SignKit.glyph('crescent', {x: 26, y: 23, w: 48, h: 54}));"],
+    ['filling station', "return SignKit.rect(SignKit.glyph('fuel-pump', SignKit.frame('square')));"],
+    ['one-way', "return SignKit.rect(SignKit.arrow('one-way',\n  {x: 10, y: 11, w: 80, h: 18, fill: SignKit.C.white}), {w: 100, h: 40});"]
+  ];
+  function examples() {
+    return '<h2>Composition examples (code as in docs/glyphs.md)</h2><div class="grid">' + EXAMPLES.map(function (e) {
+      var svg;
+      try { svg = new Function('SignKit', e[1])(K); } catch (err) { svg = '<b>' + err + '</b>'; }
+      return '<div class="card ex"><div class="name">' + e[0] + '</div><div class="row"><div class="tile s90">' + svg +
+        '</div><pre class="code">' + e[1].replace(/&/g, '&amp;').replace(/</g, '&lt;') + '</pre></div></div>';
+    }).join('') + '</div>';
+  }
+  var baseRender = render;
+  render = function (o) {
+    baseRender(o);
+    if (!o || !o.only) document.getElementById('out').insertAdjacentHTML('afterbegin', examples());
+  };
+
+  window.Gallery = { render: render, review: review, bounds: bounds, fitCheck: fitCheck, tuneWarn: tuneWarn, EXAMPLES: EXAMPLES };
+  render();
+})();
+</script>
+</body>
+</html>
