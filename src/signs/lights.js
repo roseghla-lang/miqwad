@@ -92,6 +92,53 @@
   // rounded tile helpers (the tile has rx 8): a band from y to the bottom, and the tile outline itself
   function tile(fill) { return rect(0, 0, 100, 100, 8, fill); }
   function lowBand(y, fill, o) { return path('M0,' + n(y) + 'H100V92A8,8 0 0 1 92,100H8A8,8 0 0 1 0,92Z', fill, o); }
+  // the rounded tile as a convex polygon, to clip shapes that run off the edge (no clip paths allowed)
+  var TILE = (function () {
+    var pts = [];
+    [[92, 8, -90], [92, 92, 0], [8, 92, 90], [8, 8, 180]].forEach(function (c) {
+      for (var k = 0; k <= 6; k++) { var d = dir(c[2] + k * 15); pts.push([c[0] + 8 * d[0], c[1] + 8 * d[1]]); }
+    });
+    return pts;
+  })();
+  function edgeSide(A, B, P) { return (B[0] - A[0]) * (P[1] - A[1]) - (B[1] - A[1]) * (P[0] - A[0]); }
+  var TILE_IN = edgeSide(TILE[0], TILE[1], [50, 50]) > 0 ? 1 : -1;
+  // Sutherland-Hodgman: a polygon clipped to the tile
+  function clipTile(pts) {
+    var out = pts;
+    for (var i = 0; i < TILE.length && out.length; i++) {
+      var A = TILE[i], B = TILE[(i + 1) % TILE.length], inp = out;
+      out = [];
+      for (var j = 0; j < inp.length; j++) {
+        var P = inp[j], Q = inp[(j + 1) % inp.length], dp = edgeSide(A, B, P) * TILE_IN, dq = edgeSide(A, B, Q) * TILE_IN;
+        if (dp >= 0) out.push(P);
+        if ((dp >= 0) !== (dq >= 0)) { var t = dp / (dp - dq); out.push([P[0] + (Q[0] - P[0]) * t, P[1] + (Q[1] - P[1]) * t]); }
+      }
+    }
+    return out;
+  }
+  // distance of P inside the tile outline (negative outside)
+  function tileDepth(P) {
+    var dmin = Infinity;
+    for (var i = 0; i < TILE.length; i++) {
+      var A = TILE[i], B = TILE[(i + 1) % TILE.length], L = Math.sqrt(Math.pow(B[0] - A[0], 2) + Math.pow(B[1] - A[1], 2));
+      dmin = Math.min(dmin, edgeSide(A, B, P) * TILE_IN / L);
+    }
+    return dmin;
+  }
+  // a segment from p0 (inside) toward p1, cut where it comes within `m` of the tile outline
+  function clipSeg(p0, p1, m) {
+    if (tileDepth(p1) >= m) return [p0, p1];
+    var lo = 0, hi = 1;
+    for (var k = 0; k < 24; k++) {
+      var t = (lo + hi) / 2, P = [p0[0] + (p1[0] - p0[0]) * t, p0[1] + (p1[1] - p0[1]) * t];
+      if (tileDepth(P) >= m) lo = t; else hi = t;
+    }
+    return [p0, [p0[0] + (p1[0] - p0[0]) * lo, p0[1] + (p1[1] - p0[1]) * lo]];
+  }
+  function clipLine(p0, p1, col, w, o) {
+    var q = clipSeg(p0, p1, w / 2 + 0.2);
+    return line(q[0][0], q[0][1], q[1][0], q[1][1], col, w, o);
+  }
 
   // straight or cubic arrow with a solid triangular head at the end (tile units)
   function arrowPath(pts, col, o) {
@@ -191,7 +238,7 @@
       var y = f[0], col = f[1], lit = f[2], fx = 34.5, fw = 31, fh = 39;
       if (lit) s += rect(fx - 4, y - 4, fw + 8, fh + 8, 8, col, { op: 0.13 }) + rect(fx - 2, y - 2, fw + 4, fh + 4, 5.5, col, { op: 0.2 });
       s += rect(fx - 1.2, y - 2.6, fw + 2.4, 3, 1.2, FV.visor);
-      s += rect(fx, y, fw, fh, 3.5, FV.face) + (lit ? ell(50, y + fh / 2, 11, 16, col, { op: 0.1 }) : '');
+      s += rect(fx, y, fw, fh, 3.5, FV.face) + (lit ? ell(50, y + fh / 2, 11, 16, col, { op: 0.07 }) : '');
       var box = f[3] === 'person-walk' ? { x: 50 - 9.6, y: y + 3.8, w: 19.2, h: 31.5 } : { x: 50 - 6.2, y: y + 3.8, w: 12.4, h: 31.5 };
       box.fill = lit ? col : tint(col, 0.22);
       s += K.glyph(f[3], box);
@@ -225,23 +272,14 @@
     return poly(pts, 'none', { stroke: col, sw: a * 0.34, join: 'round', op: 0.16 }) +
       poly(pts, 'none', { stroke: col, sw: a * 0.17, join: 'round', op: 0.24 }) + poly(pts, col);
   }
-  // road seen from the driver's seat below a gantry: lines given at y0 converge to (50, vy)
+  // road seen from the driver's seat: lines given at y0 converge to the vanishing point (50, vy)
   function roadAhead(y0, vy, xs, o) {
     o = o || {};
     function at(x, y) { return 50 + (x - 50) * (y - vy) / (y0 - vy); }
-    function yAt(x, xe) { return vy + (y0 - vy) * (xe - 50) / (x - 50); }          // y where the line through x meets xe
-    var xl = xs[0], xr = xs[xs.length - 1];
-    var yl = yAt(xl, 0), yr = yAt(xr, 100);
-    var d = 'M' + n(xl) + ',' + n(y0) + 'L' + n(xr) + ',' + n(y0) + 'L100,' + n(yr) + 'V92A8,8 0 0 1 92,100H8A8,8 0 0 1 0,92V' + n(yl) + 'Z';
-    var s = path(d, o.fill || FV.road);
+    var xl = xs[0], xr = xs[xs.length - 1], s = poly(clipTile([[xl, y0], [xr, y0], [at(xr, 140), 140], [at(xl, 140), 140]]), o.fill || FV.road);
     xs.forEach(function (x, i) {
-      var edge = i === 0 || i === xs.length - 1, xe = at(x, 100), x2 = xe, y2 = 100;
-      if (xe < 0) { x2 = 0; y2 = yAt(x, 0); } else if (xe > 100) { x2 = 100; y2 = yAt(x, 100); }
-      if (y2 > 90 && (x2 < 9 || x2 > 91)) {     // keep the stroke out of the rounded corners
-        var t = (90 - y0) / (y2 - y0); x2 = x + (x2 - x) * t; y2 = 90;
-      }
-      var col = edge ? (i === 0 ? '#E3B92E' : FV.white) : FV.white;
-      s += line(x, y0, x2, y2, col, edge ? 1.3 : 1.1, edge ? { cap: 'butt' } : { dash: '5 5', cap: 'butt' });
+      var edge = i === 0 || i === xs.length - 1, col = edge ? (i === 0 ? '#E3B92E' : FV.white) : FV.white;
+      s += clipLine([x, y0], [at(x, 140), 140], col, edge ? 1.3 : 1.1, edge ? { cap: 'butt' } : { dash: '5 5', cap: 'butt' });
     });
     return s;
   }
@@ -340,9 +378,12 @@
   }
   // a point of the figure (figure units) in tile units
   function ofPt(o, p) { return [o.x + p[0] * o.s, o.y - 100 * o.s + p[1] * o.s]; }
-  function handTip(o, side, a) {
-    var g = armGeo(side, a);
-    return ofPt(o, add(g.W, dir(a.ha == null ? a.a2 : a.ha), 9));
+  // gold sweep of the right arm (viewer's left): an arc over the top from above his head, ending in a short hook whose
+  // head points down and out to the viewer's left, the way he sends the traffic
+  function sweep(sh, R, a0) {
+    var e = add(sh, dir(160), R);
+    return stroke(arcD(sh[0], sh[1], R, a0, -200), FV.gold, 2.3) +
+      arrowC(e, add(sh, dir(145), R * 1.02), add(sh, dir(138), R * 1.03), [e[0] - 5.5, e[1] + 14], FV.gold, { sw: 2.3 });
   }
   var DOWN_L = { a1: 97, a2: 93, hand: 'relaxed' }, DOWN_R = { a1: 83, a2: 87, hand: 'relaxed' };
   function poGround(night) {
@@ -404,8 +445,7 @@
     return s;
   }
   // ambulance 6.0 x 2.25 m: white, red side stripes, red crescent, light bar near the front
-  function ambulance(o) {
-    o = o || {};
+  function ambulance() {
     var hl = 3, hw = 1.125, s = vShadow(hw, hl, 0.45);
     s += rect(-hw, -hl, 2 * hw, 2 * hl, 0.45, '#F2F3F5', { stroke: '#8E949C', sw: 0.12 });
     s += path('M-0.96,-2.72L0.96,-2.72L0.86,-2.08L-0.86,-2.08Z', TD.glass);
@@ -505,8 +545,8 @@
     var vx = 40, vy = 56, s = dusk(62);
     function xl(y) { return vx - vx * (y - vy) / (88 - vy); }
     function xr(y) { return vx + (70 - vx) * (y - vy) / (100 - vy); }
-    s += path('M' + n(xl(62)) + ',62L' + n(xr(62)) + ',62L70,100H8A8,8 0 0 1 0,92V88Z', FV.road);
-    s += line(xr(62), 62, 70, 100, FV.pole, 1.4, { cap: 'butt' });
+    s += poly(clipTile([[xl(62), 62], [xr(62), 62], [xr(120), 120], [xl(120), 120]]), FV.road);
+    s += clipLine([xr(62), 62], [xr(120), 120], FV.pole, 1.4, { cap: 'butt' });
     s += line(xl(84) + 2, 84, xr(84) - 2, 84, FV.white, 1.7, { dash: '3.4 2.6', cap: 'butt' });
     s += rect(78.5, 22, 4.6, 73, 1, FV.pole) + rect(81.5, 22, 1.6, 73, 0, FV.poleD) + rect(77.8, 20.4, 6, 2.6, 1, FV.poleD) +
       rect(75.9, 93, 9.8, 3.2, 1, FV.poleD);
@@ -602,12 +642,7 @@
       ghosts: [{ side: -1, a1: -88, a2: -88, hand: 'palm', ha: -88, thumb: 1, op: 0.2 },
         { side: -1, a1: -133, a2: -133, hand: 'palm', ha: -133, thumb: 1, op: 0.26 },
         { side: -1, a1: 180, a2: 180, hand: 'palm', ha: 180, thumb: 1, op: 0.32 }] };
-    s += officer(F);
-    var sh = ofPt(F, [-SHX, SHY]), R = 46 * F.s;
-    var p0 = add(sh, dir(-84), R), p1 = add(sh, dir(-150), R), p2 = add(sh, dir(160), R);
-    s += stroke(arcD(sh[0], sh[1], R, -84, -200), FV.gold, 2.3);
-    s += arrowC(add(sh, dir(160), R), add(sh, dir(145), R * 1.02), add(sh, dir(138), R * 1.03), [p2[0] - 5.5, p2[1] + 14], FV.gold, { sw: 2.3 });
-    void p0; void p1;
+    s += officer(F) + sweep(ofPt(F, [-SHX, SHY]), 46 * F.s, -84);
     return pic(s, label);
   });
   reg('po-lamp-stop', 'قف ليلا: المصباح الأحمر يتحرك ذهابا وإيابا', function (o, label) {
@@ -622,22 +657,20 @@
     var s = poGround(true);
     var F = { night: true, x: 62, y: 96, s: 0.8, vr: DOWN_R, vl: { a1: -125, a2: -128, hand: 'lamp', la: -128 } };
     s += officer(F);
+    // faint earlier and later positions of the lamp along its half circle
     var sh = ofPt(F, [-SHX, SHY]), R = 50 * F.s;
     [-92, 175, 150].forEach(function (a, i) {
       var p = add(sh, dir(a), R * 0.86);
       s += circ(p[0], p[1], 4.2, FV.red, { op: 0.12 + i * 0.03 }) + circ(p[0], p[1], 1.9, FV.red, { op: 0.3 + i * 0.08 });
     });
-    s += stroke(arcD(sh[0], sh[1], R, -86, -200), FV.gold, 2.3);
-    var p2 = add(sh, dir(160), R);
-    s += arrowC(p2, add(sh, dir(145), R * 1.02), add(sh, dir(138), R * 1.03), [p2[0] - 5.5, p2[1] + 14], FV.gold, { sw: 2.3 });
+    s += sweep(sh, R, -86);
     return pic(s, label);
   });
 
   // ================================================================ ev- emergency vehicles, school bus, amber lights
   reg('ev-emergency-lights', 'مركبة طوارئ بأضواء وامضة وصفارة', function (o, label) {
     var s = dusk(58);
-    s += path('M42,58L58,58L100,84V92A8,8 0 0 1 92,100H8A8,8 0 0 1 0,92V84Z', FV.road);
-    s += line(50, 60, 50, 64, FV.white, 1, { cap: 'butt' });
+    s += poly(clipTile([[42, 58], [58, 58], [130, 102], [-30, 102]]), FV.road);
     s += ell(50, 93.5, 34, 3.2, '#000000', { op: 0.35 });
     // patient box behind the cab
     s += rect(19, 20, 62, 48, 3.5, '#F2F2EE', { stroke: '#AEB5BF', sw: 0.9 });
@@ -647,8 +680,9 @@
     s += rect(22, 42, 56, 42, 5, '#F2F2EE', { stroke: '#AEB5BF', sw: 0.9 });
     s += path('M28.5,45.5L71.5,45.5L74.5,61L25.5,61Z', '#1B2230') + path('M31,47.2L44,47.2L38,59.4L27.8,59.4Z', '#FFFFFF', { op: 0.07 });
     s += rect(22, 64, 56, 3.2, 0, SIGN.red);
-    s += ell(31.5, 71.5, 9, 5.5, '#F4F1DE', { op: 0.22 }) + ell(68.5, 71.5, 9, 5.5, '#F4F1DE', { op: 0.22 });
-    s += rect(25.5, 69, 12, 5.2, 2, '#F4F1DE') + rect(62.5, 69, 12, 5.2, 2, '#F4F1DE');
+    s += rect(24.5, 68, 14, 7.2, 2.6, '#4A505A') + rect(61.5, 68, 14, 7.2, 2.6, '#4A505A');
+    s += ell(31.5, 71.6, 9.5, 6, '#FFF3C4', { op: 0.25 }) + ell(68.5, 71.6, 9.5, 6, '#FFF3C4', { op: 0.25 });
+    s += rect(25.8, 69.2, 11.4, 4.8, 2, '#FFF6D8') + rect(62.8, 69.2, 11.4, 4.8, 2, '#FFF6D8');
     s += rect(41.5, 68.8, 17, 7.4, 1.6, '#3A3F48') + line(43.5, 71.2, 56.5, 71.2, '#565C66', 0.8) + line(43.5, 73.8, 56.5, 73.8, '#565C66', 0.8);
     s += rect(20.5, 79, 59, 6, 2.6, '#4A505A');
     s += rect(24.5, 83, 9, 10, 2, '#111418') + rect(66.5, 83, 9, 10, 2, '#111418');
@@ -798,29 +832,30 @@
   });
 
   reg('ev-hazard-lights', 'أضواء التحذير (الفلاشر) في سيارة أمامك', function (o, label) {
-    var s = dusk(46);
+    var s = dusk(40);
     // carriageway on the left, hard shoulder to the right of the solid edge line
-    s += path('M18,46L32,46L40,100H8A8,8 0 0 1 0,92V58Z', FV.road);
-    s += path('M32,46L38,46L100,76V92A8,8 0 0 1 92,100H40Z', '#282D36');
-    s += line(32, 46, 40, 100, FV.white, 1.4, { cap: 'butt' }) + line(25, 46, 0, 85, FV.white, 1.1, { dash: '5 5', cap: 'butt' });
-    // the stopped car, seen from behind
-    var cx = 67;
-    s += ell(cx, 92, 24, 3, '#000000', { op: 0.4 });
-    s += rect(cx - 20, 80, 8.4, 11.6, 2, '#101317') + rect(cx + 11.6, 80, 8.4, 11.6, 2, '#101317');
-    s += path('M' + n(cx - 15.5) + ',52.5C' + n(cx - 14.4) + ',49.6 ' + n(cx - 12.2) + ',49 ' + n(cx - 9) + ',49H' + n(cx + 9) + 'C' + n(cx + 12.2) +
+    s += poly(clipTile([[12, 40], [27, 40], [33.4, 104], [-70, 104]]), FV.road);
+    s += poly(clipTile([[27, 40], [33, 40], [140, 104], [33.4, 104]]), '#282D36');
+    s += clipLine([27, 40], [33.4, 104], FV.white, 1.4, { cap: 'butt' }) + clipLine([20, 40], [-22, 104], FV.white, 1.1, { dash: '5 5', cap: 'butt' });
+    // the stopped car, seen from behind (drawn around cx, then scaled up from its ground line)
+    var cx = 64, c = '';
+    c += ell(cx, 92, 24, 3, '#000000', { op: 0.4 });
+    c += rect(cx - 20, 80, 8.4, 11.6, 2, '#101317') + rect(cx + 11.6, 80, 8.4, 11.6, 2, '#101317');
+    c += path('M' + n(cx - 15.5) + ',52.5C' + n(cx - 14.4) + ',49.6 ' + n(cx - 12.2) + ',49 ' + n(cx - 9) + ',49H' + n(cx + 9) + 'C' + n(cx + 12.2) +
       ',49 ' + n(cx + 14.4) + ',49.6 ' + n(cx + 15.5) + ',52.5L' + n(cx + 19.6) + ',65.5H' + n(cx - 19.6) + 'Z', '#A9B0BA');
-    s += path('M' + n(cx - 12.6) + ',52.6H' + n(cx + 12.6) + 'L' + n(cx + 15.8) + ',63.4H' + n(cx - 15.8) + 'Z', '#1B2230');
-    s += rect(cx - 22.5, 64, 45, 20.5, 5, '#B8BEC8', { stroke: '#7E858E', sw: 0.8 });
-    s += rect(cx - 8, 73.4, 16, 5.6, 1, '#F2F2EE', { stroke: '#7E858E', sw: 0.5 });
-    s += rect(cx - 22, 80.4, 44, 4.2, 2, '#8D939B');
+    c += path('M' + n(cx - 12.6) + ',52.6H' + n(cx + 12.6) + 'L' + n(cx + 15.8) + ',63.4H' + n(cx - 15.8) + 'Z', '#1B2230');
+    c += rect(cx - 22.5, 64, 45, 20.5, 5, '#B8BEC8', { stroke: '#7E858E', sw: 0.8 });
+    c += rect(cx - 8, 73.4, 16, 5.6, 1, '#F2F2EE', { stroke: '#7E858E', sw: 0.5 });
+    c += rect(cx - 22, 80.4, 44, 4.2, 2, '#8D939B');
     // tail lamps: red parts unlit, amber indicators lit on BOTH sides at once (hazard lights)
     [-1, 1].forEach(function (k) {
       var xo = cx + k * 17.4, xa = cx + k * 19.6;
-      s += rect(xo - 4, 66.4, 8, 5.4, 1.3, '#7A1C1C');
-      s += circ(xa, 69.1, 7, FV.amber, { op: 0.18 }) + circ(xa, 69.1, 4.6, FV.amber, { op: 0.3 });
-      s += rect(xa - 2.6, 66.4, 5.2, 5.4, 1.3, FV.amber) + rect(xa - 1.8, 67.1, 2.2, 1.5, 0.6, '#FFFFFF', { op: 0.45 });
-      s += rays(xa, 69.1, 8, 11.8, FV.amber, k < 0 ? [205, 180, 155, 128] : [-25, 0, 25, 52], 2.1);
+      c += rect(xo - 4, 66.4, 8, 5.4, 1.3, '#7A1C1C');
+      c += circ(xa, 69.1, 7, FV.amber, { op: 0.18 }) + circ(xa, 69.1, 4.6, FV.amber, { op: 0.3 });
+      c += rect(xa - 2.6, 66.4, 5.2, 5.4, 1.3, FV.amber) + rect(xa - 1.8, 67.1, 2.2, 1.5, 0.6, '#FFFFFF', { op: 0.45 });
+      c += rays(xa, 69.1, 8, 11.4, FV.amber, k < 0 ? [205, 180, 155, 128] : [-25, 0, 25, 52], 2.1);
     });
+    s += grp(c, 'translate(' + cx + ' 92) scale(1.13) translate(' + (-cx) + ' -92)');
     return pic(s, label);
   });
 })();

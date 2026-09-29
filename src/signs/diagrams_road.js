@@ -629,7 +629,7 @@
   });
 
   reg('fig-bike-gap', 'متر على الأقل عند تجاوز الدراجة', function (o, label) {
-    var s = 8, lw = 28, x0 = 44, cxl = x0 + lw, x1 = cxl + lw, k = 1.35, q = '';
+    var s = 8, lw = 28, x0 = 44, cxl = x0 + lw, x1 = cxl + lw, k = 1.45, q = '';
     q += surface(outline([[x0, 0], [x0, H], [x1, H], [x1, 0]]));
     q += mark(cxl, 0, cxl, H, P.yellow, 1.1, [3 * s, 4 * s], 14);
     // cyclist near the right kerb; our car passes it across the broken centre line, leaving at least 1 m
@@ -657,7 +657,7 @@
       var mx = sx < 0 ? mxL : mxR, far = xr + sx * (hw + wl);
       q += zone([[mx + sx * (yP - mY) * kk, yP], [far, yP], [far, yE], [mx + sx * (yE - mY) * kk, yE]], P.x, 0.4, 0.95);
     });
-    q += car(xl, cy + 17.5, 0, { color: P.blue, s: s });
+    q += car(xl, cy + 25, 0, { color: P.blue, s: s });
     q += car(xr, cy, 0, { me: true, s: s, driver: true });
     // head check: the driver (left seat) looks back over the left shoulder
     var hx = xr - 0.38 * s, hy = cy - 0.12 * s, rh = 7;
@@ -786,10 +786,10 @@
     var q = highway();
     q += path(pl(clampPts(eL.concat(eR.slice().reverse()))) + 'Z', P.asph);
     // painted gore near the nose (chevrons), then a rounded sand nose
-    var xg = xAt(eL, yCut), gr = (xg - xe) / 2 - 1.3;
-    q += path(pl([[xe, H]].concat(eL.filter(function (p2) { return p2[1] > yCut; }), [[xg, yCut], [xe, yCut]])) + 'Z', P.asph);
-    q += chevrons(xe, eL, H, yCut + 3, 7);
-    q += circ((xe + xg) / 2, yCut, gr, P.sand);
+    var xg = xAt(eL, yCut), gr = (xg - xe) / 2;
+    q += path('M' + f(xe) + ' ' + H + 'L' + f(xe) + ' ' + f(yCut) + 'A' + f(gr) + ' ' + f(gr) + ' 0 0 0 ' + f(xg) + ' ' + f(yCut) +
+      pl(eL.filter(function (p2) { return p2[1] > yCut; }).reverse()).replace('M', 'L') + 'Z', P.asph);
+    q += chevrons(xe, eL, H, yCut + gr + 1, 7);
     q += mark(xe, 0, xe, H, P.white, 0.9);
     q += stroke(clampPts(bzSide(ramp, 20, -lw / 2 + 0.3)), P.white, 0.9) + stroke(clampPts(bzSide(ramp, 20, lw / 2 - 0.3)), P.white, 0.9);
     var x1c = xe - lw / 2, yc = 60, tgt = bz(ramp, 0.74);
@@ -814,9 +814,9 @@
     // zebra across the east arm, just past the corner, with two pedestrians crossing
     var zx = cxv + lw + r + 3, zw = 16;
     for (var y = cyh - lw + 1.6; y < cyh + lw - 1.5; y += 5.2) q += rect(zx, y, zw, 2.6, P.white);
-    var pa = zx + zw / 2 - 3.2, pb = zx + zw / 2 + 3.4;
-    q += arrow(new Pen(pa, cyh - 7.5, 180).L(pa, cyh - 3), P.grey, { w: 1.3 }) + arrow(new Pen(pb, cyh + 8.5, 0).L(pb, cyh + 4), P.grey, { w: 1.3 });
-    q += ped(pa, cyh - 12.5, 180, { s: s, k: 2, color: '#E2A65C' }) + ped(pb, cyh + 13.5, 0, { s: s, k: 2, color: '#4A8FD8' });
+    var pa = zx + zw / 2 - 3.4, pb = zx + zw / 2 + 3.6;
+    q += arrow(new Pen(pa, cyh - 6.5, 180).L(pa, cyh - 2.5), P.grey, { w: 1.2 }) + arrow(new Pen(pb, cyh + 7.5, 0).L(pb, cyh + 3.5), P.grey, { w: 1.2 });
+    q += ped(pa, cyh - 12.5, 180, { s: s, k: 2.5, color: '#E2A65C' }) + ped(pb, cyh + 13.5, 0, { s: s, k: 2.5, color: '#4A8FD8' });
     // our right turn stops at the wait bar before the crossing
     var xs = cxv + lw / 2, ye = cyh + lw / 2, xw = zx - 3, y1 = cyh + lw, rt = 12;
     q += arrow(new Pen(xs, y1 + 5, 0).L(xs, ye + rt).arc(xs + rt, ye + rt, 270, false).L(xw - 6.5, ye), P.gold, { dash: true, w: 2.1 });
