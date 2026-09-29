@@ -37,7 +37,7 @@ def find(doc, iid):
 
 
 def by_path(doc, path):
-    parts = path.split('.')
+    parts = re.sub(r'\[(\d+)\]', r'.\1', path).split('.')
     cur = doc
     for p in parts[:-1]:
         cur = cur[int(p)] if isinstance(cur, list) else cur[p]
