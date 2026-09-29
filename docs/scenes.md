@@ -1063,3 +1063,11 @@ A 4 s `intro` clip: `me` drives along a street with cars parked on the right (`"
 - Road text painted on the asphalt is limited to STOP and BUS.
 - Sign pictures come from `window.Signs` when that module is loaded (built page); otherwise simple
   built-in drawings are used for STOP, give way, roundabout, U-turn, works, school, hump and pedestrian crossing.
+- Actor labels also show on hover or tap during the question, even with `"labels": "solution"`. When a label
+  would give the answer away, use `"labels": "never"` and switch labels on with a solution event (`labels: true`).
+- The pavement slot `{arm, side, at}` does not work on the `roundabout` template (NaN position); use `{x, y}`.
+- A short sideways `to` (under about 3 m) or a `to` into a slot with `shift` turns the car sharply; use `path`
+  points spread over 4 to 5 m. After a `path` the car is off the lane graph: `to` a lane slot before a
+  `lane_change` or `pull_over`.
+- There is no reversing-light or high-beam look; say it in the question text when it matters.
+

@@ -263,6 +263,23 @@ async def run(page_path, viewport, allow, shots, headed):
             raise Fail('no question with drawn pictures found')
         note(f'pictures ok (stem: {pick.get("stem")}, options: {pick.get("opts")})')
 
+        # 7c. a drawn scenario (choice): scene mounted, answer, feedback, then an examiner round starts
+        scid = await js('() => { const s = (DATA.scenarios || []).find(x => x.type === "choice"); return s && s.id; }')
+        if scid:
+            await js('(k) => Miqwad.drill([k])', 'sc:' + scid)
+            await page.wait_for_timeout(600)
+            await expect('.qi-scene svg', 'scenario scene')
+            await answer(True)
+            await expect('.fb', 'scenario feedback')
+            await no_overflow('scenario')
+            await shot('11d_scenario')
+            await js('() => Miqwad.tab("arena")')
+            await page.wait_for_timeout(300)
+            await click('[data-act=examiner]')
+            if await screen() != 'play':
+                raise Fail('examiner round did not start')
+            note(f'scenario ok ({scid}), examiner round started')
+
         # 8. export the progress code, then import it back
         await js('() => Miqwad.tab("settings")')
         await page.wait_for_timeout(300)
