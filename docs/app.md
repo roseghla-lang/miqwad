@@ -177,6 +177,9 @@ completion plays the road-lines celebration once and adds 5 km. Without `curricu
 a fallback path (basics topics → sign categories in lessons of 12 → marking categories → the other
 topics in units of 4, each unit closed by a challenge).
 
+`python3 tools/curriculum.py [--emirate dubai|sharjah]` resolves every filter the same way and prints the
+learn and practice counts per lesson, any unknown ids or too-small pools, and the content no lesson reaches.
+
 ## 8. Mock exams, arena, yard, gamification
 
 * **Presets** come from `DATA.exams.presets` (defaults if missing). Accepted fields: `count|questions|n`,

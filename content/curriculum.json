@@ -1,0 +1,2144 @@
+{
+ "updated": "2026-09-29",
+ "note": "مسار التعلم من الأسهل للأصعب: 11 مخرج، كل مخرج دروس وتمرين ساحة وتحدي بآخره",
+ "units": [
+  {
+   "id": "u01",
+   "exit": 1,
+   "title": "لغة الإشارات",
+   "subtitle": "الشكل واللون بيحكو المعنى قبل ما تقرا الرمز",
+   "color": "blue",
+   "lessons": [
+    {
+     "id": "u01-shapes",
+     "title": "الشكل بيحكي المعنى",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "signs-basics"
+       ],
+       "levelMax": 1
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "signs-basics"
+       ],
+       "levelMax": 1
+      },
+      "count": 6
+     }
+    },
+    {
+     "id": "u01-priority",
+     "title": "قف وأفسح الطريق",
+     "kind": "lesson",
+     "learn": {
+      "signs": {
+       "ids": [
+        "p-stop",
+        "p-give-way",
+        "w-stop-ahead",
+        "w-give-way-ahead"
+       ]
+      },
+      "markings": {
+       "ids": [
+        "mk-stop-line",
+        "mk-give-way-line"
+       ]
+      }
+     },
+     "practice": {
+      "signs": {
+       "ids": [
+        "p-stop",
+        "p-give-way",
+        "w-stop-ahead",
+        "w-give-way-ahead"
+       ]
+      },
+      "markings": {
+       "ids": [
+        "mk-stop-line",
+        "mk-give-way-line"
+       ]
+      },
+      "count": 6
+     }
+    },
+    {
+     "id": "u01-prohib",
+     "title": "دائرة حمرا: ممنوع",
+     "kind": "lesson",
+     "learn": {
+      "signs": {
+       "ids": [
+        "r-no-entry",
+        "r-no-left-turn",
+        "r-no-right-turn",
+        "r-no-u-turn",
+        "r-no-overtaking",
+        "r-no-parking",
+        "r-no-stopping",
+        "r-no-horn",
+        "r-no-pedestrians",
+        "r-no-trucks"
+       ]
+      }
+     },
+     "practice": {
+      "signs": {
+       "ids": [
+        "r-no-entry",
+        "r-no-left-turn",
+        "r-no-right-turn",
+        "r-no-u-turn",
+        "r-no-overtaking",
+        "r-no-parking",
+        "r-no-stopping",
+        "r-no-horn",
+        "r-no-pedestrians",
+        "r-no-trucks"
+       ]
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u01-mand",
+     "title": "دائرة زرقا: لازم",
+     "kind": "lesson",
+     "learn": {
+      "signs": {
+       "ids": [
+        "m-ahead-only",
+        "m-turn-right",
+        "m-turn-left",
+        "m-turn-right-ahead",
+        "m-turn-left-ahead",
+        "m-keep-right",
+        "m-keep-left",
+        "m-pass-either-side",
+        "m-roundabout",
+        "m-pedestrians-only"
+       ]
+      }
+     },
+     "practice": {
+      "signs": {
+       "ids": [
+        "m-ahead-only",
+        "m-turn-right",
+        "m-turn-left",
+        "m-turn-right-ahead",
+        "m-turn-left-ahead",
+        "m-keep-right",
+        "m-keep-left",
+        "m-pass-either-side",
+        "m-roundabout",
+        "m-pedestrians-only"
+       ]
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u01-colors",
+     "title": "الألوان واللوحات",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "signs-basics"
+       ],
+       "levelMin": 2,
+       "levelMax": 2
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "signs-basics"
+       ],
+       "levelMin": 2,
+       "levelMax": 2
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u01-yard",
+     "title": "فحص ما قبل القيادة",
+     "kind": "yard",
+     "exercise": "pre-drive-check"
+    },
+    {
+     "id": "u01-boss",
+     "title": "تحدي المخرج 1",
+     "kind": "challenge",
+     "from": [
+      "u01-shapes",
+      "u01-priority",
+      "u01-prohib",
+      "u01-mand",
+      "u01-colors"
+     ],
+     "count": 12,
+     "pass": 0.8
+    }
+   ]
+  },
+  {
+   "id": "u02",
+   "exit": 2,
+   "title": "الأضواء والخطوط",
+   "subtitle": "الإشارة الضوئية وخطوط الأرض وحركات الشرطي",
+   "color": "green",
+   "lessons": [
+    {
+     "id": "u02-lights",
+     "title": "الإشارة الضوئية",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "lights"
+       ],
+       "levelMax": 3
+      },
+      "signs": {
+       "ids": [
+        "w-traffic-signals"
+       ]
+      },
+      "markings": {
+       "cats": [
+        "light",
+        "ped-light"
+       ],
+       "levelMax": 3
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "lights"
+       ],
+       "levelMax": 3
+      },
+      "signs": {
+       "ids": [
+        "w-traffic-signals"
+       ]
+      },
+      "markings": {
+       "cats": [
+        "light",
+        "ped-light"
+       ],
+       "levelMax": 3
+      },
+      "scenarios": {
+       "topics": [
+        "lights"
+       ],
+       "levelMax": 2
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u02-lines",
+     "title": "خطوط الطريق",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "markings"
+       ],
+       "levelMax": 2
+      },
+      "markings": {
+       "cats": [
+        "line",
+        "transverse"
+       ]
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "markings"
+       ],
+       "levelMax": 2
+      },
+      "markings": {
+       "cats": [
+        "line",
+        "transverse"
+       ]
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u02-arrows",
+     "title": "الأسهم والمربعات والممرات",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "markings"
+       ],
+       "levelMin": 3
+      },
+      "markings": {
+       "cats": [
+        "arrow",
+        "area",
+        "crossing",
+        "device",
+        "parking"
+       ]
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "markings"
+       ],
+       "levelMin": 3
+      },
+      "markings": {
+       "cats": [
+        "arrow",
+        "area",
+        "crossing",
+        "device",
+        "parking"
+       ]
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u02-police",
+     "title": "الشرطي والأضواء الصعبة",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "police"
+       ],
+       "ids": [
+        "markings-card-017",
+        "markings-card-020"
+       ]
+      },
+      "markings": {
+       "ids": [
+        "tl-flashing-amber-fixed"
+       ],
+       "cats": [
+        "police"
+       ]
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "police"
+       ],
+       "ids": [
+        "markings-lights-009",
+        "markings-lights-013",
+        "markings-lights-017",
+        "markings-lights-018",
+        "markings-lights-025"
+       ]
+      },
+      "markings": {
+       "ids": [
+        "tl-flashing-amber-fixed"
+       ],
+       "cats": [
+        "police"
+       ]
+      },
+      "scenarios": {
+       "topics": [
+        "lights"
+       ],
+       "levelMin": 3
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u02-yard",
+     "title": "الركن المائل",
+     "kind": "yard",
+     "exercise": "angle"
+    },
+    {
+     "id": "u02-boss",
+     "title": "تحدي المخرج 2",
+     "kind": "challenge",
+     "from": [
+      "u02-lights",
+      "u02-lines",
+      "u02-arrows",
+      "u02-police"
+     ],
+     "count": 12,
+     "pass": 0.8
+    }
+   ]
+  },
+  {
+   "id": "u03",
+   "exit": 3,
+   "title": "مين بيمشي أول",
+   "subtitle": "الأولوية بالتقاطعات والدوارات والانعطاف",
+   "color": "blue",
+   "lessons": [
+    {
+     "id": "u03-priority",
+     "title": "الأولوية بالتقاطع",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "priority"
+       ],
+       "ids": [
+        "signbasics-card-014"
+       ]
+      },
+      "signs": {
+       "ids": [
+        "w-crossroads",
+        "w-t-junction",
+        "w-side-road-right",
+        "w-side-road-left",
+        "w-staggered-junction",
+        "p-give-way-oncoming",
+        "p-priority-over-oncoming"
+       ]
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "priority"
+       ]
+      },
+      "signs": {
+       "ids": [
+        "w-crossroads",
+        "w-t-junction",
+        "w-side-road-right",
+        "w-side-road-left",
+        "w-staggered-junction",
+        "p-give-way-oncoming",
+        "p-priority-over-oncoming"
+       ]
+      },
+      "scenarios": {
+       "topics": [
+        "priority"
+       ]
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u03-round1",
+     "title": "الدوار: مين أول",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "roundabouts"
+       ],
+       "levelMax": 2
+      },
+      "signs": {
+       "ids": [
+        "w-roundabout-ahead",
+        "m-roundabout"
+       ]
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "roundabouts"
+       ],
+       "levelMax": 2
+      },
+      "signs": {
+       "ids": [
+        "w-roundabout-ahead",
+        "m-roundabout"
+       ]
+      },
+      "scenarios": {
+       "topics": [
+        "roundabouts"
+       ],
+       "levelMax": 2
+      },
+      "count": 8
+     }
+    },
+    {
+     "id": "u03-round2",
+     "title": "الدوار: المسار والمخرج",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "roundabouts"
+       ],
+       "levelMin": 3
+      },
+      "markings": {
+       "ids": [
+        "ev-roundabout"
+       ]
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "roundabouts"
+       ],
+       "levelMin": 3
+      },
+      "markings": {
+       "ids": [
+        "ev-roundabout"
+       ]
+      },
+      "scenarios": {
+       "topics": [
+        "roundabouts"
+       ],
+       "levelMin": 3
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u03-turn",
+     "title": "الانعطاف واليوتيرن",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "turning"
+       ]
+      },
+      "signs": {
+       "ids": [
+        "w-u-turn-ahead"
+       ]
+      },
+      "markings": {
+       "ids": [
+        "tl-green-uturn",
+        "tl-green-arrow",
+        "tl-red-arrow"
+       ]
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "turning"
+       ]
+      },
+      "signs": {
+       "ids": [
+        "w-u-turn-ahead"
+       ]
+      },
+      "markings": {
+       "ids": [
+        "tl-green-uturn",
+        "tl-green-arrow",
+        "tl-red-arrow"
+       ]
+      },
+      "scenarios": {
+       "topics": [
+        "turning"
+       ]
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u03-yard",
+     "title": "الركن لورا",
+     "kind": "yard",
+     "exercise": "reverse-bay"
+    },
+    {
+     "id": "u03-boss",
+     "title": "تحدي المخرج 3",
+     "kind": "challenge",
+     "from": [
+      "u03-priority",
+      "u03-round1",
+      "u03-round2",
+      "u03-turn"
+     ],
+     "count": 12,
+     "pass": 0.8
+    }
+   ]
+  },
+  {
+   "id": "u04",
+   "exit": 4,
+   "title": "إشارات التحذير",
+   "subtitle": "المثلث بيقلك شو جاي قدامك",
+   "color": "brown",
+   "lessons": [
+    {
+     "id": "u04-shape",
+     "title": "شكل الطريق قدامك",
+     "kind": "lesson",
+     "learn": {
+      "signs": {
+       "ids": [
+        "w-bend-right",
+        "w-bend-left",
+        "w-double-bend-right",
+        "w-double-bend-left",
+        "w-road-narrows-both",
+        "w-road-narrows-right",
+        "w-road-narrows-left",
+        "w-two-way-traffic",
+        "w-two-way-crossing",
+        "w-dual-carriageway-ends",
+        "w-right-lane-ends",
+        "w-left-lane-ends",
+        "w-merge-right",
+        "w-merge-left"
+       ]
+      }
+     },
+     "practice": {
+      "signs": {
+       "ids": [
+        "w-bend-right",
+        "w-bend-left",
+        "w-double-bend-right",
+        "w-double-bend-left",
+        "w-road-narrows-both",
+        "w-road-narrows-right",
+        "w-road-narrows-left",
+        "w-two-way-traffic",
+        "w-two-way-crossing",
+        "w-dual-carriageway-ends",
+        "w-right-lane-ends",
+        "w-left-lane-ends",
+        "w-merge-right",
+        "w-merge-left"
+       ]
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u04-surface",
+     "title": "سطح الطريق والطلعات",
+     "kind": "lesson",
+     "learn": {
+      "signs": {
+       "ids": [
+        "w-speed-hump",
+        "w-uneven-road",
+        "w-slippery-road",
+        "w-loose-chippings",
+        "w-soft-verges",
+        "w-falling-rocks",
+        "w-steep-descent",
+        "w-steep-ascent",
+        "w-sand-dunes",
+        "w-crosswind",
+        "w-tunnel",
+        "w-max-height-ahead",
+        "w-overhead-cable"
+       ]
+      },
+      "markings": {
+       "ids": [
+        "mk-speed-hump",
+        "mk-rumble-strips"
+       ]
+      }
+     },
+     "practice": {
+      "signs": {
+       "ids": [
+        "w-speed-hump",
+        "w-uneven-road",
+        "w-slippery-road",
+        "w-loose-chippings",
+        "w-soft-verges",
+        "w-falling-rocks",
+        "w-steep-descent",
+        "w-steep-ascent",
+        "w-sand-dunes",
+        "w-crosswind",
+        "w-tunnel",
+        "w-max-height-ahead",
+        "w-overhead-cable"
+       ]
+      },
+      "markings": {
+       "ids": [
+        "mk-speed-hump",
+        "mk-rumble-strips"
+       ]
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u04-who",
+     "title": "مين ممكن يطلعلك",
+     "kind": "lesson",
+     "learn": {
+      "signs": {
+       "ids": [
+        "w-pedestrian-crossing",
+        "w-children",
+        "w-cyclists",
+        "w-camels",
+        "w-tram-crossing",
+        "w-low-flying-aircraft",
+        "w-other-danger",
+        "w-opening-bridge",
+        "w-quayside",
+        "w-gate-ahead",
+        "w-dead-end-ahead"
+       ]
+      }
+     },
+     "practice": {
+      "signs": {
+       "ids": [
+        "w-pedestrian-crossing",
+        "w-children",
+        "w-cyclists",
+        "w-camels",
+        "w-tram-crossing",
+        "w-low-flying-aircraft",
+        "w-other-danger",
+        "w-opening-bridge",
+        "w-quayside",
+        "w-gate-ahead",
+        "w-dead-end-ahead"
+       ]
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u04-chevrons",
+     "title": "لوحات الأسهم والأعمال",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "ids": [
+        "signbasics-card-012"
+       ]
+      },
+      "signs": {
+       "ids": [
+        "w-chevron-right",
+        "w-chevron-left",
+        "w-chevrons-right",
+        "w-chevrons-left",
+        "w-chevron-t-junction",
+        "w-hazard-marker"
+       ],
+       "cats": [
+        "temporary"
+       ]
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "signs-basics"
+       ],
+       "levelMin": 3
+      },
+      "signs": {
+       "ids": [
+        "w-chevron-right",
+        "w-chevron-left",
+        "w-chevrons-right",
+        "w-chevrons-left",
+        "w-chevron-t-junction",
+        "w-hazard-marker"
+       ],
+       "cats": [
+        "temporary"
+       ]
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u04-plates",
+     "title": "اللوحات الإضافية",
+     "kind": "lesson",
+     "learn": {
+      "signs": {
+       "cats": [
+        "supplementary"
+       ]
+      }
+     },
+     "practice": {
+      "signs": {
+       "cats": [
+        "supplementary"
+       ]
+      },
+      "count": 8
+     }
+    },
+    {
+     "id": "u04-boss",
+     "title": "تحدي المخرج 4",
+     "kind": "challenge",
+     "from": [
+      "u04-shape",
+      "u04-surface",
+      "u04-who",
+      "u04-chevrons",
+      "u04-plates"
+     ],
+     "count": 12,
+     "pass": 0.8
+    }
+   ]
+  },
+  {
+   "id": "u05",
+   "exit": 5,
+   "title": "الناس عالطريق",
+   "subtitle": "المشاة وباص المدرسة والطوارئ والدراجات",
+   "color": "green",
+   "lessons": [
+    {
+     "id": "u05-ped",
+     "title": "المشاة",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "pedestrians"
+       ]
+      },
+      "signs": {
+       "ids": [
+        "p-give-way-pedestrians"
+       ]
+      },
+      "markings": {
+       "ids": [
+        "mk-zebra",
+        "mk-signal-crossing",
+        "mk-zigzag"
+       ]
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "pedestrians"
+       ]
+      },
+      "signs": {
+       "ids": [
+        "p-give-way-pedestrians"
+       ]
+      },
+      "markings": {
+       "ids": [
+        "mk-zebra",
+        "mk-signal-crossing",
+        "mk-zigzag"
+       ]
+      },
+      "scenarios": {
+       "topics": [
+        "pedestrians"
+       ]
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u05-bus",
+     "title": "باص المدرسة",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "school-bus"
+       ]
+      },
+      "markings": {
+       "ids": [
+        "ev-school-bus-single",
+        "ev-school-bus-dual"
+       ]
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "school-bus"
+       ]
+      },
+      "markings": {
+       "ids": [
+        "ev-school-bus-single",
+        "ev-school-bus-dual"
+       ]
+      },
+      "scenarios": {
+       "topics": [
+        "school-bus"
+       ]
+      },
+      "count": 8
+     }
+    },
+    {
+     "id": "u05-ev",
+     "title": "سيارات الطوارئ",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "emergency-vehicles"
+       ]
+      },
+      "markings": {
+       "ids": [
+        "ev-emergency-lights",
+        "ev-highway-move-right",
+        "ev-internal-road",
+        "ev-at-junction",
+        "ev-service-amber"
+       ]
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "emergency-vehicles"
+       ]
+      },
+      "markings": {
+       "ids": [
+        "ev-emergency-lights",
+        "ev-highway-move-right",
+        "ev-internal-road",
+        "ev-at-junction",
+        "ev-service-amber"
+       ]
+      },
+      "scenarios": {
+       "topics": [
+        "emergency-vehicles"
+       ]
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u05-vuln",
+     "title": "الدراجات والفئات الضعيفة",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "vulnerable"
+       ]
+      },
+      "signs": {
+       "ids": [
+        "p-give-way-cyclists",
+        "r-no-bicycles",
+        "r-no-motorcycles",
+        "m-cyclists-only",
+        "m-shared-path",
+        "m-segregated-path"
+       ]
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "vulnerable"
+       ]
+      },
+      "signs": {
+       "ids": [
+        "p-give-way-cyclists",
+        "r-no-bicycles",
+        "r-no-motorcycles",
+        "m-cyclists-only",
+        "m-shared-path",
+        "m-segregated-path"
+       ]
+      },
+      "scenarios": {
+       "topics": [
+        "vulnerable"
+       ]
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u05-yard",
+     "title": "الطلعة",
+     "kind": "yard",
+     "exercise": "hill-start"
+    },
+    {
+     "id": "u05-boss",
+     "title": "تحدي المخرج 5",
+     "kind": "challenge",
+     "from": [
+      "u05-ped",
+      "u05-bus",
+      "u05-ev",
+      "u05-vuln"
+     ],
+     "count": 12,
+     "pass": 0.8
+    }
+   ]
+  },
+  {
+   "id": "u06",
+   "exit": 6,
+   "title": "السرعة والمسارات",
+   "subtitle": "حدود السرعة ومسافة الأمان والمسارات والتجاوز",
+   "color": "blue",
+   "lessons": [
+    {
+     "id": "u06-speed",
+     "title": "حدود السرعة",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "speed"
+       ]
+      },
+      "signs": {
+       "ids": [
+        "r-speed-25",
+        "r-speed-40",
+        "r-speed-60",
+        "r-speed-80",
+        "r-speed-100",
+        "r-speed-120",
+        "r-speed-140",
+        "r-speed-by-vehicle",
+        "m-min-speed-60"
+       ]
+      },
+      "markings": {
+       "ids": [
+        "ls-variable-speed"
+       ]
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "speed"
+       ]
+      },
+      "signs": {
+       "ids": [
+        "r-speed-25",
+        "r-speed-40",
+        "r-speed-60",
+        "r-speed-80",
+        "r-speed-100",
+        "r-speed-120",
+        "r-speed-140",
+        "r-speed-by-vehicle",
+        "m-min-speed-60"
+       ]
+      },
+      "markings": {
+       "ids": [
+        "ls-variable-speed"
+       ]
+      },
+      "scenarios": {
+       "topics": [
+        "speed"
+       ]
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u06-distance",
+     "title": "مسافة الأمان",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "distance"
+       ]
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "distance"
+       ]
+      },
+      "scenarios": {
+       "topics": [
+        "distance"
+       ]
+      },
+      "count": 8
+     }
+    },
+    {
+     "id": "u06-lanes",
+     "title": "المسارات",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "lanes"
+       ]
+      },
+      "signs": {
+       "ids": [
+        "i-lane-directions",
+        "i-lane-added",
+        "i-lane-joining",
+        "i-lanes-5-to-4",
+        "i-lane-trucks-restricted",
+        "i-lane-delivery-motorbikes"
+       ]
+      },
+      "markings": {
+       "ids": [
+        "ls-red-x",
+        "ls-green-arrow",
+        "mk-hatched"
+       ]
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "lanes"
+       ]
+      },
+      "signs": {
+       "ids": [
+        "i-lane-directions",
+        "i-lane-added",
+        "i-lane-joining",
+        "i-lanes-5-to-4",
+        "i-lane-trucks-restricted",
+        "i-lane-delivery-motorbikes"
+       ]
+      },
+      "markings": {
+       "ids": [
+        "ls-red-x",
+        "ls-green-arrow",
+        "mk-hatched"
+       ]
+      },
+      "scenarios": {
+       "topics": [
+        "lanes"
+       ]
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u06-overtake",
+     "title": "التجاوز",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "overtaking"
+       ]
+      },
+      "signs": {
+       "ids": [
+        "r-no-overtaking",
+        "r-no-overtaking-trucks"
+       ]
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "overtaking"
+       ]
+      },
+      "signs": {
+       "ids": [
+        "r-no-overtaking",
+        "r-no-overtaking-trucks"
+       ]
+      },
+      "scenarios": {
+       "topics": [
+        "overtaking"
+       ]
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u06-yard",
+     "title": "الوقفة المفاجئة",
+     "kind": "yard",
+     "exercise": "emergency-stop"
+    },
+    {
+     "id": "u06-boss",
+     "title": "تحدي المخرج 6",
+     "kind": "challenge",
+     "from": [
+      "u06-speed",
+      "u06-distance",
+      "u06-lanes",
+      "u06-overtake"
+     ],
+     "count": 12,
+     "pass": 0.8
+    }
+   ]
+  },
+  {
+   "id": "u07",
+   "exit": 7,
+   "title": "السريع والوقوف",
+   "subtitle": "الطريق السريع واللوحات الزرقا والوقوف",
+   "color": "brown",
+   "lessons": [
+    {
+     "id": "u07-highway",
+     "title": "الطريق السريع",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "highway"
+       ]
+      },
+      "signs": {
+       "ids": [
+        "i-freeway-start",
+        "i-freeway-end",
+        "i-salik",
+        "i-tunnel",
+        "i-vms"
+       ],
+       "cats": [
+        "guide"
+       ]
+      },
+      "markings": {
+       "ids": [
+        "mk-hard-shoulder",
+        "mk-arrow-merge",
+        "mk-arrow-exit",
+        "mk-chevron",
+        "ls-vms"
+       ]
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "highway"
+       ]
+      },
+      "signs": {
+       "ids": [
+        "i-freeway-start",
+        "i-freeway-end",
+        "i-salik",
+        "i-tunnel",
+        "i-vms"
+       ],
+       "cats": [
+        "guide"
+       ]
+      },
+      "markings": {
+       "ids": [
+        "mk-hard-shoulder",
+        "mk-arrow-merge",
+        "mk-arrow-exit",
+        "mk-chevron",
+        "ls-vms"
+       ]
+      },
+      "scenarios": {
+       "topics": [
+        "highway"
+       ]
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u07-parking",
+     "title": "الوقوف والتوقف",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "parking"
+       ]
+      },
+      "signs": {
+       "ids": [
+        "i-parking",
+        "i-parking-pod",
+        "i-paid-parking",
+        "i-goods-parking",
+        "i-loading-zone",
+        "i-taxi-stand",
+        "i-bus-stop",
+        "i-tow-away",
+        "i-bicycle-parking"
+       ],
+       "cats": [
+        "services"
+       ]
+      },
+      "markings": {
+       "ids": [
+        "mk-disabled-bay",
+        "mk-bus-stop",
+        "mk-keep-clear",
+        "mk-yellow-box"
+       ]
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "parking"
+       ]
+      },
+      "signs": {
+       "ids": [
+        "i-parking",
+        "i-parking-pod",
+        "i-paid-parking",
+        "i-goods-parking",
+        "i-loading-zone",
+        "i-taxi-stand",
+        "i-bus-stop",
+        "i-tow-away",
+        "i-bicycle-parking"
+       ],
+       "cats": [
+        "services"
+       ]
+      },
+      "markings": {
+       "ids": [
+        "mk-disabled-bay",
+        "mk-bus-stop",
+        "mk-keep-clear",
+        "mk-yellow-box"
+       ]
+      },
+      "scenarios": {
+       "topics": [
+        "parking"
+       ]
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u07-special",
+     "title": "المسارات الخاصة والحمولة",
+     "kind": "lesson",
+     "learn": {
+      "signs": {
+       "ids": [
+        "i-one-way",
+        "i-dead-end",
+        "i-bus-lane-start",
+        "i-bus-lane-end",
+        "m-buses-only",
+        "m-taxis-only",
+        "m-trams-only",
+        "m-trucks-only",
+        "m-headlights-on",
+        "m-go-this-way",
+        "r-no-buses",
+        "r-no-taxis",
+        "r-no-hazardous",
+        "r-no-quad-bikes",
+        "r-no-delivery-motorbikes",
+        "r-max-height",
+        "r-max-width",
+        "r-max-length",
+        "r-max-weight",
+        "r-max-axle"
+       ]
+      },
+      "markings": {
+       "ids": [
+        "mk-bus-lane",
+        "mk-tram-box"
+       ]
+      }
+     },
+     "practice": {
+      "signs": {
+       "ids": [
+        "i-one-way",
+        "i-dead-end",
+        "i-bus-lane-start",
+        "i-bus-lane-end",
+        "m-buses-only",
+        "m-taxis-only",
+        "m-trams-only",
+        "m-trucks-only",
+        "m-headlights-on",
+        "m-go-this-way",
+        "r-no-buses",
+        "r-no-taxis",
+        "r-no-hazardous",
+        "r-no-quad-bikes",
+        "r-no-delivery-motorbikes",
+        "r-max-height",
+        "r-max-width",
+        "r-max-length",
+        "r-max-weight",
+        "r-max-axle"
+       ]
+      },
+      "markings": {
+       "ids": [
+        "mk-bus-lane",
+        "mk-tram-box"
+       ]
+      },
+      "count": 12
+     }
+    },
+    {
+     "id": "u07-yard",
+     "title": "الركن الموازي",
+     "kind": "yard",
+     "exercise": "parallel"
+    },
+    {
+     "id": "u07-boss",
+     "title": "تحدي المخرج 7",
+     "kind": "challenge",
+     "from": [
+      "u07-highway",
+      "u07-parking",
+      "u07-special"
+     ],
+     "count": 12,
+     "pass": 0.8
+    }
+   ]
+  },
+  {
+   "id": "u08",
+   "exit": 8,
+   "title": "الليل والطقس والمخاطر",
+   "subtitle": "الضو والزامور والمطر والغبار وقراءة الخطر",
+   "color": "orange",
+   "lessons": [
+    {
+     "id": "u08-horn",
+     "title": "الأضواء والزامور",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "lights-horn"
+       ]
+      },
+      "markings": {
+       "ids": [
+        "ev-hazard-lights"
+       ]
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "lights-horn"
+       ]
+      },
+      "markings": {
+       "ids": [
+        "ev-hazard-lights"
+       ]
+      },
+      "scenarios": {
+       "topics": [
+        "lights-horn"
+       ]
+      },
+      "count": 8
+     }
+    },
+    {
+     "id": "u08-night",
+     "title": "السواقة بالليل",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "night"
+       ]
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "night"
+       ]
+      },
+      "scenarios": {
+       "topics": [
+        "night"
+       ]
+      },
+      "count": 8
+     }
+    },
+    {
+     "id": "u08-weather1",
+     "title": "المطر والغبار",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "weather"
+       ],
+       "levelMax": 2
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "weather"
+       ],
+       "levelMax": 2
+      },
+      "scenarios": {
+       "topics": [
+        "weather"
+       ],
+       "levelMax": 2
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u08-weather2",
+     "title": "الضباب والحر والرمل",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "weather"
+       ],
+       "levelMin": 3
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "weather"
+       ],
+       "levelMin": 3
+      },
+      "scenarios": {
+       "topics": [
+        "weather"
+       ],
+       "levelMin": 3
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u08-hazard1",
+     "title": "شوف الخطر بكير",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "hazard"
+       ],
+       "levelMax": 2
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "hazard"
+       ],
+       "levelMax": 2
+      },
+      "scenarios": {
+       "topics": [
+        "hazard"
+       ],
+       "levelMax": 3
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u08-hazard2",
+     "title": "مخاطر صعبة",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "hazard"
+       ],
+       "levelMin": 3
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "hazard"
+       ],
+       "levelMin": 3
+      },
+      "scenarios": {
+       "topics": [
+        "hazard"
+       ],
+       "levelMin": 4
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u08-boss",
+     "title": "تحدي المخرج 8",
+     "kind": "challenge",
+     "from": [
+      "u08-horn",
+      "u08-night",
+      "u08-weather1",
+      "u08-weather2",
+      "u08-hazard1",
+      "u08-hazard2"
+     ],
+     "count": 12,
+     "pass": 0.8
+    }
+   ]
+  },
+  {
+   "id": "u09",
+   "exit": 9,
+   "title": "السيارة وانت",
+   "subtitle": "فحص السيارة وحالة السواق والأعطال والحوادث",
+   "color": "blue",
+   "lessons": [
+    {
+     "id": "u09-vehicle1",
+     "title": "سيارتك قبل ما تمشي",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "vehicle"
+       ],
+       "levelMax": 2
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "vehicle"
+       ],
+       "levelMax": 2
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u09-vehicle2",
+     "title": "أنظمة السيارة وأضواء العدادات",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "vehicle"
+       ],
+       "levelMin": 3
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "vehicle"
+       ],
+       "levelMin": 3
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u09-driver",
+     "title": "حالتك وانت سايق",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "driver"
+       ]
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "driver"
+       ]
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u09-emergency1",
+     "title": "لما تتعطل",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "emergency"
+       ],
+       "levelMax": 2
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "emergency"
+       ],
+       "levelMax": 2
+      },
+      "scenarios": {
+       "topics": [
+        "emergency"
+       ],
+       "levelMax": 2
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u09-emergency2",
+     "title": "لما الفرامل ما تسمع",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "emergency"
+       ],
+       "levelMin": 3
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "emergency"
+       ],
+       "levelMin": 3
+      },
+      "scenarios": {
+       "topics": [
+        "emergency"
+       ],
+       "levelMin": 3
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u09-accidents",
+     "title": "بعد الحادث",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "accidents"
+       ]
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "accidents"
+       ]
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u09-boss",
+     "title": "تحدي المخرج 9",
+     "kind": "challenge",
+     "from": [
+      "u09-vehicle1",
+      "u09-vehicle2",
+      "u09-driver",
+      "u09-emergency1",
+      "u09-emergency2",
+      "u09-accidents"
+     ],
+     "count": 12,
+     "pass": 0.8
+    }
+   ]
+  },
+  {
+   "id": "u10",
+   "exit": 10,
+   "title": "القانون والمخالفات",
+   "subtitle": "الرخصة والنقاط والغرامات وقوانين إمارتك",
+   "color": "green",
+   "lessons": [
+    {
+     "id": "u10-law",
+     "title": "الرخصة والقانون",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "law"
+       ]
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "law"
+       ]
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u10-pen1",
+     "title": "النقاط السودا والحجز",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "penalties"
+       ],
+       "levelMax": 2
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "penalties"
+       ],
+       "levelMax": 2
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u10-pen2",
+     "title": "المخالفات الكبيرة والسائق الجديد",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "penalties"
+       ],
+       "levelMin": 3
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "penalties"
+       ],
+       "levelMin": 3
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u10-local",
+     "title": "قوانين دبي والشارقة",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "dubai-specific",
+        "sharjah-specific"
+       ]
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "dubai-specific",
+        "sharjah-specific"
+       ]
+      },
+      "count": 8
+     }
+    },
+    {
+     "id": "u10-boss",
+     "title": "تحدي المخرج 10",
+     "kind": "challenge",
+     "from": [
+      "u10-law",
+      "u10-pen1",
+      "u10-pen2",
+      "u10-local"
+     ],
+     "count": 12,
+     "pass": 0.8
+    }
+   ]
+  },
+  {
+   "id": "u11",
+   "exit": 11,
+   "title": "يوم الامتحان",
+   "subtitle": "الساحة واختبار الطريق وأصعب المواقف",
+   "color": "orange",
+   "lessons": [
+    {
+     "id": "u11-yard1",
+     "title": "الساحة: شو بيصير هناك",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "yard"
+       ],
+       "levelMax": 2
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "yard"
+       ],
+       "levelMax": 2
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u11-yard2",
+     "title": "الساحة: الطلعة والفرملة والنقاط",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "yard"
+       ],
+       "levelMin": 3
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "yard"
+       ],
+       "levelMin": 3
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u11-road1",
+     "title": "اختبار الطريق: البداية",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "roadtest"
+       ],
+       "levelMax": 2
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "roadtest"
+       ],
+       "levelMax": 2
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u11-road2",
+     "title": "اختبار الطريق: شو بيراقب الفاحص",
+     "kind": "lesson",
+     "learn": {
+      "cards": {
+       "topics": [
+        "roadtest"
+       ],
+       "levelMin": 3
+      }
+     },
+     "practice": {
+      "questions": {
+       "topics": [
+        "roadtest"
+       ],
+       "levelMin": 3
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u11-hard",
+     "title": "أصعب المواقف",
+     "kind": "lesson",
+     "learn": {},
+     "practice": {
+      "scenarios": {
+       "topics": [
+        "roundabouts",
+        "priority",
+        "turning",
+        "lights",
+        "pedestrians",
+        "school-bus",
+        "emergency-vehicles",
+        "vulnerable",
+        "highway",
+        "lanes",
+        "overtaking",
+        "speed",
+        "distance",
+        "parking",
+        "hazard",
+        "weather",
+        "night",
+        "emergency"
+       ],
+       "levelMin": 4
+      },
+      "count": 10
+     }
+    },
+    {
+     "id": "u11-boss",
+     "title": "الامتحان الأخير للمسار",
+     "kind": "challenge",
+     "from": [
+      "u01-shapes",
+      "u01-priority",
+      "u01-prohib",
+      "u01-mand",
+      "u01-colors",
+      "u02-lights",
+      "u02-lines",
+      "u02-arrows",
+      "u02-police",
+      "u03-priority",
+      "u03-round1",
+      "u03-round2",
+      "u03-turn",
+      "u04-shape",
+      "u04-surface",
+      "u04-who",
+      "u04-chevrons",
+      "u04-plates",
+      "u05-ped",
+      "u05-bus",
+      "u05-ev",
+      "u05-vuln",
+      "u06-speed",
+      "u06-distance",
+      "u06-lanes",
+      "u06-overtake",
+      "u07-highway",
+      "u07-parking",
+      "u07-special",
+      "u08-horn",
+      "u08-night",
+      "u08-weather1",
+      "u08-weather2",
+      "u08-hazard1",
+      "u08-hazard2",
+      "u09-vehicle1",
+      "u09-vehicle2",
+      "u09-driver",
+      "u09-emergency1",
+      "u09-emergency2",
+      "u09-accidents",
+      "u10-law",
+      "u10-pen1",
+      "u10-pen2",
+      "u10-local",
+      "u11-yard1",
+      "u11-yard2",
+      "u11-road1",
+      "u11-road2",
+      "u11-hard"
+     ],
+     "count": 30,
+     "pass": 0.8
+    }
+   ]
+  }
+ ]
+}
