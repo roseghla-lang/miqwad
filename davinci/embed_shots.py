@@ -13,7 +13,7 @@ import glob, os, re, sys
 HERE = os.path.dirname(os.path.abspath(__file__))
 IMG = os.path.join(HERE, 'img')
 EXTS = ('.png', '.jpg', '.jpeg', '.webp')
-RX = re.compile(r'^> 📷 \*\*\[(SHOT-\d\d-\d\d)(?: \| (P[12]))?\]\*\* (.+)$', re.M)
+RX = re.compile(r'^> 📷 \*\*\[(SHOT-\d\d-\d{2,3})(?: \| (P[12]))?\]\*\* (.+)$', re.M)
 
 
 def find_img(sid):

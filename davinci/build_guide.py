@@ -87,7 +87,7 @@ def build(check_only=False):
     # فحوصات
     chk_file = os.path.join(HERE, '..', 'CHECKS.md')
     problems = []
-    shots = re.findall(r'\[(SHOT-\d\d-\d\d)', final)
+    shots = re.findall(r'\[(SHOT-\d\d-\d{2,3})', final)
     for s, c in collections.Counter(shots).items():
         if c > 1: problems.append('معرف لقطة مكرر: ' + s)
     fences = sum(1 for l in final.split('\n') if l.strip().startswith('```'))
